@@ -32,7 +32,7 @@ Mọi phát triển kế tiếp cần được thực hiện như một công tr
 ### 1. Khởi tạo môi trường từ Clean Clone
 
 ```powershell
-git clone <repository-url>
+git clone https://github.com/hiepquangnguyen/test-case-prioritization.git
 cd test-case-prioritization
 
 python -m venv .venv
