@@ -1,0 +1,67 @@
+{
+  "run_dir": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\stage10\\Math",
+  "project": "Math",
+  "tests": 2996,
+  "is_full_suite": true,
+  "embeddings": {
+    "shape": [
+      2996,
+      768
+    ],
+    "dtype": "float32",
+    "is_finite": true,
+    "sha256": "49036faa31f2fddc3757321e5894ac6eb0850b5030c7aa13c74defd505c5eebb"
+  },
+  "ranking": {
+    "length": 2996,
+    "is_valid_permutation": true,
+    "gains_valid": true
+  },
+  "evaluation": {
+    "faults_universe": 30,
+    "independent_apfd": 0.635580774365821,
+    "author_apfd": 0.6224299065420561,
+    "delta_apfd": 0.013150867823764956,
+    "apfd_matches_result": true
+  },
+  "manifest_alignment": {
+    "manifest_path": "C:\\Users\\hiepq\\Projects\\tcp\\reports\\stage10\\input-manifest.json",
+    "expected_methods": 2996,
+    "actual_methods": 2996,
+    "methods_match": true,
+    "expected_faults": 30,
+    "actual_faults": 30,
+    "faults_match": true,
+    "file_hashes_ok": true,
+    "file_checks": {
+      "bbox_txt": {
+        "path": "work/artifacts/falcon/input/Math/Math-bbox.txt",
+        "expected_sha256": "3b20d7ea33ea258755492df4b116a4cf4e50d483eb1653bd3a0f5381e5777c22",
+        "actual_sha256": "3b20d7ea33ea258755492df4b116a4cf4e50d483eb1653bd3a0f5381e5777c22",
+        "match": true
+      },
+      "mapping_json": {
+        "path": "work/artifacts/falcon/input/Math/test_method_mapping.json",
+        "expected_sha256": "0335a6c7cf820b90b54a763c1e9d7e4acc04e58a90415469b5387151367ac01e",
+        "actual_sha256": "0335a6c7cf820b90b54a763c1e9d7e4acc04e58a90415469b5387151367ac01e",
+        "match": true
+      },
+      "fault_matrix_pickle": {
+        "path": "work/artifacts/falcon/input/Math/fault_matrix.pickle",
+        "expected_sha256": "7c11b92c7047e3e872149f5582ddf992b1a4bb4d64f0d712f7ae6612e7a12da0",
+        "actual_sha256": "7c11b92c7047e3e872149f5582ddf992b1a4bb4d64f0d712f7ae6612e7a12da0",
+        "match": true
+      }
+    },
+    "mapping_count": 2996,
+    "mapping_ok": true,
+    "manifest_ok": true
+  },
+  "operational_limits": {
+    "peak_rss_gib": 1.186,
+    "peak_rss_ok": true,
+    "wallclock_seconds": 1355.0118,
+    "wallclock_ok": true
+  },
+  "overall_valid": true
+}

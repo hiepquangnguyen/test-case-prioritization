@@ -1,0 +1,9 @@
+{
+  "project": "Math",
+  "tests_count": 2996,
+  "faults_count": 30,
+  "independent_apfd": 0.635580774365821,
+  "author_apfd": 0.6224299065420561,
+  "apfd_delta": 0.013150867823764956,
+  "provenance": "cold_embedding_run"
+}

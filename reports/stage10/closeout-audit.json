@@ -1,0 +1,167 @@
+{
+  "created_at": "2026-10-14T16:06:24.662128+00:00",
+  "task_id": "T09",
+  "phase": "R",
+  "scope": "phase_r_closeout_audit",
+  "phase_status": "COMPLETED",
+  "prior_freezes_verified": {
+    "reports/stage4/design-freeze.json": {
+      "count": 33,
+      "expected_count": 33,
+      "valid": true
+    },
+    "reports/stage5/implementation-freeze.json": {
+      "count": 41,
+      "expected_count": 41,
+      "valid": true
+    },
+    "reports/stage6/final-evidence-freeze.json": {
+      "count": 636,
+      "expected_count": 636,
+      "valid": true
+    },
+    "reports/stage7/evidence-freeze.json": {
+      "count": 8,
+      "expected_count": 8,
+      "valid": true
+    },
+    "reports/stage8/evidence-freeze.json": {
+      "count": 613,
+      "expected_count": 613,
+      "valid": true
+    },
+    "reports/stage9/evidence-freeze.json": {
+      "count": 3,
+      "expected_count": 3,
+      "valid": true
+    }
+  },
+  "six_projects_reproduction": {
+    "total_projects": 6,
+    "total_methods": 20770,
+    "total_faults": 288,
+    "projects": {
+      "Chart": {
+        "methods": 2193,
+        "faults": 26,
+        "rerun_apfd": 0.7322775263951734,
+        "author_apfd": 0.7263144971763303,
+        "delta_apfd": 0.005963029218843063,
+        "peak_rss_gib": 0.471,
+        "wallclock_seconds": 28.9053,
+        "valid_permutation": true,
+        "status": "verified"
+      },
+      "Mockito": {
+        "methods": 1292,
+        "faults": 27,
+        "rerun_apfd": 0.7362257768604518,
+        "author_apfd": 0.7361971104231166,
+        "delta_apfd": 2.8666437335123085e-05,
+        "peak_rss_gib": 1.135,
+        "wallclock_seconds": 243.9502,
+        "valid_permutation": true,
+        "status": "verified"
+      },
+      "Lang": {
+        "methods": 2239,
+        "faults": 32,
+        "rerun_apfd": 0.754284836980795,
+        "author_apfd": 0.754284836980795,
+        "delta_apfd": 0.0,
+        "peak_rss_gib": 1.175,
+        "wallclock_seconds": 837.4879,
+        "valid_permutation": true,
+        "status": "verified"
+      },
+      "Math": {
+        "methods": 2996,
+        "faults": 30,
+        "rerun_apfd": 0.635580774365821,
+        "author_apfd": 0.6224299065420561,
+        "delta_apfd": 0.013150867823764956,
+        "peak_rss_gib": 1.186,
+        "wallclock_seconds": 1355.0118,
+        "valid_permutation": true,
+        "status": "verified"
+      },
+      "Time": {
+        "methods": 4044,
+        "faults": 26,
+        "rerun_apfd": 0.7989328920337821,
+        "author_apfd": 0.7944342996271779,
+        "delta_apfd": 0.004498592406604218,
+        "peak_rss_gib": 1.137,
+        "wallclock_seconds": 1319.6451,
+        "valid_permutation": true,
+        "status": "verified"
+      },
+      "Closure": {
+        "methods": 8006,
+        "faults": 147,
+        "rerun_apfd": 0.6985555901101385,
+        "author_apfd": 0.7001997651421298,
+        "delta_apfd": -0.001644175031991324,
+        "peak_rss_gib": 1.651,
+        "wallclock_seconds": 3323.6494,
+        "valid_permutation": true,
+        "status": "verified"
+      }
+    },
+    "mean_rerun_apfd": 0.725976,
+    "mean_author_apfd": 0.72231,
+    "mean_delta_apfd": 0.003666
+  },
+  "chart_bridge_arms": {
+    "total_arms": 4,
+    "arm_A_apfd": 0.7322775263951734,
+    "arm_B_apfd": 0.7322775263951734,
+    "arm_C_apfd": 0.7322775263951734,
+    "arm_D_apfd": 0.7635308148304044,
+    "deltas": {
+      "B_minus_A_kernel_clipping": {
+        "delta_apfd": 0.0,
+        "component_changed": "Cosine kernel negative values clipped to [0, 1] (vectors and ranker unchanged)"
+      },
+      "C_minus_B_ranker_and_tie_breaking": {
+        "delta_apfd": 0.0,
+        "component_changed": "Ranker changed from upstream lazy greedy (tol 1e-6, index tie) to internal exact greedy (FQN tie)"
+      },
+      "D_minus_C_preprocessing_and_encoder": {
+        "delta_apfd": 0.03125328843523101,
+        "component_changed": "Embeddings changed from upstream unmasked mean to internal preprocessing + chunking + masked attention pooling"
+      },
+      "total_D_minus_A": {
+        "delta_apfd": 0.03125328843523101,
+        "component_changed": "Full transition from upstream artifact to internal pipeline"
+      }
+    },
+    "ranking_comparison": {
+      "A_vs_B_identical": false,
+      "A_vs_B_differing_positions": 42,
+      "B_vs_C_identical": false,
+      "B_vs_C_differing_positions": 24,
+      "note": "Rankings differ at non-fault-detecting positions; APFD remains identical because all 26 fault detection ranks match across A, B, and C."
+    }
+  },
+  "operational_limits_compliance": {
+    "max_peak_rss_observed_gib": 1.651,
+    "peak_rss_limit_gib": 8.0,
+    "rss_compliant": true,
+    "max_wallclock_observed_hours": 0.923,
+    "wallclock_limit_hours": 8.0,
+    "wallclock_compliant": true,
+    "concurrency_limit": 1,
+    "concurrency_compliant": true
+  },
+  "scientific_integrity_assertions": {
+    "defects4j_reproduction_successful": true,
+    "lrts_negative_findings_preserved": true,
+    "lrts_effect_gate": "0/3_NO_GO",
+    "reserved_confirmation_dataset": "CLOSED_UNOPENED",
+    "phase_w_status": "UNAUTHORIZED_PENDING_USER_DIRECTIVE",
+    "confirmation_c00_status": "BLOCKED_ENTRY_CONDITIONS_NOT_MET"
+  },
+  "remediation_amendment_attached": true,
+  "overall_audit_verdict": "PASSED"
+}

@@ -1,0 +1,84 @@
+{
+  "project": "activemq",
+  "rows": 446,
+  "physical_builds": 446,
+  "unique_commits": 391,
+  "branches": {
+    "main": 426,
+    "activemq-5.16.x": 10,
+    "activemq-5.17.x": 4,
+    "activemq-5.18.x": 4,
+    "activemq-6.0.x": 2
+  },
+  "stages": {
+    "single": 446
+  },
+  "statuses": {
+    "SUCCESS": 217,
+    "FAILURE": 203,
+    "ABORTED": 26
+  },
+  "test_observations": 379243,
+  "suite_size": {
+    "min": 3,
+    "median": 1009.0,
+    "max": 1025
+  },
+  "dense_similarity_float32_max_bytes": 4202500,
+  "missing_availability": 0,
+  "unknown_outcomes": 0,
+  "invalid_durations": 0,
+  "zero_durations": 4614,
+  "count_mismatches": 0,
+  "max_duration_sum_error": 3.637978807091713e-12,
+  "overlap_stage_rows": 216,
+  "split_boundaries": {
+    "development_start": 1675327121.0,
+    "confirmation_start": 1694784516.0,
+    "development_start_utc": "2023-02-02T08:38:41+00:00",
+    "confirmation_start_utc": "2023-09-15T13:28:36+00:00"
+  },
+  "splits": [
+    {
+      "split": "warmup",
+      "rows": 90,
+      "physical_builds": 90,
+      "eligible_physical_builds": 77,
+      "failing_stage_rows": 48,
+      "failing_physical_builds": 48,
+      "tests": 61023,
+      "cold_tests": 1973,
+      "no_history_stage_rows": 2
+    },
+    {
+      "split": "development",
+      "rows": 133,
+      "physical_builds": 133,
+      "eligible_physical_builds": 126,
+      "failing_stage_rows": 57,
+      "failing_physical_builds": 57,
+      "tests": 113516,
+      "cold_tests": 1780,
+      "no_history_stage_rows": 2
+    },
+    {
+      "split": "reserved_confirmation",
+      "rows": 223,
+      "physical_builds": 223,
+      "eligible_physical_builds": 217,
+      "failing_stage_rows": 83,
+      "failing_physical_builds": 83,
+      "tests": 204704,
+      "cold_tests": 2139,
+      "no_history_stage_rows": 2
+    }
+  ],
+  "confirmation_prior_commit_overlap": 0,
+  "confirmation_prior_pr_overlap": 2,
+  "source_sample_physical_builds": 20,
+  "source_sample_rows": 20,
+  "source_sample_commits": 19,
+  "raw_build_report_entries": [],
+  "claim_scope": "observed postprocessed class replay; raw start/publication/inventory/revision unverified",
+  "score_exposure": "No ranking or method metric computed; aggregate outcome counts inspected for audit only"
+}

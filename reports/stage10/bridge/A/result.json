@@ -1,0 +1,15 @@
+{
+  "arm": "A",
+  "name": "artifact_baseline",
+  "methods_count": 2193,
+  "faults_count": 26,
+  "vector_sha256": "ef4c4387d004371bb4cdd9b96ba346637f6d5d739e149a671b169f6733e71c94",
+  "kernel_sha256": "50dee65989fa5ac9f0bf89670054ec56f1f58d2907963698c6b0955de0eca955",
+  "kernel_min": -0.08512907475233078,
+  "kernel_max": 1.0000005960464478,
+  "negative_kernel_entries": 1026,
+  "tie_breaker": "smallest_input_index",
+  "ranker": "upstream_lazy_greedy",
+  "apfd": 0.7322775263951734,
+  "elapsed_seconds": 0.0741
+}

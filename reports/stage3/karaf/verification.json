@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "builds": 726,
+  "reproduced_rankings": 18150,
+  "metrics_csv_and_summary_verified": true,
+  "manifest_and_artifact_hashes_match": true,
+  "full_inventory_and_history_eligibility_verified": true,
+  "mutation_cutoffs": 295,
+  "mutation_ranking_comparisons": 7375,
+  "diagnostics_exclude_holdout": true,
+  "limitation": "Conditional on postprocessed observed inventory and assumed build start/duration semantics"
+}

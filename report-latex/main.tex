@@ -1,0 +1,165 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{tocloft,calc}
+\usepackage[top=3.5cm, bottom=3.0cm, left=3.5cm, right=2.0cm]{geometry} % căn lề theo quy chuẩn KLTN
+
+\usepackage{amsmath,latexsym,amscd,amsfonts,mathrsfs,enumerate}
+\usepackage{upgreek}
+\usepackage[thref,thmmarks,standard,amsmath,hyperref]{ntheorem}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\szo}{\{0,1\}}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage[mathscr]{eucal}
+\usepackage[unicode,colorlinks=true, bookmarks=true, pdfstartview=FitH]{hyperref}
+\hypersetup{
+  pdftitle={Ưu tiên bộ kiểm thử bằng tối ưu hóa Submodular kết hợp lịch sử lỗi và chi phí thực thi (HC-FALCON)},
+  pdfauthor={Nguyễn Quang Hiệp},
+  colorlinks = true,
+  linkcolor = black,
+  citecolor = black,
+}
+
+\usepackage{times}
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{fancybox,cite}
+\usepackage{adjustbox}
+\allowdisplaybreaks
+\usepackage{setspace}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\usepackage{pdfpages}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+% Đổi tên "Algorithm" sang tiếng Việt
+\floatname{algorithm}{Thuật toán}
+\renewcommand{\algorithmicrequire}{\textbf{Đầu vào:}}
+\renewcommand{\algorithmicensure}{\textbf{Đầu ra:}}
+
+\newtheorem{tc}{Tính chất}[section]
+\newtheorem{md}{Mệnh đề}[section]
+\newtheorem{bd}{Bổ đề}[section]
+\newtheorem{hq}{Hệ quả}[section]
+\newtheorem{dl}{Định lý}[section]
+ 
+\allowdisplaybreaks
+%Môi trường định nghĩa
+\theoremheaderfont{\bfseries} % In ra chữ "định nghĩa": đậm, thẳng đứng.
+\theorembodyfont{} % Nội dung của định nghia được viết bằng chữ thẳng đứng.
+\theoremseparator {}         % Ngăn cách giữa định nghĩa và nội dung định nghĩa bởi dấu chấm.
+\newtheorem{dn}{Định nghĩa}[section] % Lệnh này để trong file kết quả in ra chữ nhận xét thay vì nếu ta để mặc định.
+
+%Môi trường Ví dụ
+\theoremheaderfont{\bfseries} % In ra chữ "Ví dụ": đậm, thẳng đứng.
+\theorembodyfont{\normalfont} % Nội dung của ví dụ được viết bằng chữ thẳng đứng.
+\theoremseparator {.}         % Ngăn cách giữa Ví dụ và nội dung ví dụ bởi dấu chấm.
+\newtheorem{vd}{Ví dụ}[section] % Lệnh này để trong file kết quả in ra chữ Ví dụ thay vì Example nếu ta để mặc định.
+
+%Môi trường Chú ý
+\theoremstyle{plain} %Không đánh số chú ý
+\theoremheaderfont{\bfseries} % In ra chữ "chú ý": đậm, thẳng đứng.
+\theorembodyfont{\normalfont} % Nội dung của chú ý được viết bằng chữ thẳng đứng.
+\theoremseparator {}         % Ngăn cách giữa "chú ý" và nội dung chú ý bởi dấu chấm.
+\newtheorem{cy}{Chú ý} % Lệnh này để trong file kết quả in ra chữ "chú ý" thay vì remark nếu ta để mặc định.
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\numberwithin{equation}{section} % Công thức được đánh dấu theo section
+
+%Môi trường nhận xét
+\theoremheaderfont{\bfseries}
+\theorembodyfont{\normalfont}
+\theoremseparator {}
+\newtheorem{nx}{Nhận xét}[section]
+
+%Môi trường định lý
+\theoremstyle{plain}
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\theoremseparator {.}
+\renewtheorem{theorem}{Định lý}
+
+%Môi trường Mệnh đề
+\theoremstyle{plain}
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\theoremseparator {.}
+\renewtheorem{proposition}{Mệnh đề}
+
+%Môi trường Chứng minh
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\normalfont\bfseries}
+\theorembodyfont{\normalfont}
+\theoremseparator{.} 
+\theoremsymbol{\ensuremath{\square}} % Dấu kết thúc chứng minh là ô vuông
+\newtheorem{cm}{Chứng minh}[section]
+
+\onehalfspacing
+
+% cấu hình header/footer dùng fancyhdr
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\lhead{\it Đồ án liên ngành}
+\rhead{\it HC-FALCON}
+\cfoot{\thepage}
+
+\begin{document}
+
+% --- TRANG BÌA: KHÔNG ĐÁNH SỐ ---
+\pagenumbering{gobble} % ẩn số trang
+\input{contents/phenikaa_template_cover}
+\clearpage
+
+% --- FRONT MATTER: La Mã ---
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\input{contents/acknowledgement}
+\clearpage
+\input{contents/pledge}
+\clearpage
+\input{contents/abstract}
+\clearpage
+
+\tableofcontents
+\clearpage
+\addcontentsline{toc}{section}{Danh sách hình vẽ}
+\listoffigures
+\clearpage
+\addcontentsline{toc}{section}{Danh sách bảng}
+\listoftables
+\clearpage
+\input{contents/sections/viettat}
+\clearpage
+
+% --- MAIN MATTER: Ả RẬP, reset về 1 ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{contents/sections/SEC1}
+\input{contents/sections/SEC2}
+\input{contents/sections/SEC3}
+\input{contents/sections/SEC4}
+\input{contents/sections/SEC5}
+
+\newpage
+\input{contents/sections/ketluan}
+
+\newpage
+\renewcommand{\refname}{Tài liệu tham khảo}
+\bibliographystyle{ieeetr}
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+\bibliography{ref}
+
+\newpage
+\input{contents/sections/phuluc}
+
+\end{document}

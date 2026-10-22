@@ -1,0 +1,34 @@
+{
+  "projects": {
+    "karaf": {
+      "allowed_ledger_stages": 563,
+      "rankings": 17955,
+      "valid_semantic_coverage": 0.9953730648352928,
+      "source_gate_passed": true,
+      "numerical_tie_exceptions": 1,
+      "exception_metrics_identical": true,
+      "replay_passed": true
+    },
+    "activemq": {
+      "allowed_ledger_stages": 223,
+      "rankings": 7182,
+      "valid_semantic_coverage": 0.9850416067299114,
+      "source_gate_passed": true,
+      "numerical_tie_exceptions": 0,
+      "exception_metrics_identical": true,
+      "replay_passed": true
+    },
+    "log4j": {
+      "allowed_ledger_stages": 264,
+      "rankings": 8835,
+      "valid_semantic_coverage": 0.9821859230285958,
+      "source_gate_passed": true,
+      "numerical_tie_exceptions": 7,
+      "exception_metrics_identical": true,
+      "replay_passed": true
+    }
+  },
+  "stage5_freeze_verified": true,
+  "reserved_opened": false,
+  "decision": "no_go_revise_on_development"
+}

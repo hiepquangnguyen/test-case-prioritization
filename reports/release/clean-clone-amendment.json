@@ -1,0 +1,12 @@
+{
+  "version": "clean-clone-amendment-v3",
+  "scope": "documentation_and_packaging_only",
+  "scientific_results_changed": false,
+  "reserved_opened": false,
+  "readme_lineage": {
+    "stage6_frozen_sha256": "21373dbae8c4e1ea0391bc1776ff032215cefa983a0a043f4d0b783bf6925564",
+    "pre_clean_clone_sha256": "4c05d7c6e2e0f3f8536b5d22e6e17326bbf4043544b0cf7e99c26ff934089262",
+    "clean_clone_amendment_v2_sha256": "0886eb8adfde2a9c9246fc12f57e6d4309813ec8fe7ccedcf7c1e339f4607a93",
+    "current_sha256": "21373dbae8c4e1ea0391bc1776ff032215cefa983a0a043f4d0b783bf6925564"
+  }
+}

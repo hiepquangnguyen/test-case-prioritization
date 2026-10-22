@@ -1,0 +1,53 @@
+{
+  "project": "activemq",
+  "sample_rule": "First 20 physical warmup builds; all stages",
+  "sample_rows": 20,
+  "sample_commits": 19,
+  "available_commit_trees": 19,
+  "observations": 10407,
+  "statuses": {
+    "matched_declared_revision": 9957,
+    "ambiguous": 117,
+    "missing": 333
+  },
+  "failure_observations": 18,
+  "failure_statuses": {
+    "matched_declared_revision": 18
+  },
+  "unique_source_blobs": 1147,
+  "outer_fallback_observations": 12,
+  "unresolved_test_ids": [
+    "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+    "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+    "org.apache.activemq.broker.BrokerServiceTest",
+    "org.apache.activemq.console.command.PurgeCommandTest",
+    "org.apache.activemq.leveldb.test.LevelDBFastEnqueueTest",
+    "org.apache.activemq.leveldb.test.LevelDBStoreTest",
+    "org.apache.activemq.security.SimpleAuthenticationPluginTest",
+    "org.apache.activemq.spring.SpringTest",
+    "org.objectweb.jtests.jms.conform.connection.ConnectionTest",
+    "org.objectweb.jtests.jms.conform.connection.TopicConnectionTest",
+    "org.objectweb.jtests.jms.conform.message.MessageBodyTest",
+    "org.objectweb.jtests.jms.conform.message.MessageDefaultTest",
+    "org.objectweb.jtests.jms.conform.message.MessageTypeTest",
+    "org.objectweb.jtests.jms.conform.message.headers.MessageHeaderTest",
+    "org.objectweb.jtests.jms.conform.message.properties.JMSXPropertyTest",
+    "org.objectweb.jtests.jms.conform.message.properties.MessagePropertyConversionTest",
+    "org.objectweb.jtests.jms.conform.message.properties.MessagePropertyTest",
+    "org.objectweb.jtests.jms.conform.queue.QueueBrowserTest",
+    "org.objectweb.jtests.jms.conform.queue.TemporaryQueueTest",
+    "org.objectweb.jtests.jms.conform.selector.SelectorSyntaxTest",
+    "org.objectweb.jtests.jms.conform.selector.SelectorTest",
+    "org.objectweb.jtests.jms.conform.session.QueueSessionTest",
+    "org.objectweb.jtests.jms.conform.session.SessionTest",
+    "org.objectweb.jtests.jms.conform.session.TopicSessionTest",
+    "org.objectweb.jtests.jms.conform.session.UnifiedSessionTest",
+    "org.objectweb.jtests.jms.conform.topic.TemporaryTopicTest"
+  ],
+  "source_mapping_sha256": "8f4928166e129c58664cc2ee9eaa38ebc492e533e5e0f24e6582db3261c3a2ae",
+  "selection_sha256": "6faf21565c9bf21a79e7f595fdf0656122a1e4e90c007bd76de31f3a18121422",
+  "script_sha256": "ec28c88acafb683e3db55d7baaf197ad60c348e877163ada2c83cee4449a1cc0",
+  "no_checkout_or_test_execution": true,
+  "source_execution_revision_verified": false,
+  "conclusion": "Coverage at declared metadata SHA on an early sample only; no claim of full-cohort source readiness"
+}

@@ -1,0 +1,4136 @@
+{
+  "scope": "317 already-exposed Karaf development build stages only",
+  "no_new_rankings_or_metrics": true,
+  "feature_sha256": "d40da04c166fd41a5073b3fcbc1ad47d38ae408257ab583c5cb774b07030b509",
+  "source_selection_sha256": "6cfcc37c31a29f953476d2252c42cbe5c05a9069851da36b35b0c820443624bb",
+  "script_sha256": "6259375c295f1eca478199a0fd9d0dec2086bbd0952722f047be4d8495c6c8ba",
+  "builds": 317,
+  "Q_min": 0.0,
+  "Q_median": 2.2710782779271126,
+  "Q_max": 43.639874675997774,
+  "Q_greater_than_1": 316,
+  "rows": [
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1474",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 214,
+      "Q": 22.064771816143413,
+      "max_q": 0.5680180695204979,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1475",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.8080246651901857,
+      "max_q": 0.09833969391437075,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1476",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.7869737452542758,
+      "max_q": 0.09773686948814776,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1477",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.7692068185391085,
+      "max_q": 0.09714138756696995,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1478",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.7306500341654583,
+      "max_q": 0.09655311487195252,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1479",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.7306500341654583,
+      "max_q": 0.09655311487195252,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1480",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.713040866097268,
+      "max_q": 0.09597192132900437,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1481",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.67027040263554,
+      "max_q": 0.09501675720674649,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1482",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.6484388568647104,
+      "max_q": 0.09463997317365513,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1483",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.6484388568647104,
+      "max_q": 0.09463997317365513,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1483",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.595841432096912,
+      "max_q": 0.09335102185492843,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1485",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.57496952388959,
+      "max_q": 0.09280867502609488,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1486",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 214,
+      "Q": 21.2215499398713,
+      "max_q": 0.5574659068129545,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1487",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.552625411328811,
+      "max_q": 0.09227259123028074,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1487",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.5326599642542678,
+      "max_q": 0.09174266264401325,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1488",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.5177389767659797,
+      "max_q": 0.09121878390373507,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1489",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.5011459619668734,
+      "max_q": 0.09070085203607986,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1490",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.485378038423462,
+      "max_q": 0.09018876639050473,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1490",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.485378038423462,
+      "max_q": 0.09018876639050473,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1493",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 0.0,
+      "max_q": 0.0,
+      "normalized_modular_total": 0.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1496",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.443363698073342,
+      "max_q": 0.0891817423891011,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1495",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.431073463107468,
+      "max_q": 0.088512547657084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1494",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.431073463107468,
+      "max_q": 0.088512547657084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1492",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 124,
+      "Q": 2.86400321521111,
+      "max_q": 0.08754050876770827,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1492",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.3843461225539007,
+      "max_q": 0.08754050876770827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1497",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.348514659921044,
+      "max_q": 0.08671900617556266,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1498",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.3204362650780177,
+      "max_q": 0.08578208717841694,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1497",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.3204362650780177,
+      "max_q": 0.08578208717841694,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1499",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.3204362650780177,
+      "max_q": 0.08578208717841694,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1500",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.281936257902423,
+      "max_q": 0.08458137333263695,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1501",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.281936257902423,
+      "max_q": 0.08458137333263695,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1503",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.281936257902423,
+      "max_q": 0.08458137333263695,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1504",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.281936257902423,
+      "max_q": 0.08458137333263695,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1505",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.281936257902423,
+      "max_q": 0.08458137333263695,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1501",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.172943563647667,
+      "max_q": 0.08222841691066496,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1501",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.1576113281157054,
+      "max_q": 0.08188591304762721,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1500",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.143334476732198,
+      "max_q": 0.08154683893728953,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1506",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.1077574385604465,
+      "max_q": 0.08097051628615862,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1506",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.09716956223116,
+      "max_q": 0.08055972264459693,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1504",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.09716956223116,
+      "max_q": 0.08055972264459693,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1502",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.0881292806943033,
+      "max_q": 0.0801530750015887,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1505",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.0715558959866422,
+      "max_q": 0.07950925769964629,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1507",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.0715558959866422,
+      "max_q": 0.07950925769964629,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1490",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 3.043233038601555,
+      "max_q": 0.07887787074998422,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1504",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 138,
+      "Q": 2.663344132887179,
+      "max_q": 0.07848950908236313,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1508",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.9993305057319186,
+      "max_q": 0.07779684445092853,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1507",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 124,
+      "Q": 2.5015560336929887,
+      "max_q": 0.07741753838878851,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1507",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.959820274639089,
+      "max_q": 0.07673558126933022,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1504",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.945362242193803,
+      "max_q": 0.07636506061744648,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1502",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.9309621260979166,
+      "max_q": 0.07599810000404852,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1509",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.916199114175998,
+      "max_q": 0.07563464837951461,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1510",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.902283180061316,
+      "max_q": 0.07527465566536083,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1511",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.902283180061316,
+      "max_q": 0.07527465566536083,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1512",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.902283180061316,
+      "max_q": 0.07527465566536083,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1511",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.8604655613845984,
+      "max_q": 0.07421494428940742,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1514",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.8604655613845984,
+      "max_q": 0.07421494428940742,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1516",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.8604655613845984,
+      "max_q": 0.07421494428940742,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1517",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.8310180774973213,
+      "max_q": 0.07347680421214246,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1502",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.8192463615765804,
+      "max_q": 0.07313835284645608,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1515",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.8192463615765804,
+      "max_q": 0.07313835284645608,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1519",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.790944202107146,
+      "max_q": 0.07247071651307645,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1521",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.790944202107146,
+      "max_q": 0.07247071651307645,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1523",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.790944202107146,
+      "max_q": 0.07247071651307645,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1524",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.762394569517088,
+      "max_q": 0.07163351080804908,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1525",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.762394569517088,
+      "max_q": 0.07163351080804908,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1502",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.7435957262724435,
+      "max_q": 0.0709941945032177,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1526",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.7435957262724435,
+      "max_q": 0.0709941945032177,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1527",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.71397770169922,
+      "max_q": 0.07036618638369853,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1521",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.71397770169922,
+      "max_q": 0.07036618638369853,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1502",
+        "build": "7",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.6871947383536976,
+      "max_q": 0.06974918911702421,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1426",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.6798030404440185,
+      "max_q": 0.06944472947432297,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1528",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.6798030404440185,
+      "max_q": 0.06944472947432297,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1522",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.65493906559142,
+      "max_q": 0.06891170726228693,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1426",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.6531290486701082,
+      "max_q": 0.06868242395833495,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1529",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.632677970958712,
+      "max_q": 0.0682530092100084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1530",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.632677970958712,
+      "max_q": 0.0682530092100084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1531",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.632677970958712,
+      "max_q": 0.0682530092100084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1532",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.632677970958712,
+      "max_q": 0.0682530092100084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1533",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.632677970958712,
+      "max_q": 0.0682530092100084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1534",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.632677970958712,
+      "max_q": 0.0682530092100084,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1518",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.5748425781955753,
+      "max_q": 0.06667155287313346,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1490",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.5615449825974244,
+      "max_q": 0.06626303034877229,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1535",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 216,
+      "Q": 26.82753949591412,
+      "max_q": 0.7983392110111229,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1536",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 2.5530707294065698,
+      "max_q": 0.06611846197183274,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1536",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 2.5530707294065698,
+      "max_q": 0.06611846197183274,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1537",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.524969520297099,
+      "max_q": 0.06557447049897612,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1538",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.5138207921035236,
+      "max_q": 0.06530581717539996,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1539",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.50401045678908,
+      "max_q": 0.06503935577334177,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1540",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 214,
+      "Q": 20.192496216779453,
+      "max_q": 0.5335757497855652,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1541",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.4966996193152577,
+      "max_q": 0.06477505958118158,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1542",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.4880440115264433,
+      "max_q": 0.06451290231948577,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1543",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.4880440115264433,
+      "max_q": 0.06451290231948577,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1542",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.474066118778626,
+      "max_q": 0.06412075202738694,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1544",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.464550425222577,
+      "max_q": 0.06386435483968447,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1545",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.4548425647473944,
+      "max_q": 0.06360999962340254,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1546",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.444341654019847,
+      "max_q": 0.06335766208590399,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1547",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.4362388237258967,
+      "max_q": 0.06310731831829525,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1537",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.4362388237258967,
+      "max_q": 0.06310731831829525,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1548",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.419808566017148,
+      "max_q": 0.06261251833079189,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1536",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 2.4711713407345184,
+      "max_q": 0.062368016144794966,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1549",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.411631314894416,
+      "max_q": 0.062368016144794966,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1549",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.382910922302149,
+      "max_q": 0.06188469514328992,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1550",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3730479226160166,
+      "max_q": 0.06164583246902897,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1551",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3730479226160166,
+      "max_q": 0.06164583246902897,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1550",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3552149299753307,
+      "max_q": 0.06117359564518908,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1553",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3516444145287503,
+      "max_q": 0.06105955323555978,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1553",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3429356359333897,
+      "max_q": 0.06082745767085605,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1552",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3341405447869543,
+      "max_q": 0.06059711960388025,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1552",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3252206068286476,
+      "max_q": 0.060368519150630386,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1554",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3252206068286476,
+      "max_q": 0.060368519150630386,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1555",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3252206068286476,
+      "max_q": 0.060368519150630386,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1556",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.3252206068286476,
+      "max_q": 0.060368519150630386,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1556",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2946074827594414,
+      "max_q": 0.05947110613551395,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1552",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2946074827594414,
+      "max_q": 0.05947110613551395,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1557",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2946074827594414,
+      "max_q": 0.05947110613551395,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1558",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2710782779271126,
+      "max_q": 0.05881536026633526,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1559",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2710782779271126,
+      "max_q": 0.05881536026633526,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1560",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2710782779271126,
+      "max_q": 0.05881536026633526,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1561",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.2710782779271126,
+      "max_q": 0.05881536026633526,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1552",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.239757340063099,
+      "max_q": 0.05807629710771415,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1562",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.239757340063099,
+      "max_q": 0.05807629710771415,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1563",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.239757340063099,
+      "max_q": 0.05807629710771415,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1564",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.239757340063099,
+      "max_q": 0.05807629710771415,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1565",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.220062753209651,
+      "max_q": 0.057358124264344966,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1562",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.220062753209651,
+      "max_q": 0.057358124264344966,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1563",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.220062753209651,
+      "max_q": 0.057358124264344966,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1566",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.220062753209651,
+      "max_q": 0.057358124264344966,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1565",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1971782663507815,
+      "max_q": 0.05655047285525827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1567",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1971782663507815,
+      "max_q": 0.05655047285525827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1568",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1971782663507815,
+      "max_q": 0.05655047285525827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1569",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1971782663507815,
+      "max_q": 0.05655047285525827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1570",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1971782663507815,
+      "max_q": 0.05655047285525827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1571",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1971782663507815,
+      "max_q": 0.05655047285525827,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1572",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1611658051832148,
+      "max_q": 0.05548797808100772,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1571",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1611658051832148,
+      "max_q": 0.05548797808100772,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1568",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1611658051832148,
+      "max_q": 0.05548797808100772,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1570",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1611658051832148,
+      "max_q": 0.05548797808100772,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1573",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1450308853575133,
+      "max_q": 0.05510801621516252,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1568",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1274163081905773,
+      "max_q": 0.05465293296716588,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1574",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1274163081905773,
+      "max_q": 0.05465293296716588,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1575",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1158868267867104,
+      "max_q": 0.0543892805352582,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1576",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1043777330002857,
+      "max_q": 0.05410286473699241,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1576",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1052040886841197,
+      "max_q": 0.05402555726115976,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1577",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1052040886841197,
+      "max_q": 0.05402555726115976,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1578",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.1052040886841197,
+      "max_q": 0.05402555726115976,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1579",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.0840551837812127,
+      "max_q": 0.05348900206918249,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1580",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.0840551837812127,
+      "max_q": 0.05348900206918249,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1581",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.0726884056032495,
+      "max_q": 0.053137179870949174,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1582",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.066755730966458,
+      "max_q": 0.05296299845762786,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1583",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.062073242840625,
+      "max_q": 0.052789955101523164,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1584",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.062073242840625,
+      "max_q": 0.052789955101523164,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1586",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.062073242840625,
+      "max_q": 0.052789955101523164,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1578",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.062073242840625,
+      "max_q": 0.052789955101523164,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1579",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.042069120224977,
+      "max_q": 0.05220867218629378,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1583",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.042069120224977,
+      "max_q": 0.05220867218629378,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1579",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.032991429184621,
+      "max_q": 0.05187407258645494,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1588",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.032991429184621,
+      "max_q": 0.05187407258645494,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1587",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.032991429184621,
+      "max_q": 0.05187407258645494,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1589",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.026960640953287,
+      "max_q": 0.05170837578286586,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1585",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.026960640953287,
+      "max_q": 0.05170837578286586,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1585",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 2.0053466858961824,
+      "max_q": 0.051153381707066105,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1590",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.996143458608579,
+      "max_q": 0.05089551863014468,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1592",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9903733105828771,
+      "max_q": 0.05073600401963662,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1593",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9843903770177138,
+      "max_q": 0.0505774860691108,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1594",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9813109668793378,
+      "max_q": 0.050516085101894426,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1596",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9707804580491766,
+      "max_q": 0.05026340302065562,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1595",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9707804580491766,
+      "max_q": 0.05026340302065562,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1597",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9707804580491766,
+      "max_q": 0.05026340302065562,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1598",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9707804580491766,
+      "max_q": 0.05026340302065562,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1595",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9494753742963575,
+      "max_q": 0.04974145035924102,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1599",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9461759138938153,
+      "max_q": 0.049683552165954624,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1599",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.937368562430155,
+      "max_q": 0.04943820725353717,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1600",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.931501650728037,
+      "max_q": 0.049287967866247444,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1601",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9264961111668502,
+      "max_q": 0.04913863875800573,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1602",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9264961111668502,
+      "max_q": 0.04913863875800573,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1602",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9143931514318824,
+      "max_q": 0.04884267848970315,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1604",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 214,
+      "Q": 19.453819564305732,
+      "max_q": 0.5137704950008317,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1605",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9077703937305568,
+      "max_q": 0.04869603113195503,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1606",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.9077703937305568,
+      "max_q": 0.04869603113195503,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1607",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 26.843325296183046,
+      "max_q": 0.7983392110111229,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1607",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 37.18120277959228,
+      "max_q": 1.0820896508959617,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1608",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 43.639874675997774,
+      "max_q": 1.2437340901333094,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1609",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8963583983839674,
+      "max_q": 0.048405362199968584,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1610",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.893593532654413,
+      "max_q": 0.048352989504591444,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1611",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.893593532654413,
+      "max_q": 0.048352989504591444,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1612",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8827181338168437,
+      "max_q": 0.04806692898281449,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1613",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8827181338168437,
+      "max_q": 0.04806692898281449,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1614",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8827181338168437,
+      "max_q": 0.04806692898281449,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1615",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8652495135486622,
+      "max_q": 0.047644128147711795,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1616",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8652495135486622,
+      "max_q": 0.047644128147711795,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1618",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8545220534052753,
+      "max_q": 0.04736636867614837,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1619",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8545220534052753,
+      "max_q": 0.04736636867614837,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1620",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.848944953592042,
+      "max_q": 0.047180933508676436,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1621",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 1.844365031151863,
+      "max_q": 0.047044595953487915,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1622",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8399000238130943,
+      "max_q": 0.04690904400096658,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1623",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8322589778607041,
+      "max_q": 0.04677427088104069,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1623",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8322589778607041,
+      "max_q": 0.04677427088104069,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1623",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8322589778607041,
+      "max_q": 0.04677427088104069,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1623",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8322589778607041,
+      "max_q": 0.04677427088104069,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1624",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.8109808971386565,
+      "max_q": 0.04624283401732851,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1624",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.806386954568343,
+      "max_q": 0.046198777749320345,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1625",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.806386954568343,
+      "max_q": 0.046198777749320345,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1625",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.806386954568343,
+      "max_q": 0.046198777749320345,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1627",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 1.7988297931056392,
+      "max_q": 0.04684210223345045,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1627",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 1.7988297931056392,
+      "max_q": 0.04684210223345045,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1627",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 1.8266037979544933,
+      "max_q": 0.04654412370831259,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1627",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 1.8266037979544933,
+      "max_q": 0.04654412370831259,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1627",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 219,
+      "Q": 1.8266037979544933,
+      "max_q": 0.04654412370831259,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1626",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.7881239206146553,
+      "max_q": 0.04654412370831259,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1626",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.7881239206146553,
+      "max_q": 0.04654412370831259,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1628",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.7684833295188518,
+      "max_q": 0.04833239194774396,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1628",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.7632548945320514,
+      "max_q": 0.04819778287833012,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1629",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 218,
+      "Q": 1.7579616214963742,
+      "max_q": 0.048063921456496336,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1630",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.3700076752866064,
+      "max_q": 0.9094834924302965,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1631",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 3.818901622647275,
+      "max_q": 1.1693359188389527,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1632",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.919369237370086,
+      "max_q": 1.2255098976276473,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1633",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.886701148162273,
+      "max_q": 1.2103801458050834,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1634",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.886701148162273,
+      "max_q": 1.2103801458050834,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1635",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.886701148162273,
+      "max_q": 1.2103801458050834,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1634",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.254862298094381,
+      "max_q": 0.7502856383290061,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1636",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.254862298094381,
+      "max_q": 0.7502856383290061,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1637",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.254862298094381,
+      "max_q": 0.7502856383290061,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1638",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 222,
+      "Q": 3.230288231045031,
+      "max_q": 0.6419010374050831,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1639",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 3.190599203593164,
+      "max_q": 0.611040410606762,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1640",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 3.190599203593164,
+      "max_q": 0.611040410606762,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1639",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 3.0818735431235478,
+      "max_q": 0.5563142324177387,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1641",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 3.0818735431235478,
+      "max_q": 0.5563142324177387,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1642",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 2.972451814029917,
+      "max_q": 0.5087894675590124,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1641",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 2.928489038085323,
+      "max_q": 0.4881507413617333,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1643",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 2.866910011033924,
+      "max_q": 0.46902761124259845,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1644",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 2.866910011033924,
+      "max_q": 0.46902761124259845,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1645",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 43.451539675704055,
+      "max_q": 1.2239043638413893,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1643",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 2.774040497169206,
+      "max_q": 0.43475925402529375,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1647",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 223,
+      "Q": 2.724456811273969,
+      "max_q": 0.41936586416985283,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1648",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.728165597916341,
+      "max_q": 0.40498960962891295,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1641",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 128,
+      "Q": 2.3185134962228084,
+      "max_q": 0.3915375738005569,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1643",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.646578336878896,
+      "max_q": 0.37821407355584896,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1648",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 148,
+      "Q": 2.414310902616362,
+      "max_q": 0.37821407355584896,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1649",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.6111397069618922,
+      "max_q": 0.3657015588247069,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1649",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.5913488654843992,
+      "max_q": 0.35460259176161135,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1648",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.514138937537471,
+      "max_q": 0.3349065775021339,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1648",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.514138937537471,
+      "max_q": 0.3349065775021339,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1648",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.514138937537471,
+      "max_q": 0.3349065775021339,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1641",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.514138937537471,
+      "max_q": 0.3349065775021339,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1643",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1650",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1651",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1652",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1653",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1654",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 148,
+      "Q": 2.2234952917224873,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1655",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1656",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.453912458713673,
+      "max_q": 0.3077443921359699,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1643",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.2385887969189993,
+      "max_q": 0.24837906593679165,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1645",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 211,
+      "Q": 42.82346480444716,
+      "max_q": 1.1594771746963108,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1657",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.219029717417066,
+      "max_q": 0.24315606292224778,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1649",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.203470685494951,
+      "max_q": 0.2381466546492035,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1654",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.185214938921815,
+      "max_q": 0.23333810777040653,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1658",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.185214938921815,
+      "max_q": 0.23333810777040653,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1656",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.1589047191863004,
+      "max_q": 0.22470185304425266,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1659",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.1589047191863004,
+      "max_q": 0.22470185304425266,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1660",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 2.124184292621294,
+      "max_q": 0.21589040145486338,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1661",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1881445069825225,
+      "max_q": 0.21589040145486338,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1641",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1881445069825225,
+      "max_q": 0.21589040145486338,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1656",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1881445069825225,
+      "max_q": 0.21589040145486338,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1626",
+        "build": "5",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1332655258843154,
+      "max_q": 0.20085881071811557,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1626",
+        "build": "6",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1332655258843154,
+      "max_q": 0.20085881071811557,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1662",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1073154992986707,
+      "max_q": 0.1940982607537241,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1662",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.1073154992986707,
+      "max_q": 0.1940982607537241,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1662",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.057233232962639,
+      "max_q": 0.18777623926940534,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1662",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.057233232962639,
+      "max_q": 0.18777623926940534,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1645",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 224,
+      "Q": 43.349176394559926,
+      "max_q": 1.1594771746963108,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1663",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.0438783625182975,
+      "max_q": 0.1818515948254007,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1664",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.023797471823374,
+      "max_q": 0.17902680876581298,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1666",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.021194762297839,
+      "max_q": 0.17628814561862963,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1665",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.0126341969854007,
+      "max_q": 0.17363174037179724,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1667",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.0011953205069313,
+      "max_q": 0.1710539549341371,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1668",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 2.0011953205069313,
+      "max_q": 0.1710539549341371,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1669",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1670",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1671",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1672",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1673",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1674",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1675",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1676",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.9770288604725819,
+      "max_q": 0.16612072908832204,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1676",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8978305592317632,
+      "max_q": 0.14893308853987677,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1678",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8840118196521909,
+      "max_q": 0.1467522345816097,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1679",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8776989587925306,
+      "max_q": 0.1451767157005067,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1680",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8687604067749195,
+      "max_q": 0.1433685555614638,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1680",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8687604067749195,
+      "max_q": 0.1433685555614638,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1680",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.851359144978911,
+      "max_q": 0.13988381460725904,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1677",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 228,
+      "Q": 1.8463221347612522,
+      "max_q": 0.1382040870455511,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1677",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 228,
+      "Q": 1.8463221347612522,
+      "max_q": 0.1382040870455511,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1677",
+        "build": "4",
+        "stage": "single"
+      },
+      "tests": 228,
+      "Q": 1.8463221347612522,
+      "max_q": 0.1382040870455511,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1683",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8217645359101153,
+      "max_q": 0.13314523022754401,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1684",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8217645359101153,
+      "max_q": 0.13314523022754401,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1685",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8164958086777754,
+      "max_q": 0.13012816387231288,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1686",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 226,
+      "Q": 1.8170010446073934,
+      "max_q": 0.12891463680791584,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1687",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.8160500414791974,
+      "max_q": 0.12891463680791584,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1688",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.803314055667205,
+      "max_q": 0.12748626868520394,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1689",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7880424964505488,
+      "max_q": 0.12448585034805731,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1691",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7880424964505488,
+      "max_q": 0.12448585034805731,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1693",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7880424964505488,
+      "max_q": 0.12448585034805731,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1694",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 149,
+      "Q": 1.6067823055056056,
+      "max_q": 0.12448585034805731,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1695",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.762431394711854,
+      "max_q": 0.11953846546689066,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1696",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7531268815031495,
+      "max_q": 0.11830905693099071,
+      "normalized_modular_total": 0.9999999999999999,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1694",
+        "build": "3",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7438982927959794,
+      "max_q": 0.11710464623095151,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1697",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7333280754448,
+      "max_q": 0.11592447965814995,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1698",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7354199227452756,
+      "max_q": 0.11476783345822637,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1698",
+        "build": "2",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7363052958514376,
+      "max_q": 0.11363401235997092,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1699",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7286851010591018,
+      "max_q": 0.11252234818992163,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1700",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.7119793045258997,
+      "max_q": 0.11143219856691412,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1701",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.6979962699250266,
+      "max_q": 0.11036294567126087,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1702",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.6945824483972785,
+      "max_q": 0.10931399508363772,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1703",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.6945824483972785,
+      "max_q": 0.10931399508363772,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1704",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.6849838247288742,
+      "max_q": 0.10727473364216815,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1705",
+        "build": "1",
+        "stage": "single"
+      },
+      "tests": 225,
+      "Q": 1.6806340877711485,
+      "max_q": 0.10648444531327811,
+      "normalized_modular_total": 1.0,
+      "semantic_upper_bound": 1.0
+    }
+  ],
+  "conclusion": "Raw modular total is not on the same bounded scale as FL/n. This is not evidence of ranking quality."
+}

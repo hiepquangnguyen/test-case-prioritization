@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-14T09:28:10.000000+00:00",
+  "stage": "stage9-fidelity-audit",
+  "reserved_opened": false,
+  "files_sha256": {
+    "docs/09-fidelity/review-and-next-plan.md": "18d736fbd8a0b6148ae8d0663ca204758c23211a7f7a3ef9666fb3c6d4a1c8ac",
+    "reports/stage9/fidelity-audit.json": "dd3704e921620666955b2f5b9da6e5a0a514287ee7b97800cd28da815227aa46",
+    "scripts/stage9_fidelity_audit.py": "2a1b1569612811c19af908fa0436af125173c3c3322de95be023b2d162e8140a"
+  }
+}

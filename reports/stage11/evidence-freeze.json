@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-14T15:58:11.252539+00:00",
+  "stage": "stage11-improvement-evaluation",
+  "files_count": 10,
+  "reserved_opened": false,
+  "lrts_effect_gate_passed": false,
+  "files_sha256": {
+    "docs/11-improvement/forensic-report.md": "737f107c17b04d360b0817eb309524da8af2755afe2e9b1b52a13e4975939358",
+    "docs/11-improvement/hypothesis-and-design.md": "6a3772d1ad0c3d1460f35b4a73ba88904f63884129e2dd38687b74a8ff45c967",
+    "docs/11-improvement/phase3-report.md": "199f100d236054aafc802d54659e6b6dbc21be407de89150310a50c2ee0c247f",
+    "hc_falcon/variants.py": "04d8aa6a79a96c101896b5124bd59632ab53322c3efe3ff76be84ce8b15a8531",
+    "reports/stage11/forensic-analysis.json": "e915f61c06430040d71bf13694d26bdb5d5c04fc1bb33181e46662b4989d991b",
+    "reports/stage11/simulation-results.json": "80bdc456a7682f332d622a89e96cc2bc65d4e6d79a22a87f98dd4ad4e37e0bcc",
+    "scripts/stage11_closeout.py": "5e4835cdac523f1b915d59b6c358399f8f48bd06d849a059238c9b4b14938b0e",
+    "scripts/stage11_evaluation.py": "eabe98965867031bd4651b2b497bc97040a6e70790fbab52a8e61bd6d754eb0b",
+    "scripts/stage11_forensic_analysis.py": "00fd803ecb91dffed09c374316dbf0dab3703d8d239b49c33cd2c7ebafb7adb1",
+    "tests/test_variants.py": "da4e2c4ad69de78ed563f5d4ca3989b97ae1d723634b770f60140d7c2610bb56"
+  }
+}

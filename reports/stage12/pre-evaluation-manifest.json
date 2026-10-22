@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-14T14:11:56Z",
+  "stage": "12",
+  "scope": "stage12_pre_evaluation_freeze",
+  "parent_release": "v0.1.1",
+  "primary_method": "hc_ugcs_v2",
+  "reserved_opened": false,
+  "development_evaluated": false,
+  "files_count": 8,
+  "files_sha256": {
+    "configs/hc-falcon-v2-preregistered.json": "a7c54f53752fc750b82c0916ecc003ffa45c801bab538dbb7e3ae9f6e4f17f6f",
+    "docs/12-hc-falcon-v2/evaluation-protocol.md": "0754f32593ec0d11bb64e23469eadb2547e802daef294c7a2269518fc6bae645",
+    "docs/12-hc-falcon-v2/problem-statement.md": "9b77c3b1be7e3a15b810a9043b9b89bdf2e4f0ebc102cf8f33b85d78b8e8e17a",
+    "docs/12-hc-falcon-v2/specification.md": "5ee8f4ef4d394e9a932af234cc4c84d06dcb0b18f270c7e58c105b29ecfc9fdb",
+    "hc_falcon/v2.py": "8db1c13744124b03f51045ef54ccdda8ad64e29308202ad6effdbee59168b455",
+    "scripts/stage12_evaluate.py": "5cf0f8e9d7849f8d627c23e75ab4ec906e2d1ac2f40685309d827f6450de608b",
+    "scripts/stage12_freeze.py": "84a4745cdabd258494109288f7f60644a4c08c8a43d15c6f93fdd156f9c42b49",
+    "tests/test_hc_falcon_v2.py": "90de7d0aaf4c2cf1b0a9b26a41a337a982c41836cdba457b8407b0ed498c5300"
+  }
+}

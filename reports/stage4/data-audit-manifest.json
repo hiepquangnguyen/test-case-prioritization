@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-14T04:53:50.919242+00:00",
+  "archive": {
+    "md5": "b268b21616f6ceb396e8df89d382f298",
+    "sha256": "a99ffc38d0caf0c9362f6b762483e6bd453fe45ed4f6b981a6dca4464495748d"
+  },
+  "split_rule": "Physical build chronology: first 20% warmup, next 30% development, remaining reserved; ties stay together",
+  "source_rule": "First 20 physical builds, all stages; no outcome filtering",
+  "history_config": {
+    "beta_fail": 1.0,
+    "beta_pass": 1.0,
+    "confidence_tau": 5.0,
+    "cold_duration_seconds": 1.0,
+    "duration_floor_seconds": 1e-06,
+    "epsilon": 1e-08
+  },
+  "availability_guard_seconds": 2,
+  "implementation_sha256": {
+    "scripts\\stage4_design_audit.py": "78a6bf5a2c209cc988497aa8f18b202d8c1244ba8fc9c9f159c31c8ace8dc179",
+    "tcp\\__init__.py": "39ed0b635242ec9c96d2af4b91caa2d298df88d8e7c152bdb19f7d824e167365",
+    "tcp\\baselines.py": "01d68cb25c063d7d8a99264eab6b48fec66c67775fa264c36ffd22f594a8e7d9",
+    "tcp\\domain.py": "98dd124733f39e4296c1373a93f39674adcce8dbe5cd01db9147223ec6e0a7cc",
+    "tcp\\history.py": "ae2cdfc3c277b8e5e278f351154cbeb4e940755735c1c0143241363379f6cb32",
+    "tcp\\lrts.py": "41ffbe9ffc1e4d61009d308f2577c1a5231e7ff941083ea46c76e1a84d0c08b3",
+    "tcp\\metrics.py": "97d23dc30268af3f05738d9c11836dbdaf092a36a372e2830cf199d3953f4a72",
+    "tcp\\replay.py": "0478cf6157965dc7742ff76b80733317ef4fefa0381c12fa0ab8ce5d7b0e04e8"
+  },
+  "selections_sha256": {
+    "activemq": "6faf21565c9bf21a79e7f595fdf0656122a1e4e90c007bd76de31f3a18121422",
+    "log4j": "e2ceaa448a228bff186d57f7d86de989a1cf390fd3f56c7cba7bd88ca874ff12"
+  },
+  "computed_method_scores": false
+}

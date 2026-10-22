@@ -1,0 +1,24 @@
+{
+  "metadata_rows": 108366,
+  "processed_jsons": 50,
+  "raw_csv_zip_members": 115528,
+  "metadata_columns": [
+    "project",
+    "pr_name",
+    "pr_base_branch",
+    "build_id",
+    "build_duration",
+    "build_timestamp",
+    "build_result",
+    "build_head_sha",
+    "build_date",
+    "trunk_sha",
+    "trunk_sha_source",
+    "stage_id",
+    "test_suite_duration_s",
+    "num_pass_class",
+    "num_fail_class",
+    "num_trans_class"
+  ],
+  "note": "new_test_ids compares adjacent observed suites, not first-ever appearance; overlap assumes timestamp=start and duration=seconds until independently verified."
+}

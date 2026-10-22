@@ -1,0 +1,794 @@
+{
+  "projects": {
+    "karaf": {
+      "stages": 315,
+      "physical": 315,
+      "comparisons": {
+        "restricted_semantic_cost_v1": {
+          "history_cost": {
+            "apfdc": {
+              "pairs": 79,
+              "mean_delta": 0.002464819194669939,
+              "median_delta": -0.00017089453796481635,
+              "positive": 13,
+              "tie": 17,
+              "negative": 49
+            },
+            "ttff": {
+              "pairs": 79,
+              "mean_delta": 1.2133164556962175,
+              "median_delta": 0.06300000000000061,
+              "positive": 47,
+              "tie": 27,
+              "negative": 5
+            },
+            "recall10": {
+              "pairs": 79,
+              "mean_delta": 0.007383966244725739,
+              "median_delta": 0.0,
+              "positive": 2,
+              "tie": 77,
+              "negative": 0
+            }
+          },
+          "hc_falcon_normalized_v1": {
+            "apfdc": {
+              "pairs": 79,
+              "mean_delta": 0.006875572064809027,
+              "median_delta": 0.012862373186706244,
+              "positive": 55,
+              "tie": 1,
+              "negative": 23
+            },
+            "ttff": {
+              "pairs": 79,
+              "mean_delta": -0.2567215189873332,
+              "median_delta": -8.821999999999997,
+              "positive": 24,
+              "tie": 2,
+              "negative": 53
+            },
+            "recall10": {
+              "pairs": 79,
+              "mean_delta": 0.08016877637130802,
+              "median_delta": 0.0,
+              "positive": 8,
+              "tie": 70,
+              "negative": 1
+            }
+          },
+          "fl_only": {
+            "apfdc": {
+              "pairs": 79,
+              "mean_delta": 0.32570307563141454,
+              "median_delta": 0.31450266625517487,
+              "positive": 63,
+              "tie": 0,
+              "negative": 16
+            },
+            "ttff": {
+              "pairs": 79,
+              "mean_delta": -559.9936582278481,
+              "median_delta": -459.70800000000014,
+              "positive": 15,
+              "tie": 0,
+              "negative": 64
+            },
+            "recall10": {
+              "pairs": 79,
+              "mean_delta": 0.5232067510548524,
+              "median_delta": 0.5,
+              "positive": 49,
+              "tie": 29,
+              "negative": 1
+            }
+          }
+        },
+        "cache_only_restricted_v1_simulated": {
+          "history_cost": {
+            "apfdc": {
+              "pairs": 79,
+              "mean_delta": 0.003320879005592448,
+              "median_delta": -4.9578113859638506e-05,
+              "positive": 12,
+              "tie": 24,
+              "negative": 43
+            },
+            "ttff": {
+              "pairs": 79,
+              "mean_delta": 0.1130379746835617,
+              "median_delta": 0.006000000000000227,
+              "positive": 41,
+              "tie": 34,
+              "negative": 4
+            },
+            "recall10": {
+              "pairs": 79,
+              "mean_delta": 0.007383966244725739,
+              "median_delta": 0.0,
+              "positive": 2,
+              "tie": 77,
+              "negative": 0
+            }
+          },
+          "hc_falcon_normalized_v1": {
+            "apfdc": {
+              "pairs": 79,
+              "mean_delta": 0.007731631875731535,
+              "median_delta": 0.012862373186706244,
+              "positive": 55,
+              "tie": 1,
+              "negative": 23
+            },
+            "ttff": {
+              "pairs": 79,
+              "mean_delta": -1.3569999999999889,
+              "median_delta": -8.821999999999997,
+              "positive": 24,
+              "tie": 2,
+              "negative": 53
+            },
+            "recall10": {
+              "pairs": 79,
+              "mean_delta": 0.08016877637130802,
+              "median_delta": 0.0,
+              "positive": 8,
+              "tie": 70,
+              "negative": 1
+            }
+          },
+          "fl_only": {
+            "apfdc": {
+              "pairs": 79,
+              "mean_delta": 0.32655913544233706,
+              "median_delta": 0.31450266625517487,
+              "positive": 64,
+              "tie": 0,
+              "negative": 15
+            },
+            "ttff": {
+              "pairs": 79,
+              "mean_delta": -561.0939367088607,
+              "median_delta": -459.70800000000014,
+              "positive": 14,
+              "tie": 0,
+              "negative": 65
+            },
+            "recall10": {
+              "pairs": 79,
+              "mean_delta": 0.5232067510548524,
+              "median_delta": 0.5,
+              "positive": 49,
+              "tie": 29,
+              "negative": 1
+            }
+          }
+        }
+      },
+      "effect_gate_passed": false,
+      "cache_policy": {
+        "fallback_stages": 28,
+        "physical_with_fallback": 28,
+        "assumptions": "chronological offline source cache; prepare after each usable stage, no async latency model"
+      },
+      "zero_q_stages": 13,
+      "zero_gain_fallback_steps": 318,
+      "groups_observation_level": {
+        "N0": {
+          "tests": 244,
+          "failures": 2,
+          "detected10": 0.0,
+          "recall10_pooled": 0.0
+        },
+        "N1_4": {
+          "tests": 912,
+          "failures": 4,
+          "detected10": 2.0,
+          "recall10_pooled": 0.5
+        },
+        "N5plus": {
+          "tests": 67572,
+          "failures": 114,
+          "detected10": 55.0,
+          "recall10_pooled": 0.4824561403508772
+        }
+      },
+      "mutation_checks": [
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1474",
+            "build": "1",
+            "stage": "single"
+          },
+          "mutated": 543
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1705",
+            "build": "1",
+            "stage": "single"
+          },
+          "mutated": 102
+        }
+      ],
+      "runtime": {
+        "p95_cached_reconstruction_ratio": 0.00022808969635404187,
+        "maximum_cached_reconstruction_ratio": 0.0023381498232652523,
+        "peak_rss": 587137024,
+        "full_pipeline_engineering_gate": "not_remeasured; source extraction and encoding excluded"
+      },
+      "worst_physical": [
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1536",
+            "build": "1"
+          },
+          "delta_apfdc": -0.03284592445098056
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1501",
+            "build": "2"
+          },
+          "delta_apfdc": -0.01623709214366853
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1502",
+            "build": "3"
+          },
+          "delta_apfdc": -0.013808752753537101
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1648",
+            "build": "1"
+          },
+          "delta_apfdc": -0.013710107316071807
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1505",
+            "build": "1"
+          },
+          "delta_apfdc": -0.013311073775547078
+        }
+      ]
+    },
+    "activemq": {
+      "stages": 126,
+      "physical": 126,
+      "comparisons": {
+        "restricted_semantic_cost_v1": {
+          "history_cost": {
+            "apfdc": {
+              "pairs": 57,
+              "mean_delta": 0.00038731887711123943,
+              "median_delta": -0.0015369988908253696,
+              "positive": 13,
+              "tie": 1,
+              "negative": 43
+            },
+            "ttff": {
+              "pairs": 57,
+              "mean_delta": -170.68142105263192,
+              "median_delta": 6.76299999999992,
+              "positive": 45,
+              "tie": 3,
+              "negative": 9
+            },
+            "recall10": {
+              "pairs": 57,
+              "mean_delta": -0.01854636591478697,
+              "median_delta": 0.0,
+              "positive": 2,
+              "tie": 52,
+              "negative": 3
+            }
+          },
+          "hc_falcon_normalized_v1": {
+            "apfdc": {
+              "pairs": 57,
+              "mean_delta": 0.03432507014354244,
+              "median_delta": 0.01133683811086772,
+              "positive": 46,
+              "tie": 2,
+              "negative": 9
+            },
+            "ttff": {
+              "pairs": 57,
+              "mean_delta": -199.23242105263157,
+              "median_delta": -186.51799999999997,
+              "positive": 9,
+              "tie": 2,
+              "negative": 46
+            },
+            "recall10": {
+              "pairs": 57,
+              "mean_delta": 0.04815016933013538,
+              "median_delta": 0.0,
+              "positive": 8,
+              "tie": 47,
+              "negative": 2
+            }
+          },
+          "fl_only": {
+            "apfdc": {
+              "pairs": 57,
+              "mean_delta": 0.36469030150982135,
+              "median_delta": 0.4207064335916383,
+              "positive": 52,
+              "tie": 2,
+              "negative": 3
+            },
+            "ttff": {
+              "pairs": 57,
+              "mean_delta": -4846.808228070175,
+              "median_delta": -3310.407000000002,
+              "positive": 3,
+              "tie": 2,
+              "negative": 52
+            },
+            "recall10": {
+              "pairs": 57,
+              "mean_delta": 0.443874021972494,
+              "median_delta": 0.4516129032258065,
+              "positive": 31,
+              "tie": 25,
+              "negative": 1
+            }
+          }
+        },
+        "cache_only_restricted_v1_simulated": {
+          "history_cost": {
+            "apfdc": {
+              "pairs": 57,
+              "mean_delta": -0.0025401420049318683,
+              "median_delta": -0.0007833915672748049,
+              "positive": 9,
+              "tie": 12,
+              "negative": 36
+            },
+            "ttff": {
+              "pairs": 57,
+              "mean_delta": -81.532754385965,
+              "median_delta": 0.4819999999999993,
+              "positive": 36,
+              "tie": 14,
+              "negative": 7
+            },
+            "recall10": {
+              "pairs": 57,
+              "mean_delta": -0.0010025062656641628,
+              "median_delta": 0.0,
+              "positive": 2,
+              "tie": 53,
+              "negative": 2
+            }
+          },
+          "hc_falcon_normalized_v1": {
+            "apfdc": {
+              "pairs": 57,
+              "mean_delta": 0.031397609261499336,
+              "median_delta": 0.01133683811086772,
+              "positive": 46,
+              "tie": 1,
+              "negative": 10
+            },
+            "ttff": {
+              "pairs": 57,
+              "mean_delta": -110.08375438596467,
+              "median_delta": -193.2809999999999,
+              "positive": 10,
+              "tie": 1,
+              "negative": 46
+            },
+            "recall10": {
+              "pairs": 57,
+              "mean_delta": 0.06569402897925818,
+              "median_delta": 0.0,
+              "positive": 8,
+              "tie": 48,
+              "negative": 1
+            }
+          },
+          "fl_only": {
+            "apfdc": {
+              "pairs": 57,
+              "mean_delta": 0.36176284062777825,
+              "median_delta": 0.4207064335916383,
+              "positive": 52,
+              "tie": 1,
+              "negative": 4
+            },
+            "ttff": {
+              "pairs": 57,
+              "mean_delta": -4757.659561403508,
+              "median_delta": -3310.407000000002,
+              "positive": 4,
+              "tie": 1,
+              "negative": 52
+            },
+            "recall10": {
+              "pairs": 57,
+              "mean_delta": 0.4614178816216168,
+              "median_delta": 0.5,
+              "positive": 32,
+              "tie": 24,
+              "negative": 1
+            }
+          }
+        }
+      },
+      "effect_gate_passed": false,
+      "cache_policy": {
+        "fallback_stages": 15,
+        "physical_with_fallback": 15,
+        "assumptions": "chronological offline source cache; prepare after each usable stage, no async latency model"
+      },
+      "zero_q_stages": 15,
+      "zero_gain_fallback_steps": 1653,
+      "groups_observation_level": {
+        "N0": {
+          "tests": 1779,
+          "failures": 5,
+          "detected10": 0.0,
+          "recall10_pooled": 0.0
+        },
+        "N1_4": {
+          "tests": 4593,
+          "failures": 32,
+          "detected10": 13.0,
+          "recall10_pooled": 0.40625
+        },
+        "N5plus": {
+          "tests": 103466,
+          "failures": 117,
+          "detected10": 74.0,
+          "recall10_pooled": 0.6324786324786325
+        }
+      },
+      "mutation_checks": [
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-961",
+            "build": "2",
+            "stage": "single"
+          },
+          "mutated": 150
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1051",
+            "build": "1",
+            "stage": "single"
+          },
+          "mutated": 33
+        }
+      ],
+      "runtime": {
+        "p95_cached_reconstruction_ratio": 0.00018237960240870415,
+        "maximum_cached_reconstruction_ratio": 0.000850420671078007,
+        "peak_rss": 665878528,
+        "full_pipeline_engineering_gate": "not_remeasured; source extraction and encoding excluded"
+      },
+      "worst_physical": [
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1005",
+            "build": "4"
+          },
+          "delta_apfdc": -0.019891505741243654
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-967",
+            "build": "1"
+          },
+          "delta_apfdc": -0.019812148886166225
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1051",
+            "build": "1"
+          },
+          "delta_apfdc": -0.015453814838789492
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1034",
+            "build": "1"
+          },
+          "delta_apfdc": -0.015293724617608029
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-976",
+            "build": "1"
+          },
+          "delta_apfdc": -0.01242493342885409
+        }
+      ]
+    },
+    "log4j": {
+      "stages": 155,
+      "physical": 78,
+      "comparisons": {
+        "restricted_semantic_cost_v1": {
+          "history_cost": {
+            "apfdc": {
+              "pairs": 25,
+              "mean_delta": 0.00031027144349455194,
+              "median_delta": -7.791188360695145e-06,
+              "positive": 5,
+              "tie": 6,
+              "negative": 14
+            },
+            "ttff": {
+              "pairs": 25,
+              "mean_delta": -0.030780000000002403,
+              "median_delta": 0.0,
+              "positive": 12,
+              "tie": 8,
+              "negative": 5
+            },
+            "recall10": {
+              "pairs": 25,
+              "mean_delta": 0.005,
+              "median_delta": 0.0,
+              "positive": 1,
+              "tie": 24,
+              "negative": 0
+            }
+          },
+          "hc_falcon_normalized_v1": {
+            "apfdc": {
+              "pairs": 25,
+              "mean_delta": -0.007458013642540302,
+              "median_delta": 0.0011217292153078429,
+              "positive": 22,
+              "tie": 0,
+              "negative": 3
+            },
+            "ttff": {
+              "pairs": 25,
+              "mean_delta": 5.153700000000003,
+              "median_delta": -0.6359999999999815,
+              "positive": 3,
+              "tie": 0,
+              "negative": 22
+            },
+            "recall10": {
+              "pairs": 25,
+              "mean_delta": 0.0016666666666666653,
+              "median_delta": 0.0,
+              "positive": 1,
+              "tie": 23,
+              "negative": 1
+            }
+          },
+          "fl_only": {
+            "apfdc": {
+              "pairs": 25,
+              "mean_delta": 0.19494278164556275,
+              "median_delta": 0.2878720767770302,
+              "positive": 22,
+              "tie": 0,
+              "negative": 3
+            },
+            "ttff": {
+              "pairs": 25,
+              "mean_delta": -146.33346,
+              "median_delta": -159.97300000000013,
+              "positive": 3,
+              "tie": 0,
+              "negative": 22
+            },
+            "recall10": {
+              "pairs": 25,
+              "mean_delta": 0.6666666666666666,
+              "median_delta": 1.0,
+              "positive": 20,
+              "tie": 5,
+              "negative": 0
+            }
+          }
+        },
+        "cache_only_restricted_v1_simulated": {
+          "history_cost": {
+            "apfdc": {
+              "pairs": 25,
+              "mean_delta": -5.53200013720212e-05,
+              "median_delta": 0.0,
+              "positive": 4,
+              "tie": 11,
+              "negative": 10
+            },
+            "ttff": {
+              "pairs": 25,
+              "mean_delta": 0.21047999999999817,
+              "median_delta": 0.0,
+              "positive": 8,
+              "tie": 13,
+              "negative": 4
+            },
+            "recall10": {
+              "pairs": 25,
+              "mean_delta": 0.005,
+              "median_delta": 0.0,
+              "positive": 1,
+              "tie": 24,
+              "negative": 0
+            }
+          },
+          "hc_falcon_normalized_v1": {
+            "apfdc": {
+              "pairs": 25,
+              "mean_delta": -0.007823605087406876,
+              "median_delta": 0.0011217292153078429,
+              "positive": 22,
+              "tie": 0,
+              "negative": 3
+            },
+            "ttff": {
+              "pairs": 25,
+              "mean_delta": 5.394960000000004,
+              "median_delta": -0.6359999999999815,
+              "positive": 3,
+              "tie": 0,
+              "negative": 22
+            },
+            "recall10": {
+              "pairs": 25,
+              "mean_delta": 0.0016666666666666653,
+              "median_delta": 0.0,
+              "positive": 1,
+              "tie": 23,
+              "negative": 1
+            }
+          },
+          "fl_only": {
+            "apfdc": {
+              "pairs": 25,
+              "mean_delta": 0.1945771902006962,
+              "median_delta": 0.2878720767770302,
+              "positive": 22,
+              "tie": 0,
+              "negative": 3
+            },
+            "ttff": {
+              "pairs": 25,
+              "mean_delta": -146.0922,
+              "median_delta": -160.1900000000001,
+              "positive": 3,
+              "tie": 0,
+              "negative": 22
+            },
+            "recall10": {
+              "pairs": 25,
+              "mean_delta": 0.6666666666666666,
+              "median_delta": 1.0,
+              "positive": 20,
+              "tie": 5,
+              "negative": 0
+            }
+          }
+        }
+      },
+      "effect_gate_passed": false,
+      "cache_policy": {
+        "fallback_stages": 48,
+        "physical_with_fallback": 48,
+        "assumptions": "chronological offline source cache; prepare after each usable stage, no async latency model"
+      },
+      "zero_q_stages": 45,
+      "zero_gain_fallback_steps": 1758,
+      "groups_observation_level": {
+        "N0": {
+          "tests": 79,
+          "failures": 1,
+          "detected10": 0.0,
+          "recall10_pooled": 0.0
+        },
+        "N1_4": {
+          "tests": 282,
+          "failures": 3,
+          "detected10": 3.0,
+          "recall10_pooled": 1.0
+        },
+        "N5plus": {
+          "tests": 98325,
+          "failures": 60,
+          "detected10": 45.0,
+          "recall10_pooled": 0.75
+        }
+      },
+      "mutation_checks": [
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-647",
+            "build": "2",
+            "stage": "Windows_Test"
+          },
+          "mutated": 159
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-477",
+            "build": "1",
+            "stage": "Ubuntu_Test"
+          },
+          "mutated": 243
+        }
+      ],
+      "runtime": {
+        "p95_cached_reconstruction_ratio": 0.00037237303385045473,
+        "maximum_cached_reconstruction_ratio": 0.009643082434288568,
+        "peak_rss": 721907712,
+        "full_pipeline_engineering_gate": "not_remeasured; source extraction and encoding excluded"
+      },
+      "worst_physical": [
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-576",
+            "build": "1"
+          },
+          "delta_apfdc": -0.006350573865571141
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-608",
+            "build": "3"
+          },
+          "delta_apfdc": -0.005711652946471135
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-544",
+            "build": "2"
+          },
+          "delta_apfdc": -0.002801027068258355
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-598",
+            "build": "4"
+          },
+          "delta_apfdc": -0.0010726190817311188
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-591",
+            "build": "2"
+          },
+          "delta_apfdc": -0.0008976415162430529
+        }
+      ]
+    }
+  },
+  "reserved_opened": false,
+  "effect_gate_projects_passed": 0,
+  "decision": "no_go",
+  "inference": "development-only revision selected after stage6 diagnosis; no independent confirmation claim"
+}

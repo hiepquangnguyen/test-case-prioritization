@@ -1,0 +1,588 @@
+[
+  {
+    "member": "ML_TCSP/src/processed_builds/activemq_build_PR-263_1_single_tfidf_specific_boosted_False.json",
+    "project": "activemq",
+    "sha": "9fd86cda6827db1308ba006a71d6f1b0a9e71d77",
+    "tests": 734,
+    "failures": 38,
+    "source_found": 647,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1294
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/activemq_build_PR-679_3_single_tfidf_specific_boosted_False.json",
+    "project": "activemq",
+    "sha": "e34ae17d770bb2299e8c9bd29ac6bb7dd8f79188",
+    "tests": 873,
+    "failures": 3,
+    "source_found": 838,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 2514
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/activemq_build_PR-700_4_single_tfidf_specific_boosted_False.json",
+    "project": "activemq",
+    "sha": "cc763a96b5297f9b59e246d4b9c751bd0fbdd320",
+    "tests": 873,
+    "failures": 11,
+    "source_found": 838,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 838
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/activemq_build_PR-714_2_single_tfidf_specific_boosted_False.json",
+    "project": "activemq",
+    "sha": "3f7eb0a39ba3e7926e72f91fa3f9f6748e261726",
+    "tests": 873,
+    "failures": 13,
+    "source_found": 838,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 7542
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/activemq_build_PR-751_4_single_tfidf_specific_boosted_False.json",
+    "project": "activemq",
+    "sha": "d64dd6f8b0837a43f34bb92b4fa24c582c453b00",
+    "tests": 879,
+    "failures": 6,
+    "source_found": 862,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 6034
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hadoop_build_PR-1700_3_single_tfidf_specific_boosted_False.json",
+    "project": "hadoop",
+    "sha": "b7e34e774e02802af74d5585efaf7d2528697e4b",
+    "tests": 761,
+    "failures": 15,
+    "source_found": 732,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 2196
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hadoop_build_PR-2737_2_single_tfidf_specific_boosted_False.json",
+    "project": "hadoop",
+    "sha": "aaedc51d8783c2808563d5c8b51b68ab79e19820",
+    "tests": 674,
+    "failures": 32,
+    "source_found": 674,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 674
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hadoop_build_PR-2737_4_single_tfidf_specific_boosted_False.json",
+    "project": "hadoop",
+    "sha": "b751835d361fbab6a03ca6827c1cf02626f33b04",
+    "tests": 736,
+    "failures": 23,
+    "source_found": 736,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1472
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hadoop_build_PR-2737_5_single_tfidf_specific_boosted_False.json",
+    "project": "hadoop",
+    "sha": "3c57512d104e3a92391c9a03ce4005a00267c07f",
+    "tests": 735,
+    "failures": 23,
+    "source_found": 735,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1470
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hadoop_build_PR-2741_2_single_tfidf_specific_boosted_False.json",
+    "project": "hadoop",
+    "sha": "90ece04c6046b411b62101ba17b6cf24ed9ee19c",
+    "tests": 735,
+    "failures": 20,
+    "source_found": 735,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 2205
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hbase_build_PR-3352_1_yetus_jdk11_hadoop3_checks_precommit_checks_tfidf_specific_boosted_False.json",
+    "project": "hbase",
+    "sha": "71583a2c80e2ddf45a7d80fc0c991ab91d8c402b",
+    "tests": 1225,
+    "failures": 5,
+    "source_found": 1225,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 41650
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hbase_build_PR-3352_1_yetus_jdk8_Hadoop3_checks_precommit_checks_tfidf_specific_boosted_False.json",
+    "project": "hbase",
+    "sha": "71583a2c80e2ddf45a7d80fc0c991ab91d8c402b",
+    "tests": 1225,
+    "failures": 5,
+    "source_found": 1225,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 41650
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hbase_build_PR-4423_5_yetus_jdk11_hadoop3_checks_precommit_checks_tfidf_specific_boosted_False.json",
+    "project": "hbase",
+    "sha": "f8e37c2f80d15866d764fab7d9938a2aefac8bff",
+    "tests": 9,
+    "failures": 8,
+    "source_found": 9,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 9
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hbase_build_PR-4423_5_yetus_jdk8_Hadoop3_checks_precommit_checks_tfidf_specific_boosted_False.json",
+    "project": "hbase",
+    "sha": "f8e37c2f80d15866d764fab7d9938a2aefac8bff",
+    "tests": 9,
+    "failures": 8,
+    "source_found": 9,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 9
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hbase_build_PR-4664_3_yetus_jdk8_Hadoop3_checks_precommit_checks_tfidf_specific_boosted_False.json",
+    "project": "hbase",
+    "sha": "ab8030a80a6e7d7621bb140061f75b954fed780a",
+    "tests": 1075,
+    "failures": 5,
+    "source_found": 1069,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 4276
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hive_build_PR-3137_10_single_tfidf_specific_boosted_False.json",
+    "project": "hive",
+    "sha": "a84e338b94b110735b8b0084569af3e2bc066ff0",
+    "tests": 1270,
+    "failures": 66,
+    "source_found": 1270,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 78740
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hive_build_PR-3137_11_single_tfidf_specific_boosted_False.json",
+    "project": "hive",
+    "sha": "7dcc8c416181ccd5bace8e62e9397c6168ad821e",
+    "tests": 1270,
+    "failures": 66,
+    "source_found": 1270,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 78740
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hive_build_PR-3137_18_single_tfidf_specific_boosted_False.json",
+    "project": "hive",
+    "sha": "1860216248f54ecfdf703233a328af274712ed00",
+    "tests": 1203,
+    "failures": 119,
+    "source_found": 1199,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 77935
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hive_build_PR-3137_19_single_tfidf_specific_boosted_False.json",
+    "project": "hive",
+    "sha": "084a42d81413c06c16ff4a109ecb076e3be44cac",
+    "tests": 1255,
+    "failures": 119,
+    "source_found": 1251,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 81315
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/hive_build_PR-3137_24_single_tfidf_specific_boosted_False.json",
+    "project": "hive",
+    "sha": "d6b36289a5babc09127a19572f388b37e737682d",
+    "tests": 1268,
+    "failures": 66,
+    "source_found": 1268,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 82420
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/jackrabbit-oak_build_PR-535_6_single_tfidf_specific_boosted_False.json",
+    "project": "jackrabbit-oak",
+    "sha": "1cb24971e8d364c4f1b38e821b225533fd307e6c",
+    "tests": 1555,
+    "failures": 496,
+    "source_found": 1504,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1504
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/jackrabbit-oak_build_PR-535_7_single_tfidf_specific_boosted_False.json",
+    "project": "jackrabbit-oak",
+    "sha": "a8284b6e86c8250e47903f5139abbfd7509735f0",
+    "tests": 1443,
+    "failures": 465,
+    "source_found": 1392,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 29232
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/jackrabbit-oak_build_PR-535_8_single_tfidf_specific_boosted_False.json",
+    "project": "jackrabbit-oak",
+    "sha": "a8284b6e86c8250e47903f5139abbfd7509735f0",
+    "tests": 1435,
+    "failures": 451,
+    "source_found": 1409,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 29589
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/jackrabbit-oak_build_PR-550_1_single_tfidf_specific_boosted_False.json",
+    "project": "jackrabbit-oak",
+    "sha": "0d95ce7be84b7ad901f50efa9f7bcc948a959e8f",
+    "tests": 1903,
+    "failures": 85,
+    "source_found": 1639,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1639
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/jackrabbit-oak_build_PR-800_8_single_tfidf_specific_boosted_False.json",
+    "project": "jackrabbit-oak",
+    "sha": "6ac58e066f20c0e39a4016dec2c04c745db4d382",
+    "tests": 1931,
+    "failures": 94,
+    "source_found": 1666,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 13328
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/james_build_PR-1049_44_Stable_Tests_tfidf_specific_boosted_False.json",
+    "project": "james",
+    "sha": "51a5df08a2dd454720563f096597f494326b7467",
+    "tests": 1426,
+    "failures": 48,
+    "source_found": 1426,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 44206
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/james_build_PR-1065_10_Stable_Tests_tfidf_specific_boosted_False.json",
+    "project": "james",
+    "sha": "960112a9f6c215cad6ee55ebfb7ee087aefd4afe",
+    "tests": 2134,
+    "failures": 78,
+    "source_found": 2134,
+    "tokens_available": 0,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/james_build_PR-1065_13_Stable_Tests_tfidf_specific_boosted_False.json",
+    "project": "james",
+    "sha": "5fb837abc8a281e9c89cc494633d284c8880c25c",
+    "tests": 1695,
+    "failures": 48,
+    "source_found": 1695,
+    "tokens_available": 0,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/james_build_PR-1065_2_Stable_Tests_tfidf_specific_boosted_False.json",
+    "project": "james",
+    "sha": "0b2b2cdf2e44632d78d3a36f94f9f44fa80f6d47",
+    "tests": 1697,
+    "failures": 52,
+    "source_found": 1697,
+    "tokens_available": 0,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/james_build_PR-1065_9_Stable_Tests_tfidf_specific_boosted_False.json",
+    "project": "james",
+    "sha": "960112a9f6c215cad6ee55ebfb7ee087aefd4afe",
+    "tests": 2134,
+    "failures": 78,
+    "source_found": 2134,
+    "tokens_available": 0,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/kafka_build_PR-15417_14_JDK_11_and_Scala_2.13_Build_tfidf_specific_boosted_False.json",
+    "project": "kafka",
+    "sha": "fa6fab614455176fc71bf857b9c84251aabba44f",
+    "tests": 1583,
+    "failures": 2,
+    "source_found": 1577,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 29963
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/kafka_build_PR-15417_14_JDK_17_and_Scala_2.13_Build_tfidf_specific_boosted_False.json",
+    "project": "kafka",
+    "sha": "fa6fab614455176fc71bf857b9c84251aabba44f",
+    "tests": 1582,
+    "failures": 10,
+    "source_found": 1576,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 29944
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/kafka_build_PR-15417_14_JDK_8_and_Scala_2.12_Build_tfidf_specific_boosted_False.json",
+    "project": "kafka",
+    "sha": "fa6fab614455176fc71bf857b9c84251aabba44f",
+    "tests": 1581,
+    "failures": 4,
+    "source_found": 1575,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 29925
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/kafka_build_PR-15645_7_JDK_11_and_Scala_2.13_Build_tfidf_specific_boosted_False.json",
+    "project": "kafka",
+    "sha": "da85c020e47d72ba7227b5e5527dc8f042460b42",
+    "tests": 1582,
+    "failures": 3,
+    "source_found": 1576,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 4728
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/kafka_build_PR-15645_7_JDK_8_and_Scala_2.12_Build_tfidf_specific_boosted_False.json",
+    "project": "kafka",
+    "sha": "da85c020e47d72ba7227b5e5527dc8f042460b42",
+    "tests": 1580,
+    "failures": 2,
+    "source_found": 1574,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 4722
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/karaf_build_PR-1213_3_single_tfidf_specific_boosted_False.json",
+    "project": "karaf",
+    "sha": "a45cb03f411863a1b65757b6c66dfcbaff9117df",
+    "tests": 169,
+    "failures": 2,
+    "source_found": 167,
+    "tokens_available": 167,
+    "relevance_keys": {
+      "tfidf": 167
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/karaf_build_PR-1287_1_single_tfidf_specific_boosted_False.json",
+    "project": "karaf",
+    "sha": "49ca16ede41685e9d5a3ad2908d4172238dae873",
+    "tests": 212,
+    "failures": 4,
+    "source_found": 211,
+    "tokens_available": 211,
+    "relevance_keys": {
+      "tfidf": 1266
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/karaf_build_PR-1287_2_single_tfidf_specific_boosted_False.json",
+    "project": "karaf",
+    "sha": "ea949f8519cf1d32beb65b4f685033da18a3b317",
+    "tests": 211,
+    "failures": 3,
+    "source_found": 211,
+    "tokens_available": 211,
+    "relevance_keys": {
+      "tfidf": 1266
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/karaf_build_PR-1289_3_single_tfidf_specific_boosted_False.json",
+    "project": "karaf",
+    "sha": "01b621bf9f178fac2ded5c9ee7a41f79325c36d3",
+    "tests": 212,
+    "failures": 2,
+    "source_found": 212,
+    "tokens_available": 212,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/karaf_build_PR-1291_2_single_tfidf_specific_boosted_False.json",
+    "project": "karaf",
+    "sha": "cd6524107494d68673b2108a3fcd17db8b2c99e2",
+    "tests": 212,
+    "failures": 3,
+    "source_found": 212,
+    "tokens_available": 212,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/log4j_build_PR-392_11_Ubuntu_Test_tfidf_specific_boosted_False.json",
+    "project": "log4j",
+    "sha": "ad130bea985ed6d88ca91f3a0508b590505e52b0",
+    "tests": 619,
+    "failures": 15,
+    "source_found": 619,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1238
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/log4j_build_PR-392_11_Windows_Test_tfidf_specific_boosted_False.json",
+    "project": "log4j",
+    "sha": "ad130bea985ed6d88ca91f3a0508b590505e52b0",
+    "tests": 615,
+    "failures": 14,
+    "source_found": 615,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1230
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/log4j_build_PR-392_9_Ubuntu_Test_tfidf_specific_boosted_False.json",
+    "project": "log4j",
+    "sha": "fa63eb8199e44686c22f8b18d54b90780c2159c9",
+    "tests": 617,
+    "failures": 4,
+    "source_found": 617,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 1234
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/log4j_build_PR-446_1_Ubuntu_Test_tfidf_specific_boosted_False.json",
+    "project": "log4j",
+    "sha": "40accbe6edcf70f40a6c84b3eb4fc2962e88077b",
+    "tests": 619,
+    "failures": 4,
+    "source_found": 619,
+    "tokens_available": 0,
+    "relevance_keys": {}
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/log4j_build_PR-472_1_Ubuntu_Test_tfidf_specific_boosted_False.json",
+    "project": "log4j",
+    "sha": "fbe28ae45c6d89a8ac27cbf2475c8fb7fdd56d41",
+    "tests": 627,
+    "failures": 5,
+    "source_found": 627,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 627
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/tvm_build_PR-13721_4_tvm-arm_tfidf_specific_boosted_False.json",
+    "project": "tvm",
+    "sha": "3ccd4b1430be2a1cfef072e9070b8ecf88f12ad8",
+    "tests": 647,
+    "failures": 80,
+    "source_found": 646,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 7752
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/tvm_build_PR-13721_4_tvm-cpu_tfidf_specific_boosted_False.json",
+    "project": "tvm",
+    "sha": "3ccd4b1430be2a1cfef072e9070b8ecf88f12ad8",
+    "tests": 833,
+    "failures": 80,
+    "source_found": 832,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 9984
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/tvm_build_PR-14551_4_tvm-arm_tfidf_specific_boosted_False.json",
+    "project": "tvm",
+    "sha": "8c0d9bdb9b0f60046cabc351751230b90b3cd537",
+    "tests": 601,
+    "failures": 242,
+    "source_found": 599,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 21564
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/tvm_build_PR-14551_4_tvm-i386_tfidf_specific_boosted_False.json",
+    "project": "tvm",
+    "sha": "8c0d9bdb9b0f60046cabc351751230b90b3cd537",
+    "tests": 543,
+    "failures": 216,
+    "source_found": 542,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 19512
+    }
+  },
+  {
+    "member": "ML_TCSP/src/processed_builds/tvm_build_PR-14898_1_tvm-arm_tfidf_specific_boosted_False.json",
+    "project": "tvm",
+    "sha": "781abc172bff2f881cad524a95bef2b8ad7bff6b",
+    "tests": 694,
+    "failures": 140,
+    "source_found": 693,
+    "tokens_available": 0,
+    "relevance_keys": {
+      "tfidf": 693
+    }
+  }
+]

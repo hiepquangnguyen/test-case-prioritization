@@ -1,0 +1,112 @@
+{
+  "projects": {
+    "Chart": {
+      "methods_count": 2193,
+      "faults_count": 26,
+      "files": {
+        "bbox_txt": {
+          "path": "work/artifacts/falcon/input/Chart/Chart-bbox.txt",
+          "sha256": "aaaa23258f6bab7d0a00711009ef9e98ec2efc1e1235416d4d87f9fe86014cd3"
+        },
+        "mapping_json": {
+          "path": "work/artifacts/falcon/input/Chart/test_method_mapping.json",
+          "sha256": "9549ba79a1eb4e6ce1af5de4d471c623116ad21f805604e1008da5b83d1cae4c"
+        },
+        "fault_matrix_pickle": {
+          "path": "work/artifacts/falcon/input/Chart/fault_matrix.pickle",
+          "sha256": "a9fe60f52e4afdf7142c6ea78f6b43bfd1962c6768bdfbd246b55839e3bcd083"
+        }
+      }
+    },
+    "Mockito": {
+      "methods_count": 1292,
+      "faults_count": 27,
+      "files": {
+        "bbox_txt": {
+          "path": "work/artifacts/falcon/input/Mockito/Mockito-bbox.txt",
+          "sha256": "28a40e6b910a0e4a67918bd78d66b6bfd7230915e1759f8171322cf7f4e4b966"
+        },
+        "mapping_json": {
+          "path": "work/artifacts/falcon/input/Mockito/test_method_mapping.json",
+          "sha256": "2eb50d7502f7302d4f562b0039b60bbdb58e90205e94fb560cc0118784670c3f"
+        },
+        "fault_matrix_pickle": {
+          "path": "work/artifacts/falcon/input/Mockito/fault_matrix.pickle",
+          "sha256": "719b717ee73117cf79e1fac11e60a79b20e19948bf5a799e80983c40b865cf0d"
+        }
+      }
+    },
+    "Lang": {
+      "methods_count": 2239,
+      "faults_count": 32,
+      "files": {
+        "bbox_txt": {
+          "path": "work/artifacts/falcon/input/Lang/Lang-bbox.txt",
+          "sha256": "848551a5d32cee36dfc0b72f5b56e5cb9556bb1c22b4f9a614a3ec44af18460d"
+        },
+        "mapping_json": {
+          "path": "work/artifacts/falcon/input/Lang/test_method_mapping.json",
+          "sha256": "4bf9bef89837f9bcc587856e76b4eb9660ec054a50eec08de5654c24c402c990"
+        },
+        "fault_matrix_pickle": {
+          "path": "work/artifacts/falcon/input/Lang/fault_matrix.pickle",
+          "sha256": "548c8c4aa0a2c04ddbac30c7cd5baaaba4d19cc9c0e77716f814be05414b90b4"
+        }
+      }
+    },
+    "Math": {
+      "methods_count": 2996,
+      "faults_count": 30,
+      "files": {
+        "bbox_txt": {
+          "path": "work/artifacts/falcon/input/Math/Math-bbox.txt",
+          "sha256": "3b20d7ea33ea258755492df4b116a4cf4e50d483eb1653bd3a0f5381e5777c22"
+        },
+        "mapping_json": {
+          "path": "work/artifacts/falcon/input/Math/test_method_mapping.json",
+          "sha256": "0335a6c7cf820b90b54a763c1e9d7e4acc04e58a90415469b5387151367ac01e"
+        },
+        "fault_matrix_pickle": {
+          "path": "work/artifacts/falcon/input/Math/fault_matrix.pickle",
+          "sha256": "7c11b92c7047e3e872149f5582ddf992b1a4bb4d64f0d712f7ae6612e7a12da0"
+        }
+      }
+    },
+    "Time": {
+      "methods_count": 4044,
+      "faults_count": 26,
+      "files": {
+        "bbox_txt": {
+          "path": "work/artifacts/falcon/input/Time/Time-bbox.txt",
+          "sha256": "c6fbe4ce3e916ed0ea7b7767e2bee86f43a77a35e8908eae01346cd6c1f47b14"
+        },
+        "mapping_json": {
+          "path": "work/artifacts/falcon/input/Time/test_method_mapping.json",
+          "sha256": "1a2e5d0401692054195583ee691af006d0dc785c5cf310398e20870b23fd4e66"
+        },
+        "fault_matrix_pickle": {
+          "path": "work/artifacts/falcon/input/Time/fault_matrix.pickle",
+          "sha256": "6dff1bc06476962fa29f9ac070822140b323827d3a6323d443da3779f59924c2"
+        }
+      }
+    },
+    "Closure": {
+      "methods_count": 8006,
+      "faults_count": 147,
+      "files": {
+        "bbox_txt": {
+          "path": "work/artifacts/falcon/input/Closure/Closure-bbox.txt",
+          "sha256": "fcff009eaa1e04bce195ddcd4bbc54c65bdc91416c0dd634d589b83f909daf05"
+        },
+        "mapping_json": {
+          "path": "work/artifacts/falcon/input/Closure/test_method_mapping.json",
+          "sha256": "497db75d42fbfaedb994bd99f4b63e1a297f6a1f51343f6a05a211e3e25a90b7"
+        },
+        "fault_matrix_pickle": {
+          "path": "work/artifacts/falcon/input/Closure/fault_matrix.pickle",
+          "sha256": "786e37df8d1ab1aa345bb4b5e08482382c9befe3552dc843f34d3913bf5ad3d4"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "run_dir": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\stage10\\Chart",
+  "project": "Chart",
+  "tests": 2193,
+  "is_full_suite": true,
+  "embeddings": {
+    "shape": [
+      2193,
+      768
+    ],
+    "dtype": "float32",
+    "is_finite": true,
+    "sha256": "ef4c4387d004371bb4cdd9b96ba346637f6d5d739e149a671b169f6733e71c94"
+  },
+  "ranking": {
+    "length": 2193,
+    "is_valid_permutation": true,
+    "gains_valid": true
+  },
+  "evaluation": {
+    "faults_universe": 26,
+    "independent_apfd": 0.7322775263951734,
+    "author_apfd": 0.7263144971763303,
+    "delta_apfd": 0.005963029218843063,
+    "apfd_matches_result": true
+  },
+  "manifest_alignment": {
+    "manifest_path": "C:\\Users\\hiepq\\Projects\\tcp\\reports\\stage10\\input-manifest.json",
+    "expected_methods": 2193,
+    "actual_methods": 2193,
+    "methods_match": true,
+    "expected_faults": 26,
+    "actual_faults": 26,
+    "faults_match": true,
+    "file_hashes_ok": true,
+    "file_checks": {
+      "bbox_txt": {
+        "path": "work/artifacts/falcon/input/Chart/Chart-bbox.txt",
+        "expected_sha256": "aaaa23258f6bab7d0a00711009ef9e98ec2efc1e1235416d4d87f9fe86014cd3",
+        "actual_sha256": "aaaa23258f6bab7d0a00711009ef9e98ec2efc1e1235416d4d87f9fe86014cd3",
+        "match": true
+      },
+      "mapping_json": {
+        "path": "work/artifacts/falcon/input/Chart/test_method_mapping.json",
+        "expected_sha256": "9549ba79a1eb4e6ce1af5de4d471c623116ad21f805604e1008da5b83d1cae4c",
+        "actual_sha256": "9549ba79a1eb4e6ce1af5de4d471c623116ad21f805604e1008da5b83d1cae4c",
+        "match": true
+      },
+      "fault_matrix_pickle": {
+        "path": "work/artifacts/falcon/input/Chart/fault_matrix.pickle",
+        "expected_sha256": "a9fe60f52e4afdf7142c6ea78f6b43bfd1962c6768bdfbd246b55839e3bcd083",
+        "actual_sha256": "a9fe60f52e4afdf7142c6ea78f6b43bfd1962c6768bdfbd246b55839e3bcd083",
+        "match": true
+      }
+    },
+    "mapping_count": 2193,
+    "mapping_ok": true,
+    "manifest_ok": true
+  },
+  "operational_limits": {
+    "peak_rss_gib": 0.471,
+    "peak_rss_ok": true,
+    "wallclock_seconds": 28.9053,
+    "wallclock_ok": true
+  },
+  "overall_valid": true
+}

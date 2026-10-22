@@ -1,0 +1,2749 @@
+[
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-477",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0008083232330990398,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-477",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.010308427093799977,
+        "first_selected_semantic_share": 0.866056072845936,
+        "first_selected_failed": true,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.logging.log4j.message.LocalizedMessageFactoryTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.LoggerTest",
+            "position_shift": 33,
+            "completion_shift_seconds": 59.61099999999993,
+            "apfdc_delta": -0.008650603892285598,
+            "added_predecessor_seconds": 65.842,
+            "removed_predecessor_seconds": 6.231,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 16.006,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.566,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                "duration": 2.835,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.627,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.log4j.config.PropertiesReconfigurationTest",
+                "duration": 2.219,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.jeromq.appender.JeroMqAppenderTest",
+            "position_shift": 4,
+            "completion_shift_seconds": 12.580999999999989,
+            "apfdc_delta": -0.0018257242382923476,
+            "added_predecessor_seconds": 19.619,
+            "removed_predecessor_seconds": 7.038,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.566,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.627,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.log4j.config.PropertiesReconfigurationTest",
+                "duration": 2.219,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncAppenderTest",
+                "duration": 1.476,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextCopyOnWriteTest",
+                "duration": 1.445,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.kafka.builder.ConfigurationBuilderTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 1.203,
+            "apfdc_delta": -0.00017457644532753328,
+            "added_predecessor_seconds": 1.203,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerTest",
+                "duration": 1.131,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.072,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.message.LocalizedMessageFactoryTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.message.LocalizedMessageTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.xml.XmlSchemaTest",
+            "position_shift": -40,
+            "completion_shift_seconds": -2.360000000000042,
+            "apfdc_delta": 0.00034247748210555767,
+            "added_predecessor_seconds": 33.537,
+            "removed_predecessor_seconds": 35.897,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 16.006,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.566,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.627,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderH2FactoryMethodTest",
+                "duration": 2.189,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jackson.yaml.layout.YamlLayoutTest",
+                "duration": 1.28,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-477",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": 0.008691780627601897,
+        "first_selected_semantic_share": 0.9960737359557115,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.029,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.config.FileOutputTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 1.1059999999999999,
+            "apfdc_delta": -0.0005060863055608177,
+            "added_predecessor_seconds": 1.127,
+            "removed_predecessor_seconds": 0.021,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 1.091,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.029,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jpa.converter.ContextMapAttributeConverterTest",
+                "duration": 0.007,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.message.StringFormattedMessageTest",
+                "duration": 0.0,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.kafka.builder.ConfigurationBuilderTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 0.029000000000000012,
+            "apfdc_delta": -1.3269894087941878e-05,
+            "added_predecessor_seconds": 0.029,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.029,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.message.StringFormattedMessageTest",
+                "duration": 0.0,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.xml.XmlSchemaTest",
+            "position_shift": -49,
+            "completion_shift_seconds": -20.130000000000067,
+            "apfdc_delta": 0.009211136827250718,
+            "added_predecessor_seconds": 11.491,
+            "removed_predecessor_seconds": 31.621,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.721,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.26,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jackson.yaml.layout.YamlLayoutTest",
+                "duration": 0.984,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.mongodb4.MongoDb4CappedTest",
+                "duration": 0.962,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RolloverWithPaddingTest",
+                "duration": 0.813,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-475",
+      "build": "4"
+    },
+    "delta_apfdc": -0.0005413019019251397,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-475",
+          "build": "4",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.0005413019019251397,
+        "first_selected_semantic_share": 0.9974334141010124,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.047,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.LoggerTest",
+            "position_shift": -11,
+            "completion_shift_seconds": 0.573,
+            "apfdc_delta": -0.0005413019019251643,
+            "added_predecessor_seconds": 0.759,
+            "removed_predecessor_seconds": 0.186,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.712,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.047,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-479",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0012767432581808347,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-479",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.0012767432581808347,
+        "first_selected_semantic_share": 0.9974334141010124,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.047,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.EventLoggerTest",
+            "position_shift": 4,
+            "completion_shift_seconds": 0.9759999999999991,
+            "apfdc_delta": -0.0012767432581807705,
+            "added_predecessor_seconds": 0.986,
+            "removed_predecessor_seconds": 0.01,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.758,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldPropertiesTest",
+                "duration": 0.12,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.047,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.action.IfAnyTest",
+                "duration": 0.032,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.io.LoggerBufferedInputStreamTest",
+                "duration": 0.029,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-481",
+      "build": "1"
+    },
+    "delta_apfdc": -0.004965946172988844,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-481",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.0014688299245393388,
+        "first_selected_semantic_share": 0.859487322177766,
+        "first_selected_failed": true,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.logging.log4j.message.LocalizedMessageFactoryTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.config.xml.XmlSchemaTest",
+            "position_shift": -18,
+            "completion_shift_seconds": 4.404999999999994,
+            "apfdc_delta": -0.001453323409163491,
+            "added_predecessor_seconds": 8.961,
+            "removed_predecessor_seconds": 4.556,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.002,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerConfigThreadContextCopyOnWriteTest",
+                "duration": 0.868,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.web.Log4jShutdownOnContextDestroyedListenerTest",
+                "duration": 0.84,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.773,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerTest",
+                "duration": 0.76,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.kafka.builder.ConfigurationBuilderTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 0.047000000000000014,
+            "apfdc_delta": -1.550651537586474e-05,
+            "added_predecessor_seconds": 0.047,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.047,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.message.LocalizedMessageFactoryTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.message.LocalizedMessageTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-481",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.00846306242143835,
+        "first_selected_semantic_share": 0.9961644514030634,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.025,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingDirectTimeNewDirectoryTest",
+            "position_shift": 22,
+            "completion_shift_seconds": 17.575999999999986,
+            "apfdc_delta": -0.005838473333563645,
+            "added_predecessor_seconds": 19.505,
+            "removed_predecessor_seconds": 1.929,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.571,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.189,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.log4j.config.PropertiesReconfigurationTest",
+                "duration": 1.865,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncAppenderTest",
+                "duration": 1.092,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 1.045,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.xml.XmlSchemaTest",
+            "position_shift": -8,
+            "completion_shift_seconds": 6.552000000000007,
+            "apfdc_delta": -0.0021764723077781667,
+            "added_predecessor_seconds": 10.0,
+            "removed_predecessor_seconds": 3.448,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.jdbc.appender.JdbcAppenderColumnMappingLiteralTest",
+                "duration": 2.189,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncAppenderTest",
+                "duration": 1.092,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 1.045,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerConfigThreadContextCopyOnWriteTest",
+                "duration": 0.922,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.web.Log4jShutdownOnContextDestroyedListenerTest",
+                "duration": 0.912,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.FileOutputTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 1.3239999999999998,
+            "apfdc_delta": -0.0004398121696425961,
+            "added_predecessor_seconds": 1.3359999999999999,
+            "removed_predecessor_seconds": 0.012,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 1.045,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.message.StringFormattedMessageTest",
+                "duration": 0.258,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.025,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.jpa.converter.ContextMapAttributeConverterTest",
+                "duration": 0.008,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.kafka.builder.ConfigurationBuilderTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 0.024999999999999994,
+            "apfdc_delta": -8.304610453976516e-06,
+            "added_predecessor_seconds": 0.025,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.025,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-476",
+      "build": "2"
+    },
+    "delta_apfdc": -0.002344608963836703,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-476",
+          "build": "2",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.00132672411037138,
+        "first_selected_semantic_share": 0.997439805700894,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.047,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.OutputStreamManagerTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 3.625999999999987,
+            "apfdc_delta": -0.0015252700140159891,
+            "added_predecessor_seconds": 5.38,
+            "removed_predecessor_seconds": 1.754,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.772,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.745,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFilterTest",
+                "duration": 0.61,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 0.563,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                "duration": 0.369,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+            "position_shift": -32,
+            "completion_shift_seconds": -0.19499999999999998,
+            "apfdc_delta": 8.202637968370627e-05,
+            "added_predecessor_seconds": 0.047,
+            "removed_predecessor_seconds": 0.242,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.047,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.plugins.validation.validators.ValidatingPluginWithFailoverTest",
+            "position_shift": -32,
+            "completion_shift_seconds": -0.27699999999999836,
+            "apfdc_delta": 0.00011651952396095644,
+            "added_predecessor_seconds": 1.7189999999999999,
+            "removed_predecessor_seconds": 1.996,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.772,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 0.563,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.pattern.PatternParserTest",
+                "duration": 0.106,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.util.datetime.FastDateParser_MoreOrLessTest",
+                "duration": 0.09,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.RegexFilterTest",
+                "duration": 0.067,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-476",
+          "build": "2",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.003362493817302026,
+        "first_selected_semantic_share": 0.9969880579961788,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.034,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.OutputStreamManagerTest",
+            "position_shift": 5,
+            "completion_shift_seconds": 6.9580000000000055,
+            "apfdc_delta": -0.0034553584375701476,
+            "added_predecessor_seconds": 8.31,
+            "removed_predecessor_seconds": 1.3519999999999999,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeDirectTest",
+                "duration": 1.806,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 1.478,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.8,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                "duration": 0.589,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.web.Log4jShutdownOnContextDestroyedListenerTest",
+                "duration": 0.568,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.plugins.validation.validators.ValidatingPluginWithFailoverTest",
+            "position_shift": -45,
+            "completion_shift_seconds": -0.07599999999999696,
+            "apfdc_delta": 3.774177080415644e-05,
+            "added_predecessor_seconds": 2.943,
+            "removed_predecessor_seconds": 3.019,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeDirectTest",
+                "duration": 1.806,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.8,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.pattern.PatternParserTest",
+                "duration": 0.115,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.mongodb4.MongoDb4TestTestRuleTest",
+                "duration": 0.099,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.util.datetime.FastDateParser_MoreOrLessTest",
+                "duration": 0.066,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+            "position_shift": -18,
+            "completion_shift_seconds": -0.11099999999999999,
+            "apfdc_delta": 5.512284946396752e-05,
+            "added_predecessor_seconds": 0.034,
+            "removed_predecessor_seconds": 0.145,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.034,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-484",
+      "build": "2"
+    },
+    "delta_apfdc": -0.0011148830326725978,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-484",
+          "build": "2",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.0011148830326725978,
+        "first_selected_semantic_share": 0.9974532830751779,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.046,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.EventLoggerTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 0.9349999999999987,
+            "apfdc_delta": -0.0011148830326726295,
+            "added_predecessor_seconds": 0.954,
+            "removed_predecessor_seconds": 0.019,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.766,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.LoggerTest",
+                "duration": 0.125,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.046,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.LogManagerTest",
+                "duration": 0.011,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverterTest",
+                "duration": 0.006,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-484",
+      "build": "4"
+    },
+    "delta_apfdc": -0.001171090236883554,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-484",
+          "build": "4",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.001171090236883554,
+        "first_selected_semantic_share": 0.9974444882796045,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.047,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.AbstractLoggerTest",
+            "position_shift": 8,
+            "completion_shift_seconds": 0.9489999999999996,
+            "apfdc_delta": -0.0011710902368835421,
+            "added_predecessor_seconds": 0.949,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.734,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.LoggerTest",
+                "duration": 0.128,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.047,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.util.ProviderUtilTest",
+                "duration": 0.031,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverterTest",
+                "duration": 0.007,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-489",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0010352541534337512,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-489",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.0010352541534337512,
+        "first_selected_semantic_share": 0.9974561553387743,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.071,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.LoggerTest",
+            "position_shift": -19,
+            "completion_shift_seconds": 1.0630000000000002,
+            "apfdc_delta": -0.0010352541534338203,
+            "added_predecessor_seconds": 1.177,
+            "removed_predecessor_seconds": 0.114,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 1.106,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.071,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-489",
+      "build": "4"
+    },
+    "delta_apfdc": -0.009470507207709145,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-489",
+          "build": "4",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.009470507207709145,
+        "first_selected_semantic_share": 0.9974419479867915,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.08,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest",
+            "position_shift": 13,
+            "completion_shift_seconds": 14.5,
+            "apfdc_delta": -0.009470507207709124,
+            "added_predecessor_seconds": 15.241,
+            "removed_predecessor_seconds": 0.741,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.311,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 1.56,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 1.426,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingRandomAppenderDirectWriteTest",
+                "duration": 1.263,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                "duration": 1.06,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-495",
+      "build": "1"
+    },
+    "delta_apfdc": -0.00010415396496366025,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-495",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.00010415396496366025,
+        "first_selected_semantic_share": 0.9974363136163947,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.052,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.AbstractLoggerTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 0.082,
+            "apfdc_delta": -0.00010415396496362232,
+            "added_predecessor_seconds": 0.082,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.052,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+                "duration": 0.029,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.message.MessageFormatMessageTest",
+                "duration": 0.001,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-544",
+      "build": "1"
+    },
+    "delta_apfdc": -0.04020901084132006,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-544",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.02373415523769573,
+        "first_selected_semantic_share": 0.9974611515859393,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.025,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+            "position_shift": 6,
+            "completion_shift_seconds": 116.14099999999996,
+            "apfdc_delta": -0.02016465635304479,
+            "added_predecessor_seconds": 141.608,
+            "removed_predecessor_seconds": 25.467,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.FileAppenderPermissionsTest",
+                "duration": 23.961,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutingAppenderWithPurgingTest",
+                "duration": 23.576,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.FilterPerformanceComparison",
+                "duration": 18.577,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.FileAppenderTest",
+                "duration": 16.56,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 11.283,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+            "position_shift": -12,
+            "completion_shift_seconds": 13.876999999999867,
+            "apfdc_delta": -0.002409355319923194,
+            "added_predecessor_seconds": 46.916,
+            "removed_predecessor_seconds": 33.039,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 11.283,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 3.432,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.osgi.tests.equinox.EquinoxLoadApiBundleTest",
+                "duration": 3.296,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.util.TruncatingBufferedWriterTest",
+                "duration": 2.199,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderColumnMappingPatternTest",
+                "duration": 2.168,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+            "position_shift": 33,
+            "completion_shift_seconds": 6.681999999999988,
+            "apfdc_delta": -0.0011601435647277444,
+            "added_predecessor_seconds": 7.441,
+            "removed_predecessor_seconds": 0.759,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.753,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.69,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.layout.Rfc5424LayoutTest",
+                "duration": 0.606,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                "duration": 0.586,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.SimplePerfTest",
+                "duration": 0.544,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.flume.appender.FlumePersistentAppenderTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 2.2737367544323206e-13,
+            "apfdc_delta": -3.9477118580359305e-17,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-544",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.056683866444944386,
+        "first_selected_semantic_share": 0.9970838365091345,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.035,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+            "position_shift": 3,
+            "completion_shift_seconds": 79.40399999999988,
+            "apfdc_delta": -0.04045412305585438,
+            "added_predecessor_seconds": 109.20700000000001,
+            "removed_predecessor_seconds": 29.803,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutingAppenderWithPurgingTest",
+                "duration": 23.751,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.FileAppenderTest",
+                "duration": 15.792,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.FilterPerformanceComparison",
+                "duration": 15.659,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderCronOnceADayTest",
+                "duration": 14.553,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeAppenderTest",
+                "duration": 10.429,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+            "position_shift": -9,
+            "completion_shift_seconds": 25.865999999999957,
+            "apfdc_delta": -0.013178005477844038,
+            "added_predecessor_seconds": 49.719,
+            "removed_predecessor_seconds": 23.853,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 6.018,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.net.SocketReconnectTest",
+                "duration": 3.98,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 3.501,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.301,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.plugins.convert.TypeConvertersTest",
+                "duration": 2.498,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+            "position_shift": 23,
+            "completion_shift_seconds": 5.989999999999998,
+            "apfdc_delta": -0.0030517379112458822,
+            "added_predecessor_seconds": 6.171,
+            "removed_predecessor_seconds": 0.181,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeDirectTest",
+                "duration": 1.84,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.691,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                "duration": 0.603,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.plugins.validation.validators.ValidatingPluginWithGenericBuilderTest",
+                "duration": 0.307,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                "duration": 0.269,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-544",
+      "build": "2"
+    },
+    "delta_apfdc": -0.02880902408684821,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-544",
+          "build": "2",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.029608006490429273,
+        "first_selected_semantic_share": 0.9974229980936481,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.024,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+            "position_shift": 15,
+            "completion_shift_seconds": 55.31299999999993,
+            "apfdc_delta": -0.024113723761780986,
+            "added_predecessor_seconds": 61.509,
+            "removed_predecessor_seconds": 6.196,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 6.923,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.BurstFilterTest",
+                "duration": 6.886,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutTest",
+                "duration": 5.78,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.util.WatchHttpTest",
+                "duration": 5.195,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 3.38,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+            "position_shift": 24,
+            "completion_shift_seconds": 12.018000000000008,
+            "apfdc_delta": -0.005239251752193597,
+            "added_predecessor_seconds": 13.287,
+            "removed_predecessor_seconds": 1.269,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 2.099,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 1.354,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                "duration": 1.069,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.web.Log4jShutdownOnContextDestroyedListenerTest",
+                "duration": 0.732,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.689,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+            "position_shift": -8,
+            "completion_shift_seconds": 0.5849999999999991,
+            "apfdc_delta": -0.0002550309764547551,
+            "added_predecessor_seconds": 0.674,
+            "removed_predecessor_seconds": 0.089,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.65,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.024,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-544",
+          "build": "2",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.02801004168326715,
+        "first_selected_semantic_share": 0.9970975855507993,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.042,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+            "position_shift": 12,
+            "completion_shift_seconds": 50.85699999999997,
+            "apfdc_delta": -0.021787111173943018,
+            "added_predecessor_seconds": 57.674,
+            "removed_predecessor_seconds": 6.817,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.BurstFilterTest",
+                "duration": 6.939,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 6.191,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.spi.LoggerAdapterTest",
+                "duration": 4.032,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.net.SocketReconnectTest",
+                "duration": 3.977,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 3.587,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+            "position_shift": 25,
+            "completion_shift_seconds": 14.237999999999985,
+            "apfdc_delta": -0.006099551465768733,
+            "added_predecessor_seconds": 15.530000000000001,
+            "removed_predecessor_seconds": 1.292,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.333,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeDirectTest",
+                "duration": 1.818,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 1.204,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                "duration": 0.999,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                "duration": 0.786,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+            "position_shift": -4,
+            "completion_shift_seconds": 0.2879999999999996,
+            "apfdc_delta": -0.0001233790435553726,
+            "added_predecessor_seconds": 0.552,
+            "removed_predecessor_seconds": 0.264,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.spring.boot.SpringProfileTest",
+                "duration": 0.246,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                "duration": 0.141,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.log4j.CategoryTest",
+                "duration": 0.05,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.042,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.action.IfAnyTest",
+                "duration": 0.032,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-576",
+      "build": "1"
+    },
+    "delta_apfdc": -0.05733247418894105,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-576",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.034044437349873835,
+        "first_selected_semantic_share": 0.9973215788009442,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.057,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.LoggerSupplierTest",
+            "position_shift": 23,
+            "completion_shift_seconds": 35.830000000000055,
+            "apfdc_delta": -0.034044437349873856,
+            "added_predecessor_seconds": 38.006,
+            "removed_predecessor_seconds": 2.176,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 11.44,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 3.291,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.resolver.MessageResolverTest",
+                "duration": 3.235,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 1.956,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                "duration": 1.439,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-576",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.08062051102800827,
+        "first_selected_semantic_share": 0.9970071486940899,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.028,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+            "position_shift": 19,
+            "completion_shift_seconds": 55.12499999999994,
+            "apfdc_delta": -0.08062051102800832,
+            "added_predecessor_seconds": 64.048,
+            "removed_predecessor_seconds": 8.923,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 11.003,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                "duration": 7.599,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                "duration": 6.418,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.plugins.util.ResolverUtilTest",
+                "duration": 5.882,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.net.SocketReconnectTest",
+                "duration": 3.958,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-579",
+      "build": "2"
+    },
+    "delta_apfdc": -0.002369744003708374,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-579",
+          "build": "2",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.002369744003708374,
+        "first_selected_semantic_share": 0.9972985161116866,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.034,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.EventLoggerTest",
+            "position_shift": 5,
+            "completion_shift_seconds": 1.7789999999999997,
+            "apfdc_delta": -0.002369744003708469,
+            "added_predecessor_seconds": 1.779,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.LoggerTest",
+                "duration": 0.991,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.738,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.034,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverterTest",
+                "duration": 0.014,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.message.MessageFormatMessageTest",
+                "duration": 0.002,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-573",
+      "build": "8"
+    },
+    "delta_apfdc": 0.0010151020807864786,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-573",
+          "build": "8",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": 0.0019561781106367526,
+        "first_selected_semantic_share": 0.9972771499770735,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.033,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.pattern.RegexReplacementTest",
+            "position_shift": 16,
+            "completion_shift_seconds": 2.2540000000000013,
+            "apfdc_delta": -0.0016433937612281566,
+            "added_predecessor_seconds": 2.34,
+            "removed_predecessor_seconds": 0.086,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.741,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 0.581,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                "duration": 0.123,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.util.datetime.FastDateParser_MoreOrLessTest",
+                "duration": 0.098,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerContextSelectorInitialStateTest",
+                "duration": 0.088,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.pattern.PatternParserTest",
+            "position_shift": -43,
+            "completion_shift_seconds": -4.936999999999994,
+            "apfdc_delta": 0.0035995718718648613,
+            "added_predecessor_seconds": 2.463,
+            "removed_predecessor_seconds": 7.4,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.741,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                "duration": 0.596,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 0.581,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                "duration": 0.414,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.RandomAccessFileManagerTest",
+                "duration": 0.131,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-573",
+          "build": "8",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": 7.402605093620451e-05,
+        "first_selected_semantic_share": 0.9969894295789342,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.043,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.pattern.RegexReplacementTest",
+            "position_shift": 22,
+            "completion_shift_seconds": 4.643999999999999,
+            "apfdc_delta": -0.0036187050583948643,
+            "added_predecessor_seconds": 4.763,
+            "removed_predecessor_seconds": 0.119,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldTest",
+                "duration": 1.231,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.803,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 0.542,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerEventTranslationExceptionTest",
+                "duration": 0.54,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                "duration": 0.349,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.pattern.PatternParserTest",
+            "position_shift": -46,
+            "completion_shift_seconds": -4.739000000000006,
+            "apfdc_delta": 0.003692731109331025,
+            "added_predecessor_seconds": 2.532,
+            "removed_predecessor_seconds": 7.271,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.803,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                "duration": 0.628,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 0.542,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                "duration": 0.349,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.impl.Log4jLogEventTest",
+                "duration": 0.21,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-590",
+      "build": "1"
+    },
+    "delta_apfdc": -0.00021598163653813174,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-590",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.00021598163653813174,
+        "first_selected_semantic_share": 0.9972188801539866,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.033,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.AbstractLoggerTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 0.172,
+            "apfdc_delta": -0.00021598163653806552,
+            "added_predecessor_seconds": 0.172,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.message.MessageFormatMessageTest",
+                "duration": 0.104,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+                "duration": 0.035,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.033,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-591",
+      "build": "1"
+    },
+    "delta_apfdc": 0.14351199008627902,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-591",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": 0.14351199008627902,
+        "first_selected_semantic_share": 0.9969955552696017,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.027,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.net.SocketAppenderReconnectTest",
+            "position_shift": -6,
+            "completion_shift_seconds": -73.88600000000002,
+            "apfdc_delta": 0.14351199008627905,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 73.886,
+            "largest_added_predecessors": [],
+            "history_group": "N0",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-591",
+      "build": "2"
+    },
+    "delta_apfdc": -0.010535796636902295,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-591",
+          "build": "2",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.010535796636902295,
+        "first_selected_semantic_share": 0.9969967258793504,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.139,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest",
+            "position_shift": 8,
+            "completion_shift_seconds": 26.00899999999993,
+            "apfdc_delta": -0.009880134657623609,
+            "added_predecessor_seconds": 33.352,
+            "removed_predecessor_seconds": 7.343,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.resolver.MessageResolverTest",
+                "duration": 6.176,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                "duration": 6.068,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 3.266,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 2.38,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerConfigThreadContextCopyOnWriteTest",
+                "duration": 2.29,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.logging.log4j.core.net.SocketAppenderReconnectTest",
+            "position_shift": -22,
+            "completion_shift_seconds": 1.7259999999999849,
+            "apfdc_delta": -0.0006556619792786445,
+            "added_predecessor_seconds": 4.608,
+            "removed_predecessor_seconds": 2.882,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 2.38,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 1.503,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                "duration": 0.373,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.mongodb4.MongoDb4TestTestRuleTest",
+                "duration": 0.352,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-593",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0008696301019542885,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-593",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.0008696301019542885,
+        "first_selected_semantic_share": 0.9970134964793385,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.039,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.net.SocketAppenderReconnectTest",
+            "position_shift": -4,
+            "completion_shift_seconds": 0.6409999999999991,
+            "apfdc_delta": -0.0008696301019542924,
+            "added_predecessor_seconds": 0.764,
+            "removed_predecessor_seconds": 0.123,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.703,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.039,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.LogEventFactoryTest",
+                "duration": 0.022,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-594",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0012467766100981992,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-594",
+          "build": "1",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.0012467766100981992,
+        "first_selected_semantic_share": 0.9970245564193485,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.054,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.net.SocketAppenderReconnectTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 0.9370000000000003,
+            "apfdc_delta": -0.0012467766100982256,
+            "added_predecessor_seconds": 0.9660000000000001,
+            "removed_predecessor_seconds": 0.029,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 0.788,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+                "duration": 0.098,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.054,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jpa.converter.ContextMapAttributeConverterTest",
+                "duration": 0.014,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.PoolableConnectionFactoryTest",
+                "duration": 0.012,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-597",
+      "build": "1"
+    },
+    "delta_apfdc": 0.18310181140427528,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-597",
+          "build": "1",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": 0.18310181140427528,
+        "first_selected_semantic_share": 0.9971575664194354,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.036,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.HttpAppenderTest",
+            "position_shift": -72,
+            "completion_shift_seconds": -125.74700000000004,
+            "apfdc_delta": 0.1831018114042752,
+            "added_predecessor_seconds": 9.574,
+            "removed_predecessor_seconds": 135.321,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 7.641,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 1.933,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-608",
+      "build": "2"
+    },
+    "delta_apfdc": 0.06685756767612677,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-608",
+          "build": "2",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": 0.06866775156838512,
+        "first_selected_semantic_share": 0.9970136744922589,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.035,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+            "position_shift": -50,
+            "completion_shift_seconds": -46.28899999999993,
+            "apfdc_delta": 0.06866775156838505,
+            "added_predecessor_seconds": 16.598,
+            "removed_predecessor_seconds": 62.887,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 6.529,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                "duration": 2.411,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderColumnMappingPatternTest",
+                "duration": 2.207,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 1.871,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                "duration": 1.84,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-608",
+          "build": "2",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": 0.06504738378386843,
+        "first_selected_semantic_share": 0.9969384756664047,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.036,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+            "position_shift": -62,
+            "completion_shift_seconds": -49.873000000000104,
+            "apfdc_delta": 0.06504738378386853,
+            "added_predecessor_seconds": 19.135,
+            "removed_predecessor_seconds": 69.008,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 6.618,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                "duration": 3.288,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderColumnMappingPatternTest",
+                "duration": 2.196,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                "duration": 2.062,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                "duration": 1.903,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-608",
+      "build": "3"
+    },
+    "delta_apfdc": -0.03368231413617373,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-608",
+          "build": "3",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.024584147448077354,
+        "first_selected_semantic_share": 0.9970004858843639,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.033,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 16.445000000000014,
+            "apfdc_delta": -0.024584147448077295,
+            "added_predecessor_seconds": 22.912,
+            "removed_predecessor_seconds": 6.467,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 7.154,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                "duration": 2.428,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 1.449,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                "duration": 1.156,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldTest",
+                "duration": 1.156,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-608",
+          "build": "3",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.042780480824270106,
+        "first_selected_semantic_share": 0.9969292109463656,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.121,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 53.81099999999995,
+            "apfdc_delta": -0.04278048082427013,
+            "added_predecessor_seconds": 72.904,
+            "removed_predecessor_seconds": 19.093,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                "duration": 25.209,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                "duration": 6.288,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldTest",
+                "duration": 4.107,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                "duration": 3.259,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.spring.cloud.config.service.ConfigServiceApplicationTest",
+                "duration": 3.175,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-598",
+      "build": "4"
+    },
+    "delta_apfdc": -0.0020878517389297246,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-598",
+          "build": "4",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -0.000737209538204997,
+        "first_selected_semantic_share": 0.9969723733443019,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.034,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.EventLoggerTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 0.5960000000000001,
+            "apfdc_delta": -0.0007372095382050185,
+            "added_predecessor_seconds": 0.5960000000000001,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.LoggerTest",
+                "duration": 0.527,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+                "duration": 0.035,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.034,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      },
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-598",
+          "build": "4",
+          "stage": "Windows_Test"
+        },
+        "delta_apfdc": -0.0034384939396544523,
+        "first_selected_semantic_share": 0.996947069914278,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.13,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest",
+            "position_shift": -4,
+            "completion_shift_seconds": 5.399999999999977,
+            "apfdc_delta": -0.003438493939654417,
+            "added_predecessor_seconds": 8.05,
+            "removed_predecessor_seconds": 2.65,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                "duration": 2.488,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                "duration": 1.678,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                "duration": 1.551,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.mongodb4.MongoDb4TestTestRuleTest",
+                "duration": 0.421,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                "duration": 0.378,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "log4j",
+      "pr": "PR-647",
+      "build": "2"
+    },
+    "delta_apfdc": -8.792798948886738e-05,
+    "stages": [
+      {
+        "key": {
+          "project": "log4j",
+          "pr": "PR-647",
+          "build": "2",
+          "stage": "Ubuntu_Test"
+        },
+        "delta_apfdc": -8.792798948886738e-05,
+        "first_selected_semantic_share": 0.9970798984140875,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.034,
+        "first_selected": "org.apache.logging.slf4j.OptionalTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.logging.log4j.EventLoggerTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 0.06999999999999995,
+            "apfdc_delta": -8.792798948883685e-05,
+            "added_predecessor_seconds": 0.07,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+                "duration": 0.036,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.logging.slf4j.OptionalTest",
+                "duration": 0.034,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  }
+]

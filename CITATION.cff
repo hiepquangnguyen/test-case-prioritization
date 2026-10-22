@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it as below."
+title: "HC-FALCON: Test Case Prioritization via Submodular Optimization combining Semantic Facility Location, Failure History, and Execution Cost"
+version: 0.1.1
+date-released: 2026-10-14
+license: GPL-3.0-or-later
+authors:
+  - family-names: "Nguyen"
+    given-names: "Hiep Quang"
+    email: "hiepquangnguyen.me@gmail.com"
+repository-code: "https://github.com/hiepquangnguyen/test-case-prioritization"

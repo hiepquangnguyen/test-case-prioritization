@@ -1,0 +1,14 @@
+{
+  "project": "log4j",
+  "builds": 264,
+  "counts": {
+    "matched": 163403,
+    "ambiguous": 2716,
+    "missing": 32
+  },
+  "matched_fraction": 0.983460827801217,
+  "reserved_opened": false,
+  "requested_commits": 215,
+  "missing_commits": 0,
+  "provenance": "Declared metadata revision only; not independently verified CI execution revision"
+}

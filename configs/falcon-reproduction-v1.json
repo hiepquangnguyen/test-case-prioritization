@@ -1,0 +1,47 @@
+{
+  "config_name": "falcon-reproduction-v1",
+  "version": 1,
+  "created_at": "2026-09-15T04:45:00Z",
+  "contract": "docs/10-handoff/README.md",
+  "model": {
+    "name": "microsoft/unixcoder-base",
+    "revision": "5604afdc964f6c53782a6813140ade5216b99006",
+    "local_cache_path": "work/cache/huggingface/hub",
+    "offline_mode": true
+  },
+  "tokenizer": {
+    "name": "microsoft/unixcoder-base",
+    "revision": "5604afdc964f6c53782a6813140ade5216b99006",
+    "max_length": 512,
+    "padding": true,
+    "truncation": true
+  },
+  "runtime": {
+    "device": "cpu",
+    "torch_threads": 4,
+    "seed": 0,
+    "float_precision": "float32",
+    "batch_size": 16,
+    "pooling": "upstream_unmasked_mean_last_hidden_state"
+  },
+  "kernel": {
+    "metric": "cosine",
+    "clip_negative": false,
+    "allow_negative_similarity": true
+  },
+  "ranker": {
+    "algorithm": "lazy_greedy",
+    "lazy_tolerance": 1e-6,
+    "tie_breaker": "smallest_input_index",
+    "budget": "full_permutation"
+  },
+  "evaluation": {
+    "apfd_granularity": "fault_ids",
+    "allow_subset_full_apfd": false
+  },
+  "operational_limits": {
+    "peak_rss_gib": 8.0,
+    "max_wallclock_hours_per_project": 8.0,
+    "max_concurrent_workers": 1
+  }
+}

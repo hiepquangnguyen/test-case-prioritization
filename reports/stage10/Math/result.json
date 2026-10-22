@@ -1,0 +1,31 @@
+{
+  "project": "Math",
+  "config_name": "falcon-reproduction-v1",
+  "timestamp": "2026-10-14T11:28:18Z",
+  "python": "3.13.11",
+  "device": "cpu",
+  "threads": 4,
+  "tests": 2996,
+  "full_suite": true,
+  "embedding_shape": [
+    2996,
+    768
+  ],
+  "embedding_sha256": "49036faa31f2fddc3757321e5894ac6eb0850b5030c7aa13c74defd505c5eebb",
+  "model": {
+    "name": "microsoft/unixcoder-base",
+    "revision": "5604afdc964f6c53782a6813140ade5216b99006"
+  },
+  "model_load_seconds": 0.6153,
+  "embedding_cache_hit": false,
+  "embedding_seconds": 1282.7307,
+  "similarity_seconds": 0.1267,
+  "ranking_seconds": 71.5391,
+  "total_wallclock_seconds": 1355.0118,
+  "similarity_min": -0.099787,
+  "negative_similarities": 482,
+  "valid_permutation": true,
+  "peak_rss_mib": 1214.59,
+  "peak_rss_gib": 1.186,
+  "apfd": 0.635580774365821
+}

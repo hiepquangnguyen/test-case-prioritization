@@ -1,0 +1,58 @@
+{
+  "status": "implementation_verified_for_development_pilot",
+  "unit_tests": 143,
+  "reserved_opened": false,
+  "effectiveness_evaluated": false,
+  "projects": {
+    "karaf": {
+      "build_stages": 563,
+      "source_counts": {
+        "matched": 119761,
+        "missing": 43,
+        "ambiguous": 556
+      },
+      "source_fraction": 0.9950232635427052,
+      "diff_available": 563,
+      "diff_total": 563,
+      "smoke_size": 16,
+      "dante_smoke_available": true
+    },
+    "activemq": {
+      "build_stages": 223,
+      "source_counts": {
+        "matched": 170412,
+        "ambiguous": 1288,
+        "missing": 2839
+      },
+      "source_fraction": 0.976354854788901,
+      "diff_available": 219,
+      "diff_total": 223,
+      "smoke_size": 16,
+      "dante_smoke_available": true
+    },
+    "log4j": {
+      "build_stages": 264,
+      "source_counts": {
+        "matched": 163403,
+        "ambiguous": 2716,
+        "missing": 32
+      },
+      "source_fraction": 0.983460827801217,
+      "diff_available": 264,
+      "diff_total": 264,
+      "smoke_size": 16,
+      "dante_smoke_available": true
+    }
+  },
+  "suite_scale": {
+    "n": 1025,
+    "dimension": 32,
+    "synthetic": true,
+    "full_trace_equal": true,
+    "standard_seconds": 6.262351299999864,
+    "lazy_seconds": 0.17672370000036608,
+    "kernel_bytes": 4202500
+  },
+  "fast_comparisons": 60,
+  "python": "3.13.11"
+}

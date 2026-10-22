@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-14T09:15:16.325491+00:00",
+  "stage": "stage7-diagnosis",
+  "files_sha256": {
+    "docs/07-diagnosis/diagnosis-and-proposal.md": "e856b7cdd5032cf887b211281a56aef6d8097b23452028260ac13ba674543e20",
+    "reports/stage7/activemq/physical-diagnosis.json": "3f19977a54a102a56b5833e59bd62ce0a7bcabe007a4cdf3bf8a306975bbeca3",
+    "reports/stage7/diagnosis.json": "e0ee342279b6c448647acaa375852b430c55f3f14fb811a8eda5029159ad6c74",
+    "reports/stage7/karaf/physical-diagnosis.json": "97b9d1e74cabb7e8b4f388aadb7c6e6762a84070ca0d77d2fd522a7c65f13f0f",
+    "reports/stage7/log4j/physical-diagnosis.json": "601855f995691b378baa33c91e87d9ec1f059ca2d4ccd47636589d9ff3f1e289",
+    "scripts/stage7_diagnosis.py": "6a83562d44836d8c71e539cc3eeee7e280c90b37564072581657b1f4980b9815",
+    "scripts/stage7_report.py": "58ab46c885caa5d0cafe6934bf52b4dd7aa1fef6b5efe8f23bdb823dd01378e4",
+    "tests/test_stage7.py": "ef3295c1f699ed711f1c9a0b27bf6ce454a4a1b7df51f59def12d2d3bfc6ab98"
+  }
+}

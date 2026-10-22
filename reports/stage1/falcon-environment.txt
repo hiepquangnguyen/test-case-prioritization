@@ -1,0 +1,12 @@
+# FALCON environment lock specification
+torch>=2.14
+transformers>=5.17
+safetensors>=0.8
+tokenizers>=0.23
+sentence-transformers>=6.0
+xxhash>=4.0
+huggingface_hub>=1.31
+numpy>=2.5
+scipy>=1.18
+scikit-learn>=1.9
+pandas>=3.0

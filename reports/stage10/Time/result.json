@@ -1,0 +1,31 @@
+{
+  "project": "Time",
+  "config_name": "falcon-reproduction-v1",
+  "timestamp": "2026-10-14T11:50:31Z",
+  "python": "3.13.11",
+  "device": "cpu",
+  "threads": 4,
+  "tests": 4044,
+  "full_suite": true,
+  "embedding_shape": [
+    4044,
+    768
+  ],
+  "embedding_sha256": "85d465c33bb0365538dca57130439a771647b5927df129ed3f946041606a9a38",
+  "model": {
+    "name": "microsoft/unixcoder-base",
+    "revision": "5604afdc964f6c53782a6813140ade5216b99006"
+  },
+  "model_load_seconds": 0.6192,
+  "embedding_cache_hit": false,
+  "embedding_seconds": 1132.121,
+  "similarity_seconds": 0.2264,
+  "ranking_seconds": 186.6784,
+  "total_wallclock_seconds": 1319.6451,
+  "similarity_min": -0.136602,
+  "negative_similarities": 6786,
+  "valid_permutation": true,
+  "peak_rss_mib": 1164.3,
+  "peak_rss_gib": 1.137,
+  "apfd": 0.7989328920337821
+}

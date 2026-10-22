@@ -1,0 +1,67 @@
+{
+  "run_dir": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\stage10\\Closure",
+  "project": "Closure",
+  "tests": 8006,
+  "is_full_suite": true,
+  "embeddings": {
+    "shape": [
+      8006,
+      768
+    ],
+    "dtype": "float32",
+    "is_finite": true,
+    "sha256": "4009c06a9c69a0ddba60c7f64b9cfb18f5d4ea83ef81fd49e37e06befbc85cac"
+  },
+  "ranking": {
+    "length": 8006,
+    "is_valid_permutation": true,
+    "gains_valid": true
+  },
+  "evaluation": {
+    "faults_universe": 147,
+    "independent_apfd": 0.6985555901101385,
+    "author_apfd": 0.7001997651421298,
+    "delta_apfd": -0.001644175031991324,
+    "apfd_matches_result": true
+  },
+  "manifest_alignment": {
+    "manifest_path": "C:\\Users\\hiepq\\Projects\\tcp\\reports\\stage10\\input-manifest.json",
+    "expected_methods": 8006,
+    "actual_methods": 8006,
+    "methods_match": true,
+    "expected_faults": 147,
+    "actual_faults": 147,
+    "faults_match": true,
+    "file_hashes_ok": true,
+    "file_checks": {
+      "bbox_txt": {
+        "path": "work/artifacts/falcon/input/Closure/Closure-bbox.txt",
+        "expected_sha256": "fcff009eaa1e04bce195ddcd4bbc54c65bdc91416c0dd634d589b83f909daf05",
+        "actual_sha256": "fcff009eaa1e04bce195ddcd4bbc54c65bdc91416c0dd634d589b83f909daf05",
+        "match": true
+      },
+      "mapping_json": {
+        "path": "work/artifacts/falcon/input/Closure/test_method_mapping.json",
+        "expected_sha256": "497db75d42fbfaedb994bd99f4b63e1a297f6a1f51343f6a05a211e3e25a90b7",
+        "actual_sha256": "497db75d42fbfaedb994bd99f4b63e1a297f6a1f51343f6a05a211e3e25a90b7",
+        "match": true
+      },
+      "fault_matrix_pickle": {
+        "path": "work/artifacts/falcon/input/Closure/fault_matrix.pickle",
+        "expected_sha256": "786e37df8d1ab1aa345bb4b5e08482382c9befe3552dc843f34d3913bf5ad3d4",
+        "actual_sha256": "786e37df8d1ab1aa345bb4b5e08482382c9befe3552dc843f34d3913bf5ad3d4",
+        "match": true
+      }
+    },
+    "mapping_count": 8006,
+    "mapping_ok": true,
+    "manifest_ok": true
+  },
+  "operational_limits": {
+    "peak_rss_gib": 1.651,
+    "peak_rss_ok": true,
+    "wallclock_seconds": 3323.6494,
+    "wallclock_ok": true
+  },
+  "overall_valid": true
+}

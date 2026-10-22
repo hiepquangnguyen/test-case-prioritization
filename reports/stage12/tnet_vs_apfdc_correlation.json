@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "analysis": "Correlation between per-build T_net and per-build Delta APFDc vs history_cost",
+    "split": "development_screening",
+    "sample_size": 161,
+    "note": "Exploratory diagnostic metric. Negative correlation means higher delay (larger positive T_net) correlates with lower APFDc (negative Delta APFDc)."
+  },
+  "correlations": {
+    "hc_falcon_normalized_v1": {
+      "projects": {
+        "karaf": {
+          "t_net": {
+            "n": 79,
+            "spearman": {
+              "rho": -0.8724683544303798,
+              "p_value": 1.1724006377821185e-25
+            },
+            "pearson": {
+              "r": -0.3266553460745869,
+              "p_value": 0.003301740986880205
+            }
+          },
+          "t_net_over_t_total": {
+            "n": 79,
+            "spearman": {
+              "rho": -0.9717867575462513,
+              "p_value": 4.61252682752387e-50
+            },
+            "pearson": {
+              "r": -0.8547815796238268,
+              "p_value": 1.231779581667089e-23
+            }
+          }
+        },
+        "activemq": {
+          "t_net": {
+            "n": 57,
+            "spearman": {
+              "rho": -0.7253694581280788,
+              "p_value": 1.747662992920256e-10
+            },
+            "pearson": {
+              "r": -0.2980250305517306,
+              "p_value": 0.024345961116763026
+            }
+          },
+          "t_net_over_t_total": {
+            "n": 57,
+            "spearman": {
+              "rho": -0.896681358568836,
+              "p_value": 4.0744364243612595e-21
+            },
+            "pearson": {
+              "r": -0.8394400611377327,
+              "p_value": 3.4398074637573613e-16
+            }
+          }
+        },
+        "log4j": {
+          "t_net": {
+            "n": 25,
+            "spearman": {
+              "rho": -0.9223076923076923,
+              "p_value": 5.646629579760652e-11
+            },
+            "pearson": {
+              "r": -0.7376365049139582,
+              "p_value": 2.5814031298232696e-05
+            }
+          },
+          "t_net_over_t_total": {
+            "n": 25,
+            "spearman": {
+              "rho": -0.933076923076923,
+              "p_value": 1.0712241050434786e-11
+            },
+            "pearson": {
+              "r": -0.9493485822476982,
+              "p_value": 4.716063292299956e-13
+            }
+          }
+        }
+      },
+      "overall": {
+        "t_net": {
+          "n": 161,
+          "spearman": {
+            "rho": -0.8061277892799632,
+            "p_value": 4.5888517110094864e-38
+          },
+          "pearson": {
+            "r": -0.26303138389360364,
+            "p_value": 0.0007488249310496118
+          }
+        },
+        "t_net_over_t_total": {
+          "n": 161,
+          "spearman": {
+            "rho": -0.9509000460087418,
+            "p_value": 6.86702709697037e-83
+          },
+          "pearson": {
+            "r": -0.8469419837957829,
+            "p_value": 1.7813132010839674e-45
+          }
+        }
+      }
+    },
+    "hc_ugcs_v2": {
+      "projects": {
+        "karaf": {
+          "t_net": {
+            "n": 79,
+            "spearman": {
+              "rho": -0.9530266703857783,
+              "p_value": 1.0868449052118186e-41
+            },
+            "pearson": {
+              "r": -0.501647593233171,
+              "p_value": 2.4822477590687213e-06
+            }
+          },
+          "t_net_over_t_total": {
+            "n": 79,
+            "spearman": {
+              "rho": -0.9915888653404636,
+              "p_value": 3.863216492576612e-70
+            },
+            "pearson": {
+              "r": -0.8135988520788602,
+              "p_value": 8.132375908642717e-20
+            }
+          }
+        },
+        "activemq": {
+          "t_net": {
+            "n": 57,
+            "spearman": {
+              "rho": -0.8727873954483564,
+              "p_value": 9.006085627577774e-19
+            },
+            "pearson": {
+              "r": -0.8648786826869485,
+              "p_value": 4.2471326463452464e-18
+            }
+          },
+          "t_net_over_t_total": {
+            "n": 57,
+            "spearman": {
+              "rho": -0.9776956493548593,
+              "p_value": 5.812042938482328e-39
+            },
+            "pearson": {
+              "r": -0.9143316143728707,
+              "p_value": 2.98701063330702e-23
+            }
+          }
+        },
+        "log4j": {
+          "t_net": {
+            "n": 25,
+            "spearman": {
+              "rho": -0.8972682464863346,
+              "p_value": 1.237094402254341e-09
+            },
+            "pearson": {
+              "r": -0.8379868574580914,
+              "p_value": 1.7210160393278612e-07
+            }
+          },
+          "t_net_over_t_total": {
+            "n": 25,
+            "spearman": {
+              "rho": -0.9036353311992164,
+              "p_value": 6.12077603574026e-10
+            },
+            "pearson": {
+              "r": -0.955462455380475,
+              "p_value": 1.1071882635246298e-13
+            }
+          }
+        }
+      },
+      "overall": {
+        "t_net": {
+          "n": 161,
+          "spearman": {
+            "rho": -0.9116379280090724,
+            "p_value": 2.754712672629215e-63
+          },
+          "pearson": {
+            "r": -0.5795181065520832,
+            "p_value": 7.996987173858784e-16
+          }
+        },
+        "t_net_over_t_total": {
+          "n": 161,
+          "spearman": {
+            "rho": -0.9806520191122126,
+            "p_value": 1.5585503651819474e-114
+          },
+          "pearson": {
+            "r": -0.8422771489409352,
+            "p_value": 1.593483540226379e-44
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "endpoint_order_checks": 630,
+  "strict_alpha_zero_equivalence": false,
+  "numerical_tie_exceptions": [
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1607",
+        "build": "2",
+        "stage": "single"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.karaf.packages.core.internal.ImportDetailsTest",
+          "raw_first": "org.apache.karaf.service.guard.impl.GuardingEventHookTest",
+          "q_a": 0.34218682837867176,
+          "q_b": 0.3421868283786718,
+          "w": 0.009203221057885963
+        },
+        {
+          "normalized_first": "org.apache.karaf.service.guard.impl.GuardingEventHookTest",
+          "raw_first": "org.apache.karaf.packages.core.internal.ImportDetailsTest",
+          "q_a": 0.3421868283786718,
+          "q_b": 0.34218682837867176,
+          "w": 0.009203221057885963
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 218,
+        "observed_failures": 1,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 15,
+        "total_duration_seconds": 1316.091,
+        "apfd": 0.4380733944954129,
+        "apfdc_midpoint": 0.981173414300379,
+        "ttff_seconds": 24.984000000000005,
+        "ttff_censored": false,
+        "censor_time_seconds": null,
+        "recall": {
+          "0.1": 1.0,
+          "0.25": 1.0,
+          "0.5": 1.0
+        },
+        "reasons": []
+      },
+      "history_cost_metrics": {
+        "tests": 218,
+        "observed_failures": 1,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 15,
+        "total_duration_seconds": 1316.091,
+        "apfd": 0.4380733944954129,
+        "apfdc_midpoint": 0.981173414300379,
+        "ttff_seconds": 24.984000000000005,
+        "ttff_censored": false,
+        "censor_time_seconds": null,
+        "recall": {
+          "0.1": 1.0,
+          "0.25": 1.0,
+          "0.5": 1.0
+        },
+        "reasons": []
+      }
+    }
+  ],
+  "actual_cohort_mutation_checks": [
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1474",
+        "build": "1",
+        "stage": "single"
+      },
+      "full_tests": 214,
+      "mutated_ineligible_builds": 543,
+      "standard_lazy_real_kernel_methods": 2,
+      "reconstructed_methods": 13
+    },
+    {
+      "key": {
+        "project": "karaf",
+        "pr": "PR-1705",
+        "build": "1",
+        "stage": "single"
+      },
+      "full_tests": 225,
+      "mutated_ineligible_builds": 102,
+      "standard_lazy_real_kernel_methods": 2,
+      "reconstructed_methods": 13
+    }
+  ],
+  "scope": "all development endpoints; first/last scored development full-inventory reconstruction and mutation",
+  "reserved_opened": false
+}

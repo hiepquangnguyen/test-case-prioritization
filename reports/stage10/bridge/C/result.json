@@ -1,0 +1,15 @@
+{
+  "arm": "C",
+  "name": "internal_greedy_fqn",
+  "methods_count": 2193,
+  "faults_count": 26,
+  "vector_sha256": "ef4c4387d004371bb4cdd9b96ba346637f6d5d739e149a671b169f6733e71c94",
+  "kernel_sha256": "d56f244348207d4aa434c60441df63c6a545298fa65ccd1a4edfc42f5f4822aa",
+  "kernel_min": 0.0,
+  "kernel_max": 1.0,
+  "negative_kernel_entries": 0,
+  "tie_breaker": "fqn_lexicographical_ascending",
+  "ranker": "internal_exact_greedy_heap",
+  "apfd": 0.7322775263951734,
+  "elapsed_seconds": 0.8807
+}

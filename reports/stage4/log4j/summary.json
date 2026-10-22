@@ -1,0 +1,83 @@
+{
+  "project": "log4j",
+  "rows": 528,
+  "physical_builds": 270,
+  "unique_commits": 262,
+  "branches": {
+    "master": 50,
+    "release-2.x": 478
+  },
+  "stages": {
+    "Ubuntu_Test": 268,
+    "Windows_Test": 260
+  },
+  "statuses": {
+    "UNSTABLE": 236,
+    "SUCCESS": 280,
+    "ABORTED": 7,
+    "FAILURE": 5
+  },
+  "test_observations": 340046,
+  "suite_size": {
+    "min": 58,
+    "median": 651.0,
+    "max": 666
+  },
+  "dense_similarity_float32_max_bytes": 1774224,
+  "missing_availability": 0,
+  "unknown_outcomes": 0,
+  "invalid_durations": 0,
+  "zero_durations": 3172,
+  "count_mismatches": 0,
+  "max_duration_sum_error": 2.2737367544323206e-13,
+  "overlap_stage_rows": 124,
+  "split_boundaries": {
+    "development_start": 1616515097.0,
+    "confirmation_start": 1640204138.0,
+    "development_start_utc": "2021-03-23T15:58:17+00:00",
+    "confirmation_start_utc": "2021-12-22T20:15:38+00:00"
+  },
+  "splits": [
+    {
+      "split": "warmup",
+      "rows": 106,
+      "physical_builds": 54,
+      "eligible_physical_builds": 53,
+      "failing_stage_rows": 53,
+      "failing_physical_builds": 29,
+      "tests": 65538,
+      "cold_tests": 3750,
+      "no_history_stage_rows": 6
+    },
+    {
+      "split": "development",
+      "rows": 158,
+      "physical_builds": 81,
+      "eligible_physical_builds": 78,
+      "failing_stage_rows": 35,
+      "failing_physical_builds": 25,
+      "tests": 100613,
+      "cold_tests": 88,
+      "no_history_stage_rows": 0
+    },
+    {
+      "split": "reserved_confirmation",
+      "rows": 264,
+      "physical_builds": 135,
+      "eligible_physical_builds": 132,
+      "failing_stage_rows": 72,
+      "failing_physical_builds": 59,
+      "tests": 173895,
+      "cold_tests": 41,
+      "no_history_stage_rows": 0
+    }
+  ],
+  "confirmation_prior_commit_overlap": 0,
+  "confirmation_prior_pr_overlap": 3,
+  "source_sample_physical_builds": 20,
+  "source_sample_rows": 40,
+  "source_sample_commits": 20,
+  "raw_build_report_entries": [],
+  "claim_scope": "observed postprocessed class replay; raw start/publication/inventory/revision unverified",
+  "score_exposure": "No ranking or method metric computed; aggregate outcome counts inspected for audit only"
+}

@@ -1,0 +1,29 @@
+* text=auto eol=lf
+
+# Historical research evidence was frozen from CRLF working-tree bytes.
+# Keep these paths byte-stable in every clone while retaining LF elsewhere.
+reports/stage[4-9]/**/*.json text eol=crlf
+reports/stage5/**/*.jsonl text eol=crlf
+reports/stage5/**/*.txt text eol=crlf
+reports/stage6/**/*.txt text eol=crlf
+reports/stage10/**/*.json text eol=crlf
+reports/stage10/smoke-chart16.json text eol=lf
+reports/stage11/**/*.json text eol=crlf
+
+docs/06-pilot/implementation-report.md text eol=crlf
+docs/07-diagnosis/diagnosis-and-proposal.md text eol=crlf
+docs/08-revision/cache-policy-report.md text eol=crlf
+docs/08-revision/implementation-report.md text eol=crlf
+docs/10-reproduction/amendment.md text eol=crlf
+docs/10-reproduction/reproduction-report.md text eol=crlf
+
+*.pdf binary
+*.zip binary
+*.gz binary
+*.pickle binary
+*.pkl binary
+*.npy binary
+*.npz binary
+*.png binary
+*.jpg binary
+*.jpeg binary

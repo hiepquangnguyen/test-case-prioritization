@@ -1,0 +1,7 @@
+{
+  "version": "analysis-amendment-v3",
+  "scope": "stage6_pilot_analysis",
+  "reserved_opened": false,
+  "peak_rss_policy": "maximum across completion and checkpoints",
+  "notes": "Records physical overhead diagnostic and peak RSS tracking across worker completions"
+}

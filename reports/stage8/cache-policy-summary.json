@@ -1,0 +1,267 @@
+{
+  "reserved_opened": false,
+  "scope": "offline_simulation_only",
+  "projects": {
+    "karaf": {
+      "coverage": {
+        "fallback_stages": 28,
+        "physical_with_fallback": 28,
+        "assumptions": "chronological offline source cache; prepare after each usable stage, no async latency model"
+      },
+      "comparisons": {
+        "history_cost": {
+          "apfdc": {
+            "pairs": 79,
+            "mean_delta": 0.003320879005592448,
+            "median_delta": -4.9578113859638506e-05,
+            "positive": 12,
+            "tie": 24,
+            "negative": 43
+          },
+          "ttff": {
+            "pairs": 79,
+            "mean_delta": 0.1130379746835617,
+            "median_delta": 0.006000000000000227,
+            "positive": 41,
+            "tie": 34,
+            "negative": 4
+          },
+          "recall10": {
+            "pairs": 79,
+            "mean_delta": 0.007383966244725739,
+            "median_delta": 0.0,
+            "positive": 2,
+            "tie": 77,
+            "negative": 0
+          }
+        },
+        "hc_falcon_normalized_v1": {
+          "apfdc": {
+            "pairs": 79,
+            "mean_delta": 0.007731631875731535,
+            "median_delta": 0.012862373186706244,
+            "positive": 55,
+            "tie": 1,
+            "negative": 23
+          },
+          "ttff": {
+            "pairs": 79,
+            "mean_delta": -1.3569999999999889,
+            "median_delta": -8.821999999999997,
+            "positive": 24,
+            "tie": 2,
+            "negative": 53
+          },
+          "recall10": {
+            "pairs": 79,
+            "mean_delta": 0.08016877637130802,
+            "median_delta": 0.0,
+            "positive": 8,
+            "tie": 70,
+            "negative": 1
+          }
+        },
+        "fl_only": {
+          "apfdc": {
+            "pairs": 79,
+            "mean_delta": 0.32655913544233706,
+            "median_delta": 0.31450266625517487,
+            "positive": 64,
+            "tie": 0,
+            "negative": 15
+          },
+          "ttff": {
+            "pairs": 79,
+            "mean_delta": -561.0939367088607,
+            "median_delta": -459.70800000000014,
+            "positive": 14,
+            "tie": 0,
+            "negative": 65
+          },
+          "recall10": {
+            "pairs": 79,
+            "mean_delta": 0.5232067510548524,
+            "median_delta": 0.5,
+            "positive": 49,
+            "tie": 29,
+            "negative": 1
+          }
+        }
+      }
+    },
+    "activemq": {
+      "coverage": {
+        "fallback_stages": 15,
+        "physical_with_fallback": 15,
+        "assumptions": "chronological offline source cache; prepare after each usable stage, no async latency model"
+      },
+      "comparisons": {
+        "history_cost": {
+          "apfdc": {
+            "pairs": 57,
+            "mean_delta": -0.0025401420049318683,
+            "median_delta": -0.0007833915672748049,
+            "positive": 9,
+            "tie": 12,
+            "negative": 36
+          },
+          "ttff": {
+            "pairs": 57,
+            "mean_delta": -81.532754385965,
+            "median_delta": 0.4819999999999993,
+            "positive": 36,
+            "tie": 14,
+            "negative": 7
+          },
+          "recall10": {
+            "pairs": 57,
+            "mean_delta": -0.0010025062656641628,
+            "median_delta": 0.0,
+            "positive": 2,
+            "tie": 53,
+            "negative": 2
+          }
+        },
+        "hc_falcon_normalized_v1": {
+          "apfdc": {
+            "pairs": 57,
+            "mean_delta": 0.031397609261499336,
+            "median_delta": 0.01133683811086772,
+            "positive": 46,
+            "tie": 1,
+            "negative": 10
+          },
+          "ttff": {
+            "pairs": 57,
+            "mean_delta": -110.08375438596467,
+            "median_delta": -193.2809999999999,
+            "positive": 10,
+            "tie": 1,
+            "negative": 46
+          },
+          "recall10": {
+            "pairs": 57,
+            "mean_delta": 0.06569402897925818,
+            "median_delta": 0.0,
+            "positive": 8,
+            "tie": 48,
+            "negative": 1
+          }
+        },
+        "fl_only": {
+          "apfdc": {
+            "pairs": 57,
+            "mean_delta": 0.36176284062777825,
+            "median_delta": 0.4207064335916383,
+            "positive": 52,
+            "tie": 1,
+            "negative": 4
+          },
+          "ttff": {
+            "pairs": 57,
+            "mean_delta": -4757.659561403508,
+            "median_delta": -3310.407000000002,
+            "positive": 4,
+            "tie": 1,
+            "negative": 52
+          },
+          "recall10": {
+            "pairs": 57,
+            "mean_delta": 0.4614178816216168,
+            "median_delta": 0.5,
+            "positive": 32,
+            "tie": 24,
+            "negative": 1
+          }
+        }
+      }
+    },
+    "log4j": {
+      "coverage": {
+        "fallback_stages": 48,
+        "physical_with_fallback": 48,
+        "assumptions": "chronological offline source cache; prepare after each usable stage, no async latency model"
+      },
+      "comparisons": {
+        "history_cost": {
+          "apfdc": {
+            "pairs": 25,
+            "mean_delta": -5.53200013720212e-05,
+            "median_delta": 0.0,
+            "positive": 4,
+            "tie": 11,
+            "negative": 10
+          },
+          "ttff": {
+            "pairs": 25,
+            "mean_delta": 0.21047999999999817,
+            "median_delta": 0.0,
+            "positive": 8,
+            "tie": 13,
+            "negative": 4
+          },
+          "recall10": {
+            "pairs": 25,
+            "mean_delta": 0.005,
+            "median_delta": 0.0,
+            "positive": 1,
+            "tie": 24,
+            "negative": 0
+          }
+        },
+        "hc_falcon_normalized_v1": {
+          "apfdc": {
+            "pairs": 25,
+            "mean_delta": -0.007823605087406876,
+            "median_delta": 0.0011217292153078429,
+            "positive": 22,
+            "tie": 0,
+            "negative": 3
+          },
+          "ttff": {
+            "pairs": 25,
+            "mean_delta": 5.394960000000004,
+            "median_delta": -0.6359999999999815,
+            "positive": 3,
+            "tie": 0,
+            "negative": 22
+          },
+          "recall10": {
+            "pairs": 25,
+            "mean_delta": 0.0016666666666666653,
+            "median_delta": 0.0,
+            "positive": 1,
+            "tie": 23,
+            "negative": 1
+          }
+        },
+        "fl_only": {
+          "apfdc": {
+            "pairs": 25,
+            "mean_delta": 0.1945771902006962,
+            "median_delta": 0.2878720767770302,
+            "positive": 22,
+            "tie": 0,
+            "negative": 3
+          },
+          "ttff": {
+            "pairs": 25,
+            "mean_delta": -146.0922,
+            "median_delta": -160.1900000000001,
+            "positive": 3,
+            "tie": 0,
+            "negative": 22
+          },
+          "recall10": {
+            "pairs": 25,
+            "mean_delta": 0.6666666666666666,
+            "median_delta": 1.0,
+            "positive": 20,
+            "tie": 5,
+            "negative": 0
+          }
+        }
+      }
+    }
+  }
+}

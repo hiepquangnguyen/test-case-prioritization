@@ -1,0 +1,11 @@
+{
+  "build_index": 563,
+  "total": 563,
+  "last_key": {
+    "project": "karaf",
+    "pr": "PR-1705",
+    "build": "1",
+    "stage": "single"
+  },
+  "peak_rss": 1383534592
+}

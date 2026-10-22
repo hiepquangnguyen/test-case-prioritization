@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "karaf": {
+      "stages": 315,
+      "selection_steps_verified": 68728,
+      "mutation_checks": 2
+    },
+    "activemq": {
+      "stages": 126,
+      "selection_steps_verified": 109838,
+      "mutation_checks": 2
+    },
+    "log4j": {
+      "stages": 155,
+      "selection_steps_verified": 98686,
+      "mutation_checks": 2
+    }
+  },
+  "prior_freezes_unchanged": true,
+  "reserved_opened": false,
+  "checks": "all raw-q heads, candidate bands, cost caps, fallback traces, full inventories, policy orders; runner independently checked APFD/APFDc"
+}

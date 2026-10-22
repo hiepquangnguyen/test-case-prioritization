@@ -1,0 +1,50 @@
+[
+  {
+    "method": "random",
+    "ranked_builds": 20,
+    "eligible_builds": 18,
+    "apfdc_defined": 10,
+    "no_failure_builds": 8,
+    "median_apfdc": 0.6357002131216529
+  },
+  {
+    "method": "shortest_test_first",
+    "ranked_builds": 20,
+    "eligible_builds": 18,
+    "apfdc_defined": 10,
+    "no_failure_builds": 8,
+    "median_apfdc": 0.6477376072942285
+  },
+  {
+    "method": "most_fail",
+    "ranked_builds": 20,
+    "eligible_builds": 18,
+    "apfdc_defined": 10,
+    "no_failure_builds": 8,
+    "median_apfdc": 0.8775998285895255
+  },
+  {
+    "method": "recent_fail",
+    "ranked_builds": 20,
+    "eligible_builds": 18,
+    "apfdc_defined": 10,
+    "no_failure_builds": 8,
+    "median_apfdc": 0.8775998285895255
+  },
+  {
+    "method": "history_only",
+    "ranked_builds": 20,
+    "eligible_builds": 18,
+    "apfdc_defined": 10,
+    "no_failure_builds": 8,
+    "median_apfdc": 0.8775998285895255
+  },
+  {
+    "method": "history_cost",
+    "ranked_builds": 20,
+    "eligible_builds": 18,
+    "apfdc_defined": 10,
+    "no_failure_builds": 8,
+    "median_apfdc": 0.7606281700734964
+  }
+]

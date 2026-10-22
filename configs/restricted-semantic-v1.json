@@ -1,0 +1,11 @@
+{
+  "method": "restricted_semantic_cost_v1",
+  "q_fraction": 0.95,
+  "duration_multiplier": 1.25,
+  "duration_floor": 0.000001,
+  "selection": "semantic_marginal_gain / predicted_duration; ties raw q descending then FQN ascending",
+  "zero_semantic_gain": "raw_history_cost_head",
+  "implementation": "standard_greedy_only; no inherited approximation guarantee",
+  "evaluation": "all frozen development; no parameter sweep; reserved closed",
+  "cache_only_policy": "separate offline simulation: vector available if matched source hash appeared in an earlier usable selected stage; warmup primes; missing hashes completed after each stage; no real async scheduling claim"
+}

@@ -1,0 +1,65 @@
+{
+  "protocol": "v2-baseline-pilot",
+  "created_at": "2026-10-14T04:37:41.342407+00:00",
+  "archive": {
+    "md5": "b268b21616f6ceb396e8df89d382f298",
+    "sha256": "a99ffc38d0caf0c9362f6b762483e6bd453fe45ed4f6b981a6dca4464495748d"
+  },
+  "selection_sha256": "6af8743e499777dfc6ac751236f74640b891bd1a523c39fa5343afd1c46b2f1d",
+  "split_rule": "UTC calendar: <2022 warmup; 2022 development; >=2023 baseline holdout",
+  "split_counts": {
+    "warmup": 246,
+    "development": 317,
+    "holdout": 163
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "config": {
+    "beta_fail": 1.0,
+    "beta_pass": 1.0,
+    "confidence_tau": 5.0,
+    "cold_duration_seconds": 1.0,
+    "duration_floor_seconds": 1e-06,
+    "epsilon": 1e-08
+  },
+  "availability_guard_seconds": 2,
+  "no_tuning": true,
+  "protocol_sha256": "d6fc17682c06bd36bbdc3c63c7a50f1d05d9475c5bcc185f98a9f0ab2383ce0e",
+  "code_sha256": {
+    "tcp\\__init__.py": "39ed0b635242ec9c96d2af4b91caa2d298df88d8e7c152bdb19f7d824e167365",
+    "tcp\\baselines.py": "01d68cb25c063d7d8a99264eab6b48fec66c67775fa264c36ffd22f594a8e7d9",
+    "tcp\\domain.py": "98dd124733f39e4296c1373a93f39674adcce8dbe5cd01db9147223ec6e0a7cc",
+    "tcp\\history.py": "ae2cdfc3c277b8e5e278f351154cbeb4e940755735c1c0143241363379f6cb32",
+    "tcp\\lrts.py": "41ffbe9ffc1e4d61009d308f2577c1a5231e7ff941083ea46c76e1a84d0c08b3",
+    "tcp\\metrics.py": "97d23dc30268af3f05738d9c11836dbdaf092a36a372e2830cf199d3953f4a72",
+    "tcp\\replay.py": "0478cf6157965dc7742ff76b80733317ef4fefa0381c12fa0ab8ce5d7b0e04e8",
+    "scripts\\pilot_support.py": "59bc38e13745061a7d82bff534204375a61ca5b5fe5d12a1abee97282e85e30a",
+    "scripts\\stage6_pilot.py": "2b8e8722877c163f53f89ead525478fdd4d92468c1a7fa0e536f1f9e24065110",
+    "scripts\\stage8_pilot.py": "11be555146d82c441727e7b28d82e20e663f1da081e90b341ed7291906d48f7a",
+    "scripts\\stage3_prepare.py": "7543968515cd0e4d0b6c8eb845c89dc842a643412bd9d27fb5262b9085a6dd5b",
+    "scripts\\stage3_run.py": "d23021eff694f2e40a0dbf892946b2cae42ea3df1891dc28e092ea201f30cf77",
+    "scripts\\stage3_verify.py": "c370faacace27cc2ebcad8e3fd5a6944f61e0d8b230f7b3acfac3fd460db849c"
+  },
+  "annotations_sha256": "dc29e12fb1df357294bc1a4da239b94fe9a7d689a995b3865f756379d42c4ada",
+  "scope": "retrospective observed-class baseline replay; not HC-FALCON confirmatory holdout"
+}

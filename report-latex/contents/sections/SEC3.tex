@@ -1,0 +1,671 @@
+\section{Phương pháp đề xuất: HC-FALCON}
+\label{sec:methodology}
+
+Chương này trình bày toàn diện kiến trúc, nền tảng toán học hình thức và các biến thể thuật toán của phương pháp Ưu tiên Bộ kiểm thử kết hợp Lịch sử lỗi, Chi phí thực thi và Tối ưu hóa Submodular (History- and Cost-aware FALCON -- HC-FALCON). Phương pháp được thiết kế nhằm dung hòa ba nguồn tín hiệu kiểm thử quan trọng: tính đa dạng ngữ nghĩa mã nguồn thông qua mô hình ngôn ngữ lớn (UniXcoder), xác suất lỗi tích lũy qua mô hình suy luận Bayes (Beta-Bernoulli), và chi phí thời gian thực thi thực tế trong môi trường tích hợp liên tục (CI).
+
+Mục tiêu trọng tâm của chương là xây dựng các mô hình toán học hình thức bám sát mã nguồn cài đặt thực tế, chứng minh các tính chất tối ưu tổ hợp lý thuyết, phân tích khoảng trống phương pháp luận giữa hàm mục tiêu đại diện (proxy objective) và độ đo đánh giá thực tế (APFDc), đồng thời diễn giải tiến trình cải tiến qua 4 thế hệ thuật toán từ biến thể cơ sở đến biến thể bảo vệ bất định UGCS v2.
+
+% =============================================================================
+\subsection{Tổng quan kiến trúc}
+\label{subsec:architecture_overview}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Kiến trúc phân tách hai pha (Two-Phase Architecture)}
+\label{subsubsec:two_phase_arch}
+
+Để đáp ứng yêu cầu khắt khe về thông lượng và độ trễ phản hồi trong các đường ống CI hiện đại, HC-FALCON được thiết kế theo kiến trúc tách biệt thành hai pha vận hành độc lập: \textit{Pha Ngoại tuyến (Offline Phase)} và \textit{Pha Trực tuyến (Online Replay Phase)}.
+
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{max width=\textwidth}
+\begin{tikzpicture}[
+    node distance=1.2cm and 1.5cm,
+    box/.style={rectangle, draw=black, thick, rounded corners, minimum height=0.9cm, text centered, font=\small},
+    proc/.style={box, fill=blue!8, text width=3.8cm},
+    data/.style={box, fill=green!8, text width=3.5cm},
+    core/.style={box, fill=red!10, text width=4.2cm, line width=1.2pt},
+    line/.style={draw=black, -{Latex[length=2.5mm]}, thick}
+]
+    % Offline
+    \node[data] (src) {\textbf{Mã nguồn kiểm thử}\\(Java Test Methods/Classes)};
+    \node[proc, right=of src] (unix) {\textbf{UniXcoder Embedding}\\(768 chiều, chuẩn hóa $L_2$)};
+    \node[data, right=of unix] (cache) {\textbf{Bộ đệm bất biến}\\(\texttt{SHA-256.npz})};
+
+    % Online
+    \node[data, below=2.0cm of src] (build) {\textbf{Sự kiện Build CI $b$}\\(Danh sách test $T_b$, Cutoff)};
+    \node[proc, below=2.0cm of unix] (hist) {\textbf{Rolling History Snapshot}\\($p_b(t), \operatorname{conf}_b(t), c_b(t)$)};
+    \node[core, below=2.0cm of cache] (algo) {\textbf{Thuật toán xếp hạng}\\(Lazy Greedy / UGCS v2)};
+    \node[data, right=1.2cm of algo] (out) {\textbf{Dãy ưu tiên $\pi_b$}\\(Execution Schedule)};
+
+    % Arrows Offline
+    \path[line] (src) -- (unix);
+    \path[line] (unix) -- (cache);
+
+    % Arrows Online
+    \path[line] (build) -- (hist);
+    \path[line] (hist) -- (algo);
+    \path[line] (cache) -- (algo);
+    \path[line] (build.south) -- ++(0,-0.4) -| (algo.south);
+    \path[line] (algo) -- (out);
+
+    % Divider & Labels
+    \draw[dashed, gray!80, thick] (-2.2,-1.3) -- (13.5,-1.3);
+    \node[anchor=west, font=\footnotesize\bfseries\itshape, text=blue!70!black] at (-2.0,-1.0) {PHA NGOẠI TUYẾN (Offline -- Trích xuất vector mã nguồn \& Lưu bộ đệm)};
+    \node[anchor=west, font=\footnotesize\bfseries\itshape, text=red!70!black] at (-2.0,-1.6) {PHA TRỰC TUYẾN (Online -- Lập lịch mô phỏng theo chuỗi thời gian CI)};
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Kiến trúc tổng thể hai pha của phương pháp HC-FALCON}
+\label{fig:hcfalcon_architecture}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Pha Ngoại tuyến (Offline Phase):}
+    Thực hiện phân tích cú pháp tĩnh mã nguồn Java của các phương thức hoặc lớp kiểm thử, loại bỏ chú thích (comments), chuẩn hóa khoảng trắng và trích xuất vector biểu diễn ngữ nghĩa 768 chiều thông qua mô hình ngôn ngữ UniXcoder~\cite{guo2022unixcoder}. Mỗi vector biểu diễn được gắn định danh bất biến thông qua mã băm SHA-256 của nội dung mã nguồn và lưu trữ trong bộ đệm đĩa (\path{work/cache/stage6/vectors/<sha256>.npz}). Khi mã nguồn của một bài kiểm thử không thay đổi qua các bản build, hệ thống tái sử dụng vector từ bộ đệm mà không phải kích hoạt lại mô hình học sâu.
+    
+    \item \textbf{Pha Trực tuyến (Online Replay Phase):}
+    Vận hành tuần tự theo chuỗi thời gian CI thực tế. Tại mỗi bản build $b$ xuất hiện trên hệ thống:
+    \begin{itemize}
+        \item Hệ thống trích xuất danh sách $n$ bài kiểm thử tham gia $T_b = \{t_1, \dots, t_n\}$.
+        \item Nạp ma trận nhân tương đồng ngữ nghĩa từng cặp $K \in \mathbb{R}^{n \times n}$ thông qua việc tra cứu bộ đệm vector ngoại tuyến.
+        \item Trích xuất trạng thái lịch sử quá khứ (Rolling History Snapshot) tính đến thời điểm đóng băng (cutoff timestamp) của build $b$.
+        \item Thực thi thuật toán tối ưu hóa (Lazy Greedy cho v1 hoặc UGCS v2 cho giai đoạn cuối) để xác định thứ tự thực thi ưu tiên $\pi_b$.
+        \item Sau khi dãy kiểm thử được mô phỏng chạy xong, kết quả pass/fail và thời gian chạy thực tế của build $b$ mới được cập nhật vào bộ tích lũy lịch sử để phục vụ các bản build tiếp theo.
+    \end{itemize}
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Nguyên tắc bảo vệ rào chắn thời gian (Temporal Causality Protection)}
+\label{subsubsec:leakage_prevention}
+
+Rò rỉ dữ liệu (data leakage) là cạm bẫy phương pháp luận nghiêm trọng hàng đầu trong nghiên cứu kiểm thử hồi quy trên môi trường CI~\cite{dante2026, henard2016comparing}. Khi một thuật toán vô tình tiếp cận thông tin xuất hiện sau thời điểm kiểm thử của bản build hiện tại (chẳng hạn như kết quả lỗi của các build kế tiếp hoặc thông tin thời gian chạy tương lai), độ đo hiệu quả APFD/APFDc sẽ bị thổi phồng giả tạo.
+
+Để thiết lập rào chắn cô lập thời gian nghiêm ngặt đối với dữ liệu lịch sử thực thi và kết quả kiểm thử động (nhãn pass/fail, thời gian chạy thực tế), HC-FALCON áp dụng hai cơ chế bảo vệ cấu trúc:
+\begin{itemize}
+    \item \textbf{Rào chắn nhân quả thời gian (Strict Temporal Cutoff):}
+    % nguon: tcp/history.py:70-79
+    Tại mỗi bản build $b$, hệ thống chỉ cho phép nạp các bản ghi lịch sử thỏa mãn điều kiện thời điểm hoàn thành thực tế nằm hoàn toàn trước thời điểm cutoff của $b$:
+    \begin{equation}
+    \text{Eligible}(b) = \{b' \in \mathcal{H} \mid \text{available\_at}(b') < \text{cutoff}(b)\}
+    \end{equation}
+    Bất kỳ bản build nào có thời gian chạy song song hoặc hoàn thành sau thời điểm cutoff của $b$ đều bị loại trừ khỏi snapshot lịch sử.
+    
+    \item \textbf{Phân tách cấu trúc giữa Lập lịch và Đánh giá (Outcome-Free Ranking Interface):}
+    % nguon: hc_falcon/methods.py:12-21, tcp/domain.py:15-35
+    Module xếp hạng (\texttt{prioritize}) chỉ nhận đầu vào bao gồm: tập test ID, ma trận tương đồng $K$, và các đặc trưng lịch sử quá khứ ($p_b(t), \operatorname{conf}_b(t), c_b(t)$). Toàn bộ nhãn kết quả thực tế (\texttt{failed}) và thời gian thực thi thực tế (\texttt{duration}) của build $b$ bị cô lập trong cấu trúc \texttt{Outcome} và chỉ được truyền vào module đánh giá (\texttt{evaluate}) sau khi thứ tự ưu tiên $\pi_b$ đã được đóng băng.
+\end{itemize}
+
+\textit{Ranh giới bảo đảm phương pháp luận:} Cần lưu ý rằng hai cơ chế trên bảo đảm tính toàn vẹn thời gian đối với dữ liệu thực thi động trong quá trình mô phỏng CI. Cơ chế này không bao hàm nguy cơ ô nhiễm dữ liệu tiềm tàng xuất phát từ việc mô hình ngôn ngữ UniXcoder được tiền huấn luyện trước đó trên kho mã nguồn mở công khai (vốn có thể chứa các commit của Defects4J hoặc các dự án LRTS trước mốc thời gian nghiên cứu); vấn đề này thuộc phạm vi đe dọa giá trị bên ngoài và sẽ được phân tích chi tiết tại Mục~\ref{sec:discussion}.
+
+% =============================================================================
+\subsection{Mô hình toán học HC-FALCON v1}
+\label{subsec:math_model_v1}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Hàm mục tiêu kết hợp \texorpdfstring{$F_N(S)$}{FN(S)}}
+\label{subsubsec:combined_objective}
+
+Tại mỗi bản build $b$, xét tập hợp kiểm thử $T_b = \{t_1, t_2, \dots, t_n\}$ gồm $n = |T_b| \ge 1$ phần tử. HC-FALCON v1 xác định thứ tự ưu tiên bằng cách giải bài toán chọn tập con tăng dần tối đa hóa hàm mục tiêu kết hợp $F_N: 2^{T_b} \to \mathbb{R}_{\ge 0}$:
+% nguon: hc_falcon/greedy.py:31-34, docs/04-design/hc-falcon-v1.md:51
+\begin{equation}
+\label{eq:combined_objective}
+F_N(S) = \alpha \frac{FL_b(S)}{n} + (1 - \alpha) \sum_{t \in S} w_b(t), \quad 0 \le \alpha \le 1
+\end{equation}
+trong đó:
+\begin{itemize}
+    \item $FL_b(S)$ là hàm bao phủ ngữ nghĩa Facility Location biểu diễn mức độ đa dạng mã nguồn của tập con $S \subseteq T_b$.
+    \item $w_b(t) \ge 0$ là trọng số modular phản ánh chỉ số rủi ro phát hiện lỗi có nhận thức chi phí thực thi của từng bài kiểm thử $t$.
+    \item $\alpha \in [0, 1]$ là siêu tham số cân bằng giữa mục tiêu đa dạng hóa ngữ nghĩa tĩnh và mục tiêu khai thác tín hiệu lịch sử động. Cấu hình tiêu chuẩn của đề tài thiết lập $\alpha = 0{,}5$.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Thành phần bao phủ ngữ nghĩa Facility Location \texorpdfstring{$FL(S)$}{FL(S)}}
+\label{subsubsec:facility_location}
+
+Kế thừa nguyên lý tối ưu hóa đa dạng từ thuật toán FALCON gốc~\cite{falcon2026}, thành phần ngữ nghĩa đo lường mức độ đại diện của tập con kiểm thử $S$ đối với toàn bộ không gian bộ kiểm thử $T_b$ thông qua hàm Facility Location:
+% nguon: hc_falcon/greedy.py:32, docs/research-report/theory.md:44
+\begin{equation}
+\label{eq:facility_location}
+FL_b(S) = \sum_{u \in T_b} \max_{t \in S} K(u, t)
+\end{equation}
+với quy ước chuẩn mực khi $S = \emptyset$:
+\begin{equation}
+\max_{t \in \emptyset} K(u, t) \triangleq 0 \implies FL_b(\emptyset) = 0
+\end{equation}
+
+% nguon: docs/research-report/theory.md:16-18
+Độ tương đồng ngữ nghĩa từng cặp $K(u, t)$ được xác định bởi tích vô hướng cosin giữa hai vector biểu diễn UniXcoder đã chuẩn hóa $L_2$ ($\|z(t)\|_2 = 1$), có cắt tỉa về đoạn $[0, 1]$:
+\begin{equation}
+\label{eq:kernel_similarity}
+K(u, t) = \operatorname{clip}\left(z(u)^\top z(t), \, 0{,}0, \, 1{,}0\right) = \max\left(0{,}0, \, \min\left(1{,}0, \, z(u)^\top z(t)\right)\right)
+\end{equation}
+với quy ước $K(t, t) = 1{,}0$ đối với mọi bài kiểm thử có mã nguồn hợp lệ. Do $K(u, t) \in [0, 1]$, giá trị cực đại của $FL_b(S)$ đạt ngưỡng $n$ khi toàn bộ không gian kiểm thử được bao phủ hoàn hảo, chuẩn hóa qua mẫu số $n$ đưa giá trị thành phần ngữ nghĩa về khoảng $[0, 1]$.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Ước lượng rủi ro lỗi Bayes Beta-Bernoulli \texorpdfstring{$p_b(t)$}{pb(t)}}
+\label{subsubsec:beta_bernoulli}
+
+Gọi $n_t \ge 0$ là tổng số lần bài kiểm thử $t$ đã từng thực thi trong các bản build quá khứ hợp lệ tính đến trước build $b$, và $f_t \ge 0$ là số lần bài kiểm thử này thất bại ($0 \le f_t \le n_t$). Để tránh thiên kiến cực đoan khi kích thước mẫu nhỏ hoặc trong điều kiện khởi động lạnh (cold-start), xác suất lỗi được ước lượng qua phân phối hậu nghiệm Bayes Beta-Bernoulli với tiên nghiệm đều Beta(1, 1) (quy tắc làm mượt Laplace):
+% nguon: tcp/history.py:86, configs/hc-falcon-v2-preregistered.json:11-12
+\begin{equation}
+\label{eq:bayes_prob}
+p_b(t) = \frac{f_t + \beta_{\text{fail}}}{n_t + \beta_{\text{fail}} + \beta_{\text{pass}}} = \frac{f_t + 1}{n_t + 2}
+\end{equation}
+Khi một bài kiểm thử hoàn toàn mới xuất hiện ($n_t = 0, f_t = 0$), công thức gán xác suất tiên nghiệm $p_b(t) = 1/2 = 0{,}50$. Khi $n_t$ tăng dần, ước lượng tiệm cận về tần suất mẫu thực nghiệm $f_t / n_t$.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Hệ số tin cậy quan sát \texorpdfstring{$\operatorname{conf}_b(t)$}{conf\_b(t)}}
+\label{subsubsec:confidence_factor}
+
+Xác suất tiên nghiệm $0{,}50$ tại trạng thái cold-start có thể gây nhiễu nếu hệ thống coi bài kiểm thử chưa từng chạy có độ nguy cơ ngang bằng một bài kiểm thử đã chạy 100 lần và trượt 50 lần. Để khắc phục hiện tượng này, HC-FALCON tích hợp hàm hệ số tin cậy (Observation Confidence) bão hòa hyperbolic:
+% nguon: tcp/history.py:87, configs/hc-falcon-v2-preregistered.json:18-19
+\begin{equation}
+\label{eq:confidence_tau}
+\operatorname{conf}_b(t) = \frac{n_t}{n_t + \tau} = \frac{n_t}{n_t + 5}
+\end{equation}
+trong đó $\tau = 5{,}0$ là tham số bán bão hòa quy định trong cấu hình hệ thống. Hàm số triệt tiêu về $0$ khi $n_t = 0$ (bảo đảm test cold-start không bị thiên vị quá mức), đạt mức $0{,}50$ khi tích lũy đủ 5 lần quan sát ($n_t = 5$), và tiệm cận dần về $1{,}0$ khi $n_t \to \infty$.
+
+Điểm rủi ro hiệu chỉnh (adjusted failure risk) được xác định bởi:
+% nguon: tcp/history.py:92
+\begin{equation}
+\label{eq:adjusted_risk}
+r_b(t) = \operatorname{conf}_b(t) \cdot p_b(t) = \left(\frac{n_t}{n_t + 5}\right) \left(\frac{f_t + 1}{n_t + 2}\right)
+\end{equation}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Chỉ số rủi ro-chi phí \texorpdfstring{$q_b(t)$}{qb(t)}}
+\label{subsubsec:risk_cost_score}
+
+Trong môi trường tích hợp liên tục, các bài kiểm thử có thời gian chạy rất chênh lệch (từ vài mili-giây đến hàng trăm giây). Việc chỉ ưu tiên bài kiểm thử có nguy cơ lỗi cao mà bỏ qua thời gian chạy sẽ làm giảm sút nghiêm trọng chỉ số APFDc~\cite{elbaum2001incorporating}. 
+
+Thời gian thực thi dự phóng $c_b(t)$ được ước lượng thông qua giá trị trung vị từ các lần chạy quá khứ của $t$, có chặn dưới kỹ thuật để tránh giá trị phi thực tế:
+% nguon: tcp/history.py:88-89
+\begin{equation}
+c_b(t) = \max\left(10^{-6}, \, \operatorname{median}\left(\{d > 0 \mid d \in \text{Lịch sử thời gian chạy của } t\}\right)\right)
+\end{equation}
+Thời gian này được chuẩn hóa theo mốc trung vị ngữ cảnh của toàn bộ dự án $c_{\text{ref}}$:
+% nguon: tcp/history.py:75, 94
+\begin{equation}
+\label{eq:norm_cost}
+\widetilde{c}_b(t) = \frac{c_b(t)}{c_{\text{ref}}}
+\end{equation}
+trong đó thời gian tham chiếu $c_{\text{ref}}$ được xác định từ trung vị thời gian chạy của toàn bộ các quan sát trong cùng ngữ cảnh: $c_{\text{ref}} = \max(10^{-6}, \operatorname{median}(\{d > 0\}))$ (mặc định $c_{\text{ref}} = 1{,}0\text{ s}$ nếu chưa có lịch sử).
+
+Chỉ số rủi ro--chi phí (Failure-Cost Score) $q_b(t)$ được tính bằng tỷ số giữa điểm rủi ro và căn bậc hai của chi phí chuẩn hóa:
+% nguon: tcp/history.py:95, configs/hc-falcon-v2-preregistered.json:15
+\begin{equation}
+\label{eq:q_score}
+q_b(t) = \frac{r_b(t)}{\sqrt{\widetilde{c}_b(t)} + \varepsilon} = \frac{\operatorname{conf}_b(t) \cdot p_b(t)}{\sqrt{\widetilde{c}_b(t)} + 10^{-8}}
+\end{equation}
+trong đó $\varepsilon = 10^{-8}$ là hằng số chống chia cho $0$. Việc sử dụng căn bậc hai $\sqrt{\widetilde{c}_b(t)}$ thay vì chi phí tuyến tính $\widetilde{c}_b(t)$ là một thiết kế cân bằng có chủ đích, nhằm phạt các bài kiểm thử chạy dài nhưng không triệt tiêu cơ hội của các test phức tạp có khả năng phát hiện lỗi quan trọng.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Hai biến thể trọng số: Trọng số thô và Chuẩn hóa}
+\label{subsubsec:raw_vs_normalized}
+
+Trong quá trình khảo sát thực nghiệm ban đầu, đề tài phát hiện tổng điểm rủi ro $Q = \sum_{t \in T_b} q_b(t)$ có sự biến động rất lớn giữa các chu kỳ build (dao động từ $0$ khi toàn bộ test đều xanh lên tới hơn $40$ khi xuất hiện lỗi chuỗi). Sự biến thiên này dẫn tới hai cách tiếp cận đối chuẩn trọng số $w_b(t)$ trong Công thức~\eqref{eq:combined_objective}:
+
+\begin{enumerate}
+    \item \textbf{Biến thể Trọng số thô (HC-FALCON v1 \texttt{topic\_raw}):}
+    % nguon: hc_falcon/methods.py:32
+    Giữ nguyên giá trị điểm rủi ro--chi phí chưa chuẩn hóa:
+    \begin{equation}
+    \label{eq:weight_raw}
+    w_b(t) = q_b(t)
+    \end{equation}
+    Hạn chế của biến thể này là sự lệch thứ nguyên: khi $Q \gg 1$, thành phần lịch sử áp đảo hoàn toàn thành phần bao phủ ngữ nghĩa $FL(S)/n \le 1$.
+    
+    \item \textbf{Biến thể Chuẩn hóa (HC-FALCON v1 \texttt{normalized}):}
+    % nguon: hc_falcon/methods.py:38, hc_falcon/greedy.py:54-59
+    Chuẩn hóa điểm rủi ro thành phân phối xác suất trên toàn bộ suite hiện tại:
+    \begin{equation}
+    \label{eq:weight_normalized}
+    w_b(t) = \begin{cases}
+    \dfrac{q_b(t)}{\sum_{t' \in T_b} q_b(t')}, & \text{nếu } \sum_{t' \in T_b} q_b(t') > 0 \\
+    0, & \text{nếu } \sum_{t' \in T_b} q_b(t') = 0
+    \end{cases}
+    \end{equation}
+    Khi đó, $\sum_{t \in T_b} w_b(t) = 1$, đưa cả hai thành phần của hàm mục tiêu $F_N(S)$ về cùng thang đo $[0, 1]$, bảo đảm vai trò đóng góp thực sự cân bằng giữa ngữ nghĩa và lịch sử.
+\end{enumerate}
+
+% =============================================================================
+\subsection{Tính chất Monotone Submodular và Bảo đảm lý thuyết}
+\label{subsec:submodular_properties}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Phát biểu định lý và các giả thiết toán học}
+\label{subsubsec:theorem_statement}
+
+Một hàm tập $F: 2^V \to \mathbb{R}$ được gọi là \textit{submodular} (bán mô-đun) nếu nó thỏa mãn quy luật lợi ích biên giảm dần (diminishing marginal returns): với mọi $A \subseteq B \subseteq V$ và mọi phần tử $x \in V \setminus B$, ta có:
+\begin{equation}
+F(A \cup \{x\}) - F(A) \ge F(B \cup \{x\}) - F(B)
+\end{equation}
+Hàm được gọi là \textit{đơn điệu không giảm (monotone non-decreasing)} nếu với mọi $A \subseteq B \subseteq V$, $F(A) \le F(B)$.
+
+\begin{dl}[Tính Monotone Submodular của hàm mục tiêu HC-FALCON v1]
+\label{dl:submodular_v1}
+Xét hàm mục tiêu kết hợp $F_N(S)$ định nghĩa theo Công thức~\eqref{eq:combined_objective}. Giả sử các điều kiện sau được thỏa mãn:
+\begin{enumerate}[(i)]
+    \item Ma trận tương đồng đối xứng và không âm: $K(u, t) \in [0, 1]$ với mọi $u, t \in T_b$.
+    \item Trọng số modular không âm: $w_b(t) \ge 0$ với mọi $t \in T_b$ (thỏa mãn cho cả hai biến thể $w_b(t) = q_b(t)$ và $w_b(t) = q_b(t) / \sum q$).
+    \item Hệ số kết hợp và kích thước bộ test: $\alpha \in [0, 1]$ và $n = |T_b| \ge 1$.
+\end{enumerate}
+Khi đó, hàm tập $F_N: 2^{T_b} \to \mathbb{R}_{\ge 0}$ là hàm không âm, đơn điệu không giảm và submodular trên $2^{T_b}$, thỏa mãn tính chuẩn hóa $F_N(\emptyset) = 0$.
+\end{dl}
+
+\begin{hq}[Cận xấp xỉ Nemhauser]
+\label{hq:nemhauser_bound}
+Đối với bài toán tối ưu hóa ràng buộc số lượng phần tử $\max_{|S| \le k} F_N(S)$ với $k \ge 1$, thuật toán tham lam Cardinality Greedy bắt đầu từ $S_0 = \emptyset$ và lần lượt bổ sung phần tử cực đại hóa lượng tăng biên:
+\begin{equation}
+x_{i+1} \in \arg\max_{x \in T_b \setminus S_i} \left[ F_N(S_i \cup \{x\}) - F_N(S_i) \right], \quad S_{i+1} = S_i \cup \{x_{i+1}\}
+\end{equation}
+đạt được tỷ số xấp xỉ lý thuyết bảo đảm~\cite{nemhauser1978analysis}:
+\begin{equation}
+F_N(S_k) \ge \left[ 1 - \left(1 - \frac{1}{k}\right)^k \right] F_N(O_k) \ge \left(1 - \frac{1}{e}\right) F_N(O_k) \approx 0{,}63212 \cdot F_N(O_k)
+\end{equation}
+trong đó $O_k \in \arg\max_{|S| \le k} F_N(S)$ là tập con kích thước $k$ tối ưu toàn cục.
+\end{hq}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Phác thảo các bước chứng minh toán học}
+\label{subsubsec:proof_sketch}
+
+% TU VIET LAI: Phần khung chứng minh dưới đây phác thảo cấu trúc 4 bước toán học để người đọc/tác giả hoàn thiện chi tiết theo văn phong lập luận hình thức.
+\begin{cm}[Phác thảo chứng minh Định lý~\ref{dl:submodular_v1}]
+\label{proof:sketch_submodular}
+Quá trình chứng minh được cấu trúc qua 4 mệnh đề bổ trợ:
+
+\begin{itemize}
+    \item \textbf{Bước 1 (Thành phần Lịch sử -- Chi phí $h(S)$):}
+    Xét hàm trọng số modular $h(S) = \sum_{t \in S} w_b(t)$. Do $w_b(t) \ge 0, \forall t$, với $x \notin S$, lượng tăng biên $\Delta_h(x \mid S) = h(S \cup \{x\}) - h(S) = w_b(x)$ là đại lượng bất biến độc lập hoàn toàn với tập đã chọn $S$. Do đó với mọi $A \subseteq B$, $\Delta_h(x \mid A) = \Delta_h(x \mid B) = w_b(x) \ge 0$. Suy ra $h(S)$ vừa là hàm đơn điệu tăng, vừa là hàm modular (thỏa mãn dấu bằng của tính submodular).
+    
+    \item \textbf{Bước 2 (Thành phần Facility Location $FL(S)$):}
+    Xét hàm bao phủ ngữ nghĩa:
+    \begin{equation}
+    FL(S) = \sum_{u \in T_b} \max_{t \in S} K(u, t)
+    \end{equation}
+    Đặt $m_S(u) = \max_{t \in S} K(u, t)$ với quy ước $m_\emptyset(u) \triangleq 0$. Do $A \subseteq B$, ta có $m_A(u) \le m_B(u)$ với mọi $u \in T_b$, kéo theo $FL(A) \le FL(B)$ (tính đơn điệu).
+    Lượng tăng biên khi thêm $x \notin S$ trên phần tử $u$ là $\max(0, K(u, x) - m_S(u))$. Do $m_A(u) \le m_B(u)$, bất đẳng thức được bảo toàn qua hàm không giảm $\phi(z) = \max(0, z)$:
+    \begin{align}
+    K(u, x) - m_A(u) &\ge K(u, x) - m_B(u) \nonumber \\
+    \implies \max\left(0, K(u, x) - m_A(u)\right) &\ge \max\left(0, K(u, x) - m_B(u)\right)
+    \end{align}
+    Lấy tổng trên toàn bộ $u \in T_b$, ta thu được $\Delta_{FL}(x \mid A) \ge \Delta_{FL}(x \mid B)$. Vậy $FL(S)$ là hàm submodular đơn điệu~\cite{cornuejols1977uncapacitated}.
+    
+    \item \textbf{Bước 3 (Bảo toàn tính Submodular qua tổ hợp tuyến tính):}
+    Lượng tăng biên của hàm mục tiêu tổng thể $F_N(S)$ là:
+    \begin{equation}
+    \Delta_{F_N}(x \mid S) = \frac{\alpha}{n} \Delta_{FL}(x \mid S) + (1 - \alpha) w_b(x)
+    \end{equation}
+    Xét hiệu hai lượng tăng biên trên $A \subseteq B$:
+    \begin{align}
+    \Delta_{F_N}(x \mid A) - \Delta_{F_N}(x \mid B) 
+    &= \frac{\alpha}{n} \underbrace{\left(\Delta_{FL}(x \mid A) - \Delta_{FL}(x \mid B)\right)}_{\ge 0} \nonumber \\
+    &\quad + (1 - \alpha) \underbrace{(w_b(x) - w_b(x))}_{= 0} \nonumber \\
+    &\ge 0
+    \end{align}
+    Vì $\frac{\alpha}{n} \ge 0$ và $(1 - \alpha) \ge 0$, tổ hợp tuyến tính với các trọng số không âm bảo toàn tuyệt đối tính đơn điệu và tính submodular.
+    
+    \item \textbf{Bước 4 (Thiết lập cận xấp xỉ $(1 - 1/e)$):}
+    Gọi $R_i = F_N(O_k) - F_N(S_i)$ là độ thiếu hụt mục tiêu tại bước $i$. Áp dụng tính submodular trên chuỗi tập kính thiên văn bao phủ tập tối ưu $O_k$, ta suy ra bước tham lam luôn chọn phần tử có mức tăng $g_i \ge R_i / k$. Dẫn tới hệ thức truy hồi thu hẹp độ thiếu hụt:
+    \begin{equation}
+    R_{i+1} = R_i - g_i \le \left(1 - \frac{1}{k}\right) R_i \implies R_k \le \left(1 - \frac{1}{k}\right)^k R_0 = \left(1 - \frac{1}{k}\right)^k F_N(O_k)
+    \end{equation}
+    Sử dụng bất đẳng thức giải tích $(1 - 1/k)^k \le e^{-1} = 1/e, \forall k \ge 1$, ta thu được $F_N(S_k) \ge (1 - 1/e) F_N(O_k)$.
+\end{itemize}
+Chứng minh hoàn tất.
+\end{cm}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Phân định phạm vi bảo đảm lý thuyết giữa các biến thể}
+\label{subsubsec:guarantee_scope}
+
+Cần đặc biệt lưu ý về ranh giới áp dụng của Định lý~\ref{dl:submodular_v1} và Hệ quả~\ref{hq:nemhauser_bound} đối với các thế hệ thuật toán trong đề tài:
+
+\begin{itemize}
+    \item \textbf{Các biến thể ĐƯỢC BẢO ĐẢM lý thuyết đầy đủ:}
+    Áp dụng chính xác cho \textbf{HC-FALCON v1 dạng Trọng số thô} (\texttt{hc\_falcon\_topic\_raw\_v1}) và \textbf{HC-FALCON v1 dạng Chuẩn hóa} (\texttt{hc\_falcon\_normalized\_v1}). Cả hai biến thể này đều tối ưu hóa một hàm mục tiêu monotone submodular tĩnh cố định trên toàn bộ không gian tập con $2^{T_b}$.
+    
+    \item \textbf{Các biến thể KHÔNG ĐƯỢC BẢO ĐẢM cận lý thuyết $(1 - 1/e)$:}
+    \begin{enumerate}
+        \item \textit{Biến thể Hạn chế Ngữ nghĩa (Restricted Semantic, Stage 8):} Thuật toán giới hạn không gian ứng viên trong cửa sổ động theo từng bước $q_b(i) \ge 0{,}95 \cdot q_b(t^*)$ và $c_b(i) \le 1{,}25 \cdot c_b(t^*)$ với mỏ neo $t^* \in \text{remaining}$ biến thiên liên tục. Việc không gian ứng viên bị thu hẹp phụ thuộc vào trạng thái lựa chọn khiến thuật toán không tương ứng với bài toán tối ưu hàm tập tĩnh.
+        \item \textit{Biến thể CNS-Greedy (Stage 11):} Lượng tăng biên ngữ nghĩa bị chuẩn hóa chia cho căn bậc hai chi phí $\Delta FL / \sqrt{\max(c, 10^{-6})}$. Phép chia cục bộ này biến thuật toán thành dạng heuristic Knapsack Submodular. Do đó, Định lý~\ref{dl:submodular_v1} không áp dụng trực tiếp cho biến thể này và hiện chưa có chứng minh lý thuyết thay thế bảo đảm cận xấp xỉ.
+        \item \textit{Biến thể UGCS v2 (Stage 12):} Thuật toán vận hành qua 4 bước với tập ứng viên an toàn ($\text{Safe}$) biến thiên liên tục theo từng bước chọn, đồng thời các đại lượng $q_{\text{rel}}$ và $\text{sem}_{\text{rel}}$ được tái chuẩn hóa động dựa trên giá trị cực đại cục bộ của các bài test còn lại. Do không tối ưu hóa một hàm mục tiêu đơn điệu submodular tĩnh toàn cục, \textbf{biến thể UGCS v2 không có bảo đảm toán học về cận xấp xỉ $(1 - 1/e)$}, mà thuộc lớp thuật toán heuristic thích nghi bảo vệ rủi ro.
+    \end{enumerate}
+\end{itemize}
+
+% =============================================================================
+\subsection{Khoảng trống phương pháp luận giữa hàm mục tiêu đại diện và độ đo APFDc}
+\label{subsec:proxy_apfdc_gap}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Bản chất bất đối xứng giữa tối ưu hóa tập con và thứ tự kiểm thử}
+\label{subsubsec:gap_nature}
+
+Một trong những phát hiện phương pháp luận quan trọng nhất của đề tài là việc nhận diện rõ \textit{sự bất đối xứng căn bản giữa hàm mục tiêu đại diện (proxy objective) và độ đo đánh giá thực tế (APFD / APFDc)}:
+\begin{enumerate}
+    \item \textbf{Hàm mục tiêu proxy $F_N(S)$:} Tối ưu hóa dưới \textit{ràng buộc lực lượng tập hợp (cardinality constraint)} $|S| \le k$. Hàm số chỉ quan tâm đến tổng độ bao phủ không gian của tập con $S$ và coi chi phí thực thi của mọi bài kiểm thử là đồng nhất (mỗi bước chọn thêm đúng 1 test).
+    \item \textbf{Độ đo thực tiễn APFDc:} Đo lường tích phân diện tích dưới đường cong phát hiện lỗi được chuẩn hóa theo \textit{tổng chi phí thời gian thực tế} $T_{\text{total}} = \sum_{t \in T_b} c(t)$. Độ đo này cực kỳ nhạy cảm với thứ tự xuất hiện của bài kiểm thử phát hiện lỗi đầu tiên (TTFF) và chịu tác động bất lợi rất lớn nếu có các bài kiểm thử chạy dài không lỗi đứng phía trước.
+\end{enumerate}
+
+Chính vì sự bất đối xứng này, một thuật toán đạt giá trị tối ưu hoàn hảo đối với hàm mục tiêu submodular $F_N(S)$ vẫn có thể cho ra điểm APFDc cực kỳ thấp.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Phản ví dụ số học kiểm chứng thực nghiệm}
+\label{subsubsec:counterexample_proof}
+
+Để minh chứng khoảng trống phương pháp luận trên, đề tài xây dựng kịch bản phản ví dụ tối thiểu gồm 3 bài kiểm thử $T = \{t_1, t_2, t_3\}$. Kịch bản này được kiểm chứng trực tiếp bằng việc gọi hàm \path{hc_falcon.methods.prioritize} trong tập lệnh \path{scripts/verify_proxy_apfdc_counterexample.py}. Dữ liệu thực nghiệm được lưu tại \path{reports/stage12/proxy_apfdc_counterexample.json}:
+
+\begin{itemize}
+    \item \textbf{Đặc tả đầy đủ các tham số đầu vào:}
+    \begin{itemize}
+        \item \textit{Tập kiểm thử và chi phí thực thi:} $t_1$ (kiểm thử nặng, không lỗi, $c(t_1) = 100{,}0\text{ s}$), $t_2$ (kiểm thử nhẹ, không lỗi, $c(t_2) = 1{,}0\text{ s}$), $t_3$ (kiểm thử nhẹ, duy nhất phát hiện lỗi, $c(t_3) = 1{,}0\text{ s}$). Tổng chi phí $T_{\text{total}} = 100 + 1 + 1 = 102{,}0\text{ s}$; thời gian tham chiếu chuẩn hóa $c_{\text{ref}} = 1{,}0\text{ s}$.
+        \item \textit{Ma trận tương đồng ngữ nghĩa $K$:} $t_1$ bao quát cấu trúc nên tương đồng $0{,}8$ với hai bài kiểm thử còn lại; $t_2$ và $t_3$ trực giao nhau ($0{,}0$):
+        \begin{equation}
+        K = \begin{pmatrix}
+        1{,}0 & 0{,}8 & 0{,}8 \\
+        0{,}8 & 1{,}0 & 0{,}0 \\
+        0{,}8 & 0{,}0 & 1{,}0
+        \end{pmatrix}
+        \end{equation}
+        \item \textit{Snapshot lịch sử và trọng số:} Khảo sát trên hai kịch bản lịch sử chuẩn mực:
+        \begin{enumerate}
+            \item \textit{Kịch bản Khởi động lạnh (Cold-start):} Cả 3 bài test chưa có dữ liệu quá khứ ($n_t = 0, f_t = 0$). Theo Công thức~\eqref{eq:bayes_prob} và~\eqref{eq:confidence_tau}, $p_b(t) = 0{,}50$, $\operatorname{conf}_b(t) = 0{,}0$, dẫn đến $q_b(t) = 0{,}0$ và vector trọng số modular triệt tiêu $w = [0, 0, 0]$. Khi đó với $\alpha = 0{,}5$ (hoặc $\alpha = 1{,}0$ với \texttt{fl\_only}), hàm mục tiêu hoàn toàn phụ thuộc vào thành phần Facility Location $F_N(S) = \alpha \cdot FL(S) / 3$.
+            \item \textit{Kịch bản Lịch sử sạch (Clean History, 10 lần chạy không lỗi):} Cả 3 test đều có $n_t = 10, f_t = 0 \implies p_b(t) = 1/12, \operatorname{conf}_b(t) = 2/3$. Do ảnh hưởng của mẫu số chi phí $\sqrt{c(t)}$, điểm rủi ro là $q_b(t_1) \approx 0{,}0055$, $q_b(t_2) = q_b(t_3) \approx 0{,}0555$. Khi chạy với biến thể \texttt{hc\_falcon\_topic\_raw\_v1} ($\alpha = 0{,}5$), lượng tăng biên ngữ nghĩa của $t_1$ tại bước 1 ($0{,}5 \times 2{,}6 / 3 \approx 0{,}4333$) hoàn toàn áp đảo lượng tăng tổng hợp của $t_2$ và $t_3$ ($0{,}5 \times 1{,}8 / 3 + 0{,}5 \times 0{,}0555 \approx 0{,}3278$).
+        \end{enumerate}
+    \end{itemize}
+\end{itemize}
+
+Dưới các thiết lập đầu vào trên, hàm \texttt{prioritize} của thư viện \texttt{hc\_falcon} vận hành theo cơ chế tham lam từng bước:
+\begin{align}
+\text{Bước 1 ($S = \emptyset$):} \quad & FL(\{t_1\}) = 1{,}0 + 0{,}8 + 0{,}8 = \mathbf{2{,}6} \nonumber \\
+& FL(\{t_2\}) = 0{,}8 + 1{,}0 + 0{,}0 = \mathbf{1{,}8} \nonumber \\
+& FL(\{t_3\}) = 0{,}8 + 0{,}0 + 1{,}0 = \mathbf{1{,}8}
+\end{align}
+Thuật toán lựa chọn $t_1$ vào vị trí đầu tiên. Tại bước 2, vector bao phủ đạt $[1{,}0, 0{,}8, 0{,}8]$, mức tăng biên của $t_2$ và $t_3$ đều bằng $\max(0, 1{,}0 - 0{,}8) = 0{,}2$. Quy tắc giải hòa tie-breaking theo thứ tự từ điển định danh (\texttt{t2\_light} $<$ \texttt{t3\_failing}) đưa $t_2$ vào vị trí số 2, và đẩy bài test duy nhất có lỗi $t_3$ xuống vị trí cuối cùng.
+
+Thứ tự ưu tiên do mã nguồn Greedy sản sinh là $\pi_{\text{greedy}} = (t_1, t_2, t_3)$:
+\begin{itemize}
+    \item Thời điểm bắt đầu chạy test lỗi $t_3$: $\text{start}_3 = c(t_1) + c(t_2) = 100 + 1 = 101{,}0\text{ s}$.
+    \item Điểm giữa thực thi (Midpoint): $\text{midpoint}_3 = 101{,}0 + 1{,}0 / 2 = 101{,}5\text{ s}$.
+    \item Chỉ số APFDc thu được:
+    \begin{equation}
+    \text{APFDc}(\pi_{\text{greedy}}) = 1 - \frac{101{,}5}{1 \times 102{,}0} = \frac{0{,}5}{102{,}0} \approx \mathbf{0{,}0049 \quad (0{,}49\%)}
+    \end{equation}
+\end{itemize}
+
+Đối chiếu với thứ tự ưu tiên thuần chi phí (không cần biết trước kết quả kiểm thử, thực thi test ngắn trước: $t_2, t_3, t_1$ với giải hòa từ điển định danh $t_2 < t_3$):
+\begin{itemize}
+    \item Thời điểm bắt đầu chạy test lỗi $t_3$: $\text{start}_3 = c(t_2) = 1{,}0\text{ s}$.
+    \item Điểm giữa thực thi (Midpoint): $\text{midpoint}_3 = 1{,}0 + 1{,}0 / 2 = 1{,}5\text{ s}$.
+    \item Chỉ số APFDc thu được:
+    \begin{equation}
+    \text{APFDc}(\pi_{\text{cost}}) = 1 - \frac{1{,}5}{1 \times 102{,}0} = \frac{100{,}5}{102{,}0} \approx \mathbf{0{,}9853 \quad (98{,}53\%)}
+    \end{equation}
+\end{itemize}
+
+Trong khi đó, thứ tự tối ưu lý thuyết $\pi^* = (t_3, t_2, t_1)$ (đóng vai trò cận trên lý thuyết, đòi hỏi phải biết trước bài kiểm thử nào phát hiện lỗi) ghi nhận:
+\begin{itemize}
+    \item Thời điểm bắt đầu chạy test lỗi $t_3$: $\text{start}_3 = 0{,}0\text{ s}$.
+    \item Điểm giữa thực thi (Midpoint): $\text{midpoint}_3 = 0{,}0 + 1{,}0 / 2 = 0{,}5\text{ s}$.
+    \item Chỉ số APFDc cận trên tối ưu:
+    \begin{equation}
+    \text{APFDc}(\pi^*) = 1 - \frac{0{,}5}{1 \times 102{,}0} = \frac{101{,}5}{102{,}0} \approx \mathbf{0{,}9951 \quad (99{,}51\%)}
+    \end{equation}
+\end{itemize}
+
+Ngay cả khi quy tắc tie-breaking ưu tiên đưa $t_3$ lên vị trí thứ hai ($\pi' = (t_1, t_3, t_2)$), việc bị test nặng $t_1$ chạy đứng trước vẫn khiến điểm APFDc sụt giảm xuống mức $\mathbf{0{,}0147 \quad (1{,}47\%)}$.
+
+\begin{nx}[Ý nghĩa phương pháp luận của phản ví dụ]
+Đây là một \textbf{phản ví dụ tồn tại ở cực đoan} (\textit{pathological existential counterexample}) nhằm chứng minh toán học rằng: \textit{Tính tối ưu của hàm mục tiêu submodular đại diện $F_N(S)$ không đồng nghĩa và không kéo theo tính tối ưu đối với độ đo thực tiễn APFDc}. Mặc dù nghiệm của thuật toán tham lam đạt giá trị tối đa về độ phủ ngay từ bước đầu, điểm APFDc thu được chỉ là $0{,}49\%$, tạo ra khoảng cách chênh lệch lên tới $\mathbf{98{,}04}$ điểm phần trăm so với thứ tự ưu tiên test ngắn thuần túy và $\mathbf{99{,}02}$ điểm phần trăm so với cận trên tối ưu.
+
+Trong điều kiện thực nghiệm trên 161 build phát triển CI thực tế (Mục~\ref{subsubsec:variants_evolution} và~\ref{subsubsec:stage12_results}), sự chênh lệch đo được không chạm tới mức cực đoan 98--99 điểm phần trăm như phản ví dụ lý thuyết: giá trị trung vị $\text{Median}(\Delta\text{APFDc})$ so với đường cơ sở \texttt{history\_cost} ghi nhận ở mức $-0{,}3994$ điểm phần trăm (Karaf), $-0{,}6064$ điểm phần trăm (ActiveMQ), $-0{,}1896$ điểm phần trăm (Log4j2) đối với CNS-Greedy; và $-0{,}0586$ điểm phần trăm (Karaf), $-0{,}2235$ điểm phần trăm (ActiveMQ), $-0{,}0017$ điểm phần trăm (Log4j2) đối với UGCS v2 (nguồn: \path{reports/stage12/stage12_statistical_tests.json}). Khoảng cách phương pháp luận giữa hàm mục tiêu đại diện và độ đo APFDc được quan sát định lượng cụ thể tại Chương 4; các phân tích và giả thuyết cơ chế dẫn tới hiện tượng này được trình bày chi tiết tại Chương 5.
+\end{nx}
+
+% =============================================================================
+\subsection{Các biến thể cải tiến}
+\label{subsec:improved_variants}
+
+Để hóa giải hiện tượng Heavy Predecessors và thu hẹp khoảng cách giữa mục tiêu proxy và độ đo APFDc, quá trình nghiên cứu đã phát triển liên tiếp 3 thế hệ biến thể cải tiến.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Biến thể Hạn chế Ngữ nghĩa theo cửa sổ lịch sử (Stage 8)}
+\label{subsubsec:restricted_semantic}
+
+Biến thể Hạn chế Ngữ nghĩa (Restricted Semantic, Stage 8) xuất phát từ giả thuyết: nếu không gian tìm kiếm tham lam bị thả lỏng toàn cục, thành phần ngữ nghĩa sẽ lôi kéo các bài test nặng lên đầu. Do đó, thuật toán áp đặt một cửa sổ lọc ứng viên động theo từng bước dựa trên điểm rủi ro lịch sử $q_b(t)$ và chi phí thực thi dự phóng $c_b(t)$.
+
+% nguon: hc_falcon/restricted.py:15, 24-38
+Cơ chế thực thi của biến thể bao gồm:
+\begin{enumerate}
+    \item Sắp xếp toàn bộ các bài kiểm thử theo thứ tự giảm dần của điểm $q_b(t)$ (giải hòa theo test ID tăng dần) để tạo thành danh sách đối chứng baseline lịch sử (\texttt{baseline}).
+    \item Tại mỗi bước chọn, xác định bài kiểm thử đứng đầu còn lại trong danh sách đối chứng làm mỏ neo tham chiếu $t^* \in \text{remaining}$.
+    \item Khoanh vùng nhóm ứng viên an toàn (\texttt{pool}) qua cửa sổ động phụ thuộc vào mỏ neo $t^*$, bao gồm các bài kiểm thử có điểm $q$ không kém quá $5\%$ và chi phí không vượt quá $25\%$ so với mỏ neo $t^*$:
+    \begin{equation}
+    \label{eq:restricted_pool}
+    \text{Pool} = \left\{ i \in \text{remaining} \;\middle|\; q_b(i) \ge 0{,}95 \cdot q_b(t^*) \quad \text{và} \quad c_b(i) \le 1{,}25 \cdot c_b(t^*) \right\}
+    \end{equation}
+    \item Trong nhóm ứng viên an toàn này, bài kiểm thử nào tối đa hóa tỷ số giữa lượng tăng biên bao phủ ngữ nghĩa và chi phí sẽ được lựa chọn:
+    \begin{equation}
+    \label{eq:restricted_choice}
+    i^* = \arg\max_{i \in \text{Pool}} \frac{\Delta FL_b(i \mid S)}{c_b(i)}
+    \end{equation}
+    Nếu toàn bộ các ứng viên trong Pool đều có $\Delta FL = 0$, thuật toán tự động lùi về chọn chính mỏ neo $t^*$.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Biến thể CNS-Greedy (Stage 11)}
+\label{subsubsec:cns_greedy}
+
+Thay vì khoanh vùng cửa sổ ứng viên, biến thể CNS-Greedy (Cost-Normalized Semantic Greedy, Stage 11) can thiệp trực tiếp vào hàm lợi ích biên tại mỗi bước tham lam. Nhận thấy thành phần ngữ nghĩa $\Delta FL(t \mid S)/n$ trong v1 hoàn toàn phi chi phí trong khi điểm rủi ro $q_b(t)$ có mẫu số chi phí, CNS-Greedy đưa yếu tố thời gian vào mẫu số của lượng tăng biên ngữ nghĩa bằng cách chia cho căn bậc hai của thời lượng thô $\sqrt{\max(c_b(i), 10^{-6})}$.
+
+% nguon: hc_falcon/variants.py:26-27, 35-37, 46-48; scripts/stage11_evaluation.py:109
+Tại mỗi bước chọn, lượng tăng biên của bài kiểm thử ứng viên $i \in \text{remaining}$ được xác định chính xác theo mã nguồn cài đặt:
+\begin{equation}
+\label{eq:cns_gain}
+\text{gain}_{\text{CNS}}(i \mid S) = \alpha \cdot \frac{\Delta FL_b(i \mid S)}{n \cdot \sqrt{\max\left(c_b(i), \, 10^{-6}\right)}} + (1 - \alpha) \cdot w_b(i)
+\end{equation}
+trong đó:
+\begin{itemize}
+    \item $\Delta FL_b(i \mid S) = \sum_{u \in T_b} \max\left(0, K(u, i) - \text{coverage}[u]\right)$ là lượng tăng biên ngữ nghĩa chưa chuẩn hóa.
+    \item $c_b(i)$ là thời lượng thực thi thô dự phóng tính bằng giây (\texttt{duration\_estimate}), không chuẩn hóa qua $c_{\text{ref}}$. Mẫu số $\sqrt{\max\left(c_b(i), \, 10^{-6}\right)}$ trực tiếp phạt các bài kiểm thử chạy dài nhằm hạn chế nguy cơ chậm phát hiện lỗi.
+    \item $w_b(i) = \frac{q_b(i)}{\sum_{j \in T_b} q_b(j)}$ là trọng số rủi ro lịch sử đã được chuẩn hóa theo tổng của toàn bộ suite kiểm thử hiện tại (\texttt{w = q / sum\_q}). Bản thân điểm rủi ro $q_b(i)$ (theo Công thức~\eqref{eq:q_score}) vốn đã chứa mẫu số chi phí $\sqrt{\widetilde{c}_b(i)}$ từ mô hình v1; do đó ở CNS-Greedy, \textbf{yếu tố chi phí thời gian xuất hiện ở cả hai thành phần} (ngữ nghĩa và lịch sử).
+    \item \textit{Sự phụ thuộc vào đơn vị đo thời gian:} Thành phần ngữ nghĩa sử dụng thời lượng thô tính theo giây ($c_b(i)$, đơn vị $\text{s}^{1/2}$ ở mẫu số), trong khi thành phần lịch sử $w_b(i)$ sử dụng thời lượng chuẩn hóa phi thứ nguyên $\widetilde{c}_b(i) = c_b(i)/c_{\text{ref}}$. Sự bất tương thích về thứ nguyên này khiến tỷ trọng cân bằng giữa ngữ nghĩa và lịch sử bị phụ thuộc trực tiếp vào đơn vị đo thời gian được lựa chọn (vấn đề này được ghi nhận như một đe dọa giá trị và phân tích tại Chương 5).
+    \item \textit{Tham số thực nghiệm:} Trong toàn bộ thực nghiệm Stage 11, hệ số kết hợp được cố định ở mức $\alpha = 0{,}5$ (quy định trong tệp thực thi \path{scripts/stage11_evaluation.py:109} và là giá trị mặc định của hàm \texttt{rank\_cns} tại \path{hc_falcon/variants.py:18}).
+\end{itemize}
+So với mô hình HC-FALCON v1 ban đầu (Công thức~\eqref{eq:combined_objective}), CNS-Greedy có hai điểm khác biệt cốt lõi: (1) thành phần ngữ nghĩa được chia thêm căn bậc hai thời lượng thô $\sqrt{\max(c_b(i), 10^{-6})}$ ở mẫu số, và (2) bắt buộc sử dụng vector trọng số lịch sử chuẩn hóa theo tổng suite thay vì điểm $q_b(i)$ thô. Thuật toán lựa chọn ứng viên có $\text{gain}_{\text{CNS}}$ lớn nhất, giải hòa bằng tên định danh từ điển (FQN tăng dần).
+
+% -----------------------------------------------------------------------------
+\subsubsection{Biến thể cuối UGCS v2 (Stage 12)}
+\label{subsubsec:ugcs_v2}
+
+Biến thể UGCS v2 (Uncertainty-Guarded Cost-aware Semantic ranking) là thế hệ thuật toán hoàn thiện nhất của đề tài, được khóa cứng trước thực nghiệm trong tệp cấu hình tiền đăng ký \texttt{configs/hc-falcon-v2-preregistered.json}. Thuật toán kết hợp 4 công đoạn logic chặt chẽ:
+
+% nguon: hc_falcon/v2.py:100-108, 205-215; configs/hc-falcon-v2-preregistered.json:8-38
+\begin{enumerate}
+    \item \textbf{Công đoạn 1 -- Ước lượng khoảng tin cậy rủi ro xấp xỉ chuẩn quanh kỳ vọng Bayes:}
+    Với mỗi bài kiểm thử $t \in T_b$, từ số lần chạy $N_t$ và số lần lỗi $F_t$ trong quá khứ, xác định phân phối hậu nghiệm Beta có kỳ vọng $\mu_t$ và độ lệch chuẩn $\sigma_t$:
+    \begin{align}
+    a_t &= F_t + 1{,}0, \qquad b_t = N_t - F_t + 1{,}0, \\
+    \mu_t &= \frac{a_t}{a_t + b_t}, \qquad \sigma_t = \sqrt{\frac{a_t b_t}{(a_t + b_t)^2 (a_t + b_t + 1{,}0)}}
+    \end{align}
+    Khoảng tin cậy rủi ro không tính theo phân vị tích hợp chính xác của hàm phân phối Beta mà sử dụng \textit{xấp xỉ chuẩn đối xứng quanh kỳ vọng hậu nghiệm Beta} $\mu_t \pm z \sigma_t$ với mức phân vị chuẩn $z = 1{,}96$ (tương đương khoảng tin cậy xấp xỉ 95\%), có cắt tỉa biên về $[0, 1]$. Cận dưới và cận trên của chỉ số rủi ro--chi phí được xác lập qua mẫu số chi phí $\text{denom}_t = \sqrt{\max(c_b(t), 10^{-6})} + 10^{-8}$:
+    \begin{align}
+    \text{Lower}_b(t) &= \frac{\operatorname{conf}_b(t) \cdot \max(0{,}0, \, \mu_t - 1{,}96 \sigma_t)}{\text{denom}_t} \\
+    \text{Upper}_b(t) &= \frac{\operatorname{conf}_b(t) \cdot \min(1{,}0, \, \mu_t + 1{,}96 \sigma_t)}{\text{denom}_t}
+    \end{align}
+
+    \item \textbf{Công đoạn 2 -- Lựa chọn mỏ neo lịch sử (History Anchor):}
+    Tại mỗi bước, xác định bài kiểm thử có điểm rủi ro lịch sử $q_b(t)$ lớn nhất trong tập các bài kiểm thử chưa được lập lịch làm điểm tựa an toàn:
+    \begin{equation}
+    \text{Anchor} = \arg\max_{t \in \text{remaining}} \left( q_b(t), \, -\text{ids}[t] \right)
+    \end{equation}
+
+    \item \textbf{Công đoạn 3 -- Khoanh vùng ứng viên an toàn (Safe Candidate Set):}
+    Tập hợp an toàn $\text{Safe}$ chỉ thu nạp những bài kiểm thử có cận trên rủi ro không thua kém cận dưới rủi ro của bài kiểm thử mỏ neo (cho phép dung sai số thực $10^{-12}$):
+    \begin{equation}
+    \text{Safe} = \left\{ t \in \text{remaining} \;\middle|\; \text{Upper}_b(t) + 10^{-12} \ge \text{Lower}_b(\text{Anchor}) \right\}
+    \end{equation}
+    Cơ chế này thiết lập ranh giới phòng vệ: một bài kiểm thử chỉ được phép tranh chấp vị trí sớm nếu khoảng bất định xác suất của nó cho thấy khả năng phát hiện lỗi thực tế không thể bị bác bỏ trước mỏ neo lịch sử tốt nhất.
+
+    \item \textbf{Công đoạn 4 -- Tham lam thỏa dụng tương đối (Relative Utility Greedy):}
+    Trong phạm vi tập an toàn $\text{Safe}$, thuật toán tính toán mật độ ngữ nghĩa có nhận thức chi phí (Cost-aware Semantic Density):
+    \begin{equation}
+    \text{Density}(t) = \frac{\Delta FL_b(t \mid S) / n}{\sqrt{\max(c_b(t), 10^{-6})}}
+    \end{equation}
+    Để loại bỏ sự chênh lệch độ lớn giữa hai thành phần, giá trị lịch sử và giá trị ngữ nghĩa được chuẩn hóa tỉ đối theo giá trị cực đại cục bộ:
+    \begin{equation}
+    q_{\text{rel}}(t) = \frac{q_b(t)}{\max_{j \in \text{remaining}} q_b(j)}, \qquad \text{Sem}_{\text{rel}}(t) = \frac{\text{Density}(t)}{\max_{j \in \text{Safe}} \text{Density}(j)}
+    \end{equation}
+    Chỉ số thỏa dụng tổng hợp (Combined Utility) được xác định với trọng số ngữ nghĩa $w_{\text{sem}} = 0{,}25$:
+    \begin{equation}
+    \text{Utility}(t) = (1 - w_{\text{sem}}) \cdot q_{\text{rel}}(t) + w_{\text{sem}} \cdot \text{Sem}_{\text{rel}}(t) = 0{,}75 \cdot q_{\text{rel}}(t) + 0{,}25 \cdot \text{Sem}_{\text{rel}}(t)
+    \end{equation}
+    Thuật toán chọn bài kiểm thử cực đại hóa $\text{Utility}(t)$, giải hòa theo $q_b(t)$ giảm dần, và cuối cùng theo tên định danh tăng dần.
+\end{enumerate}
+
+Thuật toán~\ref{algo:ugcs_v2} tóm tắt cấu trúc thực thi hoàn chỉnh của biến thể UGCS v2.
+
+\begin{algorithm}[H]
+\caption{Thuật toán UGCS v2 (Uncertainty-Guarded Cost-aware Semantic Ranking)}
+\label{algo:ugcs_v2}
+\begin{algorithmic}[1]
+\Require Tập kiểm thử $T_b$, ma trận tương đồng $K$, snapshot lịch sử $p_b, \operatorname{conf}_b, c_b$, tham số $w_{\text{sem}} = 0{,}25, z = 1{,}96$.
+\Ensure Thứ tự ưu tiên lập lịch $\pi_b$.
+\State Khởi tạo mảng bao phủ $\text{coverage} \leftarrow [0{,}0, \dots, 0{,}0] \in \mathbb{R}^n$, tập còn lại $\text{remaining} \leftarrow \{1, \dots, n\}$, dãy kết quả $\pi_b \leftarrow []$.
+% nguon: hc_falcon/v2.py:92-113
+\State \textbf{Tính toán tĩnh:} Tính cận $[\text{Lower}_b(t), \text{Upper}_b(t)]$ và điểm $q_b(t)$ cho mọi $t \in T_b$ theo Công thức (3.11)--(3.14).
+\While{$\text{remaining} \ne \emptyset$}
+    % nguon: hc_falcon/v2.py:121
+    \State $\text{anchor} \leftarrow \arg\max_{t \in \text{remaining}} (q_b(t), -\text{ids}[t])$
+    % nguon: hc_falcon/v2.py:124
+    \State $\text{Safe} \leftarrow \{t \in \text{remaining} \mid \text{Upper}_b(t) + 10^{-12} \ge \text{Lower}_b(\text{anchor})\}$
+    % nguon: hc_falcon/v2.py:128-136
+    \For{$t \in \text{Safe}$}
+        \State $\text{gain}_t \leftarrow \frac{1}{n} \sum_{u=1}^n \max(0, K[u, t] - \text{coverage}[u])$
+        \State $\text{Density}[t] \leftarrow \text{gain}_t / \sqrt{\max(c_b(t), 10^{-6})}$
+    \EndFor
+    % nguon: hc_falcon/v2.py:139, 144
+    \State $M_q \leftarrow \max_{j \in \text{remaining}} q_b(j)$; \quad $M_d \leftarrow \max_{j \in \text{Safe}} \text{Density}[j]$
+    \For{$t \in \text{Safe}$}
+        \State $q_{\text{rel}} \leftarrow q_b(t) / M_q$; \quad $\text{Sem}_{\text{rel}} \leftarrow \text{Density}[t] / M_d$
+        % nguon: hc_falcon/v2.py:151-152
+        \State $\text{Utility}[t] \leftarrow (1 - w_{\text{sem}}) q_{\text{rel}} + w_{\text{sem}} \text{Sem}_{\text{rel}}$
+    \EndFor
+    % nguon: hc_falcon/v2.py:155-172
+    \State $t^* \leftarrow \arg\max_{t \in \text{Safe}} (\text{Utility}[t] \downarrow, \, q_b(t) \downarrow, \, \text{ids}[t] \uparrow)$
+    \State Bổ sung $t^*$ vào cuối $\pi_b$; \quad loại bỏ $t^*$ khỏi $\text{remaining}$.
+    % nguon: hc_falcon/v2.py:176-179
+    \State $\text{coverage}[u] \leftarrow \max(\text{coverage}[u], K[u, t^*])$ với mọi $u \in \{1, \dots, n\}$.
+\EndWhile
+\State \Return $\pi_b$.
+\end{algorithmic}
+\end{algorithm}
+
+% =============================================================================
+\subsection{Phân tích độ phức tạp thuật toán}
+\label{subsec:complexity_analysis}
+
+Hiệu năng tính toán của thuật toán lập lịch là tiêu chí sống còn trong môi trường CI. Dưới đây là phân tích độ phức tạp tiệm cận về thời gian và không gian bộ nhớ, được suy diễn trực tiếp từ các cấu trúc lặp trong mã nguồn cài đặt.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Độ phức tạp thời gian (Time Complexity)}
+\label{subsubsec:time_complexity}
+
+Gọi $n = |T_b|$ là số lượng bài kiểm thử cần lập lịch trong một build stage, $d = 768$ là số chiều vector UniXcoder:
+\begin{enumerate}
+    \item \textbf{Khởi tạo Ma trận Tương đồng Ngữ nghĩa $K$:}
+    Phép nhân ma trận giữa ma trận embedding chuẩn hóa kích thước $(n \times d)$ và chuyển vị của nó $(d \times n)$ tiêu tốn chính xác $O(n^2 \cdot d)$ phép toán số thực. Với dự án lớn nhất Defects4J (Closure, $n = 7{,}454$), phép nhân này đòi hỏi khoảng $4{,}2 \times 10^7$ FLOPs, hoàn tất dưới 0,1 giây trên CPU thông thường. Trong môi trường CI thực tế, ma trận này được tái sử dụng trực tiếp từ bộ đệm.
+    
+    \item \textbf{Cập nhật Snapshot Lịch sử:}
+    % nguon: tcp/history.py:81-96
+    Hàm lặp qua $n$ bài kiểm thử, thực hiện tính toán trung vị thời gian và xác suất Bayes trong thời gian tuyến tính $O(n)$.
+    
+    \item \textbf{Biến thể HC-FALCON v1 dạng Tham lam Tiêu chuẩn (Standard Greedy):}
+    % nguon: hc_falcon/greedy.py:38-46
+    Vòng lặp ngoài duyệt qua $n$ bước chọn. Tại bước thứ $i$ (khi còn $n - i$ ứng viên), thuật toán duyệt qua toàn bộ $n - i$ ứng viên; với mỗi ứng viên, hàm \texttt{gain} quét qua toàn bộ vector $n$ chiều để tính mức tăng độ phủ. Tổng số phép tính số học là:
+    \begin{equation}
+    \sum_{i=1}^n (n - i) \cdot n = n \sum_{j=0}^{n-1} j = \frac{n^2 (n - 1)}{2} = O(n^3)
+    \end{equation}
+    
+    \item \textbf{Biến thể HC-FALCON v1 dạng Tham lam Lười (Lazy Greedy):}
+    % nguon: hc_falcon/greedy.py:36-44; falcon-icst-2026.pdf (trang 5, Mục IV-C)
+    Giai đoạn khởi tạo hàng đợi ưu tiên Min-Heap đòi hỏi tính toán gain ban đầu cho $n$ phần tử ($O(n^2)$) và cấu trúc lại heap qua \texttt{heapify} ($O(n)$). Tại mỗi bước chọn, thao tác rút đỉnh heap tốn $O(\log n)$. Về mặt lý thuyết, trong trường hợp xấu nhất khi toàn bộ các phần tử còn lại đều phải tính lại giá trị biên tại mỗi bước, độ phức tạp thời gian xấu nhất vẫn đạt mức $O(n^3)$ theo phân tích thuật toán tham lam gia tốc của Minoux~\cite{minoux1978accelerated} (điều này cũng được bài báo FALCON~\cite{falcon2026} tại Mục IV-C tái xác nhận). Về mặt thực nghiệm, bài báo FALCON kế thừa các kết quả thực nghiệm trước đó để ghi nhận số lượt đánh giá biên kỳ vọng thực tế chỉ khoảng $O(n \log n)$, tương ứng độ phức tạp kỳ vọng là $O(n^2 \log n)$ khi nhân với chi phí $O(n)$ của mỗi lượt quét mảng.
+    
+    \item \textbf{Biến thể CNS-Greedy (Stage 11):}
+    % nguon: hc_falcon/variants.py:43-61
+    Vòng lặp ngoài gồm $n$ bước chọn. Tại bước thứ $i$, thuật toán thực hiện phép trừ ma trận và tính tổng theo trục \texttt{axis=0} trên lát cắt ma trận $(n \times (n - i))$ thông qua thư viện NumPy. Số lượng phép toán số học tiệm cận vẫn là $\sum_{i=0}^{n-1} n (n - i) = O(n^3)$, song nhờ tận dụng chỉ thị SIMD và thư viện BLAS viết bằng C, thời gian chạy thực tế nhanh hơn đáng kể so với vòng lặp Python thuần.
+    
+    \item \textbf{Biến thể cuối UGCS v2 (Stage 12):}
+    % nguon: hc_falcon/v2.py:119-181, 225-270
+    Vòng lặp ngoài thực hiện $n$ bước chọn (\texttt{for \_ in range(n)}). Tại bước thứ $i$:
+    \begin{itemize}
+        \item Tìm mỏ neo: quét $n - i$ phần tử còn lại $\implies O(n - i)$.
+        \item Lọc tập an toàn $\text{Safe}$: quét $n - i$ phần tử $\implies O(n - i)$.
+        \item Tính toán lượng tăng biên cho tập $\text{Safe}$: duyệt qua $|\text{Safe}|$ ứng viên, mỗi ứng viên quét qua $n$ phần tử của vector bao phủ $\implies O(|\text{Safe}| \cdot n)$.
+        \item Chuẩn hóa tỉ đối, tính Utility và tìm kiếm phần tử tốt nhất: duyệt qua $|\text{Safe}|$ ứng viên $\implies O(|\text{Safe}|)$.
+        \item Cập nhật vector bao phủ: quét $n$ phần tử $\implies O(n)$.
+    \end{itemize}
+    Trong trường hợp thuận lợi khi tập an toàn bị thắt chặt ($|\text{Safe}| \ll n$), chi phí tính toán giảm mạnh. Tuy nhiên, trong trường hợp xấu nhất khi độ bất định lớn khiến toàn bộ ứng viên đều lọt vào tập an toàn ($|\text{Safe}| = n - i$), tổng thời gian thực thi là:
+    \begin{equation}
+    T(n) = \sum_{i=1}^n \left( (n - i) \cdot n + 2(n - i) + n \right) = n \sum_{j=0}^{n-1} j + O(n^2) = O(n^3)
+    \end{equation}
+    Như vậy, \textbf{độ phức tạp thời gian tiệm cận trường hợp xấu nhất của UGCS v2 là $O(n^3)$}. Về mặt thực nghiệm tại Stage 12, phương pháp ghi nhận độ trễ trung vị đo được là 53,82 ms/build stage, so với mức 0,11 ms của baseline \texttt{history\_cost} (tỷ số 478,0 lần, vi phạm Cổng thời gian chạy với tỷ lệ overhead P95 quan sát đạt $14.257{,}90\times$ so với ngưỡng quy định $\le 0{,}10$ tại Mục~\ref{subsubsec:decision_gates}). Phân tích kỹ thuật chuyên sâu về các yếu tố chi phối độ trễ này được trình bày tại Chương 5.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Độ phức tạp không gian (Space Complexity)}
+\label{subsubsec:space_complexity}
+
+Độ phức tạp không gian bộ nhớ của các biến thể được phân rã theo từng tập dữ liệu như sau:
+\begin{itemize}
+    \item \textbf{Bộ đệm vector embedding:} Kích thước $(n \times 768)$ kiểu \texttt{float32}. Với dự án có số lượng test lớn nhất trong tập Defects4J (Closure, $n = 7{,}454$), dung lượng RAM tiêu tốn chỉ khoảng $7{,}454 \times 768 \times 4\text{ B} \approx 21{,}84\text{ MiB}$.
+    \item \textbf{Ma trận nhân tương đồng $K$:} Kích thước $(n \times n)$. Với $n = 7{,}454$ (Closure, Defects4J), ma trận chiếm $7{,}454^2 \times 4\text{ B} \approx 211{,}95\text{ MiB}$ (kiểu \texttt{float32}) hoặc khoảng $423{,}90\text{ MiB}$ (kiểu \texttt{float64}). Đối với tập dữ liệu phát triển LRTS trong môi trường CI thực tế ($n \le 641$ test class), ma trận $K$ kiểu \texttt{float64} chỉ chiếm tối đa $641^2 \times 8\text{ B} \approx 3{,}13\text{ MiB}$.
+    \item \textbf{Các cấu trúc trạng thái phụ trợ:} Mảng bao phủ $\text{coverage}$ ($n$ phần tử \texttt{float64}), mảng trọng số $w$ ($n$ phần tử), mảng cận rủi ro $[\text{Lower}, \text{Upper}]$ ($2n$ phần tử) và hàng đợi ưu tiên heap của Lazy Greedy ($n$ nút) chỉ tiêu thụ tổng cộng dưới $1\text{ MiB}$.
+\end{itemize}
+
+Tổng mức chiếm dụng bộ nhớ RAM lý thuyết của thuật toán không vượt quá $450\text{ MiB}$. Mức đỉnh bộ nhớ RAM quan sát thực tế (Peak RSS) ghi nhận trong toàn bộ quá trình thực nghiệm trên **tập dữ liệu phát triển LRTS** (161 build lỗi) đạt $656{,}4\text{ MiB}$ (chủ yếu do không gian runtime của trình thông dịch Python và nạp các thư viện phụ trợ), nằm an toàn tuyệt đối dưới ngưỡng trần kỹ thuật $8{,}0\text{ GiB}$ ($8.192\text{ MiB}$) đã cam kết.
+
+Bảng~\ref{tab:algorithm_complexity_summary} tổng hợp phân tích độ phức tạp tiệm cận giữa các thuật toán đối chuẩn và các biến thể đề xuất.
+
+\begin{table}[H]
+\centering
+\caption{Tổng hợp độ phức tạp tiệm cận thời gian và không gian của các thuật toán}
+\label{tab:algorithm_complexity_summary}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\toprule
+\textbf{Thuật toán / Biến thể} & \textbf{Thời gian (Kỳ vọng)} & \textbf{Thời gian (Xấu nhất)} & \textbf{Bộ nhớ RAM} & \textbf{Nguồn mã nguồn} \\
+\midrule
+% nguon: tcp/baselines.py
+Đường cơ sở \texttt{history\_cost} & $O(n \log n)$ & $O(n \log n)$ & $O(n)$ & \path{tcp/baselines.py:34} \\
+% nguon: hc_falcon/greedy.py:45-46
+HC-FALCON v1 (Standard Greedy)     & $O(n^3)$      & $O(n^3)$      & $O(n^2)$ & \path{hc_falcon/greedy.py:45-46} \\
+% nguon: hc_falcon/greedy.py:36-44
+HC-FALCON v1 (Lazy Greedy)         & $O(n^2 \log n)$ & $O(n^3)$ & $O(n^2)$ & \path{hc_falcon/greedy.py:36-44} \\
+% nguon: hc_falcon/restricted.py:24-38
+Biến thể Hạn chế Ngữ nghĩa (Stage 8)& $O(n \cdot |\text{Pool}| \cdot n)$ & $O(n^3)$ & $O(n^2)$ & \path{hc_falcon/restricted.py:24-38} \\
+% nguon: hc_falcon/variants.py:43-61
+Biến thể CNS-Greedy (Stage 11)     & $O(n^3)$      & $O(n^3)$      & $O(n^2)$ & \path{hc_falcon/variants.py:43-61} \\
+% nguon: hc_falcon/v2.py:119-181, 225-270
+Biến thể UGCS v2 (Stage 12)        & $O(n \cdot |\text{Safe}| \cdot n)$ & $O(n^3)$ & $O(n^2)$ & \path{hc_falcon/v2.py:225-270} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\vspace{1mm}\\
+\footnotesize{\textit{Ghi chú: $n$ là số lượng test case trong một build stage; độ phức tạp bộ nhớ $O(n^2)$ xuất phát từ việc lưu ma trận nhân tương đồng kích thước $n \times n$.}}
+\end{table}
+
+% =============================================================================
+\subsection{Tổng kết chương}
+\label{subsec:methodology_summary}
+
+Chương 3 đã hoàn thiện việc thiết kế và đặc tả hình thức phương pháp HC-FALCON:
+\begin{enumerate}
+    \item Thiết lập kiến trúc phân tách hai pha (Offline -- Online) kết hợp rào chắn nhân quả thời gian cô lập dữ liệu thực thi động trong mô phỏng CI.
+    \item Xây dựng mô hình toán học HC-FALCON v1 hợp nhất hàm bao phủ Facility Location với xác suất lỗi Beta-Bernoulli và chi phí thực thi chuẩn hóa.
+    \item Chứng minh tính chất Monotone Submodular của hàm mục tiêu $F_N(S)$ và xác lập cận xấp xỉ lý thuyết $(1 - 1/e)$ của thuật toán tham lam đối với hai biến thể cơ sở v1; đồng thời chỉ rõ ranh giới lý thuyết khiến các biến thể cải tiến (Stage 8, 11, 12) không còn được bảo vệ bởi định lý này.
+    \item Chứng minh bằng phản ví dụ số học kiểm chứng độc lập sự tồn tại của khoảng trống phương pháp luận giữa việc tối ưu hàm proxy submodular và độ đo thực tiễn APFDc, giải thích cơ chế tiềm tàng của hiện tượng Heavy Predecessors.
+    \item Đặc tả chi tiết 3 thế hệ biến thể cải tiến (Hạn chế Ngữ nghĩa, CNS-Greedy và UGCS v2) và phân tích tường minh độ phức tạp tính toán tiệm cận $O(n^3)$ suy ra từ mã nguồn thực tế.
+\end{enumerate}
+
+Toàn bộ các mô hình, biến thể và giả định lý thuyết được trình bày tại chương này sẽ là cơ sở nền tảng để đối chiếu và kiểm chứng thực nghiệm định lượng tại Chương~\ref{sec:experiments}.

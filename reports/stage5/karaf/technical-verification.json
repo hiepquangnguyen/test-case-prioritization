@@ -1,0 +1,1475 @@
+{
+  "project": "karaf",
+  "scope": "Full warmup/development source and diff audit; first 16 FQN records of first development build for semantic integration only",
+  "reserved_opened": false,
+  "effectiveness_evaluated": false,
+  "full_suite_size": 214,
+  "smoke_size": 16,
+  "key": {
+    "project": "karaf",
+    "pr": "PR-1474",
+    "build": "1",
+    "stage": "single"
+  },
+  "cutoff": 1641232211.0,
+  "eligible_history_builds": 20,
+  "latest_evidence_available_at": 1639499391.0,
+  "source_counts": {
+    "matched": 119761,
+    "missing": 43,
+    "ambiguous": 556
+  },
+  "source_gate_passed": true,
+  "diff_available": 563,
+  "diff_total": 563,
+  "semantic_seconds": 14.274783000000753,
+  "encoder": {
+    "config": {
+      "unit_lrts": "test_class_record",
+      "source_representation": "declared_revision_compilation_unit; nested_class_uses_outer_file",
+      "source_preprocessing": "utf8_strict_bom_removed_lf_java_comments_removed_preserve_literals_v1",
+      "encoder": "microsoft/unixcoder-base",
+      "revision": "5604afdc964f6c53782a6813140ade5216b99006",
+      "model_api": "transformers_AutoModel_AutoTokenizer",
+      "max_length": 512,
+      "max_chunks": 16,
+      "chunk_policy": "nonoverlap_payload_no_special_tokens_then_add_model_special_tokens; keep_first_16",
+      "pooling": "attention_mask_mean_including_nonpadding_special_tokens; payload_length_weighted_chunk_mean_then_l2",
+      "model_dtype": "float32",
+      "similarity": "clip_cosine_0_1",
+      "invalid_source_similarity": "zero_row_and_column_including_diagonal",
+      "valid_source_diagonal": 1.0,
+      "zero_norm_policy": "semantic_unavailable_keep_test",
+      "nonfinite_policy": "hard_error"
+    },
+    "preprocessing": "utf8_strict_bom_removed_lf_java_comments_removed_preserve_literals_v1",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.19.0",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "dtype": "float32",
+    "tokenizer_sha256": "bf8021db1175b7dcc1b778e957e1ba709573c9c94254b184891754171e95b5e8",
+    "model_config_sha256": "42df2b576043103d0937651aa223d8ce5b67e36e5718eade564ac73376947e9f"
+  },
+  "kernel_key": "fcbf950a6a37b48d3643b51c524bb03e6ec316bc9f5d1d05fc191297538487c5",
+  "kernel_cache_hit": false,
+  "vectors": [
+    {
+      "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+      "cache_key": "8a84eae126ae6fb571e25f7d86df390989bf1d982ea8114112977f64799a7c91",
+      "source_sha256": "243181f1b8860be081e10fbb5bb4ec9c67e8c2b349babc02c80ff1f16d0e05be",
+      "cache_hit": false,
+      "token_count": 3289,
+      "chunks": 7,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "ad98ec4839e93f8c6bcffa7cfe1222d6cfa7af578ebc9fce45fadde47054ed83"
+    },
+    {
+      "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+      "cache_key": "f7d1772a6c02fe10232ba88e006827d5805903ad90e2f771879e489547a810f1",
+      "source_sha256": "b880945c67f0e5262dc29a79d7395a21ddb5e8199b5b69bd178c8a3c86b70d16",
+      "cache_hit": false,
+      "token_count": 353,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "0ce51a416e52c9cdd68f7f8ac41d4ca23714686aa35dd11ac7180bcfb80c2d2a"
+    },
+    {
+      "test_id": "org.apache.karaf.bundle.command.ListServicesTest",
+      "cache_key": "337f8e56908c1e9ef453873eee10491b98de2637928d536ea3491a4264518808",
+      "source_sha256": "e898e255d475920f32b750599c353a0068b4ae557e1e15e2b81ef041702c63eb",
+      "cache_hit": false,
+      "token_count": 341,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "c1885107bf566df1d07c7037793aeff5e86fd7ab3286a7566736c0383482bf80"
+    },
+    {
+      "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+      "cache_key": "95ed3125b01a0fc2ed7788c6d17689fa655730700ed5454682eea69e1911fb00",
+      "source_sha256": "f03270b6e4a6b6942c41e2c09f7d10113134fc38c0641c6e43cdac49b5af3be5",
+      "cache_hit": false,
+      "token_count": 943,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "42851afd0dcc48ae8637103062e19fb425b4cf66496ad3db498eaddf0c0c6ed8"
+    },
+    {
+      "test_id": "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+      "cache_key": "7cf73efb8a7095440b6c636be18d828963f5dc82ff76c3559f1b72ed08ad28f2",
+      "source_sha256": "8aeff644a1419f2b58880247dc6d4df819d5c19fbbf0d82c35a19d8bb7e5d7e7",
+      "cache_hit": false,
+      "token_count": 378,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "39066d34090d08c8728c409782bd11d30a265c65907fb2d4572cd7e4e4d4847e"
+    },
+    {
+      "test_id": "org.apache.karaf.client.ClientConfigTest",
+      "cache_key": "e94cb7e64d361f8dff02f0703a0de6e1b53e8af9ae1e383cf8caa529ea423a65",
+      "source_sha256": "1be2b6e06f97a8dca378c35b8558d47bf0f8c657993787127d0115c5332210ea",
+      "cache_hit": false,
+      "token_count": 272,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "9ce4b8f0c992287437426e021b9664e3bc71e475ba08b63c62f802a77ab8cbf3"
+    },
+    {
+      "test_id": "org.apache.karaf.config.command.EditCommandTest",
+      "cache_key": "16937b8c4e3e68e34791bc6cb41de03abe350d122f0c6645fce1f697a075ceff",
+      "source_sha256": "d662eac05cb7e62c1e029a1a7bfe506fcf486b66b772d854582233500825800a",
+      "cache_hit": false,
+      "token_count": 655,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "c2c6ce0ca8b253fc6a871b09a8161c5cb1cad0968655af7c1f8b4f841ebc8293"
+    },
+    {
+      "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+      "cache_key": "73dc7614290a3873cd191d4bca6a15924f3b86194c530120e53da973e0760256",
+      "source_sha256": "43d5543bc6422d5d5266e11ef718a85f3b2aef6bc226163c6dd3f7750938527b",
+      "cache_hit": false,
+      "token_count": 671,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "a39232a74157caea93e280d94f1979ac6c0d6811f2fc63142cfc3f9402cd02ed"
+    },
+    {
+      "test_id": "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+      "cache_key": "dc83a0953daf6a7ad5eeae34b0908890d5dbc0deba3bc26dff0c41c9b15b1dc3",
+      "source_sha256": "9b9c7a62e4d82f021d5caeaedee8afc1defd60a40043f03cb81e1f0a2d6a8a0e",
+      "cache_hit": false,
+      "token_count": 344,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "b7c1a52fe4b1ff34c7f929745d943c8fb281cbd385d5fef5cb6880a5130ed505"
+    },
+    {
+      "test_id": "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+      "cache_key": "a9bfd9b501983382b7ec4ccdc66cf025c2bb673267dc6adf297d03f352766691",
+      "source_sha256": "042fef80d43001279334d5a4cf92358f5bc3657c7fdde061d638d43e25ad4e01",
+      "cache_hit": false,
+      "token_count": 918,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "fd131470e3bd65cbde016d6d7aba3d2cdd4c25d81c4f246ed3c61bcdbe5cb156"
+    },
+    {
+      "test_id": "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+      "cache_key": "3b90d1330b467b1d7f3410e3b588b9597b52eb1ab8b218b65d673d60e408bf31",
+      "source_sha256": "e12d986f02bf1666100e0b361e1b7c99ef0c6ff2c907e1bf818d178daa275969",
+      "cache_hit": false,
+      "token_count": 769,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "86cd5fa9e7d86429603c4560e5cc86298664a8120221427d050f2e774f3597be"
+    },
+    {
+      "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+      "cache_key": "1ede9de998117d7cff47d8b1e77c6f5e0f4dbacd7a5859fe80df84de89cf4b7b",
+      "source_sha256": "6f11e05a9d6eb5bad3f75073ffa6a318aa1cb133e3beb6890b1e875b3d1a2828",
+      "cache_hit": false,
+      "token_count": 412,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "a6371add5b68942a6254c06367695d78e7062c3dbbd9d39d21a786d63f523a47"
+    },
+    {
+      "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+      "cache_key": "9f44f58ed0bff1547ded0e983ccf1b3a25d3be38b67d238631ee48e38a240511",
+      "source_sha256": "7dac8ad4e27f2865af7a849118cfae64dbbeed1942cb1b48d8f681c0bed4270f",
+      "cache_hit": false,
+      "token_count": 282,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "d9e1ed5f31cda3bbc44ef832538f47b70be1fadfc0b9abd10e365553f7a79650"
+    },
+    {
+      "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+      "cache_key": "98e1469b5de1c34e96d490c6fec7d750dcaf8af8f6a662e41c11c94fa06584cb",
+      "source_sha256": "1ef59d0bee8194e57a9f3a73a461d416172f2906d32d72dad6587edd45e0b8ab",
+      "cache_hit": false,
+      "token_count": 519,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "b57a8b83699f1a62e97f6cb87915c52f48e17526d195172acfb95292716dfb7b"
+    },
+    {
+      "test_id": "org.apache.karaf.event.command.EventSendCommandTest",
+      "cache_key": "dee79ae23ce9451d6f411733c674cfdfef4547d03699d7e73731424b4766be07",
+      "source_sha256": "1c36c56eba2fc68b8d7f80f2aa1b3c783418b7b35c281537a9e242fb8e70460b",
+      "cache_hit": false,
+      "token_count": 776,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "7d4082819615c94c072664cf2f622b37e87cd2f67d5ba0c713cab2b756e4a57e"
+    },
+    {
+      "test_id": "org.apache.karaf.event.command.EventTailCommandTest",
+      "cache_key": "f7d858a1d1f642926df3f2f5fa8935c8298d2dd7007a1c746b5fdd4458dfb5f8",
+      "source_sha256": "f16f404ae93d6288374cf790d9d403e89f27242f0bbc6f809f920e355738fa65",
+      "cache_hit": false,
+      "token_count": 458,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "9e6af1eceb206699592263bc5bc37009960504b678cc1fce8ffdb0bc35a3047e"
+    }
+  ],
+  "rankings": {
+    "random": {
+      "order": [
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.event.command.EventPrinterTest"
+      ],
+      "trace": []
+    },
+    "shortest_test_first": {
+      "order": [
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest"
+      ],
+      "trace": []
+    },
+    "most_fail": {
+      "order": [
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest"
+      ],
+      "trace": []
+    },
+    "recent_fail": {
+      "order": [
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest"
+      ],
+      "trace": []
+    },
+    "history_only": {
+      "order": [
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest"
+      ],
+      "trace": []
+    },
+    "history_cost": {
+      "order": [
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest"
+      ],
+      "trace": []
+    },
+    "hc_falcon_normalized_v1": {
+      "order": [
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+          "semantic_gain": 0.3911830931901932,
+          "modular_gain": 0.03403158382314362,
+          "total_gain": 0.4252146770133368,
+          "coverage_sum": 12.517858982086182
+        },
+        {
+          "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+          "semantic_gain": 0.010024050250649452,
+          "modular_gain": 0.07717637426992514,
+          "total_gain": 0.0872004245205746,
+          "coverage_sum": 12.838628590106964
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+          "semantic_gain": 0.012816281989216805,
+          "modular_gain": 0.05894443065502112,
+          "total_gain": 0.07176071264423792,
+          "coverage_sum": 13.248749613761902
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+          "semantic_gain": 0.007103119045495987,
+          "modular_gain": 0.06457038822509566,
+          "total_gain": 0.07167350727059164,
+          "coverage_sum": 13.476049423217773
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+          "semantic_gain": 0.012193024158477783,
+          "modular_gain": 0.05457193892821952,
+          "total_gain": 0.0667649630866973,
+          "coverage_sum": 13.866226196289062
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventSendCommandTest",
+          "semantic_gain": 0.0071413107216358185,
+          "modular_gain": 0.04565816031200828,
+          "total_gain": 0.052799471033644095,
+          "coverage_sum": 14.094748139381409
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+          "semantic_gain": 0.008802376687526703,
+          "modular_gain": 0.02947221626723832,
+          "total_gain": 0.03827459295476503,
+          "coverage_sum": 14.376424193382263
+        },
+        {
+          "test_id": "org.apache.karaf.client.ClientConfigTest",
+          "semantic_gain": 0.00471135601401329,
+          "modular_gain": 0.02887675659607787,
+          "total_gain": 0.03358811261009116,
+          "coverage_sum": 14.527187585830688
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+          "semantic_gain": 0.005400415509939194,
+          "modular_gain": 0.02152346374407484,
+          "total_gain": 0.026923879254014033,
+          "coverage_sum": 14.700000882148743
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+          "semantic_gain": 0.007720094174146652,
+          "modular_gain": 0.018958519709377432,
+          "total_gain": 0.026678613883524084,
+          "coverage_sum": 14.947043895721436
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.ListServicesTest",
+          "semantic_gain": 0.007347263395786285,
+          "modular_gain": 0.018336758984370434,
+          "total_gain": 0.02568402238015672,
+          "coverage_sum": 15.182156324386597
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.EditCommandTest",
+          "semantic_gain": 0.003610219806432724,
+          "modular_gain": 0.01929409477570269,
+          "total_gain": 0.022904314582135415,
+          "coverage_sum": 15.297683358192444
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+          "semantic_gain": 0.0077171940356493,
+          "modular_gain": 0.008071299021494043,
+          "total_gain": 0.015788493057143343,
+          "coverage_sum": 15.544633567333221
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventTailCommandTest",
+          "semantic_gain": 0.0036446377635002136,
+          "modular_gain": 0.0100596950378674,
+          "total_gain": 0.013704332801367614,
+          "coverage_sum": 15.661261975765228
+        },
+        {
+          "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+          "semantic_gain": 0.007318263873457909,
+          "modular_gain": 0.004669705387886809,
+          "total_gain": 0.011987969261344718,
+          "coverage_sum": 15.895446419715881
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+          "semantic_gain": 0.003267299383878708,
+          "modular_gain": 0.00578461426249678,
+          "total_gain": 0.009051913646375488,
+          "coverage_sum": 16.0
+        }
+      ]
+    },
+    "hc_falcon_topic_raw_v1": {
+      "order": [
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+          "semantic_gain": 0.3456718008965254,
+          "modular_gain": 0.184180310624402,
+          "total_gain": 0.5298521115209274,
+          "coverage_sum": 11.061497628688812
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+          "semantic_gain": 0.015887128189206123,
+          "modular_gain": 0.1540963056756447,
+          "total_gain": 0.16998343386485082,
+          "coverage_sum": 11.569885730743408
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+          "semantic_gain": 0.036013467237353325,
+          "modular_gain": 0.13023514978847833,
+          "total_gain": 0.16624861702583166,
+          "coverage_sum": 12.722316682338715
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+          "semantic_gain": 0.011357506737112999,
+          "modular_gain": 0.140670038600802,
+          "total_gain": 0.152027545337915,
+          "coverage_sum": 13.08575689792633
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventSendCommandTest",
+          "semantic_gain": 0.009477941319346428,
+          "modular_gain": 0.10896254492848674,
+          "total_gain": 0.11844048624783317,
+          "coverage_sum": 13.389051020145416
+        },
+        {
+          "test_id": "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+          "semantic_gain": 0.022053034976124763,
+          "modular_gain": 0.0812158868420633,
+          "total_gain": 0.10326892181818806,
+          "coverage_sum": 14.094748139381409
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+          "semantic_gain": 0.008802376687526703,
+          "modular_gain": 0.07033502154304783,
+          "total_gain": 0.07913739823057453,
+          "coverage_sum": 14.376424193382263
+        },
+        {
+          "test_id": "org.apache.karaf.client.ClientConfigTest",
+          "semantic_gain": 0.00471135601401329,
+          "modular_gain": 0.06891396557564701,
+          "total_gain": 0.0736253215896603,
+          "coverage_sum": 14.527187585830688
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+          "semantic_gain": 0.005400415509939194,
+          "modular_gain": 0.051365437617371536,
+          "total_gain": 0.05676585312731073,
+          "coverage_sum": 14.700000882148743
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+          "semantic_gain": 0.007720094174146652,
+          "modular_gain": 0.04524423545526285,
+          "total_gain": 0.0529643296294095,
+          "coverage_sum": 14.947043895721436
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.ListServicesTest",
+          "semantic_gain": 0.007347263395786285,
+          "modular_gain": 0.043760412399967176,
+          "total_gain": 0.05110767579575346,
+          "coverage_sum": 15.182156324386597
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.EditCommandTest",
+          "semantic_gain": 0.003610219806432724,
+          "modular_gain": 0.046045080539503555,
+          "total_gain": 0.04965530034593628,
+          "coverage_sum": 15.297683358192444
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventTailCommandTest",
+          "semantic_gain": 0.0036446377635002136,
+          "modular_gain": 0.024007317969887965,
+          "total_gain": 0.02765195573338818,
+          "coverage_sum": 15.41431176662445
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+          "semantic_gain": 0.0077171940356493,
+          "modular_gain": 0.0192620393868452,
+          "total_gain": 0.0269792334224945,
+          "coverage_sum": 15.661261975765228
+        },
+        {
+          "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+          "semantic_gain": 0.007318263873457909,
+          "modular_gain": 0.011144184952992742,
+          "total_gain": 0.01846244882645065,
+          "coverage_sum": 15.895446419715881
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+          "semantic_gain": 0.003267299383878708,
+          "modular_gain": 0.013804898996456007,
+          "total_gain": 0.017072198380334715,
+          "coverage_sum": 16.0
+        }
+      ]
+    },
+    "fl_only": {
+      "order": [
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+          "semantic_gain": 0.7823661863803864,
+          "modular_gain": 0.0,
+          "total_gain": 0.7823661863803864,
+          "coverage_sum": 12.517858982086182
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+          "semantic_gain": 0.031118739396333694,
+          "modular_gain": 0.0,
+          "total_gain": 0.031118739396333694,
+          "coverage_sum": 13.01575881242752
+        },
+        {
+          "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+          "semantic_gain": 0.022039543837308884,
+          "modular_gain": 0.0,
+          "total_gain": 0.022039543837308884,
+          "coverage_sum": 13.368391513824463
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.EditCommandTest",
+          "semantic_gain": 0.02120976150035858,
+          "modular_gain": 0.0,
+          "total_gain": 0.02120976150035858,
+          "coverage_sum": 13.7077476978302
+        },
+        {
+          "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+          "semantic_gain": 0.016887854784727097,
+          "modular_gain": 0.0,
+          "total_gain": 0.016887854784727097,
+          "coverage_sum": 13.977953374385834
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+          "semantic_gain": 0.015440188348293304,
+          "modular_gain": 0.0,
+          "total_gain": 0.015440188348293304,
+          "coverage_sum": 14.224996387958527
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+          "semantic_gain": 0.0154343880712986,
+          "modular_gain": 0.0,
+          "total_gain": 0.0154343880712986,
+          "coverage_sum": 14.471946597099304
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.ListServicesTest",
+          "semantic_gain": 0.01469452679157257,
+          "modular_gain": 0.0,
+          "total_gain": 0.01469452679157257,
+          "coverage_sum": 14.707059025764465
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+          "semantic_gain": 0.014636527746915817,
+          "modular_gain": 0.0,
+          "total_gain": 0.014636527746915817,
+          "coverage_sum": 14.941243469715118
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+          "semantic_gain": 0.014206238090991974,
+          "modular_gain": 0.0,
+          "total_gain": 0.014206238090991974,
+          "coverage_sum": 15.16854327917099
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+          "semantic_gain": 0.010800831019878387,
+          "modular_gain": 0.0,
+          "total_gain": 0.010800831019878387,
+          "coverage_sum": 15.341356575489044
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventSendCommandTest",
+          "semantic_gain": 0.010698188096284866,
+          "modular_gain": 0.0,
+          "total_gain": 0.010698188096284866,
+          "coverage_sum": 15.512527585029602
+        },
+        {
+          "test_id": "org.apache.karaf.client.ClientConfigTest",
+          "semantic_gain": 0.00942271202802658,
+          "modular_gain": 0.0,
+          "total_gain": 0.00942271202802658,
+          "coverage_sum": 15.663290977478027
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventTailCommandTest",
+          "semantic_gain": 0.007289275527000427,
+          "modular_gain": 0.0,
+          "total_gain": 0.007289275527000427,
+          "coverage_sum": 15.779919385910034
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+          "semantic_gain": 0.007220439612865448,
+          "modular_gain": 0.0,
+          "total_gain": 0.007220439612865448,
+          "coverage_sum": 15.895446419715881
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+          "semantic_gain": 0.006534598767757416,
+          "modular_gain": 0.0,
+          "total_gain": 0.006534598767757416,
+          "coverage_sum": 16.0
+        }
+      ]
+    },
+    "fl_history": {
+      "order": [
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+          "semantic_gain": 0.3911830931901932,
+          "modular_gain": 0.03125,
+          "total_gain": 0.4224330931901932,
+          "coverage_sum": 12.517858982086182
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+          "semantic_gain": 0.015559369698166847,
+          "modular_gain": 0.03125,
+          "total_gain": 0.04680936969816685,
+          "coverage_sum": 13.01575881242752
+        },
+        {
+          "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+          "semantic_gain": 0.011019771918654442,
+          "modular_gain": 0.03125,
+          "total_gain": 0.04226977191865444,
+          "coverage_sum": 13.368391513824463
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.EditCommandTest",
+          "semantic_gain": 0.01060488075017929,
+          "modular_gain": 0.03125,
+          "total_gain": 0.04185488075017929,
+          "coverage_sum": 13.7077476978302
+        },
+        {
+          "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+          "semantic_gain": 0.008443927392363548,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03969392739236355,
+          "coverage_sum": 13.977953374385834
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+          "semantic_gain": 0.007720094174146652,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03897009417414665,
+          "coverage_sum": 14.224996387958527
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+          "semantic_gain": 0.0077171940356493,
+          "modular_gain": 0.03125,
+          "total_gain": 0.0389671940356493,
+          "coverage_sum": 14.471946597099304
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.ListServicesTest",
+          "semantic_gain": 0.007347263395786285,
+          "modular_gain": 0.03125,
+          "total_gain": 0.038597263395786285,
+          "coverage_sum": 14.707059025764465
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+          "semantic_gain": 0.007318263873457909,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03856826387345791,
+          "coverage_sum": 14.941243469715118
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+          "semantic_gain": 0.007103119045495987,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03835311904549599,
+          "coverage_sum": 15.16854327917099
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+          "semantic_gain": 0.005400415509939194,
+          "modular_gain": 0.03125,
+          "total_gain": 0.036650415509939194,
+          "coverage_sum": 15.341356575489044
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventSendCommandTest",
+          "semantic_gain": 0.005349094048142433,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03659909404814243,
+          "coverage_sum": 15.512527585029602
+        },
+        {
+          "test_id": "org.apache.karaf.client.ClientConfigTest",
+          "semantic_gain": 0.00471135601401329,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03596135601401329,
+          "coverage_sum": 15.663290977478027
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventTailCommandTest",
+          "semantic_gain": 0.0036446377635002136,
+          "modular_gain": 0.03125,
+          "total_gain": 0.034894637763500214,
+          "coverage_sum": 15.779919385910034
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+          "semantic_gain": 0.003610219806432724,
+          "modular_gain": 0.03125,
+          "total_gain": 0.034860219806432724,
+          "coverage_sum": 15.895446419715881
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+          "semantic_gain": 0.003267299383878708,
+          "modular_gain": 0.03125,
+          "total_gain": 0.03451729938387871,
+          "coverage_sum": 16.0
+        }
+      ]
+    },
+    "no_confidence": {
+      "order": [
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+          "semantic_gain": 0.3911830931901932,
+          "modular_gain": 0.03403158382314363,
+          "total_gain": 0.4252146770133368,
+          "coverage_sum": 12.517858982086182
+        },
+        {
+          "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+          "semantic_gain": 0.010024050250649452,
+          "modular_gain": 0.07717637426992516,
+          "total_gain": 0.08720042452057461,
+          "coverage_sum": 12.838628590106964
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+          "semantic_gain": 0.012816281989216805,
+          "modular_gain": 0.05894443065502112,
+          "total_gain": 0.07176071264423792,
+          "coverage_sum": 13.248749613761902
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+          "semantic_gain": 0.007103119045495987,
+          "modular_gain": 0.06457038822509566,
+          "total_gain": 0.07167350727059164,
+          "coverage_sum": 13.476049423217773
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+          "semantic_gain": 0.012193024158477783,
+          "modular_gain": 0.05457193892821952,
+          "total_gain": 0.0667649630866973,
+          "coverage_sum": 13.866226196289062
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventSendCommandTest",
+          "semantic_gain": 0.0071413107216358185,
+          "modular_gain": 0.045658160312008284,
+          "total_gain": 0.0527994710336441,
+          "coverage_sum": 14.094748139381409
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+          "semantic_gain": 0.008802376687526703,
+          "modular_gain": 0.029472216267238324,
+          "total_gain": 0.03827459295476503,
+          "coverage_sum": 14.376424193382263
+        },
+        {
+          "test_id": "org.apache.karaf.client.ClientConfigTest",
+          "semantic_gain": 0.00471135601401329,
+          "modular_gain": 0.02887675659607787,
+          "total_gain": 0.03358811261009116,
+          "coverage_sum": 14.527187585830688
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+          "semantic_gain": 0.005400415509939194,
+          "modular_gain": 0.02152346374407484,
+          "total_gain": 0.026923879254014033,
+          "coverage_sum": 14.700000882148743
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+          "semantic_gain": 0.007720094174146652,
+          "modular_gain": 0.018958519709377432,
+          "total_gain": 0.026678613883524084,
+          "coverage_sum": 14.947043895721436
+        },
+        {
+          "test_id": "org.apache.karaf.bundle.command.ListServicesTest",
+          "semantic_gain": 0.007347263395786285,
+          "modular_gain": 0.01833675898437043,
+          "total_gain": 0.025684022380156716,
+          "coverage_sum": 15.182156324386597
+        },
+        {
+          "test_id": "org.apache.karaf.config.command.EditCommandTest",
+          "semantic_gain": 0.003610219806432724,
+          "modular_gain": 0.019294094775702694,
+          "total_gain": 0.02290431458213542,
+          "coverage_sum": 15.297683358192444
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+          "semantic_gain": 0.0077171940356493,
+          "modular_gain": 0.008071299021494043,
+          "total_gain": 0.015788493057143343,
+          "coverage_sum": 15.544633567333221
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventTailCommandTest",
+          "semantic_gain": 0.0036446377635002136,
+          "modular_gain": 0.010059695037867402,
+          "total_gain": 0.013704332801367616,
+          "coverage_sum": 15.661261975765228
+        },
+        {
+          "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+          "semantic_gain": 0.007318263873457909,
+          "modular_gain": 0.004669705387886809,
+          "total_gain": 0.011987969261344718,
+          "coverage_sum": 15.895446419715881
+        },
+        {
+          "test_id": "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+          "semantic_gain": 0.003267299383878708,
+          "modular_gain": 0.005784614262496781,
+          "total_gain": 0.00905191364637549,
+          "coverage_sum": 16.0
+        }
+      ]
+    },
+    "borda_history": {
+      "order": [
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest"
+      ],
+      "trace": []
+    },
+    "borda_history_cost": {
+      "order": [
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest"
+      ],
+      "trace": []
+    },
+    "fast_pw_lrts": {
+      "0": [
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest"
+      ],
+      "1": [
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest"
+      ],
+      "2": [
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest"
+      ],
+      "3": [
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest"
+      ],
+      "4": [
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest"
+      ],
+      "5": [
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest"
+      ],
+      "6": [
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest"
+      ],
+      "7": [
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest"
+      ],
+      "8": [
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest"
+      ],
+      "9": [
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest"
+      ],
+      "10": [
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest"
+      ],
+      "11": [
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventSendCommandTest"
+      ],
+      "12": [
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest"
+      ],
+      "13": [
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest"
+      ],
+      "14": [
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest"
+      ],
+      "15": [
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest"
+      ],
+      "16": [
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest"
+      ],
+      "17": [
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest"
+      ],
+      "18": [
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventTailCommandTest"
+      ],
+      "19": [
+        "org.apache.karaf.audit.logger.EventLoggerTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest"
+      ]
+    },
+    "dante_cch_adapt_r1": {
+      "order": [
+        "org.apache.karaf.audit.util.FastDateFormatTest",
+        "org.apache.karaf.bundle.command.bundletree.TreeTest",
+        "org.apache.karaf.config.command.UpdateCommandTest",
+        "org.apache.karaf.event.command.EventDisplayCommandTest",
+        "org.apache.karaf.event.command.EventSendCommandTest",
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest",
+        "org.apache.karaf.event.command.EventPrinterTest",
+        "org.apache.karaf.client.ClientConfigTest",
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest",
+        "org.apache.karaf.config.command.EditCommandTest",
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest",
+        "org.apache.karaf.bundle.command.ListServicesTest",
+        "org.apache.karaf.event.command.EventTailCommandTest",
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest",
+        "org.apache.karaf.audit.logger.EventLoggerTest"
+      ],
+      "reason": null,
+      "scores": {
+        "org.apache.karaf.audit.logger.EventLoggerTest": 0.04148099023043596,
+        "org.apache.karaf.audit.util.FastDateFormatTest": 11.448454929499823,
+        "org.apache.karaf.bundle.command.ListServicesTest": 0.4148681789944129,
+        "org.apache.karaf.bundle.command.bundletree.TreeTest": 7.097302038017328,
+        "org.apache.karaf.bundle.core.internal.MavenConfigServiceTest": 0.6135592985813088,
+        "org.apache.karaf.client.ClientConfigTest": 1.1941092009811685,
+        "org.apache.karaf.config.command.EditCommandTest": 0.5749436406027513,
+        "org.apache.karaf.config.command.UpdateCommandTest": 6.964857442282661,
+        "org.apache.karaf.config.core.impl.ConfigMBeanImplTest": 1.803149694085515,
+        "org.apache.karaf.deployer.blueprint.BlueprintDeploymentListenerTest": 0.06012664671763441,
+        "org.apache.karaf.deployer.kar.KarArtifactInstallerTest": 0.46661094196086444,
+        "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest": 0.13796831609464397,
+        "org.apache.karaf.event.command.EventDisplayCommandTest": 3.8169470044125577,
+        "org.apache.karaf.event.command.EventPrinterTest": 1.6466333702862488,
+        "org.apache.karaf.event.command.EventSendCommandTest": 3.7700360395550003,
+        "org.apache.karaf.event.command.EventTailCommandTest": 0.17227520211049813
+      }
+    }
+  }
+}

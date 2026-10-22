@@ -1,0 +1,14 @@
+{
+  "project": "activemq",
+  "builds": 223,
+  "counts": {
+    "matched": 170412,
+    "ambiguous": 1288,
+    "missing": 2839
+  },
+  "matched_fraction": 0.976354854788901,
+  "reserved_opened": false,
+  "requested_commits": 263,
+  "missing_commits": 0,
+  "provenance": "Declared metadata revision only; not independently verified CI execution revision"
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "stage6",
+  "scope": "stage6_run_freeze",
+  "phase": "B",
+  "reserved_opened": false,
+  "description": "Historical execution run freeze descriptor for Stage 6 development pilot",
+  "projects": ["karaf", "activemq", "log4j"]
+}

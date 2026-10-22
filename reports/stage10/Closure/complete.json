@@ -1,0 +1,9 @@
+{
+  "project": "Closure",
+  "tests_count": 8006,
+  "faults_count": 147,
+  "independent_apfd": 0.6985555901101385,
+  "author_apfd": 0.7001997651421298,
+  "apfd_delta": -0.001644175031991324,
+  "provenance": "cold_embedding_run"
+}

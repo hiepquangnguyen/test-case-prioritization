@@ -1,0 +1,143 @@
+{
+  "HC-FALCON v1 vs History+Cost": {
+    "karaf": {
+      "n_builds": 79,
+      "wins": 24,
+      "losses": 54,
+      "ties": 1,
+      "win_rate_pct": 30.37974683544304,
+      "mean_delta_pct": -0.4410752870139088,
+      "median_delta_pct": -1.265013202013776,
+      "wilcoxon_stat": 1020.0,
+      "p_value": 0.006250858324483673,
+      "cliffs_delta": -0.05191475725044063,
+      "cliffs_desc": "negligible",
+      "ci95_low_pct": -3.2192774573561254,
+      "ci95_high_pct": 2.5286331774418214
+    },
+    "activemq": {
+      "n_builds": 57,
+      "wins": 10,
+      "losses": 47,
+      "ties": 0,
+      "win_rate_pct": 17.543859649122805,
+      "mean_delta_pct": -3.3937751266431198,
+      "median_delta_pct": -1.4067477111496252,
+      "wilcoxon_stat": 202.0,
+      "p_value": 6.98492037969754e-07,
+      "cliffs_delta": -0.14127423822714683,
+      "cliffs_desc": "negligible",
+      "ci95_low_pct": -6.151439383897453,
+      "ci95_high_pct": -1.059790894543738
+    },
+    "log4j": {
+      "n_builds": 25,
+      "wins": 4,
+      "losses": 21,
+      "ties": 0,
+      "win_rate_pct": 16.0,
+      "mean_delta_pct": 0.7768285086034852,
+      "median_delta_pct": -0.11710902368835541,
+      "wilcoxon_stat": 79.0,
+      "p_value": 0.023649930953979492,
+      "cliffs_delta": -0.1008,
+      "cliffs_desc": "negligible",
+      "ci95_low_pct": -0.9640122548446859,
+      "ci95_high_pct": 3.0069744654664166
+    }
+  },
+  "HC-FALCON v1 vs FL-only (Semantic)": {
+    "karaf": {
+      "n_builds": 79,
+      "wins": 64,
+      "losses": 15,
+      "ties": 0,
+      "win_rate_pct": 81.0126582278481,
+      "mean_delta_pct": 31.882750356660555,
+      "median_delta_pct": 29.721245445053036,
+      "wilcoxon_stat": 256.0,
+      "p_value": 9.769203064726738e-11,
+      "cliffs_delta": 0.6577471559045025,
+      "cliffs_desc": "large",
+      "ci95_low_pct": 24.869668560464962,
+      "ci95_high_pct": 38.992911430539564
+    },
+    "activemq": {
+      "n_builds": 57,
+      "wins": 53,
+      "losses": 2,
+      "ties": 2,
+      "win_rate_pct": 92.98245614035088,
+      "mean_delta_pct": 33.036523136627885,
+      "median_delta_pct": 39.13629955695246,
+      "wilcoxon_stat": 62.0,
+      "p_value": 1.3407769802429812e-09,
+      "cliffs_delta": 0.7260695598645737,
+      "cliffs_desc": "large",
+      "ci95_low_pct": 26.29963329209376,
+      "ci95_high_pct": 39.60629481528442
+    },
+    "log4j": {
+      "n_builds": 25,
+      "wins": 22,
+      "losses": 3,
+      "ties": 0,
+      "win_rate_pct": 88.0,
+      "mean_delta_pct": 20.24007952881031,
+      "median_delta_pct": 28.692861871334674,
+      "wilcoxon_stat": 37.0,
+      "p_value": 0.00032907724380493164,
+      "cliffs_delta": 0.744,
+      "cliffs_desc": "large",
+      "ci95_low_pct": 11.152626040536683,
+      "ci95_high_pct": 28.452571202261772
+    }
+  },
+  "History+Cost vs FL-only": {
+    "karaf": {
+      "n_builds": 79,
+      "wins": 64,
+      "losses": 15,
+      "ties": 0,
+      "win_rate_pct": 81.0126582278481,
+      "mean_delta_pct": 32.32382564367447,
+      "median_delta_pct": 30.927515436209607,
+      "wilcoxon_stat": 336.0,
+      "p_value": 1.2054696782891212e-09,
+      "cliffs_delta": 0.6468514661112001,
+      "cliffs_desc": "large",
+      "ci95_low_pct": 24.322128820786997,
+      "ci95_high_pct": 40.46638063541294
+    },
+    "activemq": {
+      "n_builds": 57,
+      "wins": 53,
+      "losses": 4,
+      "ties": 0,
+      "win_rate_pct": 92.98245614035088,
+      "mean_delta_pct": 36.43029826327101,
+      "median_delta_pct": 41.86632726617409,
+      "wilcoxon_stat": 59.0,
+      "p_value": 1.0743921391604713e-09,
+      "cliffs_delta": 0.7943982763927362,
+      "cliffs_desc": "large",
+      "ci95_low_pct": 29.4347451404244,
+      "ci95_high_pct": 43.317703441378995
+    },
+    "log4j": {
+      "n_builds": 25,
+      "wins": 22,
+      "losses": 3,
+      "ties": 0,
+      "win_rate_pct": 88.0,
+      "mean_delta_pct": 19.46325102020682,
+      "median_delta_pct": 28.876971829327324,
+      "wilcoxon_stat": 51.0,
+      "p_value": 0.0018156766891479492,
+      "cliffs_delta": 0.712,
+      "cliffs_desc": "large",
+      "ci95_low_pct": 8.62346408458093,
+      "ci95_high_pct": 28.839100131420274
+    }
+  }
+}

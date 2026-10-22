@@ -1,0 +1,8714 @@
+[
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1213",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1607751355.0,
+    "split": "warmup",
+    "commit": "a45cb03f411863a1b65757b6c66dfcbaff9117df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1077",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1607751359.0,
+    "split": "warmup",
+    "commit": "bb87902e08944d28d1670ec2823a6974d9b8d57b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1213",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1608308215.0,
+    "split": "warmup",
+    "commit": "a45cb03f411863a1b65757b6c66dfcbaff9117df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1077",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1608308221.0,
+    "split": "warmup",
+    "commit": "bb87902e08944d28d1670ec2823a6974d9b8d57b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1287",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1610086696.0,
+    "split": "warmup",
+    "commit": "49ca16ede41685e9d5a3ad2908d4172238dae873",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1287",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1610093698.0,
+    "split": "warmup",
+    "commit": "ea949f8519cf1d32beb65b4f685033da18a3b317",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1288",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1610438231.0,
+    "split": "warmup",
+    "commit": "5f826e6b4cc16e0d117db945c831888aca6d1f81",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1289",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1610634630.0,
+    "split": "warmup",
+    "commit": "8f99d667e2f6005220efd5f0bea378526f826bcd",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1290",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1610687640.0,
+    "split": "warmup",
+    "commit": "a9eb089f009a673888bb25f6867b1d9ae88008d6",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1291",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1610946300.0,
+    "split": "warmup",
+    "commit": "d1883826fb7b7b633fbefdaf2b77e563e9e862d0",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1292",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1612965913.0,
+    "split": "warmup",
+    "commit": "d14fca7b01b6e76b1e567409485fdff5f48a4248",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1293",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613038370.0,
+    "split": "warmup",
+    "commit": "97e871a1d762da15abad6aabf32c027e55761701",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1294",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613038371.0,
+    "split": "warmup",
+    "commit": "4b1c321d0f4d5a857ef934b152191e71465fe6bd",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1295",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613062313.0,
+    "split": "warmup",
+    "commit": "076d211a81c0420a407f989ef550ffeb75d8d678",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1294",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1613115941.0,
+    "split": "warmup",
+    "commit": "193c54827382b11bbefa7216e8c54579865951f0",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1296",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613576515.0,
+    "split": "warmup",
+    "commit": "0329dadcb9d9dc668b8512a3fb19cda6a2d3afb1",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1290",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1613734948.0,
+    "split": "warmup",
+    "commit": "6c07e5215a8dfb4bfc7240ce6b0722a2930425ba",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1297",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613891763.0,
+    "split": "warmup",
+    "commit": "0312f9a3e10396986bb827b113539cc9cd3c9496",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1298",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613891918.0,
+    "split": "warmup",
+    "commit": "1c39664e66b7902deb527b011956c9e9f76d6693",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1299",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613975076.0,
+    "split": "warmup",
+    "commit": "d69b6c8e1a425a1c5473c20a641a6f32b00bf1b8",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1300",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1613975196.0,
+    "split": "warmup",
+    "commit": "020b0302aa286da24334de09b55dbd3cc8a88877",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1300",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614084872.0,
+    "split": "warmup",
+    "commit": "b8103cf7e80e389374f7b273c6b82a6c197c6e0b",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1290",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1614084937.0,
+    "split": "warmup",
+    "commit": "b212562d8b215d38da0773993552a4ab7084132f",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1301",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614085658.0,
+    "split": "warmup",
+    "commit": "8271c23c48eabb2409322cc2aa11d779ebaf4eaa",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1302",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614085777.0,
+    "split": "warmup",
+    "commit": "be293e4dfd7ad9966ef61ac5b3f22127ca9814a6",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1301",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614099965.0,
+    "split": "warmup",
+    "commit": "986eac8085ae56e19980cf4c9cbe4bd59ec47e20",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1302",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614100288.0,
+    "split": "warmup",
+    "commit": "06db970a1b19f6b28a055c684c2b8efb97d06e63",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1303",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614231234.0,
+    "split": "warmup",
+    "commit": "00b5dbc2da5abd89e82386ab2076d087d88f50be",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1303",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614322461.0,
+    "split": "warmup",
+    "commit": "e36f267170a40a2619e454a883c676be341cf384",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1300",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614403708.0,
+    "split": "warmup",
+    "commit": "6a01b4a6e6d3ec6e8256d1fe85222fa1f7977d52",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1304",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614403818.0,
+    "split": "warmup",
+    "commit": "d0276d7d8ddb0653127b142aeaaf7db79c4be0e8",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1305",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614405496.0,
+    "split": "warmup",
+    "commit": "bf8c33b52f286aa78560062b6833fa6a83966f7e",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1306",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614493740.0,
+    "split": "warmup",
+    "commit": "39a7ffa8b3bbda4c76477b77422815716c44fa1d",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1307",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614493809.0,
+    "split": "warmup",
+    "commit": "048bc20ca217c9b3fd4acc9c684a1224adaf398d",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1308",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614496033.0,
+    "split": "warmup",
+    "commit": "a9a689fd6bf904b9657304e29c854d083ea3bb72",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1309",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614496224.0,
+    "split": "warmup",
+    "commit": "386944f087bfdb1b3a2eca6307fc150aa10b8225",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1310",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614507225.0,
+    "split": "warmup",
+    "commit": "73ff37a121c4e362fddfd178ebd2fa4999fd6495",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1311",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614517440.0,
+    "split": "warmup",
+    "commit": "84866fae52b5b2e043f02c60cab9a5e36f6f8845",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1312",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614517514.0,
+    "split": "warmup",
+    "commit": "f7307754ed22fa874f430f9801d6e535ed410d20",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1307",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614517566.0,
+    "split": "warmup",
+    "commit": "6b29b7784b200a907ca58c948127a5a2cabae4eb",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1306",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614517605.0,
+    "split": "warmup",
+    "commit": "2eb9adcb259e81efc2fb19989c0cdf1d026b7399",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1300",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1614517632.0,
+    "split": "warmup",
+    "commit": "5cef5e2d7ec9dc47667435c906fc668fdd5ccb8d",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1306",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614579848.0,
+    "split": "warmup",
+    "commit": "e5e192ceb871763754c5393411750db1380c78a2",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1306",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1614696667.0,
+    "split": "warmup",
+    "commit": "a2fbe34e88e52ed87b05e58a4676e63355fa448f",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1310",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614696741.0,
+    "split": "warmup",
+    "commit": "8d679128379528f73065757e29c91965396427e7",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1308",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614696816.0,
+    "split": "warmup",
+    "commit": "dd1e378040ccc85a3ee847d3a18db571cbfbaae2",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1310",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614753949.0,
+    "split": "warmup",
+    "commit": "2eb8a71ac1df4fd968997dab845123f19567a50f",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1313",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614768171.0,
+    "split": "warmup",
+    "commit": "04b081db1bfa66a913e98ddeec521db4f45e696f",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1314",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614789094.0,
+    "split": "warmup",
+    "commit": "93b5baa6e727b5e284992a8eb5adcdadb5fb02c9",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1316",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614834146.0,
+    "split": "warmup",
+    "commit": "31c43c548bd7374bb8c4035488985a1a31f57765",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1317",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614834373.0,
+    "split": "warmup",
+    "commit": "d04c55f9f7f25ed59f123009f6b071b7e8650d13",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1315",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614835167.0,
+    "split": "warmup",
+    "commit": "ec03b063cd491d10804871d95bd1c6cf572b1924",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1294",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614838990.0,
+    "split": "warmup",
+    "commit": "7fc877f6789c987a4d65cc0201b4a58a41d122fb",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1317",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614863359.0,
+    "split": "warmup",
+    "commit": "3bd7e7520efb8b6d8feca4a9af3aef3a58d4bcbb",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1289",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614865040.0,
+    "split": "warmup",
+    "commit": "0e4a0535d5d0b523cdd84a815052f3aa3e7e993d",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1291",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1614865122.0,
+    "split": "warmup",
+    "commit": "cd6524107494d68673b2108a3fcd17db8b2c99e2",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1289",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614873483.0,
+    "split": "warmup",
+    "commit": "01b621bf9f178fac2ded5c9ee7a41f79325c36d3",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1291",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614921713.0,
+    "split": "warmup",
+    "commit": "01aa5dba1f6a0802ec2ecb725546d40469b27ffb",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1287",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1614925743.0,
+    "split": "warmup",
+    "commit": "4fa5c941b982f600c522af563f7aabfe60b3fd01",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1287",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1614949958.0,
+    "split": "warmup",
+    "commit": "ce15e8ad28daf4cf3c3742b3d30ad8276bdf15b7",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1318",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1614951666.0,
+    "split": "warmup",
+    "commit": "bac366abbc27e9961476d303e54fa17820fee765",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1321",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615011055.0,
+    "split": "warmup",
+    "commit": "2f485dc388d09e807aff76be35e544bbeb2d245f",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1323",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615011215.0,
+    "split": "warmup",
+    "commit": "3c7e6d3769b2937942658763ac2042ef53658d02",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1322",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1615011778.0,
+    "split": "warmup",
+    "commit": "53f15d8e421f721d07a3686a10b1d5d41c459544",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1319",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1615012105.0,
+    "split": "warmup",
+    "commit": "d84d2990d4a2cb6cbd8aa5b08f846dc0f65bf542",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1320",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1615012129.0,
+    "split": "warmup",
+    "commit": "f681c7c2a07a9df237af3823d0978de38f908458",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1324",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615012950.0,
+    "split": "warmup",
+    "commit": "148c1809e02339bfcebe6c929a3cd9c5279cfe18",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1321",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1615097345.0,
+    "split": "warmup",
+    "commit": "9e05a6e346d52e4e8267dc5132637baefc35598a",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1323",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1615097397.0,
+    "split": "warmup",
+    "commit": "9ffe135b006ffa928a25944bbae9d9e0c0bc1e23",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1320",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1615097458.0,
+    "split": "warmup",
+    "commit": "f05cb472debebed34f1014e524772910f3e430c1",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1325",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615138372.0,
+    "split": "warmup",
+    "commit": "84de1737c3afc81f81df5ef144e237957b3ff20b",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1326",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615180888.0,
+    "split": "warmup",
+    "commit": "128e91f5cf9c6eb5e5598616126bf6e43ecd264c",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1327",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615190720.0,
+    "split": "warmup",
+    "commit": "9dfe1cca4cefe0964dfab4185b3e092a4566366e",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1328",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1615216306.0,
+    "split": "warmup",
+    "commit": "f094ff9e77fdbce62b92cee1ce81583295a29849",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1329",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615733190.0,
+    "split": "warmup",
+    "commit": "188a88e341d2ac7d471b0266464580743db00a19",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1330",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1615826946.0,
+    "split": "warmup",
+    "commit": "468c3cb7d09e206869020c1ceecbc6c051c9de1b",
+    "branch": "master"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1077",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1616523296.0,
+    "split": "warmup",
+    "commit": "bb87902e08944d28d1670ec2823a6974d9b8d57b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1213",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1616523296.0,
+    "split": "warmup",
+    "commit": "a45cb03f411863a1b65757b6c66dfcbaff9117df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1331",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616597162.0,
+    "split": "warmup",
+    "commit": "e0df432fe777fd71095b3141b09f76b671b362d8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1332",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616597892.0,
+    "split": "warmup",
+    "commit": "10c2b4952d4eea01d1c2c35d3d55ceeab444e7e0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1333",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616598592.0,
+    "split": "warmup",
+    "commit": "52e089aace2b14049da015d50ac6a72391973258",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1334",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616600307.0,
+    "split": "warmup",
+    "commit": "8fa7b48a1c533c191db45ff7a35ae270ff9997df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1335",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616600472.0,
+    "split": "warmup",
+    "commit": "d6a90d26e0e599258eb6fa99f52e9f89f26573f9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1336",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616645233.0,
+    "split": "warmup",
+    "commit": "0f654e51e11fca2645fbaa68b476a037d9b84262",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1337",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616648823.0,
+    "split": "warmup",
+    "commit": "0947c4b01327563ae0b8e3c12ac56f2ef7cfed6d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1338",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616691950.0,
+    "split": "warmup",
+    "commit": "e8bff815940c457a43224fa92b1e0d5e502eb544",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1340",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616826117.0,
+    "split": "warmup",
+    "commit": "ad58e26fbbf79ad4d53cecf6d4914652f5b5e8dd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1341",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1616995606.0,
+    "split": "warmup",
+    "commit": "6d73146bb13152395d6e8db77c0d79b58702976c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1339",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1617003094.0,
+    "split": "warmup",
+    "commit": "151d6b1dc769f7e9dcd81e94aa9e51e3b604cb26",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1342",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1617479593.0,
+    "split": "warmup",
+    "commit": "68130c14a80e6cdd68cd83ed84f57b4f39baf73a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1343",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1617888123.0,
+    "split": "warmup",
+    "commit": "cf6da161b759841e5b27bf506686c3dfa1f88f23",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1343",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1617888989.0,
+    "split": "warmup",
+    "commit": "b68199f16922febc15db7bddab11f7a1ebf7c376",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1344",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1617949198.0,
+    "split": "warmup",
+    "commit": "fd17f151b71bb0f18cba049b702229bec783876f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1345",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1617949363.0,
+    "split": "warmup",
+    "commit": "e9354364d38a0e9b11183462b39fee825f22b4e3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1345",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1617980441.0,
+    "split": "warmup",
+    "commit": "190eec33a35f1af6140fe3a6ead454457d9a3330",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1346",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1618150969.0,
+    "split": "warmup",
+    "commit": "a42d04f919c7556398c393a55290cd65d843c590",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1346",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1618173076.0,
+    "split": "warmup",
+    "commit": "0e03f35052f9270495c5e94cc4cf483892fce097",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1348",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1618841313.0,
+    "split": "warmup",
+    "commit": "4faca23aaddd228c5d14ffc00658a852922236bf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1349",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1618841718.0,
+    "split": "warmup",
+    "commit": "58498106b2c137d38ec5466e3c0d6005845134ed",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1350",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1619160550.0,
+    "split": "warmup",
+    "commit": "d03a4a2c76aa08208eb6396efeda167fa861e90e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1351",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1619277456.0,
+    "split": "warmup",
+    "commit": "c721fdff269aff2fb0a79ff0e560dfc14a516877",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1352",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619278087.0,
+    "split": "warmup",
+    "commit": "847a9c8dbfe9ca0c672be54c4da0427a8151f29e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1353",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619329074.0,
+    "split": "warmup",
+    "commit": "94a15caba9a45f21b183a42895a67d8c7220b181",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1354",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619413609.0,
+    "split": "warmup",
+    "commit": "861d57800680e90c3f381c0c460a0785122979f6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1355",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1619440798.0,
+    "split": "warmup",
+    "commit": "930b568ca6de1d409f98f09939d01c77b224c960",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1356",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619451227.0,
+    "split": "warmup",
+    "commit": "45339806f26bbdd53914472187aed5c84b190dbc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1357",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619453038.0,
+    "split": "warmup",
+    "commit": "b8597613b01ceb6a4e17157554202821ee74ebe7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1357",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1619592036.0,
+    "split": "warmup",
+    "commit": "bf412b93850035104485f21e1162c83acb8e23db",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1358",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619596569.0,
+    "split": "warmup",
+    "commit": "7e8b5171b5672470c76ef7749bdacf84e25f78f6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1359",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1619683966.0,
+    "split": "warmup",
+    "commit": "0d4118d5c43f3b66d164705f7216881fac9a0fa6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1360",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620101986.0,
+    "split": "warmup",
+    "commit": "8c2d5f928b3ddd3b9786e9a6b0b37a38dddaf974",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1361",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620122287.0,
+    "split": "warmup",
+    "commit": "c9b5c343d0ad5c0e1fc7b95b14b79ef748908821",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1362",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620141552.0,
+    "split": "warmup",
+    "commit": "caa839ef71123199b81b98e138d426461f3cb61a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1363",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620144463.0,
+    "split": "warmup",
+    "commit": "11f7c7e99a29ead6af8e508bf47059163ba0de3f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1364",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620146451.0,
+    "split": "warmup",
+    "commit": "bb00116f4bc70d58e7f0d8a0576ca8296040900f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1363",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1620190719.0,
+    "split": "warmup",
+    "commit": "99000721fb189bd1f54dacfaa887eec89edbbaf7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1365",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620225386.0,
+    "split": "warmup",
+    "commit": "94697949b9fad9a598bb762b9ecd7fcdebb6f34a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1366",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620287078.0,
+    "split": "warmup",
+    "commit": "0d498c50274f6bc9dc3b5ff866983327ceb58ead",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1367",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620301782.0,
+    "split": "warmup",
+    "commit": "2913307b48b72c3bd6ff47d8688ddce29320f59d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1368",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620367098.0,
+    "split": "warmup",
+    "commit": "ca320a9c2d1f0328edb9666e0fe7a276edb5ab32",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1369",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620393638.0,
+    "split": "warmup",
+    "commit": "b21c1eaedabcda71ab41b9eb924fd4afc6896023",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1370",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620403087.0,
+    "split": "warmup",
+    "commit": "db85fe9677066afeaa8bb3434545fc24039eb54a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1371",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620405253.0,
+    "split": "warmup",
+    "commit": "64a31f0a17c0bb2073620eec4a23a5a72d5fafdd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1372",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620405323.0,
+    "split": "warmup",
+    "commit": "3b86904c4e408b8b54bb4265aa68f7fd3fd647c9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1373",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620405583.0,
+    "split": "warmup",
+    "commit": "4664292f37736d20a8010b86413af84414e292bc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1374",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620406823.0,
+    "split": "warmup",
+    "commit": "98e579afb2b82feef9cf7869f712ffc7ec3e320f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1375",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620452787.0,
+    "split": "warmup",
+    "commit": "0f1234f88a9b1633d5dc9e0d39a5d0d4d3ae71e4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1375",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1620462770.0,
+    "split": "warmup",
+    "commit": "bfc81740747ac57fc443e5494df56304c1164396",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1376",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1620683421.0,
+    "split": "warmup",
+    "commit": "520e4fd192da440530e0e6edfbe186072217439e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1377",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621065458.0,
+    "split": "warmup",
+    "commit": "fa0447d7460df4f4ed9d92711db3478214851079",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1377",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1621069559.0,
+    "split": "warmup",
+    "commit": "e0249fdfede7b5e63eebd7c68c691ab1bdb6c878",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1377",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1621069729.0,
+    "split": "warmup",
+    "commit": "cdecc3c00d52261676cf0c621bfc2649027825cf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1377",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1621069789.0,
+    "split": "warmup",
+    "commit": "9ba142b35472f16894f62f2959d8c3b0d18bb7a8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1378",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621458426.0,
+    "split": "warmup",
+    "commit": "95b2bc47e5d968d5d38efb458dcb682c3ddd7e0d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1379",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621782746.0,
+    "split": "warmup",
+    "commit": "728c5af42e7823104a399a754dfaa806cb45a8e4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1380",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621791006.0,
+    "split": "warmup",
+    "commit": "3bd28ac8812b131c688c565c4dc989bef106a366",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1381",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621849417.0,
+    "split": "warmup",
+    "commit": "eb627c5a42bf193940ac55e9c838648d8ebd4870",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1382",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621849507.0,
+    "split": "warmup",
+    "commit": "48da6107cde07caccfc4e17e54b12399907c30e3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1383",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1621849712.0,
+    "split": "warmup",
+    "commit": "3de3f3f3dd9a44ff8559ef2377b904d75db3c99e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1384",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1622068294.0,
+    "split": "warmup",
+    "commit": "722e98afe79148e02aa2362bc32c087de8b31297",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1386",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1622613480.0,
+    "split": "warmup",
+    "commit": "aa927a93c368a3b785574b6919051ce4877a1f77",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1387",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1622959349.0,
+    "split": "warmup",
+    "commit": "0788d640c4b20fb811ad8170afd975e85b743711",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1390",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1623473220.0,
+    "split": "warmup",
+    "commit": "4a17e7158a5ca3e94df1fa2a9fc0e44e791e74e4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1390",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1623473275.0,
+    "split": "warmup",
+    "commit": "a394c6c3576beb1feabc9d2edffb22a213d80e43",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1391",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1623570557.0,
+    "split": "warmup",
+    "commit": "dae39fb64ed5da8c846e0622e69b18670f88c789",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1385",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1623644855.0,
+    "split": "warmup",
+    "commit": "d9e0ba09ca4efc98a18d7faab5396cabd308efbd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1390",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1623659391.0,
+    "split": "warmup",
+    "commit": "ddd8b87e20450a02b9827c0291b62d6a8445bbef",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1391",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1623768811.0,
+    "split": "warmup",
+    "commit": "df23b2d25ac4672a648c0e6cfdeb96f1ad1579b9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1392",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1624426211.0,
+    "split": "warmup",
+    "commit": "ce73ccedc82b2896500c195da18df03e94eee839",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1394",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1624452567.0,
+    "split": "warmup",
+    "commit": "cc21884616bd1b9c3c296d107601f3bbffc3dc36",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1395",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625026937.0,
+    "split": "warmup",
+    "commit": "29a20ebecd2fcf1db750229669efbb4f06afdf5c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1393",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1625028305.0,
+    "split": "warmup",
+    "commit": "3a680c374d793f96a4670d3b9b38969bf24036cd",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1396",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625042435.0,
+    "split": "warmup",
+    "commit": "cd33f105560a9080d325358646f005dc4ea8ce2a",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1397",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625141400.0,
+    "split": "warmup",
+    "commit": "be5d3b2054b4d169c42a8ec5f1741b0c886a04c0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1397",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1625142513.0,
+    "split": "warmup",
+    "commit": "c6d6fe571ffc74d5a84e21b420f64e92c15d0e72",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1398",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625142609.0,
+    "split": "warmup",
+    "commit": "62fab5d5fee508791a369ac1549c38d43d0c09c1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1399",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625142689.0,
+    "split": "warmup",
+    "commit": "7822e259d108ad583ecd169aca4d138837b312d0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1400",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625143659.0,
+    "split": "warmup",
+    "commit": "30eeaf0a5eea7685fda678914634c400b58973c1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1401",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625145739.0,
+    "split": "warmup",
+    "commit": "a3bf960c2f5bb031f6cbd372fd61901c5939ca10",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1399",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1625152778.0,
+    "split": "warmup",
+    "commit": "a2bbd6688d5233ea266002399af50dbc27c52bdf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1401",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1625153823.0,
+    "split": "warmup",
+    "commit": "5a5519cc52fa5a7b343e005d0e711a7b96da0b8d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1402",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625216501.0,
+    "split": "warmup",
+    "commit": "f7672e4a0c889b45d43e5df4df358109a5e76f01",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1402",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1625238995.0,
+    "split": "warmup",
+    "commit": "8e763eea97a69858538f3d10475151a5b8c7e8dc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1402",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1625284624.0,
+    "split": "warmup",
+    "commit": "52631b35fb55d1fabb8fafcc89cbfa48e06bbb9f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1403",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625289365.0,
+    "split": "warmup",
+    "commit": "787b540f6253de22c588c7933bca5ec3c629aeb7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1404",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625372349.0,
+    "split": "warmup",
+    "commit": "628525108300a4f77a7eff14561581431b7e0ce5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1405",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625372924.0,
+    "split": "warmup",
+    "commit": "d62d4ed505a3e18a661acdd2f22a11d485a25e1a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1406",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625372994.0,
+    "split": "warmup",
+    "commit": "8165a292bc46ea7711ac2ca88fce55e76e45ba78",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1404",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1625458763.0,
+    "split": "warmup",
+    "commit": "e2379b5e73afb826dde6fec3b4a6b05cc69fa86a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1407",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625496027.0,
+    "split": "warmup",
+    "commit": "81106d3ad4e153454842ce10f92ee712d5e2fde4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1408",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1625521840.0,
+    "split": "warmup",
+    "commit": "ef5263edfc5f0c2ceb5550eb5ec0e085f245c471",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1409",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1626193013.0,
+    "split": "warmup",
+    "commit": "0a93becccce50f6c0d9fb9a0ac590a5d6224b27f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1410",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1626356981.0,
+    "split": "warmup",
+    "commit": "2e735ed9a745e243d6055d07d90a93ea97f288dc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1410",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1626358536.0,
+    "split": "warmup",
+    "commit": "5ba4902380d6ef6c73cbf70dae8b60782c451b46",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1411",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1627277575.0,
+    "split": "warmup",
+    "commit": "8cd9ba4ad6f4aa81c762ec2190b6bcf27375d17d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1412",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1627460303.0,
+    "split": "warmup",
+    "commit": "9dffae1bb35f8a387237c21193829882f0d09113",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1413",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1627575282.0,
+    "split": "warmup",
+    "commit": "02b86e71add6fec41c15c9fcbbb6300c15e3cf5a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1414",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1628180548.0,
+    "split": "warmup",
+    "commit": "6dff44f4637c152df3ec4f0e27e4dbdc1f6e5098",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1415",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1628312415.0,
+    "split": "warmup",
+    "commit": "b4fc2f6c1a4c7ce5bafb2979495da04203119a4f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1416",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1628484886.0,
+    "split": "warmup",
+    "commit": "d93d71c8600ad36655c318a59dc6188fefe9d349",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1417",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1628485566.0,
+    "split": "warmup",
+    "commit": "6ba8d90a8bb99c6c5bad82cc3fced2e9b5b2be72",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1418",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1628485701.0,
+    "split": "warmup",
+    "commit": "b6de9a56af69af120469da9252f922cad756989e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1419",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1629201464.0,
+    "split": "warmup",
+    "commit": "749f770bd6be340a33818bce61c640674d06cee6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1420",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1629292869.0,
+    "split": "warmup",
+    "commit": "aab6805942b7f85bfa8d5725c35862a6f469840d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1421",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1629464111.0,
+    "split": "warmup",
+    "commit": "375e4667933146c9262b4ac472f01804c34a0b6c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1422",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1629784428.0,
+    "split": "warmup",
+    "commit": "8692f8281ce281776b649c3ae49e79635f62cae5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1424",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1629990451.0,
+    "split": "warmup",
+    "commit": "eb434212c9857cadd3fb1e9071dc1cbcb3154ff4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1423",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1629990501.0,
+    "split": "warmup",
+    "commit": "abb5401fd7ff35adb17ac7e1a181417f882bd2b2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1423",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1630041143.0,
+    "split": "warmup",
+    "commit": "604a5547cc768c64bfe6db46cd78c8f70edcfb51",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1425",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1630043123.0,
+    "split": "warmup",
+    "commit": "61bf0f64f4a9854ac995970bfa97b8258554c1a4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1426",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1630078218.0,
+    "split": "warmup",
+    "commit": "1e5e314bcd2d2bfb8f3c2bf8c507a91adaef13a7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1426",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1630298933.0,
+    "split": "warmup",
+    "commit": "d037e5482427e87a72d9f3544fb05a462410765c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1427",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1630344223.0,
+    "split": "warmup",
+    "commit": "f2b04f136bf19e0a0a110a279e378c719b62fc22",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1427",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1630352439.0,
+    "split": "warmup",
+    "commit": "9a7186724b776ce8f9fa45c7d270e3a46d3b6fb9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1427",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1630386200.0,
+    "split": "warmup",
+    "commit": "8cc2b247d0ae8b2c95439cf5a45118b8f0eb3b47",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1429",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1630523401.0,
+    "split": "warmup",
+    "commit": "c664255e7b2d6db97760845b5ad50ba48d4ac0a6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1430",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1631276853.0,
+    "split": "warmup",
+    "commit": "0741477bd44519130185aa702e9eac317dbd624f",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1431",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631280619.0,
+    "split": "warmup",
+    "commit": "790d663c0b11c0ed1c19db5c1d81932ca5f2d226",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1432",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631281080.0,
+    "split": "warmup",
+    "commit": "cf178182c0dea5e07a04ae8663fed7c6dd14d5ca",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1433",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631281090.0,
+    "split": "warmup",
+    "commit": "1eddb18aa3fa3ed22caa10312a710702abe5a9cf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1434",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631281459.0,
+    "split": "warmup",
+    "commit": "b7f4509a0973c6d328cc0d8610d6e33fc8f4bfd5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1435",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631282476.0,
+    "split": "warmup",
+    "commit": "658f047a334b294d08f093cc88eaf40465801540",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1436",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631381671.0,
+    "split": "warmup",
+    "commit": "ecce69c7ff081c8c121f178c1b1dc11d8b95223a",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1437",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631382246.0,
+    "split": "warmup",
+    "commit": "9b0c205ce80127d1f769490e9f86ab6641e2299a",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1438",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631382420.0,
+    "split": "warmup",
+    "commit": "b5faa255515c5f702afb77b35c1c3688196f0922",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1439",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1631382581.0,
+    "split": "warmup",
+    "commit": "9f84e644751d43f969c57ac7ee33a28dc527672f",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1436",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1631424797.0,
+    "split": "warmup",
+    "commit": "3c333ba03f67f6f089cdc415a10d336de4a71ddc",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1440",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1632490928.0,
+    "split": "warmup",
+    "commit": "6276609287a563c4ee41517b8f345b1e10ca6fd5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1441",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1632750560.0,
+    "split": "warmup",
+    "commit": "e03d9ac10eda16a78056c59f1c95c27ec1b71892",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1440",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1632756999.0,
+    "split": "warmup",
+    "commit": "69c054c9df594047e6eb859f6e2af5841670dfed",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1442",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1633437152.0,
+    "split": "warmup",
+    "commit": "334e85a039687f068c45c36ca3785b7f710819d8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1443",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1633609849.0,
+    "split": "warmup",
+    "commit": "43b158e2b3fe35454878b2a8a2d655878156ff66",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1444",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1633622382.0,
+    "split": "warmup",
+    "commit": "f700f412079e5c4547a117f3699f74ce9b4ba70c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1445",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1635090959.0,
+    "split": "warmup",
+    "commit": "677d97e610fe921b338ae47b46612b099a758f57",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1447",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1636037203.0,
+    "split": "warmup",
+    "commit": "066a1d6e876a6c243ae0e68ce9d90f18cc52c31d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1448",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1636037964.0,
+    "split": "warmup",
+    "commit": "f497d42d2733754d43daaaf7046b6137592574c1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1447",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1636116925.0,
+    "split": "warmup",
+    "commit": "c64a119add41168bc7323a4ed18a0665aa0547d9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1449",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1636313752.0,
+    "split": "warmup",
+    "commit": "511e0ad96eeb662a1391e5ceb694afc332f59977",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1450",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1636781340.0,
+    "split": "warmup",
+    "commit": "16e462b3ffc90a3160b40a7b06a4285b8b5d56d1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1446",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1637154611.0,
+    "split": "warmup",
+    "commit": "dfcef909636563df694bbb73169269ce1a911cfa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1451",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1637159784.0,
+    "split": "warmup",
+    "commit": "6f75d69e19c397273f2bb201115488303cd41fb6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1446",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1637224260.0,
+    "split": "warmup",
+    "commit": "d4a1cc6df00b89f582ab0bc4935d8e7c4b35a845",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1446",
+      "build": "7",
+      "stage": "single"
+    },
+    "cutoff": 1637311583.0,
+    "split": "warmup",
+    "commit": "d4a1cc6df00b89f582ab0bc4935d8e7c4b35a845",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1446",
+      "build": "9",
+      "stage": "single"
+    },
+    "cutoff": 1637327958.0,
+    "split": "warmup",
+    "commit": "bbae7f9231979b9a8dd40e1759928ad184d9bb2c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1452",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1637528991.0,
+    "split": "warmup",
+    "commit": "90f9941f4e4e88b6c717f2c818c08d703f087b9f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1453",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1637658075.0,
+    "split": "warmup",
+    "commit": "c4720bd54eeffea8f53df202899b9b521ad3c8dd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1454",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1637684430.0,
+    "split": "warmup",
+    "commit": "cbaf4fd9df7a9eeb8cc26685a49831d9a667e9a2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1457",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1638083492.0,
+    "split": "warmup",
+    "commit": "e39d9e1241f9d5d545a2e080de7bd1f5a13b8ce3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1458",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1638177260.0,
+    "split": "warmup",
+    "commit": "a8afbfbd69307f534db9f323a8011092d661c262",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1459",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1638214843.0,
+    "split": "warmup",
+    "commit": "80ae4361a91a60b49b71b5e4c8b8aafb1124670a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1460",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1638250069.0,
+    "split": "warmup",
+    "commit": "258a1d4e0f3839f2c3d85c3ef28b07aaabd38a23",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1461",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1638250408.0,
+    "split": "warmup",
+    "commit": "5a303bb488c90325968481ecca11ea242e0e1bdc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1461",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1638287715.0,
+    "split": "warmup",
+    "commit": "ae8f1d3a1bdbab4158d6eb72d792adaa480f089a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1462",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1638600734.0,
+    "split": "warmup",
+    "commit": "79f0d336bd471cb87aa697e562ac95ac9deb0f58",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1462",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1638683530.0,
+    "split": "warmup",
+    "commit": "1be86d383feda9cf678e13835d4074517276cca7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1463",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1638992751.0,
+    "split": "warmup",
+    "commit": "939ce7ae9f2dcd6b60ab3d42e5d58e8498b9f53e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1464",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639069238.0,
+    "split": "warmup",
+    "commit": "d4f6a5152ae9fce33a038503dfeacfa1810ffc65",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1465",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639203733.0,
+    "split": "warmup",
+    "commit": "f398ef51612872fd89420237b485fbd732d2a0c1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1466",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639204419.0,
+    "split": "warmup",
+    "commit": "29ecd14a94a042dc49a422d00335acb25d4ec656",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1467",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1639492072.0,
+    "split": "warmup",
+    "commit": "d60387378ab937fa96c63ea621dd2c02d16cce6e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1468",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639493068.0,
+    "split": "warmup",
+    "commit": "8e2365967f112eb2c25fc9f5330d60914d0a4077",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1469",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639493827.0,
+    "split": "warmup",
+    "commit": "7c59b773c44fd910c289719a89668a73db6b8f64",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1470",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639571297.0,
+    "split": "warmup",
+    "commit": "b1030369f29b93ea677401a4defb8c96da17fa17",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1471",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1639895930.0,
+    "split": "warmup",
+    "commit": "d529d30721024a952b25a425e60e1a5c30324784",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1472",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1640929748.0,
+    "split": "warmup",
+    "commit": "5974795c70a541e255e929fefc6b357777a35674",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1473",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1640947770.0,
+    "split": "warmup",
+    "commit": "95f840c3b35732a5271d284502a265f6da57e8ea",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1474",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641232211.0,
+    "split": "development",
+    "commit": "1642860925a82105642583bfa03b7ac4bf05c100",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1475",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641308493.0,
+    "split": "development",
+    "commit": "b42c82ca3b9a22bd92d249a1060a1953f4188bc2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1476",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641389022.0,
+    "split": "development",
+    "commit": "49d743ac54c79602460eaa2533ffaee8e55f272b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1477",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641420025.0,
+    "split": "development",
+    "commit": "5e5a996682d33dfdabafcece1a971ff26c438cdf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1478",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641475914.0,
+    "split": "development",
+    "commit": "28b32db756db8b4ed3083266057e641e45c2d207",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1479",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641478229.0,
+    "split": "development",
+    "commit": "c0832dc07489627bb70451943293afe8e83f0f51",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1480",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1641481232.0,
+    "split": "development",
+    "commit": "9f93b90245592f13f97cef0c0293e8741d768295",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1481",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1641491954.0,
+    "split": "development",
+    "commit": "9dcafb280d54c8a6cb5deac092a49afb1846eddf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1482",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641621448.0,
+    "split": "development",
+    "commit": "ba643b107c402380ad764cfa5ecb982db5a650e8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1483",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641622788.0,
+    "split": "development",
+    "commit": "23cb7628cb2842454892f4daa215ad78b37df695",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1483",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1641658819.0,
+    "split": "development",
+    "commit": "df2496e23a439452a3826e34e65c557bffac36f1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1485",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1641751560.0,
+    "split": "development",
+    "commit": "36a2bc430cc773db1cfd0b32e307d9da2d1697f7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1486",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1642079105.0,
+    "split": "development",
+    "commit": "1878e3369b3f442e353516c727e840e889bf477b",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1487",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1643405121.0,
+    "split": "development",
+    "commit": "fbfd639d8850c9ae846c8147f3d01369c9a91c4f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1487",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1643832960.0,
+    "split": "development",
+    "commit": "4da29266015bf61eec6d29e65e7e3c34fca6ed56",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1488",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1644245072.0,
+    "split": "development",
+    "commit": "d992e4aa9d3e432a62e3be5419b103fd7d8e7824",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1489",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1644404178.0,
+    "split": "development",
+    "commit": "f3260d5ab641cdbf1bbd594875c07d974ed470a0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1490",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1644577944.0,
+    "split": "development",
+    "commit": "5b06c30d16012a53c4f06e9d7734174b972e8ae7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1490",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1644579113.0,
+    "split": "development",
+    "commit": "a3ce42f016f1e11c3d24b97bbb123deaea550ffa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1493",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1646645143.0,
+    "split": "development",
+    "commit": "3635c02bb7d86b2b4cb612c1099660dc7ea6e60a",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1496",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647612054.0,
+    "split": "development",
+    "commit": "7ef21a4d6c656504eeb5b1a4994850a666930869",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1495",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1647619564.0,
+    "split": "development",
+    "commit": "87d7baf057fca5f2bafb97a1c7df4bb5467fa322",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1494",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1647619591.0,
+    "split": "development",
+    "commit": "3923b6e5ec0637f55766e820a81d231dbf8d8424",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1492",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1647698706.0,
+    "split": "development",
+    "commit": "0b21af31f482ac698f7093ff683f663044815bb7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1492",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1647698847.0,
+    "split": "development",
+    "commit": "4b03362015e6835bc7e4a239fc7e56c65c2533dd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1497",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647699818.0,
+    "split": "development",
+    "commit": "1ab5752acde3267f9b246fead8751df4e99398f8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1498",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647758936.0,
+    "split": "development",
+    "commit": "9afdf9d050ab8f5ae88509a96593655d05c53a96",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1497",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1647758976.0,
+    "split": "development",
+    "commit": "898d0d502f36fd00adef6a8c8311bc5a972cccc4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1499",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647760440.0,
+    "split": "development",
+    "commit": "c0ade96b541861b67930e4f61fe7ee5e778b2d17",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1500",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647768980.0,
+    "split": "development",
+    "commit": "3f69c73dab2c7024bcbdecc753c04a28e2b277aa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1501",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647769975.0,
+    "split": "development",
+    "commit": "bda723938d0e000e32af3ce0a46737ab05fe8ded",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1503",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647771724.0,
+    "split": "development",
+    "commit": "ad6f349b2b29f778719982b9346b1ee846fa8322",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1504",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647771839.0,
+    "split": "development",
+    "commit": "1ec0a4155fc274241e309422fe3b354004190f42",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1505",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1647772149.0,
+    "split": "development",
+    "commit": "86c2cfc0112e306ec76726253778f84f234d35e2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1501",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1647872713.0,
+    "split": "development",
+    "commit": "10708449bcbab04c80ac4a4f0a7e67d23a5ab182",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1501",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1648217974.0,
+    "split": "development",
+    "commit": "4417b87e42abe45fa184ad4eef46bd14727d277a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1500",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648370637.0,
+    "split": "development",
+    "commit": "21541a96c327101a322d6b0bc76e903b5bb28372",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1506",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648458316.0,
+    "split": "development",
+    "commit": "56c023fb6e843894a9966df2e5e1295ec48b6a27",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1506",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648467388.0,
+    "split": "development",
+    "commit": "c25e74d58e8d5c959401c17409f3d4d9d4d0f807",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1504",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648471491.0,
+    "split": "development",
+    "commit": "9e2cecc002c55788962928a971c09d30488ad9f1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1648473554.0,
+    "split": "development",
+    "commit": "daef9d0ce175b818d222ac85ca7a3f70b11aafee",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1505",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648629503.0,
+    "split": "development",
+    "commit": "a0184542891b71306bf06d207c82a801aec5ade9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1507",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648629888.0,
+    "split": "development",
+    "commit": "4143310e47d364378da85267262c9bdbc06f0b1c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1490",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1648637864.0,
+    "split": "development",
+    "commit": "122d1bb75526ce9d2216c1e4b411b369e950dc20",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1504",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1648643001.0,
+    "split": "development",
+    "commit": "9fe45d1dd8a5152809ea11f531e28bdcae1d755a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1508",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648646950.0,
+    "split": "development",
+    "commit": "f3a5dc9895a7b9e0ab4d78eb35fca41a5712f3ad",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1507",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648715229.0,
+    "split": "development",
+    "commit": "c492344e33be3e49f5cc35f20085b42614a0bf71",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1507",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1648716890.0,
+    "split": "development",
+    "commit": "20d19cf68f3a45d63e4581c3c6089931b5e0f417",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1504",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1648727490.0,
+    "split": "development",
+    "commit": "1d6a2451b1546e3c18718f83e1820f428a2d5a0b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1648733246.0,
+    "split": "development",
+    "commit": "b2c1b6178008ac2d1be78cc1ace41ee0064e6f12",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1509",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648745073.0,
+    "split": "development",
+    "commit": "2501d090598a23bed5d6a2339a9f0e9b723bfc75",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1510",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648755380.0,
+    "split": "development",
+    "commit": "768d16a0c80ddfc30fdaba1072cac516158ab867",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1511",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648755664.0,
+    "split": "development",
+    "commit": "ac06ee1235e1b4276b1b3b1dc49f53b9d7a918f5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1512",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648755770.0,
+    "split": "development",
+    "commit": "14c7f4b479bd8e7d6515aa8dc2b8d40089534598",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1511",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648874683.0,
+    "split": "development",
+    "commit": "6415d6fbaa50d6845f37461cce46956f7ce44eb4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1514",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648874928.0,
+    "split": "development",
+    "commit": "93c23896d6a9b031ac3205e9f36f40be53b13931",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1516",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648875208.0,
+    "split": "development",
+    "commit": "2676f42d4f62ee50e6fecfe74b721c32eed475e2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1517",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1648918753.0,
+    "split": "development",
+    "commit": "e7b60826820fcc036e21f3bdf6ab56df26137aa7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1648965769.0,
+    "split": "development",
+    "commit": "0d1b86875a5e5cb384c904f4c2767c581b4ea59f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1515",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1648966204.0,
+    "split": "development",
+    "commit": "2ad43e7b0751be875f84a10d03005111266931da",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1519",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1649140057.0,
+    "split": "development",
+    "commit": "5001e289d45834053820c795b4d6442abd5e0bea",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1521",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1649140112.0,
+    "split": "development",
+    "commit": "dbe3e0b3ae7703f99ee7b27b9beb2a07125bcea9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1523",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649140401.0,
+    "split": "development",
+    "commit": "05ca03f1f9ba7b97a9d39d3b3fe4f57e0ed942f8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1524",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649153747.0,
+    "split": "development",
+    "commit": "6f44d954199ca969f455d5005ae56629f80e409a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1525",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649153757.0,
+    "split": "development",
+    "commit": "51eb8b0cb47dd36415274e76cc9afab4951d4ff0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1649167569.0,
+    "split": "development",
+    "commit": "b2da8d5906e80acfeb9962c7b03eb25911693c49",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1526",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649167617.0,
+    "split": "development",
+    "commit": "572ce4cd3e5360d2ad1effb04782dde2e5266f7b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1527",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649173841.0,
+    "split": "development",
+    "commit": "0dfae3d77a05f9eeefa07c89639c2d541905edff",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1521",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1649174051.0,
+    "split": "development",
+    "commit": "719c948bcbda7839335120b3e35552a286661693",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "7",
+      "stage": "single"
+    },
+    "cutoff": 1649238096.0,
+    "split": "development",
+    "commit": "eaf99add8ac4a2a48e0a381370d1487b7b2d0339",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1426",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1649310870.0,
+    "split": "development",
+    "commit": "389afef68e5e09fcd94c4b4386b7d120c81b43ea",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1528",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649312061.0,
+    "split": "development",
+    "commit": "926d896cc6791750aa8d8c6256a0ed0798f9dcd5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1522",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1649322175.0,
+    "split": "development",
+    "commit": "b27f3c1fbf4ffa7c231608ab93920f310e10afff",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1426",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1649422002.0,
+    "split": "development",
+    "commit": "8e1117aea9b007215eebde51ffd664da2461b485",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1529",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649583521.0,
+    "split": "development",
+    "commit": "b726ef1f2bf9942ea2094ce60bd82a5c0a0bc221",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1530",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649583726.0,
+    "split": "development",
+    "commit": "e71929d0305685fa11e485e50013836b7b9b3688",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1531",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649583821.0,
+    "split": "development",
+    "commit": "5aa34afd6201b65f842c3b4bb3c232473a415974",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1532",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649583900.0,
+    "split": "development",
+    "commit": "a43ef1b27f00e3151b99a7be1799fba19d1285fa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1533",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649584149.0,
+    "split": "development",
+    "commit": "1d0e1b4f11664ac4eb7fcff6badc67387e8118a3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1534",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1649584349.0,
+    "split": "development",
+    "commit": "ffb95c45827443b4549a77acb6da44f3365aae8f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1518",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1650087885.0,
+    "split": "development",
+    "commit": "7bb10f7165a207192c03e707af2a93e4cd1ef277",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1490",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1650257536.0,
+    "split": "development",
+    "commit": "122d1bb75526ce9d2216c1e4b411b369e950dc20",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1535",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1650873211.0,
+    "split": "development",
+    "commit": "c70b30cbcd49b4a5401457cd96b7a76eb440d802",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1536",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1651217407.0,
+    "split": "development",
+    "commit": "a8daaa6dd78b8c75ad47ee8a38813fc78aaff939",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1536",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1651218953.0,
+    "split": "development",
+    "commit": "adefd71d8509723c83750619d6405c8bd1ef5e76",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1537",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1651490440.0,
+    "split": "development",
+    "commit": "5590795911c1134e3bec3153e36b63001dcfa560",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1538",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1651601634.0,
+    "split": "development",
+    "commit": "647fe33ee04d5a183bdacb904902596f75f75225",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1539",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1652603903.0,
+    "split": "development",
+    "commit": "6ed633513dcec6d449c97c863d7272508b0316ba",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1540",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1652968782.0,
+    "split": "development",
+    "commit": "6494aa6d9f529ec87b2d151e54711f3cb9302a70",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1541",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1653084891.0,
+    "split": "development",
+    "commit": "7f0fa5fea95f4053aef5a10083643ffdad2969d8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1542",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1653542439.0,
+    "split": "development",
+    "commit": "15b69be91305039e90923aee7e1c7ab636de8bd7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1543",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1653542489.0,
+    "split": "development",
+    "commit": "628fddf017bc66c458b6b0d8d853f04f3d55fba5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1542",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1653576875.0,
+    "split": "development",
+    "commit": "a5a7a007182a0df5ae5fb5277c162e571a6d77f7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1544",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1654300523.0,
+    "split": "development",
+    "commit": "a895c784ad1b8762e443e0b48af73ec25857e830",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1545",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1654318897.0,
+    "split": "development",
+    "commit": "151f5dd6e45b5ffadf5e4fa4f01686cd6aa503ac",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1546",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1654356990.0,
+    "split": "development",
+    "commit": "554e9e46bf07c999544dd574bb8f974f58469e6f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1547",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1654489729.0,
+    "split": "development",
+    "commit": "5914ad050753200bc6c3c2061d4427a02b67400b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1537",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1654489959.0,
+    "split": "development",
+    "commit": "5590795911c1134e3bec3153e36b63001dcfa560",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1548",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1654495105.0,
+    "split": "development",
+    "commit": "1183d4ad09a1dfa6197191585687857f16b323ba",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1536",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1655013912.0,
+    "split": "development",
+    "commit": "adefd71d8509723c83750619d6405c8bd1ef5e76",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1549",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1655014162.0,
+    "split": "development",
+    "commit": "02cbeb650deb1391a88edcb45eedfc5e6667dc2b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1549",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1655108780.0,
+    "split": "development",
+    "commit": "a674d6b95a60e231389ac3eb8269648f3304ca16",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1550",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1655484490.0,
+    "split": "development",
+    "commit": "e32ed13c10836c7cfd220808aecfc9b9fdc5e23d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1551",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1655485537.0,
+    "split": "development",
+    "commit": "86f5fa503200c3fc6c2c21cc57f3adb7b1303f28",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1550",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1655705937.0,
+    "split": "development",
+    "commit": "bdbf1a162505b0e346c158b8172d2f8083ac91fe",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1553",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656061001.0,
+    "split": "development",
+    "commit": "886c7f4083ebe6ac0dd108998eeb13ef308e42c7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1553",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656072184.0,
+    "split": "development",
+    "commit": "7dd065b8a5c199761166dc599af36602701a307b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656079812.0,
+    "split": "development",
+    "commit": "1e9aedef8912c8b6b2bd468afe176decba46dcd9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1656132608.0,
+    "split": "development",
+    "commit": "595a91ad50dcb30b6357530253b38364805e5c18",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1554",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656134397.0,
+    "split": "development",
+    "commit": "92fe8cd38dd11a5da834f36a2d2ce8c9c2a00fe0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1555",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656136090.0,
+    "split": "development",
+    "commit": "c314cd9cdede22a8ea650b97a97826d54fdaa643",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1556",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656136860.0,
+    "split": "development",
+    "commit": "879c98cfff789da46244ae2a21b41fc8c3b0e5da",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1556",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656169794.0,
+    "split": "development",
+    "commit": "6560cb7a1625a901be1e45a48f425b39050fcb47",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1656169814.0,
+    "split": "development",
+    "commit": "e1bc8e0f31b87fa3958c067a85af9a7ce0acc633",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1557",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656170806.0,
+    "split": "development",
+    "commit": "f21032761077459d508c4a978955c071cf371d39",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1558",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656317123.0,
+    "split": "development",
+    "commit": "2f1d89baa192a6be23da919cc24914fb8239ad7c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1559",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656317198.0,
+    "split": "development",
+    "commit": "c64a307413761380c06c99da0fa9f42faffd38d5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1560",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656317297.0,
+    "split": "development",
+    "commit": "6bb780e5dc010a44e923236d068366af099b839a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1561",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656321031.0,
+    "split": "development",
+    "commit": "887406fe8944ce257f50713968693f45d36c4ef9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1656347822.0,
+    "split": "development",
+    "commit": "8c6dd57f4146043177f5fd8ca2c4a17b660f227d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1562",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656347907.0,
+    "split": "development",
+    "commit": "22718a5bb6665073af9d795cd45c05d02a0baf2c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1563",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656348163.0,
+    "split": "development",
+    "commit": "a9b08fcd5d4dd6b566ef0ed144b76c6fc2a38a2f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1564",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656348223.0,
+    "split": "development",
+    "commit": "773faa63bea2a3f8681f73abf6fab9a58fa47c5e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1565",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656355931.0,
+    "split": "development",
+    "commit": "64c5523bf034c94006cff65f15d43c5728030c01",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1562",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656356331.0,
+    "split": "development",
+    "commit": "71635c8ced490103822169b128bf789f31503983",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1563",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656356432.0,
+    "split": "development",
+    "commit": "a7828bb3d66201dd5e9108bf698996adf785430e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1566",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656356525.0,
+    "split": "development",
+    "commit": "89bbf2fc20cd8ed96df412ca47c9271fc695b1f0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1565",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656388564.0,
+    "split": "development",
+    "commit": "3e7d5ef177c2c21da4791341c3986e45e750c387",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1567",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1656388719.0,
+    "split": "development",
+    "commit": "e7ac1fcc885ec26b5572c522ee7abc54ff293e46",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1568",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656389020.0,
+    "split": "development",
+    "commit": "99fb0388154cbf5b3aac35d347f1e797cd103e67",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1569",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656389120.0,
+    "split": "development",
+    "commit": "c65194ecf8e2c0347ecdfe769bf130ec752c9fd2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1570",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656389416.0,
+    "split": "development",
+    "commit": "f6dbecaf5668648abf0356bbbba39fe9b0a23030",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1571",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656389645.0,
+    "split": "development",
+    "commit": "6c9afaa11c8ddc873d84ee1f825efe569697791f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1572",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656401961.0,
+    "split": "development",
+    "commit": "d55318737108aea9fe28d6f4a7ba7034e05feea2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1571",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656402267.0,
+    "split": "development",
+    "commit": "43fe9bd3890a4bd21ad00bff7d87c49bad25c78d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1568",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656405338.0,
+    "split": "development",
+    "commit": "71bc04f8f61cfc0d64645489c20e82120af6fa5b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1570",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656405383.0,
+    "split": "development",
+    "commit": "34154cd552ab2dcebae272471c06823bf5be9d50",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1573",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656408771.0,
+    "split": "development",
+    "commit": "f2bcc07f99b16f3a204340bf18f302b54ecbb52c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1568",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1656423235.0,
+    "split": "development",
+    "commit": "0ca4b82de85582b3b464553a11ce40dd39de759d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1574",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656424152.0,
+    "split": "development",
+    "commit": "3890e71de8cd15dde333375f1e439495f069980f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1575",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656433473.0,
+    "split": "development",
+    "commit": "325f805d7eb4d965a6dcd8a7458c7a555ea47e21",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1576",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656487182.0,
+    "split": "development",
+    "commit": "385c2d80dd17059c16680de687d6aea7a73c3f45",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1576",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656494985.0,
+    "split": "development",
+    "commit": "5c6ec5e113c8ab9e732415d1925685986fcb7280",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1577",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656496217.0,
+    "split": "development",
+    "commit": "9e528f787304c378f973e3a0c2b433f351e79018",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1578",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656496560.0,
+    "split": "development",
+    "commit": "5b028dfc87d9c1492d6d443e75df3a8e3c50686e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1579",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656505178.0,
+    "split": "development",
+    "commit": "7042f28ac4d90b2b42caceacad7abde2e945f9f0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1580",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656505634.0,
+    "split": "development",
+    "commit": "303438144ebc5eff85e2b7495507009d438198f9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1581",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656597792.0,
+    "split": "development",
+    "commit": "c14c9c83662c38bba4929a96e1aea1e3e41ea153",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1582",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656605631.0,
+    "split": "development",
+    "commit": "618b8d23adfba35fc3e449c2cf795f6371b3cbb9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1583",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656649210.0,
+    "split": "development",
+    "commit": "851987cea6f286a4d0bae161d83b03e9a1d1177a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1584",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656649323.0,
+    "split": "development",
+    "commit": "5aed4bc6609bc5a8f0a9d7bbb95aeb0c49a70371",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1586",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656649761.0,
+    "split": "development",
+    "commit": "488ea7c86a0d7854b4dc917ac6ec25beb5d5d7c3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1578",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656649851.0,
+    "split": "development",
+    "commit": "56952c185ab52d87406f004e8a541d17d3a18534",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1579",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656822847.0,
+    "split": "development",
+    "commit": "117c1a795338917e04c56832fc655c052a5fe161",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1583",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656822912.0,
+    "split": "development",
+    "commit": "bfbc0282be1b47761614c0a8ce7f381104f8731f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1579",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1656861668.0,
+    "split": "development",
+    "commit": "a8bb987940a797408a4cd1932448344fda37c202",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1588",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656865389.0,
+    "split": "development",
+    "commit": "07812c86772ef52875bdac4b6602f5ee4eff5c49",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1587",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1656865529.0,
+    "split": "development",
+    "commit": "6108c89fc15ad74f20801dae811335de1fdfe3a3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1589",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656867136.0,
+    "split": "development",
+    "commit": "d6cf97b454415c010ee8ecd26f315e051ed0aba5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1585",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1656867191.0,
+    "split": "development",
+    "commit": "9fa27166dfc30ca95e353733ec8ac22599871546",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1585",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1656875163.0,
+    "split": "development",
+    "commit": "2c9118a76f7dd02a8a8fd1241dd56c2aa33e32ca",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1590",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656951727.0,
+    "split": "development",
+    "commit": "f92e7e2d229254e367507d175d376733703dd64c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1592",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1656997999.0,
+    "split": "development",
+    "commit": "00c7feed60c737a91a91f7fe9b44cf923c0442da",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1593",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657013996.0,
+    "split": "development",
+    "commit": "b40069d8c55af640f56b0d81253f1eaa4c891d67",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1594",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657038374.0,
+    "split": "development",
+    "commit": "b971d4d85eef9762cd988e456688bfbd873f5146",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1596",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657087704.0,
+    "split": "development",
+    "commit": "2c7750467c0f44e581d47dca223a0445771976fd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1595",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1657087729.0,
+    "split": "development",
+    "commit": "5bdce479f48ab43b30df1ac9bcdd4e4f0ea61fea",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1597",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657087815.0,
+    "split": "development",
+    "commit": "6c56fff9868f4ef4dbc58691006aabf1d4ce3ca9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1598",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657090706.0,
+    "split": "development",
+    "commit": "7b36485faf001f56cf362b85046728540986035a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1595",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1657104522.0,
+    "split": "development",
+    "commit": "08ec83fc0f42032ab6436b2e230905eff52907ae",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1599",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657187468.0,
+    "split": "development",
+    "commit": "2482d4126d102e985d7609bfc5f7da53af86229f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1599",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1657195339.0,
+    "split": "development",
+    "commit": "272fc23f7f2c6f90e49ad7fe2c8ac0445ca8917a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1600",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657228314.0,
+    "split": "development",
+    "commit": "ef1139d3a242ca6830873f34de709ff1ba829720",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1601",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657257887.0,
+    "split": "development",
+    "commit": "224f71ff3eac6984d8f025272c36516cf4921933",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1602",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1657257961.0,
+    "split": "development",
+    "commit": "b46e38ebcf62c9047fd669b47fc9345fb8a4bcd3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1602",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1657274058.0,
+    "split": "development",
+    "commit": "6f9f087b8d52f96db197a18c6d2c385cea82f277",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1604",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1658502515.0,
+    "split": "development",
+    "commit": "d157694a33dd15f4fb31ddf8079e2849451990a1",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1605",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1659328949.0,
+    "split": "development",
+    "commit": "0ebe2af628c2bd6ad8fc2c705b2fb79ee0153f0c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1606",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1659329870.0,
+    "split": "development",
+    "commit": "556130992049b434abf2465c430b90b3753bc807",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1607",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1659342983.0,
+    "split": "development",
+    "commit": "b3fd490a65268c3ceee3853feedefb32f1cd9e66",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1607",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1659506001.0,
+    "split": "development",
+    "commit": "62ebc20609ee2fc02c72fbeb080f09f3da653c98",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1608",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1659532157.0,
+    "split": "development",
+    "commit": "8e263eb6d0125080fd9bb864b57a8ad9e017c979",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1609",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1661244549.0,
+    "split": "development",
+    "commit": "5c887bbab3d122e4dba1ced8a16f47ace7bb2539",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1610",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662010562.0,
+    "split": "development",
+    "commit": "3eb60c80f86fd6a1641ad4706676e2af04d75ca2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1611",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662010689.0,
+    "split": "development",
+    "commit": "981e21391d313545133272969a77bae600bc7d7c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1612",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662020954.0,
+    "split": "development",
+    "commit": "b2323794f7c98c3b9faaa4ab6b8234db9fe62e17",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1613",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662021289.0,
+    "split": "development",
+    "commit": "d3a1fb60f5d6fb929662bc611a93348f8af6f906",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1614",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662025519.0,
+    "split": "development",
+    "commit": "47b5201a8320e07fa8e40bab60d32c657574748a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1615",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662031190.0,
+    "split": "development",
+    "commit": "abb44fb51bb6cdf0b72bddc6a9281e5ace60e424",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1616",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662031300.0,
+    "split": "development",
+    "commit": "140528fc44682940c87aae6013df1ccb161a9c81",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1618",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662366034.0,
+    "split": "development",
+    "commit": "89ca661ad8d5eb50fcc5242fb62ea838eb0263d9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1619",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1662366205.0,
+    "split": "development",
+    "commit": "f1bd11064697726222bbc278c75ff5b0f4951a4d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1620",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1663249635.0,
+    "split": "development",
+    "commit": "488d676f796ad3e3bb60818cc7d25edddf2b8576",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1621",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1663443438.0,
+    "split": "development",
+    "commit": "35eca03aaca414b45d093644d38b75d82a771758",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1622",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1663573785.0,
+    "split": "development",
+    "commit": "abb871672a07907a9b42d1f96f5c4dc7ff12c942",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1623",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1663606481.0,
+    "split": "development",
+    "commit": "905a51d5e00c307f1a350dc4b0a0e133a66ada45",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1623",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1663607098.0,
+    "split": "development",
+    "commit": "72065f5fe2ddf090b0cac95acbc930c1c0ad2a8f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1623",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1663607865.0,
+    "split": "development",
+    "commit": "55a5cd34b714aebfba51c6ec4347d55da00a25aa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1623",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1663608136.0,
+    "split": "development",
+    "commit": "c1ef0b9ec328ee9c3a19f74ca6ffc5ab9fdbdecd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1624",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1663654944.0,
+    "split": "development",
+    "commit": "291928a3883d6f6f9fd3834db2273b361f9a135f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1624",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1663782268.0,
+    "split": "development",
+    "commit": "aff059526139059bc181a23907fe50b518f5855d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1625",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1663785680.0,
+    "split": "development",
+    "commit": "725d55f8492d7695b64b3d9ed3eef0b55a03968c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1625",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1663785931.0,
+    "split": "development",
+    "commit": "dd91b44cc48cad06328d26fd004c6c5f009b7fae",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1664053798.0,
+    "split": "development",
+    "commit": "45b59a7947926080197c208e6582a417619866df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1664054445.0,
+    "split": "development",
+    "commit": "ca205d81c2fdc38d96ca15585057d085713bd6f2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1664116734.0,
+    "split": "development",
+    "commit": "39af63179017d9865f12f51545fb2d371b1b40be",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1664116932.0,
+    "split": "development",
+    "commit": "87332ae4c6340418327b2fd9fc9d343c58dadaf5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1664116975.0,
+    "split": "development",
+    "commit": "9815e10b55ac2d406480ab0e6e0af0cf51a15fe9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1626",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1664117942.0,
+    "split": "development",
+    "commit": "cf8cdf5cb011f3f1cd1d7adb3f08956f9cd52d58",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1626",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1664120470.0,
+    "split": "development",
+    "commit": "0205ac27978b899e82cbb081fb0336c0cf5405df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1628",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1664208816.0,
+    "split": "development",
+    "commit": "7d4732b864815012433690d4a24821c2f4b9b99b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1628",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1664295935.0,
+    "split": "development",
+    "commit": "36017375470307317f9578f688dca28e79c79f2b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1629",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1664520589.0,
+    "split": "development",
+    "commit": "90eb36e5dad705d0dd1da2024e9465cceb393982",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1630",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1664811021.0,
+    "split": "development",
+    "commit": "2a6adc8a9821aa50e37ebc5a2426ee2347ff0915",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1631",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665003335.0,
+    "split": "development",
+    "commit": "221f51d77ec2ea9fff064627f532860174a8d887",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1632",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665035229.0,
+    "split": "development",
+    "commit": "3819f4834192f0f38f5ffef1ca8ea165a80eb8f0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1633",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665060764.0,
+    "split": "development",
+    "commit": "d64b000bb377e2691d5a3c34de0ca58de64ed6b4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1634",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665060850.0,
+    "split": "development",
+    "commit": "a279333d8ad53098d9ea6232ac137823f652b433",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1635",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665065193.0,
+    "split": "development",
+    "commit": "e0bf4dd9129bc92a7235667656bb9201d7197a33",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1634",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665129143.0,
+    "split": "development",
+    "commit": "480f2a5a1782d289624cebe05c22074f83ade223",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1636",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665129238.0,
+    "split": "development",
+    "commit": "178c4090c0186a7162011eb14bbf18f36f73b3d1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1637",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665131874.0,
+    "split": "development",
+    "commit": "306d5c3b8eeec1bbd3662d3e070f95208942f036",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1638",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665269270.0,
+    "split": "development",
+    "commit": "ff4fb20b859c853ccf3db299775799a9d79eb16d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1639",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665373956.0,
+    "split": "development",
+    "commit": "9ea82de681528d7ce4c87669e29a06a765ff05f9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1640",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665374311.0,
+    "split": "development",
+    "commit": "6fc5ecb613db47dfd50ab7270eb1ead387c5a013",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1639",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665404376.0,
+    "split": "development",
+    "commit": "dd385dbee2fc9c6c754df23ef0f79710493f9892",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665405187.0,
+    "split": "development",
+    "commit": "29c71fe062a392a89b8d8edfcd8df6df797cbf06",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1642",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665438767.0,
+    "split": "development",
+    "commit": "1b18c1b371223616bbe11e4018f5e9e35a19ea2c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665478474.0,
+    "split": "development",
+    "commit": "86a83c1b3d8f0645e63c255481c48c5a01638703",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665492975.0,
+    "split": "development",
+    "commit": "3a132809fbc8c92af56e4361b26967474b2c7c8f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1644",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665492975.0,
+    "split": "development",
+    "commit": "a334d986c46bc18d5415fe1af1b7ca616cc29b12",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1645",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665495133.0,
+    "split": "development",
+    "commit": "b613377027a9561f7f755817f949f779950d3b1a",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665507977.0,
+    "split": "development",
+    "commit": "6ad13c79f80f2f35eeea5c8ccbdb3cd84b52fccc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1647",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665566161.0,
+    "split": "development",
+    "commit": "423a721a045a94fa29b428adc608483d393fff3e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665585661.0,
+    "split": "development",
+    "commit": "768d6aa3bca9fb5e27ffe333cefed51674b8b94d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1665594835.0,
+    "split": "development",
+    "commit": "0c45bf1afed33d8db0cf4531f9182af44b65060c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1665598017.0,
+    "split": "development",
+    "commit": "5ad00e14ac4ead69855b22de5a28829653254b1e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665598031.0,
+    "split": "development",
+    "commit": "b46c843f4029ad5380e7176fd2475a553e21e3b5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1649",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665606264.0,
+    "split": "development",
+    "commit": "b32633a3717f1a76d0138af09a866e38bc79b84e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1649",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665607245.0,
+    "split": "development",
+    "commit": "05b84c08d064179fb239ee13c3e89f5398bec617",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1665638735.0,
+    "split": "development",
+    "commit": "25124f6f89fe6e19bc5566c91dea111055c8ae27",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1665638881.0,
+    "split": "development",
+    "commit": "6f8882a5a6096331dee0d2547767ebf72bf0b86e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1665638940.0,
+    "split": "development",
+    "commit": "06cf0865260a00563ca0a8c91d675fe186cc1e61",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1665642782.0,
+    "split": "development",
+    "commit": "35786899a055eaac699b7b00d17a1aa3442cdbbb",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1665644309.0,
+    "split": "development",
+    "commit": "f4efb69303d9ad4ad56cdf17214fd43c26bcb57b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1650",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665644859.0,
+    "split": "development",
+    "commit": "0ba69dec4f5c74f58476ff9d3802a47facbf9263",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1651",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665644960.0,
+    "split": "development",
+    "commit": "fc15ade19eec1d29adc437702830633f58fe8b81",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1652",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665645160.0,
+    "split": "development",
+    "commit": "3d7729efa9c12c11e8e99092ea3c6754f546df9c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1653",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665645229.0,
+    "split": "development",
+    "commit": "6352e0bb361232bfaab5d197207b2fe30d3549a7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1654",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665646420.0,
+    "split": "development",
+    "commit": "13d6bd63e1c5fd8c5c138a702cae69441454f071",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1655",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665646530.0,
+    "split": "development",
+    "commit": "0ee148b9ae5b876491e5d7b6d832b1266f8983b5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1656",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665647601.0,
+    "split": "development",
+    "commit": "b0a469588cc6f55f8f3cd99b0a14544d6500807f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1665668162.0,
+    "split": "development",
+    "commit": "00aff20e4fb1e3dd00c3b505f4fd92a5b10ecc54",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1645",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665676378.0,
+    "split": "development",
+    "commit": "ecc1224fbccb2d7df2904f2b05b718ebf9ed4db1",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1657",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665691347.0,
+    "split": "development",
+    "commit": "16bd2791a0fdb686a808da26556d50b16667120d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1649",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1665697830.0,
+    "split": "development",
+    "commit": "b86a4eb7937fff8284ad9fede2bfb8b4e42a1282",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1654",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665719644.0,
+    "split": "development",
+    "commit": "25d8b40b9f8ee8750667012bba6eac4becdab88b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1658",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665721036.0,
+    "split": "development",
+    "commit": "f019b4800a35a4f47268fb7687875e73761858f3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1656",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665734490.0,
+    "split": "development",
+    "commit": "da6af5cdcdd69e2820a6d29763a53e81f117de17",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1659",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665735141.0,
+    "split": "development",
+    "commit": "e99eb51a5127093933d81164e7fbea75c22f380a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1660",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665755075.0,
+    "split": "development",
+    "commit": "57dbcd0166c2472bfc87d71a78e8ab7770043fd7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1661",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665758639.0,
+    "split": "development",
+    "commit": "300583e269c2f1c47b6507406f4045ada31da5e4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1665759695.0,
+    "split": "development",
+    "commit": "e01fa17b4d292a26edbb68157e4bd29afd5155b0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1656",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1665759795.0,
+    "split": "development",
+    "commit": "06b44470431d51e7417b14958e876725934c57b1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1626",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1665768793.0,
+    "split": "development",
+    "commit": "dd39971bd78294239e69c1e2e1d7f78d741e2718",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1626",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1665769243.0,
+    "split": "development",
+    "commit": "b208ef75992a2b47f45317479dab00d214cc02ee",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1662",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665776594.0,
+    "split": "development",
+    "commit": "545dbda6cdea473e2f0223d91c9c7c7cf530c06d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1662",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1665780442.0,
+    "split": "development",
+    "commit": "f18de9acbc8a09f54ab985122414d04b8a403b1e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1662",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1665838086.0,
+    "split": "development",
+    "commit": "866dc21f0c8bbb548efb25a5997c0ee4d682d9aa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1662",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1665840240.0,
+    "split": "development",
+    "commit": "c019959531a9ade18e1b274d12e081319db3c3ce",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1645",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1665895121.0,
+    "split": "development",
+    "commit": "167580ae155bd72c6acd21a8ef7c9a1230e96c41",
+    "branch": "karaf-4.3.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1663",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665897309.0,
+    "split": "development",
+    "commit": "fcfac7cb73246aead567650711afddbef9402385",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1664",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1665926428.0,
+    "split": "development",
+    "commit": "931cf3e697161ccfe6055633b7f3f88ccc286176",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1666",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666013975.0,
+    "split": "development",
+    "commit": "81c93f81d717bfeaae3d5301908cfda6885dccd5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1665",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1666019269.0,
+    "split": "development",
+    "commit": "761571955af76a6f3b5bc213bdc2be7a574593ad",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1667",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666084326.0,
+    "split": "development",
+    "commit": "7ef0f311bbe20fc000662e445c2c34f3f05bf058",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1668",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666085695.0,
+    "split": "development",
+    "commit": "640a9f4efeeee0d2e4555c9fd31db9374ec1bdeb",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1669",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666094494.0,
+    "split": "development",
+    "commit": "ceee0be6e8bed12b5c6b478e1a91cd916b4839ac",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1670",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666094559.0,
+    "split": "development",
+    "commit": "4eeddc3e03307419dddd5bfc4bad8d1c4df26dea",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1671",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666094631.0,
+    "split": "development",
+    "commit": "7a61b634561d138f3b32660500a558111157cc74",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1672",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666094916.0,
+    "split": "development",
+    "commit": "4fb993a37d93c2b1ade3bcc19358053efbe42231",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1673",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666095003.0,
+    "split": "development",
+    "commit": "9dc7e9aca6253d3cb76c74bb3edcde164b75ae7c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1674",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666095078.0,
+    "split": "development",
+    "commit": "3249bb8ec5b5515fb1e4dc7db6bfd569d96e95d0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1675",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666095158.0,
+    "split": "development",
+    "commit": "34b26ba67821cf247ba9b9a0f971142188c92fcd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1676",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1666095240.0,
+    "split": "development",
+    "commit": "ddfcbee208836579c83cd30b788930f501716b31",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1676",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1666102830.0,
+    "split": "development",
+    "commit": "a4d7583e04a53d196edad27912fd58f9708ee9ad",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1678",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1667516829.0,
+    "split": "development",
+    "commit": "1a4d4a1fcda3b946ce1db6ffc78d2075be19bc2a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1679",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1667549749.0,
+    "split": "development",
+    "commit": "5bc85ee07647011c42b090c49d4c9ccc1fe4d964",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1680",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1668049413.0,
+    "split": "development",
+    "commit": "c169075d3743a1446ca75e6fb71de77fbf1685ab",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1680",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1668051331.0,
+    "split": "development",
+    "commit": "96128a63c7c71f613b88ca05017c7e7e75b86d85",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1680",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1668373877.0,
+    "split": "development",
+    "commit": "d14c6d18c97b2db6b623c4984768acb9b70b7fad",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1677",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1669062187.0,
+    "split": "development",
+    "commit": "e06d4787295173729d1a85d6976ca1dff6825ddb",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1677",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1669062287.0,
+    "split": "development",
+    "commit": "14e9ca291a76c776127bf49b03dc61689407a548",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1677",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1669062653.0,
+    "split": "development",
+    "commit": "5c2c2042dd6c3d4f84d744b34dd8c7b3e5ded55a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1683",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669470075.0,
+    "split": "development",
+    "commit": "b3a0072b9600e219a4250cd9e450bc411fcbacab",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1684",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669470156.0,
+    "split": "development",
+    "commit": "ea3118c384db2a3536ffb49c89df8942e16b4330",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1685",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669527065.0,
+    "split": "development",
+    "commit": "ec185b28252fd21328ba6d07c9faac3c9aedd41b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1686",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669640095.0,
+    "split": "development",
+    "commit": "819c0986d5758c9784249d7521f196a24e575d23",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1687",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669640401.0,
+    "split": "development",
+    "commit": "0f8ee5a9df562a87994c35eef6a1ae63ae4363c0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1688",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669647168.0,
+    "split": "development",
+    "commit": "85b0da96a7a18fc2405f81fc7c5e8554197b676a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1689",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669664947.0,
+    "split": "development",
+    "commit": "c0a513226444b9b832a3eca216f01580ac7bc27a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1691",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669665135.0,
+    "split": "development",
+    "commit": "a2d515046bbb61a388e082ba2de83d030c129679",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1693",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669665350.0,
+    "split": "development",
+    "commit": "dab9385830ac09992a39ed4851b7cf8f72226109",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1694",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669665450.0,
+    "split": "development",
+    "commit": "85d2a2e490f2e02359627e24994f2fce0ad8a937",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1695",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1669902883.0,
+    "split": "development",
+    "commit": "d4c47bd3253b70e0b679811dc6c333f9eef1164a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1696",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1670943030.0,
+    "split": "development",
+    "commit": "83a472347199a0dbcc5c317df59928fbf6e75b5a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1694",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1671023913.0,
+    "split": "development",
+    "commit": "fa688889683ce91dd0e39bcc6ac7e4f92f23f016",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1697",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671375889.0,
+    "split": "development",
+    "commit": "ea918d473074c32e8f73d33f6ec02de5d5eda414",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1698",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671432967.0,
+    "split": "development",
+    "commit": "1697d1c1172bb8da551e749ba48562f1d028043d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1698",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1671443500.0,
+    "split": "development",
+    "commit": "b347362f3452b1cf7f4f30b6847669daf3f9e74c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1699",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671457516.0,
+    "split": "development",
+    "commit": "4864e8a7b9a90a7e21c9a8882f4667cea2fde3a1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1700",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671472340.0,
+    "split": "development",
+    "commit": "67f0f19c83df73297dae56bc29ad13235c3ce888",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1701",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671518719.0,
+    "split": "development",
+    "commit": "e5446c4ad75b57044aa763578db5c9c1dd2d8f79",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1702",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671601519.0,
+    "split": "development",
+    "commit": "3a109cca12618f31d91586838b066ffe1600d8f2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1703",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671601754.0,
+    "split": "development",
+    "commit": "03fdb2de1b150ebcdb9a4bc933a300c44d677402",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1704",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1671729072.0,
+    "split": "development",
+    "commit": "8286a9d5dc24b5a1c8c45e63962455b6bbda12c7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1705",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1672392318.0,
+    "split": "development",
+    "commit": "b0e66a1303477c3630093dc94b0038c45862ca28",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1706",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1672683997.0,
+    "split": "holdout",
+    "commit": "46f98667919036fd43a905a30d981c9740d0bd3e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1707",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1672990348.0,
+    "split": "holdout",
+    "commit": "084c66280961330d64799f6591a8cf235970eced",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1708",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1673541764.0,
+    "split": "holdout",
+    "commit": "92d38283989a74d24d2fb9b9c7c2d68e614cea1a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1709",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1673542774.0,
+    "split": "holdout",
+    "commit": "6cc7038465aed8d7833be9e01367df994dca7f85",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1710",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1673650412.0,
+    "split": "holdout",
+    "commit": "9fdca2a55a70c1a8af3a2f70be00721be87531dd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1711",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1674345536.0,
+    "split": "holdout",
+    "commit": "f3391d213581208e3baeddfad664ae52e601f054",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1712",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1675724603.0,
+    "split": "holdout",
+    "commit": "737eab789f4fedb36d3aafb02ef02f7eee97694d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1713",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1675806701.0,
+    "split": "holdout",
+    "commit": "a310779708e7df59bd9be1026411bce4f918966f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1714",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1676324784.0,
+    "split": "holdout",
+    "commit": "7192de9cca07c475468c0d7dc8dd531b4adb2452",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1715",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1678622180.0,
+    "split": "holdout",
+    "commit": "db8fa6b034bf00120106ee50a62570e85b6183c8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1716",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1678747420.0,
+    "split": "holdout",
+    "commit": "78222c0ae567b5b504327cbce8cbabd0904e6edf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1715",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1679046874.0,
+    "split": "holdout",
+    "commit": "87250b575d537a6035e10a01914357bb18daca41",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1715",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1679046919.0,
+    "split": "holdout",
+    "commit": "cc437bfc5365e158f2714a7cf80fb368d0cfc508",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1717",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1680093496.0,
+    "split": "holdout",
+    "commit": "50d92c1a5ae493dec1af7f621fed7523dc407c0f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1718",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1681858077.0,
+    "split": "holdout",
+    "commit": "e0bb50b9c9ff7c6ec03d256465d13e2f145abff9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1719",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1684934435.0,
+    "split": "holdout",
+    "commit": "b63c23020342853f6ab64f490f9ad55cea7b9130",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1720",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1685612927.0,
+    "split": "holdout",
+    "commit": "f5ee79652dfc3f8d8c25620abce60910b63c55da",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1721",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1686476001.0,
+    "split": "holdout",
+    "commit": "43a087524270ce37f9b5965e645a1046c4c97e9b",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1721",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1686481757.0,
+    "split": "holdout",
+    "commit": "353de0543a5aecad64c9c2623fdfec45a3d5fdbe",
+    "branch": "karaf-4.2.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1722",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1686696946.0,
+    "split": "holdout",
+    "commit": "fbd3f63bd752da786fb71e334a4b9b35e16891ae",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1723",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1686755558.0,
+    "split": "holdout",
+    "commit": "1a5ab28119cdecb085f49625354fa94ade07c154",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1723",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1686765091.0,
+    "split": "holdout",
+    "commit": "f20d9c03fd35a93d5a8a2ea5e2441392062a2c53",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1724",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1686769793.0,
+    "split": "holdout",
+    "commit": "045165cdae3d7099bc2f892487f23d1a66e1d6df",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1725",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689014331.0,
+    "split": "holdout",
+    "commit": "6953d5a01c8e042a72a8baf73e9f866231f34dc5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1725",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1689021590.0,
+    "split": "holdout",
+    "commit": "8e3307ec8036a3a42ae57738f38a78164070f706",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1726",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689757382.0,
+    "split": "holdout",
+    "commit": "7a5ff94052c6963a65b9cc5469d2f83f0cd5bf51",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1727",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689768389.0,
+    "split": "holdout",
+    "commit": "b697689e0e9e608035e310a168af465bd67cb6e4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1729",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689831202.0,
+    "split": "holdout",
+    "commit": "c889fe1669b2d9887a8567ff036a917ced7414fd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1730",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689932784.0,
+    "split": "holdout",
+    "commit": "b652582c02faf7983822b539ff90db5213d0f4e8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1731",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689940111.0,
+    "split": "holdout",
+    "commit": "d404f3d94c5c29129c6aad94faf132c86485b46f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1732",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689940246.0,
+    "split": "holdout",
+    "commit": "d07d511158264f21603fd10020c846052c6d7e33",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1733",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689941087.0,
+    "split": "holdout",
+    "commit": "096fd684425e760155f5f97069d7c89b84c45810",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1734",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689943344.0,
+    "split": "holdout",
+    "commit": "d8611dc825385ce1ea41ed7dfc96d913dc4ee649",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1735",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689943482.0,
+    "split": "holdout",
+    "commit": "bf2bed270142b1de403a985214e1a925f555d56f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1736",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689944184.0,
+    "split": "holdout",
+    "commit": "8a5f9a0e3726380edf8ab675c9fcacd103833efe",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1737",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689944489.0,
+    "split": "holdout",
+    "commit": "c7fa9ed91641e3726c20a45f238d86fca3e55516",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1738",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1689944685.0,
+    "split": "holdout",
+    "commit": "c829120fdc231261d6c119911acf885dcc603e05",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1738",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690041233.0,
+    "split": "holdout",
+    "commit": "92130bd1e8bb7fde8a087eaf38f569a5bbfc9221",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1731",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690106160.0,
+    "split": "holdout",
+    "commit": "376176ff7b7c94dcdeb6c1f8cea29c6f93281744",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1736",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690350336.0,
+    "split": "holdout",
+    "commit": "dce73a190880edbb8b7f98d03f57d66d2e9fb584",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1734",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690350927.0,
+    "split": "holdout",
+    "commit": "2b52e461cf0099611f0bd290d8c14bde66dc5074",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1737",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690356177.0,
+    "split": "holdout",
+    "commit": "bdab3c3c9684d9e0fa31c67aab2bddba2dc38c3a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1731",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1690437026.0,
+    "split": "holdout",
+    "commit": "fa17311894c4e536e9bf4f7d866ea9234fc61c30",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1734",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1690437108.0,
+    "split": "holdout",
+    "commit": "e958d8fe72b2f1d174bbe5acb642aaebaaa39175",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1738",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1690437203.0,
+    "split": "holdout",
+    "commit": "6b8a375e936fde70ad98dfce5b9ee5e94e6b9561",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1740",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690438050.0,
+    "split": "holdout",
+    "commit": "fcc2742bedd7d851502d892235907f345c1782f9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1741",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690438821.0,
+    "split": "holdout",
+    "commit": "aa649b2efb983aac5d0d164d5768622c703f4f6c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1742",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690438941.0,
+    "split": "holdout",
+    "commit": "ae220f837ec7ac555949e5b3c725dbdb58424c74",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1743",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690439132.0,
+    "split": "holdout",
+    "commit": "31035ebabce692972b8b1fee83d7165995961b8b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1734",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1690439312.0,
+    "split": "holdout",
+    "commit": "c5e45b3c784edffe774fd41460d87a3b5b2ac05b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1728",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690440228.0,
+    "split": "holdout",
+    "commit": "7049b82abe9e44978736efa8c6024cdaa2604ff5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1744",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690440458.0,
+    "split": "holdout",
+    "commit": "121dff4893423c3d3d34cefe03c2288c9bb1088b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1728",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1690445972.0,
+    "split": "holdout",
+    "commit": "bb2db149ea96616e592edd4aed46528958e15a3f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1734",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1690524011.0,
+    "split": "holdout",
+    "commit": "1397a22134580b417bec1383433ac356020ae2e6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1742",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690610499.0,
+    "split": "holdout",
+    "commit": "1c2231064e04fb0ea791cebcb60afc7be6121943",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1740",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1690624755.0,
+    "split": "holdout",
+    "commit": "968bfcf4854b429a2e27440b970faacd920ec858",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1746",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690625038.0,
+    "split": "holdout",
+    "commit": "c368a7c09d71ad505bf9249d8c35be4640de7f19",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1747",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690817668.0,
+    "split": "holdout",
+    "commit": "399a78be0594b43a20508848a10c072667239f01",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1749",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1690828909.0,
+    "split": "holdout",
+    "commit": "79e6b3bb7769cab5c01064e372b9433ae4d3d8af",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1751",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1692837760.0,
+    "split": "holdout",
+    "commit": "100420f757c2bd6fe00a8d28c14a1388d665b8fe",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1752",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693515714.0,
+    "split": "holdout",
+    "commit": "5e13ce329ac251907645e9ad47de0d25ac1e2f46",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1753",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693516399.0,
+    "split": "holdout",
+    "commit": "0e120940869cbea0bba080c6f038ed97eceb6033",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1753",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1693516776.0,
+    "split": "holdout",
+    "commit": "bcc0c9f40f4adf323fc0775bfe70b3fedafc7f1c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1754",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693517946.0,
+    "split": "holdout",
+    "commit": "9408b66a6498c9a7f1c71fc1f136acaa436474b3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1755",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693518238.0,
+    "split": "holdout",
+    "commit": "9ff5c04fcd84cfbb2a75d012408a9eaab03f1a72",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1756",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693715494.0,
+    "split": "holdout",
+    "commit": "708a9242a15ecf18920df291a4b9401bf76c869d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1757",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693717800.0,
+    "split": "holdout",
+    "commit": "73f0978ab5b0db39522fac9d730ce632247ac24c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1752",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1693733445.0,
+    "split": "holdout",
+    "commit": "08804b2d418f8eff7b9012f788b185ddf7bf213d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1759",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693748200.0,
+    "split": "holdout",
+    "commit": "1caa81fa38ed771c08271a21e2ae2c35725952d8",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1760",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693749187.0,
+    "split": "holdout",
+    "commit": "e5a27aa8f0acc8e7419f0656ce630e18a9c8e1c6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1760",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1693755204.0,
+    "split": "holdout",
+    "commit": "ba989368c6b16e1596256e3d9a764f860e555f00",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1761",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693812769.0,
+    "split": "holdout",
+    "commit": "1d74c5859ee15552ea26ce5922c259edf036a799",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1762",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1693839434.0,
+    "split": "holdout",
+    "commit": "d3b20d77679061ecd51da5b2270f40f0d1aad840",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1763",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1693916287.0,
+    "split": "holdout",
+    "commit": "778031caa4ba8bff477b306b74917bb10e0630fa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1764",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1694013113.0,
+    "split": "holdout",
+    "commit": "22c47ccfee5a77719d4bc6f599a8b9b46ae27296",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1766",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1694075589.0,
+    "split": "holdout",
+    "commit": "2e8b3d402695b2fe2c03287a6fa7810ec3e685d7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1766",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1694090194.0,
+    "split": "holdout",
+    "commit": "abca619c0d59c43098cf459f8699b8548f5ac744",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1767",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1694103053.0,
+    "split": "holdout",
+    "commit": "8704119eec4cece1f049a92bd1d992c289dfbc09",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1768",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1694105039.0,
+    "split": "holdout",
+    "commit": "5d84253b236395ed97c01485a6d1484f26511235",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1769",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1694988071.0,
+    "split": "holdout",
+    "commit": "ce12490412e549c87d98de58a7714c2f54e3fb43",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1770",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695275393.0,
+    "split": "holdout",
+    "commit": "8cd6a48ba7e2f12a7159634a59b2a8505950c21f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1772",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695417678.0,
+    "split": "holdout",
+    "commit": "416b0ccafebd6668c39f95a6097119affb26c7dd",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1773",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695417875.0,
+    "split": "holdout",
+    "commit": "343ef2e2da144345df6e769822c33da717ca57b1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1774",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695418198.0,
+    "split": "holdout",
+    "commit": "1a6b389113de78c5b01a77052a0e044c7ee5695e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1775",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695419087.0,
+    "split": "holdout",
+    "commit": "2d982bce3aed374b97a0fb6f7fe3aa92568464f0",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1776",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695420836.0,
+    "split": "holdout",
+    "commit": "6429d65bd56eee31299b6bdba064c6a1ad2e189d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1777",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695421190.0,
+    "split": "holdout",
+    "commit": "e3ccf244ef144ff6bda9539dfd89c92841a04836",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1778",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695421320.0,
+    "split": "holdout",
+    "commit": "82e4295f2181fa137cf95e030fa5a14e89800e36",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1779",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695421515.0,
+    "split": "holdout",
+    "commit": "ac55e6e27a32429c3e80a461cb39e4fe40646c0b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1780",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695422307.0,
+    "split": "holdout",
+    "commit": "4a104841e2302f59408127cd75f60f0a2e2243cf",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1769",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1695456461.0,
+    "split": "holdout",
+    "commit": "446618090cca19b91959b9a1df2d4bc78ea8d642",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1782",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695603105.0,
+    "split": "holdout",
+    "commit": "864ae0589579b3e5d8ce551410aa4376dc69ee28",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1782",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1695603385.0,
+    "split": "holdout",
+    "commit": "ed41a6db175694def1b3f9aba0c415bc477557e5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1783",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1695604813.0,
+    "split": "holdout",
+    "commit": "64696f76331dfffb3584a81fdb87838936063c8a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1784",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1696207507.0,
+    "split": "holdout",
+    "commit": "fd9432b35825146f721d61133fc4d24361555925",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1783",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1696209600.0,
+    "split": "holdout",
+    "commit": "9ec41cf42314ff2575ce67e67f666325ef065fd9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1782",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1696248147.0,
+    "split": "holdout",
+    "commit": "abd30ca1bebe7684ad0dc68ba901572606ee177f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1782",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1697736389.0,
+    "split": "holdout",
+    "commit": "8af26f0bfd9b1d58287313aa67c5a8138ba507e2",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1786",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1697834205.0,
+    "split": "holdout",
+    "commit": "054a922922613c23bda01374772aa03d1296b9ad",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1787",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1698427054.0,
+    "split": "holdout",
+    "commit": "21757cc72886008f8a3e987701d1d00a048429ba",
+    "branch": "karaf-4.4.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1788",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1698427060.0,
+    "split": "holdout",
+    "commit": "dab32ce38e7d6d67b14c826632920e1c62531d16",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1789",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1699225833.0,
+    "split": "holdout",
+    "commit": "a7f64687fc45a631c7a8f5ea67400d18c5501977",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1790",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1699862268.0,
+    "split": "holdout",
+    "commit": "b47601a93131ea52403dd4281a6b2132dd623431",
+    "branch": "karaf-4.4.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1791",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1699869018.0,
+    "split": "holdout",
+    "commit": "9bbb965effc521096b6186e55680d91d8296977a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1792",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1700195471.0,
+    "split": "holdout",
+    "commit": "7516c3b15191e8d87eaffb52cb0c90c132f2860c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1793",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1700240219.0,
+    "split": "holdout",
+    "commit": "8910546230032ca5d679f09d61ada486ce78510d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1796",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702494735.0,
+    "split": "holdout",
+    "commit": "8b6f37f27aabf964b46d003ce289cac2a94bdb70",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1797",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702494956.0,
+    "split": "holdout",
+    "commit": "c57c3adc26e4bc30114ed0f0912f7f661ace4442",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1798",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702561735.0,
+    "split": "holdout",
+    "commit": "02b5182cd50162dea85d24acb1056accaa1cde23",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1799",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702561810.0,
+    "split": "holdout",
+    "commit": "5c9e24250ff43cbb69a9097462806e2238e3e33e",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1801",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702562885.0,
+    "split": "holdout",
+    "commit": "6c3906c71bb73c4b0e4398d4f17bae36acdfa3c5",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1802",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702562965.0,
+    "split": "holdout",
+    "commit": "d8abd5ed976334bfa4f4f8eeb138415e71388766",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1803",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702564633.0,
+    "split": "holdout",
+    "commit": "30e4e6541c4a4be83def313e0c15509dc5f14bf9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1804",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702574355.0,
+    "split": "holdout",
+    "commit": "959b1a2124645d572e2e7b0e2d52467f6ef96af4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1804",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1702575000.0,
+    "split": "holdout",
+    "commit": "b7f1597db5bf29b28eb7732dafc33512c8c24c23",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1805",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702616567.0,
+    "split": "holdout",
+    "commit": "05fab6314844c59369fa446e2f509ffad85f9d25",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1806",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1702633440.0,
+    "split": "holdout",
+    "commit": "f4d0e141b65c61309e5a32d605a2771b3bbe3e47",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1803",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1702633714.0,
+    "split": "holdout",
+    "commit": "a8a1486235fc423fadbc4f3a5033ed0261836d17",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1807",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702635277.0,
+    "split": "holdout",
+    "commit": "dd1ddf5d513655612ee300f6def4bd37631d654a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1807",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1702646112.0,
+    "split": "holdout",
+    "commit": "895d4858b16716b488ad5e206a6ec4388656f137",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1808",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702658254.0,
+    "split": "holdout",
+    "commit": "f7451eb3618decec1a276148add5ba598b1ed95a",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1809",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702718383.0,
+    "split": "holdout",
+    "commit": "a0982bcf2a4a05fb3876c9193a9e7627c405410b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1810",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702722629.0,
+    "split": "holdout",
+    "commit": "e9914f8267c9358c762eac84116bed48f4985358",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1811",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1702894631.0,
+    "split": "holdout",
+    "commit": "7d37936b137d88c3e955b2dc7c9707514fa60098",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1812",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1704278891.0,
+    "split": "holdout",
+    "commit": "289f7ecfaaf3875d8982066cf719cd6f0c057338",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1813",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1704290634.0,
+    "split": "holdout",
+    "commit": "f67845259140202577fde1e99f7152cb1b2344a1",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1814",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1704298330.0,
+    "split": "holdout",
+    "commit": "608a66b2601ebe22c3b523e552a80d0dc524e100",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1814",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1704362235.0,
+    "split": "holdout",
+    "commit": "a755effeab5e105a5062ff5c5b25ac464e124396",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1814",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1704378612.0,
+    "split": "holdout",
+    "commit": "43fcb6175483864dd7e5e5d4be0e4f9e2963424b",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1815",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1705073651.0,
+    "split": "holdout",
+    "commit": "9fef4999dafe8c791d8a2fdbee5c40366e7a3384",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1816",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1705182351.0,
+    "split": "holdout",
+    "commit": "a4e827276522a5b59cb57d6dbde28a22bb4ebb1d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1817",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1705315791.0,
+    "split": "holdout",
+    "commit": "f84ab0b39a5a37665920d7f0b833227b70482725",
+    "branch": "karaf-4.4.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1818",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1705315794.0,
+    "split": "holdout",
+    "commit": "2e417d08896896f7ac3ea1d2b288a58a1fe04afa",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1819",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1705321544.0,
+    "split": "holdout",
+    "commit": "0281420d503d700dd2ed34518c868b9b9b270b8f",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1820",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1705322600.0,
+    "split": "holdout",
+    "commit": "4d524a6593ffaa6f521f8d836e82ece771225b28",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1816",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1705350377.0,
+    "split": "holdout",
+    "commit": "9469db7e7c47b30214ae0c93fb79e1da97e51a04",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1821",
+      "build": "3",
+      "stage": "single"
+    },
+    "cutoff": 1705613311.0,
+    "split": "holdout",
+    "commit": "bd643e52f7623751d0a1ce64befc9393fd2d3445",
+    "branch": "karaf-4.4.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1822",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1706274503.0,
+    "split": "holdout",
+    "commit": "3c1c0d7d164eb6a6b47f30e84a1bdf51b8a2ccb7",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1822",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1706274759.0,
+    "split": "holdout",
+    "commit": "c310ce274aab5be7f9cd81c2b549b8e4978ab786",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1824",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1706310734.0,
+    "split": "holdout",
+    "commit": "16c5f50a4a9ab23228227d8ccb5e317fb77cc786",
+    "branch": "karaf-4.4.x"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1825",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1707895617.0,
+    "split": "holdout",
+    "commit": "ce790689d2589ce908916246cdb260bb7994862c",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1826",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1710753495.0,
+    "split": "holdout",
+    "commit": "5ad710722c38bd3f1b0487a584c8dfd71d5f7931",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1827",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1710834468.0,
+    "split": "holdout",
+    "commit": "c7bdb9eea312a8ab4027846dbd57b0ec78f5e690",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1828",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711635182.0,
+    "split": "holdout",
+    "commit": "b233719546aabb490feb1750236b43de8eb19ef4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1830",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711635477.0,
+    "split": "holdout",
+    "commit": "31f93f4ee9697955109ea5e0483aa3da1171c276",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1831",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711637015.0,
+    "split": "holdout",
+    "commit": "03354d2635441d19ff762e217348f798a19cc983",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1832",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711637331.0,
+    "split": "holdout",
+    "commit": "e0554629f088800d06aac7b42e18f713b3ae4213",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1833",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711637340.0,
+    "split": "holdout",
+    "commit": "f00ebd97c9382787b5b2c72663804a869097a897",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1834",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711637436.0,
+    "split": "holdout",
+    "commit": "ecde04e125a921628648ea8d5c02a2e35f6899d4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1835",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711779363.0,
+    "split": "holdout",
+    "commit": "7acf3ece276ecd54de889a1f4c98d64b85c0d402",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1836",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711779593.0,
+    "split": "holdout",
+    "commit": "5d55a981fdf2e45c20dd11ae009db8f0a1ce5984",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1837",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711779660.0,
+    "split": "holdout",
+    "commit": "60d8fda23c209360d185f2e8611ce7f0f27a4ffc",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1838",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711779853.0,
+    "split": "holdout",
+    "commit": "e9def96371a11291b7a4a164fc15ccb0e9aec4a6",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1839",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1711779933.0,
+    "split": "holdout",
+    "commit": "dc1167231e6246089ba3b6e2bf82c54758e7acf4",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1841",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1712136955.0,
+    "split": "holdout",
+    "commit": "089345083c3253fce81a0aea222ebbdc138cda38",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1829",
+      "build": "2",
+      "stage": "single"
+    },
+    "cutoff": 1712144202.0,
+    "split": "holdout",
+    "commit": "83eaf688fa9f34bddb8a5c2537b31351c929b47d",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1842",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1712144610.0,
+    "split": "holdout",
+    "commit": "a6b55c4a7748a53abe5f235dfe261615c5d34867",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1840",
+      "build": "4",
+      "stage": "single"
+    },
+    "cutoff": 1712297779.0,
+    "split": "holdout",
+    "commit": "8c95da276dd28b937210091fd0261f67af3ee282",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1840",
+      "build": "5",
+      "stage": "single"
+    },
+    "cutoff": 1712322106.0,
+    "split": "holdout",
+    "commit": "05c78731a5bf198b5daf09b04cc499c057a48ff3",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1840",
+      "build": "6",
+      "stage": "single"
+    },
+    "cutoff": 1712333375.0,
+    "split": "holdout",
+    "commit": "97425ad9fb641ea6be3b3a691360839b10ba6497",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1840",
+      "build": "7",
+      "stage": "single"
+    },
+    "cutoff": 1712384568.0,
+    "split": "holdout",
+    "commit": "6da9a1581df89a18df211cc80fe06740aa517fc9",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1840",
+      "build": "8",
+      "stage": "single"
+    },
+    "cutoff": 1712472512.0,
+    "split": "holdout",
+    "commit": "606dcbf395bdecf451f92172287b46ae14ce4eff",
+    "branch": "main"
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1844",
+      "build": "1",
+      "stage": "single"
+    },
+    "cutoff": 1712604210.0,
+    "split": "holdout",
+    "commit": "fb9933603d7512d99502c500b4af82ebcea6abff",
+    "branch": "main"
+  }
+]

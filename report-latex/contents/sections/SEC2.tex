@@ -1,0 +1,452 @@
+\section{Tổng quan lý thuyết và các công trình liên quan}
+\label{sec:literature_review}
+
+Chương này trình bày cơ sở lý thuyết, các mô hình toán học nền tảng và tổng quan nghiên cứu liên quan đến bài toán Ưu tiên Bộ kiểm thử (Test Case Prioritization -- TCP) trong kỹ thuật phần mềm. Nội dung chương thiết lập khung tham chiếu phương pháp luận cho toàn bộ đồ án, bao gồm các định nghĩa hình thức về kiểm thử hồi quy trong môi trường tích hợp liên tục (CI/CD), hệ thống 4 độ đo hiệu quả cốt lõi (APFD, APFDc, TTFF, Recall@$k\%$), lý thuyết tối ưu hóa tổ hợp hàm submodular và bảo đảm cận xấp xỉ $(1 - 1/e)$, cùng nguyên lý biểu diễn ngữ nghĩa mã nguồn thông qua mô hình ngôn ngữ lớn.
+
+Phần sau của chương phân tích hai công trình khoa học công bố tại Hội nghị Quốc tế về Kiểm thử, Xác minh và Thẩm định Phần mềm (ICST 2026): phương pháp FALCON~\cite{falcon2026} dựa trên tối ưu hóa submodular và phương pháp DANTE~\cite{dante2026} dựa trên lịch sử lỗi và chi phí thực thi. Trên cơ sở đối chiếu các phương pháp truyền thống và hiện đại, chương này định vị rõ khoảng trống phương pháp luận mà đề tài hướng tới giải quyết.
+
+% =============================================================================
+\subsection{Kiểm thử hồi quy và tích hợp liên tục}
+\label{subsec:regression_testing_ci}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Kiểm thử phần mềm và chi phí kiểm thử}
+\label{subsubsec:software_testing}
+
+Kiểm thử phần mềm là hoạt động then chốt nhằm phát hiện khiếm khuyết, đánh giá chất lượng và bảo đảm độ tin cậy của hệ thống. Trong vòng đời phát triển phần mềm hiện đại, các hoạt động kiểm thử tự động được phân tầng theo nhiều cấp độ, từ kiểm thử đơn vị (unit testing) xác minh các hàm hoặc lớp riêng lẻ, kiểm thử tích hợp (integration testing) kiểm tra sự tương tác giữa các module phân tán, đến kiểm thử hệ thống và chấp nhận (system and acceptance testing) thẩm định toàn bộ quy trình nghiệp vụ.
+
+Khi quy mô mã nguồn tăng trưởng liên tục, kích thước của bộ kiểm thử đi kèm cũng gia tăng nhanh chóng, đạt quy mô hàng nghìn hoặc hàng chục nghìn bài kiểm thử trong các dự án công nghiệp. Việc thực thi đầy đủ toàn bộ bộ kiểm thử đòi hỏi chi phí tài nguyên tính toán và thời gian rất lớn, dẫn tới tình trạng trì hoãn phản hồi chất lượng mã nguồn đối với đội ngũ phát triển.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Đường ống Tích hợp liên tục và Kiểm thử hồi quy}
+\label{subsubsec:ci_cd_regression}
+
+Mô hình Tích hợp liên tục và Chuyển giao liên tục (Continuous Integration and Continuous Delivery -- CI/CD) đã trở thành quy chuẩn thực hành trong kỹ thuật phần mềm hiện đại. Trong mô hình này, các lập trình viên thường xuyên đẩy các bản sửa đổi mã nguồn (commits hoặc Pull Requests -- PRs) lên kho lưu trữ chung. Mỗi lần cập nhật sẽ tự động kích hoạt một đường ống CI để biên dịch, đóng gói và thực thi toàn bộ quy trình kiểm thử hồi quy (regression testing) nhằm bảo đảm các thay đổi mới không phá vỡ các tính năng sẵn có.
+
+Sự xung đột giữa tần suất tích hợp mã nguồn nhanh và thời gian thực thi kiểm thử kéo dài tạo ra điểm nghẽn nghiêm trọng trong các hệ thống CI/CD. Trong nhiều hệ thống phần mềm lớn, một lượt chạy đầy đủ của bộ kiểm thử có thể kéo dài nhiều giờ (Long-Running Test Suites -- LRTS). Thời gian chạy kéo dài làm gia tăng độ trễ phản hồi tới nhà phát triển, làm chậm chu kỳ phát hành sản phẩm và tiêu tốn ngân sách hạ tầng điện toán.
+
+Nhằm cắt giảm chi phí thời gian trong kiểm thử hồi quy, ba nhóm kỹ thuật tối ưu hóa chính đã được phát triển~\cite{yoo2012regression}:
+\begin{itemize}
+    \item \textbf{Cắt giảm bộ kiểm thử (Test Suite Minimization):} Loại bỏ vĩnh viễn các bài kiểm thử dư thừa theo một tiêu chí bao phủ; phương pháp này giảm kích thước bộ kiểm thử nhưng mang rủi ro loại bỏ các bài kiểm thử có khả năng phát hiện lỗi hồi quy tương lai.
+    \item \textbf{Lựa chọn bài kiểm thử (Test Case Selection):} Chỉ chọn ra một tập con các bài kiểm thử liên quan trực tiếp đến các tệp mã nguồn vừa thay đổi; phương pháp này tiết kiệm thời gian nhưng có nguy cơ bỏ lọt lỗi nếu sự phụ thuộc giữa các module không được phân tích đầy đủ.
+    \item \textbf{Ưu tiên bộ kiểm thử (Test Case Prioritization -- TCP):} Giữ nguyên đầy đủ 100\% các bài kiểm thử trong bộ kiểm thử nhưng sắp xếp lại thứ tự thực thi; các bài kiểm thử có khả năng phát hiện lỗi cao nhất hoặc hoàn thành nhanh nhất được đẩy lên trước nhằm tối đa hóa tốc độ phát hiện lỗi.
+\end{itemize}
+
+Trong ba hướng tiếp cận, TCP có ưu thế vượt trội về mặt an toàn vì không loại bỏ bất kỳ bài kiểm thử nào, duy trì toàn vẹn độ bao phủ trong khi vẫn rút ngắn tối đa thời gian phản hồi lỗi.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Bài toán Ưu tiên bộ kiểm thử (TCP)}
+\label{subsubsec:tcp_formal_problem}
+
+Bài toán Ưu tiên bộ kiểm thử (TCP) lần đầu tiên được định nghĩa hình thức bởi Rothermel và cộng sự~\cite{rothermel1999tcp, elbaum2002tcp} như sau:
+
+\begin{dn}[Bài toán Ưu tiên bộ kiểm thử]
+\label{def:tcp_problem}
+Cho trước bộ kiểm thử $T = \{t_1, \dots, t_n\}$, tập hợp $\Pi(T)$ gồm $n!$ hoán vị của $T$, và hàm mục tiêu $g: \Pi(T) \to \mathbb{R}$ định lượng chất lượng của một thứ tự thực thi. Mục tiêu của bài toán TCP là tìm kiếm hoán vị tối ưu $\pi^* \in \Pi(T)$ thỏa mãn:
+\begin{equation}
+\label{eq:tcp_general}
+\pi^* = \arg\max_{\pi \in \Pi(T)} g(\pi)
+\end{equation}
+\end{dn}
+
+Trong bối cảnh hệ thống CI/CD vận hành theo chuỗi thời gian, bài toán TCP được mở rộng thành bài toán lập lịch trực tuyến lặp lại theo từng bản build. Tại mỗi bản build $b$, hệ thống nhận tập bài kiểm thử hợp lệ $T_b$ gồm $n = |T_b|$ phần tử và xác định thứ tự hoán vị $\pi_b = \langle \pi_b(1), \dots, \pi_b(n) \rangle$ trước khi tiến hành thực thi.
+
+Thách thức nền tảng của bài toán TCP nằm ở chỗ: các độ đo đánh giá chất lượng lý tưởng $g(\pi)$ (như APFD hay APFDc) chỉ có thể tính toán sau khi kiểm thử đã hoàn tất và kết quả lỗi đã được ghi nhận. Tại thời điểm lập lịch trước khi chạy, trạng thái lỗi của các bài kiểm thử là hoàn toàn ẩn đối với thuật toán. Một kỹ thuật TCP buộc phải xây dựng các hàm mục tiêu đại diện (surrogate objective functions) dựa trên các nguồn tín hiệu tiên nghiệm khả dụng, chẳng hạn như độ bao phủ mã nguồn tĩnh, mức độ đa dạng cú pháp, lịch sử thực thi quá khứ hoặc biểu diễn ngữ nghĩa mã nguồn.
+
+% =============================================================================
+\subsection{Các độ đo đánh giá chất lượng lập lịch kiểm thử}
+\label{subsec:tcp_metrics}
+
+Để đánh giá định lượng chất lượng của một thứ tự ưu tiên kiểm thử $\pi$, cộng đồng nghiên cứu đã chuẩn hóa các chỉ số đo lường tốc độ phát hiện lỗi. Đồ án sử dụng nhất quán 4 độ đo cốt lõi được định nghĩa chặt chẽ dưới đây, khớp với các cài đặt thực tế trong module kiểm toán thực nghiệm.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Tỷ lệ phần trăm trung bình lỗi phát hiện (APFD)}
+\label{subsubsec:apfd_metric}
+
+Độ đo Tỷ lệ phần trăm trung bình lỗi phát hiện (Average Percentage of Faults Detected -- APFD) do Rothermel và cộng sự đề xuất năm 1999~\cite{rothermel1999tcp} là chỉ số kinh điển đo lường tốc độ phát hiện lỗi theo số lượng bài kiểm thử đã thực thi.
+
+\begin{dn}[Chỉ số APFD]
+\label{def:apfd_metric}
+Xét bản build gồm $n$ bài kiểm thử $T = \{t_1, \dots, t_n\}$ và giả sử có $m \ge 1$ lỗi thực tế tồn tại trong hệ thống. Gọi $\pi$ là hoán vị thứ tự thực thi của $T$, và $TF_i \in \{1, \dots, n\}$ là vị trí thứ tự của bài kiểm thử đầu tiên phát hiện ra lỗi thứ $i$ ($i = 1, \dots, m$). Chỉ số APFD của hoán vị $\pi$ được xác định bởi:
+\begin{equation}
+\label{eq:apfd_formula}
+\text{APFD}(\pi) = 1 - \frac{\sum_{i=1}^m TF_i}{n \cdot m} + \frac{1}{2n}
+\end{equation}
+\end{dn}
+
+Về mặt hình học, APFD đại diện cho diện tích dưới đường cong (AUC) tích lũy tỷ lệ phần trăm lỗi được phát hiện theo tỷ lệ phần trăm số lượng bài kiểm thử đã chạy, nhận giá trị trong đoạn $[0, 1]$. Giá trị APFD càng cao thể hiện lỗi được phát hiện càng sớm; thứ tự ngẫu nhiên có kỳ vọng xấp xỉ 0,500. Tuy nhiên, APFD mang giả định ngầm định rằng mọi bài kiểm thử có chi phí thời gian như nhau và mọi lỗi có độ nghiêm trọng ngang nhau, giả định vốn bị vi phạm sâu sắc trong CI thực tế.
+
+% -----------------------------------------------------------------------------
+\subsubsection{APFD có nhận thức chi phí (APFDc)}
+\label{subsubsec:apfdc_metric}
+
+Để khắc phục hạn chế của APFD khi chi phí thực thi giữa các bài kiểm thử chênh lệch lớn, Elbaum và cộng sự~\cite{elbaum2001incorporating, elbaum2002tcp} đề xuất biến thể APFD có nhận thức chi phí (Cost-cognizant APFD -- APFDc).
+
+\begin{dn}[Chỉ số APFDc theo quy ước điểm giữa thực thi]
+\label{def:apfdc_metric}
+Xét bộ kiểm thử $T = \{t_1, \dots, t_n\}$ với chi phí thời gian thực thi của từng bài kiểm thử là $c(t) > 0$. Tổng chi phí thực thi là $T_{\text{total}} = \sum_{t \in T} c(t)$. Gọi $m \ge 1$ là số lượng bài kiểm thử có lỗi trong bản build, và với mỗi bài kiểm thử lỗi thứ $i \in \{1, \dots, m\}$, gọi $TF_i$ là vị trí của nó trong hoán vị $\pi$. Chỉ số APFDc được xác định bằng:
+\begin{equation}
+\label{eq:apfdc_formula}
+\text{APFDc}(\pi) = 1 - \frac{\sum_{i=1}^m \left[ \sum_{k=1}^{TF_i-1} c(\pi(k)) + \frac{1}{2} c(\pi(TF_i)) \right]}{m \cdot T_{\text{total}}}
+\end{equation}
+\end{dn}
+
+Trong Công thức~\eqref{eq:apfdc_formula}, việc sử dụng điểm giữa thực thi phản ánh giả định rằng một bài kiểm thử lỗi có xác suất phát hiện khiếm khuyết phân bố đều trong suốt thời gian chạy của nó. Khi mọi bài kiểm thử có thời gian chạy bằng nhau ($c(t) = c$), APFDc rút gọn chính xác về APFD:
+\begin{equation}
+\text{APFDc}(\pi) = 1 - \frac{\sum_{i=1}^m \left[ (TF_i - 1)c + \frac{1}{2}c \right]}{m \cdot n c} = 1 - \frac{\sum_{i=1}^m TF_i}{n \cdot m} + \frac{1}{2n} = \text{APFD}(\pi)
+\end{equation}
+
+Do tính toán diện tích theo trục thời gian thực tế, APFDc phản ánh trung thực lợi ích kinh tế trong CI/CD. Chỉ số này đặc biệt nhạy cảm với sự xuất hiện của các bài kiểm thử chạy lâu không phát hiện lỗi (Heavy Predecessors) đứng phía trước các bài kiểm thử lỗi.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Thời gian tới lỗi đầu tiên (TTFF)}
+\label{subsubsec:ttff_metric}
+
+Trong thực hành CI/CD, bên cạnh diện tích toàn cục APFDc, thời điểm đường ống CI đưa ra cảnh báo lỗi đầu tiên có ý nghĩa vận hành đặc biệt quan trọng. Chỉ số Thời gian tới lỗi đầu tiên (Time to First Failure -- TTFF) đo lường khoảng thời gian cần thiết để phát hiện ra sự cố đầu tiên của bản build.
+
+\begin{dn}[Chỉ số TTFF]
+\label{def:ttff_metric}
+Cho hoán vị $\pi$ trên bộ kiểm thử $T$, và tập các bài kiểm thử lỗi $F \subseteq T$ với $|F| = m \ge 1$. Gọi $TF_{\text{first}} = \min_{1 \le i \le m} TF_i$ là vị trí lỗi xuất hiện sớm nhất. Chỉ số TTFF của hoán vị $\pi$ là thời điểm bài kiểm thử lỗi đầu tiên hoàn thành thực thi:
+\begin{equation}
+\label{eq:ttff_formula}
+\text{TTFF}(\pi) = \sum_{k=1}^{TF_{\text{first}}} c(\pi(k))
+\end{equation}
+Khi bản build không xuất hiện lỗi ($m = 0$), giá trị TTFF được quy ước là bị kiểm duyệt phải (right-censored) tại mốc trần tổng thời gian thực thi: $\text{TTFF} = T_{\text{total}}$.
+\end{dn}
+
+Chỉ số TTFF đo lường trực tiếp độ trễ phản hồi tới nhà phát triển; TTFF nhỏ cho phép hệ thống CI kích hoạt cơ chế dừng sớm (fail-fast) hoặc gửi cảnh báo sớm để lập trình viên tiến hành sửa lỗi.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Độ phủ tại ngưỡng ngân sách (Recall@\texorpdfstring{$k\%$}{k\%})}
+\label{subsubsec:recall_budget_metric}
+
+Khi hệ thống CI áp đặt ngưỡng ngân sách thời gian thực thi cố định (time budget) cho mỗi bản build (chẳng hạn 10\%, 25\% hoặc 50\% tổng thời gian), chỉ số Độ phủ tại ngưỡng ngân sách (Recall@$k\%$) đo lường tỷ lệ lỗi được phát hiện khi nguồn lực thời gian bị giới hạn nghiêm ngặt.
+
+\begin{dn}[Chỉ số Recall@\texorpdfstring{$k\%$}{k\%}]
+\label{def:recall_budget_metric}
+Xét tỷ lệ ngân sách thời gian $B \in (0, 1]$ (tương ứng $k\% = 100 \cdot B\%$). Ngân sách thời gian khả dụng là $T_{\text{budget}} = B \cdot T_{\text{total}}$. Tập hợp các bài kiểm thử kịp hoàn thành trước hoặc tại thời điểm hết ngân sách trong hoán vị $\pi$ là:
+\begin{equation}
+S_B(\pi) = \left\{ \pi(j) \in T \;\middle|\; \sum_{k=1}^j c(\pi(k)) \le B \cdot T_{\text{total}} \right\}
+\end{equation}
+Chỉ số Recall@$k\%$ là tỷ lệ phần trăm số lỗi được phát hiện bởi tập $S_B(\pi)$ trên tổng số lỗi $m$ của bản build:
+\begin{equation}
+\label{eq:recall_formula}
+\text{Recall@}k\%(\pi) = \frac{|S_B(\pi) \cap F|}{m} = \frac{1}{m} \sum_{t \in F} \mathbb{I}\left( \text{completion}(t) \le B \cdot T_{\text{total}} \right)
+\end{equation}
+trong đó $\mathbb{I}(\cdot)$ là hàm chỉ thị và $\text{completion}(t) = \sum_{k=1}^{\text{pos}(t)} c(\pi(k))$ là thời điểm hoàn thành bài kiểm thử $t$.
+\end{dn}
+
+% =============================================================================
+\subsection{Nền tảng tối ưu hóa tổ hợp và hàm Submodular}
+\label{subsec:submodular_optimization}
+
+Tối ưu hóa tổ hợp hàm submodular là nhánh toán học nghiên cứu các bài toán tối ưu trên không gian tập hợp rời rạc sở hữu tính chất tương tự như tính lồi (convexity) trong tối ưu hóa liên tục, đóng vai trò nền tảng lý thuyết cho phương pháp FALCON và HC-FALCON.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Hàm tập hợp và Tính chất Submodular}
+\label{subsubsec:submodular_functions}
+
+Cho $V$ là tập hợp nền hữu hạn rời rạc ($|V| < \infty$). Một hàm $f: 2^V \to \mathbb{R}$ được gọi là một \textit{hàm tập hợp} (set function). Lượng tăng biên (marginal gain) khi thêm phần tử $x \in V \setminus S$ vào tập con $S \subseteq V$ được ký hiệu là $\Delta f(x \mid S) \triangleq f(S \cup \{x\}) - f(S)$.
+
+\begin{dn}[Tính Submodular, Đơn điệu và Chuẩn hóa]
+\label{def:submodularity}
+Hàm tập $f: 2^V \to \mathbb{R}$ được gọi là:
+\begin{enumerate}[(i)]
+    \item \textit{Submodular (Bán mô-đun)} nếu thỏa mãn quy luật lợi ích biên giảm dần: với mọi $A \subseteq B \subseteq V$ và mọi $x \in V \setminus B$,
+    \begin{equation}
+    \label{eq:submodular_def}
+    f(A \cup \{x\}) - f(A) \ge f(B \cup \{x\}) - f(B) \iff \Delta f(x \mid A) \ge \Delta f(x \mid B)
+    \end{equation}
+    \item \textit{Đơn điệu không giảm (Monotone non-decreasing)} nếu với mọi $A \subseteq B \subseteq V$, $f(A) \le f(B)$ (tương đương $\Delta f(x \mid S) \ge 0$).
+    \item \textit{Chuẩn hóa (Normalized)} nếu $f(\emptyset) = 0$.
+\end{enumerate}
+\end{dn}
+
+Khi đẳng thức luôn xảy ra ở~\eqref{eq:submodular_def}, $f$ là hàm \textit{modular} dạng $f(S) = \sum_{x \in S} w(x)$. Tổ hợp tuyến tính với các hệ số không âm của các hàm submodular đơn điệu cũng là một hàm submodular đơn điệu~\cite{krause2014submodular}.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Hàm Vị trí cơ sở (Facility Location)}
+\label{subsubsec:facility_location_theory}
+
+Hàm Vị trí cơ sở (Facility Location) xuất phát từ bài toán quy hoạch vị trí cơ sở dịch vụ kinh điển~\cite{cornuejols1977uncapacitated}, nhằm lựa chọn một tập con các địa điểm đặt cơ sở để tối đa hóa tổng mức độ đại diện đối với một tập hợp khách hàng.
+
+\begin{dn}[Hàm mục tiêu Facility Location]
+\label{def:facility_location}
+Cho ma trận tương đồng từng cặp $K: V \times V \to \mathbb{R}_{\ge 0}$ thỏa mãn $K(u, t) \ge 0, \forall u, t \in V$. Hàm Facility Location $FL: 2^V \to \mathbb{R}_{\ge 0}$ được định nghĩa bởi:
+\begin{equation}
+\label{eq:facility_location_def}
+FL(S) = \sum_{u \in V} \max_{t \in S} K(u, t), \quad \text{với quy ước } \max_{t \in \emptyset} K(u, t) \triangleq 0 \implies FL(\emptyset) = 0
+\end{equation}
+\end{dn}
+
+\begin{md}[Tính đơn điệu và Submodular của Facility Location]
+\label{prop:fl_submodular}
+Nếu $K(u, t) \ge 0$ với mọi $u, t \in V$, hàm tập $FL(S)$ xác định theo Công thức~\eqref{eq:facility_location_def} là hàm chuẩn hóa ($FL(\emptyset) = 0$), không âm, đơn điệu không giảm và submodular trên $2^V$.
+\end{md}
+
+\begin{cm}
+% TU VIET LAI
+Đặt $m_S(u) \triangleq \max_{t \in S} K(u, t)$ với quy ước $m_\emptyset(u) \triangleq 0$ (kéo theo $FL(\emptyset) = 0$). Với hai tập con bất kỳ $A \subseteq B \subseteq V$, do $A \subseteq B$ nên giá trị cực đại trên tập con không vượt quá cực đại trên tập mẹ: $m_A(u) \le m_B(u), \forall u \in V$. Lấy tổng trên toàn bộ $u \in V$, ta thu được $FL(A) = \sum_{u} m_A(u) \le \sum_{u} m_B(u) = FL(B)$, khẳng định tính đơn điệu không giảm.
+
+Xét phần tử bất kỳ $x \in V \setminus B$. Lượng tăng biên khi bổ sung $x$ vào tập đã chọn $S$ là:
+\begin{equation}
+\Delta_{FL}(x \mid S) = FL(S \cup \{x\}) - FL(S) = \sum_{u \in V} \max\left(0, \, K(u, x) - m_S(u)\right)
+\end{equation}
+Do $m_A(u) \le m_B(u)$, ta có hiệu số $K(u, x) - m_A(u) \ge K(u, x) - m_B(u)$. Vì hàm số $\phi(z) = \max(0, z)$ là hàm đơn điệu không giảm trên $\mathbb{R}$, ta có $\max\left(0, K(u, x) - m_A(u)\right) \ge \max\left(0, K(u, x) - m_B(u)\right)$ với mọi $u \in V$. Lấy tổng hai vế theo $u \in V$, ta suy ra $\Delta_{FL}(x \mid A) \ge \Delta_{FL}(x \mid B)$, chứng minh hàm $FL(S)$ thỏa mãn quy luật lợi ích biên giảm dần và do đó là một hàm submodular.
+\end{cm}
+
+Trong bài toán TCP, hàm Facility Location mô hình hóa tính đa dạng của tập kiểm thử: mỗi bài kiểm thử đóng vai trò như một cơ sở dịch vụ. Khi bài kiểm thử $t$ được chọn, nó bao phủ các bài kiểm thử khác có mã nguồn tương đồng. Tính chất submodular bảo đảm việc chọn các bài kiểm thử tương tự nhau mang lại lượng tăng biên tiệm cận về 0, buộc thuật toán ưu tiên các bài kiểm thử thuộc các vùng ngữ nghĩa khác biệt.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Cận xấp xỉ \texorpdfstring{$(1 - 1/e)$}{(1 - 1/e)} của thuật toán tham lam}
+\label{subsubsec:nemhauser_greedy_bound}
+
+Bài toán tối đa hóa hàm submodular đơn điệu với ràng buộc kích thước tập con $|S| \le k$ (tức $\max_{|S| \le k} f(S)$) là bài toán NP-khó trong trường hợp tổng quát~\cite{nemhauser1978analysis, krause2014submodular}. Thuật toán tham lam chuẩn khởi tạo từ $S_0 = \emptyset$, tại mỗi bước chọn phần tử có lượng tăng biên lớn nhất: $x_i^* \in \arg\max_{x \notin S_{i-1}} \Delta f(x \mid S_{i-1})$ với $S_i = S_{i-1} \cup \{x_i^*\}$.
+
+\begin{dl}[Cận xấp xỉ Nemhauser, Wolsey và Fisher (1978)]
+\label{dl:nemhauser_theorem}
+Giả sử hàm tập $f: 2^V \to \mathbb{R}_{\ge 0}$ là hàm chuẩn hóa ($f(\emptyset) = 0$, với quy ước $\max_{t \in \emptyset} K(u, t) \triangleq 0$ đối với hàm Facility Location), không âm, đơn điệu không giảm và submodular.
+
+Khi áp dụng thuật toán tham lam lựa chọn tuần tự $x_i^* \in \arg\max_{x \in V \setminus S_{i-1}} \Delta f(x \mid S_{i-1})$ với $S_0 = \emptyset$ và $S_i = S_{i-1} \cup \{x_i^*\}$, với mỗi kích thước tiền tố $k$ ($1 \le k \le n$), tập nghiệm tiền tố $S_k$ gồm $k$ phần tử đầu tiên thỏa mãn:
+\begin{equation}
+\label{eq:nemhauser_bound_formula}
+f(S_k) \ge \left[ 1 - \left(1 - \frac{1}{k}\right)^k \right] f(O_k) \ge \left(1 - \frac{1}{e}\right) f(O_k) \approx 0{,}63212 \cdot f(O_k)
+\end{equation}
+trong đó $O_k \in \arg\max_{|S| \le k} f(S)$ là tập con kích thước $k$ tối ưu toàn cục.
+
+Cận lý thuyết này bảo đảm độc lập cho từng tập tiền tố $S_k$ so với tập tối ưu $O_k$ cùng kích thước, nhưng không bảo đảm tính tối ưu hay cận xấp xỉ đối với toàn bộ hoán vị thứ tự $\pi$, và không bảo đảm cận cho các độ đo diện tích tích lũy trên cả dãy như APFD hay APFDc.
+\end{dl}
+
+\begin{cm}
+% TU VIET LAI
+Gọi $O_k = \{o_1, \dots, o_k\}$ là tập con tối ưu kích thước $k$. Tại bước lặp thứ $i$ bất kỳ ($0 \le i \le k - 1$), do tính đơn điệu không giảm và tính submodular của $f$, ta có:
+\begin{equation}
+f(O_k) - f(S_i) \le f(O_k \cup S_i) - f(S_i) \le \sum_{j=1}^k \Delta f(o_j \mid S_i)
+\end{equation}
+Do thuật toán tham lam luôn chọn phần tử $x_{i+1}^*$ có lượng tăng biên lớn nhất tại bước $i+1$, ta có $\Delta f(o_j \mid S_i) \le \Delta f(x_{i+1}^* \mid S_i) = f(S_{i+1}) - f(S_i)$ với mọi $j = 1, \dots, k$. Suy ra:
+\begin{equation}
+f(O_k) - f(S_i) \le k \cdot [f(S_{i+1}) - f(S_i)]
+\end{equation}
+Đặt $\Delta_i \triangleq f(O_k) - f(S_i)$ là khoảng cách tới giá trị tối ưu tại bước $i$. Bất đẳng thức trên tương đương với:
+\begin{equation}
+\Delta_{i+1} \le \left(1 - \frac{1}{k}\right) \Delta_i
+\end{equation}
+Áp dụng hệ thức truy hồi liên tiếp từ bước $i = 0$ tới $i = k$, với điều kiện chuẩn hóa $f(\emptyset) = 0 \implies \Delta_0 = f(O_k) - f(\emptyset) = f(O_k)$:
+\begin{equation}
+\Delta_k \le \left(1 - \frac{1}{k}\right)^k \Delta_0 = \left(1 - \frac{1}{k}\right)^k f(O_k) \le e^{-1} f(O_k)
+\end{equation}
+Chuyển vế, ta thu được $f(S_k) = f(O_k) - \Delta_k \ge \left(1 - 1/e\right) f(O_k)$.
+\end{cm}
+
+Cận xấp xỉ $(1 - 1/e) \approx 63{,}2\%$ là cận xấp xỉ tốt nhất có thể đạt được trong thời gian đa thức, trừ khi $P = NP$~\cite{nemhauser1978analysis}. Tuy nhiên, cận lý thuyết này áp dụng cho giá trị hàm mục tiêu đại diện $f(S_k)$, không tự động chuyển hóa thành cận bảo đảm cho các độ đo thực tế như APFD hay APFDc.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Kỹ thuật đánh giá lười (Lazy Greedy)}
+\label{subsubsec:lazy_greedy_technique}
+
+Tại mỗi bước lặp $i$, thuật toán tham lam chuẩn phải tính lại lượng tăng biên cho toàn bộ $n - i + 1$ ứng viên còn lại, đòi hỏi tổng cộng $\mathcal{O}(n^2)$ lượt đánh giá. Với hàm Facility Location, mỗi lượt đánh giá tốn $\mathcal{O}(n)$ phép tính, dẫn tới độ phức tạp thời gian tổng thể là $\mathcal{O}(n^3)$.
+
+Minoux (1978)~\cite{minoux1978accelerated} đề xuất thuật toán Tham lam lười (Lazy Greedy, CELF) dựa trên tính chất: lượng tăng biên chỉ giảm dần hoặc giữ nguyên khi tập đã chọn mở rộng ($A \subseteq B \implies \Delta f(x \mid B) \le \Delta f(x \mid A)$). Về mặt khái niệm lý thuyết, thuật toán duy trì một hàng đợi ưu tiên giảm dần (Max-Heap) lưu trữ các bài kiểm thử cùng cận trên lượng tăng biên $\Delta(t)$ và mốc thời gian cập nhật $\text{lastUpdated}(t)$. Trong cài đặt thực tế của đề tài (\path{hc_falcon/greedy.py:36-44}), do thư viện cấu trúc dữ liệu chuẩn \texttt{heapq} của Python mặc định tổ chức cây Min-Heap, mã nguồn lưu trữ bộ giá trị $(\text{--}\text{gain}, \text{ids}[i], i, \text{stamp})$. Phép đảo dấu lượng tăng biên biến Min-Heap vận hành chính xác như một Max-Heap, đồng thời chuỗi định danh \texttt{ids}[i] đóng vai trò phá vỡ thế hòa (tie-breaking) bảo đảm tính tiền định (deterministic).
+
+\begin{algorithm}[H]
+\caption{Thuật toán Lazy Greedy cho bài toán lập lịch TCP}
+\label{algo:lazy_greedy}
+\begin{algorithmic}[1]
+\Require Bộ kiểm thử $T = \{t_1, \dots, t_n\}$, hàm mục tiêu submodular $f: 2^T \to \mathbb{R}_{\ge 0}$
+\Ensure Dãy thứ tự ưu tiên hoàn chỉnh $\pi = \langle \pi(1), \dots, \pi(n) \rangle$
+\State $S \gets \emptyset$, $\pi \gets []$, khởi tạo Max-Heap $Q$
+\For{$t \in T$}
+    \State $\Delta(t) \gets f(\{t\}) - f(\emptyset)$, chèn $(t, \Delta(t))$ vào $Q$ với $\text{lastUpdated}(t) \gets 0$
+\EndFor
+\For{$i = 1$ \textbf{to} $n$}
+    \While{\textbf{true}}
+        \State $t_{\text{top}} \gets Q.\text{peek()}$
+        \If{$\text{lastUpdated}(t_{\text{top}}) = i - 1$}
+            \State \textbf{break} \Comment{Giá trị tại đỉnh đã được cập nhật ở trạng thái $S$ hiện tại}
+        \EndIf
+        \State $\Delta(t_{\text{top}}) \gets f(S \cup \{t_{\text{top}}\}) - f(S)$, $\text{lastUpdated}(t_{\text{top}}) \gets i - 1$
+        \State Cập nhật vị trí của $t_{\text{top}}$ trong Max-Heap $Q$ với độ ưu tiên $\Delta(t_{\text{top}})$ mới
+    \EndWhile
+    \State $t^* \gets Q.\text{pop()}$, $S \gets S \cup \{t^*\}$, $\pi.\text{append}(t^*)$
+\EndFor
+\State \Return $\pi$
+\end{algorithmic}
+\end{algorithm}
+
+Do $\Delta(t)$ trong heap luôn là cận trên hợp lệ của lượng tăng biên thực tế tại trạng thái $S$ hiện tại ($\Delta(t) \ge \Delta f(t \mid S)$), khi phần tử ở đỉnh heap $t_{\text{top}}$ vừa được tính lại mà giá trị mới vẫn lớn hơn hoặc bằng giá trị lưu trữ của tất cả các phần tử khác, phần tử đó chắc chắn có lượng tăng biên lớn nhất toàn cục. Thuật toán Lazy Greedy bảo đảm sinh ra dãy thứ tự hoàn toàn đồng nhất với tham lam chuẩn~\cite{minoux1978accelerated}.
+
+Trong trường hợp xấu nhất, thuật toán có độ phức tạp $\mathcal{O}(n^3)$. Tuy nhiên, đối với hàm Facility Location, số lượt đánh giá lượng tăng biên thực tế chỉ là $\mathcal{O}(n \log n)$~\cite{minoux1978accelerated, falcon2026}, giúp giảm độ phức tạp kỳ vọng thực tế xuống mức $\mathcal{O}(n^2 \log n)$.
+
+% =============================================================================
+\subsection{Biểu diễn ngữ nghĩa và mô hình hóa mã nguồn}
+\label{subsec:semantic_code_representation}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Các mô hình ngôn ngữ mã nguồn (Code Language Models)}
+\label{subsubsec:code_language_models}
+
+Khác với các phương pháp trích xuất đặc trưng truyền thống dựa trên tần suất từ vựng thưa (như TF-IDF hay Bag-of-Words vốn bỏ qua ngữ cảnh cú pháp), các mô hình ngôn ngữ chuyên sâu cho mã nguồn (Code Language Models -- Code LMs) tiếp nhận chuỗi mã nguồn và ánh xạ thành vector số thực dày đặc (dense embeddings) bảo toàn ngữ nghĩa chức năng của chương trình.
+
+Hai mô hình ngôn ngữ mã nguồn tiêu biểu trong nghiên cứu TCP bao gồm:
+\begin{itemize}
+    \item \textbf{Mô hình CodeBERT}~\cite{feng2020codebert} (Feng et al., 2020): Mô hình Transformer hai chiều dựa trên RoBERTa (125M tham số), tiền huấn luyện trên hơn 2 triệu cặp mã nguồn và tài liệu ngôn ngữ tự nhiên từ CodeSearchNet qua hai tác vụ Masked Language Modeling và Replaced Token Detection.
+    \item \textbf{Mô hình UniXcoder}~\cite{guo2022unixcoder} (Guo et al., 2022): Mô hình biểu diễn mã nguồn đa phương thức hợp nhất phát triển bởi Microsoft. UniXcoder tích hợp thông tin cấu trúc cú pháp thông qua cây cú pháp trừu tượng (AST) được làm phẳng thành chuỗi token song song với mã nguồn và chú thích. Bản \path{microsoft/unixcoder-base} sở hữu kích thước vector ẩn $d = 768$ và hỗ trợ ngữ cảnh tối đa 512 tokens.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Trích xuất vector đặc trưng và Độ tương đồng cosin}
+\label{subsubsec:embedding_cosine_similarity}
+
+Quy trình tiền xử lý và trích xuất vector đặc trưng cho bài kiểm thử Java bao gồm: (1) Chuẩn hóa văn bản mã nguồn bằng cách loại bỏ chú thích (comments) và chuẩn hóa khoảng trắng; (2) Phân rã từ vựng (BPE tokenization) với giới hạn tối đa $L \le 512$ tokens; (3) Gom trung bình có mặt nạ chú ý (Masked Mean Pooling) từ ma trận trạng thái ẩn tầng cuối $H = [h_1, \dots, h_L] \in \mathbb{R}^{L \times 768}$ để loại trừ ký tự đệm:
+\begin{equation}
+\label{eq:masked_mean_pooling}
+z(t) = \frac{\sum_{j=1}^L a_j h_j}{\sum_{j=1}^L a_j}, \quad a_j \in \{0, 1\}
+\end{equation}
+(4) Chuẩn hóa vector đơn vị $\widehat{z}(t) = z(t) / \|z(t)\|_2$; và (5) Xây dựng hàm hạt nhân tương đồng cắt tỉa (Clipped Cosine Similarity Kernel):
+\begin{equation}
+\label{eq:kernel_clipped_def}
+K(u, t) \triangleq \operatorname{clip}\left(\widehat{z}(u)^\top \widehat{z}(t), \, 0{,}0, \, 1{,}0\right) = \max\left(0{,}0, \, \min\left(1{,}0, \, \widehat{z}(u)^\top \widehat{z}(t)\right)\right)
+\end{equation}
+với $K(t, t) = 1{,}0$. Phép cắt tỉa về $[0, 1]$ bảo đảm ma trận hạt nhân $K \in \mathbb{R}^{n \times n}$ luôn đối xứng, không âm, đáp ứng giả thiết của Mệnh đề~\ref{prop:fl_submodular}.
+
+% =============================================================================
+\subsection{Tổng quan các nghiên cứu liên quan và khoảng trống phương pháp luận}
+\label{subsec:related_work}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Ưu tiên bộ kiểm thử dựa trên độ bao phủ mã nguồn}
+\label{subsubsec:coverage_based_tcp}
+
+Các nghiên cứu kinh điển về TCP tập trung vào độ bao phủ mã nguồn hộp trắng (statement, branch coverage)~\cite{rothermel1999tcp, elbaum2002tcp, yoo2012regression} với hai chiến lược tham lam: Total Coverage (ưu tiên test có tổng bao phủ lớn nhất) và Additional Coverage (ưu tiên test bao phủ thêm nhiều thực thể chưa được bao phủ). Mặc dù Additional Coverage đạt hiệu quả cao trên benchmark tĩnh, hướng tiếp cận này gặp rào cản chi phí chèn mã giám sát (instrumentation overhead làm chậm từ 20\% đến hơn 100\%) và không khả thi trong môi trường kiểm thử hộp đen.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Ưu tiên bộ kiểm thử dựa trên lịch sử lỗi và học máy}
+\label{subsubsec:history_ml_tcp}
+
+History-based TCP khai thác dữ liệu lịch sử thực thi dựa trên quy luật lỗi phần mềm có tính cục bộ và lặp lại~\cite{kim2002history}. Trên nền tảng này, Spieker và cộng sự (2017) đề xuất RETECS~\cite{spieker2017reinforcement} áp dụng học tăng cường Q-learning trong CI, kết hợp cùng các kỹ thuật Learning-to-Rank. Tuy nhiên, các phương pháp học máy thuần túy gặp thách thức khởi động lạnh (Cold-Start) khi có test mới ($n_t = 0$) và trôi dạt phân phối (Distribution Shift) khi phần mềm tiến hóa liên tục.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Phương pháp FALCON (Mensah-Boateng et al., ICST 2026)}
+\label{subsubsec:falcon_method}
+
+% nguon: falcon-icst-2026.pdf, trang 1
+Tại Hội nghị ICST 2026, Mensah-Boateng, Yuan và Do công bố phương pháp FALCON (FAcility Location-based test Case priOritizatioN)~\cite{falcon2026}, xây dựng cầu nối giữa bài toán TCP hộp đen và lý thuyết tối ưu hóa submodular.
+% nguon: falcon-icst-2026.pdf, trang 1, 3
+FALCON dựa trên nguyên lý đa dạng hóa bộ kiểm thử (diversity-based TCP): các bài kiểm thử khác biệt có xu hướng kích hoạt các lỗi khác nhau. Phương pháp mô hình hóa bài toán lựa chọn kiểm thử thành tối đa hóa hàm bao phủ Submodular Facility Location trên ma trận tương đồng ngữ nghĩa. Nhóm tác giả nhấn mạnh sự tương phản với các kỹ thuật heuristic trước đó như FAST~\cite{miranda2018fast} (vốn dựa trên khoảng cách Jaccard và băm MinHashing trên token từ vựng); FALCON thay vào đó đo lường độ tương đồng ngữ nghĩa trong không gian vector liên tục bằng độ tương đồng cosin (trang 1, 2).
+
+% nguon: falcon-icst-2026.pdf, trang 3-5
+Quy trình kỹ thuật gồm ba bước: (1) Trích xuất mã nguồn phương thức kiểm thử, tạo vector biểu diễn qua mô hình Code LM tiền huấn luyện đông băng (khảo sát CodeBERT, CodeXEmbed-400M, UniXcoder, StarEncoder, GraphCodeBERT); (2) Xây dựng ma trận tương đồng cosin từng cặp; và (3) Lập lịch bằng thuật toán Lazy Greedy tối ưu hóa hàm Facility Location $FL(S)$.
+% nguon: falcon-icst-2026.pdf, trang 6, 7
+Thực nghiệm trên benchmark Defects4J (288 phiên bản lỗi trên 6 dự án Java, 20.770 test methods) cho thấy FALCON đạt điểm APFD trung bình \textbf{0,722} (72,23\%), vượt trội so với các biến thể FAST hộp đen~\cite{miranda2018fast} (0,63--0,68) và mốc ngẫu nhiên (~0,50).
+
+% nguon: falcon-icst-2026.pdf, trang 3-5
+\textit{Ưu điểm và Hạn chế:} FALCON có cơ sở toán học với bảo đảm cận $(1 - 1/e)$, không cần chèn mã và xử lý tốt khởi động lạnh. Tuy nhiên, bài báo gốc FALCON hoàn toàn không mô hình hóa thành phần chi phí thời gian thực thi của bài kiểm thử ($c(t)$) hay tiền sử lỗi động ($p(t)$); bài toán tối ưu chỉ giới hạn ở cận số lượng bài kiểm thử $|S| \le k$ và độ đo đánh giá duy nhất là APFD tĩnh trên Defects4J (trang 3--5). Việc bỏ qua hai nguồn tín hiệu sống còn trong CI thực tế dẫn đến nguy cơ thuật toán ưu tiên các bài kiểm thử nặng, chạy lâu không phát hiện lỗi lên đầu danh sách và làm giảm nghiêm trọng APFDc.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Phương pháp DANTE (Reale et al., ICST 2026)}
+\label{subsubsec:dante_method}
+
+% nguon: dante-icst-2026.pdf, trang 1
+Cũng tại ICST 2026, Reale, Di Nitto, Baresi, Di Penta và Quattrocchi công bố phương pháp DANTE (chọn lọc và ưu tiên kiểm thử dựa trên dữ liệu cho các bộ kiểm thử chạy dài)~\cite{dante2026}, tập trung vào kiểm thử CI thực tế với các bộ kiểm thử chạy kéo dài nhiều giờ (LRTS).
+% nguon: dante-icst-2026.pdf, trang 1, 6
+DANTE được đánh giá trên tập LRTS gồm 21.255 lượt build Jenkins CI và 57.437 lần chạy test suite từ 9 dự án Apache Java (ActiveMQ, Hadoop, HBase, Hive, Jackrabbit Oak, James, Kafka, Karaf, Log4j 2).
+
+% nguon: dante-icst-2026.pdf, trang 2-5
+DANTE là framework dựa trên dữ liệu không cần huấn luyện (training-free), kết hợp hai tín hiệu: (1) \textit{History Score}: đo lường độ bám dính lỗi (failure stickiness) qua chuỗi build quá khứ bằng khoảng tin cậy Wilson để kháng kiểm thử chập chờn (flaky tests); và (2) \textit{Relevance Score}: đo mức liên quan giữa Git Diff của commit và mã kiểm thử. Về biểu diễn mã nguồn, nhóm tác giả đã thử nghiệm cả mô hình dày đặc CodeBERT lẫn mô hình túi từ vựng thưa (trang 5, Mục III-B). Kết quả thực nghiệm của họ chỉ ra rằng CodeBERT không mang lại độ phân biệt cần thiết cho mối quan hệ giữa thay đổi commit và kiểm thử; do đó DANTE từ bỏ mô hình ngữ nghĩa sâu và lựa chọn kỹ thuật IR thưa TF-IDF với độ tương đồng cosin trên token từ vựng.
+
+% nguon: dante-icst-2026.pdf, trang 5, 7, 8
+Hai điểm số được chuẩn hóa Min-Max và kết hợp cùng chi phí thời gian chạy $t_i$ và tần suất lỗi $f_i$ thành điểm số vô hướng $FV_i = V_i \cdot \frac{f_i}{t_i}$ (trang 5, Công thức 5). Thuật toán sắp xếp các bài kiểm thử theo thứ tự giảm dần của $FV_i$ và chọn tham lam tuần tự cho đến khi đạt ngân sách thời gian $T_{\max}$. Trên LRTS, DANTE đạt APFDc trung vị \textbf{0,87} (87,0\%), vượt trội so với các heuristic lịch sử truyền thống (LatestFail-CCH, MostFail-CC, QTF) và ngẫu nhiên.
+
+% nguon: dante-icst-2026.pdf, trang 3-6
+\textit{Ưu điểm và Hạn chế:} DANTE nhận thức sâu sắc chi phí $c(t)$ và lịch sử lỗi CI thực tế, kháng flaky test tốt và không tốn chi phí huấn luyện. Tuy nhiên, bài không sử dụng mô hình ngữ nghĩa sâu và phần phương pháp của bài (trang 3--6) không mô tả cơ chế tối ưu hóa đa dạng tổ hợp giữa các bài kiểm thử (như hàm bao phủ submodular hay ma trận khoảng cách tương đồng giữa các ca kiểm thử). Việc xếp hạng độc lập theo điểm số vô hướng $FV_i$ cục bộ có thể khiến các bài kiểm thử có nội dung tương tự nhau (cùng liên quan đến một tệp sửa đổi) đứng sát nhau ở đầu hàng đợi, làm giảm tính đa dạng trong ngân sách kiểm thử ban đầu.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Định vị đề tài và khoảng trống phương pháp luận}
+\label{subsubsec:research_positioning}
+
+Bảng~\ref{tab:tcp_paradigm_comparison} tổng hợp sự đối chiếu đặc trưng phương pháp luận giữa các hướng tiếp cận TCP chính và định vị của đề tài HC-FALCON.
+
+\begin{table}[H]
+\centering
+\caption{Đối chiếu đặc trưng phương pháp luận giữa các hướng tiếp cận TCP chính}
+\label{tab:tcp_paradigm_comparison}
+\begin{adjustbox}{max width=\textwidth}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Đặc trưng phương pháp luận} & \textbf{Coverage-based} & \textbf{History/ML} & \textbf{FALCON} & \textbf{DANTE} \\
+& \cite{rothermel1999tcp, elbaum2002tcp} & \cite{kim2002history, spieker2017reinforcement} & \cite{falcon2026} & \cite{dante2026} \\
+\midrule
+% nguon: falcon-icst-2026.pdf:2, dante-icst-2026.pdf:2
+Cơ chế hộp đen (Không cần chèn mã)      
+& Không % nguon: falcon-icst-2026.pdf, trang 2
+& Có % nguon: dante-icst-2026.pdf, trang 2
+& Có % nguon: falcon-icst-2026.pdf, trang 1
+& Có % nguon: dante-icst-2026.pdf, trang 2
+\\
+Tối ưu hóa đa dạng Submodular          
+& Không đề cập trong bài % nguon: rothermel1999tcp
+& Không đề cập trong bài % nguon: kim2002history
+& Có % nguon: falcon-icst-2026.pdf, trang 1, 3
+& Không đề cập trong bài % nguon: dante-icst-2026.pdf, trang 3-6
+\\
+Biểu diễn ngữ nghĩa sâu (Code LM)      
+& Không đề cập trong bài % nguon: rothermel1999tcp
+& Không đề cập trong bài % nguon: kim2002history
+& Có % nguon: falcon-icst-2026.pdf, trang 1, 4
+& Không sử dụng % nguon: dante-icst-2026.pdf, trang 5 (loại bỏ CodeBERT)
+\\
+Ước lượng xác suất lỗi động            
+& Không đề cập trong bài % nguon: rothermel1999tcp
+& Có % nguon: kim2002history; dante-icst-2026.pdf, trang 2
+& Không đề cập trong bài % nguon: falcon-icst-2026.pdf, trang 3-5
+& Có % nguon: dante-icst-2026.pdf, trang 3, 4
+\\
+Nhận thức chi phí thời gian thực thi   
+& Một phần % nguon: elbaum2002tcp (APFDc)
+& Một phần % nguon: dante-icst-2026.pdf, trang 2
+& Không đề cập trong bài % nguon: falcon-icst-2026.pdf, trang 3-5
+& Có % nguon: dante-icst-2026.pdf, trang 5
+\\
+Bảo đảm cận lý thuyết toán học         
+& Không đề cập trong bài % nguon: rothermel1999tcp
+& Không đề cập trong bài % nguon: spieker2017reinforcement
+& Có % nguon: falcon-icst-2026.pdf, trang 4, 5
+& Không đề cập trong bài % nguon: dante-icst-2026.pdf, trang 5, 6
+\\
+Bối cảnh đánh giá thực nghiệm chính    
+& Benchmark tĩnh % nguon: rothermel1999tcp
+& CI mô phỏng % nguon: spieker2017reinforcement
+& Defects4J tĩnh % nguon: falcon-icst-2026.pdf, trang 5, 6
+& CI thực tế (LRTS) % nguon: dante-icst-2026.pdf, trang 1, 6
+\\
+Độ đo tối ưu hóa trọng tâm             
+& APFD / APFDc % nguon: rothermel1999tcp, elbaum2002tcp
+& APFD / APFDc % nguon: spieker2017reinforcement
+& APFD % nguon: falcon-icst-2026.pdf, trang 5
+& APFDc / Recall@$k\%$ % nguon: dante-icst-2026.pdf, trang 6, 7
+\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\vspace{1mm}\\
+\footnotesize{\textit{Nguồn tổng hợp: Phân tích đối chiếu trực tiếp từ các bài báo gốc: FALCON~\cite{falcon2026}, DANTE~\cite{dante2026}, cùng các nghiên cứu liên quan được trích dẫn.}}
+\end{table}
+
+Bức tranh nghiên cứu đương đại bộc lộ khoảng trống phương pháp luận rõ rệt: trường phái \textbf{FALCON}~\cite{falcon2026} sở hữu nền tảng toán học submodular vững chắc và ngữ nghĩa mã nguồn UniXcoder sâu nhưng cô lập khỏi chi phí thời gian và lịch sử lỗi CI; trong khi trường phái \textbf{DANTE}~\cite{dante2026} bám sát thực tiễn chi phí và lịch sử lỗi CI nhưng thiếu vắng cơ chế bao phủ đa dạng không gian kiểm thử toàn cục và dựa vào từ vựng thưa.
+
+Khoảng trống này đặt ra câu hỏi nghiên cứu: \textit{Liệu việc kết hợp cả ba nguồn tín hiệu kiểm thử --- tối ưu hóa đa dạng ngữ nghĩa sâu thông qua hàm submodular Facility Location trên biểu diễn UniXcoder, ước lượng rủi ro lỗi tích lũy qua mô hình suy luận Bayes từ lịch sử thực thi, và nhận thức chi phí thời gian thực tế --- có thể tạo ra một giải pháp ưu tiên kiểm thử vừa bảo đảm cơ sở toán học vừa đáp ứng hiệu quả các chỉ tiêu kỹ thuật trên hệ thống CI thực tế hay không?} Đề tài này được định vị nhằm giải quyết trực diện câu hỏi phương pháp luận nêu trên.
+
+% =============================================================================
+\subsection{Tóm tắt chương}
+\label{subsec:chapter2_summary}
+
+Chương 2 đã thiết lập cơ sở lý thuyết và nền tảng phương pháp luận cho đề tài:
+\begin{itemize}
+    \item Định nghĩa hình thức bài toán Ưu tiên Bộ kiểm thử (TCP) trong bối cảnh CI và chuẩn hóa công thức toán học của 4 độ đo cốt lõi: APFD, APFDc theo quy ước điểm giữa thực thi, TTFF và Recall@$k\%$.
+    \item Trình bày nền tảng tối ưu hóa tổ hợp hàm submodular, chứng minh toán học về tính đơn điệu và tính submodular của hàm Facility Location, định lý cận xấp xỉ $(1 - 1/e)$ của Nemhauser cho thuật toán tham lam, cùng nguyên lý và cấu trúc dữ liệu của thuật toán Lazy Greedy.
+    \item Giới thiệu nguyên lý biểu diễn ngữ nghĩa mã nguồn qua mô hình ngôn ngữ UniXcoder, quy trình trích xuất vector đặc trưng bằng Masked Mean Pooling và hàm hạt nhân tương đồng cosin cắt tỉa trên đoạn $[0, 1]$.
+    \item Phân tích hai nghiên cứu tiêu biểu công bố tại ICST 2026: FALCON (mạnh về đa dạng ngữ nghĩa submodular nhưng thiếu chi phí và lịch sử) và DANTE (mạnh về chi phí và lịch sử CI nhưng thiếu ngữ nghĩa sâu và tối ưu hóa đa dạng), từ đó xác định khoảng trống phương pháp luận làm cơ sở cho mô hình đề xuất HC-FALCON.
+\end{itemize}
+
+Các nội dung lý thuyết và khung phân tích được xây dựng trong chương này là tiền đề trực tiếp để Chương 3 tiến hành thiết kế kiến trúc hệ thống, phát triển các mô hình toán học hình thức và phân tích 4 thế hệ thuật toán của phương pháp HC-FALCON.

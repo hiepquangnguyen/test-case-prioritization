@@ -1,0 +1,76 @@
+{
+  "version": "stage12-hc-falcon-v2-preregistered",
+  "status": "preregistered_not_evaluated",
+  "parent_release": "v0.1.1",
+  "primary_method": "hc_ugcs_v2",
+  "fixed_constants": {
+    "semantic_weight": 0.25,
+    "z_value": 1.96,
+    "cost_floor": 1e-6,
+    "epsilon": 1e-8,
+    "gain_tolerance": 1e-12
+  },
+  "formulas": {
+    "posterior_a": "failures + 1",
+    "posterior_b": "observations - failures + 1",
+    "posterior_mu": "posterior_a / (posterior_a + posterior_b)",
+    "posterior_sigma": "sqrt(posterior_a * posterior_b / ((posterior_a + posterior_b)^2 * (posterior_a + posterior_b + 1)))",
+    "cost_denominator": "sqrt(max(normalized_cost, 1e-6)) + 1e-8",
+    "risk_lower_bound": "confidence * max(0.0, posterior_mu - z_value * posterior_sigma) / cost_denominator",
+    "risk_upper_bound": "confidence * min(1.0, posterior_mu + z_value * posterior_sigma) / cost_denominator",
+    "safety_guard_condition": "upper[t] + 1e-12 >= lower[anchor]",
+    "marginal_semantic_gain": "sum_i(max(kernel[i, t] - coverage[i], 0.0)) / n",
+    "cost_aware_semantic_density": "marginal[t] / sqrt(max(normalized_cost[t], 1e-6))",
+    "q_relative": "q[t] / max(q among remaining); 0.0 if max is 0.0",
+    "semantic_relative": "density[t] / max(density among safe candidates); 0.0 if max is 0.0",
+    "combined_utility": "(1.0 - semantic_weight) * q_relative[t] + semantic_weight * semantic_relative[t]",
+    "selection_order": "highest utility desc (tol 1e-12), then highest q desc (tol 1e-12), then lexicographically smallest test_id asc"
+  },
+  "comparators": [
+    "history_cost",
+    "fl_only"
+  ],
+  "development_projects": [
+    "karaf",
+    "activemq",
+    "log4j"
+  ],
+  "metrics": {
+    "primary": "median_paired_apfdc_midpoint_delta",
+    "secondary": [
+      "mean_paired_delta",
+      "win_tie_loss",
+      "ttff_seconds",
+      "recall_at_10pct",
+      "predecessor_seconds",
+      "runtime_overhead",
+      "peak_rss_bytes"
+    ]
+  },
+  "effect_gate": {
+    "metric": "median_paired_apfdc_delta",
+    "threshold": 0.03,
+    "comparators": [
+      "history_cost",
+      "fl_only"
+    ],
+    "minimum_development_projects": 2,
+    "total_development_projects": 3
+  },
+  "engineering_gates": {
+    "p95_warm_overhead_fraction": 0.1,
+    "peak_rss_bytes": 8589934592
+  },
+  "runtime_protocol": {
+    "warmup_runs": 1,
+    "repetitions": 3,
+    "timer": "perf_counter",
+    "overhead_definition": "relative_to_history_cost_ranking_latency"
+  },
+  "governance": {
+    "reserved_opened": false,
+    "development_evaluated": false,
+    "tuning_rounds_allowed": 0,
+    "confirmation_requires_explicit_human_approval": true
+  }
+}

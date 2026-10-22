@@ -1,0 +1,9 @@
+{
+  "project": "Mockito",
+  "tests_count": 1292,
+  "faults_count": 27,
+  "independent_apfd": 0.7362257768604518,
+  "author_apfd": 0.7361971104231166,
+  "apfd_delta": 2.8666437335123085e-05,
+  "provenance": "cold_embedding_run"
+}

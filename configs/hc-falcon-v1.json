@@ -1,0 +1,49 @@
+{
+  "design_version": "stage4-hc-falcon-v1",
+  "implementation_status": "specified_not_implemented",
+  "primary_method": "hc_falcon_normalized_v1",
+  "reference_method": "hc_falcon_topic_raw_v1",
+  "alpha": 0.5,
+  "alpha_sensitivity": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "semantic_denominator": "full_inventory_n",
+  "modular_normalization": "q_div_sum_current_inventory_q; all_zero_if_sum_zero",
+  "history": {
+    "beta_fail": 1.0,
+    "beta_pass": 1.0,
+    "confidence_tau": 5.0,
+    "cold_duration_seconds": 1.0,
+    "duration_floor_seconds": 0.000001,
+    "epsilon": 0.00000001,
+    "availability_guard_seconds": 2,
+    "cutoff": "strict_completed_before_start",
+    "context": ["project", "base_branch", "stage"],
+    "exclude_same_physical_build": true,
+    "eligible_statuses": ["SUCCESS", "FAILURE", "UNSTABLE"]
+  },
+  "semantic": {
+    "unit_lrts": "test_class_record",
+    "source_representation": "declared_revision_compilation_unit; nested_class_uses_outer_file",
+    "source_preprocessing": "utf8_strict_bom_removed_lf_java_comments_removed_preserve_literals_v1",
+    "encoder": "microsoft/unixcoder-base",
+    "revision": "5604afdc964f6c53782a6813140ade5216b99006",
+    "model_api": "transformers_AutoModel_AutoTokenizer",
+    "max_length": 512,
+    "max_chunks": 16,
+    "chunk_policy": "nonoverlap_payload_no_special_tokens_then_add_model_special_tokens; keep_first_16",
+    "pooling": "attention_mask_mean_including_nonpadding_special_tokens; payload_length_weighted_chunk_mean_then_l2",
+    "model_dtype": "float32",
+    "similarity": "clip_cosine_0_1",
+    "invalid_source_similarity": "zero_row_and_column_including_diagonal",
+    "valid_source_diagonal": 1.0,
+    "zero_norm_policy": "semantic_unavailable_keep_test",
+    "nonfinite_policy": "hard_error"
+  },
+  "ranking": {
+    "algorithm": "exact_lazy_greedy_with_standard_reference",
+    "gain_dtype": "float64",
+    "tie_break": "FQN_ascending_exact_gain_ties",
+    "full_permutation": true,
+    "score_state_frozen_per_build": true
+  },
+  "random_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+}

@@ -1,0 +1,9 @@
+{
+  "project": "Lang",
+  "tests_count": 2239,
+  "faults_count": 32,
+  "independent_apfd": 0.754284836980795,
+  "author_apfd": 0.754284836980795,
+  "apfd_delta": 0.0,
+  "provenance": "cold_embedding_run"
+}

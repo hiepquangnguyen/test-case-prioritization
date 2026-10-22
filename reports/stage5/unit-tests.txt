@@ -1,0 +1,198 @@
+test_10_idempotent_pass_on_identical_destination (test_bootstrap_falcon.TestBootstrapFalcon.test_10_idempotent_pass_on_identical_destination) ... ok
+test_11_conflicting_destination_content_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_11_conflicting_destination_content_fails) ... ok
+test_12_no_files_created_in_reports (test_bootstrap_falcon.TestBootstrapFalcon.test_12_no_files_created_in_reports) ... ok
+test_13_no_files_created_in_configs (test_bootstrap_falcon.TestBootstrapFalcon.test_13_no_files_created_in_configs) ... ok
+test_14_no_reserved_data_accessed_or_created (test_bootstrap_falcon.TestBootstrapFalcon.test_14_no_reserved_data_accessed_or_created) ... ok
+test_15_cli_exit_codes (test_bootstrap_falcon.TestBootstrapFalcon.test_15_cli_exit_codes) ... ok
+test_16_double_run_exact_same_result (test_bootstrap_falcon.TestBootstrapFalcon.test_16_double_run_exact_same_result) ... ok
+test_17_whitelist_rejects_impostors_and_chartbackup (test_bootstrap_falcon.TestBootstrapFalcon.test_17_whitelist_rejects_impostors_and_chartbackup)
+Regression test: impostors and ChartBackup must be rejected; exact files and prefixes extracted. ... ok
+test_18_preflight_conflict_at_end_of_archive_prevents_partial_extraction (test_bootstrap_falcon.TestBootstrapFalcon.test_18_preflight_conflict_at_end_of_archive_prevents_partial_extraction)
+Conflict at end of archive aborts in preflight before writing any earlier new files. ... ok
+test_19_whitelist_directory_prefixes_validation (test_bootstrap_falcon.TestBootstrapFalcon.test_19_whitelist_directory_prefixes_validation)
+Directory prefixes must end with '/' or ValueError is raised. ... ok
+test_1_valid_zip_extracts_cleanly (test_bootstrap_falcon.TestBootstrapFalcon.test_1_valid_zip_extracts_cleanly) ... ok
+test_2_wrong_hash_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_2_wrong_hash_fails) ... ok
+test_3_wrong_size_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_3_wrong_size_fails) ... ok
+test_4_corrupt_zip_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_4_corrupt_zip_fails) ... ok
+test_5_missing_mandatory_member_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_5_missing_mandatory_member_fails) ... ok
+test_6_zip_slip_dotdot_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_6_zip_slip_dotdot_fails) ... ok
+test_7_zip_slip_absolute_path_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_7_zip_slip_absolute_path_fails) ... ok
+test_8_zip_slip_windows_drive_letter_fails (test_bootstrap_falcon.TestBootstrapFalcon.test_8_zip_slip_windows_drive_letter_fails) ... ok
+test_9_only_whitelisted_extracted (test_bootstrap_falcon.TestBootstrapFalcon.test_9_only_whitelisted_extracted) ... ok
+test_invariant_10_edge_cases (test_hc_falcon_v2.TestHCFalconV2.test_invariant_10_edge_cases) ... ok
+test_invariant_1_full_deterministic_permutation (test_hc_falcon_v2.TestHCFalconV2.test_invariant_1_full_deterministic_permutation) ... ok
+test_invariant_2_exact_fqn_tie_breaking (test_hc_falcon_v2.TestHCFalconV2.test_invariant_2_exact_fqn_tie_breaking) ... ok
+test_invariant_3_reference_vectorized_equivalence_randomized (test_hc_falcon_v2.TestHCFalconV2.test_invariant_3_reference_vectorized_equivalence_randomized) ... ok
+test_invariant_4_zero_kernel_produces_history_cost (test_hc_falcon_v2.TestHCFalconV2.test_invariant_4_zero_kernel_produces_history_cost) ... ok
+test_invariant_5_zero_history_scores_governed_by_semantic_density (test_hc_falcon_v2.TestHCFalconV2.test_invariant_5_zero_history_scores_governed_by_semantic_density) ... ok
+test_invariant_6_heavy_test_cannot_overtake_separated_anchor (test_hc_falcon_v2.TestHCFalconV2.test_invariant_6_heavy_test_cannot_overtake_separated_anchor) ... ok
+test_invariant_7_fail_closed_validations (test_hc_falcon_v2.TestHCFalconV2.test_invariant_7_fail_closed_validations) ... ok
+test_invariant_8_signature_and_ground_truth_boundary (test_hc_falcon_v2.TestHCFalconV2.test_invariant_8_signature_and_ground_truth_boundary) ... ok
+test_invariant_9_input_immutability (test_hc_falcon_v2.TestHCFalconV2.test_invariant_9_input_immutability) ... ok
+test_01_manifest_valid_accepted (test_hc_falcon_v2.TestStage12Governance.test_01_manifest_valid_accepted)
+A properly formatted pre-evaluation manifest with valid hashes is accepted. ... ok
+test_02_manifest_missing_file_rejected (test_hc_falcon_v2.TestStage12Governance.test_02_manifest_missing_file_rejected)
+Manifest missing any one of the 8 required files is rejected fail-closed. ... ok
+test_03_manifest_extra_file_rejected (test_hc_falcon_v2.TestStage12Governance.test_03_manifest_extra_file_rejected)
+Manifest containing any undeclared extra file is rejected fail-closed. ... ok
+test_04_manifest_files_count_mismatch_rejected (test_hc_falcon_v2.TestStage12Governance.test_04_manifest_files_count_mismatch_rejected)
+Manifest with files_count != 8 or != len(files_sha256) is rejected. ... ok
+test_05_manifest_bad_hash_rejected (test_hc_falcon_v2.TestStage12Governance.test_05_manifest_bad_hash_rejected)
+Manifest with invalid hash format or hash mismatch against disk is rejected. ... ok
+test_06_manifest_empty_rejected (test_hc_falcon_v2.TestStage12Governance.test_06_manifest_empty_rejected)
+Empty manifest or non-dictionary data is rejected fail-closed. ... ok
+test_07_manifest_wrong_metadata_rejected (test_hc_falcon_v2.TestStage12Governance.test_07_manifest_wrong_metadata_rejected)
+Manifest with altered stage, scope, parent_release, or primary_method is rejected. ... ok
+test_08_manifest_reserved_opened_not_false_rejected (test_hc_falcon_v2.TestStage12Governance.test_08_manifest_reserved_opened_not_false_rejected)
+Manifest with reserved_opened != False is strictly rejected. ... ok
+test_09_manifest_development_evaluated_not_false_rejected (test_hc_falcon_v2.TestStage12Governance.test_09_manifest_development_evaluated_not_false_rejected)
+Manifest with development_evaluated != False is strictly rejected. ... ok
+test_10_manifest_path_hygiene_rejected (test_hc_falcon_v2.TestStage12Governance.test_10_manifest_path_hygiene_rejected)
+Manifest with absolute paths, Windows drive paths, or parent traversal ('..') is rejected. ... ok
+test_10b_manifest_validator_does_not_hash_or_access_unsafe_paths (test_hc_falcon_v2.TestStage12Governance.test_10b_manifest_validator_does_not_hash_or_access_unsafe_paths)
+Proves validator never invokes sha256_file or disk access on unsafe/unallowlisted paths. ... ok
+test_11_pre_freeze_refused_when_development_screen_exists_in_temp (test_hc_falcon_v2.TestStage12Governance.test_11_pre_freeze_refused_when_development_screen_exists_in_temp)
+Pre-freeze in temporary directory is strictly refused if development-screen.json exists. ... ok
+test_12_pre_freeze_in_temp_directory_creates_exact_manifest (test_hc_falcon_v2.TestStage12Governance.test_12_pre_freeze_in_temp_directory_creates_exact_manifest)
+Pre-freeze executes in temporary directory, creating manifest with 8 entries matching temp files. ... ok
+test_13_final_decision_nogo_if_engineering_gate_fails (test_hc_falcon_v2.TestStage12Governance.test_13_final_decision_nogo_if_engineering_gate_fails)
+Decision cannot be GO if any engineering gate threshold is breached. ... ok
+test_14_final_decision_nogo_if_engineering_metrics_missing (test_hc_falcon_v2.TestStage12Governance.test_14_final_decision_nogo_if_engineering_metrics_missing)
+Decision cannot be GO if any required engineering metric is missing. ... ok
+test_15_tampered_threshold_or_project_count_rejected (test_hc_falcon_v2.TestStage12Governance.test_15_tampered_threshold_or_project_count_rejected)
+Tampering with preregistered threshold or project counts produces fail-closed NO-GO. ... ok
+test_16_no_reserved_data_accessed (test_hc_falcon_v2.TestStage12Governance.test_16_no_reserved_data_accessed)
+Confirms that no Stage 12 code references or opens reserved confirmation splits. ... ok
+test_17_predecessor_delay_calculation (test_hc_falcon_v2.TestStage12Governance.test_17_predecessor_delay_calculation)
+Verifies predecessor delay calculation matches standard Stage 7 / 11 formula. ... ok
+test_18_dev_projects_exact_three_can_go (test_hc_falcon_v2.TestStage12Governance.test_18_dev_projects_exact_three_can_go)
+Exact 3 projects with passing gates produces GO. ... ok
+test_19_dev_projects_missing_log4j_nogo (test_hc_falcon_v2.TestStage12Governance.test_19_dev_projects_missing_log4j_nogo)
+Missing log4j project produces fail-closed NO-GO with explicit audit error. ... ok
+test_20_dev_projects_extra_project_nogo (test_hc_falcon_v2.TestStage12Governance.test_20_dev_projects_extra_project_nogo)
+Extra project in reports produces fail-closed NO-GO with explicit audit error. ... ok
+test_21_dev_projects_substituted_project_nogo (test_hc_falcon_v2.TestStage12Governance.test_21_dev_projects_substituted_project_nogo)
+3 projects but substituting log4j with another name produces fail-closed NO-GO. ... ok
+test_22_dev_projects_total_mismatch_nogo (test_hc_falcon_v2.TestStage12Governance.test_22_dev_projects_total_mismatch_nogo)
+total_development_projects mismatching project count in config produces NO-GO. ... ok
+test_23_dev_projects_minimum_greater_than_total_nogo (test_hc_falcon_v2.TestStage12Governance.test_23_dev_projects_minimum_greater_than_total_nogo)
+minimum_development_projects > total_development_projects produces NO-GO. ... ok
+test_24_dev_projects_missing_in_config_nogo (test_hc_falcon_v2.TestStage12Governance.test_24_dev_projects_missing_in_config_nogo)
+Missing development_projects field in config produces NO-GO. ... ok
+test_25_metric_apfdc_median_nan_nogo (test_hc_falcon_v2.TestStage12Governance.test_25_metric_apfdc_median_nan_nogo)
+APFDc median delta NaN produces fail-closed NO-GO. ... ok
+test_26_metric_apfdc_mean_inf_nogo (test_hc_falcon_v2.TestStage12Governance.test_26_metric_apfdc_mean_inf_nogo)
+APFDc mean delta Inf produces fail-closed NO-GO. ... ok
+test_27_metric_ttff_nan_nogo (test_hc_falcon_v2.TestStage12Governance.test_27_metric_ttff_nan_nogo)
+TTFF median delta NaN produces fail-closed NO-GO. ... ok
+test_28_metric_recall10_inf_nogo (test_hc_falcon_v2.TestStage12Governance.test_28_metric_recall10_inf_nogo)
+Recall@10% median delta Inf produces fail-closed NO-GO. ... ok
+test_29_metric_predecessor_seconds_nan_nogo (test_hc_falcon_v2.TestStage12Governance.test_29_metric_predecessor_seconds_nan_nogo)
+Cumulative predecessor seconds NaN produces fail-closed NO-GO. ... ok
+test_30_metric_runtime_overhead_nan_nogo (test_hc_falcon_v2.TestStage12Governance.test_30_metric_runtime_overhead_nan_nogo)
+P95 runtime overhead NaN produces fail-closed NO-GO. ... ok
+test_31_metric_peak_rss_inf_nogo (test_hc_falcon_v2.TestStage12Governance.test_31_metric_peak_rss_inf_nogo)
+Peak RSS bytes Inf produces fail-closed NO-GO. ... ok
+test_32_metric_count_zero_nogo (test_hc_falcon_v2.TestStage12Governance.test_32_metric_count_zero_nogo)
+Sample count = 0 produces fail-closed NO-GO. ... ok
+test_33_metric_pos_neg_tie_mismatch_count_nogo (test_hc_falcon_v2.TestStage12Governance.test_33_metric_pos_neg_tie_mismatch_count_nogo)
+pos + neg + tie != count produces fail-closed NO-GO. ... ok
+test_34_metric_latency_missing_or_non_positive_nogo (test_hc_falcon_v2.TestStage12Governance.test_34_metric_latency_missing_or_non_positive_nogo)
+Latency missing or <= 0 produces fail-closed NO-GO. ... ok
+test_35_metric_scored_stages_total_zero_nogo (test_hc_falcon_v2.TestStage12Governance.test_35_metric_scored_stages_total_zero_nogo)
+scored_stages_total = 0 produces fail-closed NO-GO. ... ok
+test_36_fail_closed_probes_from_specification (test_hc_falcon_v2.TestStage12Governance.test_36_fail_closed_probes_from_specification)
+Verifies both specific fail-closed probes from the specification. ... ok
+test_37_secondary_ttff_validation (test_hc_falcon_v2.TestStage12Governance.test_37_secondary_ttff_validation)
+TTFF count=0, mean=NaN, median=Inf, or W/T/L mismatch forces NO-GO. ... ok
+test_38_secondary_recall10_validation (test_hc_falcon_v2.TestStage12Governance.test_38_secondary_recall10_validation)
+Recall@10% count=0, mean=NaN, median=Inf, or W/T/L mismatch forces NO-GO. ... ok
+test_39_secondary_summary_type_and_bool_rejection (test_hc_falcon_v2.TestStage12Governance.test_39_secondary_summary_type_and_bool_rejection)
+Non-dict secondary summary or boolean count produces fail-closed NO-GO. ... ok
+test_40_missing_locked_config_fields_force_nogo (test_hc_falcon_v2.TestStage12Governance.test_40_missing_locked_config_fields_force_nogo)
+Deleting any locked configuration field forces fail-closed NO-GO. ... ok
+test_41_comparator_validation_probes_force_nogo (test_hc_falcon_v2.TestStage12Governance.test_41_comparator_validation_probes_force_nogo)
+Missing, extra, or duplicated comparators in config force fail-closed NO-GO. ... ok
+test_42_protocol_and_governance_tamper_forces_nogo (test_hc_falcon_v2.TestStage12Governance.test_42_protocol_and_governance_tamper_forces_nogo)
+Tampering with repetitions or opening reserved data forces fail-closed NO-GO. ... ok
+test_43_valid_fixture_returns_go (test_hc_falcon_v2.TestStage12Governance.test_43_valid_fixture_returns_go)
+A fully valid baseline fixture passes all gates and returns GO. ... ok
+test_compact_evidence_hash_changes_when_past_identity_changes (test_pilot.PilotTests.test_compact_evidence_hash_changes_when_past_identity_changes) ... ok
+test_random_aggregation_keeps_build_as_unit_and_na (test_pilot.PilotTests.test_random_aggregation_keeps_build_as_unit_and_na) ... ok
+test_rounding_guard_blocks_early_feedback_and_boundary (test_pilot.PilotTests.test_rounding_guard_blocks_early_feedback_and_boundary) ... ok
+test_utc_calendar_boundaries_do_not_use_labels (test_pilot.PilotTests.test_utc_calendar_boundaries_do_not_use_labels) ... ok
+test_warmup_and_aborted_excluded_without_dropping_inventory (test_pilot.PilotTests.test_warmup_and_aborted_excluded_without_dropping_inventory) ... ok
+test_bidirectional_id_translation (test_stage10_bridge.TestChartBridgeInvariants.test_bidirectional_id_translation) ... ok
+test_locked_bridge_config (test_stage10_bridge.TestChartBridgeInvariants.test_locked_bridge_config) ... ok
+test_source_method_index_alignment (test_stage10_bridge.TestChartBridgeInvariants.test_source_method_index_alignment) ... ok
+test_tie_breaking_semantics (test_stage10_bridge.TestChartBridgeInvariants.test_tie_breaking_semantics) ... ok
+test_empty_fault_universe_raises (test_stage10_reproduction.TestAPFD.test_empty_fault_universe_raises) ... ok
+test_known_reference_apfd (test_stage10_reproduction.TestAPFD.test_known_reference_apfd) ... ok
+test_missing_fault_raises (test_stage10_reproduction.TestAPFD.test_missing_fault_raises) ... ok
+test_multiple_detectors_same_fault (test_stage10_reproduction.TestAPFD.test_multiple_detectors_same_fault) ... ok
+test_one_test_multiple_faults (test_stage10_reproduction.TestAPFD.test_one_test_multiple_faults) ... ok
+test_checkpoint_identity_key_mismatch_resets (test_stage10_reproduction.TestCheckpointAndResume.test_checkpoint_identity_key_mismatch_resets) ... ok
+test_checkpoint_rejects_missing_identity_key (test_stage10_reproduction.TestCheckpointAndResume.test_checkpoint_rejects_missing_identity_key) ... ok
+test_uninterrupted_vs_resumed_equivalence (test_stage10_reproduction.TestCheckpointAndResume.test_uninterrupted_vs_resumed_equivalence) ... ok
+test_index_tie_breaking (test_stage10_reproduction.TestFacilityLocationProperties.test_index_tie_breaking) ... ok
+test_negative_cosine_preservation (test_stage10_reproduction.TestFacilityLocationProperties.test_negative_cosine_preservation) ... ok
+test_valid_permutation (test_stage10_reproduction.TestFacilityLocationProperties.test_valid_permutation) ... ok
+test_kill_process_tree_terminates_parent_and_children (test_stage10_reproduction.TestProcessTreeSupervision.test_kill_process_tree_terminates_parent_and_children) ... ok
+test_validator_fails_on_missing_manifest (test_stage10_reproduction.TestValidationStrictness.test_validator_fails_on_missing_manifest) ... ok
+test_validator_fails_on_nan_apfd (test_stage10_reproduction.TestValidationStrictness.test_validator_fails_on_nan_apfd)
+Starts from a 100% valid fixture, changes ONLY saved APFD to NaN, ensuring APFD comparison triggers. ... ok
+test_validator_fails_on_source_hash_mismatch (test_stage10_reproduction.TestValidationStrictness.test_validator_fails_on_source_hash_mismatch)
+Starts from a 100% valid fixture with existing files, alters the expected hash in manifest for an existing file. ... ok
+test_validator_passes_on_valid_fixture (test_stage10_reproduction.TestValidationStrictness.test_validator_passes_on_valid_fixture)
+Verifies that the baseline fixture is 100% valid with all invariants passing. ... ok
+test_declared_source_package_and_comments (test_stage4.DesignAuditTests.test_declared_source_package_and_comments) ... ok
+test_inconsistent_stage_start_fails (test_stage4.DesignAuditTests.test_inconsistent_stage_start_fails) ... ok
+test_physical_split_keeps_stages_together_and_ignores_outcomes (test_stage4.DesignAuditTests.test_physical_split_keeps_stages_together_and_ignores_outcomes) ... ok
+test_timestamp_ties_do_not_cross_split_boundary (test_stage4.DesignAuditTests.test_timestamp_ties_do_not_cross_split_boundary) ... ok
+test_chunk_cap_weighted_pooling_and_vector_cache (test_stage5.Stage5Tests.test_chunk_cap_weighted_pooling_and_vector_cache) ... ok
+test_comments_preserve_literals (test_stage5.Stage5Tests.test_comments_preserve_literals) ... ok
+test_dante_conditional_probability_threshold (test_stage5.Stage5Tests.test_dante_conditional_probability_threshold) ... ok
+test_dante_windows_do_not_cross_tests_or_missing_slots (test_stage5.Stage5Tests.test_dante_windows_do_not_cross_tests_or_missing_slots) ... ok
+test_hand_computed (test_stage5.Stage5Tests.test_hand_computed) ... ok
+test_invalid_objective (test_stage5.Stage5Tests.test_invalid_objective) ... ok
+test_kernel_cache_invalidation (test_stage5.Stage5Tests.test_kernel_cache_invalidation) ... ok
+test_kernel_negative_and_invalid (test_stage5.Stage5Tests.test_kernel_negative_and_invalid) ... ok
+test_lazy_matches_standard (test_stage5.Stage5Tests.test_lazy_matches_standard) ... ok
+test_padding_invariance (test_stage5.Stage5Tests.test_padding_invariance) ... ok
+test_semantic_and_dante_current_future_leakage (test_stage5.Stage5Tests.test_semantic_and_dante_current_future_leakage) ... ok
+test_zero_ties_and_duplicate_vectors (test_stage5.Stage5Tests.test_zero_ties_and_duplicate_vectors) ... ok
+test_independent_metric_verification (test_stage6.Stage6Tests.test_independent_metric_verification) ... ok
+test_resume_preserves_previous_worker_memory_gate_failure (test_stage6.Stage6Tests.test_resume_preserves_previous_worker_memory_gate_failure) ... ok
+test_seed_then_common_stage_physical_pairing (test_stage6.Stage6Tests.test_seed_then_common_stage_physical_pairing) ... ok
+test_failure_timing_decomposes_apfdc_with_unequal_costs (test_stage7.DiagnosisTests.test_failure_timing_decomposes_apfdc_with_unequal_costs) ... ok
+test_gain_cost_ties_and_input_permutation (test_stage8.RestrictedTests.test_gain_cost_ties_and_input_permutation) ... ok
+test_raw_q_history_mode_preserves_last_bit (test_stage8.RestrictedTests.test_raw_q_history_mode_preserves_last_bit) ... ok
+test_score_and_duration_exclude_attractive_semantics (test_stage8.RestrictedTests.test_score_and_duration_exclude_attractive_semantics) ... ok
+test_zero_q_and_missing_semantics (test_stage8.RestrictedTests.test_zero_q_and_missing_semantics) ... ok
+test_adapter_retains_unknown_and_zero_ignores_precomputed_history (test_tcp.AdapterTests.test_adapter_retains_unknown_and_zero_ignores_precomputed_history) ... ok
+test_beta_confidence_and_median (test_tcp.HistoryTests.test_beta_confidence_and_median) ... ok
+test_completion_strict_cutoff_and_physical_build (test_tcp.HistoryTests.test_completion_strict_cutoff_and_physical_build) ... ok
+test_context_and_aborted_isolation (test_tcp.HistoryTests.test_context_and_aborted_isolation) ... ok
+test_invalid_config_and_duplicate_observation (test_tcp.HistoryTests.test_invalid_config_and_duplicate_observation) ... ok
+test_query_past_after_ingesting_future (test_tcp.HistoryTests.test_query_past_after_ingesting_future) ... ok
+test_unknown_missing_rename_and_zero_are_not_pass (test_tcp.HistoryTests.test_unknown_missing_rename_and_zero_are_not_pass) ... ok
+test_hand_example_and_units (test_tcp.MetricTests.test_hand_example_and_units) ... ok
+test_invalid_ranking_and_budget_rejected (test_tcp.MetricTests.test_invalid_ranking_and_budget_rejected) ... ok
+test_undefined_metrics_are_not_perfect_scores (test_tcp.MetricTests.test_undefined_metrics_are_not_perfect_scores) ... ok
+test_uniform_cost_matches_apfd_and_single_test (test_tcp.MetricTests.test_uniform_cost_matches_apfd_and_single_test) ... ok
+test_zero_cost_retained_and_budget_completion (test_tcp.MetricTests.test_zero_cost_retained_and_budget_completion) ... ok
+test_aborted_kept_in_ledger_not_scored (test_tcp.ReplayTests.test_aborted_kept_in_ledger_not_scored) ... ok
+test_completed_history_changes_later_features (test_tcp.ReplayTests.test_completed_history_changes_later_features) ... ok
+test_current_and_future_labels_costs_do_not_affect_rankings (test_tcp.ReplayTests.test_current_and_future_labels_costs_do_not_affect_rankings) ... ok
+test_deterministic_ties_random_and_full_inventory (test_tcp.ReplayTests.test_deterministic_ties_random_and_full_inventory) ... ok
+test_deterministic_tie_breaking (test_variants.TestVariants.test_deterministic_tie_breaking) ... ok
+test_rank_cns_returns_exact_permutation (test_variants.TestVariants.test_rank_cns_returns_exact_permutation) ... ok
+test_rank_knapsack_returns_exact_permutation (test_variants.TestVariants.test_rank_knapsack_returns_exact_permutation) ... ok
+test_rank_tiered_returns_exact_permutation (test_variants.TestVariants.test_rank_tiered_returns_exact_permutation) ... ok
+test_rejection_of_invalid_inputs (test_variants.TestVariants.test_rejection_of_invalid_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 143 tests in 3.565s
+
+OK

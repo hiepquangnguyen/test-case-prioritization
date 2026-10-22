@@ -1,0 +1,15 @@
+\contentsline {dn}{{Định nghĩa}{2.{1}}{Bài toán Ưu tiên bộ kiểm thử}}{5}{dn.2.1}%
+\contentsline {dn}{{Định nghĩa}{2.{2}}{Chỉ số APFD}}{6}{dn.2.2}%
+\contentsline {dn}{{Định nghĩa}{2.{3}}{Chỉ số APFDc theo quy ước điểm giữa thực thi}}{6}{dn.2.3}%
+\contentsline {dn}{{Định nghĩa}{2.{4}}{Chỉ số TTFF}}{7}{dn.2.4}%
+\contentsline {dn}{{Định nghĩa}{2.{5}}{Chỉ số Recall@\texorpdfstring {$k\%$}{k\%}}}{8}{dn.2.5}%
+\contentsline {dn}{{Định nghĩa}{2.{6}}{Tính Submodular, Đơn điệu và Chuẩn hóa}}{8}{dn.2.6}%
+\contentsline {dn}{{Định nghĩa}{2.{7}}{Hàm mục tiêu Facility Location}}{9}{dn.2.7}%
+\contentsline {md}{{Mệnh đề}{2.{1}}{Tính đơn điệu và Submodular của Facility Location}}{9}{md.2.1}%
+\contentsline {cm}{{Chứng minh}{2.{1}}{}}{9}{cm.2.1}%
+\contentsline {dl}{{Định lý}{2.{1}}{Cận xấp xỉ Nemhauser, Wolsey và Fisher (1978)}}{10}{dl.2.1}%
+\contentsline {cm}{{Chứng minh}{2.{2}}{}}{10}{cm.2.2}%
+\contentsline {dl}{{Định lý}{3.{1}}{Tính Monotone Submodular của hàm mục tiêu HC-FALCON v1}}{23}{dl.3.1}%
+\contentsline {hq}{{Hệ quả}{3.{1}}{Cận xấp xỉ Nemhauser}}{23}{hq.3.1}%
+\contentsline {cm}{{Chứng minh}{3.{1}}{Phác thảo chứng minh Định lý~\ref {dl:submodular_v1}}}{24}{cm.3.1}%
+\contentsline {nx}{{Nhận xét}{3.{1}}{Ý nghĩa phương pháp luận của phản ví dụ}}{28}{nx.3.1}%

@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "comparison": "Predecessor delay (T_add, T_rem, T_net) relative to baseline history_cost",
+    "split": "development_screening",
+    "total_physical_builds": 161,
+    "total_failing_stages": 171,
+    "formula": "For each failing test fid: added = preds_cand - preds_hc; removed = preds_hc - preds_cand; T_net = sum(duration(added)) - sum(duration(removed))",
+    "note": "Both HC-FALCON v1 and UGCS v2 are computed using the exact same formula and the exact same input events"
+  },
+  "projects": {
+    "karaf": {
+      "physical_builds": 79,
+      "failing_stages": 79,
+      "hc_falcon_normalized_v1": {
+        "t_add_seconds": 18205.51,
+        "t_rem_seconds": 23384.763000000003,
+        "t_net_seconds": -5179.253000000004
+      },
+      "hc_ugcs_v2": {
+        "t_add_seconds": 4858.471999999999,
+        "t_rem_seconds": 11378.100999999999,
+        "t_net_seconds": -6519.629
+      }
+    },
+    "activemq": {
+      "physical_builds": 57,
+      "failing_stages": 57,
+      "hc_falcon_normalized_v1": {
+        "t_add_seconds": 115759.17899999999,
+        "t_rem_seconds": 71872.86900000002,
+        "t_net_seconds": 43886.30999999997
+      },
+      "hc_ugcs_v2": {
+        "t_add_seconds": 38644.618000000024,
+        "t_rem_seconds": 41746.05500000002,
+        "t_net_seconds": -3101.436999999998
+      }
+    },
+    "log4j": {
+      "physical_builds": 25,
+      "failing_stages": 35,
+      "hc_falcon_normalized_v1": {
+        "t_add_seconds": 1027.223,
+        "t_rem_seconds": 635.024,
+        "t_net_seconds": 392.19899999999996
+      },
+      "hc_ugcs_v2": {
+        "t_add_seconds": 196.18500000000003,
+        "t_rem_seconds": 206.42600000000002,
+        "t_net_seconds": -10.240999999999985
+      }
+    }
+  },
+  "total": {
+    "physical_builds": 161,
+    "failing_stages": 171,
+    "hc_falcon_normalized_v1": {
+      "t_add_seconds": 134991.91199999998,
+      "t_rem_seconds": 95892.65600000002,
+      "t_net_seconds": 39099.255999999965
+    },
+    "hc_ugcs_v2": {
+      "t_add_seconds": 43699.27500000002,
+      "t_rem_seconds": 53330.582000000024,
+      "t_net_seconds": -9631.307
+    }
+  }
+}

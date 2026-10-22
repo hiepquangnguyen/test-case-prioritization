@@ -1,0 +1,8 @@
+[
+  "org.apache.karaf.features.internal.download.impl.DownloadManagerHelperTest",
+  "org.apache.karaf.features.internal.model.ConfigTest",
+  "org.apache.karaf.features.internal.model.JsonTest",
+  "org.apache.karaf.features.internal.service.FeaturePatternTest",
+  "org.apache.karaf.packages.command.PackageImportTest",
+  "org.apache.maven.surefire.junit4.JUnit4Provider"
+]

@@ -1,0 +1,16 @@
+{
+  "implementation_version": "stage5-hc-falcon-v1",
+  "design_config": "configs/hc-falcon-v1.json",
+  "evaluation_config": "configs/evaluation-v1.json",
+  "package": "hc_falcon",
+  "primary_method": "hc_falcon_normalized_v1",
+  "device": "cpu",
+  "pythonhashseed": "0",
+  "source_scope": ["warmup", "development"],
+  "reserved_confirmation_open": false,
+  "semantic_smoke_records_per_build": 16,
+  "semantic_smoke_selection": "first_development_build_then_first_16_FQN",
+  "effectiveness_evaluated": false,
+  "diff_format": "git_patch_per_java_file_unified3_no_renames_no_ext_diff_no_textconv_v1",
+  "diff_encoding": "UTF-8_strict; unavailable_on_decode_error"
+}

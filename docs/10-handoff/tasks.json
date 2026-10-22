@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-09-15",
+  "board_status": "planning_only_no_stage10_task_executed_by_this_handoff",
+  "output_paths_are_proposed_not_existing_commands": true,
+  "default_phase": "R",
+  "runtime_status_path": "reports/stage10/task-status.json",
+  "tasks": [
+    {
+      "id": "T00", "phase": "R", "status": "not_started", "depends_on": [],
+      "title": "Preflight chỉ đọc evidence cũ",
+      "inputs": ["docs/10-handoff/README.md", "reports/stage6/final-evidence-freeze.json", "reports/stage7/evidence-freeze.json", "reports/stage8/evidence-freeze.json", "reports/stage9/evidence-freeze.json", "references/artifacts/falcon/falcon.zip"],
+      "steps": ["Đọc task người dùng giao; kiểm tra cwd, AGENTS.md áp dụng và process đang chạy", "Xác minh hash final freezes stage6–9 và ZIP FALCON; đọc stage4/5 freezes và amendment nếu có mâu thuẫn", "Kiểm kê Python falcon, torch/transformers/numpy, model revision/cache, hardware và dung lượng; không import code có side effect chạy experiment", "Kiểm kê Chart legacy cache và stage10 outputs nếu đã tồn tại; phân biệt resume với new run"],
+      "outputs": ["reports/stage10/preflight.json", "reports/stage10/task-status.json"],
+      "acceptance": ["Hash khớp hoặc mọi mismatch có blocker cụ thể", "Không sửa file frozen, không cài package, không chạy encoder/ranking", "Report ghi rõ kết quả cũ và task chưa chạy"],
+      "stop_if": ["Sai workspace", "Integrity mismatch chưa giải thích", "Có worker trùng mục tiêu chưa xác định"]
+    },
+    {
+      "id": "T01", "phase": "R", "status": "not_started", "depends_on": ["T00"],
+      "title": "Khóa protocol và inventory trước score mới",
+      "inputs": ["topic1.md", "docs/09-fidelity/review-and-next-plan.md", "reports/stage9/fidelity-audit.json", "work/artifacts/falcon/py/embedding_generator.py", "work/artifacts/falcon/py/submodtcp.py", "work/artifacts/falcon/py/metric.py"],
+      "steps": ["Tạo config baseline và bridge đúng hợp đồng README, ghi rõ CPU/thread/model revision/numeric/tie", "Map mỗi bbox line index sang exact method ID và fault IDs từ ZIP; kiểm tra với CSV và source extraction bằng logic stage1 đã audit", "Xác minh counts cho cả sáu project, unique IDs, toàn bộ fault có test phát hiện, không bỏ dòng trống hoặc duplicate âm thầm", "Ghi giới hạn 8 GiB/8 giờ mỗi project trừ khi người dùng đã đổi; khóa cache policy và trạng thái legacy Chart"],
+      "outputs": ["configs/falcon-reproduction-v1.json", "configs/chart-bridge-v1.json", "reports/stage10/input-manifest.json", "docs/10-reproduction/protocol.md"],
+      "acceptance": ["20770 method records và 288 project-scoped fault IDs đúng mapping", "A/B/C/D có định nghĩa từng thành phần rõ", "Artifact APFD không dùng failing-test metric LRTS; không giả tạo duration/history"],
+      "stop_if": ["Không xác minh được bbox-index-method alignment", "Expected fault không có detector", "Phải đổi preprocessing để làm input khớp"]
+    },
+    {
+      "id": "T02", "phase": "R", "status": "not_started", "depends_on": ["T01"],
+      "title": "Xây runner tái lập và quản lý run",
+      "inputs": ["scripts/stage1_falcon_smoke.py", "scripts/stage1_audit.py", "configs/falcon-reproduction-v1.json", "reports/stage10/input-manifest.json"],
+      "steps": ["Tạo scripts mới stage10, không sửa hoặc chạy writer stage1 để tái lập", "Gọi hàm upstream đã pin, chỉ adapter device/path/output; giữ unmasked batch16 và thứ tự batch", "Tạo CLI lựa chọn project, output version, resume và validate-only; đây là interface phải triển khai, chưa phải lệnh có sẵn", "Cache key chứa source/ordered IDs/model/tokenizer/framework/config; kiểm tra đầy đủ shape/dtype/finite/hash", "Atomic checkpoint theo batch gốc, log stdout/stderr riêng, completion marker sau validation; không trộn checkpoint khác manifest", "Giám sát process tree và tài nguyên; stage-level timing cold/cache/rank tách biệt, không giữ inference tensor thừa"],
+      "outputs": ["scripts/stage10_reproduce.py", "scripts/stage10_validate.py", "scripts/stage10_driver.py"],
+      "acceptance": ["Có --help và validate-only; chạy fixtures được mà không encode full suite", "Resume batch không làm đổi padding composition", "Không tự download hoặc resolve model main", "Không viết ra reports/stage1 hay work/runs/falcon/chart-full"],
+      "stop_if": ["Cần sửa thuật toán upstream mới chạy được: lập adapter amendment trước, không sửa ngầm"]
+    },
+    {
+      "id": "T03", "phase": "R", "status": "not_started", "depends_on": ["T02"],
+      "title": "Kiểm chứng runner trước chạy dài",
+      "inputs": ["scripts/stage10_reproduce.py", "scripts/stage10_validate.py"],
+      "steps": ["Test APFD với nhiều detector cùng fault, một test phát hiện nhiều fault, mapping lỗi, permutation lỗi và no-fault policy", "Test cache miss khi thay source/order/tokenizer/config; reject cache thiếu provenance", "Test resume vs uninterrupted bằng fixture giữ batch padding; mô phỏng checkpoint chưa ghi xong", "Test negative cosine và index ties được giữ trong baseline artifact", "Chạy smoke 16 methods đầu Chart theo thứ tự input, model local; chỉ kiểm tra shape/finite/order, không báo full-suite APFD"],
+      "outputs": ["tests/test_stage10_reproduction.py", "reports/stage10/validation.json", "reports/stage10/smoke-chart16.json", "reports/stage10/run-freeze.json"],
+      "acceptance": ["Test đạt, có exit code và commands thực tế", "Smoke dùng model revision đúng, không đổi thuật toán để khớp internal greedy", "Khóa hash runner/config/tests trước full runs"],
+      "stop_if": ["Test fail", "Nonfinite vector", "Resume không tương đương trong cùng môi trường"]
+    },
+    {
+      "id": "T04", "phase": "R", "status": "not_started", "depends_on": ["T03"],
+      "title": "Tái kiểm chứng full Chart",
+      "inputs": ["work/runs/falcon/chart-full/embedding-config.json", "work/runs/falcon/chart-full/embeddings.npy", "reports/stage1/falcon-chart-full-smoke.json", "reports/stage1/falcon-chart-full-cold-run.json"],
+      "steps": ["Kiểm tra legacy provenance và first batch theo README, không giả định cache đúng chỉ vì tồn tại", "Tái sử dụng có nhãn legacy_verified nếu đủ điều kiện; nếu không, tạo vector mới trong stage10 và giữ legacy nguyên", "Rank full 2193 methods bằng baseline artifact, kiểm tra APFD độc lập", "Ghi APFD legacy, APFD lượt mới, TSV tác giả và delta tách biệt; ghi cache/cold timing đúng phạm vi"],
+      "outputs": ["reports/stage10/Chart/result.json", "reports/stage10/Chart/validation.json", "reports/stage10/Chart/complete.json", "work/runs/stage10/Chart/"],
+      "acceptance": ["Đủ 2193 methods, 26 faults", "Full permutation; APFD independent vs same-order evaluator lệch không quá 1e-10", "APFD mới không bắt buộc bằng tác giả; nếu khác phải ghi giới hạn, không ép khớp"],
+      "stop_if": ["Source/cache/config mismatch chưa giải quyết", "Vượt giới hạn tài nguyên"]
+    },
+    {
+      "id": "T05", "phase": "R", "status": "not_started", "depends_on": ["T04"],
+      "title": "Tái chạy năm project còn lại",
+      "inputs": ["reports/stage10/run-freeze.json", "reports/stage10/input-manifest.json"],
+      "steps": ["Chạy tuần tự Mockito → Lang → Math → Time → Closure", "Mỗi project lưu progress và cold measurement trước khi chuyển bước; resume không tính cache hit là cold", "Sau mỗi project xác minh count, fault mapping, vectors, permutation, APFD và manifest", "Với Closure kiểm tra bộ nhớ thực tế; không suy peak process chỉ từ kích thước kernel"],
+      "outputs": ["reports/stage10/Mockito/", "reports/stage10/Lang/", "reports/stage10/Math/", "reports/stage10/Time/", "reports/stage10/Closure/", "work/runs/stage10/"],
+      "acceptance": ["Mỗi project có result.json, validation.json, complete.json hợp lệ", "Đủ cả năm; không đánh dấu task complete khi một project bị bỏ qua", "Không chạy nhiều worker cùng lúc để đo runtime"],
+      "stop_if": ["Fail integrity/metric", "Peak RSS >8 GiB hoặc wall-clock >8h/project theo giới hạn đã khóa; giữ tiến độ và báo project cụ thể"]
+    },
+    {
+      "id": "T06", "phase": "R", "status": "not_started", "depends_on": ["T05"],
+      "title": "Tổng hợp tái lập sáu project",
+      "inputs": ["reports/stage10/Chart/", "reports/stage10/Mockito/", "reports/stage10/Lang/", "reports/stage10/Math/", "reports/stage10/Time/", "reports/stage10/Closure/", "reports/stage1/falcon-author-ranking-checks.json"],
+      "steps": ["Đối chiếu method/model/metric đúng với author output trong ZIP", "Sinh bảng count, APFD author/rerun/delta, timing cold/warm, peak RSS, cache provenance", "Phân biệt rerun artifact với tái lập số paper; ghi khác biệt môi trường chưa biết", "Không lấy sáu score project hoặc 288 fault IDs làm bằng chứng HC-FALCON thắng trên CI"],
+      "outputs": ["scripts/stage10_summary.py", "reports/stage10/reproduction-summary.json", "docs/10-reproduction/reproduction-report.md"],
+      "acceptance": ["Mọi số truy được về result và manifest", "Có cả kết quả không thuận lợi và project bị giới hạn nếu còn; status overall không complete khi thiếu project"]
+    },
+    {
+      "id": "T07", "phase": "R", "status": "not_started", "depends_on": ["T06"],
+      "title": "Triển khai bridge Chart A/B/C/D",
+      "inputs": ["configs/chart-bridge-v1.json", "reports/stage10/Chart/result.json", "hc_falcon/semantic.py", "hc_falcon/greedy.py"],
+      "steps": ["Giữ same bbox, exact ordered method IDs và fault matrix", "A: artifact; B: vectors A và clip kernel, artifact ranker; C: kernel B với internal exact FQN ranker; D: internal source preprocessing/chunk/masked encoder, kernel/ranker như C", "Ghi hashes để chứng minh A/B dùng cùng vector, B/C cùng kernel, C/D cùng ordered inventory", "Giữ source identity/fault mapping khỏi encoder/ranker; không tạo q/history giả", "Khóa manifest code trước chạy; test ID translation và index/FQN ties"],
+      "outputs": ["scripts/stage10_chart_bridge.py", "tests/test_stage10_bridge.py", "reports/stage10/bridge/manifest.json"],
+      "acceptance": ["Chỉ bốn nhánh đã chốt", "Test source-method-index alignment đạt", "B−A, C−B, D−C có danh sách thành phần thay đổi chính xác"]
+    },
+    {
+      "id": "T08", "phase": "R", "status": "not_started", "depends_on": ["T07"],
+      "title": "Chạy và báo cáo bridge",
+      "inputs": ["reports/stage10/bridge/manifest.json"],
+      "steps": ["Chạy full Chart A/B/C/D với cache identity riêng, tái dùng A hợp lệ", "Kiểm tra full permutation/APFD độc lập từng nhánh", "Báo APFD, thứ tự thay đổi, preprocessing/chunk/truncation, timing scope và mọi delta", "Không chọn winner rồi viết lại baseline LRTS; không gọi diagnostic Chart là bằng chứng nguyên nhân toàn LRTS"],
+      "outputs": ["reports/stage10/bridge/A/", "reports/stage10/bridge/B/", "reports/stage10/bridge/C/", "reports/stage10/bridge/D/", "reports/stage10/bridge/summary.json", "docs/10-reproduction/bridge-report.md"],
+      "acceptance": ["Đủ bốn nhánh và 2193 methods mỗi nhánh", "Tách rõ combined encoder/preprocessing change của D, không quy riêng tác động cho pooling", "Giữ kết quả mọi nhánh dù APFD giảm"]
+    },
+    {
+      "id": "T09", "phase": "R", "status": "not_started", "depends_on": ["T08"],
+      "title": "Đóng phase và quyết định có căn cứ",
+      "inputs": ["reports/stage10/reproduction-summary.json", "reports/stage10/bridge/summary.json", "reports/stage6/summary.json", "reports/stage8/summary.json"],
+      "steps": ["Phân loại bug so với locked spec, declared adaptation, và unknown; không coi mọi APFD mismatch là bug", "Xác minh lại prior freezes không đổi; kiểm tra toàn bộ planned artifact tồn tại và task status trung thực", "Ghi limitations, câu hỏi còn mở và khuyến nghị dừng/sửa có regression nếu tìm thấy bug", "Tạo final evidence freeze và report cho người dùng; không mở confirmation hoặc chạy thêm variant"],
+      "outputs": ["reports/stage10/closeout-audit.json", "reports/stage10/evidence-freeze.json", "docs/10-reproduction/decision.md"],
+      "acceptance": ["Đủ sáu reruns và bốn bridge arms, hoặc phase ghi rõ incomplete với blocker", "Mọi claimed result có evidence", "LRTS no-go và reserved closed vẫn ghi đúng"]
+    },
+    {
+      "id": "T10", "phase": "W", "status": "not_started", "depends_on": ["T09"],
+      "title": "Hoàn thiện báo cáo nghiên cứu và phần lý thuyết",
+      "authorization": "Chỉ thực hiện khi người dùng giao phase W hoặc R+W",
+      "steps": ["Đóng gói chứng minh raw và normalized objective với q/normalizer/kernel cố định trong ranking, không âm, cardinality constraint", "Phân biệt guarantee objective với APFD/APFDc và restricted heuristic không có guarantee tương ứng", "Tổng hợp related work hiện có; nếu bổ sung literature thì dùng nguồn sơ cấp và ghi ngày/phạm vi tra cứu", "Viết bản thảo 6–10 trang kèm bảng/hình từ JSON, tái lập và threats; không tạo p-value confirmation từ development đã tune"],
+      "outputs": ["docs/research-report/theory.md", "docs/research-report/report.md", "docs/research-report/limitations.md"],
+      "acceptance": ["Claim/method/dataset/metric được phân biệt chính xác", "Không gọi kết quả âm thành thành công; đủ nguồn và artifact tái lập"]
+    },
+    {
+      "id": "C00", "phase": "conditional", "status": "not_started", "depends_on": ["T09"],
+      "title": "Confirmation LRTS — chưa được mở",
+      "authorization": "Ngoài phase R/W; chỉ sau phương án được review, đủ gate và chỉ thị rõ từ người dùng",
+      "steps": ["Nếu được giao trong tương lai, lập protocol riêng trước score, khóa primary contrasts, unit, missingness, tests và multiplicity", "Không tái chia Karaf đã xem score làm holdout mới", "Không suy quyền mở reserved từ việc hoàn tất Defects4J"],
+      "outputs": [],
+      "acceptance": ["Hiện tại giữ blocked-by-entry-conditions về mặt thực thi, không chạy task này"],
+      "entry_conditions_currently_met": false
+    }
+  ]
+}

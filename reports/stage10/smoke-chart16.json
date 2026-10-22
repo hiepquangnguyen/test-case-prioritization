@@ -1,0 +1,21 @@
+{
+  "run": "chart-first-16",
+  "project": "Chart",
+  "python": "3.13.11",
+  "device": "cpu",
+  "threads": 4,
+  "tests": 16,
+  "embedding_shape": [
+    16,
+    768
+  ],
+  "model": {
+    "name": "microsoft/unixcoder-base",
+    "revision": "5604afdc964f6c53782a6813140ade5216b99006"
+  },
+  "valid_permutation": true,
+  "standard_greedy_equal": true,
+  "apfd": null,
+  "full_suite": false,
+  "note": "Stage 10 Chart 16-method smoke test according to tasks.json T03"
+}

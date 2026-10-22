@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "purpose": "Absolute APFDc of UGCS v2 derived from per-build history_cost + delta",
+    "split": "development_screening",
+    "formula": "APFDc(UGCS v2)_i = APFDc(history_cost)_i + Delta_i",
+    "note": "Suy ra tr\u1ef1c ti\u1ebfp t\u1eeb ch\u00eanh l\u1ec7ch gh\u00e9p c\u1eb7p theo t\u1eebng build v\u1eadt l\u00fd"
+  },
+  "projects": {
+    "karaf": {
+      "n_physical_builds": 79,
+      "history_cost": {
+        "mean": 0.7753985051514464,
+        "median": 0.8919179987635786
+      },
+      "hc_ugcs_v2_derived": {
+        "mean": 0.7801862407066569,
+        "median": 0.8799457083520537
+      },
+      "paired_delta": {
+        "mean": 0.004787735555210504,
+        "median": -0.0005856098255831999
+      }
+    },
+    "activemq": {
+      "n_physical_builds": 57,
+      "history_cost": {
+        "mean": 0.8485982484020763,
+        "median": 0.9089774044415455
+      },
+      "hc_ugcs_v2_derived": {
+        "mean": 0.8470905813288047,
+        "median": 0.9044778126690001
+      },
+      "paired_delta": {
+        "mean": -0.0015076670732716568,
+        "median": -0.0022353797590808355
+      }
+    },
+    "log4j": {
+      "n_physical_builds": 25,
+      "history_cost": {
+        "mean": 0.8935834903145058,
+        "median": 0.9838756967713991
+      },
+      "hc_ugcs_v2_derived": {
+        "mean": 0.8952468487709094,
+        "median": 0.9827289599348531
+      },
+      "paired_delta": {
+        "mean": 0.0016633584564036408,
+        "median": -1.6556275266532694e-05
+      }
+    }
+  },
+  "total": {
+    "n_physical_builds": 161,
+    "history_cost": {
+      "mean": 0.819665647973573,
+      "median": 0.917688627622651
+    },
+    "hc_ugcs_v2_derived": {
+      "mean": 0.8217394246636055,
+      "median": 0.9202780387295503
+    }
+  }
+}

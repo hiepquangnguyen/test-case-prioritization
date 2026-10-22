@@ -1,0 +1,57 @@
+\section{Giới thiệu}
+\label{sec:introduction}
+
+\subsection{Bối cảnh và động lực nghiên cứu}
+\label{subsec:background}
+
+Mỗi lần một nhà phát triển phần mềm đẩy mã nguồn mới lên kho chung, hệ thống Tích hợp Liên tục (Continuous Integration -- CI) phải quyết định chạy bài kiểm thử nào trước trong hàng trăm, thậm chí hàng nghìn bài kiểm thử đang chờ. Trong thực tế công nghiệp, toàn bộ bộ kiểm thử của các dự án quy mô lớn có thể tiêu tốn nhiều giờ để hoàn thành một lượt chạy~\cite{memon2017taming}. Khoảng thời gian chờ này làm chậm chu kỳ phản hồi tới nhà phát triển, gia tăng chi phí hạ tầng và, nghiêm trọng hơn, kéo dài thời gian lỗi tồn tại trong mã nguồn sản phẩm mà không được phát hiện.
+
+Bài toán \textbf{Ưu tiên Bộ kiểm thử} (Test Case Prioritization -- TCP) ra đời nhằm giải quyết thách thức này. Thay vì bỏ bớt bài kiểm thử (test selection) hay giảm kích thước bộ kiểm thử (test minimization), TCP giữ nguyên toàn bộ tập bài kiểm thử nhưng sắp xếp lại thứ tự thực thi: những bài kiểm thử có khả năng phát hiện lỗi cao nhất và chạy nhanh nhất được đưa lên trước~\cite{rothermel1999tcp, yoo2012regression}. Mục tiêu cuối cùng là tối đa hóa tốc độ phát hiện lỗi tính theo chi phí thời gian --- thể hiện qua chỉ số APFDc (Average Percentage of Faults Detected, cost-cognizant)~\cite{elbaum2001incorporating}.
+
+Hai trường phái tiếp cận TCP đã phát triển song song trong nhiều năm. Trường phái thứ nhất khai thác \textit{lịch sử lỗi} (failure history): nếu một bài kiểm thử trượt gần đây, xác suất nó trượt ở lần xây dựng tiếp theo là cao; kết hợp với thời gian chạy ngắn tạo nên các heuristic đơn giản nhưng hiệu quả~\cite{kim2002history, spieker2017reinforcement}. Trường phái thứ hai tập trung vào \textit{đa dạng ngữ nghĩa}: chọn các bài kiểm thử sao cho chúng bao phủ nhiều vùng hành vi khác nhau của phần mềm, thường dựa trên biểu diễn vector mã nguồn~\cite{henard2016comparing, miranda2018fast}.
+
+Tại hội nghị IEEE ICST 2026, hai công trình nổi bật đại diện cho hai trường phái này được công bố đồng thời. FALCON~\cite{falcon2026} sử dụng mô hình ngôn ngữ mã nguồn UniXcoder~\cite{guo2022unixcoder} để tạo vector embedding cho từng phương thức kiểm thử, sau đó tối ưu hàm Submodular Facility Location nhằm chọn tập bài kiểm thử đa dạng nhất. DANTE~\cite{dante2026} khai thác tính bám dính lỗi, lịch sử trượt và thời gian chạy trên tập dữ liệu CI dài hạn (Long-Running Test Suites -- LRTS). Mỗi phương pháp đều chứng minh hiệu quả trên phạm vi dữ liệu riêng, nhưng cả hai đều có khoảng trống rõ ràng.
+
+\subsection{Khoảng trống nghiên cứu}
+\label{subsec:research_gap}
+
+FALCON đạt APFD vượt trội trên Defects4J --- một benchmark tĩnh với chi phí kiểm thử đồng đều ở mức phương thức (method-level) --- nhưng hoàn toàn bỏ qua lịch sử lỗi và thời gian chạy thực tế. Điều này có nghĩa là một bài kiểm thử chạy 200 giây được đối xử ngang bằng với bài kiểm thử chạy 10 mili-giây, miễn là chúng đóng góp tương đương vào độ bao phủ ngữ nghĩa. Trong môi trường CI thực tế, sự bất cân bằng chi phí này có thể dẫn đến hậu quả nghiêm trọng.
+
+Ngược lại, DANTE mạnh về lịch sử và chi phí nhưng thiếu khả năng phân tích ngữ nghĩa sâu của mã nguồn kiểm thử. Khi xuất hiện bài kiểm thử hoàn toàn mới --- chưa có bất kỳ lịch sử pass/fail nào --- DANTE không có cơ sở để xếp hạng chúng.
+
+Câu hỏi tự nhiên đặt ra: liệu việc tích hợp đồng thời đa dạng ngữ nghĩa, ước lượng rủi ro lỗi từ lịch sử, và chi phí thực thi vào một mô hình tối ưu hóa duy nhất có tạo ra thuật toán TCP vượt trội hơn so với các thành phần riêng lẻ hay không?
+
+\subsection{Mục tiêu nghiên cứu}
+\label{subsec:objectives}
+
+Đồ án đặt ra bốn mục tiêu cụ thể:
+
+\begin{enumerate}
+    \item \textbf{Xây dựng mô hình HC-FALCON}: Thiết kế hàm mục tiêu kết hợp Submodular Facility Location với ước lượng rủi ro Bayes Beta-Bernoulli và chi phí thực thi, kèm chứng minh hình thức các tính chất toán học.
+    \item \textbf{Tái lập độc lập FALCON trên Defects4J}: Xác minh tính đúng đắn của lõi encoder UniXcoder, cosine kernel và thuật toán greedy trước khi sử dụng trong mô hình kết hợp.
+    \item \textbf{Đánh giá trên CI thực tế}: Triển khai và đánh giá HC-FALCON trên dữ liệu CI dài hạn từ ba dự án Apache (Karaf, ActiveMQ, Log4j2) với kỷ luật chống rò rỉ dữ liệu nghiêm ngặt.
+    \item \textbf{Phân tích nguyên nhân gốc rễ}: Nếu kết quả không tích cực, tiến hành điều tra và mô hình hóa cơ chế thất bại thay vì che giấu hoặc tô hồng số liệu.
+\end{enumerate}
+
+\subsection{Các câu hỏi nghiên cứu}
+\label{subsec:rqs}
+
+Nghiên cứu được dẫn dắt bởi năm câu hỏi:
+
+\begin{itemize}
+    \item \textbf{RQ1}: Kết quả của FALCON trên Defects4J có thể tái lập độc lập không, và các can thiệp tiền xử lý đóng góp như thế nào vào hiệu quả?
+    \item \textbf{RQ2}: Trên dữ liệu CI thực tế (LRTS), mô hình kết hợp Semantic + History + Cost có vượt được các baseline (\texttt{fl\_only}, \texttt{history\_cost}) không?
+    \item \textbf{RQ3}: Cơ chế nào giải thích hiện tượng đa dạng ngữ nghĩa làm giảm hiệu quả phát hiện lỗi trong CI thực tế?
+    \item \textbf{RQ4}: Các biện pháp kỹ thuật cải tiến (Restricted window, CNS-Greedy, UGCS v2) có đảo ngược được kết quả không?
+    \item \textbf{RQ5}: Chi phí thời gian và bộ nhớ của thuật toán có đáp ứng ràng buộc vận hành CI không?
+\end{itemize}
+
+\subsection{Phạm vi và giới hạn}
+\label{subsec:scope}
+
+Nghiên cứu giới hạn trong các điều kiện sau. Về ngôn ngữ lập trình: chỉ xét các dự án Java do tính sẵn có của benchmark Defects4J và dữ liệu LRTS. Về mức đánh giá: tái lập FALCON ở mức phương thức (method-level) trên Defects4J, đánh giá HC-FALCON ở mức lớp (class-level) trên LRTS. Về quy mô dữ liệu CI: ba dự án mã nguồn mở Apache, chưa bao gồm dự án phần mềm độc quyền hay ngôn ngữ khác. Về mô hình thực thi: giả định CI chạy tuần tự trên một luồng, chưa mô hình hóa CI phân tán song song.
+
+\subsection{Cấu trúc đồ án}
+\label{subsec:structure}
+
+Phần còn lại của đồ án được tổ chức thành năm chương. Chương~\ref{sec:literature_review} trình bày cơ sở lý thuyết về kiểm thử hồi quy, tối ưu Submodular, biểu diễn ngữ nghĩa mã nguồn và các công trình liên quan. Chương~\ref{sec:methodology} mô tả chi tiết mô hình toán học HC-FALCON cùng các biến thể cải tiến qua nhiều giai đoạn. Chương~\ref{sec:experiments} trình bày thiết kế thực nghiệm và phân tích kết quả trên cả hai trục đánh giá. Chương~\ref{sec:discussion} thảo luận các nguyên nhân gốc rễ, đóng góp khoa học và giới hạn nghiên cứu. Cuối cùng, phần Kết luận tổng kết bài học rút ra và đề xuất hướng phát triển tương lai.

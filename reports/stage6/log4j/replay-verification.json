@@ -1,0 +1,545 @@
+{
+  "passed": true,
+  "endpoint_order_checks": 310,
+  "strict_alpha_zero_equivalence": false,
+  "numerical_tie_exceptions": [
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-477",
+        "build": "1",
+        "stage": "Windows_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.core.appender.rolling.action.IfAnyTest",
+          "raw_first": "org.apache.logging.slf4j.OptionalTest",
+          "q_a": 0.10185184879629637,
+          "q_b": 0.10185184879629638,
+          "w": 0.003057645248141682
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.io.LoggerBufferedInputStreamTest",
+          "raw_first": "org.apache.logging.log4j.core.appender.rolling.action.IfAnyTest",
+          "q_a": 0.10185184879629637,
+          "q_b": 0.10185184879629637,
+          "w": 0.003057645248141682
+        },
+        {
+          "normalized_first": "org.apache.logging.slf4j.OptionalTest",
+          "raw_first": "org.apache.logging.log4j.io.LoggerBufferedInputStreamTest",
+          "q_a": 0.10185184879629638,
+          "q_b": 0.10185184879629637,
+          "w": 0.003057645248141682
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 629,
+        "observed_failures": 3,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 19,
+        "total_duration_seconds": 728.466,
+        "apfd": 0.7681505034446211,
+        "apfdc_midpoint": 0.9574457375727442,
+        "ttff_seconds": 0.106,
+        "ttff_censored": false,
+        "censor_time_seconds": null,
+        "recall": {
+          "0.1": 0.6666666666666666,
+          "0.25": 1.0,
+          "0.5": 1.0
+        },
+        "reasons": []
+      },
+      "history_cost_metrics": {
+        "tests": 629,
+        "observed_failures": 3,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 19,
+        "total_duration_seconds": 728.466,
+        "apfd": 0.7681505034446211,
+        "apfdc_midpoint": 0.9574457375727442,
+        "ttff_seconds": 0.106,
+        "ttff_censored": false,
+        "censor_time_seconds": null,
+        "recall": {
+          "0.1": 0.6666666666666666,
+          "0.25": 1.0,
+          "0.5": 1.0
+        },
+        "reasons": []
+      }
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-588",
+        "build": "1",
+        "stage": "Ubuntu_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.message.FormattedMessageTest",
+          "raw_first": "org.apache.logging.log4j.message.ParameterizedMessageTest",
+          "q_a": 0.05745595140173339,
+          "q_b": 0.057455951401733395,
+          "w": 0.0040557031099932575
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.message.ParameterizedMessageTest",
+          "raw_first": "org.apache.logging.log4j.util.Unbox1Test",
+          "q_a": 0.057455951401733395,
+          "q_b": 0.057455951401733395,
+          "w": 0.0040557031099932575
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.util.Unbox1Test",
+          "raw_first": "org.apache.logging.log4j.message.FormattedMessageTest",
+          "q_a": 0.057455951401733395,
+          "q_b": 0.05745595140173339,
+          "w": 0.0040557031099932575
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 644,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 4,
+        "total_duration_seconds": 809.485,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 809.485,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      },
+      "history_cost_metrics": {
+        "tests": 644,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 4,
+        "total_duration_seconds": 809.485,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 809.485,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      }
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-589",
+        "build": "4",
+        "stage": "Ubuntu_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.core.config.plugins.processor.PluginProcessorTest",
+          "raw_first": "org.apache.logging.log4j.util.CharsTest",
+          "q_a": 0.05488122678907518,
+          "q_b": 0.054881226789075185,
+          "w": 0.004111008886017215
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.util.CharsTest",
+          "raw_first": "org.apache.logging.log4j.core.config.plugins.processor.PluginProcessorTest",
+          "q_a": 0.054881226789075185,
+          "q_b": 0.05488122678907518,
+          "w": 0.004111008886017215
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 644,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 1,
+        "total_duration_seconds": 814.41,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 814.41,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      },
+      "history_cost_metrics": {
+        "tests": 644,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 1,
+        "total_duration_seconds": 814.41,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 814.41,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      }
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-591",
+        "build": "1",
+        "stage": "Ubuntu_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.core.layout.CsvLogEventLayoutTest",
+          "raw_first": "org.apache.logging.log4j.util.Log4jCharsetsPropertiesTest",
+          "q_a": 0.030511629429200507,
+          "q_b": 0.03051162942920051,
+          "w": 0.0023278797899426488
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.util.Log4jCharsetsPropertiesTest",
+          "raw_first": "org.apache.logging.log4j.core.layout.CsvLogEventLayoutTest",
+          "q_a": 0.03051162942920051,
+          "q_b": 0.030511629429200507,
+          "w": 0.0023278797899426488
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 644,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 0,
+        "total_duration_seconds": 784.947,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 784.947,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      },
+      "history_cost_metrics": {
+        "tests": 644,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 0,
+        "total_duration_seconds": 784.947,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 784.947,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      }
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-594",
+        "build": "1",
+        "stage": "Ubuntu_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.LambdaLoggerTest",
+          "raw_first": "org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverterTest",
+          "q_a": 0.02601456905437827,
+          "q_b": 0.026014569054378274,
+          "w": 0.0020432647518423973
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.core.appender.db.jpa.converter.MessageAttributeConverterTest",
+          "raw_first": "org.apache.logging.log4j.LambdaLoggerTest",
+          "q_a": 0.026014569054378274,
+          "q_b": 0.02601456905437827,
+          "w": 0.0020432647518423973
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 646,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 2,
+        "total_duration_seconds": 667.987,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 667.987,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      },
+      "history_cost_metrics": {
+        "tests": 646,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 2,
+        "total_duration_seconds": 667.987,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 667.987,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      }
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-608",
+        "build": "3",
+        "stage": "Ubuntu_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.core.Log4j1222Test",
+          "raw_first": "org.apache.logging.log4j.util.CharsTest",
+          "q_a": 0.03101317946563269,
+          "q_b": 0.031013179465632694,
+          "w": 0.0028724514761563785
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.message.LocalizedMessageFactoryTest",
+          "raw_first": "org.apache.logging.log4j.core.Log4j1222Test",
+          "q_a": 0.03101317946563269,
+          "q_b": 0.03101317946563269,
+          "w": 0.0028724514761563785
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.util.CharsTest",
+          "raw_first": "org.apache.logging.log4j.message.LocalizedMessageFactoryTest",
+          "q_a": 0.031013179465632694,
+          "q_b": 0.03101317946563269,
+          "w": 0.0028724514761563785
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 647,
+        "observed_failures": 1,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 0,
+        "total_duration_seconds": 668.927,
+        "apfd": 0.44590417310664604,
+        "apfdc_midpoint": 0.9266878149633667,
+        "ttff_seconds": 49.86700000000001,
+        "ttff_censored": false,
+        "censor_time_seconds": null,
+        "recall": {
+          "0.1": 1.0,
+          "0.25": 1.0,
+          "0.5": 1.0
+        },
+        "reasons": []
+      },
+      "history_cost_metrics": {
+        "tests": 647,
+        "observed_failures": 1,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 0,
+        "total_duration_seconds": 668.927,
+        "apfd": 0.44590417310664604,
+        "apfdc_midpoint": 0.9266878149633667,
+        "ttff_seconds": 49.86700000000001,
+        "ttff_censored": false,
+        "censor_time_seconds": null,
+        "recall": {
+          "0.1": 1.0,
+          "0.25": 1.0,
+          "0.5": 1.0
+        },
+        "reasons": []
+      }
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-646",
+        "build": "3",
+        "stage": "Windows_Test"
+      },
+      "kind": "float64_normalization_collapses_distinct_q_to_exact_tie",
+      "changed_positions": [
+        {
+          "normalized_first": "org.apache.logging.log4j.core.appender.rolling.action.PathSortByModificationTimeTest",
+          "raw_first": "org.apache.logging.log4j.message.MapMessageTest",
+          "q_a": 0.028415210968745892,
+          "q_b": 0.028415210968745896,
+          "w": 0.002375069450838415
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.core.net.ssl.MemoryPasswordProviderTest",
+          "raw_first": "org.apache.logging.log4j.core.appender.rolling.action.PathSortByModificationTimeTest",
+          "q_a": 0.028415210968745892,
+          "q_b": 0.028415210968745892,
+          "w": 0.002375069450838415
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.core.pattern.FormattingInfoTest",
+          "raw_first": "org.apache.logging.log4j.core.net.ssl.MemoryPasswordProviderTest",
+          "q_a": 0.028415210968745892,
+          "q_b": 0.028415210968745892,
+          "w": 0.002375069450838415
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.io.LoggerBufferedReaderCallerInfoTest",
+          "raw_first": "org.apache.logging.log4j.core.pattern.FormattingInfoTest",
+          "q_a": 0.028415210968745892,
+          "q_b": 0.028415210968745892,
+          "w": 0.002375069450838415
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.io.LoggerReaderTest",
+          "raw_first": "org.apache.logging.log4j.io.LoggerBufferedReaderCallerInfoTest",
+          "q_a": 0.028415210968745892,
+          "q_b": 0.028415210968745892,
+          "w": 0.002375069450838415
+        },
+        {
+          "normalized_first": "org.apache.logging.log4j.message.MapMessageTest",
+          "raw_first": "org.apache.logging.log4j.io.LoggerReaderTest",
+          "q_a": 0.028415210968745896,
+          "q_b": 0.028415210968745892,
+          "w": 0.002375069450838415
+        }
+      ],
+      "alpha_zero_metrics": {
+        "tests": 651,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 0,
+        "total_duration_seconds": 735.727,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 735.727,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      },
+      "history_cost_metrics": {
+        "tests": 651,
+        "observed_failures": 0,
+        "unknown_outcomes": 0,
+        "invalid_durations": 0,
+        "zero_durations": 0,
+        "total_duration_seconds": 735.727,
+        "apfd": null,
+        "apfdc_midpoint": null,
+        "ttff_seconds": null,
+        "ttff_censored": true,
+        "censor_time_seconds": 735.727,
+        "recall": {
+          "0.1": null,
+          "0.25": null,
+          "0.5": null
+        },
+        "reasons": [
+          "no_failures"
+        ]
+      }
+    }
+  ],
+  "actual_cohort_mutation_checks": [
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-477",
+        "build": "1",
+        "stage": "Ubuntu_Test"
+      },
+      "full_tests": 632,
+      "mutated_ineligible_builds": 243,
+      "standard_lazy_real_kernel_methods": 2,
+      "reconstructed_methods": 13
+    },
+    {
+      "key": {
+        "project": "log4j",
+        "pr": "PR-647",
+        "build": "2",
+        "stage": "Windows_Test"
+      },
+      "full_tests": 651,
+      "mutated_ineligible_builds": 159,
+      "standard_lazy_real_kernel_methods": 2,
+      "reconstructed_methods": 13
+    }
+  ],
+  "scope": "all development endpoints; first/last scored development full-inventory reconstruction and mutation",
+  "reserved_opened": false
+}

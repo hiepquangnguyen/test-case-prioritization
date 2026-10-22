@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "purpose": "Track winning builds across algorithm generations vs history_cost",
+    "split": "development_screening",
+    "total_failing_physical_builds": 161
+  },
+  "generation_win_counts": {
+    "hc_falcon_normalized_v1": 38,
+    "stage8_restricted_semantic": 31,
+    "stage11_cns_greedy": 38,
+    "stage12_ugcs_v2": 35
+  },
+  "intersections_with_v1_38_wins": {
+    "retained_in_stage8": {
+      "count": 15,
+      "pct_of_v1": 39.473684210526315,
+      "build_ids": [
+        "activemq/PR-1026/2",
+        "activemq/PR-1036/3",
+        "activemq/PR-962/4",
+        "activemq/PR-969/2",
+        "activemq/PR-978/1",
+        "karaf/PR-1536/2",
+        "karaf/PR-1548/1",
+        "karaf/PR-1579/1",
+        "karaf/PR-1641/4",
+        "karaf/PR-1645/1",
+        "karaf/PR-1686/1",
+        "karaf/PR-1694/1",
+        "log4j/PR-573/8",
+        "log4j/PR-597/1",
+        "log4j/PR-608/2"
+      ]
+    },
+    "lost_in_stage8": {
+      "count": 23,
+      "build_ids": [
+        "activemq/PR-1001/2",
+        "activemq/PR-1034/2",
+        "activemq/PR-965/8",
+        "activemq/PR-972/1",
+        "activemq/PR-984/3",
+        "karaf/PR-1504/1",
+        "karaf/PR-1504/3",
+        "karaf/PR-1511/2",
+        "karaf/PR-1521/2",
+        "karaf/PR-1536/1",
+        "karaf/PR-1542/1",
+        "karaf/PR-1552/2",
+        "karaf/PR-1552/5",
+        "karaf/PR-1553/1",
+        "karaf/PR-1562/1",
+        "karaf/PR-1565/1",
+        "karaf/PR-1568/2",
+        "karaf/PR-1576/1",
+        "karaf/PR-1585/5",
+        "karaf/PR-1624/3",
+        "karaf/PR-1627/4",
+        "karaf/PR-1648/2",
+        "log4j/PR-591/1"
+      ]
+    },
+    "new_wins_in_stage8_not_in_v1": {
+      "count": 16,
+      "build_ids": [
+        "activemq/PR-1010/2",
+        "activemq/PR-1013/1",
+        "activemq/PR-1025/1",
+        "activemq/PR-965/6",
+        "activemq/PR-965/7",
+        "activemq/PR-968/7",
+        "activemq/PR-971/1",
+        "activemq/PR-987/1",
+        "karaf/PR-1522/6",
+        "karaf/PR-1583/1",
+        "karaf/PR-1627/5",
+        "karaf/PR-1634/1",
+        "karaf/PR-1676/1",
+        "karaf/PR-1701/1",
+        "log4j/PR-477/1",
+        "log4j/PR-544/1"
+      ]
+    },
+    "retained_in_stage11_cns": {
+      "count": 23,
+      "pct_of_v1": 60.526315789473685,
+      "build_ids": [
+        "activemq/PR-1036/3",
+        "activemq/PR-962/4",
+        "activemq/PR-965/8",
+        "activemq/PR-969/2",
+        "activemq/PR-978/1",
+        "karaf/PR-1504/1",
+        "karaf/PR-1511/2",
+        "karaf/PR-1521/2",
+        "karaf/PR-1536/2",
+        "karaf/PR-1548/1",
+        "karaf/PR-1552/2",
+        "karaf/PR-1553/1",
+        "karaf/PR-1579/1",
+        "karaf/PR-1627/4",
+        "karaf/PR-1641/4",
+        "karaf/PR-1645/1",
+        "karaf/PR-1648/2",
+        "karaf/PR-1686/1",
+        "karaf/PR-1694/1",
+        "log4j/PR-573/8",
+        "log4j/PR-591/1",
+        "log4j/PR-597/1",
+        "log4j/PR-608/2"
+      ]
+    },
+    "lost_in_stage11_cns": {
+      "count": 15,
+      "build_ids": [
+        "activemq/PR-1001/2",
+        "activemq/PR-1026/2",
+        "activemq/PR-1034/2",
+        "activemq/PR-972/1",
+        "activemq/PR-984/3",
+        "karaf/PR-1504/3",
+        "karaf/PR-1536/1",
+        "karaf/PR-1542/1",
+        "karaf/PR-1552/5",
+        "karaf/PR-1562/1",
+        "karaf/PR-1565/1",
+        "karaf/PR-1568/2",
+        "karaf/PR-1576/1",
+        "karaf/PR-1585/5",
+        "karaf/PR-1624/3"
+      ]
+    },
+    "new_wins_in_stage11_not_in_v1": {
+      "count": 15,
+      "build_ids": [
+        "activemq/PR-1013/1",
+        "activemq/PR-1025/1",
+        "activemq/PR-962/2",
+        "activemq/PR-968/7",
+        "activemq/PR-987/1",
+        "karaf/PR-1550/2",
+        "karaf/PR-1583/1",
+        "karaf/PR-1634/1",
+        "karaf/PR-1652/1",
+        "karaf/PR-1656/2",
+        "karaf/PR-1662/1",
+        "karaf/PR-1676/1",
+        "karaf/PR-1701/1",
+        "log4j/PR-477/1",
+        "log4j/PR-544/1"
+      ]
+    },
+    "retained_in_stage12_ugcs": {
+      "count": 20,
+      "pct_of_v1": 52.63157894736842,
+      "build_ids": [
+        "activemq/PR-1036/3",
+        "activemq/PR-962/4",
+        "activemq/PR-965/8",
+        "activemq/PR-969/2",
+        "activemq/PR-978/1",
+        "karaf/PR-1504/1",
+        "karaf/PR-1536/2",
+        "karaf/PR-1548/1",
+        "karaf/PR-1552/5",
+        "karaf/PR-1565/1",
+        "karaf/PR-1579/1",
+        "karaf/PR-1627/4",
+        "karaf/PR-1641/4",
+        "karaf/PR-1645/1",
+        "karaf/PR-1648/2",
+        "karaf/PR-1686/1",
+        "karaf/PR-1694/1",
+        "log4j/PR-573/8",
+        "log4j/PR-597/1",
+        "log4j/PR-608/2"
+      ]
+    },
+    "retained_in_all_four_generations": {
+      "count": 14,
+      "build_ids": [
+        "activemq/PR-1036/3",
+        "activemq/PR-962/4",
+        "activemq/PR-969/2",
+        "activemq/PR-978/1",
+        "karaf/PR-1536/2",
+        "karaf/PR-1548/1",
+        "karaf/PR-1579/1",
+        "karaf/PR-1641/4",
+        "karaf/PR-1645/1",
+        "karaf/PR-1686/1",
+        "karaf/PR-1694/1",
+        "log4j/PR-573/8",
+        "log4j/PR-597/1",
+        "log4j/PR-608/2"
+      ]
+    }
+  },
+  "identical_sets_v1_vs_stage11": false
+}

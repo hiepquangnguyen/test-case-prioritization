@@ -1,0 +1,10 @@
+{
+  "project": "karaf",
+  "phase": "pilot_replay",
+  "python_version": "3.13.11",
+  "platform": "win32",
+  "torch_threads": 4,
+  "device": "cpu",
+  "cuda_available": false,
+  "scope": "stage3_karaf_pilot_environment"
+}

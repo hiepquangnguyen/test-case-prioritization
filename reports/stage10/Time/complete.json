@@ -1,0 +1,9 @@
+{
+  "project": "Time",
+  "tests_count": 4044,
+  "faults_count": 26,
+  "independent_apfd": 0.7989328920337821,
+  "author_apfd": 0.7944342996271779,
+  "apfd_delta": 0.004498592406604218,
+  "provenance": "cold_embedding_run"
+}

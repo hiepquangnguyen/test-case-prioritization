@@ -1,0 +1,11 @@
+{
+  "reserved_opened": false,
+  "source_freeze": "7ab8f32652be546d5f7f513f2344afc36fda25a72c6bd67512e6eb6ac31e907c",
+  "files_sha256": {
+    "hc_falcon/restricted.py": "82a8e5ed85b3f9fbedf3cbc28a3e38097b85b2c4f597c4d290f57204f90fe66a",
+    "scripts/stage8_pilot.py": "8035e4d7e837b4c9519730e7630b774cf1d611ebab6da50131f95a062c310a79",
+    "configs/restricted-semantic-v1.json": "e5323a86214c91934a09852c9287f234b1df055752458275fbb508c52d1c6efb",
+    "tests/test_stage8.py": "568da1ab91ab505e5a91022d7548bf4fd879cc004bcdcdce2b93efe242adcd0c"
+  },
+  "runtime_scope": "cached vector reconstruction + history + kernel + ranking; excludes source extraction and encoding; not a new full-pipeline engineering gate"
+}

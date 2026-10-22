@@ -1,0 +1,44 @@
+{
+  "project": "log4j",
+  "manifest": {
+    "project": "log4j",
+    "stage5_sha256": "2aab33e22aaca87dabcd1e5232b4e595e62283e967a59660d47b33ac00eb3eaa",
+    "runner_sha256": "4943fedd0052e3c536b246b4ffb6cc5000091775f1d2123ee8f012aeb36e815d",
+    "reserved_opened": false,
+    "scope": "all_frozen_warmup_and_development; score_development_only",
+    "alpha": 0.5,
+    "alpha_sensitivity": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "build_stages": 264,
+  "development_scored": 155,
+  "peak_rss": 1670144000,
+  "reserved_opened": false
+}

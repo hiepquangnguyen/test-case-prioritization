@@ -1,0 +1,5542 @@
+[
+  {
+    "commit": "27efcb85cb53bf25353760b2173f7f12f07c2769",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "27efcb85cb53bf25353760b2173f7f12f07c2769",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "27efcb85cb53bf25353760b2173f7f12f07c2769",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "500d54c5bca082fcd9d9d6dda19d0cf9193f6773129abdc1b0dd7e9c3395693d",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "826cd5e5a66fd28e8a891a22eabc22c1557211a3",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "826cd5e5a66fd28e8a891a22eabc22c1557211a3",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "826cd5e5a66fd28e8a891a22eabc22c1557211a3",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "500d54c5bca082fcd9d9d6dda19d0cf9193f6773129abdc1b0dd7e9c3395693d",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "fa63eb8199e44686c22f8b18d54b90780c2159c9",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "fa63eb8199e44686c22f8b18d54b90780c2159c9",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "fa63eb8199e44686c22f8b18d54b90780c2159c9",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "500d54c5bca082fcd9d9d6dda19d0cf9193f6773129abdc1b0dd7e9c3395693d",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "dd0a80e82ce681e0690a42447726dcbb9141aea4",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "dd0a80e82ce681e0690a42447726dcbb9141aea4",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "dd0a80e82ce681e0690a42447726dcbb9141aea4",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5f2b6501494a019531e111d39f552a8e363008f06d9f03785f8f88f41423ee3f",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "38b9650414fde220f38ef58c084df9abe3d2792e",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "38b9650414fde220f38ef58c084df9abe3d2792e",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "38b9650414fde220f38ef58c084df9abe3d2792e",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5f2b6501494a019531e111d39f552a8e363008f06d9f03785f8f88f41423ee3f",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "0c0f3faceecb71b9c523830efc32dc0ede13e291",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "0c0f3faceecb71b9c523830efc32dc0ede13e291",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "0c0f3faceecb71b9c523830efc32dc0ede13e291",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5f2b6501494a019531e111d39f552a8e363008f06d9f03785f8f88f41423ee3f",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "fd7cd05573e7738eebd42f1de4a5c33f7ab7b341",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "fd7cd05573e7738eebd42f1de4a5c33f7ab7b341",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "fd7cd05573e7738eebd42f1de4a5c33f7ab7b341",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5d836fb259f7e15d4707d97030dbb8c265f027663c71d80effa456f24d7f653b",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "40accbe6edcf70f40a6c84b3eb4fc2962e88077b",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "40accbe6edcf70f40a6c84b3eb4fc2962e88077b",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "40accbe6edcf70f40a6c84b3eb4fc2962e88077b",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "2085140a0fd9621ef187860c83eb2669f21e64f9ac9c98c2ab61fb26def16611",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "997947851e2fe056d7059bce219478a37d917e3e",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "997947851e2fe056d7059bce219478a37d917e3e",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "997947851e2fe056d7059bce219478a37d917e3e",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5f2b6501494a019531e111d39f552a8e363008f06d9f03785f8f88f41423ee3f",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "9154a90df7972b9f60edee45b89de3eb28ca5750",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "9154a90df7972b9f60edee45b89de3eb28ca5750",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "9154a90df7972b9f60edee45b89de3eb28ca5750",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "500d54c5bca082fcd9d9d6dda19d0cf9193f6773129abdc1b0dd7e9c3395693d",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "93509c93b6f5e73b057a982fee1e13000409efb8",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "93509c93b6f5e73b057a982fee1e13000409efb8",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "93509c93b6f5e73b057a982fee1e13000409efb8",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5da874ed4eebd48bcde1506dcc546c46de2fc22496a2da82327b4da2c44a3c2c",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "d144fff2bd0157eccc9a03f5c2bd19f8a5072277",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "d144fff2bd0157eccc9a03f5c2bd19f8a5072277",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "d144fff2bd0157eccc9a03f5c2bd19f8a5072277",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5da874ed4eebd48bcde1506dcc546c46de2fc22496a2da82327b4da2c44a3c2c",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "a447fc2cc440b86eb45e50d9acfbbcad54af6bad",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "a447fc2cc440b86eb45e50d9acfbbcad54af6bad",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "a447fc2cc440b86eb45e50d9acfbbcad54af6bad",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5da874ed4eebd48bcde1506dcc546c46de2fc22496a2da82327b4da2c44a3c2c",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "dc7583597953188973668b959ef6b16f97386f9e",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "dc7583597953188973668b959ef6b16f97386f9e",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "dc7583597953188973668b959ef6b16f97386f9e",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "88303f54d35c78f07221222fbc5ddff1e0bd2c979c294f61d6eeb8ca2a47c147",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "46c0eaeb86de595becaf1079bbbca14975886586",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "f592a589ab610132a7b28cba660cc092ce0ad07664d17e6fbf9b1d5d1342c0fe",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "46c0eaeb86de595becaf1079bbbca14975886586",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "46c0eaeb86de595becaf1079bbbca14975886586",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "5da874ed4eebd48bcde1506dcc546c46de2fc22496a2da82327b4da2c44a3c2c",
+    "lines": [
+      {
+        "line": 208,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 209,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 211,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 212,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1036,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1037,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1041,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1042,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1194,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1195,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1206,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1207,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1510,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1511,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1516,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1583,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1584,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1585,
+        "text": "<module>log4j-plugins-java9</module>"
+      },
+      {
+        "line": 1586,
+        "text": "<module>log4j-plugins</module>"
+      },
+      {
+        "line": 1587,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1588,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1589,
+        "text": "<module>log4j-layout-jackson</module>"
+      },
+      {
+        "line": 1590,
+        "text": "<module>log4j-layout-jackson-json</module>"
+      },
+      {
+        "line": 1591,
+        "text": "<module>log4j-layout-jackson-xml</module>"
+      },
+      {
+        "line": 1592,
+        "text": "<module>log4j-layout-jackson-yaml</module>"
+      },
+      {
+        "line": 1593,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1594,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1595,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1596,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1597,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1598,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1599,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1600,
+        "text": "<module>log4j-csv</module>"
+      },
+      {
+        "line": 1601,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1603,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1604,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1605,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1606,
+        "text": "<module>log4j-jdbc</module>"
+      },
+      {
+        "line": 1607,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1608,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1609,
+        "text": "<module>log4j-jeromq</module>"
+      },
+      {
+        "line": 1610,
+        "text": "<module>log4j-jms</module>"
+      },
+      {
+        "line": 1611,
+        "text": "<module>log4j-kafka</module>"
+      },
+      {
+        "line": 1612,
+        "text": "<module>log4j-redis</module>"
+      },
+      {
+        "line": 1613,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1614,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1615,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1616,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1617,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1618,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1619,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1620,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1621,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1622,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1623,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1624,
+        "text": "<module>log4j-smtp</module>"
+      },
+      {
+        "line": 1625,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1626,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1627,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1628,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1629,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1712,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1798,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1804,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "dc3bf494ac19d5d2cbfb178e5f0d96f7f0777a7c",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "dc3bf494ac19d5d2cbfb178e5f0d96f7f0777a7c",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "dc3bf494ac19d5d2cbfb178e5f0d96f7f0777a7c",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "88303f54d35c78f07221222fbc5ddff1e0bd2c979c294f61d6eeb8ca2a47c147",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "50d5aa597df9fdb359e765d713e9110e9261eb8d",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "50d5aa597df9fdb359e765d713e9110e9261eb8d",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "50d5aa597df9fdb359e765d713e9110e9261eb8d",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "88303f54d35c78f07221222fbc5ddff1e0bd2c979c294f61d6eeb8ca2a47c147",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "e6d8657b4340694bffe5faae5b479a4a65adcf56",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "e6d8657b4340694bffe5faae5b479a4a65adcf56",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "e6d8657b4340694bffe5faae5b479a4a65adcf56",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "88303f54d35c78f07221222fbc5ddff1e0bd2c979c294f61d6eeb8ca2a47c147",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "743ef84b61fcb5ea913660609da2c9f9791ed563",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "743ef84b61fcb5ea913660609da2c9f9791ed563",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "743ef84b61fcb5ea913660609da2c9f9791ed563",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "88303f54d35c78f07221222fbc5ddff1e0bd2c979c294f61d6eeb8ca2a47c147",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  },
+  {
+    "commit": "9b0a8da7343104fdc91ea22c839080daa07ca254",
+    "path": ".github/workflows/maven.yml",
+    "status": "available",
+    "sha256": "c777aee6b6d01ff42a57a2d83bd21d498204c93265a235d7f1b5548bf6114296",
+    "lines": [
+      {
+        "line": 17,
+        "text": "uses: actions/checkout@v2"
+      },
+      {
+        "line": 47,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 55,
+        "text": "run: ./mvnw -V -B -e \"-DtrimStackTrace=false\" \"-Dmaven.test.failure.ignore=true\" \"-Dsurefire.rerunFailingTestsCount=1\" \"-Dlog4j2.junit.fileCleanerSleepPeriodMillis=1000\" --global-toolchains \".github\\workflows\\maven-toolchains.xml\" verify"
+      },
+      {
+        "line": 63,
+        "text": "run: ./mvnw -V -B -e -DtrimStackTrace=false -Dmaven.test.failure.ignore=true -Dsurefire.rerunFailingTestsCount=1 --global-toolchains .github/workflows/maven-toolchains.xml verify"
+      },
+      {
+        "line": 66,
+        "text": "uses: scacap/action-surefire-report@v1"
+      }
+    ]
+  },
+  {
+    "commit": "9b0a8da7343104fdc91ea22c839080daa07ca254",
+    "path": "LICENSE.txt",
+    "status": "available",
+    "sha256": "e118ad8e5f2d3c71f0e7d6202d5829e7580ccd9e3609a546c692788e657afbe2",
+    "lines": []
+  },
+  {
+    "commit": "9b0a8da7343104fdc91ea22c839080daa07ca254",
+    "path": "pom.xml",
+    "status": "available",
+    "sha256": "88303f54d35c78f07221222fbc5ddff1e0bd2c979c294f61d6eeb8ca2a47c147",
+    "lines": [
+      {
+        "line": 206,
+        "text": "<!-- surefire.plugin.version 2.18 yields http://jira.codehaus.org/browse/SUREFIRE-1121, which is fixed in 2.18.1 -->"
+      },
+      {
+        "line": 207,
+        "text": "<!-- surefire.plugin.version 2.19 yields https://issues.apache.org/jira/browse/SUREFIRE-1193. -->"
+      },
+      {
+        "line": 209,
+        "text": "<surefire.plugin.version>2.22.2</surefire.plugin.version>"
+      },
+      {
+        "line": 210,
+        "text": "<failsafe.plugin.version>2.22.2</failsafe.plugin.version>"
+      },
+      {
+        "line": 1018,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1019,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1023,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1024,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1167,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1168,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1179,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      },
+      {
+        "line": 1180,
+        "text": "<version>${failsafe.plugin.version}</version>"
+      },
+      {
+        "line": 1425,
+        "text": "<artifactId>maven-surefire-report-plugin</artifactId>"
+      },
+      {
+        "line": 1426,
+        "text": "<version>${surefire.plugin.version}</version>"
+      },
+      {
+        "line": 1431,
+        "text": "<report>failsafe-report-only</report>"
+      },
+      {
+        "line": 1486,
+        "text": "<module>log4j-api-java9</module>"
+      },
+      {
+        "line": 1487,
+        "text": "<module>log4j-api</module>"
+      },
+      {
+        "line": 1488,
+        "text": "<module>log4j-core-java9</module>"
+      },
+      {
+        "line": 1489,
+        "text": "<module>log4j-core</module>"
+      },
+      {
+        "line": 1490,
+        "text": "<module>log4j-layout-template-json</module>"
+      },
+      {
+        "line": 1491,
+        "text": "<module>log4j-core-its</module>"
+      },
+      {
+        "line": 1492,
+        "text": "<module>log4j-1.2-api</module>"
+      },
+      {
+        "line": 1493,
+        "text": "<module>log4j-slf4j-impl</module>"
+      },
+      {
+        "line": 1494,
+        "text": "<module>log4j-slf4j18-impl</module>"
+      },
+      {
+        "line": 1495,
+        "text": "<module>log4j-to-slf4j</module>"
+      },
+      {
+        "line": 1496,
+        "text": "<module>log4j-jcl</module>"
+      },
+      {
+        "line": 1497,
+        "text": "<module>log4j-flume-ng</module>"
+      },
+      {
+        "line": 1498,
+        "text": "<module>log4j-taglib</module>"
+      },
+      {
+        "line": 1499,
+        "text": "<module>log4j-jmx-gui</module>"
+      },
+      {
+        "line": 1500,
+        "text": "<module>log4j-samples</module>"
+      },
+      {
+        "line": 1501,
+        "text": "<module>log4j-bom</module>"
+      },
+      {
+        "line": 1502,
+        "text": "<module>log4j-jdbc-dbcp2</module>"
+      },
+      {
+        "line": 1503,
+        "text": "<module>log4j-jpa</module>"
+      },
+      {
+        "line": 1504,
+        "text": "<module>log4j-couchdb</module>"
+      },
+      {
+        "line": 1505,
+        "text": "<module>log4j-mongodb3</module>"
+      },
+      {
+        "line": 1506,
+        "text": "<module>log4j-mongodb4</module>"
+      },
+      {
+        "line": 1507,
+        "text": "<module>log4j-cassandra</module>"
+      },
+      {
+        "line": 1508,
+        "text": "<module>log4j-web</module>"
+      },
+      {
+        "line": 1509,
+        "text": "<module>log4j-perf</module>"
+      },
+      {
+        "line": 1510,
+        "text": "<module>log4j-iostreams</module>"
+      },
+      {
+        "line": 1511,
+        "text": "<module>log4j-jul</module>"
+      },
+      {
+        "line": 1512,
+        "text": "<module>log4j-jpl</module>"
+      },
+      {
+        "line": 1513,
+        "text": "<module>log4j-liquibase</module>"
+      },
+      {
+        "line": 1514,
+        "text": "<module>log4j-appserver</module>"
+      },
+      {
+        "line": 1515,
+        "text": "<module>log4j-osgi</module>"
+      },
+      {
+        "line": 1516,
+        "text": "<module>log4j-docker</module>"
+      },
+      {
+        "line": 1517,
+        "text": "<module>log4j-kubernetes</module>"
+      },
+      {
+        "line": 1518,
+        "text": "<module>log4j-spring-boot</module>"
+      },
+      {
+        "line": 1519,
+        "text": "<module>log4j-spring-cloud-config</module>"
+      },
+      {
+        "line": 1602,
+        "text": "<module>log4j-distribution</module>"
+      },
+      {
+        "line": 1688,
+        "text": "<artifactId>maven-surefire-plugin</artifactId>"
+      },
+      {
+        "line": 1694,
+        "text": "<artifactId>maven-failsafe-plugin</artifactId>"
+      }
+    ]
+  }
+]

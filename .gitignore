@@ -1,0 +1,45 @@
+# Ephemeral workspace and virtual environments
+work/
+.venv*/
+venv/
+env/
+
+# Test and local scratch caches
+.pytest_cache/
+.cache/
+scratch/
+
+# Python byte code and packaging artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Logs and checkpoints
+*.log
+logs/
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# Large binary benchmark archives (stored externally / reconstructed)
+references/artifacts/**/*.zip
+topic1-reading-guide.zip
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# PDF papers (download from original conference / Zenodo sources)
+*.pdf
+
+# Confidential / unreleased reserved data protection
+*reserved*
+data/reserved/
+reserved/
+
+# OS metadata
+.DS_Store
+Thumbs.db

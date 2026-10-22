@@ -1,0 +1,133 @@
+{
+  "rows": 726,
+  "test_observations": 156701,
+  "split_counts": {
+    "warmup": 246,
+    "development": 317,
+    "holdout": 163
+  },
+  "statuses": {
+    "ABORTED": 12,
+    "SUCCESS": 516,
+    "FAILURE": 198
+  },
+  "missing_availability": 0,
+  "count_mismatches": 0,
+  "invalid_durations": 0,
+  "zero_durations": 8373,
+  "max_duration_sum_error": 3.637978807091713e-12,
+  "overlapping_builds": 273,
+  "rounding_guard_affected_builds": 0,
+  "unique_commits": 718,
+  "local_commits": 493,
+  "raw_report_log_entries": [],
+  "split_identity_overlap": {
+    "pr": {
+      "holdout_seen_before": 0
+    },
+    "commit": {
+      "holdout_seen_before": 0
+    }
+  },
+  "collector_evidence": {
+    "build_buildstats.py": {
+      "sha256": "951951a356569f48f4e76a3546dd87d37ba7974c11d067f97c37e7169691be4b",
+      "lines": [
+        {
+          "line": 17,
+          "text": "sha = action[\"buildsByBranchName\"][pr_name][\"revision\"][\"branch\"][0][\"SHA1\"]"
+        },
+        {
+          "line": 39,
+          "text": "build_id = int(tokens[-1].split(\".\")[0].split(\"build\")[-1])"
+        },
+        {
+          "line": 53,
+          "text": "build_duration = int(builddata[\"duration\"] / 1000)"
+        },
+        {
+          "line": 54,
+          "text": "build_timestamp = int(builddata[\"timestamp\"] / 1000)"
+        },
+        {
+          "line": 65,
+          "text": "if failcount + passcount > 1:"
+        },
+        {
+          "line": 73,
+          "text": "print(\"\\nPROCESSING\", project)"
+        },
+        {
+          "line": 76,
+          "text": "print(\"#files\", len(testfiles))"
+        }
+      ]
+    },
+    "extract_test_result.py": {
+      "sha256": "b4c8b1c55279e336803bd0b95db60a5f2808772fb612a986e2457f2525fdf1b3",
+      "lines": [
+        {
+          "line": 91,
+          "text": "return round(sum(df_slice[\"method_duration\"]), 3)"
+        },
+        {
+          "line": 96,
+          "text": "if project.startswith(const.TVM):"
+        },
+        {
+          "line": 100,
+          "text": "df = df[~df[\"case_classname\"].str.startswith((\"Gradle \", \"TEST\", \"[\"))]"
+        },
+        {
+          "line": 103,
+          "text": "df = df[df[\"method_status\"] != const.SKIPPED]"
+        },
+        {
+          "line": 108,
+          "text": "if project.startswith(const.TVM):"
+        },
+        {
+          "line": 119,
+          "text": "if not row[\"case_classname\"].startswith(\"org.\"):"
+        },
+        {
+          "line": 126,
+          "text": "if not row[\"case_classname\"].startswith(\"org.\"):"
+        },
+        {
+          "line": 136,
+          "text": "df = df.drop_duplicates(subset=[\"suite_classname\", \"case_classname\", \"method_name\"])"
+        },
+        {
+          "line": 140,
+          "text": "]].groupby([\"case_classname\"]"
+        },
+        {
+          "line": 144,
+          "text": "]].groupby([\"case_classname\"]"
+        },
+        {
+          "line": 157,
+          "text": "if project.startswith(const.TVM):"
+        }
+      ]
+    },
+    "get_build_testdata.py": {
+      "sha256": "70d031f3c660f85e4d31ef63654217e8f6e96e20827d0eda5e83f3b18c1809fe",
+      "lines": [
+        {
+          "line": 96,
+          "text": "build_query_url = build_url + \"api/json\""
+        },
+        {
+          "line": 98,
+          "text": "build_info = collect_metadata(build_query_url, build_file, readin=True)"
+        },
+        {
+          "line": 106,
+          "text": "test_query_url = build_url + \"testReport/api/json\""
+        }
+      ]
+    }
+  }
+}

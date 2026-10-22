@@ -1,0 +1,3142 @@
+{
+  "projects": {
+    "karaf": {
+      "paired_vs_history_cost": {
+        "count": 79,
+        "mean": -0.004410752870139088,
+        "median": -0.012650132020137761,
+        "positive": 24,
+        "negative": 54,
+        "tie": 1
+      },
+      "first_selected_semantic_share": {
+        "count": 315,
+        "mean": 0.9406694764029226,
+        "median": 0.9755879944107383,
+        "positive": 315,
+        "negative": 0,
+        "tie": 0
+      },
+      "groups_observation_level_descriptive": {
+        "N0": {
+          "tests": 244,
+          "failures": 2,
+          "delayed_failures": 0,
+          "advanced_failures": 1,
+          "valid_failing_source": 1,
+          "apfdc_contributions": {
+            "count": 2,
+            "mean": 0.3862597521541127,
+            "median": 0.3862597521541127,
+            "positive": 1,
+            "negative": 0,
+            "tie": 1
+          }
+        },
+        "N1_4": {
+          "tests": 912,
+          "failures": 4,
+          "delayed_failures": 4,
+          "advanced_failures": 0,
+          "valid_failing_source": 3,
+          "apfdc_contributions": {
+            "count": 4,
+            "mean": -0.046343015010956445,
+            "median": -0.03293820546141213,
+            "positive": 0,
+            "negative": 4,
+            "tie": 0
+          }
+        },
+        "N5plus": {
+          "tests": 67572,
+          "failures": 114,
+          "delayed_failures": 75,
+          "advanced_failures": 37,
+          "valid_failing_source": 114,
+          "apfdc_contributions": {
+            "count": 114,
+            "mean": -0.008206990535134982,
+            "median": -0.003230689970985158,
+            "positive": 37,
+            "negative": 75,
+            "tie": 2
+          }
+        }
+      },
+      "variants_vs_history_cost": {
+        "hc_alpha_0.0": {
+          "count": 79,
+          "mean": 0.0,
+          "median": 0.0,
+          "positive": 0,
+          "negative": 0,
+          "tie": 79
+        },
+        "hc_alpha_0.25": {
+          "count": 79,
+          "mean": 0.004012902552000313,
+          "median": -6.411357133784268e-05,
+          "positive": 34,
+          "negative": 42,
+          "tie": 3
+        },
+        "hc_falcon_normalized_v1": {
+          "count": 79,
+          "mean": -0.004410752870139088,
+          "median": -0.012650132020137761,
+          "positive": 24,
+          "negative": 54,
+          "tie": 1
+        },
+        "hc_alpha_0.75": {
+          "count": 79,
+          "mean": -0.06765988669360284,
+          "median": -0.057558741725684315,
+          "positive": 14,
+          "negative": 65,
+          "tie": 0
+        },
+        "hc_alpha_1.0": {
+          "count": 79,
+          "mean": -0.32323825643674464,
+          "median": -0.30927515436209607,
+          "positive": 15,
+          "negative": 64,
+          "tie": 0
+        },
+        "hc_falcon_topic_raw_v1": {
+          "count": 79,
+          "mean": -0.0007572157001759069,
+          "median": -3.417706876418514e-05,
+          "positive": 36,
+          "negative": 40,
+          "tie": 3
+        },
+        "no_confidence": {
+          "count": 79,
+          "mean": -0.004656746966348818,
+          "median": -0.014059985101288586,
+          "positive": 23,
+          "negative": 55,
+          "tie": 1
+        },
+        "borda_history_cost": {
+          "count": 79,
+          "mean": -0.08941730502711907,
+          "median": -0.0770753521146641,
+          "positive": 21,
+          "negative": 58,
+          "tie": 0
+        },
+        "dante_cch_adapt_r1": {
+          "count": 79,
+          "mean": -0.027419546921198242,
+          "median": 0.00041640623316163694,
+          "positive": 43,
+          "negative": 36,
+          "tie": 0
+        }
+      },
+      "worst_physical": [
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1492",
+            "build": "2"
+          },
+          "delta_apfdc": -0.5758474236717686,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1492",
+                "build": "2",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.5758474236717686,
+              "first_selected_semantic_share": 0.9706013515207617,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.001,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                  "position_shift": 11,
+                  "completion_shift_seconds": 50.30199999999999,
+                  "apfdc_delta": -0.5758474236717686,
+                  "added_predecessor_seconds": 50.302,
+                  "removed_predecessor_seconds": 0,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.main.MainLockingTest",
+                      "duration": 23.678,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.jpm.ProcessTest",
+                      "duration": 13.326,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.main.MainStartTest",
+                      "duration": 2.59,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.jaas.modules.jdbc.JdbcLoginModuleTest",
+                      "duration": 1.902,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.kar.internal.KarTest",
+                      "duration": 1.717,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1501",
+            "build": "3"
+          },
+          "delta_apfdc": -0.25456059302549194,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1501",
+                "build": "3",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.25456059302549194,
+              "first_selected_semantic_share": 0.9755871432250907,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.002,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.SystemShutdownTest",
+                  "position_shift": 13,
+                  "completion_shift_seconds": 321.6339999999998,
+                  "apfdc_delta": -0.25456059302549194,
+                  "added_predecessor_seconds": 338.948,
+                  "removed_predecessor_seconds": 17.314,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.RestExampleTest",
+                      "duration": 83.333,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                      "duration": 47.72,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.JmsTest",
+                      "duration": 45.725,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.JtaTest",
+                      "duration": 34.316,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                      "duration": 25.203,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1579",
+            "build": "2"
+          },
+          "delta_apfdc": -0.1830211188301375,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1579",
+                "build": "2",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.1830211188301375,
+              "first_selected_semantic_share": 0.975916485102967,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.041,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                  "position_shift": 18,
+                  "completion_shift_seconds": 2318.608,
+                  "apfdc_delta": -0.18152335666578148,
+                  "added_predecessor_seconds": 2318.608,
+                  "removed_predecessor_seconds": 0,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.XATest",
+                      "duration": 2283.523,
+                      "failed": true
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 11.576,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                      "duration": 9.827,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.FeatureTest",
+                      "duration": 5.876,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+                      "duration": 0.971,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.JmsTest",
+                  "position_shift": 3,
+                  "completion_shift_seconds": 29.353999999999814,
+                  "apfdc_delta": -0.002298118790053047,
+                  "added_predecessor_seconds": 33.945,
+                  "removed_predecessor_seconds": 4.591,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 11.576,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                      "duration": 9.827,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                      "duration": 6.722,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.profile.assembly.BuilderTest",
+                      "duration": 1.377,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.main.MainStartTest",
+                      "duration": 1.194,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                  "position_shift": -28,
+                  "completion_shift_seconds": -0.12899999999999956,
+                  "apfdc_delta": 1.0099384203748856e-05,
+                  "added_predecessor_seconds": 0,
+                  "removed_predecessor_seconds": 0.129,
+                  "largest_added_predecessors": [],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.XATest",
+                  "position_shift": -3,
+                  "completion_shift_seconds": -10.094000000000051,
+                  "apfdc_delta": 0.0007902572414933474,
+                  "added_predecessor_seconds": 23.716,
+                  "removed_predecessor_seconds": 33.81,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 11.576,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                      "duration": 9.827,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                      "duration": 0.882,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                      "duration": 0.587,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.jaas.blueprint.jasypt.handler.EncryptablePropertyPlaceholderTest",
+                      "duration": 0.43,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1701",
+            "build": "1"
+          },
+          "delta_apfdc": -0.14832283777525757,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1701",
+                "build": "1",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.14832283777525757,
+              "first_selected_semantic_share": 0.9996335259588207,
+              "first_selected_failed": false,
+              "first_selected_duration": 54.215,
+              "first_selected": "org.apache.karaf.itests.examples.ConfigExampleTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                  "position_shift": 13,
+                  "completion_shift_seconds": 352.5579999999996,
+                  "apfdc_delta": -0.12855679087524557,
+                  "added_predecessor_seconds": 372.156,
+                  "removed_predecessor_seconds": 19.598,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.JtaTest",
+                      "duration": 141.57,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                      "duration": 54.215,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+                      "duration": 40.071,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.main.MainLockingTest",
+                      "duration": 27.948,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                      "duration": 27.538,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+                  "position_shift": 0,
+                  "completion_shift_seconds": 54.207,
+                  "apfdc_delta": -0.019766046900012036,
+                  "added_predecessor_seconds": 54.215,
+                  "removed_predecessor_seconds": 0.008,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                      "duration": 54.215,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1656",
+            "build": "1"
+          },
+          "delta_apfdc": -0.13425554326751044,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1656",
+                "build": "1",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.13425554326751044,
+              "first_selected_semantic_share": 0.8447185791178481,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.002,
+              "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.features.Spring53FeaturesTest",
+                  "position_shift": 6,
+                  "completion_shift_seconds": 132.808,
+                  "apfdc_delta": -0.1342555432675104,
+                  "added_predecessor_seconds": 140.422,
+                  "removed_predecessor_seconds": 7.614,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.JtaTest",
+                      "duration": 33.844,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.MBeanExampleTest",
+                      "duration": 33.368,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                      "duration": 23.912,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.InstanceTest",
+                      "duration": 14.975,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.jpm.ProcessTest",
+                      "duration": 13.385,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "best_physical": [
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1645",
+            "build": "1"
+          },
+          "delta_apfdc": 0.7725195043082254,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1645",
+                "build": "1",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.7725195043082254,
+              "first_selected_semantic_share": 0.9735584394819319,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.041,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+                  "position_shift": -43,
+                  "completion_shift_seconds": -824.9279999999999,
+                  "apfdc_delta": 0.7725195043082254,
+                  "added_predecessor_seconds": 0,
+                  "removed_predecessor_seconds": 824.928,
+                  "largest_added_predecessors": [],
+                  "history_group": "N0",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1504",
+            "build": "1"
+          },
+          "delta_apfdc": 0.3294042113828962,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1504",
+                "build": "1",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.3294042113828962,
+              "first_selected_semantic_share": 0.9995297448500412,
+              "first_selected_failed": false,
+              "first_selected_duration": 4.928,
+              "first_selected": "org.apache.karaf.itests.HttpTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.JMXSecurityTest",
+                  "position_shift": -21,
+                  "completion_shift_seconds": -301.169,
+                  "apfdc_delta": 0.3294042113828963,
+                  "added_predecessor_seconds": 34.621,
+                  "removed_predecessor_seconds": 335.79,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.JtaTest",
+                      "duration": 34.621,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1579",
+            "build": "1"
+          },
+          "delta_apfdc": 0.1909736950139057,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1579",
+                "build": "1",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.1909736950139057,
+              "first_selected_semantic_share": 0.9758252311181176,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.042,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.JmsTest",
+                  "position_shift": 1,
+                  "completion_shift_seconds": 63.79900000000043,
+                  "apfdc_delta": -0.003883645141763818,
+                  "added_predecessor_seconds": 72.394,
+                  "removed_predecessor_seconds": 8.595,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.main.MainLockingTest",
+                      "duration": 23.415,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+                      "duration": 12.808,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 11.594,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                      "duration": 9.675,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                      "duration": 7.246,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.XATest",
+                  "position_shift": 12,
+                  "completion_shift_seconds": 56.054999999999836,
+                  "apfdc_delta": -0.003412243584093318,
+                  "added_predecessor_seconds": 56.438,
+                  "removed_predecessor_seconds": 0.383,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                      "duration": 21.873,
+                      "failed": true
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 11.594,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                      "duration": 9.675,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.FeatureTest",
+                      "duration": 5.69,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                      "duration": 2.601,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                  "position_shift": -29,
+                  "completion_shift_seconds": -0.16699999999999982,
+                  "apfdc_delta": 1.0165813549970259e-05,
+                  "added_predecessor_seconds": 0,
+                  "removed_predecessor_seconds": 0.167,
+                  "largest_added_predecessors": [],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                  "position_shift": -101,
+                  "completion_shift_seconds": -3256.9280000000003,
+                  "apfdc_delta": 0.198259417926213,
+                  "added_predecessor_seconds": 0,
+                  "removed_predecessor_seconds": 3256.928,
+                  "largest_added_predecessors": [],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1511",
+            "build": "2"
+          },
+          "delta_apfdc": 0.1691396331590982,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1511",
+                "build": "2",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.1691396331590982,
+              "first_selected_semantic_share": 0.9755754513658909,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.002,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.JmsTest",
+                  "position_shift": -10,
+                  "completion_shift_seconds": -225.02099999999996,
+                  "apfdc_delta": 0.16913963315909816,
+                  "added_predecessor_seconds": 105.684,
+                  "removed_predecessor_seconds": 330.705,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.JtaTest",
+                      "duration": 58.989,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 17.126,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.InstanceTest",
+                      "duration": 16.172,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.jpm.ProcessTest",
+                      "duration": 13.397,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "karaf",
+            "pr": "PR-1536",
+            "build": "2"
+          },
+          "delta_apfdc": 0.16214304845931082,
+          "stages": [
+            {
+              "key": {
+                "project": "karaf",
+                "pr": "PR-1536",
+                "build": "2",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.16214304845931082,
+              "first_selected_semantic_share": 0.9755886465737107,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.072,
+              "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                  "position_shift": -17,
+                  "completion_shift_seconds": -191.90099999999973,
+                  "apfdc_delta": 0.16214304845931085,
+                  "added_predecessor_seconds": 90.549,
+                  "removed_predecessor_seconds": 282.45,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.karaf.itests.JtaTest",
+                      "duration": 57.357,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.InstanceTest",
+                      "duration": 16.678,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                      "duration": 16.514,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "activemq": {
+      "paired_vs_history_cost": {
+        "count": 57,
+        "mean": -0.033937751266431206,
+        "median": -0.014067477111496252,
+        "positive": 10,
+        "negative": 47,
+        "tie": 0
+      },
+      "first_selected_semantic_share": {
+        "count": 126,
+        "mean": 0.9864443347316406,
+        "median": 0.9995288136760794,
+        "positive": 126,
+        "negative": 0,
+        "tie": 0
+      },
+      "groups_observation_level_descriptive": {
+        "N0": {
+          "tests": 1779,
+          "failures": 5,
+          "delayed_failures": 2,
+          "advanced_failures": 3,
+          "valid_failing_source": 5,
+          "apfdc_contributions": {
+            "count": 5,
+            "mean": 0.03232040826824034,
+            "median": 0.09207484671611306,
+            "positive": 3,
+            "negative": 2,
+            "tie": 0
+          }
+        },
+        "N1_4": {
+          "tests": 4593,
+          "failures": 32,
+          "delayed_failures": 28,
+          "advanced_failures": 4,
+          "valid_failing_source": 32,
+          "apfdc_contributions": {
+            "count": 32,
+            "mean": -0.023608765273875013,
+            "median": -0.005204015670681861,
+            "positive": 4,
+            "negative": 28,
+            "tie": 0
+          }
+        },
+        "N5plus": {
+          "tests": 103466,
+          "failures": 117,
+          "delayed_failures": 92,
+          "advanced_failures": 25,
+          "valid_failing_source": 116,
+          "apfdc_contributions": {
+            "count": 117,
+            "mean": -0.011457892091998118,
+            "median": -0.0008262726208642237,
+            "positive": 25,
+            "negative": 92,
+            "tie": 0
+          }
+        }
+      },
+      "variants_vs_history_cost": {
+        "hc_alpha_0.0": {
+          "count": 57,
+          "mean": 0.0,
+          "median": 0.0,
+          "positive": 0,
+          "negative": 0,
+          "tie": 57
+        },
+        "hc_alpha_0.25": {
+          "count": 57,
+          "mean": -0.006591050314593713,
+          "median": -0.0037296148324346134,
+          "positive": 14,
+          "negative": 42,
+          "tie": 1
+        },
+        "hc_falcon_normalized_v1": {
+          "count": 57,
+          "mean": -0.033937751266431206,
+          "median": -0.014067477111496252,
+          "positive": 10,
+          "negative": 47,
+          "tie": 0
+        },
+        "hc_alpha_0.75": {
+          "count": 57,
+          "mean": -0.08136394728679545,
+          "median": -0.038180736716882935,
+          "positive": 4,
+          "negative": 53,
+          "tie": 0
+        },
+        "hc_alpha_1.0": {
+          "count": 57,
+          "mean": -0.3643029826327101,
+          "median": -0.41866327266174086,
+          "positive": 4,
+          "negative": 53,
+          "tie": 0
+        },
+        "hc_falcon_topic_raw_v1": {
+          "count": 57,
+          "mean": -8.850623272725647e-06,
+          "median": -0.00018451363018656686,
+          "positive": 19,
+          "negative": 33,
+          "tie": 5
+        },
+        "no_confidence": {
+          "count": 57,
+          "mean": -0.03339279699290568,
+          "median": -0.01353673237786901,
+          "positive": 11,
+          "negative": 46,
+          "tie": 0
+        },
+        "borda_history_cost": {
+          "count": 57,
+          "mean": -0.11070858771709009,
+          "median": -0.076395943265814,
+          "positive": 13,
+          "negative": 44,
+          "tie": 0
+        },
+        "dante_cch_adapt_r1": {
+          "count": 57,
+          "mean": -0.14380400056865214,
+          "median": -0.04848034727439554,
+          "positive": 23,
+          "negative": 34,
+          "tie": 0
+        }
+      },
+      "worst_physical": [
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-977",
+            "build": "1"
+          },
+          "delta_apfdc": -0.5149774886541012,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-977",
+                "build": "1",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.5149774886541012,
+              "first_selected_semantic_share": 0.8889001988206812,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.001,
+              "first_selected": "org.apache.activemq.jaas.CertificateLoginModuleTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.broker.LinkStealingTest",
+                  "position_shift": 1,
+                  "completion_shift_seconds": 172.029,
+                  "apfdc_delta": -0.2586910035819656,
+                  "added_predecessor_seconds": 173.26500000000001,
+                  "removed_predecessor_seconds": 1.236,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 150.674,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.broker.interceptor.MessageInterceptorTest",
+                      "duration": 14.584,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.util.LRUCacheTest",
+                      "duration": 2.842,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.command.VisibilityTest",
+                      "duration": 2.592,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.util.DataByteArrayInputStreamTest",
+                      "duration": 2.573,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N1_4",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.activemq.broker.OpenwireConnectionTest",
+                  "position_shift": 0,
+                  "completion_shift_seconds": 170.43,
+                  "apfdc_delta": -0.25628648507213553,
+                  "added_predecessor_seconds": 173.26500000000001,
+                  "removed_predecessor_seconds": 2.835,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 150.674,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.broker.interceptor.MessageInterceptorTest",
+                      "duration": 14.584,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.util.LRUCacheTest",
+                      "duration": 2.842,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.command.VisibilityTest",
+                      "duration": 2.592,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.util.DataByteArrayInputStreamTest",
+                      "duration": 2.573,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N1_4",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1005",
+            "build": "4"
+          },
+          "delta_apfdc": -0.2999810973184941,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-1005",
+                "build": "4",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.2999810973184941,
+              "first_selected_semantic_share": 0.8952550598045276,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.005,
+              "first_selected": "org.apache.activemq.jaas.CertificateLoginModuleTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.store.kahadb.JournalCorruptionEofIndexRecoveryTest",
+                  "position_shift": 4,
+                  "completion_shift_seconds": 336.43899999999996,
+                  "apfdc_delta": -0.2999810973184941,
+                  "added_predecessor_seconds": 336.446,
+                  "removed_predecessor_seconds": 0.007,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.plist.PListImplTest",
+                      "duration": 167.333,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.disk.page.PageFileTest",
+                      "duration": 62.435,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 55.282,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.disk.index.BTreeIndexTest",
+                      "duration": 29.087,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.JmsQueueTransactionTest",
+                      "duration": 22.309,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1049",
+            "build": "2"
+          },
+          "delta_apfdc": -0.2967010355560875,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-1049",
+                "build": "2",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.2967010355560875,
+              "first_selected_semantic_share": 0.9993073347408161,
+              "first_selected_failed": false,
+              "first_selected_duration": 1.236,
+              "first_selected": "org.apache.activemq.store.kahadb.ErrorOnFutureSendTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.transport.auto.AutoSslTransportBrokerTest",
+                  "position_shift": 75,
+                  "completion_shift_seconds": 3648.1219999999994,
+                  "apfdc_delta": -0.2967010355560875,
+                  "added_predecessor_seconds": 3648.122,
+                  "removed_predecessor_seconds": 0,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.KahaDbVmConcurrentDispatchTest",
+                      "duration": 188.688,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.broker.scheduler.memory.InMemoryJmsCronSchedulerTest",
+                      "duration": 154.468,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.RedeliveryPolicyTest",
+                      "duration": 137.653,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.transport.mqtt.auto.MQTTAutoNioTest",
+                      "duration": 128.35,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.RequestReplyTempDestRemovalAdvisoryRaceTest",
+                      "duration": 117.668,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1005",
+            "build": "5"
+          },
+          "delta_apfdc": -0.26945082259820285,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-1005",
+                "build": "5",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.26945082259820285,
+              "first_selected_semantic_share": 0.8967907524796958,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.002,
+              "first_selected": "org.apache.activemq.jaas.CertificateLoginModuleTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.store.kahadb.JournalCorruptionEofIndexRecoveryTest",
+                  "position_shift": 5,
+                  "completion_shift_seconds": 305.6960000000001,
+                  "apfdc_delta": -0.2694508225982028,
+                  "added_predecessor_seconds": 309.332,
+                  "removed_predecessor_seconds": 3.636,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.plist.PListImplTest",
+                      "duration": 172.093,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 54.331,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.disk.index.BTreeIndexTest",
+                      "duration": 31.701,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.broker.interceptor.MessageInterceptorTest",
+                      "duration": 16.022,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.partition.ZooKeeperPartitionBrokerTest",
+                      "duration": 11.281,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1005",
+            "build": "6"
+          },
+          "delta_apfdc": -0.1221643844641076,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-1005",
+                "build": "6",
+                "stage": "single"
+              },
+              "delta_apfdc": -0.1221643844641076,
+              "first_selected_semantic_share": 0.8969819446930278,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.0,
+              "first_selected": "org.apache.activemq.jaas.CertificateLoginModuleTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.store.kahadb.JournalCorruptionEofIndexRecoveryTest",
+                  "position_shift": 12,
+                  "completion_shift_seconds": 137.222,
+                  "apfdc_delta": -0.12216438446410753,
+                  "added_predecessor_seconds": 141.161,
+                  "removed_predecessor_seconds": 3.939,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 52.347,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.disk.index.BTreeIndexTest",
+                      "duration": 29.892,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.partition.ZooKeeperPartitionBrokerTest",
+                      "duration": 11.19,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.disk.index.HashIndexTest",
+                      "duration": 9.519,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.command.VisibilityTest",
+                      "duration": 8.225,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "best_physical": [
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-1036",
+            "build": "3"
+          },
+          "delta_apfdc": 0.19915086775853674,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-1036",
+                "build": "3",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.19915086775853674,
+              "first_selected_semantic_share": 0.9993188311310375,
+              "first_selected_failed": false,
+              "first_selected_duration": 1.457,
+              "first_selected": "org.apache.activemq.store.kahadb.ErrorOnFutureSendTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.broker.jmx.MBeanWithAuditLogTest",
+                  "position_shift": -110,
+                  "completion_shift_seconds": -2282.7249999999985,
+                  "apfdc_delta": 0.1991508677585368,
+                  "added_predecessor_seconds": 233.548,
+                  "removed_predecessor_seconds": 2516.273,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.KahaDbVmConcurrentDispatchTest",
+                      "duration": 185.438,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 48.11,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-969",
+            "build": "2"
+          },
+          "delta_apfdc": 0.16950731725815782,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-969",
+                "build": "2",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.16950731725815782,
+              "first_selected_semantic_share": 1.0,
+              "first_selected_failed": false,
+              "first_selected_duration": 2.478,
+              "first_selected": "org.apache.activemq.store.kahadb.ErrorOnFutureSendTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.proxy.ProxyConnectorTest",
+                  "position_shift": 299,
+                  "completion_shift_seconds": 9377.135999999995,
+                  "apfdc_delta": -0.14508458407597782,
+                  "added_predecessor_seconds": 10129.773,
+                  "removed_predecessor_seconds": 752.637,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.usecases.DurableSubscriptionHangTestCase",
+                      "duration": 2253.839,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.DuplexAdvisoryRaceTest",
+                      "duration": 735.809,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.MemoryLimitTest",
+                      "duration": 459.559,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.TopicProducerDurableSubFlowControlTest",
+                      "duration": 428.352,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.DurableSubsOfflineSelectorConcurrentConsumeIndexUseTest",
+                      "duration": 265.132,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N0",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.activemq.store.SharedFileLockerTest",
+                  "position_shift": -311,
+                  "completion_shift_seconds": -5951.00000000001,
+                  "apfdc_delta": 0.09207484671611306,
+                  "added_predecessor_seconds": 2744.824,
+                  "removed_predecessor_seconds": 8695.824,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.usecases.DuplexAdvisoryRaceTest",
+                      "duration": 735.809,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.DurableSubscriptionOffline1Test",
+                      "duration": 202.748,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.KahaDbVmConcurrentDispatchTest",
+                      "duration": 195.612,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.plist.PListImplTest",
+                      "duration": 171.79,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.transport.mqtt.MQTTNIOSSLTest",
+                      "duration": 123.87,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N0",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.activemq.usecases.RequestReplyToTopicViaThreeNetworkHopsTest",
+                  "position_shift": -472,
+                  "completion_shift_seconds": -14381.76700000001,
+                  "apfdc_delta": 0.22251705461802254,
+                  "added_predecessor_seconds": 227.185,
+                  "removed_predecessor_seconds": 14608.952,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.usecases.TwoBrokerVirtualTopicSelectorAwareForwardingTest",
+                      "duration": 46.185,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.VerifyNetworkConsumersDisconnectTest",
+                      "duration": 41.03,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.TwoBrokerDurableForwardStaticRestartTest",
+                      "duration": 27.391,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usecases.TopicProducerToSubFileCursorTest",
+                      "duration": 22.995,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.bugs.AMQ2754Test",
+                      "duration": 17.188,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N0",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-962",
+            "build": "4"
+          },
+          "delta_apfdc": 0.0178899878661839,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-962",
+                "build": "4",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.0178899878661839,
+              "first_selected_semantic_share": 0.999354550068364,
+              "first_selected_failed": false,
+              "first_selected_duration": 3.437,
+              "first_selected": "org.apache.activemq.store.kahadb.ErrorOnFutureSendTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.usecases.TwoBrokersStopSlaveTest",
+                  "position_shift": -13,
+                  "completion_shift_seconds": -368.52399999999994,
+                  "apfdc_delta": 0.017889987866183836,
+                  "added_predecessor_seconds": 39.927,
+                  "removed_predecessor_seconds": 408.45099999999996,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.transport.stomp.auto.StompAutoNioSslTest",
+                      "duration": 33.109,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.ErrorOnFutureSendTest",
+                      "duration": 3.437,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.bugs.AMQ4671Test",
+                      "duration": 1.833,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.JmsQueueCompositeSendReceiveTest",
+                      "duration": 1.548,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-965",
+            "build": "8"
+          },
+          "delta_apfdc": 0.012480578360182681,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-965",
+                "build": "8",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.012480578360182681,
+              "first_selected_semantic_share": 0.9993384813732016,
+              "first_selected_failed": false,
+              "first_selected_duration": 2.692,
+              "first_selected": "org.apache.activemq.store.kahadb.ErrorOnFutureSendTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.jmx.DLQRetryTest",
+                  "position_shift": -69,
+                  "completion_shift_seconds": -244.79499999999916,
+                  "apfdc_delta": 0.012480578360182631,
+                  "added_predecessor_seconds": 191.687,
+                  "removed_predecessor_seconds": 436.48199999999997,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.transport.mqtt.auto.MQTTAutoNioTest",
+                      "duration": 115.291,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.transport.stomp.StompNIOTest",
+                      "duration": 38.462,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.broker.scheduler.memory.InMemoryJobSchedulerJmxManagementTests",
+                      "duration": 13.179,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.security.JaasDualAuthenticationNetworkBridgeNioSslTest",
+                      "duration": 7.928,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.JmsQueueBrowserExpirationTest",
+                      "duration": 5.112,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "activemq",
+            "pr": "PR-984",
+            "build": "3"
+          },
+          "delta_apfdc": 0.0069476933358501025,
+          "stages": [
+            {
+              "key": {
+                "project": "activemq",
+                "pr": "PR-984",
+                "build": "3",
+                "stage": "single"
+              },
+              "delta_apfdc": 0.0069476933358501025,
+              "first_selected_semantic_share": 0.9995326364401069,
+              "first_selected_failed": false,
+              "first_selected_duration": 2.511,
+              "first_selected": "org.apache.activemq.bugs.AMQ3879Test",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.activemq.config.BrokerXmlConfigStartTest",
+                  "position_shift": -67,
+                  "completion_shift_seconds": -146.08499999999822,
+                  "apfdc_delta": 0.006947693335850084,
+                  "added_predecessor_seconds": 818.756,
+                  "removed_predecessor_seconds": 964.841,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.activemq.store.kahadb.KahaDbVmConcurrentDispatchTest",
+                      "duration": 197.276,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.bugs.AMQ4485NetworkOfXBrokersWithNDestsFanoutTransactionTest",
+                      "duration": 152.963,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.transport.mqtt.MQTTNIOSSLTest",
+                      "duration": 126.167,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.transport.mqtt.auto.MQTTAutoNioTest",
+                      "duration": 114.818,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.activemq.usage.MemoryUsageConcurrencyTest",
+                      "duration": 50.886,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "log4j": {
+      "paired_vs_history_cost": {
+        "count": 25,
+        "mean": 0.007768285086034854,
+        "median": -0.001171090236883554,
+        "positive": 4,
+        "negative": 21,
+        "tie": 0
+      },
+      "first_selected_semantic_share": {
+        "count": 155,
+        "mean": 0.9952331408748079,
+        "median": 0.9970839323200853,
+        "positive": 155,
+        "negative": 0,
+        "tie": 0
+      },
+      "groups_observation_level_descriptive": {
+        "N0": {
+          "tests": 79,
+          "failures": 1,
+          "delayed_failures": 0,
+          "advanced_failures": 1,
+          "valid_failing_source": 1,
+          "apfdc_contributions": {
+            "count": 1,
+            "mean": 0.14351199008627905,
+            "median": 0.14351199008627905,
+            "positive": 1,
+            "negative": 0,
+            "tie": 0
+          }
+        },
+        "N1_4": {
+          "tests": 282,
+          "failures": 3,
+          "delayed_failures": 3,
+          "advanced_failures": 0,
+          "valid_failing_source": 3,
+          "apfdc_contributions": {
+            "count": 3,
+            "mean": -0.0009240228971103875,
+            "median": -0.0008696301019542924,
+            "positive": 0,
+            "negative": 3,
+            "tie": 0
+          }
+        },
+        "N5plus": {
+          "tests": 98325,
+          "failures": 60,
+          "delayed_failures": 44,
+          "advanced_failures": 11,
+          "valid_failing_source": 60,
+          "apfdc_contributions": {
+            "count": 60,
+            "mean": -0.0008149946308216772,
+            "median": -0.0010750685930532248,
+            "positive": 11,
+            "negative": 44,
+            "tie": 5
+          }
+        }
+      },
+      "variants_vs_history_cost": {
+        "hc_alpha_0.0": {
+          "count": 25,
+          "mean": 0.0,
+          "median": 0.0,
+          "positive": 0,
+          "negative": 0,
+          "tie": 25
+        },
+        "hc_alpha_0.25": {
+          "count": 25,
+          "mean": 0.0056923171214702676,
+          "median": -4.840112761550497e-05,
+          "positive": 6,
+          "negative": 19,
+          "tie": 0
+        },
+        "hc_falcon_normalized_v1": {
+          "count": 25,
+          "mean": 0.007768285086034854,
+          "median": -0.001171090236883554,
+          "positive": 4,
+          "negative": 21,
+          "tie": 0
+        },
+        "hc_alpha_0.75": {
+          "count": 25,
+          "mean": 0.010044938624096049,
+          "median": -0.005313608111744195,
+          "positive": 4,
+          "negative": 21,
+          "tie": 0
+        },
+        "hc_alpha_1.0": {
+          "count": 25,
+          "mean": -0.1946325102020682,
+          "median": -0.28876971829327325,
+          "positive": 3,
+          "negative": 22,
+          "tie": 0
+        },
+        "hc_falcon_topic_raw_v1": {
+          "count": 25,
+          "mean": 0.00036683350470388063,
+          "median": 0.0,
+          "positive": 12,
+          "negative": 7,
+          "tie": 6
+        },
+        "no_confidence": {
+          "count": 25,
+          "mean": 0.04034613081933427,
+          "median": -0.0032231888718335933,
+          "positive": 6,
+          "negative": 19,
+          "tie": 0
+        },
+        "borda_history_cost": {
+          "count": 25,
+          "mean": 0.01277100845755307,
+          "median": -0.0006605019815060231,
+          "positive": 8,
+          "negative": 17,
+          "tie": 0
+        },
+        "dante_cch_adapt_r1": {
+          "count": 25,
+          "mean": 0.04150696743265134,
+          "median": 0.0004213274838720249,
+          "positive": 15,
+          "negative": 10,
+          "tie": 0
+        }
+      },
+      "worst_physical": [
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-576",
+            "build": "1"
+          },
+          "delta_apfdc": -0.05733247418894105,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-576",
+                "build": "1",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": -0.034044437349873835,
+              "first_selected_semantic_share": 0.9973215788009442,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.057,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.LoggerSupplierTest",
+                  "position_shift": 23,
+                  "completion_shift_seconds": 35.830000000000055,
+                  "apfdc_delta": -0.034044437349873856,
+                  "added_predecessor_seconds": 38.006,
+                  "removed_predecessor_seconds": 2.176,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 11.44,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                      "duration": 3.291,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.resolver.MessageResolverTest",
+                      "duration": 3.235,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                      "duration": 1.956,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                      "duration": 1.439,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            },
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-576",
+                "build": "1",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": -0.08062051102800827,
+              "first_selected_semantic_share": 0.9970071486940899,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.028,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+                  "position_shift": 19,
+                  "completion_shift_seconds": 55.12499999999994,
+                  "apfdc_delta": -0.08062051102800832,
+                  "added_predecessor_seconds": 64.048,
+                  "removed_predecessor_seconds": 8.923,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 11.003,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                      "duration": 7.599,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                      "duration": 6.418,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.plugins.util.ResolverUtilTest",
+                      "duration": 5.882,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.net.SocketReconnectTest",
+                      "duration": 3.958,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-544",
+            "build": "1"
+          },
+          "delta_apfdc": -0.04020901084132006,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-544",
+                "build": "1",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": -0.02373415523769573,
+              "first_selected_semantic_share": 0.9974611515859393,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.025,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+                  "position_shift": 6,
+                  "completion_shift_seconds": 116.14099999999996,
+                  "apfdc_delta": -0.02016465635304479,
+                  "added_predecessor_seconds": 141.608,
+                  "removed_predecessor_seconds": 25.467,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.FileAppenderPermissionsTest",
+                      "duration": 23.961,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutingAppenderWithPurgingTest",
+                      "duration": 23.576,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.FilterPerformanceComparison",
+                      "duration": 18.577,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.FileAppenderTest",
+                      "duration": 16.56,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 11.283,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+                  "position_shift": -12,
+                  "completion_shift_seconds": 13.876999999999867,
+                  "apfdc_delta": -0.002409355319923194,
+                  "added_predecessor_seconds": 46.916,
+                  "removed_predecessor_seconds": 33.039,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 11.283,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 3.432,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.osgi.tests.equinox.EquinoxLoadApiBundleTest",
+                      "duration": 3.296,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.util.TruncatingBufferedWriterTest",
+                      "duration": 2.199,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderColumnMappingPatternTest",
+                      "duration": 2.168,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+                  "position_shift": 33,
+                  "completion_shift_seconds": 6.681999999999988,
+                  "apfdc_delta": -0.0011601435647277444,
+                  "added_predecessor_seconds": 7.441,
+                  "removed_predecessor_seconds": 0.759,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                      "duration": 0.753,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 0.69,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.layout.Rfc5424LayoutTest",
+                      "duration": 0.606,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                      "duration": 0.586,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.SimplePerfTest",
+                      "duration": 0.544,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.flume.appender.FlumePersistentAppenderTest",
+                  "position_shift": 0,
+                  "completion_shift_seconds": 2.2737367544323206e-13,
+                  "apfdc_delta": -3.9477118580359305e-17,
+                  "added_predecessor_seconds": 0,
+                  "removed_predecessor_seconds": 0,
+                  "largest_added_predecessors": [],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            },
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-544",
+                "build": "1",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": -0.056683866444944386,
+              "first_selected_semantic_share": 0.9970838365091345,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.035,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+                  "position_shift": 3,
+                  "completion_shift_seconds": 79.40399999999988,
+                  "apfdc_delta": -0.04045412305585438,
+                  "added_predecessor_seconds": 109.20700000000001,
+                  "removed_predecessor_seconds": 29.803,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutingAppenderWithPurgingTest",
+                      "duration": 23.751,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.FileAppenderTest",
+                      "duration": 15.792,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.FilterPerformanceComparison",
+                      "duration": 15.659,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderCronOnceADayTest",
+                      "duration": 14.553,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeAppenderTest",
+                      "duration": 10.429,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+                  "position_shift": -9,
+                  "completion_shift_seconds": 25.865999999999957,
+                  "apfdc_delta": -0.013178005477844038,
+                  "added_predecessor_seconds": 49.719,
+                  "removed_predecessor_seconds": 23.853,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 6.018,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.net.SocketReconnectTest",
+                      "duration": 3.98,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 3.501,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                      "duration": 3.301,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.plugins.convert.TypeConvertersTest",
+                      "duration": 2.498,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+                  "position_shift": 23,
+                  "completion_shift_seconds": 5.989999999999998,
+                  "apfdc_delta": -0.0030517379112458822,
+                  "added_predecessor_seconds": 6.171,
+                  "removed_predecessor_seconds": 0.181,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeDirectTest",
+                      "duration": 1.84,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                      "duration": 0.691,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                      "duration": 0.603,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.plugins.validation.validators.ValidatingPluginWithGenericBuilderTest",
+                      "duration": 0.307,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                      "duration": 0.269,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-608",
+            "build": "3"
+          },
+          "delta_apfdc": -0.03368231413617373,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-608",
+                "build": "3",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": -0.024584147448077354,
+              "first_selected_semantic_share": 0.9970004858843639,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.033,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+                  "position_shift": 3,
+                  "completion_shift_seconds": 16.445000000000014,
+                  "apfdc_delta": -0.024584147448077295,
+                  "added_predecessor_seconds": 22.912,
+                  "removed_predecessor_seconds": 6.467,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 7.154,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                      "duration": 2.428,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                      "duration": 1.449,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                      "duration": 1.156,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldTest",
+                      "duration": 1.156,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            },
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-608",
+                "build": "3",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": -0.042780480824270106,
+              "first_selected_semantic_share": 0.9969292109463656,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.121,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+                  "position_shift": 3,
+                  "completion_shift_seconds": 53.81099999999995,
+                  "apfdc_delta": -0.04278048082427013,
+                  "added_predecessor_seconds": 72.904,
+                  "removed_predecessor_seconds": 19.093,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 25.209,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                      "duration": 6.288,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldTest",
+                      "duration": 4.107,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                      "duration": 3.259,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.spring.cloud.config.service.ConfigServiceApplicationTest",
+                      "duration": 3.175,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-544",
+            "build": "2"
+          },
+          "delta_apfdc": -0.02880902408684821,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-544",
+                "build": "2",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": -0.029608006490429273,
+              "first_selected_semantic_share": 0.9974229980936481,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.024,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+                  "position_shift": 15,
+                  "completion_shift_seconds": 55.31299999999993,
+                  "apfdc_delta": -0.024113723761780986,
+                  "added_predecessor_seconds": 61.509,
+                  "removed_predecessor_seconds": 6.196,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 6.923,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.filter.BurstFilterTest",
+                      "duration": 6.886,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutTest",
+                      "duration": 5.78,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.util.WatchHttpTest",
+                      "duration": 5.195,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 3.38,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+                  "position_shift": 24,
+                  "completion_shift_seconds": 12.018000000000008,
+                  "apfdc_delta": -0.005239251752193597,
+                  "added_predecessor_seconds": 13.287,
+                  "removed_predecessor_seconds": 1.269,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                      "duration": 2.099,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                      "duration": 1.354,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                      "duration": 1.069,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.web.Log4jShutdownOnContextDestroyedListenerTest",
+                      "duration": 0.732,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                      "duration": 0.689,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+                  "position_shift": -8,
+                  "completion_shift_seconds": 0.5849999999999991,
+                  "apfdc_delta": -0.0002550309764547551,
+                  "added_predecessor_seconds": 0.674,
+                  "removed_predecessor_seconds": 0.089,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 0.65,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.slf4j.OptionalTest",
+                      "duration": 0.024,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            },
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-544",
+                "build": "2",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": -0.02801004168326715,
+              "first_selected_semantic_share": 0.9970975855507993,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.042,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWrite1906Test",
+                  "position_shift": 12,
+                  "completion_shift_seconds": 50.85699999999997,
+                  "apfdc_delta": -0.021787111173943018,
+                  "added_predecessor_seconds": 57.674,
+                  "removed_predecessor_seconds": 6.817,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.filter.BurstFilterTest",
+                      "duration": 6.939,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 6.191,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.spi.LoggerAdapterTest",
+                      "duration": 4.032,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.net.SocketReconnectTest",
+                      "duration": 3.977,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 3.587,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.impl.NestedLoggingFromThrowableMessageTest",
+                  "position_shift": 25,
+                  "completion_shift_seconds": 14.237999999999985,
+                  "apfdc_delta": -0.006099551465768733,
+                  "added_predecessor_seconds": 15.530000000000001,
+                  "removed_predecessor_seconds": 1.292,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAppenderTest",
+                      "duration": 3.333,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderTimeAndSizeDirectTest",
+                      "duration": 1.818,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                      "duration": 1.204,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.QueueFullAsyncLoggerLoggingFromToStringTest",
+                      "duration": 0.999,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerThreadContextTest",
+                      "duration": 0.786,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.layout.PatternLayoutTest",
+                  "position_shift": -4,
+                  "completion_shift_seconds": 0.2879999999999996,
+                  "apfdc_delta": -0.0001233790435553726,
+                  "added_predecessor_seconds": 0.552,
+                  "removed_predecessor_seconds": 0.264,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.spring.boot.SpringProfileTest",
+                      "duration": 0.246,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                      "duration": 0.141,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.log4j.CategoryTest",
+                      "duration": 0.05,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.slf4j.OptionalTest",
+                      "duration": 0.042,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.action.IfAnyTest",
+                      "duration": 0.032,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-591",
+            "build": "2"
+          },
+          "delta_apfdc": -0.010535796636902295,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-591",
+                "build": "2",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": -0.010535796636902295,
+              "first_selected_semantic_share": 0.9969967258793504,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.139,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqAppenderTest",
+                  "position_shift": 8,
+                  "completion_shift_seconds": 26.00899999999993,
+                  "apfdc_delta": -0.009880134657623609,
+                  "added_predecessor_seconds": 33.352,
+                  "removed_predecessor_seconds": 7.343,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.resolver.MessageResolverTest",
+                      "duration": 6.176,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                      "duration": 6.068,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderH2FactoryMethodTest",
+                      "duration": 3.266,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 2.38,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerConfigThreadContextCopyOnWriteTest",
+                      "duration": 2.29,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.net.SocketAppenderReconnectTest",
+                  "position_shift": -22,
+                  "completion_shift_seconds": 1.7259999999999849,
+                  "apfdc_delta": -0.0006556619792786445,
+                  "added_predecessor_seconds": 4.608,
+                  "removed_predecessor_seconds": 2.882,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 2.38,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                      "duration": 1.503,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                      "duration": 0.373,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.mongodb4.MongoDb4TestTestRuleTest",
+                      "duration": 0.352,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N1_4",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "best_physical": [
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-597",
+            "build": "1"
+          },
+          "delta_apfdc": 0.18310181140427528,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-597",
+                "build": "1",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": 0.18310181140427528,
+              "first_selected_semantic_share": 0.9971575664194354,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.036,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.HttpAppenderTest",
+                  "position_shift": -72,
+                  "completion_shift_seconds": -125.74700000000004,
+                  "apfdc_delta": 0.1831018114042752,
+                  "added_predecessor_seconds": 9.574,
+                  "removed_predecessor_seconds": 135.321,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 7.641,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 1.933,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-591",
+            "build": "1"
+          },
+          "delta_apfdc": 0.14351199008627902,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-591",
+                "build": "1",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": 0.14351199008627902,
+              "first_selected_semantic_share": 0.9969955552696017,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.027,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.net.SocketAppenderReconnectTest",
+                  "position_shift": -6,
+                  "completion_shift_seconds": -73.88600000000002,
+                  "apfdc_delta": 0.14351199008627905,
+                  "added_predecessor_seconds": 0,
+                  "removed_predecessor_seconds": 73.886,
+                  "largest_added_predecessors": [],
+                  "history_group": "N0",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-608",
+            "build": "2"
+          },
+          "delta_apfdc": 0.06685756767612677,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-608",
+                "build": "2",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": 0.06866775156838512,
+              "first_selected_semantic_share": 0.9970136744922589,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.035,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+                  "position_shift": -50,
+                  "completion_shift_seconds": -46.28899999999993,
+                  "apfdc_delta": 0.06866775156838505,
+                  "added_predecessor_seconds": 16.598,
+                  "removed_predecessor_seconds": 62.887,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 6.529,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                      "duration": 2.411,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderColumnMappingPatternTest",
+                      "duration": 2.207,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 1.871,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                      "duration": 1.84,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            },
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-608",
+                "build": "2",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": 0.06504738378386843,
+              "first_selected_semantic_share": 0.9969384756664047,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.036,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.appender.mom.JmsAppenderTest",
+                  "position_shift": -62,
+                  "completion_shift_seconds": -49.873000000000104,
+                  "apfdc_delta": 0.06504738378386853,
+                  "added_predecessor_seconds": 19.135,
+                  "removed_predecessor_seconds": 69.008,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.GcFreeAsynchronousLoggingTest",
+                      "duration": 6.618,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.flume.appender.FlumeEmbeddedAgentTest",
+                      "duration": 3.288,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.db.jdbc.JdbcAppenderColumnMappingPatternTest",
+                      "duration": 2.196,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.routing.RoutesScriptAppenderTest",
+                      "duration": 2.062,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.osgi.tests.felix.FelixLoadApiBundleTest",
+                      "duration": 1.903,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-573",
+            "build": "8"
+          },
+          "delta_apfdc": 0.0010151020807864786,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-573",
+                "build": "8",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": 0.0019561781106367526,
+              "first_selected_semantic_share": 0.9972771499770735,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.033,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.pattern.RegexReplacementTest",
+                  "position_shift": 16,
+                  "completion_shift_seconds": 2.2540000000000013,
+                  "apfdc_delta": -0.0016433937612281566,
+                  "added_predecessor_seconds": 2.34,
+                  "removed_predecessor_seconds": 0.086,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 0.741,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                      "duration": 0.581,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.pattern.RepeatPatternConverterTest",
+                      "duration": 0.123,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.util.datetime.FastDateParser_MoreOrLessTest",
+                      "duration": 0.098,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerContextSelectorInitialStateTest",
+                      "duration": 0.088,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.pattern.PatternParserTest",
+                  "position_shift": -43,
+                  "completion_shift_seconds": -4.936999999999994,
+                  "apfdc_delta": 0.0035995718718648613,
+                  "added_predecessor_seconds": 2.463,
+                  "removed_predecessor_seconds": 7.4,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 0.741,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                      "duration": 0.596,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                      "duration": 0.581,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                      "duration": 0.414,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.RandomAccessFileManagerTest",
+                      "duration": 0.131,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            },
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-573",
+                "build": "8",
+                "stage": "Windows_Test"
+              },
+              "delta_apfdc": 7.402605093620451e-05,
+              "first_selected_semantic_share": 0.9969894295789342,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.043,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.core.pattern.RegexReplacementTest",
+                  "position_shift": 22,
+                  "completion_shift_seconds": 4.643999999999999,
+                  "apfdc_delta": -0.0036187050583948643,
+                  "added_predecessor_seconds": 4.763,
+                  "removed_predecessor_seconds": 0.119,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.layout.template.json.JsonTemplateLayoutAdditionalFieldTest",
+                      "duration": 1.231,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 0.803,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                      "duration": 0.542,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.async.AsyncLoggerEventTranslationExceptionTest",
+                      "duration": 0.54,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                      "duration": 0.349,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                },
+                {
+                  "test_id": "org.apache.logging.log4j.core.pattern.PatternParserTest",
+                  "position_shift": -46,
+                  "completion_shift_seconds": -4.739000000000006,
+                  "apfdc_delta": 0.003692731109331025,
+                  "added_predecessor_seconds": 2.532,
+                  "removed_predecessor_seconds": 7.271,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.appender.rolling.RollingAppenderDirectWriteTest",
+                      "duration": 0.803,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.filter.ScriptFileFilterTest",
+                      "duration": 0.628,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.CustomConfigurationTest",
+                      "duration": 0.542,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.MarkerMixInJsonTest",
+                      "duration": 0.349,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.log4j.core.impl.Log4jLogEventTest",
+                      "duration": 0.21,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": {
+            "project": "log4j",
+            "pr": "PR-647",
+            "build": "2"
+          },
+          "delta_apfdc": -8.792798948886738e-05,
+          "stages": [
+            {
+              "key": {
+                "project": "log4j",
+                "pr": "PR-647",
+                "build": "2",
+                "stage": "Ubuntu_Test"
+              },
+              "delta_apfdc": -8.792798948886738e-05,
+              "first_selected_semantic_share": 0.9970798984140875,
+              "first_selected_failed": false,
+              "first_selected_duration": 0.034,
+              "first_selected": "org.apache.logging.slf4j.OptionalTest",
+              "failure_shifts": [
+                {
+                  "test_id": "org.apache.logging.log4j.EventLoggerTest",
+                  "position_shift": 2,
+                  "completion_shift_seconds": 0.06999999999999995,
+                  "apfdc_delta": -8.792798948883685e-05,
+                  "added_predecessor_seconds": 0.07,
+                  "removed_predecessor_seconds": 0,
+                  "largest_added_predecessors": [
+                    {
+                      "test_id": "org.apache.logging.log4j.core.config.LoggersPluginTest",
+                      "duration": 0.036,
+                      "failed": false
+                    },
+                    {
+                      "test_id": "org.apache.logging.slf4j.OptionalTest",
+                      "duration": 0.034,
+                      "failed": false
+                    }
+                  ],
+                  "history_group": "N5plus",
+                  "valid_source": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "reserved_opened": false,
+  "stage6_freeze_verified": true,
+  "interpretation": "descriptive development diagnosis; contributions algebraically decompose APFDc; no causal or confirmation claim",
+  "source_freeze_sha256": "7ab8f32652be546d5f7f513f2344afc36fda25a72c6bd67512e6eb6ac31e907c"
+}

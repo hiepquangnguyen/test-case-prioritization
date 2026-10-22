@@ -1,0 +1,14 @@
+{
+  "project": "karaf",
+  "builds": 563,
+  "counts": {
+    "matched": 119761,
+    "missing": 43,
+    "ambiguous": 556
+  },
+  "matched_fraction": 0.9950232635427052,
+  "reserved_opened": false,
+  "requested_commits": 801,
+  "missing_commits": 0,
+  "provenance": "Declared metadata revision only; not independently verified CI execution revision"
+}

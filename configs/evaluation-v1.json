@@ -1,0 +1,50 @@
+{
+  "version": "stage4-evaluation-v1",
+  "status": "design_frozen_confirmation_not_opened",
+  "projects": {
+    "karaf": "exploratory_existing_stage3_split",
+    "activemq": "reports/stage4/activemq/selection.json",
+    "log4j": "reports/stage4/log4j/selection.json"
+  },
+  "split_unit": "physical_build_with_timestamp_ties_kept_together",
+  "warmup_fraction_target": 0.2,
+  "development_end_fraction_target": 0.5,
+  "source_sample_physical_builds": 20,
+  "source_coverage_pilot_gate": 0.9,
+  "primary_metric": "apfdc_midpoint",
+  "primary_method": "hc_falcon_normalized_v1",
+  "primary_comparators": ["falcon_lrts", "history_only", "history_cost"],
+  "primary_confirmation_projects": ["activemq", "log4j"],
+  "statistical_unit": "physical_build; seed_mean_then_defined_stage_mean",
+  "primary_inference_block_size": 10,
+  "block_sensitivity": [5, 20],
+  "wilcoxon": {
+    "alternative": "two-sided",
+    "zero_method": "pratt",
+    "correction": false,
+    "method": "approx",
+    "minimum_nonzero_blocks": 10,
+    "minimum_physical_pairs": 20
+  },
+  "holm_primary_family_size": 6,
+  "family_alpha": 0.05,
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 2026,
+  "engineering_gates": {
+    "peak_rss_bytes": 8589934592,
+    "p95_warm_overhead_fraction": 0.1
+  },
+  "pilot_effect_gate": {
+    "median_paired_apfdc_delta": 0.03,
+    "comparators": ["falcon_lrts", "history_cost"],
+    "minimum_development_projects": 2,
+    "total_development_projects": 3
+  },
+  "confirmation_open_gate": [
+    "implementation_and_dependency_hashes_frozen",
+    "standard_lazy_and_leakage_tests_passed",
+    "development_source_coverage_reported",
+    "baseline_adaptation_contracts_validated",
+    "no_configuration_selection_using_reserved_scores"
+  ]
+}

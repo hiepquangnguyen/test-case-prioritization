@@ -1,0 +1,10 @@
+{
+  "comparisons": 60,
+  "passed": true,
+  "upstream": "work/artifacts/falcon/py/fast.py + lsh.py",
+  "fixes": [
+    "UTF-8 encode xxhash input",
+    "per-build RNG",
+    "sort candidate tuple before random.choice"
+  ]
+}

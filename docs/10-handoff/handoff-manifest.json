@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-09-15T03:48:25.919222+00:00",
+  "scope": "handoff_documentation_only",
+  "tasks": 12,
+  "dependency_graph_valid": true,
+  "all_tasks_not_started": true,
+  "prior_freezes_verified": {
+    "reports/stage4/design-freeze.json": 33,
+    "reports/stage5/implementation-freeze.json": 41,
+    "reports/stage6/final-evidence-freeze.json": 645,
+    "reports/stage7/evidence-freeze.json": 8,
+    "reports/stage8/evidence-freeze.json": 614,
+    "reports/stage9/evidence-freeze.json": 3
+  },
+  "files_sha256": {
+    "docs/10-handoff/README.md": "5aded058b4358430ee68a85213afa669bb232101a29e9e480a9dcbe1e9ce07c9",
+    "docs/10-handoff/tasks.json": "0ab519822b0cccc43c4c8152ec81e86b8128ba4d29a65da921fcd822a2ce878a",
+    "docs/10-handoff/agent-prompt.md": "58fe62933ceddfa81ce81d04ce95e52ee2a676f9254399fb7de000e2dfd63ce4"
+  }
+}

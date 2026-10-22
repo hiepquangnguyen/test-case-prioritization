@@ -1,0 +1,74 @@
+\appendix
+\addcontentsline{toc}{section}{Phụ lục}
+
+\section*{Phụ lục A: Bảng đối chiếu mã nội bộ các giai đoạn (Stage)}
+\addcontentsline{toc}{subsection}{Phụ lục A: Bảng đối chiếu mã nội bộ các giai đoạn}
+\label{app:stages}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|c|p{4.2cm}|p{8.2cm}|}
+\hline
+\textbf{Mã nội bộ} & \textbf{Tên mô tả chính thức} & \textbf{Nội dung kỹ thuật cốt lõi} \\
+\hline
+Stage 1 & Rà soát dữ liệu đầu vào và kiểm định khả thi & Kiểm tra toàn vẹn dữ liệu Defects4J, LRTS và mô hình UniXcoder \\
+\hline
+Stage 2 & Thiết lập môi trường thử nghiệm sơ bộ & Dựng pipeline chạy thử và các baseline đối chứng cơ sở \\
+\hline
+Stage 3 & Khảo sát thí điểm Karaf & Thử nghiệm mô phỏng trên tập Karaf exploratory \\
+\hline
+Stage 4 & Thiết kế kiến trúc và mô hình HC-FALCON v1 & Xây dựng hàm mục tiêu kết hợp Submodular và Bayes \\
+\hline
+Stage 5 & Trích xuất mã nguồn và tiền xử lý embedding & Trích xuất 1.155 test class LRTS và tạo vector UniXcoder \\
+\hline
+Stage 6 & Thử nghiệm mô hình cơ sở HC-FALCON v1 & Đánh giá hai biến thể \texttt{topic\_raw} và \texttt{normalized} trên LRTS \\
+\hline
+Stage 7 & Chẩn đoán nguyên nhân sâu và Heavy Predecessors & Phân tích 161 build lỗi và đo đạc độ trễ thêm vào $T_{\text{add}}$ \\
+\hline
+Stage 8 & Biến thể hạn chế ngữ nghĩa theo cửa sổ lịch sử & Thử nghiệm áp trần điểm lịch sử ($q \ge 0{,}95 q_{\max}$) \\
+\hline
+Stage 9 & Kiểm tra độ chuẩn xác kỹ thuật và tính toàn vẹn & Đảm bảo tính toán đúng và kiểm tra chống rò rỉ dữ liệu \\
+\hline
+Stage 10 & Tái lập độc lập FALCON trên Defects4J & Tái lập 6 dự án Defects4J và phân rã Bridge Chart A/B/C/D \\
+\hline
+Stage 11 & Biến thể CNS-Greedy và phân tích nguyên nhân & Chuẩn hóa chi phí vào hàm tham lam và đo forensic 161 build \\
+\hline
+Stage 12 & Biến thể UGCS v2 và đánh giá cổng quyết định & Thuật toán bảo vệ bất định 4 bước và phán quyết NO-GO chính thức \\
+\hline
+\end{tabular}
+\caption{Bảng đối chiếu mã phân đoạn nội bộ với tên mô tả chính thức sử dụng trong báo cáo.}
+\end{table}
+
+\newpage
+\section*{Phụ lục C: Mã nguồn minh họa thuật toán cốt lõi}
+\addcontentsline{toc}{subsection}{Phụ lục C: Mã nguồn minh họa thuật toán cốt lõi}
+\label{app:code}
+
+Dưới đây là phần triển khai Python minh họa cho thuật toán xếp hạng UGCS v2 (\textit{Uncertainty-Guarded Cost-aware Semantic Greedy}) được tiền đăng ký tại Stage 12:
+
+\begin{algorithm}[H]
+\caption{Mô phỏng thuật toán UGCS v2 (Uncertainty-Guarded Cost-aware Semantic Greedy)}
+\label{alg:ugcs_v2_code}
+\begin{algorithmic}[1]
+\Require Tập kiểm thử $V$, kernel tương đồng ngữ nghĩa $K$, lịch sử quan sát $\{h_t\}$, chi phí thực thi $\{c_t\}$
+\Ensure Hoán vị thứ tự kiểm thử $\pi$
+\State $p_t \leftarrow \text{EstimateBetaBernoulli}(h_t)$ \Comment{Ước lượng rủi ro lỗi tiên nghiệm Bayes}
+\State $\text{conf}_t \leftarrow 1 - \frac{1}{\sqrt{N_t + 1}}$ \Comment{Hệ số tin cậy theo số lần quan sát}
+\State $q_t \leftarrow \frac{p_t \cdot \text{conf}_t}{\sqrt{c_t}}$ \Comment{Chỉ số rủi ro - chi phí kết hợp}
+\State $q_{\max} \leftarrow \max_{t \in V} q_t$
+\State $V_{\text{top}} \leftarrow \{t \in V \mid q_t \ge (1 - \alpha) q_{\max}\}$ \Comment{Khoanh vùng ứng viên bất định}
+\State $S \leftarrow \emptyset$, $\pi \leftarrow []$
+\While{$V_{\text{top}} \setminus S \ne \emptyset$}
+    \State $t^* \leftarrow \arg\max_{t \in V_{\text{top}} \setminus S} \left[ q_t + \lambda \cdot \frac{\Delta FL(t \mid S)}{n \cdot c_t} \right]$ \Comment{Tham lam nhận thức chi phí}
+    \State $S \leftarrow S \cup \{t^*\}$
+    \State $\pi.\text{append}(t^*)$
+\EndWhile
+\State $V_{\text{rest}} \leftarrow V \setminus S$
+\State Sắp xếp $V_{\text{rest}}$ giảm dần theo $q_t$ (tie-breaking theo $c_t$ tăng dần)
+\State Nối $V_{\text{rest}}$ vào cuối $\pi$
+\State \Return $\pi$
+\end{algorithmic}
+\end{algorithm}

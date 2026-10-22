@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "method": "hc_ugcs_v2",
+    "baseline": "history_cost",
+    "split": "development_screening",
+    "purpose": "Paired effect size correction (Rank-biserial & Paired Cliff Delta)"
+  },
+  "projects": {
+    "karaf": {
+      "n": 79,
+      "wins": 20,
+      "losses": 55,
+      "ties": 4,
+      "win_rate_pct": 25.31645569620253,
+      "median_delta_pct": -0.058560982558319985,
+      "mean_delta_pct": 0.4787735555210487,
+      "wilcoxon_stat": 1067.0,
+      "p_value_raw": 0.012684388410941104,
+      "effect_sizes": {
+        "paired_cliffs_delta": -0.4430379746835443,
+        "paired_cliffs_delta_formula": "(wins - losses) / n",
+        "rank_biserial_wilcoxon": -0.3101754385964912,
+        "rank_biserial_wilcoxon_formula": "(W_plus - W_minus) / (W_plus + W_minus) [zeros excluded]",
+        "rank_biserial_pratt": -0.3240506329113924,
+        "rank_biserial_pratt_formula": "(W_plus - W_minus) / total_ranks [zeros included in ranking]",
+        "unpaired_cliffs_delta_diagnostic": -0.0017625380547989103,
+        "unpaired_cliffs_delta_explanation": "Calculated across all n*n unpaired combinations cand[i] vs base[j]. Dominated by cross-build score variance rather than within-build delta."
+      },
+      "rank_sums": {
+        "w_plus": 983.0,
+        "w_minus": 1867.0,
+        "w_plus_pratt": 1063.0,
+        "w_minus_pratt": 2087.0
+      },
+      "p_value_holm": 0.025368776821882207
+    },
+    "activemq": {
+      "n": 57,
+      "wins": 9,
+      "losses": 44,
+      "ties": 4,
+      "win_rate_pct": 15.789473684210526,
+      "median_delta_pct": -0.22353797590808355,
+      "mean_delta_pct": -0.15076670732716335,
+      "wilcoxon_stat": 318.0,
+      "p_value_raw": 6.297955996545535e-05,
+      "effect_sizes": {
+        "paired_cliffs_delta": -0.6140350877192983,
+        "paired_cliffs_delta_formula": "(wins - losses) / n",
+        "rank_biserial_wilcoxon": -0.6058700209643606,
+        "rank_biserial_wilcoxon_formula": "(W_plus - W_minus) / (W_plus + W_minus) [zeros excluded]",
+        "rank_biserial_pratt": -0.6091954022988506,
+        "rank_biserial_pratt_formula": "(W_plus - W_minus) / total_ranks [zeros included in ranking]",
+        "unpaired_cliffs_delta_diagnostic": -0.024930747922437674,
+        "unpaired_cliffs_delta_explanation": "Calculated across all n*n unpaired combinations cand[i] vs base[j]. Dominated by cross-build score variance rather than within-build delta."
+      },
+      "rank_sums": {
+        "w_plus": 282.0,
+        "w_minus": 1149.0,
+        "w_plus_pratt": 318.0,
+        "w_minus_pratt": 1325.0
+      },
+      "p_value_holm": 0.00018893867989636603
+    },
+    "log4j": {
+      "n": 25,
+      "wins": 6,
+      "losses": 17,
+      "ties": 2,
+      "win_rate_pct": 24.0,
+      "median_delta_pct": -0.0016556275266532694,
+      "mean_delta_pct": 0.16633584564037074,
+      "wilcoxon_stat": 113.0,
+      "p_value_raw": 0.1873169200152952,
+      "effect_sizes": {
+        "paired_cliffs_delta": -0.44,
+        "paired_cliffs_delta_formula": "(wins - losses) / n",
+        "rank_biserial_wilcoxon": -0.26811594202898553,
+        "rank_biserial_wilcoxon_formula": "(W_plus - W_minus) / (W_plus + W_minus) [zeros excluded]",
+        "rank_biserial_pratt": -0.2953846153846154,
+        "rank_biserial_pratt_formula": "(W_plus - W_minus) / total_ranks [zeros included in ranking]",
+        "unpaired_cliffs_delta_diagnostic": -0.0144,
+        "unpaired_cliffs_delta_explanation": "Calculated across all n*n unpaired combinations cand[i] vs base[j]. Dominated by cross-build score variance rather than within-build delta."
+      },
+      "rank_sums": {
+        "w_plus": 101.0,
+        "w_minus": 175.0,
+        "w_plus_pratt": 113.0,
+        "w_minus_pratt": 209.0
+      },
+      "p_value_holm": 0.1873169200152952
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "build_index": 264,
+  "total": 264,
+  "last_key": {
+    "project": "log4j",
+    "pr": "PR-647",
+    "build": "2",
+    "stage": "Windows_Test"
+  },
+  "peak_rss": 1670144000
+}

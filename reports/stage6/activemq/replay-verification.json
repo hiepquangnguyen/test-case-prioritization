@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "endpoint_order_checks": 252,
+  "strict_alpha_zero_equivalence": true,
+  "numerical_tie_exceptions": [],
+  "actual_cohort_mutation_checks": [
+    {
+      "key": {
+        "project": "activemq",
+        "pr": "PR-961",
+        "build": "2",
+        "stage": "single"
+      },
+      "full_tests": 1012,
+      "mutated_ineligible_builds": 150,
+      "standard_lazy_real_kernel_methods": 2,
+      "reconstructed_methods": 13
+    },
+    {
+      "key": {
+        "project": "activemq",
+        "pr": "PR-1051",
+        "build": "1",
+        "stage": "single"
+      },
+      "full_tests": 870,
+      "mutated_ineligible_builds": 33,
+      "standard_lazy_real_kernel_methods": 2,
+      "reconstructed_methods": 13
+    }
+  ],
+  "scope": "all development endpoints; first/last scored development full-inventory reconstruction and mutation",
+  "reserved_opened": false
+}

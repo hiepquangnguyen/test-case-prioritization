@@ -1,0 +1,95 @@
+\contentsline {section}{Lời cảm ơn}{i}{Doc-Start}%
+\contentsline {section}{Lời cam đoan}{ii}{Doc-Start}%
+\contentsline {section}{Tóm tắt nội dung}{iii}{Doc-Start}%
+\contentsline {section}{Danh sách hình vẽ}{vii}{Doc-Start}%
+\contentsline {section}{Danh sách bảng}{viii}{Doc-Start}%
+\contentsline {section}{Danh sách chữ viết tắt}{ix}{section*.1}%
+\contentsline {section}{\numberline {1}Giới thiệu}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Bối cảnh và động lực nghiên cứu}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Khoảng trống nghiên cứu}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Mục tiêu nghiên cứu}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Các câu hỏi nghiên cứu}{2}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Phạm vi và giới hạn}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Cấu trúc đồ án}{3}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Tổng quan lý thuyết và các công trình liên quan}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Kiểm thử hồi quy và tích hợp liên tục}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Kiểm thử phần mềm và chi phí kiểm thử}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Đường ống Tích hợp liên tục và Kiểm thử hồi quy}{4}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Bài toán Ưu tiên bộ kiểm thử (TCP)}{5}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Các độ đo đánh giá chất lượng lập lịch kiểm thử}{6}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Tỷ lệ phần trăm trung bình lỗi phát hiện (APFD)}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}APFD có nhận thức chi phí (APFDc)}{6}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Thời gian tới lỗi đầu tiên (TTFF)}{7}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Độ phủ tại ngưỡng ngân sách (Recall@$k\%$)}{8}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Nền tảng tối ưu hóa tổ hợp và hàm Submodular}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Hàm tập hợp và Tính chất Submodular}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Hàm Vị trí cơ sở (Facility Location)}{9}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Cận xấp xỉ $(1 - 1/e)$ của thuật toán tham lam}{10}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Kỹ thuật đánh giá lười (Lazy Greedy)}{11}{subsubsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.4}Biểu diễn ngữ nghĩa và mô hình hóa mã nguồn}{12}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Các mô hình ngôn ngữ mã nguồn (Code Language Models)}{12}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Trích xuất vector đặc trưng và Độ tương đồng cosin}{13}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Tổng quan các nghiên cứu liên quan và khoảng trống phương pháp luận}{13}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Ưu tiên bộ kiểm thử dựa trên độ bao phủ mã nguồn}{13}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Ưu tiên bộ kiểm thử dựa trên lịch sử lỗi và học máy}{14}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Phương pháp FALCON (Mensah-Boateng et al., ICST 2026)}{14}{subsubsection.2.5.3}%
+\contentsline {subsubsection}{\numberline {2.5.4}Phương pháp DANTE (Reale et al., ICST 2026)}{15}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.5}Định vị đề tài và khoảng trống phương pháp luận}{15}{subsubsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.6}Tóm tắt chương}{16}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Phương pháp đề xuất: HC-FALCON}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tổng quan kiến trúc}{17}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Kiến trúc phân tách hai pha (Two-Phase Architecture)}{17}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Nguyên tắc bảo vệ rào chắn thời gian (Temporal Causality Protection)}{18}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Mô hình toán học HC-FALCON v1}{19}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Hàm mục tiêu kết hợp $F_N(S)$}{19}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Thành phần bao phủ ngữ nghĩa Facility Location $FL(S)$}{20}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Ước lượng rủi ro lỗi Bayes Beta-Bernoulli $p_b(t)$}{20}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Hệ số tin cậy quan sát $\operatorname {conf}_b(t)$}{21}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Chỉ số rủi ro-chi phí $q_b(t)$}{21}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Hai biến thể trọng số: Trọng số thô và Chuẩn hóa}{22}{subsubsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.3}Tính chất Monotone Submodular và Bảo đảm lý thuyết}{23}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Phát biểu định lý và các giả thiết toán học}{23}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Phác thảo các bước chứng minh toán học}{24}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Phân định phạm vi bảo đảm lý thuyết giữa các biến thể}{25}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Khoảng trống phương pháp luận giữa hàm mục tiêu đại diện và độ đo APFDc}{26}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Bản chất bất đối xứng giữa tối ưu hóa tập con và thứ tự kiểm thử}{26}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Phản ví dụ số học kiểm chứng thực nghiệm}{26}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Các biến thể cải tiến}{29}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Biến thể Hạn chế Ngữ nghĩa theo cửa sổ lịch sử (Stage 8)}{29}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Biến thể CNS-Greedy (Stage 11)}{30}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Biến thể cuối UGCS v2 (Stage 12)}{31}{subsubsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.6}Phân tích độ phức tạp thuật toán}{33}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}Độ phức tạp thời gian (Time Complexity)}{33}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Độ phức tạp không gian (Space Complexity)}{35}{subsubsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.7}Tổng kết chương}{36}{subsection.3.7}%
+\contentsline {section}{\numberline {4}Thực nghiệm và kết quả}{36}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Thiết kế thực nghiệm}{37}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Hệ thống câu hỏi nghiên cứu (RQ1--RQ5)}{37}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Hai trục đánh giá độc lập}{37}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Tập dữ liệu Defects4J}{38}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Tập dữ liệu LRTS trên môi trường CI thực tế}{38}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Các đường cơ sở đối chứng (Baselines)}{39}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}Tiêu chí quyết định tiền đăng ký (Decision Gates)}{39}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}Phân tách dữ liệu và cơ chế niêm phong tập kiểm chứng}{40}{subsubsection.4.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.8}Phương pháp thống kê và kiểm định ghép cặp}{41}{subsubsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.2}Kết quả Trục 1: Tái lập FALCON trên benchmark Defects4J}{42}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Đối chiếu APFD trên 6 dự án phần mềm}{42}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Phân tích phân rã kỹ thuật Bridge trên dự án Chart}{43}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Phát hiện kỹ thuật về Attention Mask}{44}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Kết quả Trục 2: HC-FALCON trên hệ thống CI thực tế (LRTS)}{45}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Mốc đối chứng cơ sở ngẫu nhiên trên chuỗi thời gian CI}{45}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Diễn tiến các biến thể từ HC-FALCON v1 đến CNS-Greedy}{45}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Kết quả của biến thể cuối UGCS v2 (Stage 12)}{47}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Đánh giá các chỉ tiêu kỹ thuật (Overhead thời gian và Bộ nhớ)}{48}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Phán quyết thẩm định theo tiêu chí tiền đăng ký}{49}{subsubsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.4}Dữ liệu chẩn đoán sâu về hiện tượng Heavy Predecessors}{50}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Thống kê độ trễ ròng tích lũy trên 161 build lỗi}{50}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Các lớp kiểm thử đóng vai trò thủ phạm gây trễ điển hình}{51}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Phân tích bóc tách các thành phần (Ablation Study)}{52}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Tổng kết chương}{52}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Thảo luận}{53}{section.5}%
+\contentsline {section}{Kết luận}{54}{section*.2}%
+\contentsline {section}{Tài liệu tham khảo}{55}{section*.2}%
+\contentsline {section}{Phụ lục}{57}{section*.3}%
+\contentsline {subsection}{Phụ lục A: Bảng đối chiếu mã nội bộ các giai đoạn}{57}{section*.4}%
+\contentsline {subsection}{Phụ lục C: Mã nguồn minh họa thuật toán cốt lõi}{58}{section*.5}%

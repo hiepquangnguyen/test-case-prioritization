@@ -1,0 +1,35 @@
+{
+  "project": "log4j",
+  "sample_rule": "First 20 physical warmup builds; all stages",
+  "sample_rows": 40,
+  "sample_commits": 20,
+  "available_commit_trees": 20,
+  "observations": 24638,
+  "statuses": {
+    "matched_declared_revision": 24278,
+    "ambiguous": 360
+  },
+  "failure_observations": 43,
+  "failure_statuses": {
+    "matched_declared_revision": 43
+  },
+  "unique_source_blobs": 948,
+  "outer_fallback_observations": 0,
+  "unresolved_test_ids": [
+    "org.apache.logging.slf4j.CallerInformationTest",
+    "org.apache.logging.slf4j.Log4j1222Test",
+    "org.apache.logging.slf4j.Log4j2_1482_Slf4jTest",
+    "org.apache.logging.slf4j.Log4jMarkerTest",
+    "org.apache.logging.slf4j.LoggerContextTest",
+    "org.apache.logging.slf4j.LoggerTest",
+    "org.apache.logging.slf4j.MarkerTest",
+    "org.apache.logging.slf4j.OverflowTest",
+    "org.apache.logging.slf4j.SerializeTest"
+  ],
+  "source_mapping_sha256": "9d3317d754d167852487fa482e1fe3064b4aa9b0a6ca8bb7b649eb5940bfa7dd",
+  "selection_sha256": "e2ceaa448a228bff186d57f7d86de989a1cf390fd3f56c7cba7bd88ca874ff12",
+  "script_sha256": "ec28c88acafb683e3db55d7baaf197ad60c348e877163ada2c83cee4449a1cc0",
+  "no_checkout_or_test_execution": true,
+  "source_execution_revision_verified": false,
+  "conclusion": "Coverage at declared metadata SHA on an early sample only; no claim of full-cohort source readiness"
+}

@@ -1,0 +1,11 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Đối chiếu đặc trưng phương pháp luận giữa các hướng tiếp cận TCP chính}}{16}{table.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Tổng hợp độ phức tạp tiệm cận thời gian và không gian của các thuật toán}}{36}{table.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces Quy mô và đặc trưng 6 dự án trên benchmark Defects4J}}{38}{table.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Phân tách quy mô dữ liệu CI thực tế (LRTS) giữa tập Phát triển và Niêm phong}}{41}{table.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces Đối chiếu điểm APFD trung bình giữa bài báo gốc FALCON và kết quả tái lập}}{42}{table.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces Kết quả phân rã các yếu tố kỹ thuật trong thử nghiệm Bridge trên dự án Chart}}{44}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces Đối chiếu điểm APFDc trung bình giữa các đường cơ sở và các biến thể chính trên CI}}{45}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Kết quả kiểm định thống kê ghép cặp giữa UGCS v2 và baseline \texttt {history\_cost}}}{47}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces Đánh giá các cổng quyết định tiền đăng ký (Decision Gates) đối với biến thể UGCS v2}}{49}{table.9}%
+\contentsline {table}{\numberline {10}{\ignorespaces Đối chiếu phân rã thời gian trễ do Heavy Predecessors giữa HC-FALCON v1 và UGCS v2}}{50}{table.10}%
+\contentsline {table}{\numberline {11}{\ignorespaces Bảng đối chiếu mã phân đoạn nội bộ với tên mô tả chính thức sử dụng trong báo cáo.}}{57}{table.11}%

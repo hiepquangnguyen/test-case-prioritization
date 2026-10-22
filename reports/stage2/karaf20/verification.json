@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "reproduced_rankings": 120,
+  "real_cohort_leakage_comparisons": 120,
+  "full_universe_preserved": true,
+  "code_and_protocol_hashes_match": true,
+  "target_pr1287_build1": {
+    "tests": 212,
+    "failures": 4
+  },
+  "limitation": "Conditional on observed inventory and declared timestamp semantics; not proof of prospective CI validity."
+}

@@ -1,0 +1,99 @@
+{
+  "created_at": "2026-10-14T13:14:41Z",
+  "project": "Chart",
+  "total_methods": 2193,
+  "total_faults": 26,
+  "arms": {
+    "A": {
+      "arm": "A",
+      "name": "artifact_baseline",
+      "methods_count": 2193,
+      "faults_count": 26,
+      "vector_sha256": "ef4c4387d004371bb4cdd9b96ba346637f6d5d739e149a671b169f6733e71c94",
+      "kernel_sha256": "50dee65989fa5ac9f0bf89670054ec56f1f58d2907963698c6b0955de0eca955",
+      "kernel_min": -0.08512907475233078,
+      "kernel_max": 1.0000005960464478,
+      "negative_kernel_entries": 1026,
+      "tie_breaker": "smallest_input_index",
+      "ranker": "upstream_lazy_greedy",
+      "apfd": 0.7322775263951734,
+      "elapsed_seconds": 0.101
+    },
+    "B": {
+      "arm": "B",
+      "name": "clipped_kernel",
+      "methods_count": 2193,
+      "faults_count": 26,
+      "vector_sha256": "ef4c4387d004371bb4cdd9b96ba346637f6d5d739e149a671b169f6733e71c94",
+      "kernel_sha256": "d56f244348207d4aa434c60441df63c6a545298fa65ccd1a4edfc42f5f4822aa",
+      "kernel_min": 0.0,
+      "kernel_max": 1.0,
+      "negative_kernel_entries": 0,
+      "tie_breaker": "smallest_input_index",
+      "ranker": "upstream_lazy_greedy",
+      "apfd": 0.7322775263951734,
+      "elapsed_seconds": 38.6751
+    },
+    "C": {
+      "arm": "C",
+      "name": "internal_greedy_fqn",
+      "methods_count": 2193,
+      "faults_count": 26,
+      "vector_sha256": "ef4c4387d004371bb4cdd9b96ba346637f6d5d739e149a671b169f6733e71c94",
+      "kernel_sha256": "d56f244348207d4aa434c60441df63c6a545298fa65ccd1a4edfc42f5f4822aa",
+      "kernel_min": 0.0,
+      "kernel_max": 1.0,
+      "negative_kernel_entries": 0,
+      "tie_breaker": "fqn_lexicographical_ascending",
+      "ranker": "internal_exact_greedy_heap",
+      "apfd": 0.7322775263951734,
+      "elapsed_seconds": 0.8807
+    },
+    "D": {
+      "arm": "D",
+      "name": "full_internal_pipeline",
+      "methods_count": 2193,
+      "faults_count": 26,
+      "vector_sha256": "be413f0656ce3711d5b8f45d942422fd6d5489cfeab2e23279afa25c8bc421a9",
+      "kernel_sha256": "d82971fd3f3980c1a1d36ea8527ce5226cb972f188eb4c869b3537bce60dd3a9",
+      "kernel_min": 0.0,
+      "kernel_max": 1.0,
+      "negative_kernel_entries": 0,
+      "tie_breaker": "fqn_lexicographical_ascending",
+      "ranker": "internal_exact_greedy_heap",
+      "apfd": 0.7635308148304044,
+      "elapsed_seconds": 363.01
+    }
+  },
+  "deltas": {
+    "B_minus_A_kernel_clipping": {
+      "delta_apfd": 0.0,
+      "component_changed": "Cosine kernel negative values clipped to [0, 1] (vectors and ranker unchanged)"
+    },
+    "C_minus_B_ranker_and_tie_breaking": {
+      "delta_apfd": 0.0,
+      "component_changed": "Ranker changed from upstream lazy greedy (tol 1e-6, index tie) to internal exact greedy (FQN tie)"
+    },
+    "D_minus_C_preprocessing_and_encoder": {
+      "delta_apfd": 0.03125328843523101,
+      "component_changed": "Embeddings changed from upstream unmasked mean to internal preprocessing + chunking + masked attention pooling"
+    },
+    "total_D_minus_A": {
+      "delta_apfd": 0.03125328843523101,
+      "component_changed": "Full transition from upstream artifact to internal pipeline"
+    }
+  },
+  "ranking_comparison": {
+    "A_vs_B_identical": false,
+    "A_vs_B_differing_positions": 42,
+    "B_vs_C_identical": false,
+    "B_vs_C_differing_positions": 24,
+    "note": "Rankings differ at non-fault-detecting positions; APFD remains identical because all 26 fault detection ranks match across A, B, and C."
+  },
+  "integrity_checks": {
+    "A_and_B_vectors_identical": true,
+    "B_kernel_is_pure_clip_of_A": true,
+    "B_and_C_kernel_identical": true,
+    "all_arms_valid_permutation": true
+  }
+}

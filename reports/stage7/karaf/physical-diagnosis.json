@@ -1,0 +1,5471 @@
+[
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1483",
+      "build": "1"
+    },
+    "delta_apfdc": -0.023753499394134736,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1483",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.023753499394134736,
+        "first_selected_semantic_share": 0.9755774212200655,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 5,
+            "completion_shift_seconds": 19.896999999999984,
+            "apfdc_delta": -0.023753499394134736,
+            "added_predecessor_seconds": 20.163,
+            "removed_predecessor_seconds": 0.266,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 10.878,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 5.126,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.HttpResourceExampleTest",
+                "duration": 2.329,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 1.326,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.log.core.internal.LogServiceLog4j2XmlImplTest",
+                "duration": 0.229,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1492",
+      "build": "2"
+    },
+    "delta_apfdc": -0.5758474236717686,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1492",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.5758474236717686,
+        "first_selected_semantic_share": 0.9706013515207617,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+            "position_shift": 11,
+            "completion_shift_seconds": 50.30199999999999,
+            "apfdc_delta": -0.5758474236717686,
+            "added_predecessor_seconds": 50.302,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.main.MainLockingTest",
+                "duration": 23.678,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.326,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainStartTest",
+                "duration": 2.59,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.jdbc.JdbcLoginModuleTest",
+                "duration": 1.902,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.kar.internal.KarTest",
+                "duration": 1.717,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1497",
+      "build": "1"
+    },
+    "delta_apfdc": -0.06171270003334095,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1497",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.06171270003334095,
+        "first_selected_semantic_share": 0.9756183041312856,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.035,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JdbcExampleTest",
+            "position_shift": 21,
+            "completion_shift_seconds": 65.33900000000003,
+            "apfdc_delta": -0.06171270003334089,
+            "added_predecessor_seconds": 66.672,
+            "removed_predecessor_seconds": 1.333,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 18.823,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.932,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 6.309,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 4.774,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.LogTest",
+                "duration": 3.783,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1504",
+      "build": "1"
+    },
+    "delta_apfdc": 0.3294042113828962,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1504",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.3294042113828962,
+        "first_selected_semantic_share": 0.9995297448500412,
+        "first_selected_failed": false,
+        "first_selected_duration": 4.928,
+        "first_selected": "org.apache.karaf.itests.HttpTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.JMXSecurityTest",
+            "position_shift": -21,
+            "completion_shift_seconds": -301.169,
+            "apfdc_delta": 0.3294042113828963,
+            "added_predecessor_seconds": 34.621,
+            "removed_predecessor_seconds": 335.79,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 34.621,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1505",
+      "build": "1"
+    },
+    "delta_apfdc": -0.048985559643563326,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1505",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.048985559643563326,
+        "first_selected_semantic_share": 0.9995297448500412,
+        "first_selected_failed": false,
+        "first_selected_duration": 6.36,
+        "first_selected": "org.apache.karaf.itests.HttpTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+            "position_shift": -2,
+            "completion_shift_seconds": 46.06699999999995,
+            "apfdc_delta": -0.048985559643563464,
+            "added_predecessor_seconds": 85.636,
+            "removed_predecessor_seconds": 39.568999999999996,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 35.33,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 15.293,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.634,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 6.36,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.WebTest",
+                "duration": 6.297,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1501",
+      "build": "2"
+    },
+    "delta_apfdc": -0.06544259878617564,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1501",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.06544259878617564,
+        "first_selected_semantic_share": 0.97560309355154,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.SystemShutdownTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 98.38299999999958,
+            "apfdc_delta": -0.06544259878617564,
+            "added_predecessor_seconds": 123.663,
+            "removed_predecessor_seconds": 25.28,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+                "duration": 38.852,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 33.333,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.MBeanExampleTest",
+                "duration": 27.068,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                "duration": 24.41,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1501",
+      "build": "3"
+    },
+    "delta_apfdc": -0.25456059302549194,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1501",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.25456059302549194,
+        "first_selected_semantic_share": 0.9755871432250907,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.SystemShutdownTest",
+            "position_shift": 13,
+            "completion_shift_seconds": 321.6339999999998,
+            "apfdc_delta": -0.25456059302549194,
+            "added_predecessor_seconds": 338.948,
+            "removed_predecessor_seconds": 17.314,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.RestExampleTest",
+                "duration": 83.333,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 47.72,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JmsTest",
+                "duration": 45.725,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 34.316,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                "duration": 25.203,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "3"
+    },
+    "delta_apfdc": -0.004814289926670989,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1502",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.004814289926670989,
+        "first_selected_semantic_share": 0.9755655233552258,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.044,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ExternalConfigTest",
+            "position_shift": 23,
+            "completion_shift_seconds": 67.37500000000006,
+            "apfdc_delta": -0.017185693748514204,
+            "added_predecessor_seconds": 67.375,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 19.179,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 13.584,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 7.004,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.LogTest",
+                "duration": 3.766,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 3.194,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 6,
+            "completion_shift_seconds": 32.89800000000001,
+            "apfdc_delta": -0.008391464978680816,
+            "added_predecessor_seconds": 34.056999999999995,
+            "removed_predecessor_seconds": 1.159,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 19.179,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 7.004,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.HttpResourceExampleTest",
+                "duration": 4.591,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 2.861,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.BootFeaturesInstallerTest",
+                "duration": 0.174,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+            "position_shift": -8,
+            "completion_shift_seconds": -81.39899999999989,
+            "apfdc_delta": 0.020762868800523943,
+            "added_predecessor_seconds": 52.725,
+            "removed_predecessor_seconds": 134.124,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 52.725,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1507",
+      "build": "1"
+    },
+    "delta_apfdc": -0.004736623950071683,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1507",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.004736623950071683,
+        "first_selected_semantic_share": 0.9756294100803905,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 8.821999999999997,
+            "apfdc_delta": -0.0047366239500716235,
+            "added_predecessor_seconds": 8.822,
+            "removed_predecessor_seconds": 0.0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 8.43,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.service.guard.impl.GuardingFindHookTest",
+                "duration": 0.392,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1504",
+      "build": "3"
+    },
+    "delta_apfdc": 0.06152006514859454,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1504",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.06152006514859454,
+        "first_selected_semantic_share": 0.9716301327390658,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.main.MainLockingTest",
+            "position_shift": -6,
+            "completion_shift_seconds": -5.9680000000000035,
+            "apfdc_delta": 0.06152006514859457,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 5.968,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1507",
+      "build": "2"
+    },
+    "delta_apfdc": -0.05624613618299046,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1507",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.05624613618299046,
+        "first_selected_semantic_share": 0.9702449009503017,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.041,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+            "position_shift": 16,
+            "completion_shift_seconds": 5.095000000000001,
+            "apfdc_delta": -0.05624613618299036,
+            "added_predecessor_seconds": 5.095,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+                "duration": 0.951,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.deployer.spring.SpringDeploymentListenerTest",
+                "duration": 0.741,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.FeaturesServiceTest",
+                "duration": 0.596,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.region.SubsystemTest",
+                "duration": 0.434,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.DeployerTest",
+                "duration": 0.33,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "4"
+    },
+    "delta_apfdc": -0.02304824251815807,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1502",
+          "build": "4",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.02304824251815807,
+        "first_selected_semantic_share": 0.9755898283817804,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.04,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 21.060999999999996,
+            "apfdc_delta": -0.02304824251815811,
+            "added_predecessor_seconds": 21.243,
+            "removed_predecessor_seconds": 0.182,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 13.463,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 5.779,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 1.577,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ExternalConfigTest",
+                "duration": 0.424,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1510",
+      "build": "1"
+    },
+    "delta_apfdc": -0.006429415979148034,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1510",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.006429415979148034,
+        "first_selected_semantic_share": 0.9755834413041835,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.044,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 11.701999999999998,
+            "apfdc_delta": -0.006429415979148077,
+            "added_predecessor_seconds": 11.711,
+            "removed_predecessor_seconds": 0.009,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 11.711,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1511",
+      "build": "2"
+    },
+    "delta_apfdc": 0.1691396331590982,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1511",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.1691396331590982,
+        "first_selected_semantic_share": 0.9755754513658909,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": -10,
+            "completion_shift_seconds": -225.02099999999996,
+            "apfdc_delta": 0.16913963315909816,
+            "added_predecessor_seconds": 105.684,
+            "removed_predecessor_seconds": 330.705,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 58.989,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 17.126,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 16.172,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.397,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "5"
+    },
+    "delta_apfdc": -0.020843037613203608,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1502",
+          "build": "5",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.020843037613203608,
+        "first_selected_semantic_share": 0.9755777828166059,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 17.80899999999999,
+            "apfdc_delta": -0.020843037613203583,
+            "added_predecessor_seconds": 17.978,
+            "removed_predecessor_seconds": 0.16899999999999998,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 11.294,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 5.079,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 1.197,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ExternalConfigTest",
+                "duration": 0.408,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1519",
+      "build": "2"
+    },
+    "delta_apfdc": -0.00557077744159773,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1519",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.00557077744159773,
+        "first_selected_semantic_share": 0.9755558697884515,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.038,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 4,
+            "completion_shift_seconds": 6.434999999999998,
+            "apfdc_delta": -0.005570777441597734,
+            "added_predecessor_seconds": 6.435,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 6.427,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.OverridesTest",
+                "duration": 0.004,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.packages.command.PackageImportTest",
+                "duration": 0.004,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.util.ParserTest",
+                "duration": 0.0,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1521",
+      "build": "2"
+    },
+    "delta_apfdc": 0.012049584822689807,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1521",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.012049584822689807,
+        "first_selected_semantic_share": 0.9755558697884515,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 4,
+            "completion_shift_seconds": 6.806000000000001,
+            "apfdc_delta": -0.0006531288769330928,
+            "added_predecessor_seconds": 6.806,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 6.797,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.OverridesTest",
+                "duration": 0.009,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.packages.command.PackageImportTest",
+                "duration": 0.0,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.util.ParserTest",
+                "duration": 0.0,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+            "position_shift": -12,
+            "completion_shift_seconds": -132.3699999999999,
+            "apfdc_delta": 0.01270271369962289,
+            "added_predecessor_seconds": 175.507,
+            "removed_predecessor_seconds": 307.877,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 108.844,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 53.289,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.374,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1525",
+      "build": "1"
+    },
+    "delta_apfdc": -0.011969100967040514,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1525",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.011969100967040514,
+        "first_selected_semantic_share": 0.9755877447486181,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.037,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 57.125,
+            "apfdc_delta": -0.0119691009670405,
+            "added_predecessor_seconds": 104.973,
+            "removed_predecessor_seconds": 47.848,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 39.947,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.krb5.Krb5LoginModuleTest",
+                "duration": 23.344,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 15.444,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.386,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.852,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1502",
+      "build": "6"
+    },
+    "delta_apfdc": -0.020943393121219178,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1502",
+          "build": "6",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.020943393121219178,
+        "first_selected_semantic_share": 0.9756385731298537,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 17.816,
+            "apfdc_delta": -0.020943393121219175,
+            "added_predecessor_seconds": 17.987,
+            "removed_predecessor_seconds": 0.17099999999999999,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 11.744,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 4.864,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 1.296,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.commands.impl.ThreadsTest",
+                "duration": 0.083,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1426",
+      "build": "5"
+    },
+    "delta_apfdc": -0.01356007476349641,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1426",
+          "build": "5",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.01356007476349641,
+        "first_selected_semantic_share": 0.9756038682827725,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 6,
+            "completion_shift_seconds": 18.442000000000007,
+            "apfdc_delta": -0.013560074763496457,
+            "added_predecessor_seconds": 18.492,
+            "removed_predecessor_seconds": 0.05,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 11.205,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 4.954,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 1.45,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 0.672,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.commands.impl.ThreadsTest",
+                "duration": 0.084,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1522",
+      "build": "6"
+    },
+    "delta_apfdc": -0.05210289607119534,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1522",
+          "build": "6",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.05210289607119534,
+        "first_selected_semantic_share": 0.975565364451371,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.042,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": 17,
+            "completion_shift_seconds": 335.03600000000006,
+            "apfdc_delta": -0.06666722382538011,
+            "added_predecessor_seconds": 364.523,
+            "removed_predecessor_seconds": 29.487000000000002,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JmsTest",
+                "duration": 104.659,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 46.999,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 41.731,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+                "duration": 32.003,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.krb5.Krb5LoginModuleTest",
+                "duration": 16.365,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 5.888000000000147,
+            "apfdc_delta": -0.0011716251802309239,
+            "added_predecessor_seconds": 116.628,
+            "removed_predecessor_seconds": 110.74,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 41.731,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 15.543,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.369,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.016,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.mavenresolver.MavenResolverRegisteredOnlyAfterConfigAdminTest",
+                "duration": 7.586,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": -20,
+            "completion_shift_seconds": -79.0809999999999,
+            "apfdc_delta": 0.015735952934415647,
+            "added_predecessor_seconds": 29.753,
+            "removed_predecessor_seconds": 108.834,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 12.29,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.016,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 5.447,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1536",
+      "build": "1"
+    },
+    "delta_apfdc": 0.006831847405879943,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1536",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.006831847405879943,
+        "first_selected_semantic_share": 0.9755886465737107,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.063,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": -21,
+            "completion_shift_seconds": -8.859000000000066,
+            "apfdc_delta": 0.006831847405879958,
+            "added_predecessor_seconds": 37.551,
+            "removed_predecessor_seconds": 46.41,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 16.995,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 15.839,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 4.717,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1536",
+      "build": "2"
+    },
+    "delta_apfdc": 0.16214304845931082,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1536",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.16214304845931082,
+        "first_selected_semantic_share": 0.9755886465737107,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.072,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+            "position_shift": -17,
+            "completion_shift_seconds": -191.90099999999973,
+            "apfdc_delta": 0.16214304845931085,
+            "added_predecessor_seconds": 90.549,
+            "removed_predecessor_seconds": 282.45,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 57.357,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 16.678,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 16.514,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1542",
+      "build": "1"
+    },
+    "delta_apfdc": 8.543773035385449e-06,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1542",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 8.543773035385449e-06,
+        "first_selected_semantic_share": 0.9755796966639739,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -3,
+            "completion_shift_seconds": -0.013000000000000012,
+            "apfdc_delta": 8.543773035326538e-06,
+            "added_predecessor_seconds": 0.002,
+            "removed_predecessor_seconds": 0.015,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.002,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1547",
+      "build": "1"
+    },
+    "delta_apfdc": -3.154806347460681e-05,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1547",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -3.154806347460681e-05,
+        "first_selected_semantic_share": 0.9756032002811523,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.042,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -3,
+            "completion_shift_seconds": 0.03600000000000003,
+            "apfdc_delta": -3.1548063474703694e-05,
+            "added_predecessor_seconds": 0.042,
+            "removed_predecessor_seconds": 0.006,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.042,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1548",
+      "build": "1"
+    },
+    "delta_apfdc": 0.011907304486636239,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1548",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.011907304486636239,
+        "first_selected_semantic_share": 0.9756294767370486,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.04,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -22,
+            "completion_shift_seconds": -22.69100000000003,
+            "apfdc_delta": 0.011907304486636244,
+            "added_predecessor_seconds": 72.088,
+            "removed_predecessor_seconds": 94.779,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 50.384,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 17.768,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 3.936,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1536",
+      "build": "3"
+    },
+    "delta_apfdc": -0.012650132020137761,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1536",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.012650132020137761,
+        "first_selected_semantic_share": 0.9761953911849695,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.07,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 5,
+            "completion_shift_seconds": 18.177000000000007,
+            "apfdc_delta": -0.012650132020137768,
+            "added_predecessor_seconds": 18.465,
+            "removed_predecessor_seconds": 0.288,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 13.959,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                "duration": 1.341,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.167,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 0.613,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 0.588,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1550",
+      "build": "2"
+    },
+    "delta_apfdc": -0.029107028228611664,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1550",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.029107028228611664,
+        "first_selected_semantic_share": 0.9755387983574247,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.043,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -29,
+            "completion_shift_seconds": 42.21500000000003,
+            "apfdc_delta": -0.029107028228611706,
+            "added_predecessor_seconds": 48.167,
+            "removed_predecessor_seconds": 5.952,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 46.42,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.178,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 0.569,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1553",
+      "build": "1"
+    },
+    "delta_apfdc": 0.02766459997014148,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1553",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.02766459997014148,
+        "first_selected_semantic_share": 0.9755471210020559,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.04,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FeatureTest",
+            "position_shift": -16,
+            "completion_shift_seconds": -27.981000000000023,
+            "apfdc_delta": 0.027664599970141514,
+            "added_predecessor_seconds": 28.509,
+            "removed_predecessor_seconds": 56.49,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 14.906,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 13.603,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "2"
+    },
+    "delta_apfdc": 0.029982777892378576,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1552",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.029982777892378576,
+        "first_selected_semantic_share": 0.9755538082636523,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.041,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -31,
+            "completion_shift_seconds": -37.5,
+            "apfdc_delta": 0.029982777892378618,
+            "added_predecessor_seconds": 1.086,
+            "removed_predecessor_seconds": 38.586,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.086,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "4"
+    },
+    "delta_apfdc": -0.02530052797551663,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1552",
+          "build": "4",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.02530052797551663,
+        "first_selected_semantic_share": 0.9755526341368077,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.04,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": 18,
+            "completion_shift_seconds": 294.9609999999998,
+            "apfdc_delta": -0.020070649863338213,
+            "added_predecessor_seconds": 298.544,
+            "removed_predecessor_seconds": 3.583,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ServletExampleTest",
+                "duration": 61.262,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+                "duration": 53.098,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 33.697,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainLockingTest",
+                "duration": 23.724,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 23.191,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 72.94299999999885,
+            "apfdc_delta": -0.00496341351223198,
+            "added_predecessor_seconds": 106.055,
+            "removed_predecessor_seconds": 33.112,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 33.697,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JMXSecurityTest",
+                "duration": 15.987,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 15.145,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.811,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 10.055,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": -9,
+            "completion_shift_seconds": 6.678000000000338,
+            "apfdc_delta": -0.0004544051579272187,
+            "added_predecessor_seconds": 25.377,
+            "removed_predecessor_seconds": 18.699,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.811,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 10.055,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 1.545,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+                "duration": 0.966,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -30,
+            "completion_shift_seconds": -2.7620000000000022,
+            "apfdc_delta": 0.00018794055798068297,
+            "added_predecessor_seconds": 0.818,
+            "removed_predecessor_seconds": 3.58,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 0.818,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1556",
+      "build": "1"
+    },
+    "delta_apfdc": -0.07286672085255019,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1556",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.07286672085255019,
+        "first_selected_semantic_share": 0.9755490768493916,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.LogTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 100.49799999999992,
+            "apfdc_delta": -0.07286672085255028,
+            "added_predecessor_seconds": 103.374,
+            "removed_predecessor_seconds": 2.8760000000000003,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.XATest",
+                "duration": 51.118,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 29.023,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 15.162,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 4.771,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 1.289,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1552",
+      "build": "5"
+    },
+    "delta_apfdc": 0.0029210859768961095,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1552",
+          "build": "5",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.0029210859768961095,
+        "first_selected_semantic_share": 0.9755937186882582,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.034,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -24,
+            "completion_shift_seconds": -3.3979999999999997,
+            "apfdc_delta": 0.0029210859768960835,
+            "added_predecessor_seconds": 1.125,
+            "removed_predecessor_seconds": 4.523,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.125,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1562",
+      "build": "1"
+    },
+    "delta_apfdc": 0.0022764452492086695,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1562",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.0022764452492086695,
+        "first_selected_semantic_share": 0.9755791794754359,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -2,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0.001,
+            "removed_predecessor_seconds": 0.001,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.001,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.FeatureTest",
+            "position_shift": -8,
+            "completion_shift_seconds": -8.72499999999988,
+            "apfdc_delta": 0.0022764452492087576,
+            "added_predecessor_seconds": 53.272,
+            "removed_predecessor_seconds": 61.997,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 35.25,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.973,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 4.072,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+                "duration": 0.977,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1563",
+      "build": "1"
+    },
+    "delta_apfdc": -0.011731226903282432,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1563",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.011731226903282432,
+        "first_selected_semantic_share": 0.9755791794754359,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JpaExampleTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 41.55200000000001,
+            "apfdc_delta": -0.011730662277643368,
+            "added_predecessor_seconds": 42.021,
+            "removed_predecessor_seconds": 0.469,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 34.853,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleWithConfigITest",
+                "duration": 4.488,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.162,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 0.72,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 0.59,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -2,
+            "completion_shift_seconds": 0.0019999999999997797,
+            "apfdc_delta": -5.64625639085583e-07,
+            "added_predecessor_seconds": 0.002,
+            "removed_predecessor_seconds": 0.0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.002,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1565",
+      "build": "1"
+    },
+    "delta_apfdc": 0.0011979067073343286,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1565",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.0011979067073343286,
+        "first_selected_semantic_share": 0.9756650631906197,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.035,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -21,
+            "completion_shift_seconds": -1.397000000000002,
+            "apfdc_delta": 0.0011979067073343292,
+            "added_predecessor_seconds": 1.037,
+            "removed_predecessor_seconds": 2.434,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.037,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1568",
+      "build": "1"
+    },
+    "delta_apfdc": -0.017101710515342816,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1568",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.017101710515342816,
+        "first_selected_semantic_share": 0.9757591096386501,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.046,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.HttpResourceExampleTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 44.18600000000002,
+            "apfdc_delta": -0.01690316923903223,
+            "added_predecessor_seconds": 46.201,
+            "removed_predecessor_seconds": 2.015,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 15.718,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 14.754,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 12.218,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 1.241,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.143,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -16,
+            "completion_shift_seconds": 0.5189999999999984,
+            "apfdc_delta": -0.00019854127631054397,
+            "added_predecessor_seconds": 1.143,
+            "removed_predecessor_seconds": 0.624,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.143,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1570",
+      "build": "1"
+    },
+    "delta_apfdc": -0.039985861727696914,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1570",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.039985861727696914,
+        "first_selected_semantic_share": 0.9757591096386501,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.035,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.LogTest",
+            "position_shift": 6,
+            "completion_shift_seconds": 42.423000000000016,
+            "apfdc_delta": -0.03998586172769688,
+            "added_predecessor_seconds": 44.458,
+            "removed_predecessor_seconds": 2.035,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 16.209,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 14.436,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 7.382,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 2.123,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.804,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1571",
+      "build": "1"
+    },
+    "delta_apfdc": -0.00036042501821798023,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1571",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.00036042501821798023,
+        "first_selected_semantic_share": 0.9757591096386501,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.054,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -16,
+            "completion_shift_seconds": 0.4580000000000002,
+            "apfdc_delta": -0.0003604250182179882,
+            "added_predecessor_seconds": 1.069,
+            "removed_predecessor_seconds": 0.611,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+                "duration": 1.069,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1568",
+      "build": "2"
+    },
+    "delta_apfdc": 0.0001951959127108882,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1568",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.0001951959127108882,
+        "first_selected_semantic_share": 0.9758167813951153,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.046,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -31,
+            "completion_shift_seconds": -0.24100000000000144,
+            "apfdc_delta": 0.0001951959127109794,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0.241,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1576",
+      "build": "1"
+    },
+    "delta_apfdc": 0.09515099014402584,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1576",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.09515099014402584,
+        "first_selected_semantic_share": 0.975784932818316,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.041,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": -1,
+            "completion_shift_seconds": 153.92200000000025,
+            "apfdc_delta": -0.02058302478810137,
+            "added_predecessor_seconds": 162.64000000000001,
+            "removed_predecessor_seconds": 8.718,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 81.805,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+                "duration": 34.428,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 23.283,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 10.963,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.553,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": 7,
+            "completion_shift_seconds": 48.85000000000002,
+            "apfdc_delta": -0.006532404470437964,
+            "added_predecessor_seconds": 50.165,
+            "removed_predecessor_seconds": 1.315,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 21.708,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 10.963,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.553,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.608,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.profile.assembly.BuilderTest",
+                "duration": 1.563,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -28,
+            "completion_shift_seconds": -0.1720000000000006,
+            "apfdc_delta": 2.3000482475237e-05,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0.17200000000000001,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": -116,
+            "completion_shift_seconds": -914.1489999999999,
+            "apfdc_delta": 0.1222434189200899,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 914.149,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1579",
+      "build": "1"
+    },
+    "delta_apfdc": 0.1909736950139057,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1579",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.1909736950139057,
+        "first_selected_semantic_share": 0.9758252311181176,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.042,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 63.79900000000043,
+            "apfdc_delta": -0.003883645141763818,
+            "added_predecessor_seconds": 72.394,
+            "removed_predecessor_seconds": 8.595,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.main.MainLockingTest",
+                "duration": 23.415,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+                "duration": 12.808,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.594,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.675,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                "duration": 7.246,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": 12,
+            "completion_shift_seconds": 56.054999999999836,
+            "apfdc_delta": -0.003412243584093318,
+            "added_predecessor_seconds": 56.438,
+            "removed_predecessor_seconds": 0.383,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 21.873,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.594,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.675,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.FeatureTest",
+                "duration": 5.69,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.601,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -29,
+            "completion_shift_seconds": -0.16699999999999982,
+            "apfdc_delta": 1.0165813549970259e-05,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0.167,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": -101,
+            "completion_shift_seconds": -3256.9280000000003,
+            "apfdc_delta": 0.198259417926213,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 3256.928,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1583",
+      "build": "1"
+    },
+    "delta_apfdc": -0.030497545960004535,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1583",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.030497545960004535,
+        "first_selected_semantic_share": 0.9758853474069964,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.042,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.examples.itests.ExampleWithConfigITest",
+            "position_shift": 1,
+            "completion_shift_seconds": 43.316,
+            "apfdc_delta": -0.030497545960004542,
+            "added_predecessor_seconds": 43.605000000000004,
+            "removed_predecessor_seconds": 0.289,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 27.699,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 11.204,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 4.18,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 0.429,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.commands.impl.ThreadsTest",
+                "duration": 0.093,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1579",
+      "build": "2"
+    },
+    "delta_apfdc": -0.1830211188301375,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1579",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.1830211188301375,
+        "first_selected_semantic_share": 0.975916485102967,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.041,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": 18,
+            "completion_shift_seconds": 2318.608,
+            "apfdc_delta": -0.18152335666578148,
+            "added_predecessor_seconds": 2318.608,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.XATest",
+                "duration": 2283.523,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.576,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.827,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.FeatureTest",
+                "duration": 5.876,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+                "duration": 0.971,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 29.353999999999814,
+            "apfdc_delta": -0.002298118790053047,
+            "added_predecessor_seconds": 33.945,
+            "removed_predecessor_seconds": 4.591,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.576,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.827,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                "duration": 6.722,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.profile.assembly.BuilderTest",
+                "duration": 1.377,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainStartTest",
+                "duration": 1.194,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -28,
+            "completion_shift_seconds": -0.12899999999999956,
+            "apfdc_delta": 1.0099384203748856e-05,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0.129,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": -3,
+            "completion_shift_seconds": -10.094000000000051,
+            "apfdc_delta": 0.0007902572414933474,
+            "added_predecessor_seconds": 23.716,
+            "removed_predecessor_seconds": 33.81,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.576,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 9.827,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 0.882,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 0.587,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.blueprint.jasypt.handler.EncryptablePropertyPlaceholderTest",
+                "duration": 0.43,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1585",
+      "build": "5"
+    },
+    "delta_apfdc": 9.22473435782667e-05,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1585",
+          "build": "5",
+          "stage": "single"
+        },
+        "delta_apfdc": 9.22473435782667e-05,
+        "first_selected_semantic_share": 0.9759682025074019,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.037,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.FelixHttpTest",
+            "position_shift": -26,
+            "completion_shift_seconds": -0.10699999999999932,
+            "apfdc_delta": 9.224734357824878e-05,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0.107,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1607",
+      "build": "2"
+    },
+    "delta_apfdc": -0.02496559888335992,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1607",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.02496559888335992,
+        "first_selected_semantic_share": 0.9726869601576897,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 7,
+            "completion_shift_seconds": 32.85699999999996,
+            "apfdc_delta": -0.024965598883359863,
+            "added_predecessor_seconds": 42.619,
+            "removed_predecessor_seconds": 9.762,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.966,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 11.768,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 7.598,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.HttpTest",
+                "duration": 5.747,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 1.662,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1618",
+      "build": "1"
+    },
+    "delta_apfdc": 0.0,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1618",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.0,
+        "first_selected_semantic_share": 0.9759399680447124,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -2,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0.001,
+            "removed_predecessor_seconds": 0.001,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.001,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1624",
+      "build": "3"
+    },
+    "delta_apfdc": 8.24579052394192e-06,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1624",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": 8.24579052394192e-06,
+        "first_selected_semantic_share": 0.9759119026238605,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -2,
+            "completion_shift_seconds": -0.010000000000000009,
+            "apfdc_delta": 8.245790523937538e-06,
+            "added_predecessor_seconds": 0.002,
+            "removed_predecessor_seconds": 0.012,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.002,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "4"
+    },
+    "delta_apfdc": 0.11196347432004872,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1627",
+          "build": "4",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.11196347432004872,
+        "first_selected_semantic_share": 0.9764579437977647,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.041,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+            "position_shift": -16,
+            "completion_shift_seconds": -37.92799999999991,
+            "apfdc_delta": 0.017306441000312953,
+            "added_predecessor_seconds": 30.942,
+            "removed_predecessor_seconds": 68.87,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 14.722,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.9,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 3.32,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ssh.BundleSshCommandSecurityTest",
+            "position_shift": -13,
+            "completion_shift_seconds": -207.44600000000003,
+            "apfdc_delta": 0.09465703331973568,
+            "added_predecessor_seconds": 39.233,
+            "removed_predecessor_seconds": 246.679,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 39.233,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1627",
+      "build": "5"
+    },
+    "delta_apfdc": -0.009543608468688847,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1627",
+          "build": "5",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.009543608468688847,
+        "first_selected_semantic_share": 0.9764579437977647,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.04,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.ServletExampleTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 131.94999999999993,
+            "apfdc_delta": -0.04116905771686605,
+            "added_predecessor_seconds": 145.757,
+            "removed_predecessor_seconds": 13.807,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 42.887,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 35.276,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JMXSecurityTest",
+                "duration": 17.343,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 16.727,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 13.505,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 1.373,
+            "apfdc_delta": -0.0004283828438443134,
+            "added_predecessor_seconds": 1.373,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.DisabledLogoutTest",
+                "duration": 1.333,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.instance.command.CreateCommandTest",
+                "duration": 0.04,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+            "position_shift": -9,
+            "completion_shift_seconds": -102.73500000000013,
+            "apfdc_delta": 0.03205383209202155,
+            "added_predecessor_seconds": 26.658,
+            "removed_predecessor_seconds": 129.393,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 13.505,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 13.153,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1626",
+      "build": "2"
+    },
+    "delta_apfdc": -0.022397068131692177,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1626",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.022397068131692177,
+        "first_selected_semantic_share": 0.9759583824377943,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 26.291000000000054,
+            "apfdc_delta": -0.022397068131692184,
+            "added_predecessor_seconds": 36.633,
+            "removed_predecessor_seconds": 10.342,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 17.405,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.159,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.198,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 1.856,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainStartTest",
+                "duration": 1.296,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1626",
+      "build": "3"
+    },
+    "delta_apfdc": -0.01697617725582068,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1626",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.01697617725582068,
+        "first_selected_semantic_share": 0.9759583824377943,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.001,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.HttpResourceExampleTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 17.854999999999997,
+            "apfdc_delta": -0.016976177255820672,
+            "added_predecessor_seconds": 19.465,
+            "removed_predecessor_seconds": 1.61,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 12.847,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 3.109,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 1.865,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 1.281,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.log.core.internal.LogServiceLog4j2XmlImplTest",
+                "duration": 0.239,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1634",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0010373485963421913,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1634",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.0010373485963421913,
+        "first_selected_semantic_share": 0.6867123371401118,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.06,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": -2,
+            "completion_shift_seconds": 84.95900000000074,
+            "apfdc_delta": -0.0033707679720267696,
+            "added_predecessor_seconds": 104.616,
+            "removed_predecessor_seconds": 19.657,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 62.589,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 14.208,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 14.156,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 5.856,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 3.257,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.JMXSecurityTest",
+            "position_shift": -16,
+            "completion_shift_seconds": -58.812999999994645,
+            "apfdc_delta": 0.0023334193756846316,
+            "added_predecessor_seconds": 151.331,
+            "removed_predecessor_seconds": 210.144,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 62.589,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 51.393,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 16.501,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 14.208,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+                "duration": 6.64,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1639",
+      "build": "1"
+    },
+    "delta_apfdc": -0.04091081203946434,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1639",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.04091081203946434,
+        "first_selected_semantic_share": 0.7808131083507261,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 36.627000000000024,
+            "apfdc_delta": -0.04091081203946439,
+            "added_predecessor_seconds": 37.099,
+            "removed_predecessor_seconds": 0.472,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 12.28,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 11.117,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 10.398,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 1.249,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 0.815,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "1"
+    },
+    "delta_apfdc": -0.01607702482867024,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1641",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.01607702482867024,
+        "first_selected_semantic_share": 0.7907694713073651,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 5,
+            "completion_shift_seconds": 14.912999999999997,
+            "apfdc_delta": -0.016077024828670218,
+            "added_predecessor_seconds": 14.93,
+            "removed_predecessor_seconds": 0.017,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 13.713,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 0.705,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 0.44,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.impl.console.commands.help.wikidoc.WikiParserTest",
+                "duration": 0.029,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainTest",
+                "duration": 0.024,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1642",
+      "build": "1"
+    },
+    "delta_apfdc": -0.013842846282835386,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1642",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.013842846282835386,
+        "first_selected_semantic_share": 0.7994379697714369,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 15.041000000000011,
+            "apfdc_delta": -0.013842846282835462,
+            "added_predecessor_seconds": 15.041,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 15.022,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.lock.DefaultJDBCLockTest",
+                "duration": 0.019,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.service.guard.tools.ACLConfigurationParserTest",
+                "duration": 0.0,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "1"
+    },
+    "delta_apfdc": -0.09091106665678794,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1643",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.09091106665678794,
+        "first_selected_semantic_share": 0.8065799207379687,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+            "position_shift": -2,
+            "completion_shift_seconds": 171.24700000000007,
+            "apfdc_delta": -0.08458521646785709,
+            "added_predecessor_seconds": 183.57500000000002,
+            "removed_predecessor_seconds": 12.328,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 36.871,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+                "duration": 36.649,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 23.858,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainLockingTest",
+                "duration": 23.523,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 17.689,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 12.806999999999995,
+            "apfdc_delta": -0.006325850188930873,
+            "added_predecessor_seconds": 12.807,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 12.77,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.management.codec.JmxRepositoryTest",
+                "duration": 0.033,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.config.command.UpdateCommandTest",
+                "duration": 0.004,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1645",
+      "build": "1"
+    },
+    "delta_apfdc": 0.7725195043082254,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1645",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.7725195043082254,
+        "first_selected_semantic_share": 0.9735584394819319,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.041,
+        "first_selected": "org.apache.karaf.instance.command.CreateCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": -43,
+            "completion_shift_seconds": -824.9279999999999,
+            "apfdc_delta": 0.7725195043082254,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 824.928,
+            "largest_added_predecessors": [],
+            "history_group": "N0",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "2"
+    },
+    "delta_apfdc": -0.020506515288762794,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1643",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.020506515288762794,
+        "first_selected_semantic_share": 0.8131907874825298,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+            "position_shift": -1,
+            "completion_shift_seconds": 36.69399999999996,
+            "apfdc_delta": -0.014681405420284923,
+            "added_predecessor_seconds": 46.646,
+            "removed_predecessor_seconds": 9.952,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 16.29,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 14.318,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 9.385,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.profile.assembly.BuilderTest",
+                "duration": 2.167,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 1.3,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 4,
+            "completion_shift_seconds": 14.558999999999997,
+            "apfdc_delta": -0.005825109868477911,
+            "added_predecessor_seconds": 14.559000000000001,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+                "duration": 13.316,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                "duration": 1.227,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+                "duration": 0.009,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.service.guard.impl.GuardingFindHookTest",
+                "duration": 0.007,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "1"
+    },
+    "delta_apfdc": -0.027907205687217718,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1648",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.027907205687217718,
+        "first_selected_semantic_share": 0.821282524797519,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.003,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": 0,
+            "completion_shift_seconds": 26.64700000000002,
+            "apfdc_delta": -0.027907205687217725,
+            "added_predecessor_seconds": 27.877,
+            "removed_predecessor_seconds": 1.23,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.545,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 8.989,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 5.199,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 0.951,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.blueprint.jasypt.handler.EncryptablePropertyPlaceholderTest",
+                "duration": 0.512,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "3"
+    },
+    "delta_apfdc": -0.07110954063604225,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1641",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.07110954063604225,
+        "first_selected_semantic_share": 0.7992395609966009,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.jaas.modules.krb5.Krb5LoginModuleTest",
+            "position_shift": -2,
+            "completion_shift_seconds": 5.030999999999992,
+            "apfdc_delta": -0.07110954063604229,
+            "added_predecessor_seconds": 13.373,
+            "removed_predecessor_seconds": 8.342,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.373,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "3"
+    },
+    "delta_apfdc": -0.013608986870105144,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1643",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.013608986870105144,
+        "first_selected_semantic_share": 0.8261685482270313,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.WarExampleTest",
+            "position_shift": 15,
+            "completion_shift_seconds": 435.59900000000016,
+            "apfdc_delta": -0.012628103357726466,
+            "added_predecessor_seconds": 464.04,
+            "removed_predecessor_seconds": 28.441,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.RestExampleTest",
+                "duration": 145.113,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 87.673,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.MBeanExampleTest",
+                "duration": 49.054,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 40.356,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                "duration": 28.48,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+            "position_shift": 11,
+            "completion_shift_seconds": 31.7589999999999,
+            "apfdc_delta": -0.0009206998513266418,
+            "added_predecessor_seconds": 56.625,
+            "removed_predecessor_seconds": 24.866,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 21.781,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.628,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                "duration": 7.461,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 5.101,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SshKeyFormatTest",
+                "duration": 3.701,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 2,
+            "completion_shift_seconds": 2.0759999999999934,
+            "apfdc_delta": -6.018366105211477e-05,
+            "added_predecessor_seconds": 2.0829999999999997,
+            "removed_predecessor_seconds": 0.007,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                "duration": 2.07,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.service.guard.impl.GuardingFindHookTest",
+                "duration": 0.008,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.bundle.command.bundletree.TreeTest",
+                "duration": 0.005,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.maven.surefire.junit4.JUnit4Provider",
+            "position_shift": 0,
+            "completion_shift_seconds": 0.0,
+            "apfdc_delta": -0.0,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [],
+            "history_group": "N0",
+            "valid_source": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1648",
+      "build": "2"
+    },
+    "delta_apfdc": 0.07220000131787896,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1648",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.07220000131787896,
+        "first_selected_semantic_share": 0.8109042410675283,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+            "position_shift": -11,
+            "completion_shift_seconds": -10.957,
+            "apfdc_delta": 0.07220000131787896,
+            "added_predecessor_seconds": 3.298,
+            "removed_predecessor_seconds": 14.254999999999999,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.014,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.FeaturesServiceImplTest",
+                "duration": 1.284,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1649",
+      "build": "1"
+    },
+    "delta_apfdc": -0.02041958180809922,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1649",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.02041958180809922,
+        "first_selected_semantic_share": 0.8297590088912911,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.JmsTest",
+            "position_shift": 7,
+            "completion_shift_seconds": 28.795000000000016,
+            "apfdc_delta": -0.0204195818080992,
+            "added_predecessor_seconds": 56.737,
+            "removed_predecessor_seconds": 27.942,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 24.321,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 15.89,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                "duration": 7.237,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 3.866,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 1.465,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1641",
+      "build": "4"
+    },
+    "delta_apfdc": 0.04104807950408418,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1641",
+          "build": "4",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.04104807950408418,
+        "first_selected_semantic_share": 0.8366401351114495,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.003,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+            "position_shift": -12,
+            "completion_shift_seconds": -16.26100000000008,
+            "apfdc_delta": 0.0036556573551304607,
+            "added_predecessor_seconds": 110.931,
+            "removed_predecessor_seconds": 127.19200000000001,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 46.072,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 19.201,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 17.809,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 15.729,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 12.12,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.WebTest",
+            "position_shift": -13,
+            "completion_shift_seconds": -166.32799999999997,
+            "apfdc_delta": 0.0373924221489537,
+            "added_predecessor_seconds": 106.54,
+            "removed_predecessor_seconds": 272.868,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 46.072,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 19.201,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 15.729,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.418,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 12.12,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1643",
+      "build": "4"
+    },
+    "delta_apfdc": -0.006944111202967562,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1643",
+          "build": "4",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.006944111202967562,
+        "first_selected_semantic_share": 0.8447198173604272,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+            "position_shift": 8,
+            "completion_shift_seconds": 22.86999999999989,
+            "apfdc_delta": -0.006945933485473633,
+            "added_predecessor_seconds": 64.14999999999999,
+            "removed_predecessor_seconds": 41.28,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 34.794,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 11.971,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 7.439,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 4.745,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.blueprint.jasypt.handler.EncryptablePropertyPlaceholderTest",
+                "duration": 1.415,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": -1,
+            "completion_shift_seconds": -0.006000000000000227,
+            "apfdc_delta": 1.8222825060272685e-06,
+            "added_predecessor_seconds": 0,
+            "removed_predecessor_seconds": 0.006,
+            "largest_added_predecessors": [],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1652",
+      "build": "1"
+    },
+    "delta_apfdc": -0.04282870201609523,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1652",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.04282870201609523,
+        "first_selected_semantic_share": 0.8447198173604272,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.004,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.features.Spring53FeaturesTest",
+            "position_shift": 6,
+            "completion_shift_seconds": 223.63200000000052,
+            "apfdc_delta": -0.0522558393853575,
+            "added_predecessor_seconds": 233.74099999999999,
+            "removed_predecessor_seconds": 10.109,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 57.33,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 48.407,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                "duration": 43.018,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.MBeanExampleTest",
+                "duration": 39.788,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.StandardFeaturesTest",
+                "duration": 16.382,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+            "position_shift": -12,
+            "completion_shift_seconds": 35.658000000000015,
+            "apfdc_delta": -0.0083321649889241,
+            "added_predecessor_seconds": 154.114,
+            "removed_predecessor_seconds": 118.456,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 57.33,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 48.407,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 17.631,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 15.386,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 15.36,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+            "position_shift": -21,
+            "completion_shift_seconds": -76.00199999999984,
+            "apfdc_delta": 0.01775930235818632,
+            "added_predecessor_seconds": 136.483,
+            "removed_predecessor_seconds": 212.485,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 57.33,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 48.407,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.SystemCommandSecurityTest",
+                "duration": 15.386,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 15.36,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1654",
+      "build": "1"
+    },
+    "delta_apfdc": -0.03170632563084341,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1654",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.03170632563084341,
+        "first_selected_semantic_share": 0.8291636344306685,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.audit.logger.EventLoggerTest",
+            "position_shift": -6,
+            "completion_shift_seconds": 5.070000000000002,
+            "apfdc_delta": -0.031706325630843336,
+            "added_predecessor_seconds": 7.497,
+            "removed_predecessor_seconds": 2.427,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 4.447,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.blueprint.jasypt.handler.EncryptablePropertyPlaceholderTest",
+                "duration": 1.995,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.FeaturesServiceImplTest",
+                "duration": 0.823,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.log.core.internal.LogServiceLog4j2XmlImplTest",
+                "duration": 0.232,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1656",
+      "build": "1"
+    },
+    "delta_apfdc": -0.13425554326751044,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1656",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.13425554326751044,
+        "first_selected_semantic_share": 0.8447185791178481,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.features.Spring53FeaturesTest",
+            "position_shift": 6,
+            "completion_shift_seconds": 132.808,
+            "apfdc_delta": -0.1342555432675104,
+            "added_predecessor_seconds": 140.422,
+            "removed_predecessor_seconds": 7.614,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 33.844,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.MBeanExampleTest",
+                "duration": 33.368,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                "duration": 23.912,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 14.975,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.385,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1657",
+      "build": "1"
+    },
+    "delta_apfdc": -0.014368543783567,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1657",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.014368543783567,
+        "first_selected_semantic_share": 0.86160772131475,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.046,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.HttpResourceExampleTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 21.787999999999982,
+            "apfdc_delta": -0.014368543783567039,
+            "added_predecessor_seconds": 22.005,
+            "removed_predecessor_seconds": 0.217,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 20.153,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 0.862,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ServiceTest",
+                "duration": 0.422,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 0.377,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.log.core.internal.LogServiceLog4j2XmlImplTest",
+                "duration": 0.191,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1656",
+      "build": "2"
+    },
+    "delta_apfdc": -0.023233837454433304,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1656",
+          "build": "2",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.023233837454433304,
+        "first_selected_semantic_share": 0.8676295881054016,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.features.Spring53FeaturesTest",
+            "position_shift": 24,
+            "completion_shift_seconds": 356.4890000000014,
+            "apfdc_delta": -0.0199300921363326,
+            "added_predecessor_seconds": 362.409,
+            "removed_predecessor_seconds": 5.92,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ServletExampleTest",
+                "duration": 66.169,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 45.498,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 34.789,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+                "duration": 27.542,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 24.66,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": 18,
+            "completion_shift_seconds": 42.897000000000844,
+            "apfdc_delta": -0.00239822592666891,
+            "added_predecessor_seconds": 43.128,
+            "removed_predecessor_seconds": 0.231,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+                "duration": 13.472,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 8.421,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                "duration": 6.817,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+                "duration": 4.849,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.873,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.XATest",
+            "position_shift": 7,
+            "completion_shift_seconds": 16.197000000000116,
+            "apfdc_delta": -0.0009055193914319127,
+            "added_predecessor_seconds": 19.586,
+            "removed_predecessor_seconds": 3.389,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 8.421,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+                "duration": 4.849,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.873,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.blueprint.jasypt.handler.EncryptablePropertyPlaceholderTest",
+                "duration": 1.097,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 0.983,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1662",
+      "build": "1"
+    },
+    "delta_apfdc": -0.03552956509543537,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1662",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.03552956509543537,
+        "first_selected_semantic_share": 0.8810165369028262,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.003,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.JmsExampleTest",
+            "position_shift": 19,
+            "completion_shift_seconds": 45.85299999999998,
+            "apfdc_delta": -0.035529565095435374,
+            "added_predecessor_seconds": 45.853,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+                "duration": 13.834,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 13.402,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+                "duration": 9.031,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.908,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 1.334,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1676",
+      "build": "1"
+    },
+    "delta_apfdc": -0.0039398532382454166,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1676",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.0039398532382454166,
+        "first_selected_semantic_share": 0.8903213363742932,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.0,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 3,
+            "completion_shift_seconds": 14.608000000000004,
+            "apfdc_delta": -0.0030906119699435457,
+            "added_predecessor_seconds": 14.617,
+            "removed_predecessor_seconds": 0.009,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 13.596,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 0.745,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.lock.DerbyJDBCLockTest",
+                "duration": 0.257,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainTest",
+                "duration": 0.019,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": -1,
+            "completion_shift_seconds": 3.342,
+            "apfdc_delta": -0.0007070663474501183,
+            "added_predecessor_seconds": 3.438,
+            "removed_predecessor_seconds": 0.096,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                "duration": 3.438,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.LogTest",
+            "position_shift": 10,
+            "completion_shift_seconds": 0.671999999999997,
+            "apfdc_delta": -0.0001421749208517287,
+            "added_predecessor_seconds": 34.227000000000004,
+            "removed_predecessor_seconds": 33.555,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 13.596,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 7.636,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+                "duration": 6.118,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CommandExampleTest",
+                "duration": 3.378,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.features.internal.service.BlacklistTest",
+                "duration": 1.116,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1677",
+      "build": "3"
+    },
+    "delta_apfdc": -0.0006687774956372072,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1677",
+          "build": "3",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.0006687774956372072,
+        "first_selected_semantic_share": 0.9011218453963702,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.046,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 1,
+            "completion_shift_seconds": 0.96,
+            "apfdc_delta": -0.0006687774956372718,
+            "added_predecessor_seconds": 0.96,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.FelixHttpTest",
+                "duration": 0.96,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1686",
+      "build": "1"
+    },
+    "delta_apfdc": 0.07162956248244956,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1686",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.07162956248244956,
+        "first_selected_semantic_share": 0.905402587468104,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.maven.surefire.junit4.JUnit4Provider",
+            "position_shift": 34,
+            "completion_shift_seconds": 8064.145,
+            "apfdc_delta": -0.10341862429233133,
+            "added_predecessor_seconds": 8064.145,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.RestExampleTest",
+                "duration": 3727.639,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+                "duration": 3602.237,
+                "failed": true
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ServletExampleTest",
+                "duration": 138.605,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 113.992,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+                "duration": 78.608,
+                "failed": false
+              }
+            ],
+            "history_group": "N1_4",
+            "valid_source": false
+          },
+          {
+            "test_id": "org.apache.karaf.itests.EquinoxTest",
+            "position_shift": 21,
+            "completion_shift_seconds": 55.210000000000036,
+            "apfdc_delta": -0.0007080406226797249,
+            "added_predecessor_seconds": 55.21,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.WebSocketExampleTest",
+                "duration": 14.252,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 13.103,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.FeatureSshCommandSecurityTest",
+                "duration": 8.766,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.KarSshCommandSecurityTest",
+                "duration": 6.824,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.SystemTest",
+                "duration": 2.323,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.ScrExampleWithEquinoxTest",
+            "position_shift": 21,
+            "completion_shift_seconds": -6597.59,
+            "apfdc_delta": 0.08461079028772944,
+            "added_predecessor_seconds": 616.697,
+            "removed_predecessor_seconds": 7214.287,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ServletExampleTest",
+                "duration": 138.605,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 113.992,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.CamelExampleTest",
+                "duration": 78.608,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 53.869,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 44.06,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.examples.RestExampleTest",
+            "position_shift": 1,
+            "completion_shift_seconds": -7107.133999999998,
+            "apfdc_delta": 0.0911454371097312,
+            "added_predecessor_seconds": 143.937,
+            "removed_predecessor_seconds": 7251.071,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 44.06,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.DiagnosticTest",
+                "duration": 26.99,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.shell.ssh.ServerKeyVerifierImplTest",
+                "duration": 17.339,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.InstanceTest",
+                "duration": 16.126,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jpm.ProcessTest",
+                "duration": 13.361,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1691",
+      "build": "1"
+    },
+    "delta_apfdc": -0.011599538828293787,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1691",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.011599538828293787,
+        "first_selected_semantic_share": 0.907381716598845,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 6,
+            "completion_shift_seconds": 20.805999999999983,
+            "apfdc_delta": -0.011599538828293818,
+            "added_predecessor_seconds": 20.806,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.features.EnterpriseFeaturesTest",
+                "duration": 19.215,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 1.393,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainTest",
+                "duration": 0.087,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.obr.command.util.FileUtilTest",
+                "duration": 0.044,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+                "duration": 0.039,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1694",
+      "build": "1"
+    },
+    "delta_apfdc": 0.08199433670277567,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1694",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": 0.08199433670277567,
+        "first_selected_semantic_share": 0.8965612375600907,
+        "first_selected_failed": false,
+        "first_selected_duration": 0.002,
+        "first_selected": "org.apache.karaf.features.command.RepoAddCommandTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.shell.ssh.keygenerator.OpenSSHGeneratorKeyFileProviderTest",
+            "position_shift": -10,
+            "completion_shift_seconds": -9.961000000000002,
+            "apfdc_delta": 0.0819943367027757,
+            "added_predecessor_seconds": 2.923,
+            "removed_predecessor_seconds": 12.884,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.shell.ssh.KnownHostsManagerTest",
+                "duration": 2.923,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1699",
+      "build": "1"
+    },
+    "delta_apfdc": -0.08644063760887999,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1699",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.08644063760887999,
+        "first_selected_semantic_share": 0.9996381577571195,
+        "first_selected_failed": false,
+        "first_selected_duration": 132.274,
+        "first_selected": "org.apache.karaf.itests.examples.ConfigExampleTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.itests.examples.GraphQLExampleTest",
+            "position_shift": 9,
+            "completion_shift_seconds": 159.73399999999987,
+            "apfdc_delta": -0.08644063760888004,
+            "added_predecessor_seconds": 159.734,
+            "removed_predecessor_seconds": 0,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 132.274,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.features.Spring43FeaturesTest",
+                "duration": 26.341,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.jaas.modules.ldap.LdapCacheTest",
+                "duration": 0.844,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainTest",
+                "duration": 0.144,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.lock.PostgreSQLJDBCLockTest",
+                "duration": 0.053,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1701",
+      "build": "1"
+    },
+    "delta_apfdc": -0.14832283777525757,
+    "stages": [
+      {
+        "key": {
+          "project": "karaf",
+          "pr": "PR-1701",
+          "build": "1",
+          "stage": "single"
+        },
+        "delta_apfdc": -0.14832283777525757,
+        "first_selected_semantic_share": 0.9996335259588207,
+        "first_selected_failed": false,
+        "first_selected_duration": 54.215,
+        "first_selected": "org.apache.karaf.itests.examples.ConfigExampleTest",
+        "failure_shifts": [
+          {
+            "test_id": "org.apache.karaf.examples.itests.ExampleITest",
+            "position_shift": 13,
+            "completion_shift_seconds": 352.5579999999996,
+            "apfdc_delta": -0.12855679087524557,
+            "added_predecessor_seconds": 372.156,
+            "removed_predecessor_seconds": 19.598,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.JtaTest",
+                "duration": 141.57,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 54.215,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.ssh.ConfigSshCommandSecurityTest",
+                "duration": 40.071,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.main.MainLockingTest",
+                "duration": 27.948,
+                "failed": false
+              },
+              {
+                "test_id": "org.apache.karaf.itests.examples.SoapExampleTest",
+                "duration": 27.538,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          },
+          {
+            "test_id": "org.apache.karaf.itests.ConfigManagedServiceFactoryTest",
+            "position_shift": 0,
+            "completion_shift_seconds": 54.207,
+            "apfdc_delta": -0.019766046900012036,
+            "added_predecessor_seconds": 54.215,
+            "removed_predecessor_seconds": 0.008,
+            "largest_added_predecessors": [
+              {
+                "test_id": "org.apache.karaf.itests.examples.ConfigExampleTest",
+                "duration": 54.215,
+                "failed": false
+              }
+            ],
+            "history_group": "N5plus",
+            "valid_source": true
+          }
+        ]
+      }
+    ]
+  }
+]

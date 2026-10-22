@@ -1,0 +1,9 @@
+{
+  "project": "Chart",
+  "tests_count": 2193,
+  "faults_count": 26,
+  "independent_apfd": 0.7322775263951734,
+  "author_apfd": 0.7263144971763303,
+  "apfd_delta": 0.005963029218843063,
+  "provenance": "cache_hit"
+}

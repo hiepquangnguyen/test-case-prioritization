@@ -1,0 +1,22 @@
+[
+  {
+    "path": "references\\artifacts\\falcon\\falcon.zip",
+    "bytes": 24089023,
+    "md5": "a1cfd6c32eb5889c0e08f23872739aae",
+    "sha256": "d60fa62edf1d1838185edf19e61146f5981895702f6a7afce0ab8c3f65ee36c8",
+    "md5_matches_manifest": true,
+    "entries": 2556,
+    "uncompressed_bytes": 97356767,
+    "java_files": 0
+  },
+  {
+    "path": "references\\artifacts\\dante\\ML_TCSP.zip",
+    "bytes": 3590599893,
+    "md5": "b268b21616f6ceb396e8df89d382f298",
+    "sha256": "a99ffc38d0caf0c9362f6b762483e6bd453fe45ed4f6b981a6dca4464495748d",
+    "md5_matches_manifest": true,
+    "entries": 417906,
+    "uncompressed_bytes": 17019797879,
+    "java_files": 0
+  }
+]

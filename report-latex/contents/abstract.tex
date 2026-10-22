@@ -1,0 +1,18 @@
+\addcontentsline{toc}{section}{Tóm tắt nội dung}
+
+\begin{center}
+    \Large{\textbf{Tóm tắt nội dung}}
+\end{center}
+\vspace{0.5cm}
+
+Bài toán Ưu tiên Bộ kiểm thử (Test Case Prioritization -- TCP) đặt ra yêu cầu sắp xếp lại thứ tự thực thi các bài kiểm thử sao cho các lỗi phần mềm được phát hiện sớm nhất, qua đó rút ngắn chu kỳ phản hồi trong quy trình Tích hợp Liên tục (CI/CD). Đồ án này nghiên cứu phương pháp HC-FALCON --- một mô hình kết hợp ba nguồn thông tin: đa dạng ngữ nghĩa mã nguồn (thông qua mô hình ngôn ngữ UniXcoder và hàm Submodular Facility Location), ước lượng rủi ro lỗi Bayes (Beta-Bernoulli) từ lịch sử pass/fail, và chi phí thời gian thực thi, vào một hàm mục tiêu tối ưu hóa duy nhất.
+
+Nghiên cứu được triển khai trên hai trục thực nghiệm độc lập. Trục thứ nhất tái lập thành công kết quả của FALCON trên benchmark Defects4J (20.770 phương thức kiểm thử, 288 phiên bản lỗi, 6 dự án Java) với sai lệch APFD chỉ $+0{,}37$ điểm phần trăm. Trục thứ hai đánh giá HC-FALCON trên dữ liệu CI thực tế từ ba dự án Apache (596 giai đoạn, 519 lần xây dựng, 33.972 lượt xếp hạng). Kết quả cho thấy tất cả năm thế hệ thuật toán HC-FALCON đều không vượt qua được baseline \texttt{history\_cost} --- một heuristic đơn giản kết hợp tỷ lệ lỗi và thời gian chạy. Phân tích nguyên nhân xác định hiện tượng \textit{Heavy Predecessors}: thuật toán greedy ngữ nghĩa đẩy các bài kiểm thử tích hợp chạy nặng (hàng trăm giây, không chứa lỗi) lên đầu danh sách, gây trễ tích lũy hơn 10,8 giờ cho việc phát hiện lỗi thực sự.
+
+Đồ án đóng góp một nghiên cứu thực nghiệm có kết quả âm (negative result) có giá trị khoa học, làm rõ ranh giới giữa TCP mức phương thức trên benchmark tĩnh và TCP mức lớp trong CI thực tế, đồng thời cung cấp bài học thiết kế cho các nghiên cứu tiếp theo.
+
+\medskip
+
+\textbf{Từ khóa:} Ưu tiên bộ kiểm thử, Tối ưu hóa Submodular, Facility Location, Lịch sử lỗi, Chi phí thực thi, Tích hợp liên tục, UniXcoder, Kết quả thực nghiệm âm.
+
+\pagebreak

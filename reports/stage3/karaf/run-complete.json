@@ -1,0 +1,14 @@
+{
+  "builds": 726,
+  "rankings": 18150,
+  "manifest_sha256": "910a4ed2e3a6650c1bc62fd30a24d48c3960471009a1827fbb129b83d7a0e46a",
+  "artifacts_sha256": {
+    "inputs.jsonl.gz": "d4406366afd37ef03de69f69c560f9b2f8179802b11f596476dbf957712275de",
+    "ground-truth.jsonl.gz": "66ef6c23fab180e1e1777632620561922d189f4a3883e65b41508cca229a977d",
+    "features.jsonl.gz": "d40da04c166fd41a5073b3fcbc1ad47d38ae408257ab583c5cb774b07030b509",
+    "rankings.jsonl.gz": "b771d9c34c7dbf353dbec3f04efe34f8ce8ee4d0b9dbabc232680af916bc3e8c",
+    "metrics.csv": "dd9009989f70d2c77293a21633abec1b4ca97f6ae31c6e88e703f757edaa5cca",
+    "ledger.json": "7512f296df9eb51588c486dfb641c5293f1c2991574c32544d45c0a4c34a2eaf",
+    "summary.json": "0f0997f76e5366ef49fb7e56445baabe1e700d0c644eff9c88ee8702ed161e82"
+  }
+}

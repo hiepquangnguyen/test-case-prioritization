@@ -1,0 +1,7 @@
+project,tests,blank_lines,duplicate_source_rows,mapping_entries,duplicate_identifiers,mapping_indices_exact,index_list_indices_exact,index_list_mismatches,method_name_source_mismatches,fault_keys_outside_suite,failing_methods,faults,source_paths_present,embedding_vectors
+Chart,2193,0,47,2193,0,True,True,0,0,0,92,26,0,0
+Closure,8006,0,774,8006,0,True,True,0,0,0,467,147,0,0
+Lang,2239,0,20,2239,0,True,True,0,0,0,68,32,0,0
+Math,2996,0,137,2996,0,True,True,0,0,0,63,30,0,0
+Mockito,1292,0,5,1292,0,True,True,0,0,0,94,27,0,0
+Time,4044,0,26,4044,0,True,True,0,0,0,73,26,0,0

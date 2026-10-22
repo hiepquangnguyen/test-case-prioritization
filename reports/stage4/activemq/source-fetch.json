@@ -1,0 +1,28 @@
+{
+  "remote": "https://github.com/apache/activemq.git",
+  "commits": [
+    "a0d740aac10dd06153ece5e97f3e750dc3dd6df8",
+    "c7f3bd55580ca70bdb7719af2a52e162e1f557a3",
+    "18437a1dfdc0dd38e7245ff398994fdf302a6ada",
+    "a3925c9e7973b535c18d23ae4f1bb52faec38d8e",
+    "142b0eda6fdd959e81d97f720a3511160c0b88a6",
+    "bcbd55c8d124632d005baa40c1365495c2a4fb46",
+    "6a9e718b08c3d433021c279a4cf608d98e5fe3c2",
+    "40b787113d34a36c08d7346baf31f6f034615edc",
+    "fd3b9d369067cc6c867a8414b4a031c65dd097ea",
+    "cc763a96b5297f9b59e246d4b9c751bd0fbdd320",
+    "e34ae17d770bb2299e8c9bd29ac6bb7dd8f79188",
+    "3f7eb0a39ba3e7926e72f91fa3f9f6748e261726",
+    "358219bc659d92f9950e010b0ef2b73644848b60",
+    "d64dd6f8b0837a43f34bb92b4fa24c582c453b00",
+    "257ba223a3c6588c6b50f28c6b1382f9a3265ab9",
+    "a596ea0317d4aa24314faa77cd7f572469b30f4e",
+    "473eb15bfb9baf8f4d16f53fad50b48c2e261dd4",
+    "6540f384dc5d8dab237f83c2b2f6a832de0d83df",
+    "ad7f1c088887e0733abe6d91c992a30565a6e01a"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "From https://github.com/apache/activemq\n * branch                  a0d740aac10dd06153ece5e97f3e750dc3dd6df8 -> FETCH_HEAD\n * branch                  c7f3bd55580ca70bdb7719af2a52e162e1f557a3 -> FETCH_HEAD\n * branch                  18437a1dfdc0dd38e7245ff398994fdf302a6ada -> FETCH_HEAD\n * branch                  a3925c9e7973b535c18d23ae4f1bb52faec38d8e -> FETCH_HEAD\n * branch                  142b0eda6fdd959e81d97f720a3511160c0b88a6 -> FETCH_HEAD\n * branch                  bcbd55c8d124632d005baa40c1365495c2a4fb46 -> FETCH_HEAD\n * branch                  6a9e718b08c3d433021c279a4cf608d98e5fe3c2 -> FETCH_HEAD\n * branch                  40b787113d34a36c08d7346baf31f6f034615edc -> FETCH_HEAD\n * branch                  fd3b9d369067cc6c867a8414b4a031c65dd097ea -> FETCH_HEAD\n * branch                  cc763a96b5297f9b59e246d4b9c751bd0fbdd320 -> FETCH_HEAD\n * branch                  e34ae17d770bb2299e8c9bd29ac6bb7dd8f79188 -> FETCH_HEAD\n * branch                  3f7eb0a39ba3e7926e72f91fa3f9f6748e261726 -> FETCH_HEAD\n * branch                  358219bc659d92f9950e010b0ef2b73644848b60 -> FETCH_HEAD\n * branch                  d64dd6f8b0837a43f34bb92b4fa24c582c453b00 -> FETCH_HEAD\n * branch                  257ba223a3c6588c6b50f28c6b1382f9a3265ab9 -> FETCH_HEAD\n * branch                  a596ea0317d4aa24314faa77cd7f572469b30f4e -> FETCH_HEAD\n * branch                  473eb15bfb9baf8f4d16f53fad50b48c2e261dd4 -> FETCH_HEAD\n * branch                  6540f384dc5d8dab237f83c2b2f6a832de0d83df -> FETCH_HEAD\n * branch                  ad7f1c088887e0733abe6d91c992a30565a6e01a -> FETCH_HEAD\n",
+  "fetched_at": "2026-10-14T04:55:21.517041+00:00"
+}

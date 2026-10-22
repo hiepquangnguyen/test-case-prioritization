@@ -1,0 +1,449 @@
+{
+  "definition": "Compare bundled last_outcome_N to Nth earlier raw metadata row by start time; discrepancies diagnose semantics, not proof of future leakage. Completion estimate assumes Jenkins timestamp=start and build_duration=seconds; raw build JSON not bundled.",
+  "builds": [
+    {
+      "pr_name": "PR-1213",
+      "build_id": "3",
+      "stage_id": "single",
+      "earlier_start_rows": 0,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 1,
+      "processed_raw_mismatches": [],
+      "history_field_disagreements_with_previous_raw_builds": 0,
+      "history_fields_unknown_in_raw": 1690,
+      "excluded_by_upstream": [
+        {
+          "test_id": "org.apache.karaf.features.FeatureTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.model.JsonTest",
+          "outcome": 0,
+          "duration": 0.269,
+          "source_file_found": false
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.service.FeaturePatternTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.service.OverridesTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.management.codec.JmxRepositoryTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.instance.core.InstanceSettingsTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.jaas.modules.audit.AbstractAuditLoginModuleTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.main.util.SimpleMavenResolverTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.packages.command.PackageImportTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.util.JsonReaderTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": false
+        }
+      ],
+      "raw_tests_absent_from_processed": [],
+      "sha_matches": true,
+      "history_fields_checked": 1690
+    },
+    {
+      "pr_name": "PR-1077",
+      "build_id": "2",
+      "stage_id": "single",
+      "earlier_start_rows": 1,
+      "not_completed_under_start_plus_duration": 1,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1213",
+      "build_id": "4",
+      "stage_id": "single",
+      "earlier_start_rows": 2,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1077",
+      "build_id": "3",
+      "stage_id": "single",
+      "earlier_start_rows": 3,
+      "not_completed_under_start_plus_duration": 1,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1287",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 4,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 1,
+      "processed_raw_mismatches": [],
+      "history_field_disagreements_with_previous_raw_builds": 6,
+      "history_fields_unknown_in_raw": 1328,
+      "excluded_by_upstream": [
+        {
+          "test_id": "org.apache.karaf.features.internal.download.impl.DownloadManagerHelperTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.model.ConfigTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.model.JsonTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.service.FeaturePatternTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.packages.command.PackageImportTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.maven.surefire.junit4.JUnit4Provider",
+          "outcome": 1,
+          "duration": 5.55,
+          "source_file_found": false
+        }
+      ],
+      "raw_tests_absent_from_processed": [],
+      "sha_matches": true,
+      "history_fields_checked": 2120
+    },
+    {
+      "pr_name": "PR-1287",
+      "build_id": "2",
+      "stage_id": "single",
+      "earlier_start_rows": 5,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 1,
+      "processed_raw_mismatches": [],
+      "history_field_disagreements_with_previous_raw_builds": 6,
+      "history_fields_unknown_in_raw": 1107,
+      "excluded_by_upstream": [
+        {
+          "test_id": "org.apache.karaf.audit.util.FastDateFormatTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventDisplayCommandTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.event.command.EventPrinterTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.event.service.EventCollectorTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.FeatureTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.download.impl.DownloadManagerHelperTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.model.ConfigTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.model.JsonTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.service.FeaturePatternTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.features.internal.service.OverridesTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.maven.core.MavenRepositoryURLTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.packages.core.internal.filter.ExpressionTokenizerTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.profile.impl.PropertiesTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.service.guard.tools.ACLConfigurationParserTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.util.JsonReaderTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        },
+        {
+          "test_id": "org.apache.karaf.util.ParserTest",
+          "outcome": 0,
+          "duration": 0.0,
+          "source_file_found": true
+        }
+      ],
+      "raw_tests_absent_from_processed": [],
+      "sha_matches": true,
+      "history_fields_checked": 2110
+    },
+    {
+      "pr_name": "PR-1288",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 6,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1289",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 7,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1290",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 8,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1291",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 9,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1292",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 10,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1293",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 11,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1294",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 12,
+      "not_completed_under_start_plus_duration": 1,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1295",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 13,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1294",
+      "build_id": "2",
+      "stage_id": "single",
+      "earlier_start_rows": 14,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1296",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 15,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1290",
+      "build_id": "2",
+      "stage_id": "single",
+      "earlier_start_rows": 16,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1297",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 17,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1298",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 18,
+      "not_completed_under_start_plus_duration": 1,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    },
+    {
+      "pr_name": "PR-1299",
+      "build_id": "1",
+      "stage_id": "single",
+      "earlier_start_rows": 19,
+      "not_completed_under_start_plus_duration": 0,
+      "processed_matches": 0,
+      "processed_raw_mismatches": null,
+      "history_field_disagreements_with_previous_raw_builds": null,
+      "history_fields_unknown_in_raw": null,
+      "excluded_by_upstream": null
+    }
+  ]
+}

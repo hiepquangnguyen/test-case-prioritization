@@ -1,0 +1,49 @@
+{
+  "config_name": "chart-bridge-v1",
+  "version": 1,
+  "created_at": "2026-09-15T04:45:00Z",
+  "contract": "docs/10-handoff/README.md",
+  "project": "Chart",
+  "methods_count": 2193,
+  "faults_count": 26,
+  "arms": {
+    "A": {
+      "name": "artifact",
+      "description": "Upstream FALCON artifact baseline",
+      "embeddings": "upstream_unmasked_unixcoder",
+      "kernel": "raw_cosine",
+      "ranker": "upstream_lazy_greedy_index_tie",
+      "source_vectors": "Chart_artifact"
+    },
+    "B": {
+      "name": "clipped_kernel",
+      "description": "Identical vectors to arm A, but cosine similarity clipped to non-negative [0, 1]",
+      "embeddings": "identical_to_arm_A",
+      "kernel": "clipped_cosine_nonnegative",
+      "ranker": "upstream_lazy_greedy_index_tie",
+      "source_vectors": "shared_with_A"
+    },
+    "C": {
+      "name": "internal_greedy_fqn",
+      "description": "Kernel identical to arm B, internal exact greedy ranker with FQN tie-breaking",
+      "embeddings": "identical_to_arm_A",
+      "kernel": "clipped_cosine_nonnegative",
+      "ranker": "internal_exact_greedy_fqn_tie",
+      "source_vectors": "shared_with_A"
+    },
+    "D": {
+      "name": "internal_full_pipeline",
+      "description": "Internal source preprocessing/chunk/masked UniXcoder, kernel B/C, ranker C",
+      "embeddings": "internal_preprocessed_chunked_masked_unixcoder",
+      "kernel": "clipped_cosine_nonnegative",
+      "ranker": "internal_exact_greedy_fqn_tie",
+      "source_vectors": "internal_extracted"
+    }
+  },
+  "invariants": {
+    "same_bbox_lines": true,
+    "exact_ordered_method_ids": true,
+    "same_fault_matrix": true,
+    "no_synthetic_history": true
+  }
+}

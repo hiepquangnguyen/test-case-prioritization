@@ -1,0 +1,1475 @@
+{
+  "project": "activemq",
+  "scope": "Full warmup/development source and diff audit; first 16 FQN records of first development build for semantic integration only",
+  "reserved_opened": false,
+  "effectiveness_evaluated": false,
+  "full_suite_size": 1012,
+  "smoke_size": 16,
+  "key": {
+    "project": "activemq",
+    "pr": "PR-961",
+    "build": "2",
+    "stage": "single"
+  },
+  "cutoff": 1675327121.0,
+  "eligible_history_builds": 73,
+  "latest_evidence_available_at": 1675308610.0,
+  "source_counts": {
+    "matched": 170412,
+    "ambiguous": 1288,
+    "missing": 2839
+  },
+  "source_gate_passed": true,
+  "diff_available": 219,
+  "diff_total": 223,
+  "semantic_seconds": 15.998167400000966,
+  "encoder": {
+    "config": {
+      "unit_lrts": "test_class_record",
+      "source_representation": "declared_revision_compilation_unit; nested_class_uses_outer_file",
+      "source_preprocessing": "utf8_strict_bom_removed_lf_java_comments_removed_preserve_literals_v1",
+      "encoder": "microsoft/unixcoder-base",
+      "revision": "5604afdc964f6c53782a6813140ade5216b99006",
+      "model_api": "transformers_AutoModel_AutoTokenizer",
+      "max_length": 512,
+      "max_chunks": 16,
+      "chunk_policy": "nonoverlap_payload_no_special_tokens_then_add_model_special_tokens; keep_first_16",
+      "pooling": "attention_mask_mean_including_nonpadding_special_tokens; payload_length_weighted_chunk_mean_then_l2",
+      "model_dtype": "float32",
+      "similarity": "clip_cosine_0_1",
+      "invalid_source_similarity": "zero_row_and_column_including_diagonal",
+      "valid_source_diagonal": 1.0,
+      "zero_norm_policy": "semantic_unavailable_keep_test",
+      "nonfinite_policy": "hard_error"
+    },
+    "preprocessing": "utf8_strict_bom_removed_lf_java_comments_removed_preserve_literals_v1",
+    "torch": "2.14.1+cpu",
+    "transformers": "5.19.0",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "dtype": "float32",
+    "tokenizer_sha256": "bf8021db1175b7dcc1b778e957e1ba709573c9c94254b184891754171e95b5e8",
+    "model_config_sha256": "42df2b576043103d0937651aa223d8ce5b67e36e5718eade564ac73376947e9f"
+  },
+  "kernel_key": "92b9ee84714c0f9eef9856709cc1c1db273457105b0ab48837b6f8b2a0999220",
+  "kernel_cache_hit": false,
+  "vectors": [
+    {
+      "test_id": "org.apache.activemq.ActiveMQConnectionFactoryTest",
+      "cache_key": "0ca5220299ef49a751f3ed813f241a3506e7f2538487120038cb7effd6bc76f6",
+      "source_sha256": "21512fa8471234d8cefbbd012b76c8af76847082f9bf0aa51cc8e538fa6beb27",
+      "cache_hit": false,
+      "token_count": 2661,
+      "chunks": 6,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "bce747da156da27cc03348c2288da4a18e2263fc1f38fb779fffc97e422e0ebd"
+    },
+    {
+      "test_id": "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+      "cache_hit": true,
+      "cache_key": "0384b3dd8a6962e2eb4b90c28dd1bb9d40f59e1bdc673ee11d751dcb35fd4126",
+      "chunks": 1,
+      "source_sha256": "b32bb0ea63a4b80153118e09c696324007bd492f38c6b1f2561e69d44fee5f29",
+      "token_count": 493,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "0c65571434b272ec4a1cdfeb0d473be46d8c34b09f07e341c11ccd281d92e3e5"
+    },
+    {
+      "test_id": "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+      "cache_hit": true,
+      "cache_key": "0fdc820665bee36fe0207dd2e5d642fe283d84a96643436052b2a61b2549d08b",
+      "chunks": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "token_count": 0,
+      "truncation_fraction": 0.0,
+      "valid": false,
+      "vector_sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    {
+      "test_id": "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+      "cache_key": "3ad2134513da129dc6ffc45485c009089ce85b41b4cd12acf6e48f412887d092",
+      "source_sha256": "03f6cfa3739031ea4ce7d89ce7fc1a5517434bc58c4b46cf68759033f440658f",
+      "cache_hit": false,
+      "token_count": 5727,
+      "chunks": 12,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "c2f51fd4aeddbcf1afc4acf6391e5c379ebd2c2f3a603b637a76652cd41f12c0"
+    },
+    {
+      "test_id": "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+      "cache_key": "427c62985ddae72a2de07cd504b4b363ecefd61a34d1e47c2a2b2981a34fc2bc",
+      "source_sha256": "c02128a7625b8576bf542e01dbdd503d64e65671e91f2d0c662421e72500f9c8",
+      "cache_hit": false,
+      "token_count": 2133,
+      "chunks": 5,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "f2cde7cf4f731dfe55460c6b9d4b3589df7f6ac3f1c1134bd271b0b1f0e2a56d"
+    },
+    {
+      "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+      "cache_hit": true,
+      "cache_key": "0fdc820665bee36fe0207dd2e5d642fe283d84a96643436052b2a61b2549d08b",
+      "chunks": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "token_count": 0,
+      "truncation_fraction": 0.0,
+      "valid": false,
+      "vector_sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    {
+      "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+      "cache_key": "f95285d2d0a810d08d5bbc9c6b3138ad9ccfe140159a2df70db57a45aa1a454f",
+      "source_sha256": "de2431847dd1d6ea6f724e92a7fbaad7482a6c912995b0ac244fabd0fb972a95",
+      "cache_hit": false,
+      "token_count": 139,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "5621347a3e024953160467b12eaac725db639098e90c799934ab089491d1a08e"
+    },
+    {
+      "test_id": "org.apache.activemq.AuthenticationTest",
+      "cache_hit": true,
+      "cache_key": "3e8a659920c979a8b35dda1a958c85c4321d1c028e92332df6d53814c4504ee8",
+      "chunks": 1,
+      "source_sha256": "808d6f401c56571f37547a3ba0b8905431f03d8b4b89f2b55a86de1da1d200e6",
+      "token_count": 469,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "692495c06326b030abc0af1753f989dd28f25fd803d5e0a966cdd64fda175c67"
+    },
+    {
+      "test_id": "org.apache.activemq.AuthorizationTest",
+      "cache_hit": true,
+      "cache_key": "9e4f72c773d2cd782376a9fef31076abdad2f9c7793232e04437cc89df8e7243",
+      "chunks": 3,
+      "source_sha256": "7e16d11425ec7374257c83a22435a07a0e822e1d3331911c29eb9c92d36b7ae9",
+      "token_count": 1062,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "321bca51e538e5ed798be2d0ceb145b7a1fffcfd99b79bd365642847098623f3"
+    },
+    {
+      "test_id": "org.apache.activemq.BrokerConfigTest",
+      "cache_hit": true,
+      "cache_key": "4b2d26b8a210e92cab3dcadd43bf7c127c00f774041a5bfdeed17da11e18e09a",
+      "chunks": 1,
+      "source_sha256": "ba8c5f78f39d1f42e467eb990917f71446b018c513c27e093e7f35742b129348",
+      "token_count": 122,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "a4222883c1a1b59a2df2351e8b57a201c8c4c8218caa9ba022515e5b1c6de410"
+    },
+    {
+      "test_id": "org.apache.activemq.BrokerDurableRejectedTest",
+      "cache_key": "17dac12fc0b2ae257252040b9c29af40e9683ca68253e2e2575524166ce9e86b",
+      "source_sha256": "2462f3c431fd1b2334bced9d6da3972033bf22b7dd357fda261103228e36029e",
+      "cache_hit": false,
+      "token_count": 1002,
+      "chunks": 2,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "13b9fefcbfbb67a4b33d240f0a9e88c94b37c2656822b685063dd62fcb0264dc"
+    },
+    {
+      "test_id": "org.apache.activemq.ConnectionCleanupTest",
+      "cache_key": "abc1b2dc642a43dc63382ab5a561d6aa39c1e69ab7f125d2fd12a8581ead09c0",
+      "source_sha256": "ef54c122e83cd47e1b6ea0b1a72fcaa9631d05f55fddd88dada21e20c93d33d2",
+      "cache_hit": false,
+      "token_count": 509,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "2a888a4c297098702c46daf0e2a51009f9ee0524e173b3845649acc32412562b"
+    },
+    {
+      "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+      "cache_key": "a3cb7758b7d6ae68f42a7b3f46e96639676559215301e0583dff4a280fd5628a",
+      "source_sha256": "be8f2945ed92e91ee03b532aa063869288d80c6698b5ecba13b8ea2ece198330",
+      "cache_hit": false,
+      "token_count": 478,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "1d6abf77890b6f5332c83570f3b291836fa4340cea5bbf6e1ea24a787337e9af"
+    },
+    {
+      "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+      "cache_key": "7ca9d5d5ebe93e0fa54b92516380f378bc50994ea49ca56d49056aa9fccefcb6",
+      "source_sha256": "ec885b97f09b4545c3989c6db2ba5112d5a986dba42b1114fc8ddbb14e2aed54",
+      "cache_hit": false,
+      "token_count": 277,
+      "chunks": 1,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "ca95c9500dbe1903d438d65e46ddf25d0032d04a8264d0b6ec5c5f62a747b6bd"
+    },
+    {
+      "test_id": "org.apache.activemq.DestinationsTest",
+      "cache_hit": true,
+      "cache_key": "25a7aac41397804cd6a0229cd4a722b2775a60a54646a581e2cdb9e945bec5ec",
+      "chunks": 2,
+      "source_sha256": "1566e0b5d7c9344da4540eaf8bbb8572560b28563fb8a8b372056cc062268ad9",
+      "token_count": 536,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "1665b89c28452420a3255b0927ad9200760edbbc5a800b2f6c9778a7408c9e43"
+    },
+    {
+      "test_id": "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+      "cache_key": "ed63636b6eaa9f0ab9986fb6d3af6569661116543d3047c143001af15bd812e2",
+      "source_sha256": "da36d53f4d22e39a206b0ae9d65dc9329208fba2cf78f6727b68f015d720f626",
+      "cache_hit": false,
+      "token_count": 1519,
+      "chunks": 3,
+      "truncation_fraction": 0.0,
+      "valid": true,
+      "vector_sha256": "f9f5c9aec0e9faef792645587016a27896f897f53b7dcce0f32363f2418c3514"
+    }
+  ],
+  "rankings": {
+    "random": {
+      "order": [
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCleanupTest"
+      ],
+      "trace": []
+    },
+    "shortest_test_first": {
+      "order": [
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest"
+      ],
+      "trace": []
+    },
+    "most_fail": {
+      "order": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest"
+      ],
+      "trace": []
+    },
+    "recent_fail": {
+      "order": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest"
+      ],
+      "trace": []
+    },
+    "history_only": {
+      "order": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "trace": []
+    },
+    "history_cost": {
+      "order": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest"
+      ],
+      "trace": []
+    },
+    "hc_falcon_normalized_v1": {
+      "order": [
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.activemq.BrokerDurableRejectedTest",
+          "semantic_gain": 0.337139829993248,
+          "modular_gain": 0.05053090678994033,
+          "total_gain": 0.3876707367831883,
+          "coverage_sum": 10.788474559783936
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerConfigTest",
+          "semantic_gain": 0.014863520860671997,
+          "modular_gain": 0.05950879269998412,
+          "total_gain": 0.07437231356065611,
+          "coverage_sum": 11.26410722732544
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCleanupTest",
+          "semantic_gain": 0.012557802721858025,
+          "modular_gain": 0.04154560814257789,
+          "total_gain": 0.054103410864435916,
+          "coverage_sum": 11.665956914424896
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+          "semantic_gain": 0.012068670243024826,
+          "modular_gain": 0.0387310214385478,
+          "total_gain": 0.050799691681572626,
+          "coverage_sum": 12.05215436220169
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+          "semantic_gain": 0.00726940855383873,
+          "modular_gain": 0.04066271646223854,
+          "total_gain": 0.04793212501607727,
+          "coverage_sum": 12.28477543592453
+        },
+        {
+          "test_id": "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+          "semantic_gain": 0.005556609481573105,
+          "modular_gain": 0.039754606051998105,
+          "total_gain": 0.04531121553357121,
+          "coverage_sum": 12.46258693933487
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+          "semantic_gain": 0.005532769486308098,
+          "modular_gain": 0.036014521089667004,
+          "total_gain": 0.0415472905759751,
+          "coverage_sum": 12.639635562896729
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+          "semantic_gain": 0.0027303416281938553,
+          "modular_gain": 0.036042569786027,
+          "total_gain": 0.03877291141422085,
+          "coverage_sum": 12.727006494998932
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQConnectionFactoryTest",
+          "semantic_gain": 0.005800651386380196,
+          "modular_gain": 0.03248003098953543,
+          "total_gain": 0.03828068237591563,
+          "coverage_sum": 12.912627339363098
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+          "semantic_gain": 0.010808279737830162,
+          "modular_gain": 0.02507419079621427,
+          "total_gain": 0.03588247053404443,
+          "coverage_sum": 13.258492290973663
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+          "semantic_gain": 0.0028200671076774597,
+          "modular_gain": 0.02411569817533836,
+          "total_gain": 0.02693576528301582,
+          "coverage_sum": 13.348734438419342
+        },
+        {
+          "test_id": "org.apache.activemq.AuthenticationTest",
+          "semantic_gain": 0.00962759181857109,
+          "modular_gain": 0.014008760697816997,
+          "total_gain": 0.023636352516388088,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.021280522762453975,
+          "total_gain": 0.021280522762453975,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.02096258570286844,
+          "total_gain": 0.02096258570286844,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.DestinationsTest",
+          "semantic_gain": 0.005323400720953941,
+          "modular_gain": 0.012209221718608325,
+          "total_gain": 0.017532622439562266,
+          "coverage_sum": 13.827166199684143
+        },
+        {
+          "test_id": "org.apache.activemq.AuthorizationTest",
+          "semantic_gain": 0.005401056259870529,
+          "modular_gain": 0.007078246696183399,
+          "total_gain": 0.012479302956053928,
+          "coverage_sum": 14.0
+        }
+      ]
+    },
+    "hc_falcon_topic_raw_v1": {
+      "order": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.activemq.ActiveMQConnectionFactoryTest",
+          "semantic_gain": 0.348415257409215,
+          "modular_gain": 0.009750525104583657,
+          "total_gain": 0.3581657825137986,
+          "coverage_sum": 11.14928823709488
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerConfigTest",
+          "semantic_gain": 0.013114461675286293,
+          "modular_gain": 0.0178645758482067,
+          "total_gain": 0.030979037523492993,
+          "coverage_sum": 11.56895101070404
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCleanupTest",
+          "semantic_gain": 0.008983464911580086,
+          "modular_gain": 0.012472016892776832,
+          "total_gain": 0.02145548180435692,
+          "coverage_sum": 11.856421887874603
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+          "semantic_gain": 0.008722376078367233,
+          "modular_gain": 0.011627076248307782,
+          "total_gain": 0.020349452326675017,
+          "coverage_sum": 12.135537922382355
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerDurableRejectedTest",
+          "semantic_gain": 0.0047569889575243,
+          "modular_gain": 0.015169409024622892,
+          "total_gain": 0.019926397982147192,
+          "coverage_sum": 12.287761569023132
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+          "semantic_gain": 0.0069402046501636505,
+          "modular_gain": 0.012206972272082029,
+          "total_gain": 0.019147176922245678,
+          "coverage_sum": 12.50984811782837
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+          "semantic_gain": 0.010808279737830162,
+          "modular_gain": 0.007527287363561247,
+          "total_gain": 0.01833556710139141,
+          "coverage_sum": 12.855713069438934
+        },
+        {
+          "test_id": "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+          "semantic_gain": 0.004832478240132332,
+          "modular_gain": 0.011934356973296263,
+          "total_gain": 0.016766835213428595,
+          "coverage_sum": 13.010352373123169
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+          "semantic_gain": 0.005024030804634094,
+          "modular_gain": 0.010820001423200344,
+          "total_gain": 0.01584403222783444,
+          "coverage_sum": 13.17112135887146
+        },
+        {
+          "test_id": "org.apache.activemq.AuthenticationTest",
+          "semantic_gain": 0.00962759181857109,
+          "modular_gain": 0.004205438501957637,
+          "total_gain": 0.013833030320528728,
+          "coverage_sum": 13.479204297065735
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+          "semantic_gain": 0.0027303416281938553,
+          "modular_gain": 0.010811581187453123,
+          "total_gain": 0.013541922815646978,
+          "coverage_sum": 13.566575229167938
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+          "semantic_gain": 0.0028200671076774597,
+          "modular_gain": 0.007239547294427081,
+          "total_gain": 0.01005961440210454,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.DestinationsTest",
+          "semantic_gain": 0.005323400720953941,
+          "modular_gain": 0.0036652158033061424,
+          "total_gain": 0.008988616524260085,
+          "coverage_sum": 13.827166199684143
+        },
+        {
+          "test_id": "org.apache.activemq.AuthorizationTest",
+          "semantic_gain": 0.005401056259870529,
+          "modular_gain": 0.002124893973463531,
+          "total_gain": 0.00752595023333406,
+          "coverage_sum": 14.0
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.006388425907008019,
+          "total_gain": 0.006388425907008019,
+          "coverage_sum": 14.0
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.006292981007889386,
+          "total_gain": 0.006292981007889386,
+          "coverage_sum": 14.0
+        }
+      ]
+    },
+    "fl_only": {
+      "order": [
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.activemq.AuthenticationTest",
+          "semantic_gain": 0.6993490345776081,
+          "modular_gain": 0.0,
+          "total_gain": 0.6993490345776081,
+          "coverage_sum": 11.18958455324173
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+          "semantic_gain": 0.033030539751052856,
+          "modular_gain": 0.0,
+          "total_gain": 0.033030539751052856,
+          "coverage_sum": 11.718073189258575
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerConfigTest",
+          "semantic_gain": 0.025264248251914978,
+          "modular_gain": 0.0,
+          "total_gain": 0.025264248251914978,
+          "coverage_sum": 12.122301161289215
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+          "semantic_gain": 0.021072670817375183,
+          "modular_gain": 0.0,
+          "total_gain": 0.021072670817375183,
+          "coverage_sum": 12.459463894367218
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+          "semantic_gain": 0.01676352694630623,
+          "modular_gain": 0.0,
+          "total_gain": 0.01676352694630623,
+          "coverage_sum": 12.727680325508118
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+          "semantic_gain": 0.012184709310531616,
+          "modular_gain": 0.0,
+          "total_gain": 0.012184709310531616,
+          "coverage_sum": 12.922635674476624
+        },
+        {
+          "test_id": "org.apache.activemq.AuthorizationTest",
+          "semantic_gain": 0.010802112519741058,
+          "modular_gain": 0.0,
+          "total_gain": 0.010802112519741058,
+          "coverage_sum": 13.09546947479248
+        },
+        {
+          "test_id": "org.apache.activemq.DestinationsTest",
+          "semantic_gain": 0.010646801441907883,
+          "modular_gain": 0.0,
+          "total_gain": 0.010646801441907883,
+          "coverage_sum": 13.265818297863007
+        },
+        {
+          "test_id": "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+          "semantic_gain": 0.010275278240442276,
+          "modular_gain": 0.0,
+          "total_gain": 0.010275278240442276,
+          "coverage_sum": 13.430222749710083
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQConnectionFactoryTest",
+          "semantic_gain": 0.00877191498875618,
+          "modular_gain": 0.0,
+          "total_gain": 0.00877191498875618,
+          "coverage_sum": 13.570573389530182
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerDurableRejectedTest",
+          "semantic_gain": 0.008309673517942429,
+          "modular_gain": 0.0,
+          "total_gain": 0.008309673517942429,
+          "coverage_sum": 13.70352816581726
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCleanupTest",
+          "semantic_gain": 0.007428672164678574,
+          "modular_gain": 0.0,
+          "total_gain": 0.007428672164678574,
+          "coverage_sum": 13.822386920452118
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+          "semantic_gain": 0.005640134215354919,
+          "modular_gain": 0.0,
+          "total_gain": 0.005640134215354919,
+          "coverage_sum": 13.912629067897797
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+          "semantic_gain": 0.005460683256387711,
+          "modular_gain": 0.0,
+          "total_gain": 0.005460683256387711,
+          "coverage_sum": 14.0
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.0,
+          "total_gain": 0.0,
+          "coverage_sum": 14.0
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.0,
+          "total_gain": 0.0,
+          "coverage_sum": 14.0
+        }
+      ]
+    },
+    "fl_history": {
+      "order": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.activemq.ActiveMQConnectionFactoryTest",
+          "semantic_gain": 0.348415257409215,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.3812008159626671,
+          "coverage_sum": 11.14928823709488
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerConfigTest",
+          "semantic_gain": 0.013114461675286293,
+          "modular_gain": 0.05657493302840741,
+          "total_gain": 0.0696893947036937,
+          "coverage_sum": 11.56895101070404
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+          "semantic_gain": 0.010808279737830162,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.043593838291282244,
+          "coverage_sum": 11.914815962314606
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+          "semantic_gain": 0.010118572041392326,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.04290413059484441,
+          "coverage_sum": 12.23861026763916
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+          "semantic_gain": 0.008722376078367233,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.041507934631819315,
+          "coverage_sum": 12.517726302146912
+        },
+        {
+          "test_id": "org.apache.activemq.AuthenticationTest",
+          "semantic_gain": 0.011252181604504585,
+          "modular_gain": 0.027272210881815615,
+          "total_gain": 0.0385243924863202,
+          "coverage_sum": 12.877796113491058
+        },
+        {
+          "test_id": "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+          "semantic_gain": 0.004832478240132332,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.037618036793584414,
+          "coverage_sum": 13.032435417175293
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerDurableRejectedTest",
+          "semantic_gain": 0.004154836758971214,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.036940395312423296,
+          "coverage_sum": 13.165390193462372
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCleanupTest",
+          "semantic_gain": 0.003714336082339287,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.03649989463579137,
+          "coverage_sum": 13.284248948097229
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+          "semantic_gain": 0.0028200671076774597,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.03560562566112954,
+          "coverage_sum": 13.374491095542908
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+          "semantic_gain": 0.0027303416281938553,
+          "modular_gain": 0.03278555855345208,
+          "total_gain": 0.03551590018164594,
+          "coverage_sum": 13.461862027645111
+        },
+        {
+          "test_id": "org.apache.activemq.AuthorizationTest",
+          "semantic_gain": 0.005401056259870529,
+          "modular_gain": 0.027272210881815615,
+          "total_gain": 0.03267326714168614,
+          "coverage_sum": 13.634695827960968
+        },
+        {
+          "test_id": "org.apache.activemq.DestinationsTest",
+          "semantic_gain": 0.005323400720953941,
+          "modular_gain": 0.027272210881815615,
+          "total_gain": 0.03259561160276955,
+          "coverage_sum": 13.805044651031494
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+          "semantic_gain": 0.006092354655265808,
+          "modular_gain": 0.02217946911502565,
+          "total_gain": 0.028271823770291457,
+          "coverage_sum": 14.0
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.02217946911502565,
+          "total_gain": 0.02217946911502565,
+          "coverage_sum": 14.0
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.02217946911502565,
+          "total_gain": 0.02217946911502565,
+          "coverage_sum": 14.0
+        }
+      ]
+    },
+    "no_confidence": {
+      "order": [
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest"
+      ],
+      "trace": [
+        {
+          "test_id": "org.apache.activemq.BrokerDurableRejectedTest",
+          "semantic_gain": 0.337139829993248,
+          "modular_gain": 0.050325864164461005,
+          "total_gain": 0.387465694157709,
+          "coverage_sum": 10.788474559783936
+        },
+        {
+          "test_id": "org.apache.activemq.BrokerConfigTest",
+          "semantic_gain": 0.014863520860671997,
+          "modular_gain": 0.06472865147111045,
+          "total_gain": 0.07959217233178245,
+          "coverage_sum": 11.26410722732544
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCleanupTest",
+          "semantic_gain": 0.012557802721858025,
+          "modular_gain": 0.04137702576177674,
+          "total_gain": 0.05393482848363476,
+          "coverage_sum": 11.665956914424896
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+          "semantic_gain": 0.012068670243024826,
+          "modular_gain": 0.03857385999364697,
+          "total_gain": 0.0506425302366718,
+          "coverage_sum": 12.05215436220169
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+          "semantic_gain": 0.00726940855383873,
+          "modular_gain": 0.03911080854535768,
+          "total_gain": 0.04638021709919641,
+          "coverage_sum": 12.28477543592453
+        },
+        {
+          "test_id": "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+          "semantic_gain": 0.005556609481573105,
+          "modular_gain": 0.03959329113964785,
+          "total_gain": 0.045149900621220956,
+          "coverage_sum": 12.46258693933487
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+          "semantic_gain": 0.005532769486308098,
+          "modular_gain": 0.03586838256913138,
+          "total_gain": 0.041401152055439476,
+          "coverage_sum": 12.639635562896729
+        },
+        {
+          "test_id": "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+          "semantic_gain": 0.0027303416281938553,
+          "modular_gain": 0.035896317450428296,
+          "total_gain": 0.03862665907862215,
+          "coverage_sum": 12.727006494998932
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQConnectionFactoryTest",
+          "semantic_gain": 0.005800651386380196,
+          "modular_gain": 0.03234823460485092,
+          "total_gain": 0.03814888599123112,
+          "coverage_sum": 12.912627339363098
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+          "semantic_gain": 0.010808279737830162,
+          "modular_gain": 0.024972445582458307,
+          "total_gain": 0.03578072532028847,
+          "coverage_sum": 13.258492290973663
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+          "semantic_gain": 0.0028200671076774597,
+          "modular_gain": 0.024017842300918888,
+          "total_gain": 0.026837909408596348,
+          "coverage_sum": 13.348734438419342
+        },
+        {
+          "test_id": "org.apache.activemq.AuthenticationTest",
+          "semantic_gain": 0.00962759181857109,
+          "modular_gain": 0.013697488232659344,
+          "total_gain": 0.023325080051230435,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.020468343581530716,
+          "total_gain": 0.020468343581530716,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+          "semantic_gain": 0.0,
+          "modular_gain": 0.020162540709790174,
+          "total_gain": 0.020162540709790174,
+          "coverage_sum": 13.656817376613617
+        },
+        {
+          "test_id": "org.apache.activemq.DestinationsTest",
+          "semantic_gain": 0.005323400720953941,
+          "modular_gain": 0.011937934727275838,
+          "total_gain": 0.01726133544822978,
+          "coverage_sum": 13.827166199684143
+        },
+        {
+          "test_id": "org.apache.activemq.AuthorizationTest",
+          "semantic_gain": 0.005401056259870529,
+          "modular_gain": 0.006920969164955502,
+          "total_gain": 0.012322025424826032,
+          "coverage_sum": 14.0
+        }
+      ]
+    },
+    "borda_history": {
+      "order": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "trace": []
+    },
+    "borda_history_cost": {
+      "order": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "trace": []
+    },
+    "fast_pw_lrts": {
+      "0": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "1": [
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "2": [
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "3": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "4": [
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "5": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "6": [
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "7": [
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "8": [
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "9": [
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "10": [
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "11": [
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "12": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "13": [
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "14": [
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "15": [
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "16": [
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "17": [
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "18": [
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ],
+      "19": [
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest"
+      ]
+    },
+    "dante_cch_adapt_r1": {
+      "order": [
+        "org.apache.activemq.ActiveMQConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest",
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest",
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest",
+        "org.apache.activemq.AuthenticationTest",
+        "org.apache.activemq.AuthorizationTest",
+        "org.apache.activemq.BrokerConfigTest",
+        "org.apache.activemq.BrokerDurableRejectedTest",
+        "org.apache.activemq.ConnectionCleanupTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest",
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest",
+        "org.apache.activemq.DestinationsTest",
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest"
+      ],
+      "reason": null,
+      "scores": {
+        "org.apache.activemq.ActiveMQConnectionFactoryTest": 0.0,
+        "org.apache.activemq.ActiveMQMessageAuditNotSyncTest": 0.0,
+        "org.apache.activemq.ActiveMQSslConnectionFactoryTest": 0.0,
+        "org.apache.activemq.ActiveMQXAConnectionFactoryTest": 0.0,
+        "org.apache.activemq.ActiveMQXAConnectionTxInterruptTest": 0.0,
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryTest": 0.0,
+        "org.apache.activemq.ActiveMQXASslConnectionFactoryVmTest": 0.0,
+        "org.apache.activemq.AuthenticationTest": 0.0,
+        "org.apache.activemq.AuthorizationTest": 0.0,
+        "org.apache.activemq.BrokerConfigTest": 0.0,
+        "org.apache.activemq.BrokerDurableRejectedTest": 0.0,
+        "org.apache.activemq.ConnectionCleanupTest": 0.0,
+        "org.apache.activemq.ConnectionCloseMultipleTimesConcurrentTest": 0.0,
+        "org.apache.activemq.ConnectionCloseMultipleTimesTest": 0.0,
+        "org.apache.activemq.DestinationsTest": 0.0,
+        "org.apache.activemq.ExclusiveConsumerStartupDestinationTest": 0.0
+      }
+    }
+  }
+}

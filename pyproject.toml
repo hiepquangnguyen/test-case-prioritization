@@ -1,0 +1,90 @@
+[project]
+name = "test-case-prioritization"
+version = "0.1.1"
+description = "HC-FALCON: Test Case Prioritization via submodular optimization combining semantic facility location, failure history, and execution cost."
+requires-python = ">=3.11"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "hc_falcon/NOTICE.md"]
+authors = [
+    { name = "Hiep Quang Nguyen", email = "hiepquangnguyen.me@gmail.com" },
+]
+keywords = [
+    "test-case prioritization",
+    "software testing",
+    "continuous integration",
+    "research artifact",
+    "submodular optimization",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Testing",
+]
+
+# Core dependencies shared by both environments
+dependencies = [
+    "numpy>=2.5",
+    "pandas>=3.0",
+    "scikit-learn>=1.9",
+    "scipy>=1.18",
+]
+
+[project.optional-dependencies]
+# Deep learning stack for UniXcoder encoding & FALCON reproduction
+falcon = [
+    "torch>=2.14",
+    "transformers>=5.17",
+    "safetensors>=0.8",
+    "tokenizers>=0.23",
+    "sentence-transformers>=6.0",
+    "xxhash>=4.0",
+    "huggingface_hub>=1.31",
+]
+
+# Data analysis & visualization stack for DANTE and plotting
+dante = [
+    "matplotlib>=3.11",
+    "seaborn>=0.13",
+    "pillow>=12.3",
+    "alive-progress>=3.3",
+]
+
+# All dependencies combined
+all = [
+    "torch>=2.14",
+    "transformers>=5.17",
+    "safetensors>=0.8",
+    "tokenizers>=0.23",
+    "sentence-transformers>=6.0",
+    "xxhash>=4.0",
+    "huggingface_hub>=1.31",
+    "matplotlib>=3.11",
+    "seaborn>=0.13",
+    "pillow>=12.3",
+    "alive-progress>=3.3",
+]
+
+# Development / testing
+dev = [
+    "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/hiepquangnguyen/test-case-prioritization"
+Repository = "https://github.com/hiepquangnguyen/test-case-prioritization.git"
+Documentation = "https://github.com/hiepquangnguyen/test-case-prioritization/blob/main/README.md"
+Issues = "https://github.com/hiepquangnguyen/test-case-prioritization/issues"
+
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tcp*", "hc_falcon*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

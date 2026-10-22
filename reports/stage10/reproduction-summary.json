@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-10-14T13:14:55.893482+00:00",
+  "task_id": "T06",
+  "scope": "reproduction_summary_six_projects",
+  "total_projects": 6,
+  "total_methods": 20770,
+  "total_faults": 288,
+  "metrics_summary": {
+    "mean_author_apfd": 0.72231,
+    "mean_rerun_apfd": 0.725976,
+    "mean_delta_apfd": 0.003666,
+    "max_abs_delta": 0.013151,
+    "total_wallclock_seconds": 7108.65,
+    "max_peak_rss_gib": 1.651
+  },
+  "projects": [
+    {
+      "project": "Chart",
+      "methods": 2193,
+      "faults": 26,
+      "author_apfd": 0.7263144971763303,
+      "rerun_apfd": 0.7322775263951734,
+      "delta_apfd": 0.005963029218843063,
+      "abs_delta": 0.005963029218843063,
+      "wallclock_seconds": 28.9053,
+      "peak_rss_gib": 0.471,
+      "provenance": "cache_hit"
+    },
+    {
+      "project": "Mockito",
+      "methods": 1292,
+      "faults": 27,
+      "author_apfd": 0.7361971104231166,
+      "rerun_apfd": 0.7362257768604518,
+      "delta_apfd": 2.8666437335123085e-05,
+      "abs_delta": 2.8666437335123085e-05,
+      "wallclock_seconds": 243.9502,
+      "peak_rss_gib": 1.135,
+      "provenance": "cold_embedding_run"
+    },
+    {
+      "project": "Lang",
+      "methods": 2239,
+      "faults": 32,
+      "author_apfd": 0.754284836980795,
+      "rerun_apfd": 0.754284836980795,
+      "delta_apfd": 0.0,
+      "abs_delta": 0.0,
+      "wallclock_seconds": 837.4879,
+      "peak_rss_gib": 1.175,
+      "provenance": "cold_embedding_run"
+    },
+    {
+      "project": "Math",
+      "methods": 2996,
+      "faults": 30,
+      "author_apfd": 0.6224299065420561,
+      "rerun_apfd": 0.635580774365821,
+      "delta_apfd": 0.013150867823764956,
+      "abs_delta": 0.013150867823764956,
+      "wallclock_seconds": 1355.0118,
+      "peak_rss_gib": 1.186,
+      "provenance": "cold_embedding_run"
+    },
+    {
+      "project": "Time",
+      "methods": 4044,
+      "faults": 26,
+      "author_apfd": 0.7944342996271779,
+      "rerun_apfd": 0.7989328920337821,
+      "delta_apfd": 0.004498592406604218,
+      "abs_delta": 0.004498592406604218,
+      "wallclock_seconds": 1319.6451,
+      "peak_rss_gib": 1.137,
+      "provenance": "cold_embedding_run"
+    },
+    {
+      "project": "Closure",
+      "methods": 8006,
+      "faults": 147,
+      "author_apfd": 0.7001997651421298,
+      "rerun_apfd": 0.6985555901101385,
+      "delta_apfd": -0.001644175031991324,
+      "abs_delta": 0.001644175031991324,
+      "wallclock_seconds": 3323.6494,
+      "peak_rss_gib": 1.651,
+      "provenance": "cold_embedding_run"
+    }
+  ],
+  "scientific_invariants": {
+    "all_projects_completed": true,
+    "operational_limits_satisfied": true,
+    "negative_lrts_preserved": true,
+    "no_ci_claim_from_defects4j": true
+  }
+}

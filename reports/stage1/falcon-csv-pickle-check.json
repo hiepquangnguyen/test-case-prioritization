@@ -1,0 +1,68 @@
+[
+  {
+    "project": "Chart",
+    "csv_rows": 2193,
+    "csv_fault_columns": 26,
+    "mapped_fault_columns": 26,
+    "csv_to_pickle_mismatches": 0,
+    "examples": [],
+    "extracted_source_rows": 2193,
+    "source_to_bbox_mismatches": 0,
+    "source_examples": []
+  },
+  {
+    "project": "Closure",
+    "csv_rows": 8006,
+    "csv_fault_columns": 147,
+    "mapped_fault_columns": 147,
+    "csv_to_pickle_mismatches": 0,
+    "examples": [],
+    "extracted_source_rows": 8006,
+    "source_to_bbox_mismatches": 0,
+    "source_examples": []
+  },
+  {
+    "project": "Lang",
+    "csv_rows": 2239,
+    "csv_fault_columns": 32,
+    "mapped_fault_columns": 32,
+    "csv_to_pickle_mismatches": 0,
+    "examples": [],
+    "extracted_source_rows": 2239,
+    "source_to_bbox_mismatches": 0,
+    "source_examples": []
+  },
+  {
+    "project": "Math",
+    "csv_rows": 2996,
+    "csv_fault_columns": 30,
+    "mapped_fault_columns": 30,
+    "csv_to_pickle_mismatches": 0,
+    "examples": [],
+    "extracted_source_rows": 2996,
+    "source_to_bbox_mismatches": 0,
+    "source_examples": []
+  },
+  {
+    "project": "Mockito",
+    "csv_rows": 1292,
+    "csv_fault_columns": 27,
+    "mapped_fault_columns": 27,
+    "csv_to_pickle_mismatches": 0,
+    "examples": [],
+    "extracted_source_rows": 1292,
+    "source_to_bbox_mismatches": 0,
+    "source_examples": []
+  },
+  {
+    "project": "Time",
+    "csv_rows": 4044,
+    "csv_fault_columns": 26,
+    "mapped_fault_columns": 26,
+    "csv_to_pickle_mismatches": 0,
+    "examples": [],
+    "extracted_source_rows": 4044,
+    "source_to_bbox_mismatches": 0,
+    "source_examples": []
+  }
+]

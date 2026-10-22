@@ -1,0 +1,67 @@
+{
+  "run_dir": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\stage10\\Mockito",
+  "project": "Mockito",
+  "tests": 1292,
+  "is_full_suite": true,
+  "embeddings": {
+    "shape": [
+      1292,
+      768
+    ],
+    "dtype": "float32",
+    "is_finite": true,
+    "sha256": "4fdf5f5aad5615ca25f330ecbba014fbfe28a6f8bc240ee8b6930b7b0ca097eb"
+  },
+  "ranking": {
+    "length": 1292,
+    "is_valid_permutation": true,
+    "gains_valid": true
+  },
+  "evaluation": {
+    "faults_universe": 27,
+    "independent_apfd": 0.7362257768604518,
+    "author_apfd": 0.7361971104231166,
+    "delta_apfd": 2.8666437335123085e-05,
+    "apfd_matches_result": true
+  },
+  "manifest_alignment": {
+    "manifest_path": "C:\\Users\\hiepq\\Projects\\tcp\\reports\\stage10\\input-manifest.json",
+    "expected_methods": 1292,
+    "actual_methods": 1292,
+    "methods_match": true,
+    "expected_faults": 27,
+    "actual_faults": 27,
+    "faults_match": true,
+    "file_hashes_ok": true,
+    "file_checks": {
+      "bbox_txt": {
+        "path": "work/artifacts/falcon/input/Mockito/Mockito-bbox.txt",
+        "expected_sha256": "28a40e6b910a0e4a67918bd78d66b6bfd7230915e1759f8171322cf7f4e4b966",
+        "actual_sha256": "28a40e6b910a0e4a67918bd78d66b6bfd7230915e1759f8171322cf7f4e4b966",
+        "match": true
+      },
+      "mapping_json": {
+        "path": "work/artifacts/falcon/input/Mockito/test_method_mapping.json",
+        "expected_sha256": "2eb50d7502f7302d4f562b0039b60bbdb58e90205e94fb560cc0118784670c3f",
+        "actual_sha256": "2eb50d7502f7302d4f562b0039b60bbdb58e90205e94fb560cc0118784670c3f",
+        "match": true
+      },
+      "fault_matrix_pickle": {
+        "path": "work/artifacts/falcon/input/Mockito/fault_matrix.pickle",
+        "expected_sha256": "719b717ee73117cf79e1fac11e60a79b20e19948bf5a799e80983c40b865cf0d",
+        "actual_sha256": "719b717ee73117cf79e1fac11e60a79b20e19948bf5a799e80983c40b865cf0d",
+        "match": true
+      }
+    },
+    "mapping_count": 1292,
+    "mapping_ok": true,
+    "manifest_ok": true
+  },
+  "operational_limits": {
+    "peak_rss_gib": 1.135,
+    "peak_rss_ok": true,
+    "wallclock_seconds": 243.9502,
+    "wallclock_ok": true
+  },
+  "overall_valid": true
+}

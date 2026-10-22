@@ -1,0 +1,68 @@
+{
+  "target": {
+    "project": "karaf",
+    "pr_name": "PR-1287",
+    "pr_base_branch": "master",
+    "build_id": "1",
+    "build_duration": "4362.0",
+    "build_timestamp": "1610086696.0",
+    "build_result": "FAILURE",
+    "build_head_sha": "49ca16ede41685e9d5a3ad2908d4172238dae873",
+    "build_date": "2021-01-08",
+    "trunk_sha": "6fef62cfb418319ea1afac617d247c5d8eaad65a",
+    "trunk_sha_source": "build_log",
+    "stage_id": "single",
+    "test_suite_duration_s": "903.164",
+    "num_pass_class": "208",
+    "num_fail_class": "4",
+    "num_trans_class": "5"
+  },
+  "processed_member": "ML_TCSP/src/processed_builds/karaf_build_PR-1287_1_single_tfidf_specific_boosted_False.json",
+  "history_rows": 4,
+  "history_cutoff_rule": "upstream start timestamp < target timestamp; not completion-aware",
+  "overrides": {
+    "TARGET_PROJECT": "karaf",
+    "LRTS_RAW_DATA_BASE_PATH": "C:\\Users\\hiepq\\Projects\\tcp\\work\\artifacts\\ML_TCSP\\long_running_test_suites",
+    "LRTS_METADATA_FILE": "C:\\Users\\hiepq\\Projects\\tcp\\work\\artifacts\\ML_TCSP\\long_running_test_suites\\dataset.csv",
+    "PIPELINE_OUTPUT_DIR": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\dante\\inputs",
+    "RESULTS_DIR": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\dante\\upstream-results",
+    "TARGET_BUILD_SELECTION_STRATEGY": "LATEST",
+    "NUM_TARGET_BUILDS_TO_TEST": "1",
+    "NUM_BUILDS_FOR_PROB_MODEL": "100",
+    "RELEVANCE_STRATEGY_KEY": "tfidf",
+    "ML_FEATURES_DIR": "C:\\Users\\hiepq\\Projects\\tcp\\work\\runs\\dante\\unavailable-ml-features"
+  },
+  "original_tests": 212,
+  "ranked_tests": 206,
+  "excluded_tests": 6,
+  "excluded_failures": 1,
+  "ranked_failures": 3,
+  "artifact_apfdc": 0.6767300213944393,
+  "midpoint_apfdc": 0.6743028369284199,
+  "extra_term": 0.0024271844660194173,
+  "current_duration_changes_dante_score": true,
+  "duration_diagnostic_test": "org.apache.karaf.features.management.codec.JmxFeatureTest",
+  "sticky_group_boundary_witness": {
+    "testclasses": [
+      "A",
+      "A",
+      "B",
+      "B"
+    ],
+    "outcomes": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "artifact_sticky": [
+      null,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "first_B_inherits_A": true
+  },
+  "ltr_baseline_status": "Not validated: no earlier processed fixtures, upstream uses -100 placeholder",
+  "note": "Artifact execution smoke only. Current duration in ranking, universe filtering, history construction and metric require a documented adapter before a fair rolling comparison."
+}

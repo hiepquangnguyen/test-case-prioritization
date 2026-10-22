@@ -1,0 +1,482 @@
+[
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-codebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7302430811322741,
+    "author_apfd": 0.7302430811322741,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-codebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7312427654424919,
+    "author_apfd": 0.7312427654424919,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-codexembed-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.769265845873233,
+    "author_apfd": 0.769265845873233,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-codexembed-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.745799572064962,
+    "author_apfd": 0.745799572064962,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-graphcodebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7625311305201866,
+    "author_apfd": 0.7625311305201866,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-graphcodebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7736153495387422,
+    "author_apfd": 0.7736153495387422,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-starencoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6638780735907959,
+    "author_apfd": 0.6638780735907959,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-starencoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7383282472201761,
+    "author_apfd": 0.7383282472201761,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-unixcoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7263144971763303,
+    "author_apfd": 0.7263144971763303,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Chart",
+    "archive_member": "falcon/output/Chart/FALCON/prioritized/FALCON-unixcoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7463958749868463,
+    "author_apfd": 0.7463958749868463,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-codebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7133234257979983,
+    "author_apfd": 0.7133234257979983,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-codebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6809590936049663,
+    "author_apfd": 0.6809590936049663,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-codexembed-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6953972445835691,
+    "author_apfd": 0.6953972445835691,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-codexembed-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6620718984571095,
+    "author_apfd": 0.6620718984571095,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-graphcodebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6709164555155063,
+    "author_apfd": 0.6709164555155063,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-graphcodebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6601498705902545,
+    "author_apfd": 0.6601498705902545,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-starencoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6855364429059158,
+    "author_apfd": 0.6855364429059158,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-starencoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6535961124394799,
+    "author_apfd": 0.6535961124394799,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-unixcoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7001997651421298,
+    "author_apfd": 0.7001997651421298,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Closure",
+    "archive_member": "falcon/output/Closure/FALCON/prioritized/FALCON-unixcoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6583680436951198,
+    "author_apfd": 0.6583680436951198,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-codebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5467563644484145,
+    "author_apfd": 0.5467563644484145,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-codebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5591642474318892,
+    "author_apfd": 0.5591642474318892,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-codexembed-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7182754577936579,
+    "author_apfd": 0.7182754577936579,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-codexembed-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7093708128628852,
+    "author_apfd": 0.7093708128628852,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-graphcodebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.631029477445288,
+    "author_apfd": 0.631029477445288,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-graphcodebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.559959803483698,
+    "author_apfd": 0.559959803483698,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-starencoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7522470969182671,
+    "author_apfd": 0.7522470969182671,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-starencoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7233698079499776,
+    "author_apfd": 0.7233698079499776,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-unixcoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.754284836980795,
+    "author_apfd": 0.754284836980795,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Lang",
+    "archive_member": "falcon/output/Lang/FALCON/prioritized/FALCON-unixcoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7035786065207682,
+    "author_apfd": 0.7035786065207682,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-codebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5305629728526925,
+    "author_apfd": 0.5305629728526925,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-codebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5404984423676013,
+    "author_apfd": 0.5404984423676013,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-codexembed-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5702937249666221,
+    "author_apfd": 0.5702937249666221,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-codexembed-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5361148197596796,
+    "author_apfd": 0.5361148197596796,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-graphcodebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5661103693813974,
+    "author_apfd": 0.5661103693813974,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-graphcodebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5129394748553627,
+    "author_apfd": 0.5129394748553627,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-starencoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5991766800178014,
+    "author_apfd": 0.5991766800178014,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-starencoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6283600356030262,
+    "author_apfd": 0.6283600356030262,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-unixcoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6224299065420561,
+    "author_apfd": 0.6224299065420561,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Math",
+    "archive_member": "falcon/output/Math/FALCON/prioritized/FALCON-unixcoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.5461615487316421,
+    "author_apfd": 0.5461615487316421,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-codebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6718982914803348,
+    "author_apfd": 0.6718982914803348,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-codebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6795235638114895,
+    "author_apfd": 0.6795235638114895,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-codexembed-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7057533539731683,
+    "author_apfd": 0.7057533539731683,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-codexembed-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6804408898062149,
+    "author_apfd": 0.6804408898062149,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-graphcodebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6723569544776975,
+    "author_apfd": 0.6723569544776975,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-graphcodebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6903021442495126,
+    "author_apfd": 0.6903021442495126,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-starencoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7039760348583878,
+    "author_apfd": 0.7039760348583878,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-starencoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7080180025226465,
+    "author_apfd": 0.7080180025226465,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-unixcoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7361971104231166,
+    "author_apfd": 0.7361971104231166,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Mockito",
+    "archive_member": "falcon/output/Mockito/FALCON/prioritized/FALCON-unixcoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7158726063524825,
+    "author_apfd": 0.7158726063524825,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-codebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7171022597580461,
+    "author_apfd": 0.7171022597580461,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-codebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.6582211062923229,
+    "author_apfd": 0.6582211062923229,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-codexembed-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.8188199041314768,
+    "author_apfd": 0.8188199041314768,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-codexembed-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7950715209617286,
+    "author_apfd": 0.7950715209617286,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-graphcodebert-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7154949402723882,
+    "author_apfd": 0.7154949402723882,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-graphcodebert-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7091322376930685,
+    "author_apfd": 0.7091322376930685,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-starencoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7675473636156128,
+    "author_apfd": 0.7675473636156128,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-starencoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7366563950391843,
+    "author_apfd": 0.7366563950391843,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-unixcoder-cosine-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7944342996271779,
+    "author_apfd": 0.7944342996271779,
+    "absolute_difference": 0.0
+  },
+  {
+    "project": "Time",
+    "archive_member": "falcon/output/Time/FALCON/prioritized/FALCON-unixcoder-euclidean-bbox-1.pickle",
+    "valid_permutation": true,
+    "recalculated_apfd": 0.7225804610819447,
+    "author_apfd": 0.7225804610819447,
+    "absolute_difference": 0.0
+  }
+]

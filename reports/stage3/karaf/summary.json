@@ -1,0 +1,454 @@
+[
+  {
+    "split": "development",
+    "method": "random",
+    "builds": 317,
+    "scored_builds": 315,
+    "no_failure_builds": 236,
+    "ttff_censored_builds": 236,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.4972477064220184
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.49077686998168774
+      },
+      "ttff_seconds": {
+        "defined_builds": 79,
+        "median_of_build_means": 597.2728499999998
+      },
+      "recall_10": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.1
+      },
+      "recall_25": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.25
+      },
+      "recall_50": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.45
+      }
+    },
+    "apfdc_seed_medians": {
+      "0": 0.5868171991499921,
+      "1": 0.4926072500880443,
+      "2": 0.49562968684894537,
+      "3": 0.5241588230725676,
+      "4": 0.485980682204744,
+      "5": 0.4631776274706254,
+      "6": 0.5173274289289526,
+      "7": 0.46986074567359815,
+      "8": 0.4409277258396943,
+      "9": 0.43631731823503284,
+      "10": 0.4253063775675152,
+      "11": 0.5303901140670414,
+      "12": 0.44151339508723175,
+      "13": 0.5678940791140785,
+      "14": 0.49532578790717674,
+      "15": 0.4809455170848671,
+      "16": 0.4932567800608284,
+      "17": 0.42452578504137284,
+      "18": 0.524411178219231,
+      "19": 0.4669292388292364
+    }
+  },
+  {
+    "split": "development",
+    "method": "shortest_test_first",
+    "builds": 317,
+    "scored_builds": 315,
+    "no_failure_builds": 236,
+    "ttff_censored_builds": 236,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.11697247706422016
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.6983681442483279
+      },
+      "ttff_seconds": {
+        "defined_builds": 79,
+        "median_of_build_means": 96.73500000000001
+      },
+      "recall_10": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.0
+      },
+      "recall_25": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.5
+      },
+      "recall_50": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      }
+    }
+  },
+  {
+    "split": "development",
+    "method": "most_fail",
+    "builds": 317,
+    "scored_builds": 315,
+    "no_failure_builds": 236,
+    "ttff_censored_builds": 236,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.9596651445966514
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.7420253329663049
+      },
+      "ttff_seconds": {
+        "defined_builds": 79,
+        "median_of_build_means": 118.08999999999995
+      },
+      "recall_10": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.0
+      },
+      "recall_25": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.5
+      },
+      "recall_50": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      }
+    }
+  },
+  {
+    "split": "development",
+    "method": "recent_fail",
+    "builds": 317,
+    "scored_builds": 315,
+    "no_failure_builds": 236,
+    "ttff_censored_builds": 236,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.9701834862385321
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.8433604777888495
+      },
+      "ttff_seconds": {
+        "defined_builds": 79,
+        "median_of_build_means": 109.29299999999999
+      },
+      "recall_10": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.25
+      },
+      "recall_25": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      },
+      "recall_50": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      }
+    }
+  },
+  {
+    "split": "development",
+    "method": "history_only",
+    "builds": 317,
+    "scored_builds": 315,
+    "no_failure_builds": 236,
+    "ttff_censored_builds": 236,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.9587155963302753
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.7738670553000755
+      },
+      "ttff_seconds": {
+        "defined_builds": 79,
+        "median_of_build_means": 81.999
+      },
+      "recall_10": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.25
+      },
+      "recall_25": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.5
+      },
+      "recall_50": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      }
+    }
+  },
+  {
+    "split": "development",
+    "method": "history_cost",
+    "builds": 317,
+    "scored_builds": 315,
+    "no_failure_builds": 236,
+    "ttff_censored_builds": 236,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.44666666666666666
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.8919179987635786
+      },
+      "ttff_seconds": {
+        "defined_builds": 79,
+        "median_of_build_means": 54.037
+      },
+      "recall_10": {
+        "defined_builds": 79,
+        "median_of_build_means": 0.5
+      },
+      "recall_25": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      },
+      "recall_50": {
+        "defined_builds": 79,
+        "median_of_build_means": 1.0
+      }
+    }
+  },
+  {
+    "split": "holdout",
+    "method": "random",
+    "builds": 163,
+    "scored_builds": 160,
+    "no_failure_builds": 112,
+    "ttff_censored_builds": 112,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.49794424711460106
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.5044512117005355
+      },
+      "ttff_seconds": {
+        "defined_builds": 48,
+        "median_of_build_means": 630.8726499999998
+      },
+      "recall_10": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.075
+      },
+      "recall_25": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.2275
+      },
+      "recall_50": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.45
+      }
+    },
+    "apfdc_seed_medians": {
+      "0": 0.5094531242881934,
+      "1": 0.39544200136963786,
+      "2": 0.5005434756278365,
+      "3": 0.5365352132679571,
+      "4": 0.37814566319508797,
+      "5": 0.4901225786265682,
+      "6": 0.4757955995377783,
+      "7": 0.533548254081393,
+      "8": 0.49782766610982637,
+      "9": 0.4866837536136691,
+      "10": 0.5602222647810506,
+      "11": 0.5471350116839175,
+      "12": 0.47202096413503014,
+      "13": 0.5089080022362824,
+      "14": 0.5551397118538801,
+      "15": 0.4167731196449719,
+      "16": 0.46558186272260504,
+      "17": 0.5536521054484622,
+      "18": 0.5162277961629023,
+      "19": 0.4930696357142158
+    }
+  },
+  {
+    "split": "holdout",
+    "method": "shortest_test_first",
+    "builds": 163,
+    "scored_builds": 160,
+    "no_failure_builds": 112,
+    "ttff_censored_builds": 112,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.16106828193832598
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.6817074652810927
+      },
+      "ttff_seconds": {
+        "defined_builds": 48,
+        "median_of_build_means": 305.8
+      },
+      "recall_10": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.0
+      },
+      "recall_25": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.3333333333333333
+      },
+      "recall_50": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.6666666666666666
+      }
+    }
+  },
+  {
+    "split": "holdout",
+    "method": "most_fail",
+    "builds": 163,
+    "scored_builds": 160,
+    "no_failure_builds": 112,
+    "ttff_censored_builds": 112,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.9514200226112042
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.7027188328262259
+      },
+      "ttff_seconds": {
+        "defined_builds": 48,
+        "median_of_build_means": 99.30799999999999
+      },
+      "recall_10": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.0
+      },
+      "recall_25": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.3666666666666667
+      },
+      "recall_50": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.6666666666666666
+      }
+    }
+  },
+  {
+    "split": "holdout",
+    "method": "recent_fail",
+    "builds": 163,
+    "scored_builds": 160,
+    "no_failure_builds": 112,
+    "ttff_censored_builds": 112,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.9569509960625316
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.7146372671809984
+      },
+      "ttff_seconds": {
+        "defined_builds": 48,
+        "median_of_build_means": 330.1405000000001
+      },
+      "recall_10": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.0
+      },
+      "recall_25": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.1875
+      },
+      "recall_50": {
+        "defined_builds": 48,
+        "median_of_build_means": 1.0
+      }
+    }
+  },
+  {
+    "split": "holdout",
+    "method": "history_only",
+    "builds": 163,
+    "scored_builds": 160,
+    "no_failure_builds": 112,
+    "ttff_censored_builds": 112,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.9483487567631493
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.7066258084776842
+      },
+      "ttff_seconds": {
+        "defined_builds": 48,
+        "median_of_build_means": 132.733
+      },
+      "recall_10": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.14358108108108109
+      },
+      "recall_25": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.41666666666666663
+      },
+      "recall_50": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.875
+      }
+    }
+  },
+  {
+    "split": "holdout",
+    "method": "history_cost",
+    "builds": 163,
+    "scored_builds": 160,
+    "no_failure_builds": 112,
+    "ttff_censored_builds": 112,
+    "metrics": {
+      "apfd": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.4713656387665198
+      },
+      "apfdc_midpoint": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.7998676312139812
+      },
+      "ttff_seconds": {
+        "defined_builds": 48,
+        "median_of_build_means": 128.2975
+      },
+      "recall_10": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.0
+      },
+      "recall_25": {
+        "defined_builds": 48,
+        "median_of_build_means": 0.6666666666666666
+      },
+      "recall_50": {
+        "defined_builds": 48,
+        "median_of_build_means": 1.0
+      }
+    }
+  }
+]

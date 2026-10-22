@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "dataset_rows_verified": 974,
+  "source_annotations_verified": 35045,
+  "matched_source_blobs_verified_per_observation": 34235,
+  "history_evidence_edges_checked": 138881,
+  "physical_split_and_stage_integrity": true,
+  "full_sample_inventory_preserved": true,
+  "source_at_declared_sha_verified": true,
+  "execution_revision_verified": false,
+  "computed_HC_rankings": 0,
+  "confirmation_opened": false,
+  "previous_stage3_code_and_protocol_unchanged": true,
+  "design_freeze_sha256": "456829665f15d0f8e93d50989a8bb4ba7abea8e9c3462c3d91dd9563b4bae6b5"
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1213",
+      "build": "3",
+      "stage": "single"
+    },
+    "result": "ABORTED",
+    "available_at": 1607769387.0,
+    "tests": 169,
+    "observed_failures": 2,
+    "source_unmatched": 5,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": "unusable_build_result:ABORTED",
+    "eligible_history_builds": 0,
+    "unknown_history_tests": 169,
+    "feature_seconds": 0.000716600000487233
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1077",
+      "build": "2",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1607756005.0,
+    "tests": 210,
+    "observed_failures": 0,
+    "source_unmatched": 8,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 0,
+    "unknown_history_tests": 210,
+    "feature_seconds": 0.0010148000001208857
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1213",
+      "build": "4",
+      "stage": "single"
+    },
+    "result": "ABORTED",
+    "available_at": 1608326251.0,
+    "tests": 204,
+    "observed_failures": 1,
+    "source_unmatched": 7,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": "unusable_build_result:ABORTED",
+    "eligible_history_builds": 1,
+    "unknown_history_tests": 1,
+    "feature_seconds": 0.0011021000000255299
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1077",
+      "build": "3",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1608312728.0,
+    "tests": 211,
+    "observed_failures": 1,
+    "source_unmatched": 9,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 1,
+    "unknown_history_tests": 1,
+    "feature_seconds": 0.0011434999996708939
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1287",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1610091058.0,
+    "tests": 212,
+    "observed_failures": 4,
+    "source_unmatched": 2,
+    "suspected_runner_events": 1,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 0,
+    "unknown_history_tests": 212,
+    "feature_seconds": 0.0010046000006695976
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1287",
+      "build": "2",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1610100330.0,
+    "tests": 211,
+    "observed_failures": 3,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 1,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0011199000000488013
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1288",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1610444150.0,
+    "tests": 211,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 2,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0012892000004285364
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1289",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1610639997.0,
+    "tests": 211,
+    "observed_failures": 1,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 3,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.001407900000231166
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1290",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1610694200.0,
+    "tests": 211,
+    "observed_failures": 1,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 4,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0017230000003110035
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1291",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1610951397.0,
+    "tests": 211,
+    "observed_failures": 1,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 5,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.001766400000633439
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1292",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1612966743.0,
+    "tests": 67,
+    "observed_failures": 1,
+    "source_unmatched": 0,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 0,
+    "unknown_history_tests": 67,
+    "feature_seconds": 0.00029259999973874073
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1293",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1613043004.0,
+    "tests": 212,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 6,
+    "unknown_history_tests": 1,
+    "feature_seconds": 0.0021326000005501555
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1294",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1613039258.0,
+    "tests": 67,
+    "observed_failures": 1,
+    "source_unmatched": 0,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 1,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0005944999993516831
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1295",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1613066976.0,
+    "tests": 211,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 7,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0020469999999477295
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1294",
+      "build": "2",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1613116874.0,
+    "tests": 67,
+    "observed_failures": 1,
+    "source_unmatched": 0,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 2,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0004433999993125326
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1296",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1613582177.0,
+    "tests": 211,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 8,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0026131000004170346
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1290",
+      "build": "2",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1613756625.0,
+    "tests": 211,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 9,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.002359699999942677
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1297",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1613896395.0,
+    "tests": 211,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 10,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0032247999997707666
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1298",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "FAILURE",
+    "available_at": 1613897347.0,
+    "tests": 211,
+    "observed_failures": 1,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 10,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0027058000005126814
+  },
+  {
+    "key": {
+      "project": "karaf",
+      "pr": "PR-1299",
+      "build": "1",
+      "stage": "single"
+    },
+    "result": "SUCCESS",
+    "available_at": 1613981624.0,
+    "tests": 211,
+    "observed_failures": 0,
+    "source_unmatched": 1,
+    "suspected_runner_events": 0,
+    "scoring_exclusion": null,
+    "eligible_history_builds": 12,
+    "unknown_history_tests": 0,
+    "feature_seconds": 0.0028654000007009017
+  }
+]
