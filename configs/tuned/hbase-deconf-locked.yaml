@@ -1,0 +1,13 @@
+objective:
+  alpha: 0.9
+  cost_exponent: 0.5
+  selection: ratio
+  rankblend_beta: 0.3
+history:
+  estimator: beta
+  decay_lambda: 0.9
+  confidence_kappa: 1.0
+locked_from:
+  variant: ratio
+  warmup_mean: 0.7092999442694309
+  n_tsr: 23

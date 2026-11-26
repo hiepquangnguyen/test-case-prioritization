@@ -1,0 +1,41 @@
+{
+  "project": "jackrabbit-oak",
+  "targets": [
+    [
+      "PR-347",
+      "2",
+      "single"
+    ],
+    [
+      "PR-648",
+      "2",
+      "single"
+    ],
+    [
+      "PR-860",
+      "7",
+      "single"
+    ],
+    [
+      "PR-1015",
+      "8",
+      "single"
+    ]
+  ],
+  "HC-FALCON": {
+    "ranked": true,
+    "same_when_dropped": true,
+    "same_when_scrambled": true
+  },
+  "HC-FALCON-prop": {
+    "ranked": true,
+    "same_when_dropped": true,
+    "same_when_scrambled": true
+  },
+  "leak_sensitivity": {
+    "clean": 0.8872001379886592,
+    "leaked": 0.9314180398496692,
+    "n_tsr": 527
+  },
+  "passed": false
+}

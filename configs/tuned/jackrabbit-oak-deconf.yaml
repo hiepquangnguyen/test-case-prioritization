@@ -1,0 +1,15 @@
+objective:
+  alpha: 0.1
+  cost_exponent: 0.5
+  rankblend_beta: 0.0
+history:
+  estimator: decay
+  decay_lambda: 0.95
+  confidence_kappa: 1.0
+tuned_on:
+  project: jackrabbit-oak
+  dataset: deconf
+  split: warmup
+  warmup_fraction: 0.2
+  index: artifact
+  n_tsr: 79

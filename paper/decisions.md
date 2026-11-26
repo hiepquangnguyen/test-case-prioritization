@@ -138,6 +138,58 @@ viên đưa nguồn cụ thể thì bổ sung, không đổi thiết kế thực
 - Đây đúng là rủi ro §8.1/§8.2 của bản phân tích. Tuần 6 sẽ thử các biến thể định nghĩa trước (γ = 1, chọn
   theo tỉ lệ, prior cho test mới, ...) và viết pilot memo.
 
+## 2026-11-26: Kết quả đánh giá đã đăng ký trước (Oak, HBase): NO-GO
+
+Chi tiết: [results-B.md](results-B.md).
+
+- Quy trình chạy đúng như đăng ký, mỗi dự án một lần. Không có thay đổi nào sau khi xem kết quả eval.
+- **Cấu hình khóa:**
+  - Oak: ratio + γ = 1, α = 0.1, decay λ = 0.95, κ = 1; η = 0.1.
+  - HBase: ratio (γ = 0.5), α = 0.9, Beta, κ = 1; η = 0.
+- **Eval DeConf:**
+
+  | Phương pháp | Oak | HBase |
+  |---|---|---|
+  | HC-FALCON | 0.898 | 0.781 |
+  | History+Cost | 0.891 | 0.730 |
+  | LatestFail+CC | 0.912 | 0.803 |
+  | LatestFail+CCH | 0.886 | 0.789 |
+
+- H1–H4 đều không đạt trên cả hai dự án chính, nên theo quy tắc đã đăng ký là **NO-GO**: viết báo cáo kỹ thuật
+  với kết quả âm tính.
+- **Leakage:**
+  - Kiểm tra bất biến đạt trên Oak và HBase.
+  - Kiểm tra ngược trên Oak chỉ +0.044 (0.887 lên 0.931), dưới ngưỡng +0.05 đặt sẵn trong script, nên script ghi
+    FAILED. Ngưỡng không có trong bản đăng ký và được giữ nguyên.
+  - Trên HBase: +0.185.
+- **Phân tích thăm dò** (ghi rõ là không có trong đăng ký):
+  - Phần ngữ nghĩa thua nhẹ ở đa số TSR nhưng cứu mạnh một số ít TSR, chủ yếu là các TSR mà mọi lỗi đều là lỗi
+    lần đầu.
+  - HBase: +0.112 trên các TSR này (chiếm 50% phần eval), −0.008 trên phần còn lại.
+  - Đây là ứng viên cho giả thuyết H5, nếu giảng viên đồng ý kiểm định xác nhận trên Hadoop và Karaf.
+
+## 2026-11-26: Tuần 7, mã nguồn test của Oak và HBase
+
+Thực hiện sau khi bản đăng ký trước đã được push lên GitHub (commit `650d589`, 14:03 UTC).
+
+- **Clone bare:** Oak 295 MB (3.315 PR ref), HBase 807 MB (8.937 PR ref).
+- **Jackrabbit Oak** (chỉ mục Drive, 1.654 TSR):
+  - 145 build không lấy được commit head kể cả khi fetch theo SHA (GitHub không còn giữ). Các build này dùng
+    `trunk_sha`.
+  - Tìm được mã nguồn cho 85.3% số cặp (TSR, test class). Phần thiếu đều là test chạy từ jar phụ thuộc: JCR TCK
+    `org.apache.jackrabbit.test.api.*` và test của Jackrabbit 2 `org.apache.jackrabbit.core.*`. Riêng hai nhóm
+    này đã chiếm 13.9% số cặp; repo Oak không có mã nguồn của chúng. Không tính chúng thì độ phủ khoảng 99%.
+  - Theo bản đăng ký, các test này được cô lập. Chúng chiếm 4.9% lượt test fail trong các TSR DeConf
+    (317/6.505).
+  - Tiêu chí "emb_coverage ≥ 95%" của kế hoạch tính trên số dòng nên không đạt (85%). Lý do là test ngoài repo,
+    không phải lỗi pipeline. Sẽ báo cáo cả hai con số.
+  - Corpus: 4.913 phiên bản file, 17.895 method.
+- **HBase** (chỉ mục Drive, 1.018 TSR, 485 build):
+  - Mọi build đều có commit head.
+  - Tìm được mã nguồn cho 99.98% số cặp (TSR, test class). Trong tập TSR của artifact, TSR thấp nhất đạt 99.9%.
+  - Mọi lượt test fail trong các TSR DeConf đều có mã nguồn (171/171).
+  - Corpus: 5.996 phiên bản file, 13.125 method.
+
 ## 2026-11-26: Chọn hướng B sau pilot
 
 - Đi tiếp trên Jackrabbit Oak và HBase như kế hoạch, cộng thêm biến thể **HC-FALCON-prop**: dùng embedding để

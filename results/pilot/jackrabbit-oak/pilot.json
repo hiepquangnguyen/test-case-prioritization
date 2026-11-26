@@ -1,0 +1,49 @@
+{
+  "project": "jackrabbit-oak",
+  "dataset": "deconf",
+  "seconds": 4720.4,
+  "warmup_best": {
+    "variant": "ratio+gamma=1",
+    "alpha": 0.1,
+    "apfdc_u_mean": 0.8486900114847454,
+    "n_tsr": 79
+  },
+  "locked_config": {
+    "alpha": 0.1,
+    "est": {
+      "estimator": "decay",
+      "decay_lambda": 0.95,
+      "prior_strength": 2.0,
+      "kappa": 1.0,
+      "duration": "average",
+      "new_test_duration": "median"
+    },
+    "score": {
+      "use_cost": true,
+      "use_conf": true,
+      "gamma": 1.0,
+      "epsilon": 0.001,
+      "q_norm": "max",
+      "prop_eta": 0.0
+    },
+    "selection": "ratio",
+    "sim_transform": "clip",
+    "beta": 0.0,
+    "rrf_k": 60.0,
+    "prop_lambda": 0.1,
+    "prop_quantile": 0.99
+  },
+  "warmup_prop_best": {
+    "eta": 0.1,
+    "alpha": 0.1,
+    "apfdc_u_mean": 0.8489251819397351
+  },
+  "eval_n_tsr": 448,
+  "overhead_median_pct_of_tsr": 0.0022387826137566682,
+  "overhead_max_pct_of_tsr": 0.005275182373712647,
+  "rank_time_median_s": 0.2715746499998204,
+  "falcon_fail_pos_pct_mean": 0.6235840655296084,
+  "falcon_fail_centrality_pct_mean": 0.5323836387553053,
+  "falcon_cost_first10pct_over_median": 0.0711023910982306,
+  "falcon_time_share_first10pct": 0.17817835706653123
+}

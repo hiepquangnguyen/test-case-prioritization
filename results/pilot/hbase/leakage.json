@@ -1,0 +1,41 @@
+{
+  "project": "hbase",
+  "targets": [
+    [
+      "PR-4246",
+      "1",
+      "yetus_jdk8_Hadoop3_checks_precommit_checks"
+    ],
+    [
+      "PR-4555",
+      "5",
+      "yetus_jdk8_Hadoop3_checks_precommit_checks"
+    ],
+    [
+      "PR-5121",
+      "1",
+      "yetus_jdk8_Hadoop3_checks_precommit_checks"
+    ],
+    [
+      "PR-5315",
+      "2",
+      "yetus_jdk11_hadoop3_checks_precommit_checks"
+    ]
+  ],
+  "HC-FALCON": {
+    "ranked": true,
+    "same_when_dropped": true,
+    "same_when_scrambled": true
+  },
+  "HC-FALCON-prop": {
+    "ranked": true,
+    "same_when_dropped": true,
+    "same_when_scrambled": true
+  },
+  "leak_sensitivity": {
+    "clean": 0.762336197136714,
+    "leaked": 0.9472727449149452,
+    "n_tsr": 87
+  },
+  "passed": true
+}

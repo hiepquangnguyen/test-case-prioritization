@@ -160,6 +160,20 @@ nằm ở `results/pilot/<project>/`.
 ActiveMQ, phần eval DeConf: HC-FALCON 0.854, History+Cost 0.862, LatestFail+CCH 0.865, FALCON 0.494. Pilot chưa
 đạt ngưỡng. Xem [paper/pilot-memo.md](paper/pilot-memo.md).
 
+## Đánh giá đã đăng ký trước trên Oak và HBase (tuần 7+)
+
+Quy trình cố định trong [paper/preregistration-B.md](paper/preregistration-B.md). Mỗi dự án chạy đúng một lần:
+
+```powershell
+.venv\Scripts\python scripts\tune_warmup.py --project jackrabbit-oak --dataset deconf
+.venv\Scripts\python scripts\pilot.py --project jackrabbit-oak
+.venv\Scripts\python scripts\check_leakage.py --project jackrabbit-oak
+.venv\Scripts\python scripts\evaluate_prereg.py --primary jackrabbit-oak hbase
+```
+
+`evaluate_prereg.py` áp đúng tiêu chí đã đăng ký: p_Holm < 0.05, δ ≥ 0.147 và trung vị cao hơn ít nhất 3%. Kết
+quả giả thuyết H1–H4 và quyết định GO/NO-GO nằm ở `results/prereg/`.
+
 ## Cấu trúc code
 
 | Module | Vai trò |
@@ -199,4 +213,8 @@ ActiveMQ, phần eval DeConf: HC-FALCON 0.854, History+Cost 0.862, LatestFail+CC
   đang chờ giảng viên chọn hướng
 - [x] Hướng B: biến thể HC-FALCON-prop (lan truyền lỗi theo ngữ nghĩa), phát triển trên ActiveMQ, đăng ký trước
   ở [paper/preregistration-B.md](paper/preregistration-B.md)
-- [ ] Tuần 7: Jackrabbit Oak, HBase (clone, export, embed, chạy đúng quy trình đã đăng ký), DANTE
+- [x] Tuần 7 (dữ liệu): clone và xuất corpus Oak (17.895 method, độ phủ 85%; phần thiếu là test JCR TCK từ jar
+  ngoài) và HBase (13.125 method, độ phủ 99.98%)
+- [x] Tuần 7 (chạy): embed Oak và HBase, chạy đúng quy trình đã đăng ký → **NO-GO** (H1–H4 không đạt). Có một
+  phát hiện thăm dò: ngữ nghĩa giúp ở lỗi lần đầu. Xem [paper/results-B.md](paper/results-B.md)
+- [ ] Tuần 8–10: RQ1–RQ4 trên 3 dự án, DANTE, (tùy chọn) kiểm định H5 trên Hadoop và Karaf
