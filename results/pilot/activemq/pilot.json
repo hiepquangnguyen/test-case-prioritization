@@ -1,0 +1,41 @@
+{
+  "project": "activemq",
+  "dataset": "deconf",
+  "seconds": 127.1,
+  "warmup_best": {
+    "variant": "ratio+gamma=1",
+    "alpha": 0.4,
+    "apfdc_u_mean": 0.7908396165266437,
+    "n_tsr": 18
+  },
+  "locked_config": {
+    "alpha": 0.4,
+    "est": {
+      "estimator": "beta",
+      "decay_lambda": 0.9,
+      "prior_strength": 2.0,
+      "kappa": 3.0,
+      "duration": "average",
+      "new_test_duration": "median"
+    },
+    "score": {
+      "use_cost": true,
+      "use_conf": true,
+      "gamma": 1.0,
+      "epsilon": 0.001,
+      "q_norm": "max"
+    },
+    "selection": "ratio",
+    "sim_transform": "clip",
+    "beta": 0.0,
+    "rrf_k": 60.0
+  },
+  "eval_n_tsr": 78,
+  "overhead_median_pct_of_tsr": 0.0005418018993704658,
+  "overhead_max_pct_of_tsr": 0.009860613468106467,
+  "rank_time_median_s": 0.09752769999977318,
+  "falcon_fail_pos_pct_mean": 0.5507353146531435,
+  "falcon_fail_centrality_pct_mean": 0.587212739546638,
+  "falcon_cost_first10pct_over_median": 1.2307543013995887,
+  "falcon_time_share_first10pct": 0.11648440933895507
+}

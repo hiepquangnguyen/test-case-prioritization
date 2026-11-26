@@ -73,6 +73,21 @@ def test_extremes_and_rank_fusion():
     assert sorted(rrf.tolist()) == list(range(len(q)))
 
 
+def test_pure_baselines_ignore_the_cost_settings_of_the_config():
+    ctx = context(seed=5)
+    prov = SimilarityProvider(FakeVectors())
+    gain_cfg = HCConfig(alpha=0.4)
+    ratio_cfg = replace(gain_cfg, selection="ratio", score=replace(gain_cfg.score, gamma=1.0))
+    for name in ("FALCON", "History", "FL+History"):
+        a = make_method(name, gain_cfg, prov).rank(ctx)
+        b = make_method(name, ratio_cfg, prov).rank(ctx)
+        assert a.tolist() == b.tolist(), name
+    # History+Cost follows the configured cost handling (it is the model without its semantic part)
+    hc_gain = make_method("History+Cost", gain_cfg, prov).rank(ctx)
+    hc_ratio = make_method("History+Cost", ratio_cfg, prov).rank(ctx)
+    assert hc_gain.tolist() != hc_ratio.tolist()
+
+
 def test_method_registry_and_yaml_config():
     with open(ROOT / "configs" / "default.yaml", encoding="utf-8") as fh:
         cfg = config_from_yaml(yaml.safe_load(fh))

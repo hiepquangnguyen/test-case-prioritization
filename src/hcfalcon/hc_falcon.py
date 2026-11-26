@@ -9,14 +9,15 @@ the similarity is ``max(0, cos)`` of test-class vectors, with tests lacking sour
 Named methods (``make_method``):
 
 ======================  ====================================================================
-FALCON                  alpha = 1 (semantic diversity only, same embeddings)
-History                 alpha = 0, q = conf * p                     (ablation: history only)
-History+Cost            alpha = 0, q = conf * p / (c^gamma + eps)   (ablation: history + cost)
-FL+History              alpha from config, no cost in q
+FALCON                  alpha = 1, plain gain (semantic diversity only, same embeddings)
+FALCON-ratio            alpha = 1, gain / c^gamma (cost-aware FALCON, diagnostic)
+History                 alpha = 0, q = conf * p, no cost anywhere   (ablation: history only)
+History+Cost            the configured model with alpha = 0          (ablation: history + cost)
+FL+History              alpha from config, no cost anywhere
 HC-FALCON               full model
 HC-FALCON-noconf        full model with conf = 1
 HC-FALCON-ratio         full model, cost-benefit selection dF / c^gamma (knapsack-style, no 1-1/e)
-RankBlend               beta * rank_FALCON + (1 - beta) * rank_History+Cost
+RankBlend               beta * rank_FALCON + (1 - beta) * rank_History+Cost (plain FALCON)
 RRF                     reciprocal rank fusion of the same two rankings (k = 60)
 <LRTS baseline id>      e.g. hcbt_LastFail_Asc (see ``hcfalcon.prioritizers``)
 ======================  ====================================================================
@@ -37,7 +38,7 @@ from hcfalcon.scoring import ScoreConfig, score
 from hcfalcon.similarity import similarity_from_embeddings
 from hcfalcon.submodular import GreedyResult, lazy_greedy
 
-HC_METHODS = ("FALCON", "History", "History+Cost", "FL+History", "HC-FALCON", "HC-FALCON-noconf",
+HC_METHODS = ("FALCON", "FALCON-ratio", "History", "History+Cost", "FL+History", "HC-FALCON", "HC-FALCON-noconf",
               "HC-FALCON-ratio", "RankBlend", "RRF")
 
 
@@ -175,7 +176,7 @@ class RankFusionPrioritizer:
             raise ValueError(f"unknown fusion mode {mode!r}")
         self.cfg, self.mode = cfg, mode
         self.name = name or ("RankBlend" if mode == "blend" else "RRF")
-        self.falcon = HCFalconPrioritizer(replace(cfg, alpha=1.0), provider, name="FALCON")
+        self.falcon = HCFalconPrioritizer(replace(cfg, alpha=1.0, selection="gain"), provider, name="FALCON")
         self.hist = HCFalconPrioritizer(replace(cfg, alpha=0.0), provider, name="History+Cost")
         self.last_stats = {}
 
@@ -197,11 +198,15 @@ def make_method(name: str, cfg: HCConfig, provider: SimilarityProvider | None, e
     """Prioritizer for a method name (see module docstring)."""
     if name in LRTS_BASELINES:
         return HeuristicPrioritizer(name, tie="random")
+    no_cost = replace(cfg.score, use_cost=False)
     variants = {
-        "FALCON": replace(cfg, alpha=1.0),
-        "History": replace(cfg, alpha=0.0, score=replace(cfg.score, use_cost=False)),
+        # pure baselines never see the cost, whatever cfg.selection says
+        "FALCON": replace(cfg, alpha=1.0, selection="gain"),
+        "FALCON-ratio": replace(cfg, alpha=1.0, selection="ratio"),
+        "History": replace(cfg, alpha=0.0, selection="gain", score=no_cost),
+        "FL+History": replace(cfg, selection="gain", score=no_cost),
+        # the full model without its semantic part: same cost handling as cfg
         "History+Cost": replace(cfg, alpha=0.0),
-        "FL+History": replace(cfg, score=replace(cfg.score, use_cost=False)),
         "HC-FALCON": cfg,
         "HC-FALCON-noconf": replace(cfg, score=replace(cfg.score, use_conf=False)),
         "HC-FALCON-ratio": replace(cfg, selection="ratio"),

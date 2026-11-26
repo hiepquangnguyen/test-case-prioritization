@@ -138,6 +138,39 @@ viên đưa nguồn cụ thể thì bổ sung, không đổi thiết kế thực
 - Đây đúng là rủi ro §8.1/§8.2 của bản phân tích. Tuần 6 sẽ thử các biến thể định nghĩa trước (γ = 1, chọn
   theo tỉ lệ, prior cho test mới, ...) và viết pilot memo.
 
+## 2026-11-26: Pilot ActiveMQ, go/no-go #1 (tuần 6)
+
+Chi tiết và đề xuất: [pilot-memo.md](pilot-memo.md).
+
+- **Sửa lỗi định nghĩa ablation** (phát hiện khi chạy pilot, trước khi chốt bất kỳ kết luận nào):
+  - FALCON, History và FL+History từng thừa hưởng `selection: ratio` của cấu hình khóa. Kết quả là "FALCON"
+    thành FALCON có xét chi phí (0.725), và "History" có chi phí.
+  - Giờ ba baseline này luôn dùng `selection: gain` và không tính chi phí. FALCON có xét chi phí tách thành
+    `FALCON-ratio`.
+  - History+Cost = mô hình đã cấu hình với α = 0, giữ nguyên cách xử lý chi phí. RankBlend/RRF trộn với
+    FALCON thuần.
+  - Có test hồi quy cho điểm này.
+- **Cấu hình khóa trên warm-up:** biến thể `ratio + γ = 1`, α = 0.4, ước lượng Beta, κ = 3
+  (`configs/tuned/activemq-deconf-locked.yaml`).
+  - Với `selection: ratio`, chi phí vào hai lần ở phần q: một lần trong q, một lần trong tỉ lệ. Đây là đúng định
+    nghĩa của biến thể đã đăng ký trước (ΔF/c^γ), ghi lại để tránh hiểu nhầm.
+- **Kết quả eval** (78 TSR DeConf):
+
+  | Phương pháp | APFDc |
+  |---|---|
+  | HC-FALCON | 0.854 |
+  | History+Cost | 0.862 (HC-FALCON kém có ý nghĩa, p_Holm = 0.04, δ không đáng kể) |
+  | LatestFail+CCH | 0.865 (không khác biệt có ý nghĩa) |
+  | History | 0.833 |
+  | FALCON | 0.494 |
+
+  - α trên eval giảm đều: α = 0 là tốt nhất.
+  - Overhead khoảng 0.1 s mỗi lần xếp hạng.
+- **Kết luận: chưa đạt ngưỡng go**, vì cải thiện trung vị khoảng 0% so với baseline mạnh nhất, trong khi kỳ vọng
+  là 3–5%. Đang chờ giảng viên chọn hướng A/B/C trong memo.
+- Phần eval của ActiveMQ đã được xem. Nếu chọn hướng B (biến thể mới), ActiveMQ chỉ còn là dự án phát triển,
+  không dùng làm bằng chứng cho biến thể đó.
+
 ## 2026-11-26: Tái lập FALCON trên Defects4J
 
 - Thứ tự của `lazy_greedy` trùng với artifact cho tới lần hòa tuyệt đối đầu tiên. Giá trị FL của mọi tiền tố

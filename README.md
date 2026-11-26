@@ -147,6 +147,19 @@ git -C data/repos/activemq.git fetch origin "+refs/pull/*/head:refs/pull/*/head"
 Các phương pháp có sẵn: `FALCON`, `History`, `History+Cost`, `FL+History`, `HC-FALCON`, `HC-FALCON-noconf`,
 `HC-FALCON-ratio`, `RankBlend`, `RRF`, cùng 10 baseline LRTS.
 
+## Pilot go/no-go (tuần 6)
+
+```powershell
+.venv\Scripts\python scripts\pilot.py --project activemq --dataset deconf
+```
+
+Script thử các biến thể định nghĩa trước trên warm-up và khóa cấu hình, rồi chạy phần eval. Sau đó kiểm định
+Wilcoxon + Holm + Cliff's δ, vẽ đường APFDc theo α (chỉ để chẩn đoán), đo overhead và chẩn đoán FALCON. Kết quả
+nằm ở `results/pilot/<project>/`.
+
+ActiveMQ, phần eval DeConf: HC-FALCON 0.854, History+Cost 0.862, LatestFail+CCH 0.865, FALCON 0.494. Pilot chưa
+đạt ngưỡng. Xem [paper/pilot-memo.md](paper/pilot-memo.md).
+
 ## Cấu trúc code
 
 | Module | Vai trò |
@@ -167,6 +180,7 @@ Các phương pháp có sẵn: `FALCON`, `History`, `History+Cost`, `FL+History`
 | `src/hcfalcon/scoring.py` | q = conf·p/(c̃^γ+ε), các công tắc ablation |
 | `src/hcfalcon/hc_falcon.py` | HC-FALCON, FALCON-on-LRTS, các ablation, RankBlend, RRF |
 | `src/hcfalcon/explain.py` | bảng và câu giải thích vị trí của từng test |
+| `src/hcfalcon/stats.py` | Wilcoxon ghép cặp theo TSR, Holm, Cliff's δ, thay đổi trung vị |
 | `src/hcfalcon/rolling.py` | vòng lặp đánh giá theo thời gian, chia warm-up / eval |
 | `src/hcfalcon/leakage.py` | kiểm tra rò rỉ: bỏ / xáo trộn tương lai, cố ý rò rỉ |
 
@@ -180,4 +194,6 @@ Các phương pháp có sẵn: `FALCON`, `History`, `History+Cost`, `FL+History`
 - [x] Tuần 4 (chạy): embed corpus ActiveMQ trên Colab, `emb_coverage` ≥ 95% ở 444/446 TSR
 - [x] Tuần 5: HC-FALCON đầu-cuối (estimators, scoring, prioritizer, giải thích), FALCON-on-LRTS, RankBlend, RRF;
   chạy hết ActiveMQ, leakage đạt
-- [ ] Tuần 6: pilot ActiveMQ, go/no-go #1 (tinh chỉnh warm-up, biến thể định nghĩa trước, pilot memo)
+- [x] Tuần 6: pilot ActiveMQ, go/no-go #1 → chưa đạt ngưỡng. Xem [paper/pilot-memo.md](paper/pilot-memo.md);
+  đang chờ giảng viên chọn hướng
+- [ ] Tuần 7: Jackrabbit Oak, HBase (clone, export, embed), DANTE
