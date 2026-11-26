@@ -1,0 +1,58 @@
+# Frozen experiment protocol (plan §4). Change only with a written reason in paper/decisions.md.
+
+embedding:
+  model: microsoft/unixcoder-base
+  pooling: masked_mean          # FALCON reproduction (D4J) uses the artifact's unmasked mean
+  class_vector: mean_of_methods # test class = mean of L2-normalised method vectors
+  max_tokens: 512
+
+similarity:
+  transform: clip               # max(0, cos); alternatives: shift, none (FALCON repro only)
+  missing_embedding: isolate    # sim 0 to others, 1 to itself
+
+objective:                      # F_b(S) = alpha * FL(S)/|T_b| + (1 - alpha) * sum q_b(t)
+  alpha: 0.5                    # tuned on warm-up from grid below
+  q_norm: max                   # divide q by its max over T_b (keeps alpha comparable)
+  epsilon: 1.0e-3
+  cost_exponent: 0.5            # gamma: q = conf * p / (c_norm ** gamma + eps)
+  cost_norm: median             # c_norm = c / median(c over T_b)
+  selection: gain               # gain | ratio (dF / c^gamma, time-budget variant)
+
+history:
+  estimator: decay              # beta | decay | stickiness
+  decay_lambda: 0.9
+  beta_prior_strength: 2.0      # prior mean = project failure base rate (from the past only)
+  confidence_kappa: 3.0         # conf = N / (N + kappa)
+  duration: average             # average | last | ema
+  new_test_duration: median     # median of known durations in T_b
+
+tie_break: [duration, name]     # deterministic: shorter first, then lexicographic
+
+protocol:
+  order_by: build_timestamp
+  history_scope: [project, stage]
+  warmup_fraction: 0.20         # tuning only; report on the remaining 80%
+  random_seeds: 10
+  lrts_duration_offset: 0.001   # as in LRTS (Maven/Gradle report 0.000 s)
+  datasets:
+    all: d_nofilter
+    deconf: d_jira_stageunique_freqfail
+    firstfail: d_first_jira_stageunique
+  primary_metric: apfdc_u
+  primary_dataset: deconf
+
+tuning_grid:                    # staged, warm-up TSRs only
+  alpha: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  estimator:
+    - {name: beta}
+    - {name: decay, decay_lambda: 0.8}
+    - {name: decay, decay_lambda: 0.9}
+    - {name: decay, decay_lambda: 0.95}
+    - {name: stickiness}
+  confidence_kappa: [1.0, 3.0, 10.0]
+  cost_exponent: [0.5, 1.0]
+
+projects:
+  pilot: [activemq]
+  main: [activemq, jackrabbit-oak, hbase]
+  backup: [hadoop, karaf]

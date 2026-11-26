@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Large / external inputs (see README for how to obtain them)
+data/
+external/
+
+# Raw experiment outputs (archived separately)
+results/raw/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# third-party papers: keep local only (copyright)
+paper-topic1.pdf
+papers/
