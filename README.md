@@ -94,6 +94,41 @@ tập TSR được chấm, và APFDc. Kết quả nằm ở `results/parity/<pro
 
 Chi tiết và lý do xem [paper/decisions.md](paper/decisions.md).
 
+## Mã nguồn test và embedding LRTS (tuần 4)
+
+1. Clone repo dạng bare (một lần cho mỗi dự án):
+
+```powershell
+git clone --bare https://github.com/apache/activemq.git data/repos/activemq.git
+git -C data/repos/activemq.git fetch origin "+refs/pull/*/head:refs/pull/*/head"
+```
+
+2. Ánh xạ mỗi (TSR, test class) sang phiên bản file tại commit của build, tách method, xuất corpus:
+
+```powershell
+.venv\Scripts\python -m hcfalcon.lrts.export_blobs --project activemq
+```
+
+   Kết quả: `data/lrts/source/activemq/` (ánh xạ, `summary.json`) và
+   `data/lrts/corpus/activemq_methods.jsonl.gz` (các method duy nhất).
+
+3. Mở `notebooks/embed_colab.ipynb` trên Colab (GPU), chạy ô kiểm tra GPU và các ô của chế độ (b), tải lên file
+   corpus. Tải về `lrts_activemq_export.zip`, giải nén vào `data/embeddings/` để có
+   `data/embeddings/lrts/activemq/unixcoder_methods.npz`.
+4. `hcfalcon.lrts.embeddings.TSRVectors` ghép vector test class cho từng TSR.
+
+**Kết quả ActiveMQ (2026-11-26):**
+
+| | |
+|---|---|
+| Có mã nguồn / có vector | 98.1% số cặp (TSR, test class). 444/446 TSR đạt ≥ 95%, 2 TSR còn lại đạt 94.8% (thiếu test từ jar phụ thuộc) |
+| Test fail có vector (TSR DeConf) | 344/344 |
+| Corpus | 2.198 phiên bản file, 4.456 method, 886k token, 420 method bị cắt ở 512 token |
+| Thời gian embed (T4) | 17.0 s cho cả lịch sử |
+| Cosine giữa các class (TSR 998 class) | trung vị 0.28, chỉ 0.46% cặp âm |
+| Láng giềng gần nhất cùng package | 44% (ngẫu nhiên: 4%) |
+| Test fail cùng nhau có giống nhau hơn? | Có: cos trung bình 0.319 so với 0.275 của mọi cặp, ở 63% TSR (Wilcoxon p = 0.001) |
+
 ## Cấu trúc code
 
 | Module | Vai trò |
@@ -104,6 +139,10 @@ Chi tiết và lý do xem [paper/decisions.md](paper/decisions.md).
 | `src/hcfalcon/d4j/falcon_repro.py` | tái lập FALCON trên Defects4J |
 | `src/hcfalcon/lrts/loader.py` | đọc chỉ mục TSR và kết quả test mức class của LRTS |
 | `src/hcfalcon/lrts/filters.py` | sinh lại nhãn lọc jira / freqfail / stageunique / first (DeConf, FirstFail) |
+| `src/hcfalcon/lrts/source.py` | đọc file test tại commit của build từ repo bare (`ls-tree`, `cat-file`), fetch commit theo SHA |
+| `src/hcfalcon/lrts/java_parse.py` | tách method test bằng tree-sitter |
+| `src/hcfalcon/lrts/export_blobs.py` | ánh xạ (TSR, test class) → blob, xuất corpus method cho Colab |
+| `src/hcfalcon/lrts/embeddings.py` | ghép vector test class từ vector method |
 | `src/hcfalcon/history.py` | lịch sử từng test theo (project, stage), chỉ cập nhật sau khi xếp hạng |
 | `src/hcfalcon/prioritizers.py` | baseline LRTS: Random, QTF, LatestFail, MostFail, LatestTrans, MostTrans, +CC, +CCH |
 | `src/hcfalcon/rolling.py` | vòng lặp đánh giá theo thời gian, chia warm-up / eval |
@@ -115,4 +154,6 @@ Chi tiết và lý do xem [paper/decisions.md](paper/decisions.md).
 - [x] Tuần 2 (code): lõi submodular, metric, script tái lập FALCON, notebook Colab (a)
 - [x] Tuần 2 (chạy): embedding Defects4J trên Colab, so APFD với Bảng IV (median .737 so với .731)
 - [x] Tuần 3: pipeline LRTS, baseline, kiểm tra với `eval_outcome` của LRTS, leakage v1
-- [ ] Tuần 4: trích mã nguồn test theo build, embedding LRTS trên Colab (chế độ b)
+- [x] Tuần 4 (code): trích mã nguồn test theo build, corpus method ActiveMQ, notebook chế độ (b)
+- [x] Tuần 4 (chạy): embed corpus ActiveMQ trên Colab, `emb_coverage` ≥ 95% ở 444/446 TSR
+- [ ] Tuần 5: HC-FALCON đầu-cuối (estimators, scoring, prioritizer, giải thích), FALCON-on-LRTS, RankBlend, RRF

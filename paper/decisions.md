@@ -57,6 +57,37 @@ viên đưa nguồn cụ thể thì bổ sung, không đổi thiết kế thực
     ở chính lần fail.
   - Mình dùng định nghĩa sạch. Khi so sánh với số trong paper LRTS phải nêu rõ điểm này.
 
+## 2026-11-26: Mã nguồn test và corpus embedding (tuần 4)
+
+- **Commit cho mỗi build:** dùng `build_head_sha` (PR head mà Jenkins build).
+  - 131/391 commit head của ActiveMQ không còn trên `refs/pull/*/head` vì PR bị force-push, nhưng GitHub vẫn
+    cho fetch theo SHA, nên lấy đủ 391/391.
+  - Class không có ở PR head thì tìm tiếp ở `trunk_sha` của cùng build. Jenkins chạy bản merge của PR vào
+    trunk, nên test được thêm vào trunk sau khi PR tách nhánh có trong lần chạy nhưng không có ở head.
+  - Fallback này đưa 4 TSR từ độ phủ 68–88% lên trên 95%. Dùng head + trunk thay cho commit merge thật là
+    một xấp xỉ, ghi vào threats.
+- **Nội dung embed** cho một file test:
+  1. các method test (`@Test` và các annotation JUnit 5 tương tự, hoặc kiểu JUnit 3 `public void test*()`);
+  2. nếu không có thì mọi method (class kế thừa test từ lớp cha);
+  3. nếu không parse được method nào thì cả file.
+  - Bỏ annotation, xuống dòng thành dấu cách (giống FALCON). Method trùng nội dung chỉ embed một lần (id =
+    SHA-1 của text).
+- **ActiveMQ (chỉ mục Drive, 446 TSR):** tìm được mã nguồn cho 98.1% số cặp (TSR, test class); TSR thấp nhất
+  đạt 94.8%.
+  - Gần như toàn bộ phần thiếu (91%) là các test conformance `org.objectweb.jtests...` chạy từ một jar phụ
+    thuộc, không có mã nguồn trong repo. Không tính nhóm này thì độ phủ là 99.99%.
+  - Class thiếu mã nguồn được cô lập: sim = 0 với mọi test khác, chỉ phủ chính nó.
+  - Corpus: 2.198 phiên bản file, 4.456 method duy nhất.
+- **Embedding ActiveMQ** (Colab T4, UniXcoder, masked mean-pool):
+  - 17.0 s cho toàn bộ 4.456 method (886k token); 420 method (9.4%) bị cắt ở 512 token.
+  - Mọi test fail trong các TSR DeConf đều có vector (344/344).
+- **Quan sát cho pilot, chưa phải kết luận:**
+  - Cosine giữa các class gần như luôn dương (chỉ 0.46% cặp âm), nên `clip` hầu như không đổi ma trận.
+  - Láng giềng gần nhất cùng package ở 44% class (ngẫu nhiên 4%).
+  - Các test fail cùng một TSR giống nhau hơn trung bình (0.319 so với 0.275, p = 0.001). Lỗi có xu hướng tụ
+    cụm, trong khi facility location chọn đại diện rải đều các cụm: tốt cho việc tìm sớm lỗi đầu tiên của mỗi
+    cụm, nhưng có thể đẩy các test fail còn lại trong cụm ra sau. Cần xem trong pilot tuần 6.
+
 ## 2026-11-26: Tái lập FALCON trên Defects4J
 
 - Thứ tự của `lazy_greedy` trùng với artifact cho tới lần hòa tuyệt đối đầu tiên. Giá trị FL của mọi tiền tố

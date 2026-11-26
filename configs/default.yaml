@@ -4,7 +4,9 @@ embedding:
   model: microsoft/unixcoder-base
   pooling: masked_mean          # FALCON reproduction (D4J) uses the artifact's unmasked mean
   class_vector: mean_of_methods # test class = mean of L2-normalised method vectors
+  methods: test_then_all_then_file  # @Test / JUnit3 test*() methods; else all methods; else whole file
   max_tokens: 512
+  source_commit: head_then_trunk    # PR head (fetched by SHA if force-pushed); class missing there -> trunk_sha
 
 similarity:
   transform: clip               # max(0, cos); alternatives: shift, none (FALCON repro only)
