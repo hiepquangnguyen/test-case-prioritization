@@ -1,0 +1,11 @@
+activemq PR-1001 build 2 stage single | HC-FALCON alpha=0.5 estimator=decay | 57 tests, failing tests at positions [1, 2] | semantic share of the first 10 gains: 0.12
+#1 OpenwireConnectionTest: gain 0.6381 = semantic 0.1381 + history/cost 0.5000 | p=0.063, conf=0.99, cost 4.1 s | newly covers ActiveMQSslConnectionFactoryTest (+0.52); JmsQueueTransactionTest (+0.47) | FAILED in this run
+#2 LinkStealingTest: gain 0.5068 = semantic 0.0110 + history/cost 0.4958 | p=0.063, conf=0.99, cost 4.2 s | newly covers LockFileTest (+0.12); DownloadStrategyTest (+0.11) | FAILED in this run
+#3 GroupPrincipalTest: gain 0.1932 = semantic 0.0284 + history/cost 0.1648 | p=0.000, conf=0.99, cost 0.0 s | newly covers UserPrincipalTest (+0.68); LDAPModuleRoleExpansionTest (+0.20) | passed
+#4 UserPrincipalTest: gain 0.1602 = semantic 0.0054 + history/cost 0.1548 | p=0.000, conf=0.99, cost 0.0 s | newly covers IntrospectionSupportTest (+0.05); PropertiesLoginModuleTest (+0.05) | passed
+#5 StringArrayConverterTest: gain 0.0843 = semantic 0.0075 + history/cost 0.0768 | p=0.000, conf=0.99, cost 0.0 s | newly covers DataByteArrayOutputStreamTest (+0.12); StringToListOfActiveMQDestinationConverterTest (+0.05) | passed
+#6 DataByteArrayOutputStreamTest: gain 0.0829 = semantic 0.0086 + history/cost 0.0743 | p=0.000, conf=0.99, cost 0.0 s | newly covers LRUCacheTest (+0.08); BitArrayBinTest (+0.07) | passed
+#7 PropertyEditorTest: gain 0.0626 = semantic 0.0082 + history/cost 0.0544 | p=0.000, conf=0.99, cost 0.0 s | newly covers XASupportTest (+0.08); EncryptedAESPropertiesLoginModuleTest (+0.07) | passed
+#8 StringToListOfActiveMQDestinationConverterTest: gain 0.0587 = semantic 0.0062 + history/cost 0.0526 | p=0.000, conf=0.99, cost 0.0 s | newly covers ScheduledValuesTest (+0.07); BrokerDestinationViewTest (+0.03) | passed
+#9 XASupportTest: gain 0.0567 = semantic 0.0058 + history/cost 0.0509 | p=0.000, conf=0.99, cost 0.0 s | newly covers EncryptedPropertiesLoginModuleTest (+0.02); DefaultIOExceptionHandlerTest (+0.01) | passed
+#10 BaseDataStreamMarshallerTest: gain 0.0481 = semantic 0.0122 + history/cost 0.0359 | p=0.000, conf=0.99, cost 0.0 s | newly covers BaseDataStreamMarshallerTest (+0.68); ActiveMQMessageIsMarshalledTest (+0.02) | passed

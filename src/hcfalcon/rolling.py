@@ -73,9 +73,13 @@ def scored_on(run: Run, excluded: frozenset) -> bool:
 
 
 def run_rolling(source, prioritizers, datasets=("all", "deconf", "firstfail"), seeds: int = 10,
-                warmup_fraction: float = 0.2, leak: bool = False, on_rank=None) -> pd.DataFrame:
+                warmup_fraction: float = 0.2, leak: bool = False, on_rank=None,
+                splits=("warmup", "eval"), only_keys=None) -> pd.DataFrame:
     """One row per (TSR, dataset, method) with metrics averaged over seeds.
 
+    ``splits`` restricts which TSRs are ranked and scored (all TSRs still update the history);
+    ``splits=("warmup",)`` stops each stage after its warm-up part, for tuning. ``only_keys`` (a set of
+    (pr_name, build_id, stage_id)) restricts ranking further, e.g. for leakage checks.
     ``leak=True`` updates the history with a TSR *before* ranking it. It exists only so the leakage
     tests can show the pipeline would notice; never use it for results.
     ``on_rank(row, method, seed, order, ctx)`` is called for every ranking (tests, explanations).
@@ -85,21 +89,30 @@ def run_rolling(source, prioritizers, datasets=("all", "deconf", "firstfail"), s
         hist = HistoryStore()
         n_warm = math.ceil(warmup_fraction * len(sdf))
         for _, group in sdf.groupby("build_timestamp", sort=True):
+            if "eval" not in splits and group.index.min() >= n_warm:
+                break
             runs = [(row, source.read(row)) for row in group.itertuples()]
             if leak:
                 for row, run in runs:
                     hist.update(run.names, run.duration, run.outcome, row.build_timestamp)
             for row, run in runs:
+                split = "warmup" if row.Index < n_warm else "eval"
+                if split not in splits:
+                    continue
+                if only_keys is not None and (row.pr_name, int(row.build_id), stage) not in only_keys:
+                    continue
                 excl = {d: source.exclusions(row, d) for d in datasets}
                 todo = [d for d in datasets if scored_on(run, excl[d])]
                 if not todo:
                     continue
                 ts = row.build_timestamp
                 feats = hist.features(run.names, as_of=None if leak else ts)
+                hstats = hist.stats()
+                key = (row.pr_name, int(row.build_id), stage)
                 base = {
                     "project": source.project, "stage": stage, "pr_name": row.pr_name,
                     "build_id": int(row.build_id), "timestamp": ts, "position": int(row.Index),
-                    "split": "warmup" if row.Index < n_warm else "eval",
+                    "split": split,
                     "n_new_tests": int((~feats["known"]).sum()),
                 }
                 dur = run.duration + DURATION_OFFSET
@@ -111,10 +124,13 @@ def run_rolling(source, prioritizers, datasets=("all", "deconf", "firstfail"), s
                     for seed in range(n_seeds):
                         ctx = RankContext(names=run.names, features=feats,
                                           rng=tsr_rng(seed, row.pr_name, row.build_id, stage),
-                                          project=source.project, stage=stage, timestamp=ts)
+                                          project=source.project, stage=stage, timestamp=ts,
+                                          key=key, history_stats=hstats)
                         t0 = time.perf_counter()
                         order = p.rank(ctx)
                         acc["rank_time_s"].append(time.perf_counter() - t0)
+                        for k, v in (getattr(p, "last_stats", None) or {}).items():
+                            acc[("stat", k)].append(v)
                         if on_rank is not None:
                             on_rank(row, p.name, seed, order, ctx)
                         for d in todo:
@@ -122,10 +138,11 @@ def run_rolling(source, prioritizers, datasets=("all", "deconf", "firstfail"), s
                             for k in METRICS:
                                 acc[(d, k)].append(m[k])
                     rt = float(np.mean(acc["rank_time_s"]))
+                    extra = {k[1]: float(np.mean(v)) for k, v in acc.items() if isinstance(k, tuple) and k[0] == "stat"}
                     for d in todo:
                         rows.append({**base, "dataset": d, "method": p.name, "n_seeds": n_seeds,
                                      **{k: float(np.mean(acc[(d, k)])) for k in METRICS},
-                                     "rank_time_s": rt})
+                                     "rank_time_s": rt, **extra})
             if not leak:
                 for row, run in runs:
                     hist.update(run.names, run.duration, run.outcome, row.build_timestamp)

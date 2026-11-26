@@ -1,0 +1,122 @@
+{
+  "args": {
+    "project": "activemq",
+    "methods": "['all']",
+    "datasets": "['deconf', 'all', 'firstfail']",
+    "config": "C:\\Users\\hiepq\\Projects\\test-case-prioritization\\configs\\default.yaml",
+    "tuned": "None",
+    "index": "artifact",
+    "seeds": "10",
+    "tag": "week5-default"
+  },
+  "config": {
+    "embedding": {
+      "model": "microsoft/unixcoder-base",
+      "pooling": "masked_mean",
+      "class_vector": "mean_of_methods",
+      "methods": "test_then_all_then_file",
+      "max_tokens": 512,
+      "source_commit": "head_then_trunk"
+    },
+    "similarity": {
+      "transform": "clip",
+      "missing_embedding": "isolate"
+    },
+    "objective": {
+      "alpha": 0.5,
+      "q_norm": "max",
+      "epsilon": 0.001,
+      "cost_exponent": 0.5,
+      "cost_norm": "median",
+      "selection": "gain"
+    },
+    "history": {
+      "estimator": "decay",
+      "decay_lambda": 0.9,
+      "beta_prior_strength": 2.0,
+      "confidence_kappa": 3.0,
+      "duration": "average",
+      "new_test_duration": "median"
+    },
+    "tie_break": [
+      "duration",
+      "name"
+    ],
+    "protocol": {
+      "order_by": "build_timestamp",
+      "history_scope": [
+        "project",
+        "stage"
+      ],
+      "warmup_fraction": 0.2,
+      "random_seeds": 10,
+      "lrts_duration_offset": 0.001,
+      "datasets": {
+        "all": "d_nofilter",
+        "deconf": "d_jira_stageunique_freqfail",
+        "firstfail": "d_first_jira_stageunique"
+      },
+      "primary_metric": "apfdc_u",
+      "primary_dataset": "deconf"
+    },
+    "tuning_grid": {
+      "alpha": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "estimator": [
+        {
+          "name": "beta"
+        },
+        {
+          "name": "decay",
+          "decay_lambda": 0.8
+        },
+        {
+          "name": "decay",
+          "decay_lambda": 0.9
+        },
+        {
+          "name": "decay",
+          "decay_lambda": 0.95
+        },
+        {
+          "name": "stickiness"
+        }
+      ],
+      "confidence_kappa": [
+        1.0,
+        3.0,
+        10.0
+      ],
+      "cost_exponent": [
+        0.5,
+        1.0
+      ]
+    },
+    "projects": {
+      "pilot": [
+        "activemq"
+      ],
+      "main": [
+        "activemq",
+        "jackrabbit-oak",
+        "hbase"
+      ],
+      "backup": [
+        "hadoop",
+        "karaf"
+      ]
+    }
+  },
+  "digest": "1c805f5e7e"
+}

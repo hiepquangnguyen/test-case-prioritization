@@ -1,0 +1,15 @@
+objective:
+  alpha: 0.0
+  cost_exponent: 0.5
+  rankblend_beta: 0.0
+history:
+  estimator: beta
+  decay_lambda: 0.9
+  confidence_kappa: 3.0
+tuned_on:
+  project: activemq
+  dataset: deconf
+  split: warmup
+  warmup_fraction: 0.2
+  index: artifact
+  n_tsr: 18

@@ -19,6 +19,7 @@ objective:                      # F_b(S) = alpha * FL(S)/|T_b| + (1 - alpha) * s
   cost_exponent: 0.5            # gamma: q = conf * p / (c_norm ** gamma + eps)
   cost_norm: median             # c_norm = c / median(c over T_b)
   selection: gain               # gain | ratio (dF / c^gamma, time-budget variant)
+  rankblend_beta: 0.5           # RankBlend: beta * rank_FALCON + (1 - beta) * rank_History+Cost (tuned on warm-up)
 
 history:
   estimator: decay              # beta | decay | stickiness

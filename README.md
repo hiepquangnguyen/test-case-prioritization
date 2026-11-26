@@ -129,6 +129,24 @@ git -C data/repos/activemq.git fetch origin "+refs/pull/*/head:refs/pull/*/head"
 | Láng giềng gần nhất cùng package | 44% (ngẫu nhiên: 4%) |
 | Test fail cùng nhau có giống nhau hơn? | Có: cos trung bình 0.319 so với 0.275 của mọi cặp, ở 63% TSR (Wilcoxon p = 0.001) |
 
+## HC-FALCON và chạy thực nghiệm (tuần 5)
+
+```powershell
+.venv\Scripts\python scripts\tune_warmup.py --project activemq --dataset deconf
+.venv\Scripts\python scripts\run_experiment.py --project activemq --methods all --tag pilot --tuned configs\tuned\activemq-deconf.yaml
+.venv\Scripts\python scripts\explain_tsr.py --project activemq --n 3
+```
+
+- `tune_warmup.py` chỉ dùng 20% TSR đầu, tinh chỉnh lần lượt α → bộ ước lượng p → κ → γ, rồi β của RankBlend.
+  Kết quả ghi vào `configs/tuned/<project>-<dataset>.yaml`.
+- `run_experiment.py` chạy theo trình tự thời gian và ghi một dòng cho mỗi (TSR, bản dữ liệu, phương pháp) vào
+  `results/raw/`. Bảng tóm tắt trên phần eval nằm ở `results/summary/`, kèm cấu hình đã dùng.
+- `explain_tsr.py` ghi lời giải thích từng vị trí vào `results/explain/<project>/`: gain, phần ngữ nghĩa, phần
+  lịch sử/chi phí, p, conf, chi phí, các test được phủ thêm.
+
+Các phương pháp có sẵn: `FALCON`, `History`, `History+Cost`, `FL+History`, `HC-FALCON`, `HC-FALCON-noconf`,
+`HC-FALCON-ratio`, `RankBlend`, `RRF`, cùng 10 baseline LRTS.
+
 ## Cấu trúc code
 
 | Module | Vai trò |
@@ -145,6 +163,10 @@ git -C data/repos/activemq.git fetch origin "+refs/pull/*/head:refs/pull/*/head"
 | `src/hcfalcon/lrts/embeddings.py` | ghép vector test class từ vector method |
 | `src/hcfalcon/history.py` | lịch sử từng test theo (project, stage), chỉ cập nhật sau khi xếp hạng |
 | `src/hcfalcon/prioritizers.py` | baseline LRTS: Random, QTF, LatestFail, MostFail, LatestTrans, MostTrans, +CC, +CCH |
+| `src/hcfalcon/estimators.py` | p (Beta, decay, stickiness, Wilson), conf, chi phí ước lượng |
+| `src/hcfalcon/scoring.py` | q = conf·p/(c̃^γ+ε), các công tắc ablation |
+| `src/hcfalcon/hc_falcon.py` | HC-FALCON, FALCON-on-LRTS, các ablation, RankBlend, RRF |
+| `src/hcfalcon/explain.py` | bảng và câu giải thích vị trí của từng test |
 | `src/hcfalcon/rolling.py` | vòng lặp đánh giá theo thời gian, chia warm-up / eval |
 | `src/hcfalcon/leakage.py` | kiểm tra rò rỉ: bỏ / xáo trộn tương lai, cố ý rò rỉ |
 
@@ -156,4 +178,6 @@ git -C data/repos/activemq.git fetch origin "+refs/pull/*/head:refs/pull/*/head"
 - [x] Tuần 3: pipeline LRTS, baseline, kiểm tra với `eval_outcome` của LRTS, leakage v1
 - [x] Tuần 4 (code): trích mã nguồn test theo build, corpus method ActiveMQ, notebook chế độ (b)
 - [x] Tuần 4 (chạy): embed corpus ActiveMQ trên Colab, `emb_coverage` ≥ 95% ở 444/446 TSR
-- [ ] Tuần 5: HC-FALCON đầu-cuối (estimators, scoring, prioritizer, giải thích), FALCON-on-LRTS, RankBlend, RRF
+- [x] Tuần 5: HC-FALCON đầu-cuối (estimators, scoring, prioritizer, giải thích), FALCON-on-LRTS, RankBlend, RRF;
+  chạy hết ActiveMQ, leakage đạt
+- [ ] Tuần 6: pilot ActiveMQ, go/no-go #1 (tinh chỉnh warm-up, biến thể định nghĩa trước, pilot memo)

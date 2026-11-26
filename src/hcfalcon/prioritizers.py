@@ -63,7 +63,9 @@ class RankContext:
     project: str = ""
     stage: str = ""
     timestamp: float = float("nan")
-    extra: dict = field(default_factory=dict)  # embeddings etc. (week 4+)
+    key: tuple = ()                   # (pr_name, build_id, stage_id): identifies the TSR, e.g. for embeddings
+    history_stats: dict = field(default_factory=dict)  # HistoryStore.stats(): stage totals of the past
+    extra: dict = field(default_factory=dict)
 
 
 def paper_name(method: str) -> str:

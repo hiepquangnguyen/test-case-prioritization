@@ -88,6 +88,56 @@ viên đưa nguồn cụ thể thì bổ sung, không đổi thiết kế thực
     cụm, trong khi facility location chọn đại diện rải đều các cụm: tốt cho việc tìm sớm lỗi đầu tiên của mỗi
     cụm, nhưng có thể đẩy các test fail còn lại trong cụm ra sau. Cần xem trong pilot tuần 6.
 
+## 2026-11-26: HC-FALCON đầu-cuối (tuần 5)
+
+**Chi tiết cài đặt chốt ở tuần này** (`estimators.py`, `scoring.py`, `hc_falcon.py`):
+
+- Prior của Beta và decay: μ là tỉ lệ fail của stage, chỉ tính trên các lần chạy trong quá khứ; độ mạnh s = 2.
+  Test mới nhận p = μ.
+- Stickiness:
+  - p = P(fail | kết quả lần chạy trước của test), ước lượng từ số lần chuyển trạng thái của chính test đó.
+  - Số đếm được làm mượt về tỉ lệ chuyển trạng thái gộp của cả stage (cũng làm mượt về μ). Lần chạy đầu của
+    một test không được tính là một lần chuyển.
+- Wilson: lấy cận dưới (z = 1.96) và dùng với conf = 1, vì cận dưới đã tự co lại khi có ít dữ liệu.
+- Chi phí c:
+  - c = thời gian trung bình các lần chạy trước + 1 ms. Test mới nhận trung vị c của các test đã biết trong cùng
+    TSR.
+  - c̃ = c / trung vị c trong TSR.
+  - Test chạy ~0 s có c̃ rất nhỏ, nên q bị phóng lên (giống CC của LRTS, đẩy test nhanh lên đầu).
+- Phá hòa: c ước lượng nhỏ hơn trước, rồi theo tên. Với α = 0, greedy tương đương sắp theo q giảm dần, nên
+  code dùng sắp xếp trực tiếp, cho kết quả trùng (có test kiểm chứng).
+- RankBlend / RRF trộn thứ hạng của FALCON (α = 1) với History+Cost (α = 0, cùng bộ ước lượng). Như vậy chỉ
+  khác HC-FALCON ở cách kết hợp: trộn thứ hạng thay vì một hàm submodular. β của RankBlend được tinh chỉnh trên
+  warm-up giống α.
+
+**Kiểm chứng:**
+- Kiểm tra leakage trên ActiveMQ đạt với cả 4 bộ ước lượng, cho HC-FALCON và RankBlend: thứ tự không đổi khi
+  xóa hoặc xáo trộn tương lai.
+- Khi cố ý cho rò rỉ, APFDc của HC-FALCON tăng từ 0.826 lên 0.966.
+
+**Tín hiệu sơ bộ, chưa phải kết luận** (dùng cho pilot tuần 6):
+
+- Cấu hình mặc định (α = 0.5, decay λ = 0.9, κ = 3, γ = 0.5), trên 78 TSR DeConf thuộc phần eval của ActiveMQ:
+
+  | Phương pháp | APFDc |
+  |---|---|
+  | HC-FALCON | 0.848 |
+  | History+Cost | 0.844 |
+  | LatestFail+CCH | **0.865** |
+  | MostFail+CC | 0.857 |
+  | LatestFail+CC | 0.846 |
+  | RankBlend | 0.784 |
+  | FALCON | 0.494 (≈ Random 0.488) |
+
+- Tinh chỉnh trên warm-up (chỉ 18 TSR):
+  - APFDc giảm đều khi tăng α (α = 0: 0.752; α = 0.5: 0.734; α = 1: 0.533), nên chọn α = 0 và bộ ước lượng
+    Beta. Với α = 0, HC-FALCON suy về History+Cost.
+  - β tốt nhất của RankBlend cũng là 0.
+- Trong 10 lựa chọn đầu, phần ngữ nghĩa chỉ chiếm khoảng 12–14% gain khi α = 0.5. Sau lựa chọn đầu tiên, gain
+  của FL/|T| giảm rất nhanh.
+- Đây đúng là rủi ro §8.1/§8.2 của bản phân tích. Tuần 6 sẽ thử các biến thể định nghĩa trước (γ = 1, chọn
+  theo tỉ lệ, prior cho test mới, ...) và viết pilot memo.
+
 ## 2026-11-26: Tái lập FALCON trên Defects4J
 
 - Thứ tự của `lazy_greedy` trùng với artifact cho tới lần hòa tuyệt đối đầu tiên. Giá trị FL của mọi tiền tố

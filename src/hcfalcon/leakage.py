@@ -75,7 +75,7 @@ def _orders(source, prioritizer, targets, seed, datasets):
         if s == seed and key in targets:
             got[key] = np.asarray(order).copy()
 
-    run_rolling(source, [prioritizer], datasets=datasets, seeds=seed + 1, on_rank=grab)
+    run_rolling(source, [prioritizer], datasets=datasets, seeds=seed + 1, on_rank=grab, only_keys=set(targets))
     return got
 
 
