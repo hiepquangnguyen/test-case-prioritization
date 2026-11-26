@@ -181,6 +181,7 @@ ActiveMQ, phần eval DeConf: HC-FALCON 0.854, History+Cost 0.862, LatestFail+CC
 | `src/hcfalcon/hc_falcon.py` | HC-FALCON, FALCON-on-LRTS, các ablation, RankBlend, RRF |
 | `src/hcfalcon/explain.py` | bảng và câu giải thích vị trí của từng test |
 | `src/hcfalcon/stats.py` | Wilcoxon ghép cặp theo TSR, Holm, Cliff's δ, thay đổi trung vị |
+| `src/hcfalcon/propagation.py` | hướng B: điểm lan truyền lỗi theo ngữ nghĩa s(t) cho HC-FALCON-prop |
 | `src/hcfalcon/rolling.py` | vòng lặp đánh giá theo thời gian, chia warm-up / eval |
 | `src/hcfalcon/leakage.py` | kiểm tra rò rỉ: bỏ / xáo trộn tương lai, cố ý rò rỉ |
 
@@ -196,4 +197,6 @@ ActiveMQ, phần eval DeConf: HC-FALCON 0.854, History+Cost 0.862, LatestFail+CC
   chạy hết ActiveMQ, leakage đạt
 - [x] Tuần 6: pilot ActiveMQ, go/no-go #1 → chưa đạt ngưỡng. Xem [paper/pilot-memo.md](paper/pilot-memo.md);
   đang chờ giảng viên chọn hướng
-- [ ] Tuần 7: Jackrabbit Oak, HBase (clone, export, embed), DANTE
+- [x] Hướng B: biến thể HC-FALCON-prop (lan truyền lỗi theo ngữ nghĩa), phát triển trên ActiveMQ, đăng ký trước
+  ở [paper/preregistration-B.md](paper/preregistration-B.md)
+- [ ] Tuần 7: Jackrabbit Oak, HBase (clone, export, embed, chạy đúng quy trình đã đăng ký), DANTE

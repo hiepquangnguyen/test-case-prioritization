@@ -6,6 +6,7 @@ Steps, in this order (nothing from the eval split feeds a choice):
    pre-defined variants of the plan, each over the full alpha grid, on the warm-up split only:
    tuned | gamma = 1 | ratio selection dF / c^gamma | ratio + gamma = 1 | Beta prior for new tests
    (only if the tuned estimator is not already Beta). The best (variant, alpha) is locked;
+   then, for direction B, prop_eta x alpha on top of it (``paper/preregistration-B.md``);
 2. eval: rank every TSR with the locked HC-FALCON, the pre-registered default configuration
    (``configs/default.yaml``), the ablations, rank fusion and the LRTS baselines;
 3. paired tests on the eval split (Wilcoxon + Holm + Cliff's delta, median change);
@@ -67,6 +68,22 @@ def run_grid(src, provider, base_variants, alphas, dataset, warm, splits):
              "apfdc_u_median": g.loc[m, "median"], "n_tsr": int(g.loc[m, "size"])} for m in g.index]
     order = {k: i for i, k in enumerate(base_variants)}
     return pd.DataFrame(rows).sort_values(["variant", "alpha"], key=lambda s: s.map(order) if s.name == "variant" else s)
+
+
+def run_prop_grid(src, provider, cfg, alphas, etas, dataset, warm, splits):
+    """Direction B: prop_eta x alpha on top of a locked configuration."""
+    cands, meta = [], {}
+    for e in etas:
+        for a in alphas:
+            label = f"eta={e:g}|alpha={a:g}"
+            c = replace(cfg, alpha=float(a), score=replace(cfg.score, prop_eta=float(e)))
+            cands.append(HCFalconPrioritizer(c, provider, name=label))
+            meta[label] = (float(e), float(a))
+    raw = run_rolling(src, cands, datasets=(dataset,), seeds=1, warmup_fraction=warm, splits=splits)
+    g = raw.groupby("method")["apfdc_u"].agg(["mean", "median", "size"])
+    rows = [{"eta": meta[m][0], "alpha": meta[m][1], "apfdc_u_mean": g.loc[m, "mean"],
+             "apfdc_u_median": g.loc[m, "median"], "n_tsr": int(g.loc[m, "size"])} for m in g.index]
+    return pd.DataFrame(rows).sort_values(["eta", "alpha"]).reset_index(drop=True)
 
 
 def diagnostics(src, provider, raw_eval_keys, cfg, dataset):
@@ -136,11 +153,28 @@ def main(argv=None):
     with open(ROOT / "configs" / "tuned" / f"{args.project}-{args.dataset}-locked.yaml", "w", encoding="utf-8") as fh:
         yaml.safe_dump(locked_doc, fh, sort_keys=False)
 
+    # 1b. warm-up, direction B (paper/preregistration-B.md): prop_eta x alpha on top of the locked variant
+    etas = [float(e) for e in default_raw["tuning_grid"]["prop_eta"]]
+    pgrid = run_prop_grid(src, provider, locked, alphas, etas, args.dataset, warm, ("warmup",))
+    pgrid.to_csv(out / "warmup_prop.csv", index=False)
+    bestp = pgrid.loc[pgrid["apfdc_u_mean"].idxmax()]  # first max = smaller eta, then smaller alpha
+    locked_prop = replace(locked, alpha=float(bestp["alpha"]), score=replace(locked.score, prop_eta=float(bestp["eta"])))
+    print(f"[warm-up, prop] best eta={bestp['eta']:g} alpha={bestp['alpha']:g} mean={bestp['apfdc_u_mean']:.4f}")
+    prop_doc = {**locked_doc, "objective": {**locked_doc["objective"], "alpha": locked_prop.alpha,
+                                            "prop_eta": locked_prop.score.prop_eta,
+                                            "prop_lambda": locked_prop.prop_lambda,
+                                            "prop_quantile": locked_prop.prop_quantile},
+                "locked_from": {**locked_doc["locked_from"], "prop_warmup_mean": float(bestp["apfdc_u_mean"])}}
+    with open(ROOT / "configs" / "tuned" / f"{args.project}-{args.dataset}-locked-prop.yaml", "w",
+              encoding="utf-8") as fh:
+        yaml.safe_dump(prop_doc, fh, sort_keys=False)
+
     # 2. eval: locked + pre-registered default + ablations + baselines
     prios = []
     for m in ["HC-FALCON", "FALCON", "FALCON-ratio", "History", "History+Cost", "FL+History", "HC-FALCON-noconf",
               "RankBlend", "RRF"]:
         prios.append(make_method(m, locked, provider))
+    prios += [make_method(m, locked_prop, provider) for m in ("HC-FALCON-prop", "History+Cost+Prop")]
     p_def = make_method("HC-FALCON", default_cfg, provider)
     p_def.name = "HC-FALCON(default)"
     prios.append(p_def)
@@ -152,8 +186,8 @@ def main(argv=None):
     summ.to_csv(out / "eval_summary.csv", index=False)
 
     # 3. paired tests on eval
-    tests = pd.concat([paired(raw, m, COMPARE, dataset=d)
-                       .assign(dataset=d) for m in ("HC-FALCON", "HC-FALCON(default)")
+    tests = pd.concat([paired(raw, m, COMPARE + (["HC-FALCON"] if m == "HC-FALCON-prop" else []), dataset=d)
+                       .assign(dataset=d) for m in ("HC-FALCON", "HC-FALCON(default)", "HC-FALCON-prop")
                        for d in ("deconf", "all", "firstfail")], ignore_index=True)
     tests["baseline_name"] = tests["baseline"].map(paper_name)
     tests.to_csv(out / "paired_tests.csv", index=False)
@@ -161,6 +195,8 @@ def main(argv=None):
     # 4. diagnostics (eval split; reported only)
     acurve = run_grid(src, provider, {"locked": locked}, alphas, args.dataset, warm, ("eval",))
     acurve.to_csv(out / "eval_alpha_curve.csv", index=False)
+    ecurve = run_prop_grid(src, provider, locked_prop, [locked_prop.alpha], etas, args.dataset, warm, ("eval",))
+    ecurve.to_csv(out / "eval_eta_curve.csv", index=False)
     ev = raw[(raw.split == "eval") & (raw.dataset == args.dataset)]
     keys = {(r.pr_name, int(r.build_id), str(r.stage)) for r in ev.itertuples()}
     diag = diagnostics(src, provider, keys, locked, args.dataset)
@@ -175,6 +211,8 @@ def main(argv=None):
         "warmup_best": {"variant": best["variant"], "alpha": float(best["alpha"]),
                         "apfdc_u_mean": float(best["apfdc_u_mean"]), "n_tsr": int(best["n_tsr"])},
         "locked_config": asdict(locked),
+        "warmup_prop_best": {"eta": float(bestp["eta"]), "alpha": float(bestp["alpha"]),
+                             "apfdc_u_mean": float(bestp["apfdc_u_mean"])},
         "eval_n_tsr": int(ev.groupby("method").size().max()),
         "overhead_median_pct_of_tsr": float(overhead.median() * 100),
         "overhead_max_pct_of_tsr": float(overhead.max() * 100),
@@ -195,6 +233,7 @@ def main(argv=None):
                                               "magnitude"]]
     print(t.round(4).to_string(index=False))
     print(acurve[["alpha", "apfdc_u_mean"]].round(4).to_string(index=False))
+    print(ecurve[["eta", "alpha", "apfdc_u_mean"]].round(4).to_string(index=False))
     print(json.dumps(summary, indent=2, default=str))
     return 0
 

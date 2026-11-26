@@ -28,6 +28,9 @@ def explanation_table(last: dict, k: int | None = None, outcome=None) -> pd.Data
             "semantic_part": sem, "history_cost_part": float(res.gain[pos]) - sem,
             "p": float(est["p"][t]), "conf": float(est["conf"][t]), "cost_s": float(est["cost"][t]),
             "q": float(q[t]), "has_embedding": bool(last["found"][t]),
+            "prop": float(est["prop"][t]) if "prop" in est else 0.0,
+            "prop_from": (names[est["prop_from"][t]].rsplit(".", 1)[-1]
+                          if "prop_from" in est and est["prop_from"][t] >= 0 else ""),
             "covers": "; ".join(f"{names[u].rsplit('.', 1)[-1]} (+{imp:.2f})" for u, imp in covers if u != t),
             **({"failed": int(outcome[t])} if outcome is not None else {}),
         })
@@ -42,6 +45,8 @@ def describe(row) -> str:
              f"p={row['p']:.3f}, conf={row['conf']:.2f}, cost {row['cost_s']:.1f} s"]
     if not row["has_embedding"]:
         parts.append("no source (isolated)")
+    if row.get("prop", 0) > 0:
+        parts.append(f"looks like recently failed {row['prop_from']} (s={row['prop']:.2f})")
     if row.get("covers"):
         parts.append(f"newly covers {row['covers']}")
     if "failed" in row and not pd.isna(row["failed"]):

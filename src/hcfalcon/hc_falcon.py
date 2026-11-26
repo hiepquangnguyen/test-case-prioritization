@@ -17,6 +17,9 @@ FL+History              alpha from config, no cost anywhere
 HC-FALCON               full model
 HC-FALCON-noconf        full model with conf = 1
 HC-FALCON-ratio         full model, cost-benefit selection dF / c^gamma (knapsack-style, no 1-1/e)
+HC-FALCON-prop          full model + semantic failure propagation in q (direction B,
+                        ``hcfalcon.propagation``, weight ``score.prop_eta``)
+History+Cost+Prop       HC-FALCON-prop with alpha = 0
 RankBlend               beta * rank_FALCON + (1 - beta) * rank_History+Cost (plain FALCON)
 RRF                     reciprocal rank fusion of the same two rankings (k = 60)
 <LRTS baseline id>      e.g. hcbt_LastFail_Asc (see ``hcfalcon.prioritizers``)
@@ -34,12 +37,13 @@ import numpy as np
 
 from hcfalcon.estimators import EstimatorConfig, estimate
 from hcfalcon.prioritizers import LRTS_BASELINES, HeuristicPrioritizer, RankContext
+from hcfalcon.propagation import propagation_score
 from hcfalcon.scoring import ScoreConfig, score
 from hcfalcon.similarity import similarity_from_embeddings
 from hcfalcon.submodular import GreedyResult, lazy_greedy
 
 HC_METHODS = ("FALCON", "FALCON-ratio", "History", "History+Cost", "FL+History", "HC-FALCON", "HC-FALCON-noconf",
-              "HC-FALCON-ratio", "RankBlend", "RRF")
+              "HC-FALCON-ratio", "HC-FALCON-prop", "History+Cost+Prop", "RankBlend", "RRF")
 
 
 @dataclass(frozen=True)
@@ -51,6 +55,8 @@ class HCConfig:
     sim_transform: str = "clip"
     beta: float = 0.5             # RankBlend weight of the FALCON ranking
     rrf_k: float = 60.0
+    prop_lambda: float = 0.8      # recency decay of the propagation score (score.prop_eta is its weight)
+    prop_quantile: float = 0.95   # neighbour threshold: this quantile of the TSR's similarities
 
     def __post_init__(self):
         if not 0.0 <= self.alpha <= 1.0:
@@ -70,9 +76,11 @@ def config_from_yaml(cfg: dict) -> HCConfig:
         prior_strength=float(hist.get("beta_prior_strength", 2.0)), kappa=float(hist.get("confidence_kappa", 3.0)),
         duration=hist.get("duration", "average"), new_test_duration=hist.get("new_test_duration", "median"))
     sc = ScoreConfig(gamma=float(obj.get("cost_exponent", 0.5)), epsilon=float(obj.get("epsilon", 1e-3)),
-                     q_norm=obj.get("q_norm", "max"))
+                     q_norm=obj.get("q_norm", "max"), prop_eta=float(obj.get("prop_eta", 0.0)))
     return HCConfig(alpha=float(obj.get("alpha", 0.5)), est=est, score=sc, selection=obj.get("selection", "gain"),
-                    sim_transform=simc.get("transform", "clip"), beta=float(obj.get("rankblend_beta", 0.5)))
+                    sim_transform=simc.get("transform", "clip"), beta=float(obj.get("rankblend_beta", 0.5)),
+                    prop_lambda=float(obj.get("prop_lambda", 0.8)),
+                    prop_quantile=float(obj.get("prop_quantile", 0.95)))
 
 
 class SimilarityProvider:
@@ -123,8 +131,8 @@ class HCFalconPrioritizer:
 
     def __init__(self, cfg: HCConfig, provider: SimilarityProvider | None, name: str = "HC-FALCON",
                  explain_top: int = 0):
-        if cfg.alpha > 0 and provider is None:
-            raise ValueError("alpha > 0 needs a SimilarityProvider")
+        if (cfg.alpha > 0 or cfg.score.prop_eta > 0) and provider is None:
+            raise ValueError("alpha > 0 or prop_eta > 0 needs a SimilarityProvider")
         self.cfg, self.provider, self.name, self.explain_top = cfg, provider, name, explain_top
         self._memo_key = ("hc", cfg.digest())
         self.last, self.last_stats = None, {}
@@ -138,10 +146,15 @@ class HCFalconPrioritizer:
                 return self.last["result"].order
 
         est = estimate(ctx.features, ctx.history_stats, cfg.est)
+        t_sim = 0.0
+        if cfg.score.prop_eta > 0:
+            sim, _found = self.provider.get(ctx.key, ctx.names)
+            t_sim = self.provider.last_seconds
+            est["prop"], est["prop_from"] = propagation_score(sim, _found, ctx.features, cfg.prop_lambda,
+                                                              cfg.prop_quantile)
         q = score(est, cfg.score)
         ties = tie_rank(est["cost"], ctx.names)
         denom = est["cost_norm"] ** cfg.score.gamma if cfg.selection == "ratio" else None
-        t_sim = 0.0
         t0 = time.perf_counter()
         if cfg.alpha == 0.0:
             s = q if denom is None else q / denom
@@ -176,6 +189,8 @@ class RankFusionPrioritizer:
             raise ValueError(f"unknown fusion mode {mode!r}")
         self.cfg, self.mode = cfg, mode
         self.name = name or ("RankBlend" if mode == "blend" else "RRF")
+        cfg = replace(cfg, score=replace(cfg.score, prop_eta=0.0))
+        self.cfg = cfg
         self.falcon = HCFalconPrioritizer(replace(cfg, alpha=1.0, selection="gain"), provider, name="FALCON")
         self.hist = HCFalconPrioritizer(replace(cfg, alpha=0.0), provider, name="History+Cost")
         self.last_stats = {}
@@ -198,6 +213,8 @@ def make_method(name: str, cfg: HCConfig, provider: SimilarityProvider | None, e
     """Prioritizer for a method name (see module docstring)."""
     if name in LRTS_BASELINES:
         return HeuristicPrioritizer(name, tie="random")
+    with_prop = cfg                                                   # as configured (prop_eta may be > 0)
+    cfg = replace(cfg, score=replace(cfg.score, prop_eta=0.0))        # every other method: no propagation
     no_cost = replace(cfg.score, use_cost=False)
     variants = {
         # pure baselines never see the cost, whatever cfg.selection says
@@ -210,11 +227,13 @@ def make_method(name: str, cfg: HCConfig, provider: SimilarityProvider | None, e
         "HC-FALCON": cfg,
         "HC-FALCON-noconf": replace(cfg, score=replace(cfg.score, use_conf=False)),
         "HC-FALCON-ratio": replace(cfg, selection="ratio"),
+        # direction B (paper/preregistration-B.md): semantic failure propagation in q
+        "HC-FALCON-prop": with_prop,
+        "History+Cost+Prop": replace(with_prop, alpha=0.0),
     }
     if name in variants:
         v = variants[name]
-        return HCFalconPrioritizer(v, provider if v.alpha > 0 or provider else None, name=name,
-                                   explain_top=explain_top)
+        return HCFalconPrioritizer(v, provider, name=name, explain_top=explain_top)
     if name == "RankBlend":
         return RankFusionPrioritizer(cfg, provider, "blend")
     if name == "RRF":

@@ -138,6 +138,27 @@ viên đưa nguồn cụ thể thì bổ sung, không đổi thiết kế thực
 - Đây đúng là rủi ro §8.1/§8.2 của bản phân tích. Tuần 6 sẽ thử các biến thể định nghĩa trước (γ = 1, chọn
   theo tỉ lệ, prior cho test mới, ...) và viết pilot memo.
 
+## 2026-11-26: Chọn hướng B sau pilot
+
+- Đi tiếp trên Jackrabbit Oak và HBase như kế hoạch, cộng thêm biến thể **HC-FALCON-prop**: dùng embedding để
+  lan truyền lịch sử lỗi sang các test giống test vừa fail.
+- Biến thể, lưới tham số, giả thuyết và tiêu chí được chốt trong
+  [preregistration-B.md](preregistration-B.md) **trước khi** clone hay xem bất kỳ dữ liệu HC-FALCON nào của
+  Oak/HBase. Bằng chứng là commit có timestamp được push lên GitHub trước bước clone.
+- ActiveMQ từ đây là **dự án phát triển**: được dùng để viết và kiểm thử biến thể, nhưng không dùng làm bằng
+  chứng cho biến thể. Kết luận chính dựa trên Oak và HBase, thêm Hadoop và Karaf nếu cần.
+- **Phát triển biến thể trên ActiveMQ:**
+  - Thiết kế đầu tiên (λ = 0.8, ngưỡng phân vị 0.95) làm APFDc giảm đều khi tăng η.
+  - Kiểm tra tiền đề: với test chưa từng fail, có láng giềng vừa fail không làm tăng tỉ lệ fail (0.092% so với
+    0.097%).
+  - Thử ba ngưỡng với λ ≈ 0: phân vị 0.95 cho 1.25×, 0.99 cho 1.5×, 0.999 không có tín hiệu. Chốt λ = 0.1 và phân
+    vị 0.99.
+  - Với thiết lập này, warm-up vẫn chọn η = 0. APFDc trên eval vẫn giảm khi tăng η (0.854 xuống 0.840), nhưng chậm
+    hơn.
+  - Toàn bộ được ghi trong bản đăng ký. Không thử thêm thiết lập nào khác.
+- Đã kiểm tra leakage cho HC-FALCON-prop (α = 0 và 0.4) trên ActiveMQ: thứ tự bất biến khi xóa hoặc xáo trộn
+  tương lai. Khi cố ý cho rò rỉ, APFDc tăng từ 0.73 lên 0.93.
+
 ## 2026-11-26: Pilot ActiveMQ, go/no-go #1 (tuần 6)
 
 Chi tiết và đề xuất: [pilot-memo.md](pilot-memo.md).

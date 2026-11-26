@@ -20,6 +20,9 @@ objective:                      # F_b(S) = alpha * FL(S)/|T_b| + (1 - alpha) * s
   cost_norm: median             # c_norm = c / median(c over T_b)
   selection: gain               # gain | ratio (dF / c^gamma, time-budget variant)
   rankblend_beta: 0.5           # RankBlend: beta * rank_FALCON + (1 - beta) * rank_History+Cost (tuned on warm-up)
+  prop_eta: 0.0                 # direction B: weight of semantic failure propagation in q (HC-FALCON-prop only)
+  prop_lambda: 0.1              # its recency decay per run of the neighbour (chosen on ActiveMQ = development)
+  prop_quantile: 0.99           # neighbour threshold = this quantile of the TSR's similarities (idem)
 
 history:
   estimator: decay              # beta | decay | stickiness
@@ -54,6 +57,7 @@ tuning_grid:                    # staged, warm-up TSRs only
     - {name: stickiness}
   confidence_kappa: [1.0, 3.0, 10.0]
   cost_exponent: [0.5, 1.0]
+  prop_eta: [0.0, 0.05, 0.1, 0.2, 0.5, 1.0]   # direction B, searched jointly with alpha after the variant is locked
 
 projects:
   pilot: [activemq]
